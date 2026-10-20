@@ -14,20 +14,12 @@ describe('turkish case mapping', () => {
 });
 
 describe('form engine: content/morphology/tests.yaml', () => {
-  type MorphTest = (typeof content.morphTests)[number] & { pending?: string };
-  const tests = content.morphTests as MorphTest[];
-  const row = (t: MorphTest) => [t.word, t.suffixes.join('+'), t.expected, t];
-  const run = (_w: unknown, _s: unknown, expected: unknown, t: unknown) => {
-    const test = t as MorphTest;
-    expect(inflect(word(test.word), test.suffixes, T)).toBe(expected);
-  };
-
-  it.each(tests.filter((t) => !t.pending).map(row))('%s + %s → %s', run);
-  // Known engine gaps (`pending:` in tests.yaml). These start failing once the engine handles
-  // them: then remove the `pending` field.
-  if (tests.some((t) => t.pending)) {
-    it.failing.each(tests.filter((t) => t.pending).map(row))('pending: %s + %s → %s', run);
-  }
+  it.each(content.morphTests.map((t) => [t.word, t.suffixes.join('+'), t.expected, t.suffixes]))(
+    '%s + %s → %s',
+    (w, _s, expected, suffixes) => {
+      expect(inflect(word(w as string), suffixes as string[], T)).toBe(expected);
+    },
+  );
 });
 
 describe('answer patterns', () => {
@@ -123,5 +115,65 @@ describe('content integrity: every lesson answer agrees with the engine and chec
       default:
         break;
     }
+  });
+});
+
+describe('feedback diagnosis for suffix chains and names', () => {
+  const diag = (w: string, chain: string[], given: string) => diagnoseForm(word(w), chain, given, T);
+  const LOC_1SG = ['sfx.loc', 'sfx.cop_1sg'];
+  const ABL_1SG = ['sfx.abl', 'sfx.cop_1sg'];
+
+  it.each([
+    ['w.ev', LOC_1SG, 'evdeyim', []],
+    ['w.ev', LOC_1SG, 'evdeim', ['no_buffer']],
+    ['w.park', LOC_1SG, 'parkdayım', ['voiceless']],
+    ['w.park', LOC_1SG, 'parktaım', ['no_buffer']],
+    ['w.park', LOC_1SG, 'parkdaım', ['voiceless', 'no_buffer']],
+    ['w.park', LOC_1SG, 'parktayim', ['person_harmony']],
+    // the person ending correctly follows the learner's own (wrong) -da
+    ['w.ev', LOC_1SG, 'evdayım', ['vowel_front']],
+    ['w.ev', LOC_1SG, 'evimde', ['order']],
+    ['w.ev', LOC_1SG, 'ev deyim', ['detached']],
+    ['w.okul', ['sfx.loc', 'sfx.cop_2pl'], 'okuldasiniz', ['person_harmony']],
+    ['w.Ankara', LOC_1SG, 'Ankara\'dayım', []],
+    ['w.Ankara', LOC_1SG, 'Ankaradayım', ['apostrophe']],
+    ['w.Ankara', LOC_1SG, 'Ankara’dayım', []],
+    ['w.Ankara', LOC_1SG, 'Ankara\'deyim', ['vowel_back']],
+    ['w.Ankara', ['sfx.loc'], 'Ankarada', ['apostrophe']],
+    ['w.Ahmet', ['sfx.loc'], 'Ahmet\'de', ['voiceless']],
+    ['w.Ahmet', ['sfx.loc'], 'Ahmetde', ['apostrophe', 'voiceless']],
+    ['w.İstanbul', LOC_1SG, 'istanbuldayım', ['apostrophe']],
+    ['w.Londra', ABL_1SG, 'Londra\'dayım', ['loc_for_abl']],
+    ['w.Londra', ABL_1SG, 'Londradanım', ['apostrophe']],
+    ['w.Londra', ABL_1SG, 'Londra\'danyım', ['buffer_after_n']],
+    ['w.Türkiye', ABL_1SG, 'Türkiye\'denım', ['person_harmony']],
+    ['w.ev', ['sfx.pl', 'sfx.loc'], 'evlerda', ['vowel_front']],
+  ])('%s + %j: %s → %j', (w, chain, given, codes) => {
+    expect(diag(w, chain, given)?.codes ?? []).toEqual(codes);
+  });
+
+  it('gives up on forms it cannot explain', () => {
+    expect(diag('w.ev', LOC_1SG, 'evde')).toBeNull();
+    expect(diag('w.ev', LOC_1SG, 'masadayım')).toBeNull();
+  });
+
+  it('renders L11 templates for a chain', () => {
+    const tpl = content.grammar['g.L11.loc_copula'].feedback;
+    expect(renderFeedback(diag('w.park', LOC_1SG, 'parkdayım')!, tpl)).toBe(
+      '**park** ends in **k**, one of the Fıstıkçı Şahap letters → **t**: parktayım.',
+    );
+    expect(renderFeedback(diag('w.ev', LOC_1SG, 'evdeim')!, tpl)).toBe(
+      '-DA ends in a vowel, so *-(y)Im / -(y)Iz* need the buffer **y**: **evdeyim**.',
+    );
+    expect(renderFeedback(diag('w.Ankara', LOC_1SG, 'Ankaradayım')!, tpl)).toBe(
+      '**Ankara** is a name, so it takes an apostrophe before the ending: **Ankara\'dayım**.',
+    );
+  });
+
+  it('names the stem a later case suffix follows', () => {
+    const tpl = content.grammar['g.L10.loc'].feedback;
+    expect(renderFeedback(diag('w.ev', ['sfx.pl', 'sfx.loc'], 'evlerda')!, tpl)).toBe(
+      'Look at the last vowel of **evler**: **e** is a front vowel (e i ö ü) → **-de**.',
+    );
   });
 });

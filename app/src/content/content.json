@@ -487,6 +487,7 @@
     "stem_changed": "-DAn starts with a consonant, so **{word}** doesn't change: **{answer}**.",
     "loc_for_abl": "**-DA** means *in / at*; *from* is **-DAn**: **{answer}**.",
     "buffer_after_n": "-DAn ends in a consonant, so no buffer **y**: **{answer}**.",
+    "person_harmony": "The person ending follows the vowel of **-DAn** (a → ı, e → i): **{answer}**.",
     "apostrophe": "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**.",
     "accent": "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."
    }
@@ -5532,24 +5533,21 @@
    "suffixes": [
     "sfx.loc"
    ],
-   "expected": "İstanbul'da",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "İstanbul'da"
   },
   {
    "word": "w.Ali",
    "suffixes": [
     "sfx.loc"
    ],
-   "expected": "Ali'de",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "Ali'de"
   },
   {
    "word": "w.Ahmet",
    "suffixes": [
     "sfx.loc"
    ],
-   "expected": "Ahmet'te",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "Ahmet'te"
   },
   {
    "word": "w.Ankara",
@@ -5557,8 +5555,7 @@
     "sfx.loc",
     "sfx.cop_1sg"
    ],
-   "expected": "Ankara'dayım",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "Ankara'dayım"
   },
   {
    "word": "w.İzmir",
@@ -5566,8 +5563,7 @@
     "sfx.loc",
     "sfx.cop_1sg"
    ],
-   "expected": "İzmir'deyim",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "İzmir'deyim"
   },
   {
    "word": "w.ev",
@@ -5642,8 +5638,7 @@
    "suffixes": [
     "sfx.abl"
    ],
-   "expected": "İstanbul'dan",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "İstanbul'dan"
   },
   {
    "word": "w.Türkiye",
@@ -5651,8 +5646,7 @@
     "sfx.abl",
     "sfx.cop_1sg"
    ],
-   "expected": "Türkiye'denim",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "Türkiye'denim"
   },
   {
    "word": "w.Londra",
@@ -5660,8 +5654,7 @@
     "sfx.abl",
     "sfx.cop_1sg"
    ],
-   "expected": "Londra'danım",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "Londra'danım"
   },
   {
    "word": "w.İzmir",
@@ -5669,16 +5662,14 @@
     "sfx.abl",
     "sfx.cop_1pl"
    ],
-   "expected": "İzmir'deniz",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "İzmir'deniz"
   },
   {
    "word": "w.Ahmet",
    "suffixes": [
     "sfx.abl"
    ],
-   "expected": "Ahmet'ten",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "Ahmet'ten"
   },
   {
    "word": "w.market",
@@ -5744,16 +5735,14 @@
    "suffixes": [
     "sfx.loc"
    ],
-   "expected": "Paris'te",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "Paris'te"
   },
   {
    "word": "w.Paris",
    "suffixes": [
     "sfx.abl"
    ],
-   "expected": "Paris'ten",
-   "pending": "engine: no apostrophe on proper nouns"
+   "expected": "Paris'ten"
   }
  ],
  "assets": {

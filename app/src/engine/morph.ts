@@ -2,6 +2,7 @@
 // on a lexicon word, using the word's flags (VOCABULARY.md §5).
 //   A → a/e   I → ı/i/u/ü   D → d/t   C → c/ç   K → k (ğ before a vowel)
 //   (y) (n) (s) → only after a vowel   (I) → only after a consonant
+// Proper nouns (pos: name) take an apostrophe before the first suffix: İstanbul'da, Ahmet'te.
 
 import type { Word } from '../content/types';
 import {
@@ -114,10 +115,12 @@ export function inflect(word: Word, suffixIds: string[], table: SuffixTable): st
     }
 
     const separate = SEPARATE.has(id);
-    if (!separate && /^[AIaeıioöuü]/.test(form)) s = alterStem(s, word, isLemma);
+    // proper nouns: apostrophe before the first ending, and the name itself never changes
+    const name = isLemma && !separate && word.pos === 'name';
+    if (!separate && !name && /^[AIaeıioöuü]/.test(form)) s = alterStem(s, word, isLemma);
 
     const frontWord = isLemma && flags.includes('front');
-    s += (separate ? ' ' : '') + realise(s, form, frontWord);
+    s += (separate ? ' ' : name ? "'" : '') + realise(s, form, frontWord);
     isLemma = false;
     afterPoss3 = POSS3.has(id);
   });

@@ -57,5 +57,6 @@ feedback:
   stem_changed: "-DAn starts with a consonant, so **{word}** doesn't change: **{answer}**."
   loc_for_abl: "**-DA** means *in / at*; *from* is **-DAn**: **{answer}**."
   buffer_after_n: "-DAn ends in a consonant, so no buffer **y**: **{answer}**."
+  person_harmony: "The person ending follows the vowel of **-DAn** (a → ı, e → i): **{answer}**."
   apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
   accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

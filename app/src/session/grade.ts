@@ -23,21 +23,38 @@ function templates(item: Item) {
 }
 
 /**
- * Explain a wrong word form: find a known noun whose inflection (with one of the item's grammar
- * suffixes) is the expected token, then diagnose the given token against it.
+ * Suffix chains an item's grammar points can produce: each suffix alone, each pattern's chain,
+ * and each case suffix followed by a "to be" ending (evdeyim, Londra'danım).
+ */
+export function suffixChains(item: Item): string[][] {
+  const points = item.grammar.map((g) => content.grammar[g]).filter(Boolean);
+  const ids = [...new Set(points.flatMap((g) => g.suffixes ?? []))];
+  const cases = ids.filter((id) => T[id]?.slot === 'case');
+  const copulas = Object.values(T).filter((s) => s.slot === 'copula').map((s) => s.id);
+  const chains = [
+    ...ids.map((id) => [id]),
+    ...points.flatMap((g) => g.patterns ?? []).map((p) => p.suffixes ?? (p.suffix ? [p.suffix] : [])),
+    ...cases.flatMap((c) => copulas.map((cop) => [c, cop])),
+  ].filter((c) => c.length);
+  return [...new Map(chains.map((c) => [c.join('+'), c])).values()];
+}
+
+/**
+ * Explain a wrong word form: find a known noun or name whose inflection (with one of the item's
+ * suffix chains) is the expected token, then diagnose the given token against it.
  */
 export function explainToken(item: Item, expected: string, given: string): string | undefined {
   const tpl = templates(item);
-  const suffixIds = item.grammar.flatMap((g) => content.grammar[g]?.suffixes ?? []);
+  const chains = suffixChains(item);
   const exp = normalize(expected);
   for (const w of Object.values(content.lexicon)) {
-    if (w.pos !== 'noun') continue;
-    for (const sfx of suffixIds) {
+    if (w.pos !== 'noun' && w.pos !== 'name') continue;
+    for (const chain of chains) {
       let form: string;
-      try { form = inflect(w, [sfx], T); } catch { continue; }
+      try { form = inflect(w, chain, T); } catch { continue; }
       if (normalize(form) !== exp) continue;
-      const d = diagnoseForm(w, sfx, given, T);
-      if (d && d.codes.length) return renderFeedback(d, tpl);
+      const d = diagnoseForm(w, chain, given, T);
+      if (d && d.codes.length) return renderFeedback(d, tpl) || undefined;
     }
   }
   return undefined;
