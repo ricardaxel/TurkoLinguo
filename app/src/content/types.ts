@@ -79,6 +79,8 @@ export interface Item {
   pattern?: string;
   feedback?: string | Record<string, string>;
   note?: string;
+  /** English shown after answering, when the automatic one isn't right (items with pictures). */
+  translation?: string;
   images?: string[];
   audio?: string[];
   base?: string;

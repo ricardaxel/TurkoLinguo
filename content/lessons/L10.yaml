@@ -95,6 +95,7 @@ sessions:
         prompt: "Kedi …"
         options: [masada, masade, masata]
         answer: masada
+        translation: "The cat is on the table."
         feedback: "auto:g.L10.loc"
       - id: L10.learn.06
         type: listen_choose

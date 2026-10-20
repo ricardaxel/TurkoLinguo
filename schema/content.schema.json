@@ -133,6 +133,7 @@
         "pattern": { "$ref": "#/$defs/patternId" },
         "feedback": { "$ref": "#/$defs/feedbackSpec" },
         "note": { "type": "string" },
+        "translation": { "type": "string", "description": "English shown after answering (items with pictures). Optional: the app builds one from sentences or glosses otherwise." },
         "images": { "type": "array", "items": { "$ref": "#/$defs/imageId" } },
         "audio": { "type": "array", "items": { "$ref": "#/$defs/audioId" } },
         "base": { "$ref": "#/$defs/wordId" },

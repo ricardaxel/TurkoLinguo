@@ -119,6 +119,7 @@ Common fields:
 | `pattern` |  | review pattern ID, for per-sub-rule strength |
 | `feedback` |  | `auto:<grammar id>` (generated from the templates) or a map `{wrong answer: message}` |
 | `images`, `audio` |  | media IDs |
+| `translation` |  | English shown after answering an item **with pictures**. Optional: otherwise the app uses the item's sentence, a course sentence with the same Turkish, or a word-by-word gloss |
 
 Types and their specific fields:
 

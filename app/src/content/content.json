@@ -696,6 +696,7 @@
         "masata"
        ],
        "answer": "masada",
+       "translation": "The cat is on the table.",
        "feedback": "auto:g.L10.loc"
       },
       {
@@ -1064,7 +1065,8 @@
         "parkdayım",
         "parktayim"
        ],
-       "answer": "parktayım"
+       "answer": "parktayım",
+       "translation": "I'm in the park."
       },
       {
        "id": "L11.learn.04",
@@ -1506,6 +1508,7 @@
         "Londradanım"
        ],
        "answer": "Londra'danım",
+       "translation": "Where are you from? — I'm from London.",
        "feedback": {
         "Londra'dayım": "**-DA** means *in*; *from* is **-DAn**: **Londra'danım**.",
         "Londradanım": "**Londra** is a name, so it takes an apostrophe before the ending: **Londra'danım**."

@@ -75,13 +75,22 @@ function ChoiceItem({ item, locked, onResult }: ItemProps) {
   } else if (item.type === 'listen_choose') {
     header = (
       <>
-        <Instruction>Listen and choose the picture</Instruction>
+        <Instruction>{options.some((o) => o.startsWith('img.')) ? 'Listen and choose the picture' : 'Listen and choose the meaning'}</Instruction>
         <SpeakButton audio={audioFor(item.sentence!)} label="🔊  Play" />
+      </>
+    );
+  } else if (item.type === 'contrast_pair') {
+    header = (
+      <>
+        <Instruction>Which one means…</Instruction>
+        <Big>{`“${item.prompt}”`}</Big>
       </>
     );
   }
 
   const isPicture = (o: string) => o.startsWith('img.');
+  // contrast_pair options are sentence IDs: show their Turkish text
+  const label = (o: string) => content.sentences[o]?.tr ?? o;
   return (
     <View style={styles.gap}>
       {header}
@@ -104,7 +113,7 @@ function ChoiceItem({ item, locked, onResult }: ItemProps) {
               <Picture id={o} size={36} />
             </Pressable>
           ) : (
-            <Chip key={o} label={o} onPress={() => choose(o)} disabled={locked} state={state} />
+            <Chip key={o} label={label(o)} onPress={() => choose(o)} disabled={locked} state={state} />
           );
         })}
       </View>

@@ -11,6 +11,7 @@ import { CardView } from './CardView';
 import { FeedbackPanel } from './FeedbackPanel';
 import type { ItemResult } from './grade';
 import { ItemView } from './ItemView';
+import { displayAnswer, translationFor } from './translation';
 
 export type Step = { kind: 'card'; card: Card } | { kind: 'item'; item: Item };
 
@@ -79,7 +80,13 @@ export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summary
         </ScrollView>
         <View style={styles.bottom}>
           {step.kind === 'card' && <Button title="Continue" onPress={next} />}
-          {result && <FeedbackPanel result={result} onContinue={next} />}
+          {result && step.kind === 'item' && (
+            <FeedbackPanel
+              result={{ ...result, expected: displayAnswer(result.expected) }}
+              translation={translationFor(step.item)}
+              onContinue={next}
+            />
+          )}
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>

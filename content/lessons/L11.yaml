@@ -99,6 +99,7 @@ sessions:
         prompt: "Ben …"
         options: [parktayım, parkdayım, parktayim]
         answer: parktayım
+        translation: "I'm in the park."
       - id: L11.learn.04
         type: contrast_pair
         grammar: [g.L11.loc_copula, g.L5.copula]
