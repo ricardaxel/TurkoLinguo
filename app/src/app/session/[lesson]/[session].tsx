@@ -1,21 +1,44 @@
 import { router, useLocalSearchParams } from 'expo-router';
+import { useMemo } from 'react';
 import { Text } from 'react-native';
 import { content } from '../../../content';
-import { SessionRunner, type SessionKey } from '../../../session/SessionRunner';
+import { useProgress } from '../../../progress/ProgressContext';
+import { SessionRunner, type Step } from '../../../session/SessionRunner';
 
-export default function SessionScreen() {
-  const { lesson, session, start } = useLocalSearchParams<{ lesson: string; session: SessionKey; start?: string }>();
-  if (!content.lessons[lesson] || (session !== 'learn' && session !== 'practise')) {
-    return <Text>Lesson not found.</Text>;
-  }
+type SessionKey = 'learn' | 'practise';
+
+export default function LessonSessionScreen() {
+  const { lesson: lessonId, session, start } = useLocalSearchParams<{ lesson: string; session: SessionKey; start?: string }>();
+  const { finishLesson } = useProgress();
+  const lesson = content.lessons[lessonId];
+
+  const steps = useMemo<Step[]>(() => {
+    if (!lesson || (session !== 'learn' && session !== 'practise')) return [];
+    const s = lesson.sessions[session];
+    const cards = 'cards' in s ? s.cards.map((card): Step => ({ kind: 'card', card })) : [];
+    return [...cards, ...s.items.map((item): Step => ({ kind: 'item', item }))];
+  }, [lesson, session]);
+
+  if (!steps.length) return <Text>Lesson not found.</Text>;
+
+  const exit = () => (router.canGoBack() ? router.back() : router.replace('/'));
   return (
     <SessionRunner
-      key={`${lesson}-${session}`}
-      lessonId={lesson}
-      session={session}
+      key={`${lessonId}-${session}`}
+      steps={steps}
       startAt={Math.max(0, Number(start) || 0)}
-      onExit={() => (router.canGoBack() ? router.back() : router.replace('/'))}
-      onPractise={() => router.replace({ pathname: '/session/[lesson]/[session]', params: { lesson, session: 'practise' } })}
+      onExit={exit}
+      onComplete={(results) => finishLesson(lessonId, session, results)}
+      summaryTitle={session === 'learn' ? 'Rule learned!' : 'Practice done!'}
+      summaryActions={[
+        ...(session === 'learn'
+          ? [{
+              title: `Practise now · ${lesson.sessions.practise.minutes ?? 5} min`,
+              onPress: () => router.replace({ pathname: '/session/[lesson]/[session]', params: { lesson: lessonId, session: 'practise' } }),
+            }]
+          : []),
+        { title: 'Back to lessons', variant: 'secondary' as const, onPress: exit },
+      ]}
     />
   );
 }

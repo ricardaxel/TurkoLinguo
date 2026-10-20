@@ -16,6 +16,8 @@ SDK 57 matches the Play Store version of Expo Go (October 2026). When Expo Go on
 Audio uses the phone's text-to-speech (`tr-TR`) as a placeholder until the native recordings exist. If you hear no Turkish voice, install one in Android Settings → Text-to-speech.
 
 In the browser: `npm run web`, then open http://localhost:8081.
+
+**Testing reviews without waiting:** in development builds the home screen ends with a *Developer* section. **+1 day** moves the app's clock forward, so cards become due. **Reset progress** clears everything.
 Jump to an exercise while writing content: `/session/L10/practise?start=5`.
 
 ## Scripts
@@ -36,6 +38,8 @@ src/
   engine/       turkish.ts (case mapping, vowels), morph.ts (suffix engine),
                 check.ts (answer checking), feedback.ts (error diagnosis)
   session/      SessionRunner, CardView, ItemView (one component per exercise type), grade.ts
+  progress/     model.ts (lesson status, FSRS cards, streak, daily new-card cap) + ProgressContext (AsyncStorage)
+  review/       build.ts: turns due cards into exercises (fresh known word per rule card)
   ui/           theme, controls (buttons, chips, Turkish letter bar), Markdown, media
 ```
 

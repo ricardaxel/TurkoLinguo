@@ -61,6 +61,17 @@ function ChoiceItem({ item, locked, onResult }: ItemProps) {
         <Big>{item.prompt!}</Big>
       </>
     );
+  } else if (item.type === 'meaning_choice') {
+    const w = word(item.base!);
+    header = (
+      <>
+        <Instruction>What does it mean?</Instruction>
+        <View style={styles.rowCenter}>
+          <SpeakButton audio={w.lemma} />
+          <Big>{`**${w.lemma}**`}</Big>
+        </View>
+      </>
+    );
   } else if (item.type === 'listen_choose') {
     header = (
       <>
@@ -140,6 +151,15 @@ function TypedItem({ item, locked, onResult }: ItemProps) {
             <SpeakButton audio={audioFor(item.sentence!)} label="🔊  Play" />
             <SpeakButton audio={audioFor(item.sentence!)} label="🐢  Slow" slow />
           </View>
+        </>
+      );
+      break;
+    case 'word_recall':
+      header = (
+        <>
+          <Instruction>Write it in Turkish</Instruction>
+          {item.images?.slice(0, 1).map((id) => <Picture key={id} id={id} size={56} />)}
+          <Big>{`“${item.prompt}”`}</Big>
         </>
       );
       break;
@@ -284,6 +304,7 @@ export function ItemView(props: ItemProps) {
     case 'picture_choose':
     case 'listen_choose':
     case 'contrast_pair':
+    case 'meaning_choice':
       return <ChoiceItem {...props} />;
     case 'build_word':
     case 'translate_to_tr':

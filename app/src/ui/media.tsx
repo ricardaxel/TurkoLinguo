@@ -41,7 +41,8 @@ function audioText(audioId: string): { text: string; slowFirst: boolean } {
 }
 
 /** Short caption for an audio button: the sentence or text it plays. */
-export const audioCaption = (audioId: string) => audioText(audioId).text;
+export const audioCaption = (audioIdOrText: string) =>
+  audioIdOrText.startsWith('aud.') ? audioText(audioIdOrText).text : audioIdOrText;
 
 export function speak(audioIdOrText: string, rate = 0.9) {
   const isId = audioIdOrText.startsWith('aud.');

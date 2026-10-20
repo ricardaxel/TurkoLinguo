@@ -1,9 +1,10 @@
 import * as Speech from 'expo-speech';
-import { useMemo, useState } from 'react';
+import { useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { content } from '../content';
-import type { Card, Item } from '../content/types';
+import type { Card, Item, Pattern } from '../content/types';
+import type { SessionResult } from '../progress/model';
 import { Button } from '../ui/controls';
 import { colors, radius, space } from '../ui/theme';
 import { CardView } from './CardView';
@@ -11,44 +12,57 @@ import { FeedbackPanel } from './FeedbackPanel';
 import type { ItemResult } from './grade';
 import { ItemView } from './ItemView';
 
-type Step = { kind: 'card'; card: Card } | { kind: 'item'; item: Item };
-export type SessionKey = 'learn' | 'practise';
+export type Step = { kind: 'card'; card: Card } | { kind: 'item'; item: Item };
+
+export interface SummaryAction {
+  title: string;
+  onPress: () => void;
+  variant?: 'primary' | 'secondary';
+}
 
 interface Props {
-  lessonId: string;
-  session: SessionKey;
+  steps: Step[];
   onExit: () => void;
-  onPractise: () => void;
+  /** Called once, when the last step is done. */
+  onComplete: (results: SessionResult[]) => void;
+  summaryTitle: string;
+  summaryActions: SummaryAction[];
   /** Step to open first (for content authors: /session/L10/practise?start=5). */
   startAt?: number;
 }
 
-export function SessionRunner({ lessonId, session, onExit, onPractise, startAt = 0 }: Props) {
-  const lesson = content.lessons[lessonId];
-  const steps = useMemo<Step[]>(() => {
-    const s = lesson.sessions[session];
-    const cards = 'cards' in s ? s.cards.map((card): Step => ({ kind: 'card', card })) : [];
-    return [...cards, ...s.items.map((item): Step => ({ kind: 'item', item }))];
-  }, [lesson, session]);
+const patternIndex: Record<string, Pattern> = Object.fromEntries(
+  Object.values(content.grammar).flatMap((g) => (g.patterns ?? []).map((p) => [p.id, p])),
+);
 
+export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summaryActions, startAt = 0 }: Props) {
   const [index, setIndex] = useState(startAt);
   const [result, setResult] = useState<ItemResult>();
-  const [results, setResults] = useState<{ item: Item; result: ItemResult }[]>([]);
+  const [results, setResults] = useState<SessionResult[]>([]);
+  const completed = useRef(false);
 
   const step = steps[index];
   const next = () => {
     Speech.stop();
-    if (step?.kind === 'item' && result) setResults([...results, { item: step.item, result }]);
+    let all = results;
+    if (step?.kind === 'item' && result) {
+      all = [...results, { item: step.item, status: result.status }];
+      setResults(all);
+    }
     setResult(undefined);
+    if (index + 1 >= steps.length && !completed.current) {
+      completed.current = true;
+      onComplete(all);
+    }
     setIndex(index + 1);
   };
 
-  if (!step) return <Summary lessonId={lessonId} session={session} results={results} onExit={onExit} onPractise={onPractise} />;
+  if (!step) return <Summary title={summaryTitle} results={results} actions={summaryActions} />;
 
   return (
     <SafeAreaView style={styles.screen} edges={['top', 'bottom']}>
       <View style={styles.topBar}>
-        <Pressable onPress={onExit} accessibilityLabel="Close session" hitSlop={12}>
+        <Pressable onPress={onExit} accessibilityRole="button" accessibilityLabel="Close session" hitSlop={12}>
           <Text style={styles.close}>✕</Text>
         </Pressable>
         <View style={styles.progressTrack}>
@@ -72,34 +86,32 @@ export function SessionRunner({ lessonId, session, onExit, onPractise, startAt =
   );
 }
 
-function Summary({
-  lessonId, session, results, onExit, onPractise,
-}: { lessonId: string; session: SessionKey; results: { item: Item; result: ItemResult }[]; onExit: () => void; onPractise: () => void }) {
-  const lesson = content.lessons[lessonId];
-  const count = (s: ItemResult['status']) => results.filter((r) => r.result.status === s).length;
-  const patterns = content.grammar[lesson.grammar]?.patterns ?? [];
-  const strength = patterns
-    .map((p) => {
-      const rs = results.filter((r) => r.item.pattern === p.id);
-      return { p, total: rs.length, right: rs.filter((r) => r.result.status === 'correct').length };
-    })
-    .filter((s) => s.total > 0);
+function Summary({ title, results, actions }: { title: string; results: SessionResult[]; actions: SummaryAction[] }) {
+  const count = (s: SessionResult['status']) => results.filter((r) => r.status === s).length;
+  const byPattern = new Map<string, { total: number; right: number }>();
+  for (const r of results) {
+    if (!r.item.pattern || !patternIndex[r.item.pattern]) continue;
+    const s = byPattern.get(r.item.pattern) ?? { total: 0, right: 0 };
+    s.total += 1;
+    if (r.status === 'correct') s.right += 1;
+    byPattern.set(r.item.pattern, s);
+  }
 
   return (
     <SafeAreaView style={styles.screen} edges={['top', 'bottom']}>
       <ScrollView contentContainerStyle={styles.content}>
-        <Text style={styles.summaryTitle}>{session === 'learn' ? 'You can now say where things are!' : 'Practice done!'}</Text>
+        <Text style={styles.summaryTitle}>{title}</Text>
         <View style={styles.scoreRow}>
           <Score n={count('correct')} label="correct" color={colors.correct} />
           <Score n={count('almost')} label="almost" color={colors.almost} />
           <Score n={count('wrong')} label="to review" color={colors.wrong} />
         </View>
-        {strength.length > 0 && (
+        {byPattern.size > 0 && (
           <View style={styles.strength}>
             <Text style={styles.strengthTitle}>Rule strength</Text>
-            {strength.map(({ p, total, right }) => (
-              <View key={p.id} style={{ gap: space(1) }}>
-                <Text style={styles.strengthLabel}>{p.description}</Text>
+            {[...byPattern].map(([id, { total, right }]) => (
+              <View key={id} style={{ gap: space(1) }}>
+                <Text style={styles.strengthLabel}>{patternIndex[id].description}</Text>
                 <View style={styles.progressTrack}>
                   <View style={[styles.progressFill, { width: `${(right / total) * 100}%`, backgroundColor: colors.correct }]} />
                 </View>
@@ -107,8 +119,7 @@ function Summary({
             ))}
           </View>
         )}
-        {session === 'learn' && <Button title="Practise now · 5 min" onPress={onPractise} />}
-        <Button title="Back to lessons" variant="secondary" onPress={onExit} />
+        {actions.map((a) => <Button key={a.title} title={a.title} variant={a.variant} onPress={a.onPress} />)}
       </ScrollView>
     </SafeAreaView>
   );

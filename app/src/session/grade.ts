@@ -84,7 +84,7 @@ export function gradeChoice(item: Item, chosen: string): ItemResult {
     const w = word(item.base);
     const d = diagnoseForm(w, item.suffix, w.lemma + chosen, T);
     if (d) message = renderFeedback(d, templates(item));
-  } else if (item.answer && !item.answer.startsWith('img.')) {
+  } else if (item.type !== 'meaning_choice' && item.answer && !item.answer.startsWith('img.')) {
     message = explainToken(item, item.answer, chosen);
   }
   const expected = item.type === 'pick_suffix' ? `${word(item.base!).lemma}${item.answer}` : item.answer;
