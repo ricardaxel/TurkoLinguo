@@ -210,7 +210,7 @@ Every image and audio file has one entry. The **Credits** screen is generated fr
 The schema **rejects** NC and ND licences. `OWN` = recorded or drawn for us under a written agreement. `TTS` = placeholder only.
 
 ### 4.9 Morphology (`morphology/`)
-`suffixes.yaml` lists every suffix in archiphoneme notation (`form: DA`, `form: (y)I`) with the grammar point that introduces it. `tests.yaml` holds `{lemma, suffixes, expected}` cases: *kitap + loc = kitapta*, *su + acc = suyu*. These tests are shared by the app's form engine and by future validator checks. A case the engine doesn't handle yet gets `pending: "<reason>"`: the app test then expects it to fail (`it.failing`), and starts failing once the engine is fixed, as a reminder to remove the field. Current gap: apostrophes on proper nouns (*İstanbul'da*, *Londra'danım*).
+`suffixes.yaml` lists every suffix in archiphoneme notation (`form: DA`, `form: (y)I`) with the grammar point that introduces it. `tests.yaml` holds `{lemma, suffixes, expected}` cases: *kitap + loc = kitapta*, *su + acc = suyu*. These tests are shared by the app's form engine and by future validator checks. A case the engine doesn't handle yet can carry `pending: "<reason>"`; no case needs it at the moment, so the app test runs every case (add an `it.failing` block for pending cases when one is needed again).
 
 ## 5. What the validator checks
 

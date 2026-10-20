@@ -37,11 +37,11 @@
 - { word: w.havalimanı, suffixes: [sfx.loc, sfx.cop_1sg], expected: havalimanındayım, note: "compound: buffer n" }
 
 # Proper nouns: apostrophe before the ending (L11, L12)
-- { word: w.İstanbul, suffixes: [sfx.loc], expected: "İstanbul'da", pending: "engine: no apostrophe on proper nouns" }
-- { word: w.Ali,      suffixes: [sfx.loc], expected: "Ali'de",      pending: "engine: no apostrophe on proper nouns" }
-- { word: w.Ahmet,    suffixes: [sfx.loc], expected: "Ahmet'te",    pending: "engine: no apostrophe on proper nouns" }
-- { word: w.Ankara,   suffixes: [sfx.loc, sfx.cop_1sg], expected: "Ankara'dayım", pending: "engine: no apostrophe on proper nouns" }
-- { word: w.İzmir,    suffixes: [sfx.loc, sfx.cop_1sg], expected: "İzmir'deyim",  pending: "engine: no apostrophe on proper nouns" }
+- { word: w.İstanbul, suffixes: [sfx.loc], expected: "İstanbul'da" }
+- { word: w.Ali,      suffixes: [sfx.loc], expected: "Ali'de" }
+- { word: w.Ahmet,    suffixes: [sfx.loc], expected: "Ahmet'te" }
+- { word: w.Ankara,   suffixes: [sfx.loc, sfx.cop_1sg], expected: "Ankara'dayım" }
+- { word: w.İzmir,    suffixes: [sfx.loc, sfx.cop_1sg], expected: "İzmir'deyim" }
 
 # Ablative -DAn (L12): same choices as -DA; after it no buffer y
 - { word: w.ev,      suffixes: [sfx.abl], expected: evden }
@@ -53,11 +53,11 @@
 - { word: w.ev,      suffixes: [sfx.pl, sfx.abl], expected: evlerden }
 - { word: w.saat,    suffixes: [sfx.abl], expected: saatten,   note: "front flag" }
 - { word: w.yatak_odası, suffixes: [sfx.abl], expected: yatak odasından, note: "compound: buffer n" }
-- { word: w.İstanbul, suffixes: [sfx.abl], expected: "İstanbul'dan", pending: "engine: no apostrophe on proper nouns" }
-- { word: w.Türkiye,  suffixes: [sfx.abl, sfx.cop_1sg], expected: "Türkiye'denim", pending: "engine: no apostrophe on proper nouns" }
-- { word: w.Londra,   suffixes: [sfx.abl, sfx.cop_1sg], expected: "Londra'danım", pending: "engine: no apostrophe on proper nouns" }
-- { word: w.İzmir,    suffixes: [sfx.abl, sfx.cop_1pl], expected: "İzmir'deniz",  pending: "engine: no apostrophe on proper nouns" }
-- { word: w.Ahmet,    suffixes: [sfx.abl], expected: "Ahmet'ten",   pending: "engine: no apostrophe on proper nouns" }
+- { word: w.İstanbul, suffixes: [sfx.abl], expected: "İstanbul'dan" }
+- { word: w.Türkiye,  suffixes: [sfx.abl, sfx.cop_1sg], expected: "Türkiye'denim" }
+- { word: w.Londra,   suffixes: [sfx.abl, sfx.cop_1sg], expected: "Londra'danım" }
+- { word: w.İzmir,    suffixes: [sfx.abl, sfx.cop_1pl], expected: "İzmir'deniz" }
+- { word: w.Ahmet,    suffixes: [sfx.abl], expected: "Ahmet'ten" }
 
 # T9 places + locative (Turkish-expert checklist)
 - { word: w.market,  suffixes: [sfx.loc], expected: markette }
@@ -68,5 +68,5 @@
 - { word: w.eczane,  suffixes: [sfx.loc], expected: eczanede }
 - { word: w.köprü,   suffixes: [sfx.loc], expected: köprüde }
 - { word: w.ben,     suffixes: [sfx.loc], expected: bende,     note: "vs the clitic: ben de 'me too'" }
-- { word: w.Paris,   suffixes: [sfx.loc], expected: "Paris'te",  pending: "engine: no apostrophe on proper nouns" }
-- { word: w.Paris,   suffixes: [sfx.abl], expected: "Paris'ten", pending: "engine: no apostrophe on proper nouns" }
+- { word: w.Paris,   suffixes: [sfx.loc], expected: "Paris'te" }
+- { word: w.Paris,   suffixes: [sfx.abl], expected: "Paris'ten" }

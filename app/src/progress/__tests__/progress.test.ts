@@ -141,3 +141,37 @@ describe('review items', () => {
     expect(s.items[0].type).toBe('type_form');
   });
 });
+
+describe('review items for suffix-chain patterns (L11, L12)', () => {
+  let p = emptyProgress();
+  for (const l of ['L10', 'L11', 'L12']) {
+    for (const s of ['learn', 'practise'] as const) {
+      p = completeLessonSession(p, l, s, allCorrect(content.lessons[l].sessions[s].items), t0);
+    }
+  }
+  const chainCards = ['g.L11.loc_copula.back_1sg', 'g.L11.loc_copula.front_2sg', 'g.L11.loc_copula.voiceless_1pl', 'g.L11.loc_copula.plural_2pl'];
+
+  it.each(chainCards)('%s: a typed form with the whole chain, graded and explained', (id) => {
+    expect(p.cards[id]?.kind).toBe('pattern');
+    for (const seed of [1, 2, 3]) {
+      const [item] = buildReview(p, [p.cards[id]], seeded(seed)).items;
+      expect(item.type).toBe('type_form');
+      expect(item.suffixes!.length).toBe(2);
+      expect(item.answer).toBe(inflect(word(item.base!), item.suffixes!, content.suffixes));
+      const { accepted, lang } = acceptedFor(item);
+      expect(gradeTyped(item, item.answer!, accepted, lang).status).toBe('correct');
+    }
+  });
+
+  it('explains a wrong d/t in a reviewed chain', () => {
+    const [item] = buildReview(p, [p.cards['g.L11.loc_copula.voiceless_1pl']], seeded(1)).items;
+    const { accepted, lang } = acceptedFor(item);
+    const wrong = item.answer!.replace(/t(a|e)y/, 'd$1y');
+    expect(gradeTyped(item, wrong, accepted, lang).message).toContain('Fıstıkçı Şahap');
+  });
+
+  // names aren't word cards (lessonWords), so name patterns have no word to draw
+  it.each(['g.L11.loc_copula.name', 'g.L12.abl.origin'])('%s: no item without a known name', (id) => {
+    expect(buildReview(p, [p.cards[id]], seeded(1)).items).toEqual([]);
+  });
+});

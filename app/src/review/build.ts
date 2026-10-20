@@ -1,5 +1,6 @@
 // Build a review session from due cards.
 //   pattern card → choose/type the ending on a word the learner knows, drawn fresh each time
+//                  (patterns with a suffix chain, e.g. location + "to be", are always typed)
 //   word card    → meaning check (TR → EN, multiple choice) while young, then recall (EN → TR, typed)
 
 import { State } from 'ts-fsrs';
@@ -60,16 +61,19 @@ const isYoung = (c: ReviewCard) => c.fsrs.state !== State.Review || c.fsrs.reps 
 
 function patternItem(card: ReviewCard, known: Word[], rng: Rng): Item | undefined {
   const found = findPattern(card.id);
-  if (!found?.pattern.suffix) return undefined;
+  const chain = found?.pattern.suffixes ?? (found?.pattern.suffix ? [found.pattern.suffix] : []);
+  if (!found || !chain.length) return undefined;
   const { pattern, grammarId } = found;
-  const suffixId = pattern.suffix!;
+  const suffixId = chain[0];
   const candidates = known.filter((w) => matchesFilter(w, pattern.word_filter));
   if (!candidates.length) return undefined;
   const w = pick(candidates, rng);
-  const form = inflect(w, [suffixId], content.suffixes);
+  const form = inflect(w, chain, content.suffixes);
   const base = { id: `R.${card.id}`, grammar: [grammarId], pattern: card.id, feedback: `auto:${grammarId}`, base: w.id, images: w.images };
 
-  if (isYoung(card) && form.startsWith(w.lemma)) {
+  // a suffix chain (evdeyim, Londra'danım) is always typed: choosing among every d/t × vowel
+  // combination of two endings would be too many options
+  if (isYoung(card) && chain.length === 1 && w.pos !== 'name' && form.startsWith(w.lemma)) {
     const answer = form.slice(w.lemma.length);
     const variants = endingVariants(content.suffixes[suffixId].form);
     const others = shuffle(variants.filter((v) => v !== answer), rng).slice(0, 3);
@@ -78,8 +82,8 @@ function patternItem(card: ReviewCard, known: Word[], rng: Rng): Item | undefine
   return {
     ...base,
     type: 'type_form',
-    suffixes: [suffixId],
-    prompt: `${w.gloss[0]} (${content.suffixes[suffixId].gloss})`,
+    suffixes: chain,
+    prompt: `${w.gloss[0]} (${chain.map((id) => content.suffixes[id].gloss).join(' + ')})`,
     answer: form,
   };
 }

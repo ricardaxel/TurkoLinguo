@@ -38,6 +38,8 @@ export interface Pattern {
   id: string;
   description: string;
   suffix?: string;
+  /** A chain of suffixes, e.g. [sfx.loc, sfx.cop_1sg] (instead of `suffix`). */
+  suffixes?: string[];
   word_filter?: Record<string, unknown>;
 }
 
