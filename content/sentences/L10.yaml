@@ -1,0 +1,145 @@
+# Sentences used by lesson L10. `words` and `grammar` are hand-tagged for now.
+# Grammar tags: g.L3.basics = no "is" in the 3rd person; g.L7.question = mI and question words.
+
+- id: s.L10.001
+  tr: Kedi nerede?
+  en: ["Where is the cat?"]
+  words: [w.kedi, w.nerede]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L10.001
+  native_required: true        # question intonation
+
+- id: s.L10.002
+  tr: Kedi kanepede.
+  en: ["The cat is on the sofa.", "The cat is on the couch."]
+  words: [w.kedi, w.kanepe]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L10.002
+
+- id: s.L10.003
+  tr: Kitap nerede?
+  en: ["Where is the book?"]
+  words: [w.kitap, w.nerede]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L10.003
+  native_required: true
+
+- id: s.L10.004
+  tr: Kitap çantada.
+  en: ["The book is in the bag."]
+  words: [w.kitap, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L10.004
+
+- id: s.L10.005
+  tr: Telefon çantada.
+  en: ["The phone is in the bag."]
+  words: [w.telefon, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L10.005
+
+- id: s.L10.006
+  tr: Kitap masada.
+  en: ["The book is on the table."]
+  words: [w.kitap, w.masa]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L10.006
+
+- id: s.L10.007
+  tr: Bahçede iki kedi var.
+  en: ["There are two cats in the garden.", "There are 2 cats in the garden."]
+  words: [w.bahçe, w.iki, w.kedi, w.var]
+  grammar: [g.L10.loc, g.L8.varyok, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L10.007
+
+- id: s.L10.008
+  tr: Kalem masada.
+  en: ["The pen is on the table."]
+  words: [w.kalem, w.masa]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L10.008
+
+- id: s.L10.009
+  tr: Ali evde.
+  en: ["Ali is at home."]
+  words: [w.Ali, w.ev]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L10.009
+
+- id: s.L10.010
+  tr: Kitap çantada mı?
+  en: ["Is the book in the bag?"]
+  words: [w.kitap, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L10.010
+  native_required: true
+
+- id: s.L10.011
+  tr: Hayır, kitap yatakta.
+  en: ["No, the book is on the bed.", "No, the book is in the bed."]
+  words: [w.hayır, w.kitap, w.yatak]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L10.011
+
+- id: s.L10.012
+  tr: Dolapta süt var mı?
+  en: ["Is there milk in the cupboard?", "Is there any milk in the cupboard?"]
+  words: [w.dolap, w.süt, w.var]
+  grammar: [g.L10.loc, g.L8.varyok, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L10.012
+  native_required: true
+
+- id: s.L10.013
+  tr: Lamba odada.
+  en: ["The lamp is in the room."]
+  words: [w.lamba, w.oda]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L10.013
+
+- id: s.L10.014
+  tr: Telefon nerede?
+  en: ["Where is the phone?"]
+  words: [w.telefon, w.nerede]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L10.014
+  native_required: true
+
+- id: s.L10.015
+  tr: Telefon kanepede.
+  en: ["The phone is on the sofa."]
+  words: [w.telefon, w.kanepe]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L10.015
+
+- id: s.L10.016
+  tr: Teşekkürler!
+  en: ["Thanks!", "Thank you!"]
+  words: [w.teşekkürler]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.L10.016
+  native_required: true        # T1 greetings are always native
+
+- id: s.L10.017
+  tr: Lamba nerede?
+  en: ["Where is the lamp?"]
+  words: [w.lamba, w.nerede]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L10.017
+  native_required: true

@@ -1,0 +1,2365 @@
+{
+ "version": 1,
+ "course": {
+  "units": [
+   {
+    "id": "U0",
+    "title": "Sounds",
+    "lessons": [
+     "L1",
+     "L2"
+    ]
+   },
+   {
+    "id": "U1",
+    "title": "Who & what",
+    "lessons": [
+     "L3",
+     "L4",
+     "L5",
+     "L6",
+     "L7",
+     "L8",
+     "L9"
+    ],
+    "checkpoint": "C1"
+   },
+   {
+    "id": "U2",
+    "title": "Where",
+    "lessons": [
+     "L10",
+     "L11",
+     "L12",
+     "L13"
+    ],
+    "checkpoint": "C2"
+   },
+   {
+    "id": "U3",
+    "title": "Actions",
+    "lessons": [
+     "L14",
+     "L15",
+     "L16",
+     "L17",
+     "L18"
+    ],
+    "checkpoint": "C3"
+   },
+   {
+    "id": "U4",
+    "title": "Mine & yours",
+    "lessons": [
+     "L19",
+     "L20",
+     "L21",
+     "L22",
+     "L23",
+     "L24"
+    ],
+    "checkpoint": "C4"
+   },
+   {
+    "id": "U5",
+    "title": "Daily life",
+    "lessons": [
+     "L25",
+     "L26",
+     "L27",
+     "L28",
+     "L29"
+    ],
+    "checkpoint": "C5"
+   },
+   {
+    "id": "U6",
+    "title": "Yesterday",
+    "lessons": [
+     "L30",
+     "L31",
+     "L32"
+    ],
+    "checkpoint": "C6"
+   },
+   {
+    "id": "U7",
+    "title": "Plans & wishes",
+    "lessons": [
+     "L33",
+     "L34",
+     "L35"
+    ],
+    "checkpoint": "C7"
+   }
+  ],
+  "lessons": {
+   "L1": {
+    "title": "Alphabet & pronunciation",
+    "grammar": "g.L1.alphabet"
+   },
+   "L2": {
+    "title": "Vowel harmony: the two families",
+    "grammar": "g.L2.harmony"
+   },
+   "L3": {
+    "title": "This / that, bir, no 'is' in the 3rd person",
+    "grammar": "g.L3.basics"
+   },
+   "L4": {
+    "title": "Plural -lAr",
+    "grammar": "g.L4.plural"
+   },
+   "L5": {
+    "title": "Personal pronouns + 'to be' endings",
+    "grammar": "g.L5.copula"
+   },
+   "L6": {
+    "title": "Negation of 'to be': değil",
+    "grammar": "g.L6.degil"
+   },
+   "L7": {
+    "title": "Questions with mI",
+    "grammar": "g.L7.question"
+   },
+   "L8": {
+    "title": "var / yok",
+    "grammar": "g.L8.varyok"
+   },
+   "L9": {
+    "title": "Adjectives & numbers 1–10",
+    "grammar": "g.L9.adj_num"
+   },
+   "L10": {
+    "title": "Locative -DA: in / at / on",
+    "grammar": "g.L10.loc",
+    "file": "lessons/L10.yaml"
+   },
+   "L11": {
+    "title": "Location + 'to be'; apostrophes",
+    "grammar": "g.L11.loc_copula"
+   },
+   "L12": {
+    "title": "Ablative -DAn: from",
+    "grammar": "g.L12.abl"
+   },
+   "L13": {
+    "title": "Clitic de/da vs locative; ve, ama",
+    "grammar": "g.L13.clitic_de"
+   },
+   "L14": {
+    "title": "Verbs, infinitive, imperative",
+    "grammar": "g.L14.imperative"
+   },
+   "L15": {
+    "title": "Present continuous -(I)yor",
+    "grammar": "g.L15.prog"
+   },
+   "L16": {
+    "title": "Present continuous: negative & questions",
+    "grammar": "g.L16.prog_neg_q"
+   },
+   "L17": {
+    "title": "Dative -(y)A + softening & vowel drop",
+    "grammar": "g.L17.dat"
+   },
+   "L18": {
+    "title": "Accusative -(y)I: the specific object",
+    "grammar": "g.L18.acc"
+   },
+   "L19": {
+    "title": "Possessives (singular owners)",
+    "grammar": "g.L19.poss_sg"
+   },
+   "L20": {
+    "title": "Possessives (plural owners)",
+    "grammar": "g.L20.poss_pl"
+   },
+   "L21": {
+    "title": "Genitive -(n)In",
+    "grammar": "g.L21.gen"
+   },
+   "L22": {
+    "title": "Compound nouns",
+    "grammar": "g.L22.compound"
+   },
+   "L23": {
+    "title": "Having: possessive + var/yok",
+    "grammar": "g.L23.have"
+   },
+   "L24": {
+    "title": "Cases after possessives: buffer n",
+    "grammar": "g.L24.poss_case"
+   },
+   "L25": {
+    "title": "Numbers 11–1000, prices",
+    "grammar": "g.L25.numbers"
+   },
+   "L26": {
+    "title": "Time & days",
+    "grammar": "g.L26.time"
+   },
+   "L27": {
+    "title": "-(y)lA / ile",
+    "grammar": "g.L27.ile"
+   },
+   "L28": {
+    "title": "-lI / -sIz, origin, -CI",
+    "grammar": "g.L28.li_siz"
+   },
+   "L29": {
+    "title": "Comparison: daha, en",
+    "grammar": "g.L29.comparison"
+   },
+   "L30": {
+    "title": "Past tense -DI",
+    "grammar": "g.L30.past"
+   },
+   "L31": {
+    "title": "Past: negative & questions",
+    "grammar": "g.L31.past_neg_q"
+   },
+   "L32": {
+    "title": "Past of 'to be': -(y)DI",
+    "grammar": "g.L32.copula_past"
+   },
+   "L33": {
+    "title": "Future -(y)AcAK",
+    "grammar": "g.L33.future"
+   },
+   "L34": {
+    "title": "istemek + -mAk",
+    "grammar": "g.L34.istemek"
+   },
+   "L35": {
+    "title": "Need: -mAk lazım / gerek",
+    "grammar": "g.L35.lazim"
+   }
+  }
+ },
+ "grammar": {
+  "g.L10.loc": {
+   "id": "g.L10.loc",
+   "title": "Locative -DA: in / at / on",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "reference": "**-DA** means *in*, *at* or *on*: **ev·de** \"at home\", **masa·da** \"on the table\", **çanta·da** \"in the bag\".\n\n**Vowel (A):** look at the *last* vowel of the word.\na ı o u → **-da** · e i ö ü → **-de**\n\n**Consonant (D):** after one of the voiceless consonants **f s t k ç ş h p** (\"**F**ı**st**ı**kç**ı **Ş**a**h**a**p**\") → **-ta / -te**; otherwise **-da / -de**.\n\nThe word itself never changes before -DA: *kitap → kitapta*, *mutfak → mutfakta*.\nAfter a plural: **ev·ler·de** \"in the houses\".\n",
+   "patterns": [
+    {
+     "id": "g.L10.loc.back",
+     "description": "Back last vowel → -da",
+     "suffix": "sfx.loc",
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel": "back",
+      "ends_with": "voiced_consonant"
+     }
+    },
+    {
+     "id": "g.L10.loc.front",
+     "description": "Front last vowel → -de",
+     "suffix": "sfx.loc",
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel": "front",
+      "ends_with": "voiced_consonant"
+     }
+    },
+    {
+     "id": "g.L10.loc.after_vowel",
+     "description": "Word ends in a vowel → d",
+     "suffix": "sfx.loc",
+     "word_filter": {
+      "pos": "noun",
+      "ends_with": "vowel"
+     }
+    },
+    {
+     "id": "g.L10.loc.voiceless",
+     "description": "Ends in f s t k ç ş h p → -ta / -te",
+     "suffix": "sfx.loc",
+     "word_filter": {
+      "pos": "noun",
+      "ends_with": "voiceless"
+     }
+    },
+    {
+     "id": "g.L10.loc.last_vowel",
+     "description": "First and last vowels differ in harmony: only the last one counts",
+     "suffix": "sfx.loc",
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel_differs_from_first": true
+     }
+    }
+   ],
+   "feedback": {
+    "vowel_back": "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-{D}a**.",
+    "vowel_front": "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-{D}e**.",
+    "last_not_first": "Only the **last** vowel counts, not the first one.",
+    "voiceless": "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: {answer}.",
+    "not_voiceless": "**{c}** is not in Fıstıkçı Şahap → **d**: {answer}.",
+    "after_vowel": "**{word}** ends in a vowel → always **d**: {answer}.",
+    "detached": "The location ending is **attached** to the word: **{answer}**.",
+    "stem_changed": "-DA starts with a consonant, so **{word}** doesn't change: **{answer}**.",
+    "accent": "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."
+   }
+  }
+ },
+ "lessons": {
+  "L10": {
+   "id": "L10",
+   "title": "Locative -DA: in / at / on",
+   "grammar": "g.L10.loc",
+   "new_words": [
+    "w.burada",
+    "w.orada"
+   ],
+   "not_yet": [
+    "personal endings on the location (evdeyim) → L11",
+    "apostrophes on names (İstanbul'da) → L11",
+    "the separate word de 'too' → L13"
+   ],
+   "sessions": {
+    "learn": {
+     "minutes": 3.5,
+     "cards": [
+      {
+       "kind": "hook",
+       "body": "🐈 **Kedi nerede?** \"Where is the cat?\"\n🛋️ **Kedi kanepede.** \"The cat is on the sofa.\"\n\nTurkish doesn't say *on the sofa*. It adds an ending to the word: **kanepe → kanepe·de**.\n",
+       "sentences": [
+        "s.L10.001",
+        "s.L10.002"
+       ],
+       "audio": [
+        "aud.own.s.L10.001",
+        "aud.own.s.L10.002"
+       ]
+      },
+      {
+       "kind": "rule",
+       "title": "Meaning: in, at, on",
+       "body": "**-DA = in, at, on**. One ending covers all three English prepositions.\n\n| Turkish | English |\n|---|---|\n| ev·**de** | **at** home / **in** the house |\n| masa·**da** | **on** the table |\n| çanta·**da** | **in** the bag |\n\n💡 There's no \"is\" in *Kedi kanepede*. As in L3, the 3rd person needs no verb \"to be\".\n"
+      },
+      {
+       "kind": "rule",
+       "title": "The vowel: a or e?",
+       "body": "The **A** in -DA follows 2-way harmony. Look at the **last vowel** of the word:\n\n| Last vowel | Ending | Examples |\n|---|---|---|\n| a ı o u (back) | **-da** | oda·da, okul·da, banyo·da |\n| e i ö ü (front) | **-de** | ev·de, bahçe·de, pencere·de |\n\n⚠️ Only the **last** vowel counts: o·to·**bü**s → front → otobüs·**te** (not ~~otobüsta~~).\n",
+       "interactive": {
+        "component": "vowel_chart_tap",
+        "params": {
+         "words": [
+          "w.otobüs",
+          "w.kanepe",
+          "w.okul"
+         ]
+        }
+       }
+      },
+      {
+       "kind": "rule",
+       "title": "The consonant: d or t?",
+       "body": "The **D** in -DA becomes **t** after a *voiceless* consonant. There are only 8 of them:\n\n**F**ı**st**ı**kç**ı **Ş**a**h**a**p** — \"Şahap the pistachio seller\" → **f s t k ç ş h p**\n\n| Word ends in… | Ending | Examples |\n|---|---|---|\n| a vowel | -da / -de | masa·da, kanepe·de |\n| another consonant | -da / -de | okul·da, ev·de |\n| f s t k ç ş h p | **-ta / -te** | kitap·**ta**, mutfak·**ta**, süt·**te**, otobüs·**te** |\n\n✅ -DA starts with a consonant, so **the word itself never changes**: *kitap → kitapta*.\n",
+       "audio": [
+        "aud.own.fistikci_sahap"
+       ]
+      },
+      {
+       "kind": "examples",
+       "title": "Step by step",
+       "body": "Two questions, every time: **which vowel?** then **which consonant?**\n\nPlural first, then the location: **ev·ler·de** \"in the houses\".\n",
+       "audio": [
+        "aud.own.L10_worked_examples"
+       ],
+       "interactive": {
+        "component": "suffix_steps",
+        "params": {
+         "words": [
+          "w.oda",
+          "w.ev",
+          "w.dolap",
+          "w.otobüs"
+         ],
+         "suffix": "sfx.loc"
+        }
+       }
+      },
+      {
+       "kind": "rule",
+       "title": "Where?",
+       "body": "**Nerede?** \"Where?\" — *Kitap nerede? — Kitap çantada.*\n**burada** \"here\" · **orada** \"there\" (they already contain -da: bura·da, ora·da)\n",
+       "sentences": [
+        "s.L10.003",
+        "s.L10.004"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "id": "L10.learn.01",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.after_vowel",
+       "base": "w.masa",
+       "suffix": "sfx.loc",
+       "options": [
+        "da",
+        "de",
+        "ta",
+        "te"
+       ],
+       "answer": "da",
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.learn.02",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.front",
+       "base": "w.ev",
+       "suffix": "sfx.loc",
+       "options": [
+        "da",
+        "de",
+        "ta",
+        "te"
+       ],
+       "answer": "de",
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.learn.03",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.voiceless",
+       "base": "w.kitap",
+       "suffix": "sfx.loc",
+       "options": [
+        "da",
+        "de",
+        "ta",
+        "te"
+       ],
+       "answer": "ta",
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.learn.04",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.after_vowel",
+       "base": "w.bahçe",
+       "suffix": "sfx.loc",
+       "options": [
+        "da",
+        "de",
+        "ta",
+        "te"
+       ],
+       "answer": "de",
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.learn.05",
+       "type": "picture_choose",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "images": [
+        "img.own.cat_on_table"
+       ],
+       "prompt": "Kedi …",
+       "options": [
+        "masada",
+        "masade",
+        "masata"
+       ],
+       "answer": "masada",
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.learn.06",
+       "type": "listen_choose",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "sentence": "s.L10.005",
+       "options": [
+        "img.own.phone_in_bag",
+        "img.own.phone_on_sofa",
+        "img.own.phone_on_table"
+       ],
+       "answer": "img.own.phone_in_bag"
+      }
+     ]
+    },
+    "practise": {
+     "minutes": 5,
+     "items": [
+      {
+       "id": "L10.practise.01",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.back",
+       "base": "w.okul",
+       "suffix": "sfx.loc",
+       "options": [
+        "da",
+        "de",
+        "ta",
+        "te"
+       ],
+       "answer": "da",
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.practise.02",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.last_vowel",
+       "base": "w.otobüs",
+       "suffix": "sfx.loc",
+       "options": [
+        "da",
+        "de",
+        "ta",
+        "te"
+       ],
+       "answer": "te",
+       "feedback": "auto:g.L10.loc",
+       "note": "Trap: first vowel o is back, last vowel ü is front."
+      },
+      {
+       "id": "L10.practise.03",
+       "type": "type_form",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.voiceless",
+       "base": "w.mutfak",
+       "suffixes": [
+        "sfx.loc"
+       ],
+       "prompt": "in the kitchen",
+       "answer": "mutfakta",
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.practise.04",
+       "type": "type_form",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.voiceless",
+       "base": "w.süt",
+       "suffixes": [
+        "sfx.loc"
+       ],
+       "prompt": "in the milk",
+       "answer": "sütte",
+       "feedback": "auto:g.L10.loc",
+       "note": "A double t is correct."
+      },
+      {
+       "id": "L10.practise.05",
+       "type": "build_word",
+       "grammar": [
+        "g.L10.loc",
+        "g.L4.plural"
+       ],
+       "tiles": [
+        "ev",
+        "de",
+        "ler"
+       ],
+       "answer": "ev·ler·de",
+       "feedback": {
+        "ev·de·ler": "The plural comes first, then the location: **ev·ler·de**."
+       }
+      },
+      {
+       "id": "L10.practise.06",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L10.loc",
+        "g.L3.basics"
+       ],
+       "sentence": "s.L10.006",
+       "word_bank": [
+        "Kitap",
+        "masada",
+        "masade",
+        "var",
+        "bir"
+       ]
+      },
+      {
+       "id": "L10.practise.07",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L10.loc",
+        "g.L7.question"
+       ],
+       "sentence": "s.L10.001",
+       "word_bank": [
+        "Kedi",
+        "nerede",
+        "mı",
+        "masada"
+       ]
+      },
+      {
+       "id": "L10.practise.08",
+       "type": "translate_to_en",
+       "grammar": [
+        "g.L10.loc",
+        "g.L8.varyok",
+        "g.L9.adj_num"
+       ],
+       "sentence": "s.L10.007"
+      },
+      {
+       "id": "L10.practise.09",
+       "type": "spot_error",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.after_vowel",
+       "text": "Kalem masata.",
+       "error": "masata",
+       "answer": "masada",
+       "sentence": "s.L10.008",
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.practise.10",
+       "type": "spot_error",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "pattern": "g.L10.loc.front",
+       "text": "Ali evda.",
+       "error": "evda",
+       "answer": "evde",
+       "sentence": "s.L10.009",
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.practise.11",
+       "type": "qa",
+       "grammar": [
+        "g.L10.loc",
+        "g.L7.question"
+       ],
+       "question": "s.L10.010",
+       "images": [
+        "img.own.book_on_bed"
+       ],
+       "answers": [
+        "(Hayır,) (kitap) yatakta."
+       ],
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.practise.12",
+       "type": "dictation",
+       "grammar": [
+        "g.L10.loc",
+        "g.L8.varyok",
+        "g.L7.question"
+       ],
+       "sentence": "s.L10.012"
+      },
+      {
+       "id": "L10.practise.13",
+       "type": "qa",
+       "grammar": [
+        "g.L10.loc"
+       ],
+       "question": "s.L10.017",
+       "images": [
+        "img.own.room_scene"
+       ],
+       "answers": [
+        "(Lamba) odada."
+       ],
+       "feedback": "auto:g.L10.loc"
+      },
+      {
+       "id": "L10.practise.14",
+       "type": "mini_dialogue",
+       "grammar": [
+        "g.L10.loc",
+        "g.L7.question"
+       ],
+       "images": [
+        "img.own.phone_on_sofa"
+       ],
+       "turns": [
+        {
+         "speaker": "A",
+         "sentence": "s.L10.014"
+        },
+        {
+         "speaker": "B",
+         "blank": true,
+         "answers": [
+          "(Telefon) kanepede."
+         ]
+        },
+        {
+         "speaker": "A",
+         "sentence": "s.L10.016"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ },
+ "packs": {
+  "T8": {
+   "id": "T8",
+   "title": "Home & furniture",
+   "kind": "core",
+   "packs": [
+    {
+     "id": "T8.p1",
+     "unlock_after": "L9",
+     "words": [
+      "w.ev",
+      "w.oda",
+      "w.mutfak",
+      "w.banyo",
+      "w.salon",
+      "w.yatak_odası",
+      "w.bahçe",
+      "w.balkon"
+     ],
+     "frames": [
+      "s.T8.001"
+     ]
+    },
+    {
+     "id": "T8.p2",
+     "unlock_after": "L9",
+     "words": [
+      "w.yatak",
+      "w.dolap",
+      "w.kanepe",
+      "w.lamba",
+      "w.halı",
+      "w.buzdolabı",
+      "w.ayna",
+      "w.duvar"
+     ],
+     "frames": [
+      "s.T8.002"
+     ]
+    }
+   ],
+   "revisit": [
+    "L10",
+    "L19",
+    "L24"
+   ]
+  }
+ },
+ "lexicon": {
+  "w.ev": {
+   "id": "w.ev",
+   "lemma": "ev",
+   "pos": "noun",
+   "gloss": [
+    "house",
+    "home"
+   ],
+   "images": [
+    "img.openmoji.house"
+   ],
+   "audio": "aud.ll.ev"
+  },
+  "w.okul": {
+   "id": "w.okul",
+   "lemma": "okul",
+   "pos": "noun",
+   "gloss": [
+    "school"
+   ],
+   "audio": "aud.ll.okul"
+  },
+  "w.kitap": {
+   "id": "w.kitap",
+   "lemma": "kitap",
+   "pos": "noun",
+   "gloss": [
+    "book"
+   ],
+   "flags": [
+    "soft"
+   ],
+   "images": [
+    "img.openmoji.book"
+   ],
+   "audio": "aud.ll.kitap"
+  },
+  "w.su": {
+   "id": "w.su",
+   "lemma": "su",
+   "pos": "noun",
+   "gloss": [
+    "water"
+   ],
+   "flags": [
+    "irr"
+   ],
+   "forms": {
+    "acc": "suyu",
+    "gen": "suyun",
+    "poss3": "suyu"
+   }
+  },
+  "w.masa": {
+   "id": "w.masa",
+   "lemma": "masa",
+   "pos": "noun",
+   "gloss": [
+    "table"
+   ],
+   "images": [
+    "img.tbd.table"
+   ],
+   "audio": "aud.ll.masa"
+  },
+  "w.kedi": {
+   "id": "w.kedi",
+   "lemma": "kedi",
+   "pos": "noun",
+   "gloss": [
+    "cat"
+   ],
+   "images": [
+    "img.openmoji.cat"
+   ],
+   "audio": "aud.ll.kedi"
+  },
+  "w.bir": {
+   "id": "w.bir",
+   "lemma": "bir",
+   "pos": "num",
+   "gloss": [
+    "a",
+    "one"
+   ]
+  },
+  "w.iki": {
+   "id": "w.iki",
+   "lemma": "iki",
+   "pos": "num",
+   "gloss": [
+    "two"
+   ]
+  },
+  "w.nerede": {
+   "id": "w.nerede",
+   "lemma": "nerede",
+   "pos": "adv",
+   "gloss": [
+    "where"
+   ],
+   "notes": "Contains the locative: nere·de. Explained in L10."
+  },
+  "w.var": {
+   "id": "w.var",
+   "lemma": "var",
+   "pos": "particle",
+   "gloss": [
+    "there is",
+    "there are"
+   ]
+  },
+  "w.büyük": {
+   "id": "w.büyük",
+   "lemma": "büyük",
+   "pos": "adj",
+   "gloss": [
+    "big"
+   ]
+  },
+  "w.yeni": {
+   "id": "w.yeni",
+   "lemma": "yeni",
+   "pos": "adj",
+   "gloss": [
+    "new"
+   ]
+  },
+  "w.burada": {
+   "id": "w.burada",
+   "lemma": "burada",
+   "pos": "adv",
+   "gloss": [
+    "here"
+   ],
+   "notes": "bura·da"
+  },
+  "w.orada": {
+   "id": "w.orada",
+   "lemma": "orada",
+   "pos": "adv",
+   "gloss": [
+    "there"
+   ],
+   "notes": "ora·da"
+  },
+  "w.hayır": {
+   "id": "w.hayır",
+   "lemma": "hayır",
+   "pos": "interj",
+   "gloss": [
+    "no"
+   ]
+  },
+  "w.teşekkürler": {
+   "id": "w.teşekkürler",
+   "lemma": "teşekkürler",
+   "pos": "interj",
+   "gloss": [
+    "thanks"
+   ]
+  },
+  "w.otobüs": {
+   "id": "w.otobüs",
+   "lemma": "otobüs",
+   "pos": "noun",
+   "gloss": [
+    "bus"
+   ],
+   "images": [
+    "img.openmoji.bus"
+   ],
+   "audio": "aud.ll.otobüs"
+  },
+  "w.telefon": {
+   "id": "w.telefon",
+   "lemma": "telefon",
+   "pos": "noun",
+   "gloss": [
+    "phone"
+   ],
+   "images": [
+    "img.openmoji.phone"
+   ],
+   "audio": "aud.ll.telefon"
+  },
+  "w.kalem": {
+   "id": "w.kalem",
+   "lemma": "kalem",
+   "pos": "noun",
+   "gloss": [
+    "pen",
+    "pencil"
+   ]
+  },
+  "w.çanta": {
+   "id": "w.çanta",
+   "lemma": "çanta",
+   "pos": "noun",
+   "gloss": [
+    "bag"
+   ],
+   "images": [
+    "img.openmoji.bag"
+   ]
+  },
+  "w.saat": {
+   "id": "w.saat",
+   "lemma": "saat",
+   "pos": "noun",
+   "gloss": [
+    "watch",
+    "clock",
+    "hour"
+   ],
+   "flags": [
+    "front"
+   ]
+  },
+  "w.pencere": {
+   "id": "w.pencere",
+   "lemma": "pencere",
+   "pos": "noun",
+   "gloss": [
+    "window"
+   ]
+  },
+  "w.süt": {
+   "id": "w.süt",
+   "lemma": "süt",
+   "pos": "noun",
+   "gloss": [
+    "milk"
+   ],
+   "images": [
+    "img.openmoji.milk"
+   ]
+  },
+  "w.oda": {
+   "id": "w.oda",
+   "lemma": "oda",
+   "pos": "noun",
+   "gloss": [
+    "room"
+   ]
+  },
+  "w.mutfak": {
+   "id": "w.mutfak",
+   "lemma": "mutfak",
+   "pos": "noun",
+   "gloss": [
+    "kitchen"
+   ],
+   "flags": [
+    "soft"
+   ]
+  },
+  "w.banyo": {
+   "id": "w.banyo",
+   "lemma": "banyo",
+   "pos": "noun",
+   "gloss": [
+    "bathroom"
+   ]
+  },
+  "w.salon": {
+   "id": "w.salon",
+   "lemma": "salon",
+   "pos": "noun",
+   "gloss": [
+    "living room"
+   ]
+  },
+  "w.yatak_odası": {
+   "id": "w.yatak_odası",
+   "lemma": "yatak odası",
+   "pos": "noun",
+   "gloss": [
+    "bedroom"
+   ],
+   "flags": [
+    "compound"
+   ]
+  },
+  "w.bahçe": {
+   "id": "w.bahçe",
+   "lemma": "bahçe",
+   "pos": "noun",
+   "gloss": [
+    "garden"
+   ]
+  },
+  "w.balkon": {
+   "id": "w.balkon",
+   "lemma": "balkon",
+   "pos": "noun",
+   "gloss": [
+    "balcony"
+   ]
+  },
+  "w.yatak": {
+   "id": "w.yatak",
+   "lemma": "yatak",
+   "pos": "noun",
+   "gloss": [
+    "bed"
+   ],
+   "flags": [
+    "soft"
+   ],
+   "images": [
+    "img.openmoji.bed"
+   ]
+  },
+  "w.dolap": {
+   "id": "w.dolap",
+   "lemma": "dolap",
+   "pos": "noun",
+   "gloss": [
+    "cupboard",
+    "wardrobe"
+   ],
+   "flags": [
+    "soft"
+   ],
+   "images": [
+    "img.tbd.cupboard"
+   ]
+  },
+  "w.kanepe": {
+   "id": "w.kanepe",
+   "lemma": "kanepe",
+   "pos": "noun",
+   "gloss": [
+    "sofa",
+    "couch"
+   ],
+   "images": [
+    "img.openmoji.sofa"
+   ]
+  },
+  "w.lamba": {
+   "id": "w.lamba",
+   "lemma": "lamba",
+   "pos": "noun",
+   "gloss": [
+    "lamp"
+   ],
+   "images": [
+    "img.tbd.lamp"
+   ]
+  },
+  "w.halı": {
+   "id": "w.halı",
+   "lemma": "halı",
+   "pos": "noun",
+   "gloss": [
+    "carpet",
+    "rug"
+   ]
+  },
+  "w.buzdolabı": {
+   "id": "w.buzdolabı",
+   "lemma": "buzdolabı",
+   "pos": "noun",
+   "gloss": [
+    "fridge"
+   ],
+   "flags": [
+    "compound"
+   ],
+   "forms": {
+    "pl": "buzdolapları"
+   }
+  },
+  "w.ayna": {
+   "id": "w.ayna",
+   "lemma": "ayna",
+   "pos": "noun",
+   "gloss": [
+    "mirror"
+   ]
+  },
+  "w.duvar": {
+   "id": "w.duvar",
+   "lemma": "duvar",
+   "pos": "noun",
+   "gloss": [
+    "wall"
+   ]
+  },
+  "w.oğul": {
+   "id": "w.oğul",
+   "lemma": "oğul",
+   "pos": "noun",
+   "gloss": [
+    "son"
+   ],
+   "flags": [
+    "drop"
+   ]
+  },
+  "w.Ali": {
+   "id": "w.Ali",
+   "lemma": "Ali",
+   "pos": "name",
+   "gloss": [
+    "Ali (male name)"
+   ]
+  }
+ },
+ "sentences": {
+  "s.L10.001": {
+   "id": "s.L10.001",
+   "tr": "Kedi nerede?",
+   "en": [
+    "Where is the cat?"
+   ],
+   "words": [
+    "w.kedi",
+    "w.nerede"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.001",
+   "native_required": true
+  },
+  "s.L10.002": {
+   "id": "s.L10.002",
+   "tr": "Kedi kanepede.",
+   "en": [
+    "The cat is on the sofa.",
+    "The cat is on the couch."
+   ],
+   "words": [
+    "w.kedi",
+    "w.kanepe"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.002"
+  },
+  "s.L10.003": {
+   "id": "s.L10.003",
+   "tr": "Kitap nerede?",
+   "en": [
+    "Where is the book?"
+   ],
+   "words": [
+    "w.kitap",
+    "w.nerede"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.003",
+   "native_required": true
+  },
+  "s.L10.004": {
+   "id": "s.L10.004",
+   "tr": "Kitap çantada.",
+   "en": [
+    "The book is in the bag."
+   ],
+   "words": [
+    "w.kitap",
+    "w.çanta"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.004"
+  },
+  "s.L10.005": {
+   "id": "s.L10.005",
+   "tr": "Telefon çantada.",
+   "en": [
+    "The phone is in the bag."
+   ],
+   "words": [
+    "w.telefon",
+    "w.çanta"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.005"
+  },
+  "s.L10.006": {
+   "id": "s.L10.006",
+   "tr": "Kitap masada.",
+   "en": [
+    "The book is on the table."
+   ],
+   "words": [
+    "w.kitap",
+    "w.masa"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.006"
+  },
+  "s.L10.007": {
+   "id": "s.L10.007",
+   "tr": "Bahçede iki kedi var.",
+   "en": [
+    "There are two cats in the garden.",
+    "There are 2 cats in the garden."
+   ],
+   "words": [
+    "w.bahçe",
+    "w.iki",
+    "w.kedi",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L10.loc",
+    "g.L8.varyok",
+    "g.L9.adj_num"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.007"
+  },
+  "s.L10.008": {
+   "id": "s.L10.008",
+   "tr": "Kalem masada.",
+   "en": [
+    "The pen is on the table."
+   ],
+   "words": [
+    "w.kalem",
+    "w.masa"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.008"
+  },
+  "s.L10.009": {
+   "id": "s.L10.009",
+   "tr": "Ali evde.",
+   "en": [
+    "Ali is at home."
+   ],
+   "words": [
+    "w.Ali",
+    "w.ev"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.009"
+  },
+  "s.L10.010": {
+   "id": "s.L10.010",
+   "tr": "Kitap çantada mı?",
+   "en": [
+    "Is the book in the bag?"
+   ],
+   "words": [
+    "w.kitap",
+    "w.çanta"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.010",
+   "native_required": true
+  },
+  "s.L10.011": {
+   "id": "s.L10.011",
+   "tr": "Hayır, kitap yatakta.",
+   "en": [
+    "No, the book is on the bed.",
+    "No, the book is in the bed."
+   ],
+   "words": [
+    "w.hayır",
+    "w.kitap",
+    "w.yatak"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.011"
+  },
+  "s.L10.012": {
+   "id": "s.L10.012",
+   "tr": "Dolapta süt var mı?",
+   "en": [
+    "Is there milk in the cupboard?",
+    "Is there any milk in the cupboard?"
+   ],
+   "words": [
+    "w.dolap",
+    "w.süt",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L10.loc",
+    "g.L8.varyok",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.012",
+   "native_required": true
+  },
+  "s.L10.013": {
+   "id": "s.L10.013",
+   "tr": "Lamba odada.",
+   "en": [
+    "The lamp is in the room."
+   ],
+   "words": [
+    "w.lamba",
+    "w.oda"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.013"
+  },
+  "s.L10.014": {
+   "id": "s.L10.014",
+   "tr": "Telefon nerede?",
+   "en": [
+    "Where is the phone?"
+   ],
+   "words": [
+    "w.telefon",
+    "w.nerede"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.014",
+   "native_required": true
+  },
+  "s.L10.015": {
+   "id": "s.L10.015",
+   "tr": "Telefon kanepede.",
+   "en": [
+    "The phone is on the sofa."
+   ],
+   "words": [
+    "w.telefon",
+    "w.kanepe"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.015"
+  },
+  "s.L10.016": {
+   "id": "s.L10.016",
+   "tr": "Teşekkürler!",
+   "en": [
+    "Thanks!",
+    "Thank you!"
+   ],
+   "words": [
+    "w.teşekkürler"
+   ],
+   "grammar": [],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.016",
+   "native_required": true
+  },
+  "s.L10.017": {
+   "id": "s.L10.017",
+   "tr": "Lamba nerede?",
+   "en": [
+    "Where is the lamp?"
+   ],
+   "words": [
+    "w.lamba",
+    "w.nerede"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L10.017",
+   "native_required": true
+  },
+  "s.T8.001": {
+   "id": "s.T8.001",
+   "tr": "Büyük bir mutfak.",
+   "en": [
+    "A big kitchen."
+   ],
+   "words": [
+    "w.büyük",
+    "w.bir",
+    "w.mutfak"
+   ],
+   "grammar": [
+    "g.L9.adj_num"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.T8.001"
+  },
+  "s.T8.002": {
+   "id": "s.T8.002",
+   "tr": "Yatak yeni mi?",
+   "en": [
+    "Is the bed new?"
+   ],
+   "words": [
+    "w.yatak",
+    "w.yeni"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.T8.002",
+   "native_required": true
+  }
+ },
+ "suffixes": {
+  "sfx.pl": {
+   "id": "sfx.pl",
+   "form": "lAr",
+   "gloss": "plural",
+   "slot": "plural",
+   "introduced_by": "g.L4.plural"
+  },
+  "sfx.cop_1sg": {
+   "id": "sfx.cop_1sg",
+   "form": "(y)Im",
+   "gloss": "I am",
+   "slot": "copula",
+   "introduced_by": "g.L5.copula"
+  },
+  "sfx.cop_2sg": {
+   "id": "sfx.cop_2sg",
+   "form": "sIn",
+   "gloss": "you are",
+   "slot": "copula",
+   "introduced_by": "g.L5.copula"
+  },
+  "sfx.cop_1pl": {
+   "id": "sfx.cop_1pl",
+   "form": "(y)Iz",
+   "gloss": "we are",
+   "slot": "copula",
+   "introduced_by": "g.L5.copula"
+  },
+  "sfx.cop_2pl": {
+   "id": "sfx.cop_2pl",
+   "form": "sInIz",
+   "gloss": "you (pl./polite) are",
+   "slot": "copula",
+   "introduced_by": "g.L5.copula"
+  },
+  "sfx.cop_3pl": {
+   "id": "sfx.cop_3pl",
+   "form": "lAr",
+   "gloss": "they are",
+   "slot": "copula",
+   "introduced_by": "g.L5.copula"
+  },
+  "sfx.q": {
+   "id": "sfx.q",
+   "form": "mI",
+   "gloss": "question particle (written separately)",
+   "slot": "question",
+   "introduced_by": "g.L7.question"
+  },
+  "sfx.loc": {
+   "id": "sfx.loc",
+   "form": "DA",
+   "gloss": "in / at / on",
+   "slot": "case",
+   "introduced_by": "g.L10.loc"
+  },
+  "sfx.abl": {
+   "id": "sfx.abl",
+   "form": "DAn",
+   "gloss": "from",
+   "slot": "case",
+   "introduced_by": "g.L12.abl"
+  },
+  "sfx.inf": {
+   "id": "sfx.inf",
+   "form": "mAk",
+   "gloss": "infinitive",
+   "slot": "derivation",
+   "introduced_by": "g.L14.imperative"
+  },
+  "sfx.imp_pol": {
+   "id": "sfx.imp_pol",
+   "form": "(y)In(Iz)",
+   "gloss": "polite / plural command",
+   "slot": "person",
+   "introduced_by": "g.L14.imperative"
+  },
+  "sfx.prog": {
+   "id": "sfx.prog",
+   "form": "(I)yor",
+   "gloss": "present continuous",
+   "slot": "tense",
+   "introduced_by": "g.L15.prog"
+  },
+  "sfx.neg": {
+   "id": "sfx.neg",
+   "form": "mA",
+   "gloss": "verb negation",
+   "slot": "verb_negation",
+   "introduced_by": "g.L16.prog_neg_q"
+  },
+  "sfx.dat": {
+   "id": "sfx.dat",
+   "form": "(y)A",
+   "gloss": "to / toward",
+   "slot": "case",
+   "introduced_by": "g.L17.dat"
+  },
+  "sfx.acc": {
+   "id": "sfx.acc",
+   "form": "(y)I",
+   "gloss": "specific direct object",
+   "slot": "case",
+   "introduced_by": "g.L18.acc"
+  },
+  "sfx.poss_1sg": {
+   "id": "sfx.poss_1sg",
+   "form": "(I)m",
+   "gloss": "my",
+   "slot": "possessive",
+   "introduced_by": "g.L19.poss_sg"
+  },
+  "sfx.poss_2sg": {
+   "id": "sfx.poss_2sg",
+   "form": "(I)n",
+   "gloss": "your",
+   "slot": "possessive",
+   "introduced_by": "g.L19.poss_sg"
+  },
+  "sfx.poss_3sg": {
+   "id": "sfx.poss_3sg",
+   "form": "(s)I",
+   "gloss": "his / her / its",
+   "slot": "possessive",
+   "introduced_by": "g.L19.poss_sg"
+  },
+  "sfx.poss_1pl": {
+   "id": "sfx.poss_1pl",
+   "form": "(I)mIz",
+   "gloss": "our",
+   "slot": "possessive",
+   "introduced_by": "g.L20.poss_pl"
+  },
+  "sfx.poss_2pl": {
+   "id": "sfx.poss_2pl",
+   "form": "(I)nIz",
+   "gloss": "your (pl.)",
+   "slot": "possessive",
+   "introduced_by": "g.L20.poss_pl"
+  },
+  "sfx.poss_3pl": {
+   "id": "sfx.poss_3pl",
+   "form": "lArI",
+   "gloss": "their",
+   "slot": "possessive",
+   "introduced_by": "g.L20.poss_pl"
+  },
+  "sfx.gen": {
+   "id": "sfx.gen",
+   "form": "(n)In",
+   "gloss": "of / 's",
+   "slot": "case",
+   "introduced_by": "g.L21.gen"
+  },
+  "sfx.ins": {
+   "id": "sfx.ins",
+   "form": "(y)lA",
+   "gloss": "with / by",
+   "slot": "case",
+   "introduced_by": "g.L27.ile"
+  },
+  "sfx.li": {
+   "id": "sfx.li",
+   "form": "lI",
+   "gloss": "with / from (origin)",
+   "slot": "derivation",
+   "introduced_by": "g.L28.li_siz"
+  },
+  "sfx.siz": {
+   "id": "sfx.siz",
+   "form": "sIz",
+   "gloss": "without",
+   "slot": "derivation",
+   "introduced_by": "g.L28.li_siz"
+  },
+  "sfx.ci": {
+   "id": "sfx.ci",
+   "form": "CI",
+   "gloss": "person who does / sells",
+   "slot": "derivation",
+   "introduced_by": "g.L28.li_siz"
+  },
+  "sfx.past": {
+   "id": "sfx.past",
+   "form": "DI",
+   "gloss": "past tense",
+   "slot": "tense",
+   "introduced_by": "g.L30.past"
+  },
+  "sfx.cop_past": {
+   "id": "sfx.cop_past",
+   "form": "(y)DI",
+   "gloss": "was / were",
+   "slot": "copula",
+   "introduced_by": "g.L32.copula_past"
+  },
+  "sfx.fut": {
+   "id": "sfx.fut",
+   "form": "(y)AcAK",
+   "gloss": "future",
+   "slot": "tense",
+   "introduced_by": "g.L33.future"
+  }
+ },
+ "morphTests": [
+  {
+   "word": "w.masa",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "masada",
+   "note": "back vowel, after vowel"
+  },
+  {
+   "word": "w.ev",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "evde",
+   "note": "front vowel"
+  },
+  {
+   "word": "w.okul",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "okulda"
+  },
+  {
+   "word": "w.kitap",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "kitapta",
+   "note": "voiceless p, no softening before a consonant"
+  },
+  {
+   "word": "w.mutfak",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "mutfakta"
+  },
+  {
+   "word": "w.süt",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "sütte"
+  },
+  {
+   "word": "w.otobüs",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "otobüste",
+   "note": "only the last vowel counts"
+  },
+  {
+   "word": "w.kanepe",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "kanepede"
+  },
+  {
+   "word": "w.ev",
+   "suffixes": [
+    "sfx.pl",
+    "sfx.loc"
+   ],
+   "expected": "evlerde"
+  },
+  {
+   "word": "w.saat",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "saatte",
+   "note": "front flag"
+  },
+  {
+   "word": "w.yatak_odası",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "yatak odasında",
+   "note": "compound: buffer n"
+  },
+  {
+   "word": "w.kitap",
+   "suffixes": [
+    "sfx.dat"
+   ],
+   "expected": "kitaba"
+  },
+  {
+   "word": "w.kitap",
+   "suffixes": [
+    "sfx.acc"
+   ],
+   "expected": "kitabı"
+  },
+  {
+   "word": "w.mutfak",
+   "suffixes": [
+    "sfx.dat"
+   ],
+   "expected": "mutfağa"
+  },
+  {
+   "word": "w.masa",
+   "suffixes": [
+    "sfx.dat"
+   ],
+   "expected": "masaya",
+   "note": "buffer y"
+  },
+  {
+   "word": "w.oğul",
+   "suffixes": [
+    "sfx.acc"
+   ],
+   "expected": "oğlu",
+   "note": "vowel drop"
+  },
+  {
+   "word": "w.su",
+   "suffixes": [
+    "sfx.acc"
+   ],
+   "expected": "suyu",
+   "note": "irregular"
+  },
+  {
+   "word": "w.su",
+   "suffixes": [
+    "sfx.gen"
+   ],
+   "expected": "suyun",
+   "note": "irregular"
+  },
+  {
+   "word": "w.saat",
+   "suffixes": [
+    "sfx.acc"
+   ],
+   "expected": "saati",
+   "note": "front flag"
+  },
+  {
+   "word": "w.buzdolabı",
+   "suffixes": [
+    "sfx.acc"
+   ],
+   "expected": "buzdolabını",
+   "note": "compound"
+  },
+  {
+   "word": "w.buzdolabı",
+   "suffixes": [
+    "sfx.pl"
+   ],
+   "expected": "buzdolapları",
+   "note": "compound: possessive moves after the plural"
+  }
+ ],
+ "assets": {
+  "img.openmoji.house": {
+   "id": "img.openmoji.house",
+   "kind": "image",
+   "file": "images/openmoji/1F3E0.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F3E0/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.book": {
+   "id": "img.openmoji.book",
+   "kind": "image",
+   "file": "images/openmoji/1F4D5.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F4D5/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.cat": {
+   "id": "img.openmoji.cat",
+   "kind": "image",
+   "file": "images/openmoji/1F408.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F408/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.bus": {
+   "id": "img.openmoji.bus",
+   "kind": "image",
+   "file": "images/openmoji/1F68C.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F68C/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.phone": {
+   "id": "img.openmoji.phone",
+   "kind": "image",
+   "file": "images/openmoji/1F4F1.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F4F1/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.bag": {
+   "id": "img.openmoji.bag",
+   "kind": "image",
+   "file": "images/openmoji/1F45C.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F45C/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.milk": {
+   "id": "img.openmoji.milk",
+   "kind": "image",
+   "file": "images/openmoji/1F95B.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F95B/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.bed": {
+   "id": "img.openmoji.bed",
+   "kind": "image",
+   "file": "images/openmoji/1F6CF.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F6CF/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.sofa": {
+   "id": "img.openmoji.sofa",
+   "kind": "image",
+   "file": "images/openmoji/1F6CB.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F6CB/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.tbd.table": {
+   "id": "img.tbd.table",
+   "kind": "image",
+   "source": "tbd",
+   "license": "CC0-1.0",
+   "status": "planned",
+   "notes": "No Unicode emoji for 'table'. Look for a CC0 / CC BY icon."
+  },
+  "img.tbd.cupboard": {
+   "id": "img.tbd.cupboard",
+   "kind": "image",
+   "source": "tbd",
+   "license": "CC0-1.0",
+   "status": "planned"
+  },
+  "img.tbd.lamp": {
+   "id": "img.tbd.lamp",
+   "kind": "image",
+   "source": "tbd",
+   "license": "CC0-1.0",
+   "status": "planned"
+  },
+  "img.own.room_scene": {
+   "id": "img.own.room_scene",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.cat",
+    "img.openmoji.sofa",
+    "img.openmoji.book",
+    "img.tbd.table",
+    "img.openmoji.phone",
+    "img.openmoji.bag",
+    "img.tbd.lamp"
+   ],
+   "notes": "Room: cat on sofa, book on table, phone in bag, lamp."
+  },
+  "img.own.cat_on_table": {
+   "id": "img.own.cat_on_table",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.cat",
+    "img.tbd.table"
+   ]
+  },
+  "img.own.phone_in_bag": {
+   "id": "img.own.phone_in_bag",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.phone",
+    "img.openmoji.bag"
+   ]
+  },
+  "img.own.phone_on_sofa": {
+   "id": "img.own.phone_on_sofa",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.phone",
+    "img.openmoji.sofa"
+   ]
+  },
+  "img.own.phone_on_table": {
+   "id": "img.own.phone_on_table",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.phone",
+    "img.tbd.table"
+   ]
+  },
+  "img.own.book_on_bed": {
+   "id": "img.own.book_on_bed",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.book",
+    "img.openmoji.bed"
+   ]
+  },
+  "img.own.vowel_chart": {
+   "id": "img.own.vowel_chart",
+   "kind": "image",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "notes": "2×2 vowel chart, also an interactive component (L2)."
+  },
+  "aud.ll.ev": {
+   "id": "aud.ll.ev",
+   "kind": "audio",
+   "source": "lingualibre",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "text": "ev"
+  },
+  "aud.ll.okul": {
+   "id": "aud.ll.okul",
+   "kind": "audio",
+   "source": "lingualibre",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "text": "okul"
+  },
+  "aud.ll.kitap": {
+   "id": "aud.ll.kitap",
+   "kind": "audio",
+   "source": "lingualibre",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "text": "kitap"
+  },
+  "aud.ll.masa": {
+   "id": "aud.ll.masa",
+   "kind": "audio",
+   "source": "lingualibre",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "text": "masa"
+  },
+  "aud.ll.kedi": {
+   "id": "aud.ll.kedi",
+   "kind": "audio",
+   "source": "lingualibre",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "text": "kedi"
+  },
+  "aud.ll.otobüs": {
+   "id": "aud.ll.otobüs",
+   "kind": "audio",
+   "source": "lingualibre",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "text": "otobüs"
+  },
+  "aud.ll.telefon": {
+   "id": "aud.ll.telefon",
+   "kind": "audio",
+   "source": "lingualibre",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "text": "telefon"
+  },
+  "aud.own.fistikci_sahap": {
+   "id": "aud.own.fistikci_sahap",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Fıstıkçı Şahap (slow, then normal)"
+  },
+  "aud.own.L10_worked_examples": {
+   "id": "aud.own.L10_worked_examples",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "odada, evde, dolapta, otobüste, evlerde"
+  },
+  "aud.own.s.L10.001": {
+   "id": "aud.own.s.L10.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kedi nerede?"
+  },
+  "aud.own.s.L10.002": {
+   "id": "aud.own.s.L10.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kedi kanepede."
+  },
+  "aud.own.s.L10.003": {
+   "id": "aud.own.s.L10.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kitap nerede?"
+  },
+  "aud.own.s.L10.004": {
+   "id": "aud.own.s.L10.004",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kitap çantada."
+  },
+  "aud.own.s.L10.005": {
+   "id": "aud.own.s.L10.005",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Telefon çantada."
+  },
+  "aud.own.s.L10.006": {
+   "id": "aud.own.s.L10.006",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kitap masada."
+  },
+  "aud.own.s.L10.007": {
+   "id": "aud.own.s.L10.007",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bahçede iki kedi var."
+  },
+  "aud.own.s.L10.008": {
+   "id": "aud.own.s.L10.008",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kalem masada."
+  },
+  "aud.own.s.L10.009": {
+   "id": "aud.own.s.L10.009",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali evde."
+  },
+  "aud.own.s.L10.010": {
+   "id": "aud.own.s.L10.010",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kitap çantada mı?"
+  },
+  "aud.own.s.L10.011": {
+   "id": "aud.own.s.L10.011",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Hayır, kitap yatakta."
+  },
+  "aud.own.s.L10.012": {
+   "id": "aud.own.s.L10.012",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Dolapta süt var mı?"
+  },
+  "aud.own.s.L10.013": {
+   "id": "aud.own.s.L10.013",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Lamba odada."
+  },
+  "aud.own.s.L10.014": {
+   "id": "aud.own.s.L10.014",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Telefon nerede?"
+  },
+  "aud.own.s.L10.015": {
+   "id": "aud.own.s.L10.015",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Telefon kanepede."
+  },
+  "aud.own.s.L10.016": {
+   "id": "aud.own.s.L10.016",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Teşekkürler!"
+  },
+  "aud.own.s.L10.017": {
+   "id": "aud.own.s.L10.017",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Lamba nerede?"
+  },
+  "aud.own.s.T8.001": {
+   "id": "aud.own.s.T8.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Büyük bir mutfak."
+  },
+  "aud.own.s.T8.002": {
+   "id": "aud.own.s.T8.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Yatak yeni mi?"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+# A1 suffix inventory in archiphoneme notation (CURRICULUM.md §2).
+# A = a/e · I = ı/i/u/ü · D = d/t · C = c/ç · (y) (n) (s) = buffers used only after a vowel.
+
+- { id: sfx.pl,        form: lAr,     gloss: plural,                    slot: plural,     introduced_by: g.L4.plural }
+- { id: sfx.cop_1sg,   form: (y)Im,   gloss: "I am",                    slot: copula,     introduced_by: g.L5.copula }
+- { id: sfx.cop_2sg,   form: sIn,     gloss: "you are",                 slot: copula,     introduced_by: g.L5.copula }
+- { id: sfx.cop_1pl,   form: (y)Iz,   gloss: "we are",                  slot: copula,     introduced_by: g.L5.copula }
+- { id: sfx.cop_2pl,   form: sInIz,   gloss: "you (pl./polite) are",    slot: copula,     introduced_by: g.L5.copula }
+- { id: sfx.cop_3pl,   form: lAr,     gloss: "they are",                slot: copula,     introduced_by: g.L5.copula }
+- { id: sfx.q,         form: mI,      gloss: question particle (written separately), slot: question, introduced_by: g.L7.question }
+- { id: sfx.loc,       form: DA,      gloss: "in / at / on",            slot: case,       introduced_by: g.L10.loc }
+- { id: sfx.abl,       form: DAn,     gloss: "from",                    slot: case,       introduced_by: g.L12.abl }
+- { id: sfx.inf,       form: mAk,     gloss: infinitive,                slot: derivation, introduced_by: g.L14.imperative }
+- { id: sfx.imp_pol,   form: (y)In(Iz), gloss: polite / plural command, slot: person,     introduced_by: g.L14.imperative }
+- { id: sfx.prog,      form: (I)yor,  gloss: present continuous,        slot: tense,      introduced_by: g.L15.prog }
+- { id: sfx.neg,       form: mA,      gloss: verb negation,             slot: verb_negation, introduced_by: g.L16.prog_neg_q }
+- { id: sfx.dat,       form: (y)A,    gloss: "to / toward",             slot: case,       introduced_by: g.L17.dat }
+- { id: sfx.acc,       form: (y)I,    gloss: specific direct object,    slot: case,       introduced_by: g.L18.acc }
+- { id: sfx.poss_1sg,  form: (I)m,    gloss: "my",                      slot: possessive, introduced_by: g.L19.poss_sg }
+- { id: sfx.poss_2sg,  form: (I)n,    gloss: "your",                    slot: possessive, introduced_by: g.L19.poss_sg }
+- { id: sfx.poss_3sg,  form: (s)I,    gloss: "his / her / its",         slot: possessive, introduced_by: g.L19.poss_sg }
+- { id: sfx.poss_1pl,  form: (I)mIz,  gloss: "our",                     slot: possessive, introduced_by: g.L20.poss_pl }
+- { id: sfx.poss_2pl,  form: (I)nIz,  gloss: "your (pl.)",              slot: possessive, introduced_by: g.L20.poss_pl }
+- { id: sfx.poss_3pl,  form: lArI,    gloss: "their",                   slot: possessive, introduced_by: g.L20.poss_pl }
+- { id: sfx.gen,       form: (n)In,   gloss: "of / 's",                 slot: case,       introduced_by: g.L21.gen }
+- { id: sfx.ins,       form: (y)lA,   gloss: "with / by",               slot: case,       introduced_by: g.L27.ile }
+- { id: sfx.li,        form: lI,      gloss: "with / from (origin)",    slot: derivation, introduced_by: g.L28.li_siz }
+- { id: sfx.siz,       form: sIz,     gloss: "without",                 slot: derivation, introduced_by: g.L28.li_siz }
+- { id: sfx.ci,        form: CI,      gloss: "person who does / sells", slot: derivation, introduced_by: g.L28.li_siz }
+- { id: sfx.past,      form: DI,      gloss: past tense,                slot: tense,      introduced_by: g.L30.past }
+- { id: sfx.cop_past,  form: (y)DI,   gloss: "was / were",              slot: copula,     introduced_by: g.L32.copula_past }
+- { id: sfx.fut,       form: (y)AcAK, gloss: future,                    slot: tense,      introduced_by: g.L33.future }

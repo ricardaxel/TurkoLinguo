@@ -1,0 +1,13 @@
+id: T8
+title: Home & furniture
+kind: core
+packs:
+  - id: T8.p1
+    unlock_after: L9
+    words: [w.ev, w.oda, w.mutfak, w.banyo, w.salon, w.yatak_odası, w.bahçe, w.balkon]
+    frames: [s.T8.001]
+  - id: T8.p2
+    unlock_after: L9
+    words: [w.yatak, w.dolap, w.kanepe, w.lamba, w.halı, w.buzdolabı, w.ayna, w.duvar]
+    frames: [s.T8.002]
+revisit: [L10, L19, L24]

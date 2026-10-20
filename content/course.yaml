@@ -1,0 +1,49 @@
+# Course structure: the single source of truth for lesson order (see CURRICULUM.md).
+# A lesson without `file` is planned but not written yet.
+
+units:
+  - { id: U0, title: Sounds, lessons: [L1, L2] }
+  - { id: U1, title: Who & what, lessons: [L3, L4, L5, L6, L7, L8, L9], checkpoint: C1 }
+  - { id: U2, title: Where, lessons: [L10, L11, L12, L13], checkpoint: C2 }
+  - { id: U3, title: Actions, lessons: [L14, L15, L16, L17, L18], checkpoint: C3 }
+  - { id: U4, title: Mine & yours, lessons: [L19, L20, L21, L22, L23, L24], checkpoint: C4 }
+  - { id: U5, title: Daily life, lessons: [L25, L26, L27, L28, L29], checkpoint: C5 }
+  - { id: U6, title: Yesterday, lessons: [L30, L31, L32], checkpoint: C6 }
+  - { id: U7, title: Plans & wishes, lessons: [L33, L34, L35], checkpoint: C7 }
+
+lessons:
+  L1:  { title: "Alphabet & pronunciation", grammar: g.L1.alphabet }
+  L2:  { title: "Vowel harmony: the two families", grammar: g.L2.harmony }
+  L3:  { title: "This / that, bir, no 'is' in the 3rd person", grammar: g.L3.basics }
+  L4:  { title: "Plural -lAr", grammar: g.L4.plural }
+  L5:  { title: "Personal pronouns + 'to be' endings", grammar: g.L5.copula }
+  L6:  { title: "Negation of 'to be': değil", grammar: g.L6.degil }
+  L7:  { title: "Questions with mI", grammar: g.L7.question }
+  L8:  { title: "var / yok", grammar: g.L8.varyok }
+  L9:  { title: "Adjectives & numbers 1–10", grammar: g.L9.adj_num }
+  L10: { title: "Locative -DA: in / at / on", grammar: g.L10.loc, file: lessons/L10.yaml }
+  L11: { title: "Location + 'to be'; apostrophes", grammar: g.L11.loc_copula }
+  L12: { title: "Ablative -DAn: from", grammar: g.L12.abl }
+  L13: { title: "Clitic de/da vs locative; ve, ama", grammar: g.L13.clitic_de }
+  L14: { title: "Verbs, infinitive, imperative", grammar: g.L14.imperative }
+  L15: { title: "Present continuous -(I)yor", grammar: g.L15.prog }
+  L16: { title: "Present continuous: negative & questions", grammar: g.L16.prog_neg_q }
+  L17: { title: "Dative -(y)A + softening & vowel drop", grammar: g.L17.dat }
+  L18: { title: "Accusative -(y)I: the specific object", grammar: g.L18.acc }
+  L19: { title: "Possessives (singular owners)", grammar: g.L19.poss_sg }
+  L20: { title: "Possessives (plural owners)", grammar: g.L20.poss_pl }
+  L21: { title: "Genitive -(n)In", grammar: g.L21.gen }
+  L22: { title: "Compound nouns", grammar: g.L22.compound }
+  L23: { title: "Having: possessive + var/yok", grammar: g.L23.have }
+  L24: { title: "Cases after possessives: buffer n", grammar: g.L24.poss_case }
+  L25: { title: "Numbers 11–1000, prices", grammar: g.L25.numbers }
+  L26: { title: "Time & days", grammar: g.L26.time }
+  L27: { title: "-(y)lA / ile", grammar: g.L27.ile }
+  L28: { title: "-lI / -sIz, origin, -CI", grammar: g.L28.li_siz }
+  L29: { title: "Comparison: daha, en", grammar: g.L29.comparison }
+  L30: { title: "Past tense -DI", grammar: g.L30.past }
+  L31: { title: "Past: negative & questions", grammar: g.L31.past_neg_q }
+  L32: { title: "Past of 'to be': -(y)DI", grammar: g.L32.copula_past }
+  L33: { title: "Future -(y)AcAK", grammar: g.L33.future }
+  L34: { title: "istemek + -mAk", grammar: g.L34.istemek }
+  L35: { title: "Need: -mAk lazım / gerek", grammar: g.L35.lazim }

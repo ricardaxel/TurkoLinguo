@@ -1,0 +1,66 @@
+# Every image and audio file, with source and licence. The Credits screen is generated from this.
+# Allowed licences only (no NC / ND). status: planned until the file exists and its licence is checked.
+
+# ---------- Images: OpenMoji (CC BY-SA 4.0) ----------
+- { id: img.openmoji.house, kind: image, file: images/openmoji/1F3E0.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3E0/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.book,  kind: image, file: images/openmoji/1F4D5.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F4D5/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.cat,   kind: image, file: images/openmoji/1F408.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F408/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.bus,   kind: image, file: images/openmoji/1F68C.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F68C/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.phone, kind: image, file: images/openmoji/1F4F1.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F4F1/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.bag,   kind: image, file: images/openmoji/1F45C.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F45C/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.milk,  kind: image, file: images/openmoji/1F95B.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F95B/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.bed,   kind: image, file: images/openmoji/1F6CF.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F6CF/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.sofa,  kind: image, file: images/openmoji/1F6CB.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F6CB/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+
+# ---------- Images: no standard emoji, to be found on Wikimedia Commons / Openverse ----------
+- { id: img.tbd.table,    kind: image, source: tbd, license: CC0-1.0, status: planned, notes: "No Unicode emoji for 'table'. Look for a CC0 / CC BY icon." }
+- { id: img.tbd.cupboard, kind: image, source: tbd, license: CC0-1.0, status: planned }
+- { id: img.tbd.lamp,     kind: image, source: tbd, license: CC0-1.0, status: planned }
+
+# ---------- Images: our composites (adaptations of CC BY-SA icons → CC BY-SA) ----------
+- id: img.own.room_scene
+  kind: image
+  source: own
+  license: CC-BY-SA-4.0
+  status: planned
+  modified: true
+  derived_from: [img.openmoji.cat, img.openmoji.sofa, img.openmoji.book, img.tbd.table, img.openmoji.phone, img.openmoji.bag, img.tbd.lamp]
+  notes: "Room: cat on sofa, book on table, phone in bag, lamp."
+- { id: img.own.cat_on_table,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.cat, img.tbd.table] }
+- { id: img.own.phone_in_bag,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.phone, img.openmoji.bag] }
+- { id: img.own.phone_on_sofa,  kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.phone, img.openmoji.sofa] }
+- { id: img.own.phone_on_table, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.phone, img.tbd.table] }
+- { id: img.own.book_on_bed,    kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.book, img.openmoji.bed] }
+- { id: img.own.vowel_chart,    kind: image, source: own, license: OWN, status: planned, notes: "2×2 vowel chart, also an interactive component (L2)." }
+
+# ---------- Audio: Lingua Libre words (licence to confirm per file, usually CC BY-SA 4.0) ----------
+- { id: aud.ll.ev,      kind: audio, source: lingualibre, license: CC-BY-SA-4.0, status: planned, text: "ev" }
+- { id: aud.ll.okul,    kind: audio, source: lingualibre, license: CC-BY-SA-4.0, status: planned, text: "okul" }
+- { id: aud.ll.kitap,   kind: audio, source: lingualibre, license: CC-BY-SA-4.0, status: planned, text: "kitap" }
+- { id: aud.ll.masa,    kind: audio, source: lingualibre, license: CC-BY-SA-4.0, status: planned, text: "masa" }
+- { id: aud.ll.kedi,    kind: audio, source: lingualibre, license: CC-BY-SA-4.0, status: planned, text: "kedi" }
+- { id: aud.ll.otobüs,  kind: audio, source: lingualibre, license: CC-BY-SA-4.0, status: planned, text: "otobüs" }
+- { id: aud.ll.telefon, kind: audio, source: lingualibre, license: CC-BY-SA-4.0, status: planned, text: "telefon" }
+
+# ---------- Audio: our recording session (native speakers, written agreement) ----------
+- { id: aud.own.fistikci_sahap,      kind: audio, source: own, license: OWN, status: planned, text: "Fıstıkçı Şahap (slow, then normal)" }
+- { id: aud.own.L10_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "odada, evde, dolapta, otobüste, evlerde" }
+- { id: aud.own.s.L10.001, kind: audio, source: own, license: OWN, status: planned, text: "Kedi nerede?" }
+- { id: aud.own.s.L10.002, kind: audio, source: own, license: OWN, status: planned, text: "Kedi kanepede." }
+- { id: aud.own.s.L10.003, kind: audio, source: own, license: OWN, status: planned, text: "Kitap nerede?" }
+- { id: aud.own.s.L10.004, kind: audio, source: own, license: OWN, status: planned, text: "Kitap çantada." }
+- { id: aud.own.s.L10.005, kind: audio, source: own, license: OWN, status: planned, text: "Telefon çantada." }
+- { id: aud.own.s.L10.006, kind: audio, source: own, license: OWN, status: planned, text: "Kitap masada." }
+- { id: aud.own.s.L10.007, kind: audio, source: own, license: OWN, status: planned, text: "Bahçede iki kedi var." }
+- { id: aud.own.s.L10.008, kind: audio, source: own, license: OWN, status: planned, text: "Kalem masada." }
+- { id: aud.own.s.L10.009, kind: audio, source: own, license: OWN, status: planned, text: "Ali evde." }
+- { id: aud.own.s.L10.010, kind: audio, source: own, license: OWN, status: planned, text: "Kitap çantada mı?" }
+- { id: aud.own.s.L10.011, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, kitap yatakta." }
+- { id: aud.own.s.L10.012, kind: audio, source: own, license: OWN, status: planned, text: "Dolapta süt var mı?" }
+- { id: aud.own.s.L10.013, kind: audio, source: own, license: OWN, status: planned, text: "Lamba odada." }
+- { id: aud.own.s.L10.014, kind: audio, source: own, license: OWN, status: planned, text: "Telefon nerede?" }
+- { id: aud.own.s.L10.015, kind: audio, source: own, license: OWN, status: planned, text: "Telefon kanepede." }
+- { id: aud.own.s.L10.016, kind: audio, source: own, license: OWN, status: planned, text: "Teşekkürler!" }
+- { id: aud.own.s.L10.017, kind: audio, source: own, license: OWN, status: planned, text: "Lamba nerede?" }
+- { id: aud.own.s.T8.001,  kind: audio, source: own, license: OWN, status: planned, text: "Büyük bir mutfak." }
+- { id: aud.own.s.T8.002,  kind: audio, source: own, license: OWN, status: planned, text: "Yatak yeni mi?" }

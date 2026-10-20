@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://turkolinguo.local/schema/content.schema.json",
+  "title": "TurkoLinguo content",
+  "description": "One $def per file kind. The validator picks the $def from the file's directory (see docs/CONTENT_FORMAT.md).",
+  "$defs": {
+    "lessonId": { "type": "string", "pattern": "^L[0-9]+$" },
+    "checkpointId": { "type": "string", "pattern": "^C[0-9]+$" },
+    "grammarId": { "type": "string", "pattern": "^g\\.L[0-9]+\\.[a-z0-9_]+$" },
+    "patternId": { "type": "string", "pattern": "^g\\.L[0-9]+\\.[a-z0-9_]+\\.[a-z0-9_]+$" },
+    "themeId": { "type": "string", "pattern": "^T[0-9]+b?$" },
+    "packId": { "type": "string", "pattern": "^T[0-9]+b?\\.p[0-9]+$" },
+    "wordId": { "type": "string", "pattern": "^w\\.[^\\s.]+(\\.[a-z0-9_]+)?$" },
+    "sentenceId": { "type": "string", "pattern": "^s\\.[A-Za-z0-9_]+\\.[0-9]{3}$" },
+    "itemId": { "type": "string", "pattern": "^(L|C)[0-9]+\\.(learn|practise|check)\\.[0-9]{2}$" },
+    "suffixId": { "type": "string", "pattern": "^sfx\\.[a-z0-9_]+$" },
+    "imageId": { "type": "string", "pattern": "^img\\.[a-z0-9_]+\\.[^\\s]+$" },
+    "audioId": { "type": "string", "pattern": "^aud\\.[a-z0-9_]+\\.[^\\s]+$" },
+    "mediaId": { "anyOf": [ { "$ref": "#/$defs/imageId" }, { "$ref": "#/$defs/audioId" } ] },
+    "markdown": { "type": "string", "minLength": 1 },
+    "flag": { "enum": ["soft", "nosoft", "drop", "front", "compound", "double", "irr"] },
+    "pos": { "enum": ["noun", "verb", "adj", "adv", "pron", "num", "postp", "conj", "interj", "particle", "name", "phrase"] },
+    "license": { "enum": ["CC0-1.0", "PD", "CC-BY-3.0", "CC-BY-4.0", "CC-BY-SA-3.0", "CC-BY-SA-4.0", "OWN", "TTS"] },
+    "sentenceLicense": { "enum": ["CC0-1.0", "CC-BY-2.0-FR", "CC-BY-4.0", "CC-BY-SA-4.0", "OWN"] },
+
+    "course": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["units", "lessons"],
+      "properties": {
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "title", "lessons"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^U[0-9]+$" },
+              "title": { "type": "string" },
+              "lessons": { "type": "array", "items": { "$ref": "#/$defs/lessonId" }, "minItems": 1 },
+              "checkpoint": { "$ref": "#/$defs/checkpointId" }
+            }
+          }
+        },
+        "lessons": {
+          "type": "object",
+          "propertyNames": { "$ref": "#/$defs/lessonId" },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["title", "grammar"],
+            "properties": {
+              "title": { "type": "string" },
+              "grammar": { "$ref": "#/$defs/grammarId" },
+              "file": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "grammar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "reference"],
+      "properties": {
+        "id": { "$ref": "#/$defs/grammarId" },
+        "title": { "type": "string" },
+        "suffixes": { "type": "array", "items": { "$ref": "#/$defs/suffixId" } },
+        "reference": { "$ref": "#/$defs/markdown" },
+        "patterns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "description"],
+            "properties": {
+              "id": { "$ref": "#/$defs/patternId" },
+              "description": { "type": "string" },
+              "suffix": { "$ref": "#/$defs/suffixId" },
+              "word_filter": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "pos": { "$ref": "#/$defs/pos" },
+                  "last_vowel": { "enum": ["back", "front"] },
+                  "ends_with": { "enum": ["vowel", "voiceless", "voiced_consonant"] },
+                  "last_vowel_differs_from_first": { "type": "boolean" },
+                  "flags": { "type": "array", "items": { "$ref": "#/$defs/flag" } }
+                }
+              }
+            }
+          }
+        },
+        "feedback": { "type": "object", "additionalProperties": { "type": "string" } }
+      }
+    },
+
+    "card": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "body"],
+      "properties": {
+        "kind": { "enum": ["hook", "rule", "examples", "note", "summary"] },
+        "title": { "type": "string" },
+        "body": { "$ref": "#/$defs/markdown" },
+        "audio": { "type": "array", "items": { "$ref": "#/$defs/audioId" } },
+        "images": { "type": "array", "items": { "$ref": "#/$defs/imageId" } },
+        "sentences": { "type": "array", "items": { "$ref": "#/$defs/sentenceId" } },
+        "interactive": {
+          "type": "object",
+          "required": ["component"],
+          "properties": { "component": { "type": "string" }, "params": { "type": "object" } }
+        }
+      }
+    },
+
+    "feedbackSpec": {
+      "oneOf": [
+        { "type": "string", "pattern": "^auto:g\\.L[0-9]+\\.[a-z0-9_]+$" },
+        { "type": "object", "additionalProperties": { "type": "string" } }
+      ]
+    },
+
+    "item": {
+      "type": "object",
+      "required": ["id", "type", "grammar"],
+      "properties": {
+        "id": { "$ref": "#/$defs/itemId" },
+        "type": { "enum": ["pick_suffix", "type_form", "build_word", "translate_to_tr", "translate_to_en", "listen_choose", "dictation", "spot_error", "picture_choose", "qa", "mini_dialogue", "contrast_pair"] },
+        "grammar": { "type": "array", "items": { "$ref": "#/$defs/grammarId" }, "minItems": 1 },
+        "pattern": { "$ref": "#/$defs/patternId" },
+        "feedback": { "$ref": "#/$defs/feedbackSpec" },
+        "note": { "type": "string" },
+        "images": { "type": "array", "items": { "$ref": "#/$defs/imageId" } },
+        "audio": { "type": "array", "items": { "$ref": "#/$defs/audioId" } },
+        "base": { "$ref": "#/$defs/wordId" },
+        "suffix": { "$ref": "#/$defs/suffixId" },
+        "suffixes": { "type": "array", "items": { "$ref": "#/$defs/suffixId" }, "minItems": 1 },
+        "prompt": { "type": "string" },
+        "options": { "type": "array", "minItems": 2, "items": { "type": "string" } },
+        "answer": { "type": ["string", "integer"] },
+        "answers": { "type": "array", "items": { "type": "string" } },
+        "tiles": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+        "sentence": { "$ref": "#/$defs/sentenceId" },
+        "word_bank": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+        "typed": { "type": "boolean" },
+        "text": { "type": "string" },
+        "error": { "type": "string" },
+        "question": { "$ref": "#/$defs/sentenceId" },
+        "turns": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["speaker"],
+            "properties": {
+              "speaker": { "enum": ["A", "B"] },
+              "sentence": { "$ref": "#/$defs/sentenceId" },
+              "blank": { "const": true },
+              "answers": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+            },
+            "oneOf": [ { "required": ["sentence"] }, { "required": ["blank", "answers"] } ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        { "if": { "properties": { "type": { "const": "pick_suffix" } } }, "then": { "required": ["base", "suffix", "options", "answer"] } },
+        { "if": { "properties": { "type": { "const": "type_form" } } }, "then": { "required": ["base", "suffixes", "prompt", "answer"] } },
+        { "if": { "properties": { "type": { "const": "build_word" } } }, "then": { "required": ["tiles", "answer"] } },
+        { "if": { "properties": { "type": { "const": "translate_to_tr" } } }, "then": { "required": ["sentence"], "oneOf": [ { "required": ["word_bank"] }, { "required": ["typed"] } ] } },
+        { "if": { "properties": { "type": { "const": "translate_to_en" } } }, "then": { "required": ["sentence"] } },
+        { "if": { "properties": { "type": { "const": "listen_choose" } } }, "then": { "required": ["sentence", "options", "answer"] } },
+        { "if": { "properties": { "type": { "const": "dictation" } } }, "then": { "required": ["sentence"] } },
+        { "if": { "properties": { "type": { "const": "spot_error" } } }, "then": { "required": ["text", "error", "answer", "sentence"] } },
+        { "if": { "properties": { "type": { "const": "picture_choose" } } }, "then": { "required": ["images", "prompt", "options", "answer"] } },
+        { "if": { "properties": { "type": { "const": "qa" } } }, "then": { "required": ["question", "answers"] } },
+        { "if": { "properties": { "type": { "const": "mini_dialogue" } } }, "then": { "required": ["turns"] } },
+        { "if": { "properties": { "type": { "const": "contrast_pair" } } }, "then": { "required": ["prompt", "options", "answer"] } }
+      ]
+    },
+
+    "lesson": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "grammar", "sessions"],
+      "properties": {
+        "id": { "$ref": "#/$defs/lessonId" },
+        "title": { "type": "string" },
+        "grammar": { "$ref": "#/$defs/grammarId" },
+        "new_words": { "type": "array", "items": { "$ref": "#/$defs/wordId" } },
+        "not_yet": { "type": "array", "items": { "type": "string" }, "description": "Author notes: forms deliberately avoided in this lesson." },
+        "sessions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["learn", "practise"],
+          "properties": {
+            "learn": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["cards", "items"],
+              "properties": {
+                "minutes": { "type": "number" },
+                "cards": { "type": "array", "items": { "$ref": "#/$defs/card" }, "minItems": 1 },
+                "items": { "type": "array", "items": { "$ref": "#/$defs/item" } }
+              }
+            },
+            "practise": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["items"],
+              "properties": {
+                "minutes": { "type": "number" },
+                "items": { "type": "array", "items": { "$ref": "#/$defs/item" }, "minItems": 1 }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "packFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "kind", "packs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/themeId" },
+        "title": { "type": "string" },
+        "kind": { "enum": ["core", "elective"] },
+        "packs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "unlock_after", "words"],
+            "properties": {
+              "id": { "$ref": "#/$defs/packId" },
+              "unlock_after": { "$ref": "#/$defs/lessonId" },
+              "words": { "type": "array", "items": { "$ref": "#/$defs/wordId" }, "minItems": 1, "maxItems": 12 },
+              "frames": { "type": "array", "items": { "$ref": "#/$defs/sentenceId" } }
+            }
+          }
+        },
+        "revisit": { "type": "array", "items": { "$ref": "#/$defs/lessonId" } }
+      }
+    },
+
+    "word": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "lemma", "pos", "gloss"],
+      "properties": {
+        "id": { "$ref": "#/$defs/wordId" },
+        "lemma": { "type": "string" },
+        "pos": { "$ref": "#/$defs/pos" },
+        "gloss": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "flags": { "type": "array", "items": { "$ref": "#/$defs/flag" }, "uniqueItems": true },
+        "forms": { "type": "object", "additionalProperties": { "type": "string" } },
+        "stem": { "type": "string" },
+        "images": { "type": "array", "items": { "$ref": "#/$defs/imageId" } },
+        "audio": { "$ref": "#/$defs/audioId" },
+        "freq_rank": { "type": "integer", "minimum": 1 },
+        "notes": { "type": "string" }
+      }
+    },
+    "lexiconFile": { "type": "array", "items": { "$ref": "#/$defs/word" } },
+
+    "sentence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "tr", "en", "words", "grammar", "source"],
+      "properties": {
+        "id": { "$ref": "#/$defs/sentenceId" },
+        "tr": { "type": "string" },
+        "en": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "words": { "type": "array", "items": { "$ref": "#/$defs/wordId" } },
+        "grammar": { "type": "array", "items": { "$ref": "#/$defs/grammarId" } },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind"],
+          "properties": {
+            "kind": { "enum": ["original", "tatoeba"] },
+            "id": { "type": "integer" },
+            "license": { "$ref": "#/$defs/sentenceLicense" }
+          },
+          "if": { "properties": { "kind": { "const": "tatoeba" } } },
+          "then": { "required": ["id", "license"] }
+        },
+        "audio": { "$ref": "#/$defs/audioId" },
+        "native_required": { "type": "boolean" },
+        "phrase": { "type": "boolean" }
+      }
+    },
+    "sentencesFile": { "type": "array", "items": { "$ref": "#/$defs/sentence" } },
+
+    "suffixesFile": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "form", "gloss", "introduced_by"],
+        "properties": {
+          "id": { "$ref": "#/$defs/suffixId" },
+          "form": { "type": "string", "description": "Archiphoneme notation: A I D C, (y) (n) (s) buffers." },
+          "gloss": { "type": "string" },
+          "slot": { "enum": ["derivation", "plural", "possessive", "case", "copula", "verb_negation", "tense", "person", "question"] },
+          "introduced_by": { "$ref": "#/$defs/grammarId" }
+        }
+      }
+    },
+    "morphTestsFile": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["word", "suffixes", "expected"],
+        "properties": {
+          "word": { "$ref": "#/$defs/wordId" },
+          "suffixes": { "type": "array", "items": { "$ref": "#/$defs/suffixId" } },
+          "expected": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "source", "license", "status"],
+      "properties": {
+        "id": { "$ref": "#/$defs/mediaId" },
+        "kind": { "enum": ["image", "audio"] },
+        "file": { "type": "string" },
+        "source": { "enum": ["openmoji", "wikimedia", "openverse", "lingualibre", "own", "tts", "tbd"] },
+        "source_url": { "type": "string" },
+        "author": { "type": "string" },
+        "license": { "$ref": "#/$defs/license" },
+        "status": { "enum": ["planned", "ready"] },
+        "modified": { "type": "boolean" },
+        "derived_from": { "type": "array", "items": { "$ref": "#/$defs/mediaId" } },
+        "speaker": { "type": "string" },
+        "text": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "allOf": [
+        { "if": { "properties": { "status": { "const": "ready" } } }, "then": { "required": ["file", "author"] } },
+        { "if": { "properties": { "source": { "const": "tts" } } }, "then": { "properties": { "license": { "const": "TTS" } } } }
+      ]
+    },
+    "assetsFile": { "type": "array", "items": { "$ref": "#/$defs/asset" } }
+  }
+}

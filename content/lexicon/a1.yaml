@@ -1,0 +1,62 @@
+# A1 lexicon (partial: the words needed by L10 and T8 so far).
+# Flags: see VOCABULARY.md §5. Multi-word lemmas use "_" in the ID.
+
+# --- L2 core nouns ---
+- { id: w.ev, lemma: ev, pos: noun, gloss: [house, home], images: [img.openmoji.house], audio: aud.ll.ev }
+- { id: w.okul, lemma: okul, pos: noun, gloss: [school], audio: aud.ll.okul }
+- { id: w.kitap, lemma: kitap, pos: noun, gloss: [book], flags: [soft], images: [img.openmoji.book], audio: aud.ll.kitap }
+- { id: w.su, lemma: su, pos: noun, gloss: [water], flags: [irr], forms: { acc: suyu, gen: suyun, poss3: suyu } }
+- { id: w.masa, lemma: masa, pos: noun, gloss: [table], images: [img.tbd.table], audio: aud.ll.masa }
+- { id: w.kedi, lemma: kedi, pos: noun, gloss: [cat], images: [img.openmoji.cat], audio: aud.ll.kedi }
+
+# --- function words (L3, L7, L8, L9) ---
+- { id: w.bir, lemma: bir, pos: num, gloss: [a, one] }
+- { id: w.iki, lemma: iki, pos: num, gloss: [two] }
+- { id: w.nerede, lemma: nerede, pos: adv, gloss: [where], notes: "Contains the locative: nere·de. Explained in L10." }
+- { id: w.var, lemma: var, pos: particle, gloss: [there is, there are] }
+- { id: w.büyük, lemma: büyük, pos: adj, gloss: [big] }
+- { id: w.yeni, lemma: yeni, pos: adj, gloss: [new] }
+
+# --- L10 new words ---
+- { id: w.burada, lemma: burada, pos: adv, gloss: [here], notes: "bura·da" }
+- { id: w.orada, lemma: orada, pos: adv, gloss: [there], notes: "ora·da" }
+
+# --- T1 greetings ---
+- { id: w.hayır, lemma: hayır, pos: interj, gloss: ["no"] }
+- { id: w.teşekkürler, lemma: teşekkürler, pos: interj, gloss: [thanks] }
+
+# --- T2 cognates ---
+- { id: w.otobüs, lemma: otobüs, pos: noun, gloss: [bus], images: [img.openmoji.bus], audio: aud.ll.otobüs }
+- { id: w.telefon, lemma: telefon, pos: noun, gloss: [phone], images: [img.openmoji.phone], audio: aud.ll.telefon }
+
+# --- T3 objects ---
+- { id: w.kalem, lemma: kalem, pos: noun, gloss: [pen, pencil] }
+- { id: w.çanta, lemma: çanta, pos: noun, gloss: [bag], images: [img.openmoji.bag] }
+- { id: w.saat, lemma: saat, pos: noun, gloss: [watch, clock, hour], flags: [front] }
+- { id: w.pencere, lemma: pencere, pos: noun, gloss: [window] }
+
+# --- T6 café ---
+- { id: w.süt, lemma: süt, pos: noun, gloss: [milk], images: [img.openmoji.milk] }
+
+# --- T8 home & furniture ---
+- { id: w.oda, lemma: oda, pos: noun, gloss: [room] }
+- { id: w.mutfak, lemma: mutfak, pos: noun, gloss: [kitchen], flags: [soft] }
+- { id: w.banyo, lemma: banyo, pos: noun, gloss: [bathroom] }
+- { id: w.salon, lemma: salon, pos: noun, gloss: [living room] }
+- { id: w.yatak_odası, lemma: yatak odası, pos: noun, gloss: [bedroom], flags: [compound] }
+- { id: w.bahçe, lemma: bahçe, pos: noun, gloss: [garden] }
+- { id: w.balkon, lemma: balkon, pos: noun, gloss: [balcony] }
+- { id: w.yatak, lemma: yatak, pos: noun, gloss: [bed], flags: [soft], images: [img.openmoji.bed] }
+- { id: w.dolap, lemma: dolap, pos: noun, gloss: [cupboard, wardrobe], flags: [soft], images: [img.tbd.cupboard] }
+- { id: w.kanepe, lemma: kanepe, pos: noun, gloss: [sofa, couch], images: [img.openmoji.sofa] }
+- { id: w.lamba, lemma: lamba, pos: noun, gloss: [lamp], images: [img.tbd.lamp] }
+- { id: w.halı, lemma: halı, pos: noun, gloss: [carpet, rug] }
+- { id: w.buzdolabı, lemma: buzdolabı, pos: noun, gloss: [fridge], flags: [compound], forms: { pl: buzdolapları } }
+- { id: w.ayna, lemma: ayna, pos: noun, gloss: [mirror] }
+- { id: w.duvar, lemma: duvar, pos: noun, gloss: [wall] }
+
+# --- T14 family (for morphology tests) ---
+- { id: w.oğul, lemma: oğul, pos: noun, gloss: [son], flags: [drop] }
+
+# --- names (never need introducing) ---
+- { id: w.Ali, lemma: Ali, pos: name, gloss: [Ali (male name)] }

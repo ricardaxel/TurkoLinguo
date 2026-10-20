@@ -1,0 +1,141 @@
+# L10 — converted from lessons/L10-locative.md. Format: docs/CONTENT_FORMAT.md
+id: L10
+title: "Locative -DA: in / at / on"
+grammar: g.L10.loc
+new_words: [w.burada, w.orada]
+not_yet:
+  - "personal endings on the location (evdeyim) → L11"
+  - "apostrophes on names (İstanbul'da) → L11"
+  - "the separate word de 'too' → L13"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🐈 **Kedi nerede?** "Where is the cat?"
+          🛋️ **Kedi kanepede.** "The cat is on the sofa."
+
+          Turkish doesn't say *on the sofa*. It adds an ending to the word: **kanepe → kanepe·de**.
+        sentences: [s.L10.001, s.L10.002]
+        audio: [aud.own.s.L10.001, aud.own.s.L10.002]
+
+      - kind: rule
+        title: "Meaning: in, at, on"
+        body: |
+          **-DA = in, at, on**. One ending covers all three English prepositions.
+
+          | Turkish | English |
+          |---|---|
+          | ev·**de** | **at** home / **in** the house |
+          | masa·**da** | **on** the table |
+          | çanta·**da** | **in** the bag |
+
+          💡 There's no "is" in *Kedi kanepede*. As in L3, the 3rd person needs no verb "to be".
+
+      - kind: rule
+        title: "The vowel: a or e?"
+        body: |
+          The **A** in -DA follows 2-way harmony. Look at the **last vowel** of the word:
+
+          | Last vowel | Ending | Examples |
+          |---|---|---|
+          | a ı o u (back) | **-da** | oda·da, okul·da, banyo·da |
+          | e i ö ü (front) | **-de** | ev·de, bahçe·de, pencere·de |
+
+          ⚠️ Only the **last** vowel counts: o·to·**bü**s → front → otobüs·**te** (not ~~otobüsta~~).
+        interactive:
+          component: vowel_chart_tap
+          params: { words: [w.otobüs, w.kanepe, w.okul] }
+
+      - kind: rule
+        title: "The consonant: d or t?"
+        body: |
+          The **D** in -DA becomes **t** after a *voiceless* consonant. There are only 8 of them:
+
+          **F**ı**st**ı**kç**ı **Ş**a**h**a**p** — "Şahap the pistachio seller" → **f s t k ç ş h p**
+
+          | Word ends in… | Ending | Examples |
+          |---|---|---|
+          | a vowel | -da / -de | masa·da, kanepe·de |
+          | another consonant | -da / -de | okul·da, ev·de |
+          | f s t k ç ş h p | **-ta / -te** | kitap·**ta**, mutfak·**ta**, süt·**te**, otobüs·**te** |
+
+          ✅ -DA starts with a consonant, so **the word itself never changes**: *kitap → kitapta*.
+        audio: [aud.own.fistikci_sahap]
+
+      - kind: examples
+        title: "Step by step"
+        body: |
+          Two questions, every time: **which vowel?** then **which consonant?**
+
+          Plural first, then the location: **ev·ler·de** "in the houses".
+        audio: [aud.own.L10_worked_examples]
+        interactive:
+          component: suffix_steps
+          params: { words: [w.oda, w.ev, w.dolap, w.otobüs], suffix: sfx.loc }
+
+      - kind: rule
+        title: "Where?"
+        body: |
+          **Nerede?** "Where?" — *Kitap nerede? — Kitap çantada.*
+          **burada** "here" · **orada** "there" (they already contain -da: bura·da, ora·da)
+        sentences: [s.L10.003, s.L10.004]
+
+    items:
+      - { id: L10.learn.01, type: pick_suffix, grammar: [g.L10.loc], pattern: g.L10.loc.after_vowel, base: w.masa, suffix: sfx.loc, options: [da, de, ta, te], answer: da, feedback: "auto:g.L10.loc" }
+      - { id: L10.learn.02, type: pick_suffix, grammar: [g.L10.loc], pattern: g.L10.loc.front, base: w.ev, suffix: sfx.loc, options: [da, de, ta, te], answer: de, feedback: "auto:g.L10.loc" }
+      - { id: L10.learn.03, type: pick_suffix, grammar: [g.L10.loc], pattern: g.L10.loc.voiceless, base: w.kitap, suffix: sfx.loc, options: [da, de, ta, te], answer: ta, feedback: "auto:g.L10.loc" }
+      - { id: L10.learn.04, type: pick_suffix, grammar: [g.L10.loc], pattern: g.L10.loc.after_vowel, base: w.bahçe, suffix: sfx.loc, options: [da, de, ta, te], answer: de, feedback: "auto:g.L10.loc" }
+      - id: L10.learn.05
+        type: picture_choose
+        grammar: [g.L10.loc]
+        images: [img.own.cat_on_table]
+        prompt: "Kedi …"
+        options: [masada, masade, masata]
+        answer: masada
+        feedback: "auto:g.L10.loc"
+      - id: L10.learn.06
+        type: listen_choose
+        grammar: [g.L10.loc]
+        sentence: s.L10.005
+        options: [img.own.phone_in_bag, img.own.phone_on_sofa, img.own.phone_on_table]
+        answer: img.own.phone_in_bag
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L10.practise.01, type: pick_suffix, grammar: [g.L10.loc], pattern: g.L10.loc.back, base: w.okul, suffix: sfx.loc, options: [da, de, ta, te], answer: da, feedback: "auto:g.L10.loc" }
+      - { id: L10.practise.02, type: pick_suffix, grammar: [g.L10.loc], pattern: g.L10.loc.last_vowel, base: w.otobüs, suffix: sfx.loc, options: [da, de, ta, te], answer: te, feedback: "auto:g.L10.loc", note: "Trap: first vowel o is back, last vowel ü is front." }
+      - { id: L10.practise.03, type: type_form, grammar: [g.L10.loc], pattern: g.L10.loc.voiceless, base: w.mutfak, suffixes: [sfx.loc], prompt: "in the kitchen", answer: mutfakta, feedback: "auto:g.L10.loc" }
+      - { id: L10.practise.04, type: type_form, grammar: [g.L10.loc], pattern: g.L10.loc.voiceless, base: w.süt, suffixes: [sfx.loc], prompt: "in the milk", answer: sütte, feedback: "auto:g.L10.loc", note: "A double t is correct." }
+      - { id: L10.practise.05, type: build_word, grammar: [g.L10.loc, g.L4.plural], tiles: [ev, de, ler], answer: "ev·ler·de", feedback: { "ev·de·ler": "The plural comes first, then the location: **ev·ler·de**." } }
+      - { id: L10.practise.06, type: translate_to_tr, grammar: [g.L10.loc, g.L3.basics], sentence: s.L10.006, word_bank: [Kitap, masada, masade, var, bir] }
+      - { id: L10.practise.07, type: translate_to_tr, grammar: [g.L10.loc, g.L7.question], sentence: s.L10.001, word_bank: [Kedi, nerede, mı, masada] }
+      - { id: L10.practise.08, type: translate_to_en, grammar: [g.L10.loc, g.L8.varyok, g.L9.adj_num], sentence: s.L10.007 }
+      - { id: L10.practise.09, type: spot_error, grammar: [g.L10.loc], pattern: g.L10.loc.after_vowel, text: "Kalem masata.", error: masata, answer: masada, sentence: s.L10.008, feedback: "auto:g.L10.loc" }
+      - { id: L10.practise.10, type: spot_error, grammar: [g.L10.loc], pattern: g.L10.loc.front, text: "Ali evda.", error: evda, answer: evde, sentence: s.L10.009, feedback: "auto:g.L10.loc" }
+      - id: L10.practise.11
+        type: qa
+        grammar: [g.L10.loc, g.L7.question]
+        question: s.L10.010
+        images: [img.own.book_on_bed]
+        answers: ["(Hayır,) (kitap) yatakta."]
+        feedback: "auto:g.L10.loc"
+      - { id: L10.practise.12, type: dictation, grammar: [g.L10.loc, g.L8.varyok, g.L7.question], sentence: s.L10.012 }
+      - id: L10.practise.13
+        type: qa
+        grammar: [g.L10.loc]
+        question: s.L10.017
+        images: [img.own.room_scene]
+        answers: ["(Lamba) odada."]
+        feedback: "auto:g.L10.loc"
+      - id: L10.practise.14
+        type: mini_dialogue
+        grammar: [g.L10.loc, g.L7.question]
+        images: [img.own.phone_on_sofa]
+        turns:
+          - { speaker: A, sentence: s.L10.014 }
+          - { speaker: B, blank: true, answers: ["(Telefon) kanepede."] }
+          - { speaker: A, sentence: s.L10.016 }

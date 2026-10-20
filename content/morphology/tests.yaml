@@ -1,0 +1,26 @@
+# Expected forms: shared test cases for the app's form engine (and future validator checks).
+
+# Locative -DA (L10)
+- { word: w.masa,    suffixes: [sfx.loc], expected: masada,    note: "back vowel, after vowel" }
+- { word: w.ev,      suffixes: [sfx.loc], expected: evde,      note: "front vowel" }
+- { word: w.okul,    suffixes: [sfx.loc], expected: okulda }
+- { word: w.kitap,   suffixes: [sfx.loc], expected: kitapta,   note: "voiceless p, no softening before a consonant" }
+- { word: w.mutfak,  suffixes: [sfx.loc], expected: mutfakta }
+- { word: w.süt,     suffixes: [sfx.loc], expected: sütte }
+- { word: w.otobüs,  suffixes: [sfx.loc], expected: otobüste,  note: "only the last vowel counts" }
+- { word: w.kanepe,  suffixes: [sfx.loc], expected: kanepede }
+- { word: w.ev,      suffixes: [sfx.pl, sfx.loc], expected: evlerde }
+- { word: w.saat,    suffixes: [sfx.loc], expected: saatte,    note: "front flag" }
+- { word: w.yatak_odası, suffixes: [sfx.loc], expected: yatak odasında, note: "compound: buffer n" }
+
+# Vowel-initial endings (L17, L18): softening, vowel drop, irregulars
+- { word: w.kitap,   suffixes: [sfx.dat], expected: kitaba }
+- { word: w.kitap,   suffixes: [sfx.acc], expected: kitabı }
+- { word: w.mutfak,  suffixes: [sfx.dat], expected: mutfağa }
+- { word: w.masa,    suffixes: [sfx.dat], expected: masaya,    note: "buffer y" }
+- { word: w.oğul,    suffixes: [sfx.acc], expected: oğlu,      note: "vowel drop" }
+- { word: w.su,      suffixes: [sfx.acc], expected: suyu,      note: "irregular" }
+- { word: w.su,      suffixes: [sfx.gen], expected: suyun,     note: "irregular" }
+- { word: w.saat,    suffixes: [sfx.acc], expected: saati,     note: "front flag" }
+- { word: w.buzdolabı, suffixes: [sfx.acc], expected: buzdolabını, note: "compound" }
+- { word: w.buzdolabı, suffixes: [sfx.pl], expected: buzdolapları, note: "compound: possessive moves after the plural" }

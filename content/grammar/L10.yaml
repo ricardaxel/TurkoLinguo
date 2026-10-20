@@ -1,0 +1,47 @@
+id: g.L10.loc
+title: "Locative -DA: in / at / on"
+suffixes: [sfx.loc]
+
+reference: |
+  **-DA** means *in*, *at* or *on*: **ev·de** "at home", **masa·da** "on the table", **çanta·da** "in the bag".
+
+  **Vowel (A):** look at the *last* vowel of the word.
+  a ı o u → **-da** · e i ö ü → **-de**
+
+  **Consonant (D):** after one of the voiceless consonants **f s t k ç ş h p** ("**F**ı**st**ı**kç**ı **Ş**a**h**a**p**") → **-ta / -te**; otherwise **-da / -de**.
+
+  The word itself never changes before -DA: *kitap → kitapta*, *mutfak → mutfakta*.
+  After a plural: **ev·ler·de** "in the houses".
+
+patterns:
+  - id: g.L10.loc.back
+    description: "Back last vowel → -da"
+    suffix: sfx.loc
+    word_filter: { pos: noun, last_vowel: back, ends_with: voiced_consonant }
+  - id: g.L10.loc.front
+    description: "Front last vowel → -de"
+    suffix: sfx.loc
+    word_filter: { pos: noun, last_vowel: front, ends_with: voiced_consonant }
+  - id: g.L10.loc.after_vowel
+    description: "Word ends in a vowel → d"
+    suffix: sfx.loc
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L10.loc.voiceless
+    description: "Ends in f s t k ç ş h p → -ta / -te"
+    suffix: sfx.loc
+    word_filter: { pos: noun, ends_with: voiceless }
+  - id: g.L10.loc.last_vowel
+    description: "First and last vowels differ in harmony: only the last one counts"
+    suffix: sfx.loc
+    word_filter: { pos: noun, last_vowel_differs_from_first: true }
+
+feedback:
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-{D}a**."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-{D}e**."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  voiceless: "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: {answer}."
+  not_voiceless: "**{c}** is not in Fıstıkçı Şahap → **d**: {answer}."
+  after_vowel: "**{word}** ends in a vowel → always **d**: {answer}."
+  detached: "The location ending is **attached** to the word: **{answer}**."
+  stem_changed: "-DA starts with a consonant, so **{word}** doesn't change: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

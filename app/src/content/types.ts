@@ -1,0 +1,137 @@
+// Types for the content bundle produced by scripts/build_content.py.
+// Mirrors schema/content.schema.json (see docs/CONTENT_FORMAT.md).
+
+export type Flag = 'soft' | 'nosoft' | 'drop' | 'front' | 'compound' | 'double' | 'irr';
+
+export interface Word {
+  id: string;
+  lemma: string;
+  pos: string;
+  gloss: string[];
+  flags?: Flag[];
+  forms?: Record<string, string>;
+  images?: string[];
+  audio?: string;
+  notes?: string;
+}
+
+export interface Sentence {
+  id: string;
+  tr: string;
+  en: string[];
+  words: string[];
+  grammar: string[];
+  audio?: string;
+  native_required?: boolean;
+  phrase?: boolean;
+}
+
+export interface Suffix {
+  id: string;
+  form: string;
+  gloss: string;
+  slot?: string;
+  introduced_by: string;
+}
+
+export interface Pattern {
+  id: string;
+  description: string;
+  suffix?: string;
+}
+
+export interface GrammarPoint {
+  id: string;
+  title: string;
+  suffixes?: string[];
+  reference: string;
+  patterns?: Pattern[];
+  feedback?: Record<string, string>;
+}
+
+export interface Card {
+  kind: 'hook' | 'rule' | 'examples' | 'note' | 'summary';
+  title?: string;
+  body: string;
+  audio?: string[];
+  images?: string[];
+  sentences?: string[];
+  interactive?: { component: string; params?: Record<string, unknown> };
+}
+
+export interface DialogueTurn {
+  speaker: 'A' | 'B';
+  sentence?: string;
+  blank?: true;
+  answers?: string[];
+}
+
+export interface Item {
+  id: string;
+  type:
+    | 'pick_suffix' | 'type_form' | 'build_word' | 'translate_to_tr' | 'translate_to_en'
+    | 'listen_choose' | 'dictation' | 'spot_error' | 'picture_choose' | 'qa'
+    | 'mini_dialogue' | 'contrast_pair';
+  grammar: string[];
+  pattern?: string;
+  feedback?: string | Record<string, string>;
+  note?: string;
+  images?: string[];
+  audio?: string[];
+  base?: string;
+  suffix?: string;
+  suffixes?: string[];
+  prompt?: string;
+  options?: string[];
+  answer?: string;
+  answers?: string[];
+  tiles?: string[];
+  sentence?: string;
+  word_bank?: string[];
+  typed?: boolean;
+  text?: string;
+  error?: string;
+  question?: string;
+  turns?: DialogueTurn[];
+}
+
+export interface Lesson {
+  id: string;
+  title: string;
+  grammar: string;
+  new_words?: string[];
+  sessions: {
+    learn: { minutes?: number; cards: Card[]; items: Item[] };
+    practise: { minutes?: number; items: Item[] };
+  };
+}
+
+export interface Asset {
+  id: string;
+  kind: 'image' | 'audio';
+  file?: string;
+  source: string;
+  license: string;
+  status: 'planned' | 'ready';
+  derived_from?: string[];
+  text?: string;
+  notes?: string;
+}
+
+export interface Course {
+  units: { id: string; title: string; lessons: string[]; checkpoint?: string }[];
+  lessons: Record<string, { title: string; grammar: string; file?: string }>;
+}
+
+export interface Bundle {
+  version: number;
+  course: Course;
+  grammar: Record<string, GrammarPoint>;
+  lessons: Record<string, Lesson>;
+  packs: Record<string, unknown>;
+  lexicon: Record<string, Word>;
+  sentences: Record<string, Sentence>;
+  suffixes: Record<string, Suffix>;
+  morphTests: { word: string; suffixes: string[]; expected: string; note?: string }[];
+  assets: Record<string, Asset>;
+}

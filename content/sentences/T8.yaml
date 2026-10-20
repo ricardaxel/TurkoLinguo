@@ -1,0 +1,18 @@
+# Frame sentences for theme T8 (Home & furniture). Only grammar up to L9.
+
+- id: s.T8.001
+  tr: Büyük bir mutfak.
+  en: ["A big kitchen."]
+  words: [w.büyük, w.bir, w.mutfak]
+  grammar: [g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.T8.001
+
+- id: s.T8.002
+  tr: Yatak yeni mi?
+  en: ["Is the bed new?"]
+  words: [w.yatak, w.yeni]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.T8.002
+  native_required: true
