@@ -68,13 +68,13 @@ sessions:
         body: |
           Names of people and places keep their spelling, so an **apostrophe** separates the ending:
 
-          *İstanbul'**da*** "in Istanbul" · *Ankara'**dayım*** "I'm in Ankara" · *Ali'**de*** "at Ali's"
+          *İstanbul'**da*** "in Istanbul" · *Ankara'**dayım*** "I'm in Ankara" · *Ali'**de*** "Ali has it, it's with Ali"
 
           The ending follows the usual rules, based on how the name **sounds**: *Ahmet'**te*** (t after t), *İzmir'**deyim***, *Paris'**te***.
 
           Only **names** get the apostrophe. Language names don't: *Türkçe**de***, not ~~Türkçe'de~~.
 
-          🔊 Stress stays on the name: **İS**tanbul'da, **AN**kara'dayım.
+          🔊 Stress stays on the name: **AN**kara'dayım, **İZ**mir'de.
         sentences: [s.L11.009, s.L11.010]
         audio: [aud.own.s.L11.009, aud.own.s.L11.010]
 
@@ -116,7 +116,7 @@ sessions:
   practise:
     minutes: 5
     items:
-      - { id: L11.practise.01, type: type_form, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.back_1sg, base: w.okul, suffixes: [sfx.loc, sfx.cop_2sg], prompt: "you are at school", answer: okuldasın, feedback: { okuldasin: "-da has a back vowel, so the person ending is **-sın**: okuldasın." } }
+      - { id: L11.practise.01, type: type_form, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.back_2sg, base: w.okul, suffixes: [sfx.loc, sfx.cop_2sg], prompt: "you are at school", answer: okuldasın, feedback: { okuldasin: "-da has a back vowel, so the person ending is **-sın**: okuldasın." } }
       - { id: L11.practise.02, type: type_form, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.voiceless_1pl, base: w.park, suffixes: [sfx.loc, sfx.cop_1pl], prompt: "we are in the park", answer: parktayız, feedback: { parkdayız: "**park** ends in **k**, one of the Fıstıkçı Şahap letters → **t**: parktayız.", parktaız: "-ta ends in a vowel, so -(y)Iz needs the buffer **y**: parktayız.", parktayiz: "-ta has a back vowel, so the person ending is **-yız**: parktayız." } }
       - { id: L11.practise.03, type: type_form, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.plural_2pl, base: w.hastane, suffixes: [sfx.loc, sfx.cop_2pl], prompt: "you (plural / polite) are at the hospital", answer: hastanedesiniz }
       - { id: L11.practise.04, type: build_word, grammar: [g.L11.loc_copula], tiles: [market, te, yim], answer: "market·te·yim", feedback: { "market·yim·te": "Location first, then the person: **market·te·yim**." } }

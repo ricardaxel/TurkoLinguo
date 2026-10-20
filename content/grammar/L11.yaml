@@ -20,7 +20,7 @@ reference: |
 
   **Questions and negation** work as in L6–L7: *Evde misin?* "Are you at home?" · *Evde değilim.* "I'm not at home."
 
-  **Names take an apostrophe** before any ending: *İstanbul'da*, *Ankara'dayım*, *Ali'de* "at Ali's". The ending follows the usual rules: *Ahmet'te* (t after t).
+  **Names take an apostrophe** before any ending: *İstanbul'da*, *Ankara'dayım*, *Ali'de* "Ali has it, it's with Ali". The ending follows the usual rules: *Ahmet'te* (t after t).
 
   *Neredesin?* "Where are you?" = nere·de·sin.
 
@@ -28,6 +28,10 @@ patterns:
   - id: g.L11.loc_copula.back_1sg
     description: "Back vowel: -da + -yım (I am …)"
     suffixes: [sfx.loc, sfx.cop_1sg]
+    word_filter: { pos: noun, last_vowel: back }
+  - id: g.L11.loc_copula.back_2sg
+    description: "Back vowel: -da + -sın (you are …)"
+    suffixes: [sfx.loc, sfx.cop_2sg]
     word_filter: { pos: noun, last_vowel: back }
   - id: g.L11.loc_copula.front_2sg
     description: "Front vowel: -de + -sin (you are …)"
@@ -58,7 +62,7 @@ feedback:
   stem_changed: "-DA starts with a consonant, so **{word}** doesn't change: **{answer}**."
   # stacking and names (used by the per-item feedback maps until the engine diagnoses chains)
   no_buffer: "-DA ends in a vowel, so *-(y)Im / -(y)Iz* need the buffer **y**: **{answer}**."
-  person_harmony: "The person ending follows the vowel of **-DA** (a → ı, e → i):**{answer}**."
+  person_harmony: "The person ending follows the vowel of **-DA** (a → ı, e → i): **{answer}**."
   order: "Location first, then the person: **{answer}**."
   apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
   accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

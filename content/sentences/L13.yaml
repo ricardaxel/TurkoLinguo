@@ -177,7 +177,7 @@
 
 - id: s.L13.022
   tr: Ali'de.
-  en: ["At Ali's.", "It's at Ali's.", "Ali has it."]
+  en: ["Ali has it.", "It's with Ali.", "At Ali's.", "It's at Ali's."]
   words: [w.Ali]
   grammar: [g.L3.basics, g.L10.loc, g.L11.loc_copula]
   source: { kind: original }

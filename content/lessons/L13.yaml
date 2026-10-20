@@ -43,7 +43,7 @@ sessions:
           ✅ Ahmet **de** · kitap **da** · tavuk **da**
           ❌ ~~Ahmet te~~ · ~~kitap ta~~ · ~~tavuk ta~~
 
-          The locative, attached to the word, *does* change: kitap**ta** "in the book", Ahmet'**te** "at Ahmet's".
+          The locative, attached to the word, *does* change: kitap**ta** "in the book", Ahmet'**te** "with Ahmet".
         sentences: [s.L13.006, s.L13.015]
         audio: [aud.own.s.L13.006, aud.own.s.L13.015]
 
@@ -61,7 +61,7 @@ sessions:
 
           | too (separate) | location (attached) |
           |---|---|
-          | **Ali de.** "Ali too." | **Ali'de.** "At Ali's." / "Ali has it." |
+          | **Ali de.** "Ali too." | **Ali'de.** "Ali has it." / "It's with Ali." |
           | **Ben de.** "Me too." | **Bende.** "With me." / "I have it." |
 
           The clitic never takes an apostrophe: *Ali de*, not ~~Ali'de~~ for "Ali too".
@@ -140,7 +140,7 @@ sessions:
         prompt: "Ali too."
         options: [s.L13.021, s.L13.022]
         answer: s.L13.021
-        note: "Ali de (too) vs Ali'de (at Ali's): the clitic never takes an apostrophe."
+        note: "Ali de (too) vs Ali'de (Ali has it): the clitic never takes an apostrophe."
       - { id: L13.practise.10, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L11.loc_copula, g.L7.question], sentence: s.L13.010, typed: true }
       - { id: L13.practise.11, type: dictation, grammar: [g.L13.clitic_de, g.L10.loc], sentence: s.L13.012 }
       - id: L13.practise.12

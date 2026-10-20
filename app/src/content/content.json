@@ -247,7 +247,7 @@
    "suffixes": [
     "sfx.loc"
    ],
-   "reference": "**-DA** means *in*, *at* or *on*: **ev·de** \"at home\", **masa·da** \"on the table\", **çanta·da** \"in the bag\".\n\n**Vowel (A):** look at the *last* vowel of the word.\na ı o u → **-da** · e i ö ü → **-de**\n\n**Consonant (D):** after one of the voiceless consonants **f s t k ç ş h p** (\"**F**ı**st**ı**kç**ı **Ş**a**h**a**p**\") → **-ta / -te**; otherwise **-da / -de**.\n\nThe word itself never changes before -DA: *kitap → kitapta*, *mutfak → mutfakta*.\nAfter a plural: **ev·ler·de** \"in the houses\".\n",
+   "reference": "**-DA** means *in*, *at* or *on*: **ev·de** \"at home\", **masa·da** \"on the table\", **çanta·da** \"in the bag\".\n\n**Vowel (A):** look at the *last* vowel of the word.\na ı o u → **-da** · e i ö ü → **-de**\n\n**Consonant (D):** after one of the voiceless consonants **f s t k ç ş h p** (\"**F**ı**st**ı**kç**ı **Ş**a**h**a**p**\") → **-ta / -te**; otherwise **-da / -de**.\n\nThe word itself never changes before -DA: *kitap → kitapta*, *mutfak → mutfakta*.\nException: a compound like *yatak odası* adds **n**: *yatak odası·n·da* (explained in L24).\nAfter a plural: **ev·ler·de** \"in the houses\".\n",
    "patterns": [
     {
      "id": "g.L10.loc.back",
@@ -320,7 +320,7 @@
     "sfx.cop_2pl",
     "sfx.cop_3pl"
    ],
-   "reference": "To say *I am at home*, put the \"to be\" endings from L5 **after** -DA:\n\n| Pronoun | Form | Meaning |\n|---|---|---|\n| ben | ev·de·**yim** | I am at home |\n| sen | ev·de·**sin** | you are at home |\n| o | ev·de | he / she is at home |\n| biz | ev·de·**yiz** | we are at home |\n| siz | ev·de·**siniz** | you (pl. / polite) are at home |\n| onlar | ev·de(·**ler**) | they are at home |\n\n**Buffer y:** -DA always ends in a vowel, so *-(y)Im* and *-(y)Iz* always get their **y**: ev·de·**y**im, park·ta·**y**ız.\n\n**Harmony:** the person ending looks at the vowel of -DA. **-da** → -yım, -sın, -yız, -sınız, -lar · **-de** → -yim, -sin, -yiz, -siniz, -ler.\n\n**Questions and negation** work as in L6–L7: *Evde misin?* \"Are you at home?\" · *Evde değilim.* \"I'm not at home.\"\n\n**Names take an apostrophe** before any ending: *İstanbul'da*, *Ankara'dayım*, *Ali'de* \"at Ali's\". The ending follows the usual rules: *Ahmet'te* (t after t).\n\n*Neredesin?* \"Where are you?\" = nere·de·sin.\n",
+   "reference": "To say *I am at home*, put the \"to be\" endings from L5 **after** -DA:\n\n| Pronoun | Form | Meaning |\n|---|---|---|\n| ben | ev·de·**yim** | I am at home |\n| sen | ev·de·**sin** | you are at home |\n| o | ev·de | he / she is at home |\n| biz | ev·de·**yiz** | we are at home |\n| siz | ev·de·**siniz** | you (pl. / polite) are at home |\n| onlar | ev·de(·**ler**) | they are at home |\n\n**Buffer y:** -DA always ends in a vowel, so *-(y)Im* and *-(y)Iz* always get their **y**: ev·de·**y**im, park·ta·**y**ız.\n\n**Harmony:** the person ending looks at the vowel of -DA. **-da** → -yım, -sın, -yız, -sınız, -lar · **-de** → -yim, -sin, -yiz, -siniz, -ler.\n\n**Questions and negation** work as in L6–L7: *Evde misin?* \"Are you at home?\" · *Evde değilim.* \"I'm not at home.\"\n\n**Names take an apostrophe** before any ending: *İstanbul'da*, *Ankara'dayım*, *Ali'de* \"Ali has it, it's with Ali\". The ending follows the usual rules: *Ahmet'te* (t after t).\n\n*Neredesin?* \"Where are you?\" = nere·de·sin.\n",
    "patterns": [
     {
      "id": "g.L11.loc_copula.back_1sg",
@@ -328,6 +328,18 @@
      "suffixes": [
       "sfx.loc",
       "sfx.cop_1sg"
+     ],
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel": "back"
+     }
+    },
+    {
+     "id": "g.L11.loc_copula.back_2sg",
+     "description": "Back vowel: -da + -sın (you are …)",
+     "suffixes": [
+      "sfx.loc",
+      "sfx.cop_2sg"
      ],
      "word_filter": {
       "pos": "noun",
@@ -391,7 +403,7 @@
     "detached": "The location ending is **attached** to the word: **{answer}**.",
     "stem_changed": "-DA starts with a consonant, so **{word}** doesn't change: **{answer}**.",
     "no_buffer": "-DA ends in a vowel, so *-(y)Im / -(y)Iz* need the buffer **y**: **{answer}**.",
-    "person_harmony": "The person ending follows the vowel of **-DA** (a → ı, e → i):**{answer}**.",
+    "person_harmony": "The person ending follows the vowel of **-DA** (a → ı, e → i): **{answer}**.",
     "order": "Location first, then the person: **{answer}**.",
     "apostrophe": "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**.",
     "accent": "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."
@@ -483,7 +495,7 @@
    "id": "g.L13.clitic_de",
    "title": "Clitic de/da 'too' vs locative -DA; ve, ama",
    "suffixes": [],
-   "reference": "**de / da** = *too, also*. It is a **separate word**, placed right after the word it adds to:\n\n*Ben de.* \"Me too.\" · *Ayşe de evde.* \"Ayşe is at home **too**.\" · *Kitap da çantada.* \"The book is in the bag **too**.\"\n\n- **Vowel:** a/e harmony with the word before: a ı o u → **da**, e i ö ü → **de**.\n- **Consonant:** it **never** becomes *te / ta*: *Ahmet **de***, *kitap **da***, *tavuk **da*** (not ~~Ahmet te~~, ~~kitap ta~~).\n\n**Separate or attached?** The locative **-DA** is *attached* and does change d → t: *kitap**ta*** \"in the book\", *Ahmet'**te*** \"at Ahmet's\". Test: leave the word out. If the sentence still makes sense, it was the clitic: *Ahmet ~~de~~ parkta* → *Ahmet parkta*. ✓\n\nBoth together: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n\nThe clitic never takes an apostrophe. Watch these pairs: *Ali de* \"Ali too\" / *Ali'de* \"at Ali's\"; *ben de* \"me too\" / *bende* \"with me, I have it\".\n\n**ve** = *and* joins words: *Ali ve Ayşe evde.*\n**ama** = *but* joins two statements: *Ali evde ama Ayşe okulda.*\n",
+   "reference": "**de / da** = *too, also*. It is a **separate word**, placed right after the word it adds to:\n\n*Ben de.* \"Me too.\" · *Ayşe de evde.* \"Ayşe is at home **too**.\" · *Kitap da çantada.* \"The book is in the bag **too**.\"\n\n- **Vowel:** a/e harmony with the word before: a ı o u → **da**, e i ö ü → **de**.\n- **Consonant:** it **never** becomes *te / ta*: *Ahmet **de***, *kitap **da***, *tavuk **da*** (not ~~Ahmet te~~, ~~kitap ta~~).\n\n**Separate or attached?** The locative **-DA** is *attached* and does change d → t: *kitap**ta*** \"in the book\", *Ahmet'**te*** \"with Ahmet\". Test: leave the word out. If the sentence still makes sense, it was the clitic: *Ahmet ~~de~~ parkta* → *Ahmet parkta*. ✓\n\nBoth together: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n\nThe clitic never takes an apostrophe. Watch these pairs: *Ali de* \"Ali too\" / *Ali'de* \"Ali has it, it's with Ali\"; *ben de* \"me too\" / *bende* \"with me, I have it\".\n\n**ve** = *and* joins words: *Ali ve Ayşe evde.*\n**ama** = *but* joins two statements: *Ali evde ama Ayşe okulda.*\n",
    "patterns": [
     {
      "id": "g.L13.clitic_de.harmony",
@@ -980,7 +992,7 @@
       {
        "kind": "rule",
        "title": "Names take an apostrophe",
-       "body": "Names of people and places keep their spelling, so an **apostrophe** separates the ending:\n\n*İstanbul'**da*** \"in Istanbul\" · *Ankara'**dayım*** \"I'm in Ankara\" · *Ali'**de*** \"at Ali's\"\n\nThe ending follows the usual rules, based on how the name **sounds**: *Ahmet'**te*** (t after t), *İzmir'**deyim***, *Paris'**te***.\n\nOnly **names** get the apostrophe. Language names don't: *Türkçe**de***, not ~~Türkçe'de~~.\n\n🔊 Stress stays on the name: **İS**tanbul'da, **AN**kara'dayım.\n",
+       "body": "Names of people and places keep their spelling, so an **apostrophe** separates the ending:\n\n*İstanbul'**da*** \"in Istanbul\" · *Ankara'**dayım*** \"I'm in Ankara\" · *Ali'**de*** \"Ali has it, it's with Ali\"\n\nThe ending follows the usual rules, based on how the name **sounds**: *Ahmet'**te*** (t after t), *İzmir'**deyim***, *Paris'**te***.\n\nOnly **names** get the apostrophe. Language names don't: *Türkçe**de***, not ~~Türkçe'de~~.\n\n🔊 Stress stays on the name: **AN**kara'dayım, **İZ**mir'de.\n",
        "sentences": [
         "s.L11.009",
         "s.L11.010"
@@ -1109,7 +1121,7 @@
        "grammar": [
         "g.L11.loc_copula"
        ],
-       "pattern": "g.L11.loc_copula.back_1sg",
+       "pattern": "g.L11.loc_copula.back_2sg",
        "base": "w.okul",
        "suffixes": [
         "sfx.loc",
@@ -1400,7 +1412,7 @@
       {
        "kind": "note",
        "title": "Preview: verbs that want 'from'",
-       "body": "Some verbs take -DAn where English uses another preposition. You'll use them once verbs arrive (L17); just notice them for now:\n\n- **korkmak** \"to be afraid **of**\": *kedi**den** korkmak* \"to be afraid of cats\"\n- **hoşlanmak** \"to like\": *çay**dan** hoşlanmak* \"to like tea\"\n"
+       "body": "Some verbs take -DAn where English uses another preposition. You'll use them once you have verbs (L14–15); they come back in L17. Just notice them for now:\n\n- **korkmak** \"to be afraid **of**\": *kedi**den** korkmak* \"to be afraid of cats\"\n- **hoşlanmak** \"to like\": *çay**dan** hoşlanmak* \"to like tea\"\n"
       }
      ],
      "items": [
@@ -1805,7 +1817,7 @@
       {
        "kind": "rule",
        "title": "It never becomes te / ta",
-       "body": "Fıstıkçı Şahap does **not** apply to the clitic. It stays **d**:\n\n✅ Ahmet **de** · kitap **da** · tavuk **da**\n❌ ~~Ahmet te~~ · ~~kitap ta~~ · ~~tavuk ta~~\n\nThe locative, attached to the word, *does* change: kitap**ta** \"in the book\", Ahmet'**te** \"at Ahmet's\".\n",
+       "body": "Fıstıkçı Şahap does **not** apply to the clitic. It stays **d**:\n\n✅ Ahmet **de** · kitap **da** · tavuk **da**\n❌ ~~Ahmet te~~ · ~~kitap ta~~ · ~~tavuk ta~~\n\nThe locative, attached to the word, *does* change: kitap**ta** \"in the book\", Ahmet'**te** \"with Ahmet\".\n",
        "sentences": [
         "s.L13.006",
         "s.L13.015"
@@ -1818,7 +1830,7 @@
       {
        "kind": "rule",
        "title": "Attached or separate?",
-       "body": "**Test:** leave the *de / da* out. If the sentence still makes sense, it was \"too\", so write it **separately**.\n\n- *Ahmet ~~de~~ parkta.* → *Ahmet parkta.* ✓ → **Ahmet de** (too)\n- *Kedi bahçe ~~de~~.* → *Kedi bahçe.* ✗ → **bahçede** (in the garden)\n\nBoth at once: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n\n⚠️ Two pairs that even native speakers mix up in writing:\n\n| too (separate) | location (attached) |\n|---|---|\n| **Ali de.** \"Ali too.\" | **Ali'de.** \"At Ali's.\" / \"Ali has it.\" |\n| **Ben de.** \"Me too.\" | **Bende.** \"With me.\" / \"I have it.\" |\n\nThe clitic never takes an apostrophe: *Ali de*, not ~~Ali'de~~ for \"Ali too\".\n",
+       "body": "**Test:** leave the *de / da* out. If the sentence still makes sense, it was \"too\", so write it **separately**.\n\n- *Ahmet ~~de~~ parkta.* → *Ahmet parkta.* ✓ → **Ahmet de** (too)\n- *Kedi bahçe ~~de~~.* → *Kedi bahçe.* ✗ → **bahçede** (in the garden)\n\nBoth at once: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n\n⚠️ Two pairs that even native speakers mix up in writing:\n\n| too (separate) | location (attached) |\n|---|---|\n| **Ali de.** \"Ali too.\" | **Ali'de.** \"Ali has it.\" / \"It's with Ali.\" |\n| **Ben de.** \"Me too.\" | **Bende.** \"With me.\" / \"I have it.\" |\n\nThe clitic never takes an apostrophe: *Ali de*, not ~~Ali'de~~ for \"Ali too\".\n",
        "sentences": [
         "s.L13.016",
         "s.L13.021",
@@ -2094,7 +2106,7 @@
         "s.L13.022"
        ],
        "answer": "s.L13.021",
-       "note": "Ali de (too) vs Ali'de (at Ali's): the clitic never takes an apostrophe."
+       "note": "Ali de (too) vs Ali'de (Ali has it): the clitic never takes an apostrophe."
       },
       {
        "id": "L13.practise.10",
@@ -4876,9 +4888,10 @@
    "id": "s.L13.022",
    "tr": "Ali'de.",
    "en": [
+    "Ali has it.",
+    "It's with Ali.",
     "At Ali's.",
-    "It's at Ali's.",
-    "Ali has it."
+    "It's at Ali's."
    ],
    "words": [
     "w.Ali"

@@ -79,7 +79,7 @@
   grammar: [g.L3.basics, g.L10.loc, g.L11.loc_copula]
   source: { kind: original }
   audio: aud.own.s.L11.009
-  native_required: true        # place-name stress: İSTanbul
+  native_required: true        # place-name stress: isTANbul
 
 - id: s.L11.010
   tr: Ankara'dayım.
