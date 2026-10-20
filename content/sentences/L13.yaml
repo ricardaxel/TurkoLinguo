@@ -107,6 +107,7 @@
   grammar: [g.L5.copula, g.L11.loc_copula, g.L13.clitic_de]
   source: { kind: original }
   audio: aud.own.s.L13.013
+  native_required: true        # stress falls before the person ending
 
 - id: s.L13.014
   tr: Ben Londra'danım ama Ayşe İstanbul'dan.
@@ -115,6 +116,7 @@
   grammar: [g.L5.copula, g.L11.loc_copula, g.L12.abl, g.L13.clitic_de]
   source: { kind: original }
   audio: aud.own.s.L13.014
+  native_required: true        # stress falls before the person ending
 
 - id: s.L13.015
   tr: Kitap Ahmet'te.
@@ -164,3 +166,28 @@
   source: { kind: original }
   audio: aud.own.s.L13.020
   native_required: true
+
+- id: s.L13.021
+  tr: Ali de.
+  en: ["Ali too.", "Ali as well.", "And Ali."]
+  words: [w.Ali, w.de]
+  grammar: [g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.021
+
+- id: s.L13.022
+  tr: Ali'de.
+  en: ["At Ali's.", "It's at Ali's.", "Ali has it."]
+  words: [w.Ali]
+  grammar: [g.L3.basics, g.L10.loc, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L13.022
+
+- id: s.L13.023
+  tr: Bende.
+  en: ["I have it.", "It's with me.", "It's on me."]
+  words: [w.ben]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L13.023
+  native_required: true        # stress: BENde (vs ben DE)

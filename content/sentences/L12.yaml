@@ -16,6 +16,7 @@
   grammar: [g.L5.copula, g.L11.loc_copula, g.L12.abl]
   source: { kind: original }
   audio: aud.own.s.L12.002
+  native_required: true        # stress falls before the person ending
 
 - id: s.L12.003
   tr: İstanbul'danım.
@@ -60,6 +61,7 @@
   grammar: [g.L5.copula, g.L11.loc_copula, g.L12.abl]
   source: { kind: original }
   audio: aud.own.s.L12.007
+  native_required: true        # stress falls before the person ending
 
 - id: s.L12.008
   tr: Ben Londra'dayım.
@@ -68,6 +70,7 @@
   grammar: [g.L5.copula, g.L11.loc_copula]
   source: { kind: original }
   audio: aud.own.s.L12.008
+  native_required: true        # stress falls before the person ending
 
 - id: s.L12.009
   tr: Ben Londra'danım.
@@ -76,6 +79,7 @@
   grammar: [g.L5.copula, g.L11.loc_copula, g.L12.abl]
   source: { kind: original }
   audio: aud.own.s.L12.009
+  native_required: true        # stress falls before the person ending
 
 - id: s.L12.010
   tr: Onlar Türkiye'den.
@@ -109,6 +113,7 @@
   grammar: [g.L5.copula, g.L6.degil, g.L11.loc_copula, g.L12.abl]
   source: { kind: original }
   audio: aud.own.s.L12.013
+  native_required: true        # stress falls before the person ending
 
 - id: s.L12.014
   tr: Bu süt marketten.
@@ -134,3 +139,19 @@
   source: { kind: original }
   audio: aud.own.s.L12.016
   native_required: true        # place-name stress
+
+- id: s.L12.017
+  tr: Bu mektup Ali'den.
+  en: ["This letter is from Ali."]
+  words: [w.bu, w.mektup, w.Ali]
+  grammar: [g.L3.basics, g.L11.loc_copula, g.L12.abl]
+  source: { kind: original }
+  audio: aud.own.s.L12.017
+
+- id: s.L12.018
+  tr: Ahmet Paris'ten.
+  en: ["Ahmet is from Paris."]
+  words: [w.Ahmet, w.Paris]
+  grammar: [g.L3.basics, g.L11.loc_copula, g.L12.abl]
+  source: { kind: original }
+  audio: aud.own.s.L12.018

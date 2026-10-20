@@ -76,6 +76,7 @@
 # --- L11–L13 new words ---
 - { id: w.şimdi, lemma: şimdi, pos: adv, gloss: [now] }
 - { id: w.nereden, lemma: nereden, pos: adv, gloss: [where from, from where], notes: "nere·den: the ablative of nere-. Neredensin? 'Where are you from?'" }
+- { id: w.mektup, lemma: mektup, pos: noun, gloss: [letter], flags: [soft], images: [img.openmoji.envelope] }
 - { id: w.de, lemma: de, pos: particle, gloss: [too, also], notes: "Clitic, written separately: de after e i ö ü, da after a ı o u. Never te/ta." }
 - { id: w.ve, lemma: ve, pos: conj, gloss: [and] }
 - { id: w.ama, lemma: ama, pos: conj, gloss: [but] }
@@ -115,5 +116,6 @@
 - { id: w.Ankara, lemma: Ankara, pos: name, gloss: [Ankara] }
 - { id: w.İzmir, lemma: İzmir, pos: name, gloss: [Izmir] }
 - { id: w.Londra, lemma: Londra, pos: name, gloss: [London] }
+- { id: w.Paris, lemma: Paris, pos: name, gloss: [Paris], notes: "Pronounced as spelled, so harmony is regular: Paris'te, Paris'ten." }
 - { id: w.Türkiye, lemma: Türkiye, pos: name, gloss: [Turkey, Türkiye], notes: "T4 country." }
 - { id: w.İngiltere, lemma: İngiltere, pos: name, gloss: [England], notes: "T4 country." }

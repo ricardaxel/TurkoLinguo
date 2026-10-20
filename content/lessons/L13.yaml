@@ -56,7 +56,17 @@ sessions:
           - *Kedi bahçe ~~de~~.* → *Kedi bahçe.* ✗ → **bahçede** (in the garden)
 
           Both at once: *Ev**de** **de** kedi var.* "There's a cat at home **too**."
-        sentences: [s.L13.016]
+
+          ⚠️ Two pairs that even native speakers mix up in writing:
+
+          | too (separate) | location (attached) |
+          |---|---|
+          | **Ali de.** "Ali too." | **Ali'de.** "At Ali's." / "Ali has it." |
+          | **Ben de.** "Me too." | **Bende.** "With me." / "I have it." |
+
+          The clitic never takes an apostrophe: *Ali de*, not ~~Ali'de~~ for "Ali too".
+        sentences: [s.L13.016, s.L13.021, s.L13.022, s.L13.023]
+        audio: [aud.own.s.L13.021, aud.own.s.L13.022, aud.own.s.L13.023]
 
       - kind: rule
         title: "ve and ama"
@@ -123,7 +133,14 @@ sessions:
       - { id: L13.practise.06, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L10.loc], sentence: s.L13.004, word_bank: [Ali, evde, ama, ve, Ayşe, okulda, de] }
       - { id: L13.practise.07, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L10.loc], sentence: s.L13.011, word_bank: [Köpek, ve, kedi, bahçede, de, ama] }
       - { id: L13.practise.08, type: translate_to_en, grammar: [g.L13.clitic_de, g.L12.abl, g.L5.copula], sentence: s.L13.009 }
-      - { id: L13.practise.09, type: translate_to_en, grammar: [g.L13.clitic_de, g.L11.loc_copula], pattern: g.L13.clitic_de.vs_loc, sentence: s.L13.015, note: "Locative on a person = 'with / at': no clitic here." }
+      - id: L13.practise.09
+        type: contrast_pair
+        grammar: [g.L13.clitic_de, g.L11.loc_copula]
+        pattern: g.L13.clitic_de.vs_loc
+        prompt: "Ali too."
+        options: [s.L13.021, s.L13.022]
+        answer: s.L13.021
+        note: "Ali de (too) vs Ali'de (at Ali's): the clitic never takes an apostrophe."
       - { id: L13.practise.10, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L11.loc_copula, g.L7.question], sentence: s.L13.010, typed: true }
       - { id: L13.practise.11, type: dictation, grammar: [g.L13.clitic_de, g.L10.loc], sentence: s.L13.012 }
       - id: L13.practise.12
@@ -134,6 +151,14 @@ sessions:
         answers: ["Evet, (bir) köpek var. Kedi de var.", "Evet, (bir) köpek ve (bir) kedi var.", "Evet, kedi de var."]
       - { id: L13.practise.13, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L12.abl, g.L5.copula], sentence: s.L13.014, word_bank: [Ben, Londra'danım, ama, ve, Ayşe, İstanbul'dan, İstanbul'da] }
       - id: L13.practise.14
+        type: contrast_pair
+        grammar: [g.L13.clitic_de, g.L10.loc]
+        pattern: g.L13.clitic_de.vs_loc
+        prompt: "Me too."
+        options: [s.L13.001, s.L13.023]
+        answer: s.L13.001
+        note: "ben de (me too) vs bende (with me / I have it)."
+      - id: L13.practise.15
         type: mini_dialogue
         grammar: [g.L13.clitic_de, g.L11.loc_copula, g.L7.question]
         images: [img.openmoji.park]

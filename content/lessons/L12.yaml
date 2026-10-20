@@ -2,7 +2,7 @@
 id: L12
 title: "Ablative -DAn: from"
 grammar: g.L12.abl
-new_words: [w.nereden]
+new_words: [w.nereden, w.mektup]
 not_yet:
   - "verbs of motion (evden geliyorum) → L14–L15"
   - "verbs that take the ablative (korkmak) → preview only, produced from L17"
@@ -33,7 +33,7 @@ sessions:
           | front vowel e i ö ü | ev·de | ev·**den** |
           | f s t k ç ş h p | kitap·ta, otobüs·te | kitap·**tan**, otobüs·**ten** |
 
-          ✅ The word never changes: *sokak → sokaktan*. Names keep the apostrophe: *İstanbul'dan*, *Türkiye'den*.
+          ✅ The word doesn't change: *sokak → sokaktan*. Names keep the apostrophe: *İstanbul'dan*, *Türkiye'den*, *Paris'ten*.
         interactive:
           component: suffix_steps
           params: { words: [w.okul, w.ev, w.park, w.otobüs], suffix: sfx.abl }
@@ -54,6 +54,8 @@ sessions:
           -DAn ends in **n**, a consonant, so there's **no buffer y**: Londra'dan**ım**, İzmir'den**iz** (not ~~Londra'danyım~~).
 
           **Nereden?** "Where from?" = nere·den. *Neredensin?* "Where are you from?"
+
+          💬 *Nerelisin?* (from L5) is the more standard way to ask; *Neredensin?* is fine in conversation.
         sentences: [s.L12.003, s.L12.007]
 
       - kind: note
@@ -100,7 +102,7 @@ sessions:
     minutes: 5
     items:
       - { id: L12.practise.01, type: pick_suffix, grammar: [g.L12.abl], pattern: g.L12.abl.last_vowel, base: w.otobüs, suffix: sfx.abl, options: [dan, den, tan, ten], answer: ten, feedback: "auto:g.L12.abl", note: "Trap: first vowel o is back, last vowel ü is front." }
-      - { id: L12.practise.02, type: pick_suffix, grammar: [g.L12.abl], pattern: g.L12.abl.after_vowel, base: w.banka, suffix: sfx.abl, options: [dan, den, tan, ten], answer: dan, feedback: "auto:g.L12.abl" }
+      - { id: L12.practise.02, type: pick_suffix, grammar: [g.L12.abl], pattern: g.L12.abl.voiceless, base: w.kitap, suffix: sfx.abl, options: [dan, den, tan, ten], answer: tan, feedback: "auto:g.L12.abl" }
       - { id: L12.practise.03, type: type_form, grammar: [g.L12.abl], pattern: g.L12.abl.voiceless, base: w.mutfak, suffixes: [sfx.abl], prompt: "from the kitchen", answer: mutfaktan, feedback: "auto:g.L12.abl" }
       - { id: L12.practise.04, type: type_form, grammar: [g.L12.abl], pattern: g.L12.abl.after_vowel, base: w.kütüphane, suffixes: [sfx.abl], prompt: "from the library", answer: kütüphaneden, feedback: "auto:g.L12.abl" }
       - { id: L12.practise.05, type: build_word, grammar: [g.L12.abl, g.L4.plural], tiles: [ev, den, ler], answer: "ev·ler·den", feedback: { "ev·den·ler": "The plural comes first, then the case: **ev·ler·den**." } }
@@ -112,7 +114,8 @@ sessions:
         answer: s.L12.009
       - { id: L12.practise.07, type: translate_to_tr, grammar: [g.L12.abl, g.L5.copula], pattern: g.L12.abl.origin, sentence: s.L12.003, word_bank: [İstanbul'danım, İstanbul'dayım, İstanbuldanım] }
       - { id: L12.practise.08, type: translate_to_tr, grammar: [g.L12.abl, g.L3.basics], sentence: s.L12.004, word_bank: [Ali, Ankara'dan, Ankara'da, Ankaradan] }
-      - { id: L12.practise.09, type: translate_to_en, grammar: [g.L12.abl, g.L3.basics], sentence: s.L12.014 }
+      - { id: L12.practise.09, type: translate_to_en, grammar: [g.L12.abl, g.L3.basics], sentence: s.L12.017 }
+      - { id: L12.practise.15, type: translate_to_tr, grammar: [g.L12.abl, g.L3.basics], pattern: g.L12.abl.voiceless, sentence: s.L12.018, word_bank: [Ahmet, "Paris'ten", "Paris'den", "Paris'te"] }
       - { id: L12.practise.10, type: spot_error, grammar: [g.L12.abl, g.L11.loc_copula], pattern: g.L12.abl.origin, text: "Ben Londradanım.", error: Londradanım, answer: Londra'danım, sentence: s.L12.009, feedback: { Londradanım: "**Londra** is a name, so it takes an apostrophe before the ending: **Londra'danım**." } }
       - { id: L12.practise.11, type: spot_error, grammar: [g.L12.abl, g.L3.basics], pattern: g.L12.abl.voiceless, text: "Bu süt marketden.", error: marketden, answer: marketten, sentence: s.L12.014, feedback: "auto:g.L12.abl" }
       - id: L12.practise.12

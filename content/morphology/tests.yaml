@@ -58,3 +58,15 @@
 - { word: w.Londra,   suffixes: [sfx.abl, sfx.cop_1sg], expected: "Londra'danım", pending: "engine: no apostrophe on proper nouns" }
 - { word: w.İzmir,    suffixes: [sfx.abl, sfx.cop_1pl], expected: "İzmir'deniz",  pending: "engine: no apostrophe on proper nouns" }
 - { word: w.Ahmet,    suffixes: [sfx.abl], expected: "Ahmet'ten",   pending: "engine: no apostrophe on proper nouns" }
+
+# T9 places + locative (Turkish-expert checklist)
+- { word: w.market,  suffixes: [sfx.loc], expected: markette }
+- { word: w.park,    suffixes: [sfx.loc], expected: parkta }
+- { word: w.sokak,   suffixes: [sfx.loc], expected: sokakta,   note: "no softening before a consonant" }
+- { word: w.havalimanı, suffixes: [sfx.loc], expected: havalimanında, note: "compound: buffer n" }
+- { word: w.cami,    suffixes: [sfx.loc], expected: camide }
+- { word: w.eczane,  suffixes: [sfx.loc], expected: eczanede }
+- { word: w.köprü,   suffixes: [sfx.loc], expected: köprüde }
+- { word: w.ben,     suffixes: [sfx.loc], expected: bende,     note: "vs the clitic: ben de 'me too'" }
+- { word: w.Paris,   suffixes: [sfx.loc], expected: "Paris'te",  pending: "engine: no apostrophe on proper nouns" }
+- { word: w.Paris,   suffixes: [sfx.abl], expected: "Paris'ten", pending: "engine: no apostrophe on proper nouns" }

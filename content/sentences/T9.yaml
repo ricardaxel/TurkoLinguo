@@ -24,6 +24,7 @@
   grammar: [g.L11.loc_copula]
   source: { kind: original }
   audio: aud.own.s.T9.003
+  native_required: true        # stress falls before the person ending
 
 - id: s.T9.004
   tr: Havalimanı büyük.

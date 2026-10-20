@@ -57,6 +57,10 @@ sessions:
           Same as L6–L7: the person ending moves onto **mI** or **değil**.
 
           *Parkta mısın?* "Are you in the park?" — *Evet, parktayım.* / *Hayır, parkta değilim.*
+
+          They: *-lAr* stays on the word: *Evdeler mi?* (But with *onlar*, people usually just say *Onlar evde*.)
+
+          🔊 Stress falls just **before** the person ending: ev**DE**yim, park**TA**yız.
         sentences: [s.L11.004, s.L11.019]
 
       - kind: rule
@@ -66,7 +70,9 @@ sessions:
 
           *İstanbul'**da*** "in Istanbul" · *Ankara'**dayım*** "I'm in Ankara" · *Ali'**de*** "at Ali's"
 
-          The ending follows the usual rules: *Ahmet'**te*** (t after t), *İzmir'**deyim***.
+          The ending follows the usual rules, based on how the name **sounds**: *Ahmet'**te*** (t after t), *İzmir'**deyim***, *Paris'**te***.
+
+          Only **names** get the apostrophe. Language names don't: *Türkçe**de***, not ~~Türkçe'de~~.
 
           🔊 Stress stays on the name: **İS**tanbul'da, **AN**kara'dayım.
         sentences: [s.L11.009, s.L11.010]
@@ -116,7 +122,7 @@ sessions:
       - { id: L11.practise.04, type: build_word, grammar: [g.L11.loc_copula], tiles: [market, te, yim], answer: "market·te·yim", feedback: { "market·yim·te": "Location first, then the person: **market·te·yim**." } }
       - { id: L11.practise.05, type: translate_to_tr, grammar: [g.L11.loc_copula, g.L5.copula], sentence: s.L11.003, word_bank: [Ben, okuldayım, okuldasın, okuldeyim] }
       - { id: L11.practise.06, type: translate_to_tr, grammar: [g.L11.loc_copula, g.L3.basics], pattern: g.L11.loc_copula.name, sentence: s.L11.009, word_bank: [Ayşe, İstanbul'da, İstanbulda, İstanbul'de] }
-      - { id: L11.practise.07, type: translate_to_en, grammar: [g.L11.loc_copula, g.L5.copula], sentence: s.L11.008, note: "Onlar bahçede is also correct Turkish; -lAr is optional when onlar is there." }
+      - { id: L11.practise.07, type: translate_to_en, grammar: [g.L11.loc_copula, g.L5.copula], sentence: s.L11.008, note: "With onlar, -lAr is usually left out; bahçedeler is correct but less common." }
       - { id: L11.practise.08, type: spot_error, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.name, text: "Ben İstanbuldayım.", error: İstanbuldayım, answer: İstanbul'dayım, sentence: s.L11.021, feedback: { İstanbuldayım: "**İstanbul** is a name, so it takes an apostrophe before the ending: **İstanbul'dayım**." } }
       - { id: L11.practise.09, type: spot_error, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.voiceless_1pl, text: "Biz parktayiz.", error: parktayiz, answer: parktayız, sentence: s.L11.018, feedback: { parktayiz: "-ta has a back vowel, so the person ending is **-yız**: parktayız." } }
       - id: L11.practise.10

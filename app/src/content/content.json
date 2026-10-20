@@ -403,7 +403,7 @@
    "suffixes": [
     "sfx.abl"
    ],
-   "reference": "**-DAn** means *from*: **ev·den** \"from home\", **okul·dan** \"from school\", **İstanbul'dan** \"from Istanbul\".\n\nIt is the locative **-DA** plus **n**, so the same two questions decide its form:\n\n- **Vowel (A):** last vowel a ı o u → **-dan** · e i ö ü → **-den**\n- **Consonant (D):** after **f s t k ç ş h p** (\"Fıstıkçı Şahap\") → **-tan / -ten**; otherwise **-dan / -den**.\n\nThe word itself never changes: *kitap → kitaptan*, *sokak → sokaktan*. After a plural: **ev·ler·den**.\n\n**With \"to be\" endings** (L11), no verb is needed: *Neredensin?* \"Where are you from?\" — *Londra'danım.* \"I'm from London.\" -DAn ends in a consonant, so there is **no buffer y**: Londra'dan·**ım**, İzmir'den·**iz**.\n\n⚠️ Don't mix them up: *Londra'dayım* \"I'm **in** London\" · *Londra'danım* \"I'm **from** London\".\n\nNames keep their apostrophe: *Türkiye'den*, *Ahmet'ten*.\n",
+   "reference": "**-DAn** means *from*: **ev·den** \"from home\", **okul·dan** \"from school\", **İstanbul'dan** \"from Istanbul\".\n\nIt is the locative **-DA** plus **n**, so the same two questions decide its form:\n\n- **Vowel (A):** last vowel a ı o u → **-dan** · e i ö ü → **-den**\n- **Consonant (D):** after **f s t k ç ş h p** (\"Fıstıkçı Şahap\") → **-tan / -ten**; otherwise **-dan / -den**.\n\nThe word itself doesn't change: *kitap → kitaptan*, *sokak → sokaktan*. Exception: a compound like *yatak odası* adds **n**, as with -DA: *yatak odası·n·dan*. After a plural: **ev·ler·den**.\n\n**With \"to be\" endings** (L11), no verb is needed: *Neredensin?* \"Where are you from?\" — *Londra'danım.* \"I'm from London.\" -DAn ends in a consonant, so there is **no buffer y**: Londra'dan·**ım**, İzmir'den·**iz**.\n\n*Nerelisin?* (the L5 phrase) is the more standard way to ask where someone is from; *Neredensin?* is fine in conversation.\n\n⚠️ Don't mix them up: *Londra'dayım* \"I'm **in** London\" · *Londra'danım* \"I'm **from** London\".\n\nNames keep their apostrophe: *Türkiye'den*, *Ahmet'ten*.\n",
    "patterns": [
     {
      "id": "g.L12.abl.back",
@@ -483,7 +483,7 @@
    "id": "g.L13.clitic_de",
    "title": "Clitic de/da 'too' vs locative -DA; ve, ama",
    "suffixes": [],
-   "reference": "**de / da** = *too, also*. It is a **separate word**, placed right after the word it adds to:\n\n*Ben de.* \"Me too.\" · *Ayşe de evde.* \"Ayşe is at home **too**.\" · *Kitap da çantada.* \"The book is in the bag **too**.\"\n\n- **Vowel:** a/e harmony with the word before: a ı o u → **da**, e i ö ü → **de**.\n- **Consonant:** it **never** becomes *te / ta*: *Ahmet **de***, *kitap **da***, *tavuk **da*** (not ~~Ahmet te~~, ~~kitap ta~~).\n\n**Separate or attached?** The locative **-DA** is *attached* and does change d → t: *kitap**ta*** \"in the book\", *Ahmet'**te*** \"at Ahmet's\". Test: leave the word out. If the sentence still makes sense, it was the clitic: *Ahmet ~~de~~ parkta* → *Ahmet parkta*. ✓\n\nBoth together: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n\n**ve** = *and* joins words: *Ali ve Ayşe evde.*\n**ama** = *but* joins two statements: *Ali evde ama Ayşe okulda.*\n",
+   "reference": "**de / da** = *too, also*. It is a **separate word**, placed right after the word it adds to:\n\n*Ben de.* \"Me too.\" · *Ayşe de evde.* \"Ayşe is at home **too**.\" · *Kitap da çantada.* \"The book is in the bag **too**.\"\n\n- **Vowel:** a/e harmony with the word before: a ı o u → **da**, e i ö ü → **de**.\n- **Consonant:** it **never** becomes *te / ta*: *Ahmet **de***, *kitap **da***, *tavuk **da*** (not ~~Ahmet te~~, ~~kitap ta~~).\n\n**Separate or attached?** The locative **-DA** is *attached* and does change d → t: *kitap**ta*** \"in the book\", *Ahmet'**te*** \"at Ahmet's\". Test: leave the word out. If the sentence still makes sense, it was the clitic: *Ahmet ~~de~~ parkta* → *Ahmet parkta*. ✓\n\nBoth together: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n\nThe clitic never takes an apostrophe. Watch these pairs: *Ali de* \"Ali too\" / *Ali'de* \"at Ali's\"; *ben de* \"me too\" / *bende* \"with me, I have it\".\n\n**ve** = *and* joins words: *Ali ve Ayşe evde.*\n**ama** = *but* joins two statements: *Ali evde ama Ayşe okulda.*\n",
    "patterns": [
     {
      "id": "g.L13.clitic_de.harmony",
@@ -971,7 +971,7 @@
       {
        "kind": "rule",
        "title": "Questions and 'not'",
-       "body": "Same as L6–L7: the person ending moves onto **mI** or **değil**.\n\n*Parkta mısın?* \"Are you in the park?\" — *Evet, parktayım.* / *Hayır, parkta değilim.*\n",
+       "body": "Same as L6–L7: the person ending moves onto **mI** or **değil**.\n\n*Parkta mısın?* \"Are you in the park?\" — *Evet, parktayım.* / *Hayır, parkta değilim.*\n\nThey: *-lAr* stays on the word: *Evdeler mi?* (But with *onlar*, people usually just say *Onlar evde*.)\n\n🔊 Stress falls just **before** the person ending: ev**DE**yim, park**TA**yız.\n",
        "sentences": [
         "s.L11.004",
         "s.L11.019"
@@ -980,7 +980,7 @@
       {
        "kind": "rule",
        "title": "Names take an apostrophe",
-       "body": "Names of people and places keep their spelling, so an **apostrophe** separates the ending:\n\n*İstanbul'**da*** \"in Istanbul\" · *Ankara'**dayım*** \"I'm in Ankara\" · *Ali'**de*** \"at Ali's\"\n\nThe ending follows the usual rules: *Ahmet'**te*** (t after t), *İzmir'**deyim***.\n\n🔊 Stress stays on the name: **İS**tanbul'da, **AN**kara'dayım.\n",
+       "body": "Names of people and places keep their spelling, so an **apostrophe** separates the ending:\n\n*İstanbul'**da*** \"in Istanbul\" · *Ankara'**dayım*** \"I'm in Ankara\" · *Ali'**de*** \"at Ali's\"\n\nThe ending follows the usual rules, based on how the name **sounds**: *Ahmet'**te*** (t after t), *İzmir'**deyim***, *Paris'**te***.\n\nOnly **names** get the apostrophe. Language names don't: *Türkçe**de***, not ~~Türkçe'de~~.\n\n🔊 Stress stays on the name: **İS**tanbul'da, **AN**kara'dayım.\n",
        "sentences": [
         "s.L11.009",
         "s.L11.010"
@@ -1211,7 +1211,7 @@
         "g.L5.copula"
        ],
        "sentence": "s.L11.008",
-       "note": "Onlar bahçede is also correct Turkish; -lAr is optional when onlar is there."
+       "note": "With onlar, -lAr is usually left out; bahçedeler is correct but less common."
       },
       {
        "id": "L11.practise.08",
@@ -1333,7 +1333,8 @@
    "title": "Ablative -DAn: from",
    "grammar": "g.L12.abl",
    "new_words": [
-    "w.nereden"
+    "w.nereden",
+    "w.mektup"
    ],
    "not_yet": [
     "verbs of motion (evden geliyorum) → L14–L15",
@@ -1360,7 +1361,7 @@
       {
        "kind": "rule",
        "title": "-DAn = -DA + n",
-       "body": "You already know the hard part. **-DAn** is the locative plus **n**, with the same two choices:\n\n| Word ends in… | in / at (L10) | from |\n|---|---|---|\n| back vowel a ı o u | okul·da | okul·**dan** |\n| front vowel e i ö ü | ev·de | ev·**den** |\n| f s t k ç ş h p | kitap·ta, otobüs·te | kitap·**tan**, otobüs·**ten** |\n\n✅ The word never changes: *sokak → sokaktan*. Names keep the apostrophe: *İstanbul'dan*, *Türkiye'den*.\n",
+       "body": "You already know the hard part. **-DAn** is the locative plus **n**, with the same two choices:\n\n| Word ends in… | in / at (L10) | from |\n|---|---|---|\n| back vowel a ı o u | okul·da | okul·**dan** |\n| front vowel e i ö ü | ev·de | ev·**den** |\n| f s t k ç ş h p | kitap·ta, otobüs·te | kitap·**tan**, otobüs·**ten** |\n\n✅ The word doesn't change: *sokak → sokaktan*. Names keep the apostrophe: *İstanbul'dan*, *Türkiye'den*, *Paris'ten*.\n",
        "interactive": {
         "component": "suffix_steps",
         "params": {
@@ -1377,7 +1378,7 @@
       {
        "kind": "rule",
        "title": "Where are you from?",
-       "body": "Add the \"to be\" endings, exactly as in L11:\n\n| | |\n|---|---|\n| ben | Londra'dan·**ım** |\n| sen | Londra'dan·**sın** |\n| o | Londra'dan |\n| biz | Londra'dan·**ız** |\n| siz | Londra'dan·**sınız** |\n\n-DAn ends in **n**, a consonant, so there's **no buffer y**: Londra'dan**ım**, İzmir'den**iz** (not ~~Londra'danyım~~).\n\n**Nereden?** \"Where from?\" = nere·den. *Neredensin?* \"Where are you from?\"\n",
+       "body": "Add the \"to be\" endings, exactly as in L11:\n\n| | |\n|---|---|\n| ben | Londra'dan·**ım** |\n| sen | Londra'dan·**sın** |\n| o | Londra'dan |\n| biz | Londra'dan·**ız** |\n| siz | Londra'dan·**sınız** |\n\n-DAn ends in **n**, a consonant, so there's **no buffer y**: Londra'dan**ım**, İzmir'den**iz** (not ~~Londra'danyım~~).\n\n**Nereden?** \"Where from?\" = nere·den. *Neredensin?* \"Where are you from?\"\n\n💬 *Nerelisin?* (from L5) is the more standard way to ask; *Neredensin?* is fine in conversation.\n",
        "sentences": [
         "s.L12.003",
         "s.L12.007"
@@ -1543,8 +1544,8 @@
        "grammar": [
         "g.L12.abl"
        ],
-       "pattern": "g.L12.abl.after_vowel",
-       "base": "w.banka",
+       "pattern": "g.L12.abl.voiceless",
+       "base": "w.kitap",
        "suffix": "sfx.abl",
        "options": [
         "dan",
@@ -1552,7 +1553,7 @@
         "tan",
         "ten"
        ],
-       "answer": "dan",
+       "answer": "tan",
        "feedback": "auto:g.L12.abl"
       },
       {
@@ -1653,7 +1654,23 @@
         "g.L12.abl",
         "g.L3.basics"
        ],
-       "sentence": "s.L12.014"
+       "sentence": "s.L12.017"
+      },
+      {
+       "id": "L12.practise.15",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L12.abl",
+        "g.L3.basics"
+       ],
+       "pattern": "g.L12.abl.voiceless",
+       "sentence": "s.L12.018",
+       "word_bank": [
+        "Ahmet",
+        "Paris'ten",
+        "Paris'den",
+        "Paris'te"
+       ]
       },
       {
        "id": "L12.practise.10",
@@ -1801,9 +1818,17 @@
       {
        "kind": "rule",
        "title": "Attached or separate?",
-       "body": "**Test:** leave the *de / da* out. If the sentence still makes sense, it was \"too\", so write it **separately**.\n\n- *Ahmet ~~de~~ parkta.* → *Ahmet parkta.* ✓ → **Ahmet de** (too)\n- *Kedi bahçe ~~de~~.* → *Kedi bahçe.* ✗ → **bahçede** (in the garden)\n\nBoth at once: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n",
+       "body": "**Test:** leave the *de / da* out. If the sentence still makes sense, it was \"too\", so write it **separately**.\n\n- *Ahmet ~~de~~ parkta.* → *Ahmet parkta.* ✓ → **Ahmet de** (too)\n- *Kedi bahçe ~~de~~.* → *Kedi bahçe.* ✗ → **bahçede** (in the garden)\n\nBoth at once: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n\n⚠️ Two pairs that even native speakers mix up in writing:\n\n| too (separate) | location (attached) |\n|---|---|\n| **Ali de.** \"Ali too.\" | **Ali'de.** \"At Ali's.\" / \"Ali has it.\" |\n| **Ben de.** \"Me too.\" | **Bende.** \"With me.\" / \"I have it.\" |\n\nThe clitic never takes an apostrophe: *Ali de*, not ~~Ali'de~~ for \"Ali too\".\n",
        "sentences": [
-        "s.L13.016"
+        "s.L13.016",
+        "s.L13.021",
+        "s.L13.022",
+        "s.L13.023"
+       ],
+       "audio": [
+        "aud.own.s.L13.021",
+        "aud.own.s.L13.022",
+        "aud.own.s.L13.023"
        ]
       },
       {
@@ -2057,14 +2082,19 @@
       },
       {
        "id": "L13.practise.09",
-       "type": "translate_to_en",
+       "type": "contrast_pair",
        "grammar": [
         "g.L13.clitic_de",
         "g.L11.loc_copula"
        ],
        "pattern": "g.L13.clitic_de.vs_loc",
-       "sentence": "s.L13.015",
-       "note": "Locative on a person = 'with / at': no clitic here."
+       "prompt": "Ali too.",
+       "options": [
+        "s.L13.021",
+        "s.L13.022"
+       ],
+       "answer": "s.L13.021",
+       "note": "Ali de (too) vs Ali'de (at Ali's): the clitic never takes an apostrophe."
       },
       {
        "id": "L13.practise.10",
@@ -2125,6 +2155,22 @@
       },
       {
        "id": "L13.practise.14",
+       "type": "contrast_pair",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L13.clitic_de.vs_loc",
+       "prompt": "Me too.",
+       "options": [
+        "s.L13.001",
+        "s.L13.023"
+       ],
+       "answer": "s.L13.001",
+       "note": "ben de (me too) vs bende (with me / I have it)."
+      },
+      {
+       "id": "L13.practise.15",
        "type": "mini_dialogue",
        "grammar": [
         "g.L13.clitic_de",
@@ -2804,6 +2850,20 @@
    ],
    "notes": "nere·den: the ablative of nere-. Neredensin? 'Where are you from?'"
   },
+  "w.mektup": {
+   "id": "w.mektup",
+   "lemma": "mektup",
+   "pos": "noun",
+   "gloss": [
+    "letter"
+   ],
+   "flags": [
+    "soft"
+   ],
+   "images": [
+    "img.openmoji.envelope"
+   ]
+  },
   "w.de": {
    "id": "w.de",
    "lemma": "de",
@@ -3137,6 +3197,15 @@
    "gloss": [
     "London"
    ]
+  },
+  "w.Paris": {
+   "id": "w.Paris",
+   "lemma": "Paris",
+   "pos": "name",
+   "gloss": [
+    "Paris"
+   ],
+   "notes": "Pronounced as spelled, so harmony is regular: Paris'te, Paris'ten."
   },
   "w.Türkiye": {
    "id": "w.Türkiye",
@@ -3532,7 +3601,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.002"
+   "audio": "aud.own.s.L11.002",
+   "native_required": true
   },
   "s.L11.003": {
    "id": "s.L11.003",
@@ -3553,7 +3623,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.003"
+   "audio": "aud.own.s.L11.003",
+   "native_required": true
   },
   "s.L11.004": {
    "id": "s.L11.004",
@@ -3596,7 +3667,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.005"
+   "audio": "aud.own.s.L11.005",
+   "native_required": true
   },
   "s.L11.006": {
    "id": "s.L11.006",
@@ -3617,7 +3689,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.006"
+   "audio": "aud.own.s.L11.006",
+   "native_required": true
   },
   "s.L11.007": {
    "id": "s.L11.007",
@@ -3644,7 +3717,7 @@
   },
   "s.L11.008": {
    "id": "s.L11.008",
-   "tr": "Onlar bahçedeler.",
+   "tr": "Onlar bahçede.",
    "en": [
     "They're in the garden.",
     "They are in the garden."
@@ -3743,7 +3816,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.012"
+   "audio": "aud.own.s.L11.012",
+   "native_required": true
   },
   "s.L11.013": {
    "id": "s.L11.013",
@@ -3762,7 +3836,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.013"
+   "audio": "aud.own.s.L11.013",
+   "native_required": true
   },
   "s.L11.014": {
    "id": "s.L11.014",
@@ -3802,7 +3877,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.015"
+   "audio": "aud.own.s.L11.015",
+   "native_required": true
   },
   "s.L11.016": {
    "id": "s.L11.016",
@@ -3823,7 +3899,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.016"
+   "audio": "aud.own.s.L11.016",
+   "native_required": true
   },
   "s.L11.017": {
    "id": "s.L11.017",
@@ -3865,7 +3942,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.018"
+   "audio": "aud.own.s.L11.018",
+   "native_required": true
   },
   "s.L11.019": {
    "id": "s.L11.019",
@@ -3888,7 +3966,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.019"
+   "audio": "aud.own.s.L11.019",
+   "native_required": true
   },
   "s.L11.020": {
    "id": "s.L11.020",
@@ -3909,7 +3988,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L11.020"
+   "audio": "aud.own.s.L11.020",
+   "native_required": true
   },
   "s.L11.021": {
    "id": "s.L11.021",
@@ -3971,7 +4051,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L12.002"
+   "audio": "aud.own.s.L12.002",
+   "native_required": true
   },
   "s.L12.003": {
    "id": "s.L12.003",
@@ -4078,7 +4159,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L12.007"
+   "audio": "aud.own.s.L12.007",
+   "native_required": true
   },
   "s.L12.008": {
    "id": "s.L12.008",
@@ -4098,7 +4180,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L12.008"
+   "audio": "aud.own.s.L12.008",
+   "native_required": true
   },
   "s.L12.009": {
    "id": "s.L12.009",
@@ -4119,7 +4202,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L12.009"
+   "audio": "aud.own.s.L12.009",
+   "native_required": true
   },
   "s.L12.010": {
    "id": "s.L12.010",
@@ -4208,7 +4292,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L12.013"
+   "audio": "aud.own.s.L12.013",
+   "native_required": true
   },
   "s.L12.014": {
    "id": "s.L12.014",
@@ -4273,6 +4358,47 @@
    },
    "audio": "aud.own.s.L12.016",
    "native_required": true
+  },
+  "s.L12.017": {
+   "id": "s.L12.017",
+   "tr": "Bu mektup Ali'den.",
+   "en": [
+    "This letter is from Ali."
+   ],
+   "words": [
+    "w.bu",
+    "w.mektup",
+    "w.Ali"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.017"
+  },
+  "s.L12.018": {
+   "id": "s.L12.018",
+   "tr": "Ahmet Paris'ten.",
+   "en": [
+    "Ahmet is from Paris."
+   ],
+   "words": [
+    "w.Ahmet",
+    "w.Paris"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.018"
   },
   "s.L13.001": {
    "id": "s.L13.001",
@@ -4568,7 +4694,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L13.013"
+   "audio": "aud.own.s.L13.013",
+   "native_required": true
   },
   "s.L13.014": {
    "id": "s.L13.014",
@@ -4593,7 +4720,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.L13.014"
+   "audio": "aud.own.s.L13.014",
+   "native_required": true
   },
   "s.L13.015": {
    "id": "s.L13.015",
@@ -4722,6 +4850,68 @@
     "kind": "original"
    },
    "audio": "aud.own.s.L13.020",
+   "native_required": true
+  },
+  "s.L13.021": {
+   "id": "s.L13.021",
+   "tr": "Ali de.",
+   "en": [
+    "Ali too.",
+    "Ali as well.",
+    "And Ali."
+   ],
+   "words": [
+    "w.Ali",
+    "w.de"
+   ],
+   "grammar": [
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.021"
+  },
+  "s.L13.022": {
+   "id": "s.L13.022",
+   "tr": "Ali'de.",
+   "en": [
+    "At Ali's.",
+    "It's at Ali's.",
+    "Ali has it."
+   ],
+   "words": [
+    "w.Ali"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.022"
+  },
+  "s.L13.023": {
+   "id": "s.L13.023",
+   "tr": "Bende.",
+   "en": [
+    "I have it.",
+    "It's with me.",
+    "It's on me."
+   ],
+   "words": [
+    "w.ben"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.023",
    "native_required": true
   },
   "s.T10.001": {
@@ -4860,7 +5050,8 @@
    "source": {
     "kind": "original"
    },
-   "audio": "aud.own.s.T9.003"
+   "audio": "aud.own.s.T9.003",
+   "native_required": true
   },
   "s.T9.004": {
    "id": "s.T9.004",
@@ -5474,6 +5665,81 @@
     "sfx.abl"
    ],
    "expected": "Ahmet'ten",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.market",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "markette"
+  },
+  {
+   "word": "w.park",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "parkta"
+  },
+  {
+   "word": "w.sokak",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "sokakta",
+   "note": "no softening before a consonant"
+  },
+  {
+   "word": "w.havalimanı",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "havalimanında",
+   "note": "compound: buffer n"
+  },
+  {
+   "word": "w.cami",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "camide"
+  },
+  {
+   "word": "w.eczane",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "eczanede"
+  },
+  {
+   "word": "w.köprü",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "köprüde"
+  },
+  {
+   "word": "w.ben",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "bende",
+   "note": "vs the clitic: ben de 'me too'"
+  },
+  {
+   "word": "w.Paris",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "Paris'te",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.Paris",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "Paris'ten",
    "pending": "engine: no apostrophe on proper nouns"
   }
  ],
@@ -6204,7 +6470,7 @@
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "Onlar bahçedeler."
+   "text": "Onlar bahçede."
   },
   "aud.own.s.L11.009": {
    "id": "aud.own.s.L11.009",
@@ -6645,6 +6911,56 @@
    "license": "OWN",
    "status": "planned",
    "text": "Havalimanı büyük."
+  },
+  "img.openmoji.envelope": {
+   "id": "img.openmoji.envelope",
+   "kind": "image",
+   "file": "images/openmoji/2709.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-2709/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "aud.own.s.L12.017": {
+   "id": "aud.own.s.L12.017",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu mektup Ali'den."
+  },
+  "aud.own.s.L12.018": {
+   "id": "aud.own.s.L12.018",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ahmet Paris'ten."
+  },
+  "aud.own.s.L13.021": {
+   "id": "aud.own.s.L13.021",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali de."
+  },
+  "aud.own.s.L13.022": {
+   "id": "aud.own.s.L13.022",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali'de."
+  },
+  "aud.own.s.L13.023": {
+   "id": "aud.own.s.L13.023",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bende."
   }
  }
 }
