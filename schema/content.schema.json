@@ -78,6 +78,7 @@
               "id": { "$ref": "#/$defs/patternId" },
               "description": { "type": "string" },
               "suffix": { "$ref": "#/$defs/suffixId" },
+              "suffixes": { "type": "array", "items": { "$ref": "#/$defs/suffixId" }, "minItems": 1, "description": "Suffix chain for patterns that stack endings (-DA + -(y)Im). Use instead of `suffix`." },
               "word_filter": {
                 "type": "object",
                 "additionalProperties": false,
@@ -322,7 +323,8 @@
           "word": { "$ref": "#/$defs/wordId" },
           "suffixes": { "type": "array", "items": { "$ref": "#/$defs/suffixId" } },
           "expected": { "type": "string" },
-          "note": { "type": "string" }
+          "note": { "type": "string" },
+          "pending": { "type": "string", "description": "Known engine gap (the reason). The test is expected to fail until the engine handles it." }
         }
       }
     },

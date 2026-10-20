@@ -86,6 +86,8 @@ feedback:               # templates used by `feedback: auto:<grammar id>`
 
 `word_filter` keys: `pos`, `last_vowel` (`back` | `front`), `ends_with` (`vowel` | `voiceless` | `voiced_consonant`), `flags` (word must have all of them).
 
+A pattern that stacks endings uses `suffixes` (a chain) instead of `suffix`: `suffixes: [sfx.loc, sfx.cop_1sg]` → *evdeyim* (L11). A pattern with neither (e.g. the L13 clitic *de/da*) is a rule card with no generated word.
+
 ### 4.3 Lesson (`lessons/`)
 ```yaml
 id: L10
@@ -207,7 +209,7 @@ Every image and audio file has one entry. The **Credits** screen is generated fr
 The schema **rejects** NC and ND licences. `OWN` = recorded or drawn for us under a written agreement. `TTS` = placeholder only.
 
 ### 4.9 Morphology (`morphology/`)
-`suffixes.yaml` lists every suffix in archiphoneme notation (`form: DA`, `form: (y)I`) with the grammar point that introduces it. `tests.yaml` holds `{lemma, suffixes, expected}` cases: *kitap + loc = kitapta*, *su + acc = suyu*. These tests are shared by the app's form engine and by future validator checks.
+`suffixes.yaml` lists every suffix in archiphoneme notation (`form: DA`, `form: (y)I`) with the grammar point that introduces it. `tests.yaml` holds `{lemma, suffixes, expected}` cases: *kitap + loc = kitapta*, *su + acc = suyu*. These tests are shared by the app's form engine and by future validator checks. A case the engine doesn't handle yet gets `pending: "<reason>"`: the app test then expects it to fail (`it.failing`), and starts failing once the engine is fixed, as a reminder to remove the field. Current gap: apostrophes on proper nouns (*İstanbul'da*, *Londra'danım*).
 
 ## 5. What the validator checks
 

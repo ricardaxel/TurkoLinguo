@@ -24,3 +24,49 @@
 - { word: w.saat,    suffixes: [sfx.acc], expected: saati,     note: "front flag" }
 - { word: w.buzdolabı, suffixes: [sfx.acc], expected: buzdolabını, note: "compound" }
 - { word: w.buzdolabı, suffixes: [sfx.pl], expected: buzdolapları, note: "compound: possessive moves after the plural" }
+
+# Location + "to be" (L11): -DA always ends in a vowel → buffer y
+- { word: w.ev,      suffixes: [sfx.loc, sfx.cop_1sg], expected: evdeyim }
+- { word: w.okul,    suffixes: [sfx.loc, sfx.cop_2sg], expected: okuldasın }
+- { word: w.park,    suffixes: [sfx.loc, sfx.cop_1pl], expected: parktayız, note: "voiceless k → t, then buffer y" }
+- { word: w.hastane, suffixes: [sfx.loc, sfx.cop_2pl], expected: hastanedesiniz }
+- { word: w.bahçe,   suffixes: [sfx.loc, sfx.cop_3pl], expected: bahçedeler }
+- { word: w.market,  suffixes: [sfx.loc, sfx.cop_1sg], expected: marketteyim }
+- { word: w.sokak,   suffixes: [sfx.loc, sfx.cop_1sg], expected: sokaktayım, note: "soft flag ignored: -DA is consonant-initial" }
+- { word: w.şehir,   suffixes: [sfx.loc], expected: şehirde,   note: "drop flag ignored before a consonant" }
+- { word: w.havalimanı, suffixes: [sfx.loc, sfx.cop_1sg], expected: havalimanındayım, note: "compound: buffer n" }
+
+# Proper nouns: apostrophe before the ending (L11, L12)
+- { word: w.İstanbul, suffixes: [sfx.loc], expected: "İstanbul'da", pending: "engine: no apostrophe on proper nouns" }
+- { word: w.Ali,      suffixes: [sfx.loc], expected: "Ali'de",      pending: "engine: no apostrophe on proper nouns" }
+- { word: w.Ahmet,    suffixes: [sfx.loc], expected: "Ahmet'te",    pending: "engine: no apostrophe on proper nouns" }
+- { word: w.Ankara,   suffixes: [sfx.loc, sfx.cop_1sg], expected: "Ankara'dayım", pending: "engine: no apostrophe on proper nouns" }
+- { word: w.İzmir,    suffixes: [sfx.loc, sfx.cop_1sg], expected: "İzmir'deyim",  pending: "engine: no apostrophe on proper nouns" }
+
+# Ablative -DAn (L12): same choices as -DA; after it no buffer y
+- { word: w.ev,      suffixes: [sfx.abl], expected: evden }
+- { word: w.okul,    suffixes: [sfx.abl], expected: okuldan }
+- { word: w.kitap,   suffixes: [sfx.abl], expected: kitaptan,  note: "no softening before a consonant" }
+- { word: w.otobüs,  suffixes: [sfx.abl], expected: otobüsten, note: "only the last vowel counts" }
+- { word: w.banka,   suffixes: [sfx.abl], expected: bankadan }
+- { word: w.kütüphane, suffixes: [sfx.abl], expected: kütüphaneden }
+- { word: w.ev,      suffixes: [sfx.pl, sfx.abl], expected: evlerden }
+- { word: w.saat,    suffixes: [sfx.abl], expected: saatten,   note: "front flag" }
+- { word: w.yatak_odası, suffixes: [sfx.abl], expected: yatak odasından, note: "compound: buffer n" }
+- { word: w.İstanbul, suffixes: [sfx.abl], expected: "İstanbul'dan", pending: "engine: no apostrophe on proper nouns" }
+- { word: w.Türkiye,  suffixes: [sfx.abl, sfx.cop_1sg], expected: "Türkiye'denim", pending: "engine: no apostrophe on proper nouns" }
+- { word: w.Londra,   suffixes: [sfx.abl, sfx.cop_1sg], expected: "Londra'danım", pending: "engine: no apostrophe on proper nouns" }
+- { word: w.İzmir,    suffixes: [sfx.abl, sfx.cop_1pl], expected: "İzmir'deniz",  pending: "engine: no apostrophe on proper nouns" }
+- { word: w.Ahmet,    suffixes: [sfx.abl], expected: "Ahmet'ten",   pending: "engine: no apostrophe on proper nouns" }
+
+# T9 places + locative (Turkish-expert checklist)
+- { word: w.market,  suffixes: [sfx.loc], expected: markette }
+- { word: w.park,    suffixes: [sfx.loc], expected: parkta }
+- { word: w.sokak,   suffixes: [sfx.loc], expected: sokakta,   note: "no softening before a consonant" }
+- { word: w.havalimanı, suffixes: [sfx.loc], expected: havalimanında, note: "compound: buffer n" }
+- { word: w.cami,    suffixes: [sfx.loc], expected: camide }
+- { word: w.eczane,  suffixes: [sfx.loc], expected: eczanede }
+- { word: w.köprü,   suffixes: [sfx.loc], expected: köprüde }
+- { word: w.ben,     suffixes: [sfx.loc], expected: bende,     note: "vs the clitic: ben de 'me too'" }
+- { word: w.Paris,   suffixes: [sfx.loc], expected: "Paris'te",  pending: "engine: no apostrophe on proper nouns" }
+- { word: w.Paris,   suffixes: [sfx.abl], expected: "Paris'ten", pending: "engine: no apostrophe on proper nouns" }

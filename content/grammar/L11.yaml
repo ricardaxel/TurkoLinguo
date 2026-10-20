@@ -1,0 +1,68 @@
+id: g.L11.loc_copula
+title: "Location + 'to be'; apostrophes on names"
+suffixes: [sfx.loc, sfx.cop_1sg, sfx.cop_2sg, sfx.cop_1pl, sfx.cop_2pl, sfx.cop_3pl]
+
+reference: |
+  To say *I am at home*, put the "to be" endings from L5 **after** -DA:
+
+  | Pronoun | Form | Meaning |
+  |---|---|---|
+  | ben | ev·de·**yim** | I am at home |
+  | sen | ev·de·**sin** | you are at home |
+  | o | ev·de | he / she is at home |
+  | biz | ev·de·**yiz** | we are at home |
+  | siz | ev·de·**siniz** | you (pl. / polite) are at home |
+  | onlar | ev·de(·**ler**) | they are at home |
+
+  **Buffer y:** -DA always ends in a vowel, so *-(y)Im* and *-(y)Iz* always get their **y**: ev·de·**y**im, park·ta·**y**ız.
+
+  **Harmony:** the person ending looks at the vowel of -DA. **-da** → -yım, -sın, -yız, -sınız, -lar · **-de** → -yim, -sin, -yiz, -siniz, -ler.
+
+  **Questions and negation** work as in L6–L7: *Evde misin?* "Are you at home?" · *Evde değilim.* "I'm not at home."
+
+  **Names take an apostrophe** before any ending: *İstanbul'da*, *Ankara'dayım*, *Ali'de* "Ali has it, it's with Ali". The ending follows the usual rules: *Ahmet'te* (t after t).
+
+  *Neredesin?* "Where are you?" = nere·de·sin.
+
+patterns:
+  - id: g.L11.loc_copula.back_1sg
+    description: "Back vowel: -da + -yım (I am …)"
+    suffixes: [sfx.loc, sfx.cop_1sg]
+    word_filter: { pos: noun, last_vowel: back }
+  - id: g.L11.loc_copula.back_2sg
+    description: "Back vowel: -da + -sın (you are …)"
+    suffixes: [sfx.loc, sfx.cop_2sg]
+    word_filter: { pos: noun, last_vowel: back }
+  - id: g.L11.loc_copula.front_2sg
+    description: "Front vowel: -de + -sin (you are …)"
+    suffixes: [sfx.loc, sfx.cop_2sg]
+    word_filter: { pos: noun, last_vowel: front }
+  - id: g.L11.loc_copula.voiceless_1pl
+    description: "Fıstıkçı Şahap → -ta / -te, then -yız / -yiz (we are …)"
+    suffixes: [sfx.loc, sfx.cop_1pl]
+    word_filter: { pos: noun, ends_with: voiceless }
+  - id: g.L11.loc_copula.plural_2pl
+    description: "-sınız / -siniz (you plural / polite are …)"
+    suffixes: [sfx.loc, sfx.cop_2pl]
+    word_filter: { pos: noun }
+  - id: g.L11.loc_copula.name
+    description: "Names: apostrophe before the ending (İstanbul'da, Ankara'dayım)"
+    suffixes: [sfx.loc, sfx.cop_1sg]
+    word_filter: { pos: name }
+
+feedback:
+  # locative codes (same diagnosis as L10, so typed sentences with -DA still get explained)
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-{D}a**."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-{D}e**."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  voiceless: "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: {answer}."
+  not_voiceless: "**{c}** is not in Fıstıkçı Şahap → **d**: {answer}."
+  after_vowel: "**{word}** ends in a vowel → always **d**: {answer}."
+  detached: "The location ending is **attached** to the word: **{answer}**."
+  stem_changed: "-DA starts with a consonant, so **{word}** doesn't change: **{answer}**."
+  # stacking and names (used by the per-item feedback maps until the engine diagnoses chains)
+  no_buffer: "-DA ends in a vowel, so *-(y)Im / -(y)Iz* need the buffer **y**: **{answer}**."
+  person_harmony: "The person ending follows the vowel of **-DA** (a → ı, e → i): **{answer}**."
+  order: "Location first, then the person: **{answer}**."
+  apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

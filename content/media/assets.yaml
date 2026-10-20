@@ -64,3 +64,100 @@
 - { id: aud.own.s.L10.017, kind: audio, source: own, license: OWN, status: planned, text: "Lamba nerede?" }
 - { id: aud.own.s.T8.001,  kind: audio, source: own, license: OWN, status: planned, text: "Büyük bir mutfak." }
 - { id: aud.own.s.T8.002,  kind: audio, source: own, license: OWN, status: planned, text: "Yatak yeni mi?" }
+
+# ---------- L11–L13, T9, T10 ----------
+# Images: OpenMoji (CC BY-SA 4.0)
+- { id: img.openmoji.person, kind: image, file: images/openmoji/1F9D1.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F9D1/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.school, kind: image, file: images/openmoji/1F3EB.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3EB/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.pen, kind: image, file: images/openmoji/1F58A.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F58A/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.hospital, kind: image, file: images/openmoji/1F3E5.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3E5/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.bank, kind: image, file: images/openmoji/1F3E6.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3E6/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.store, kind: image, file: images/openmoji/1F3EA.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3EA/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.park, kind: image, file: images/openmoji/1F3DE.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3DE/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.mosque, kind: image, file: images/openmoji/1F54C.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F54C/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.flag_turkey, kind: image, file: images/openmoji/1F1F9-1F1F7.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F1F9-1F1F7/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.flag_uk, kind: image, file: images/openmoji/1F1EC-1F1E7.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F1EC-1F1E7/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.dog, kind: image, file: images/openmoji/1F415.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F415/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.bird, kind: image, file: images/openmoji/1F426.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F426/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.fish, kind: image, file: images/openmoji/1F41F.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F41F/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.horse, kind: image, file: images/openmoji/1F40E.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F40E/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.cow, kind: image, file: images/openmoji/1F404.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F404/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.sheep, kind: image, file: images/openmoji/1F411.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F411/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.chicken, kind: image, file: images/openmoji/1F414.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F414/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+# Images: our composites (adaptations of CC BY-SA icons → CC BY-SA)
+- { id: img.own.person_in_park,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.person, img.openmoji.park] }
+- { id: img.own.person_at_home,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.person, img.openmoji.house] }
+- { id: img.own.dog_and_cat_in_garden, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.dog, img.openmoji.cat], notes: "Dog and cat together in a garden (L13)." }
+- { id: img.own.pen_and_book_in_bag,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.pen, img.openmoji.book, img.openmoji.bag] }
+- { id: img.own.ali_home_ayse_school,  kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.person, img.openmoji.house, img.openmoji.school], notes: "Two panels: Ali at home | Ayşe at school (L13)." }
+# Audio: our recording session
+- { id: aud.own.L11_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "parktayız, hastanedesin, Ankara'dayım" }
+- { id: aud.own.s.L11.001, kind: audio, source: own, license: OWN, status: planned, text: "Neredesin?" }
+- { id: aud.own.s.L11.002, kind: audio, source: own, license: OWN, status: planned, text: "Evdeyim." }
+- { id: aud.own.s.L11.003, kind: audio, source: own, license: OWN, status: planned, text: "Ben okuldayım." }
+- { id: aud.own.s.L11.004, kind: audio, source: own, license: OWN, status: planned, text: "Sen parkta mısın?" }
+- { id: aud.own.s.L11.005, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, ben evdeyim." }
+- { id: aud.own.s.L11.006, kind: audio, source: own, license: OWN, status: planned, text: "Biz bankadayız." }
+- { id: aud.own.s.L11.007, kind: audio, source: own, license: OWN, status: planned, text: "Siz hastanede misiniz?" }
+- { id: aud.own.s.L11.008, kind: audio, source: own, license: OWN, status: planned, text: "Onlar bahçede." }
+- { id: aud.own.s.L11.009, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe İstanbul'da." }
+- { id: aud.own.s.L11.010, kind: audio, source: own, license: OWN, status: planned, text: "Ankara'dayım." }
+- { id: aud.own.s.L11.011, kind: audio, source: own, license: OWN, status: planned, text: "Ali eczanede değil." }
+- { id: aud.own.s.L11.012, kind: audio, source: own, license: OWN, status: planned, text: "Şimdi marketteyim." }
+- { id: aud.own.s.L11.013, kind: audio, source: own, license: OWN, status: planned, text: "Sokaktayım." }
+- { id: aud.own.s.L11.014, kind: audio, source: own, license: OWN, status: planned, text: "İzmir'de misin?" }
+- { id: aud.own.s.L11.015, kind: audio, source: own, license: OWN, status: planned, text: "Evet, İzmir'deyim." }
+- { id: aud.own.s.L11.016, kind: audio, source: own, license: OWN, status: planned, text: "Biz Ali'deyiz." }
+- { id: aud.own.s.L11.017, kind: audio, source: own, license: OWN, status: planned, text: "Siz neredesiniz?" }
+- { id: aud.own.s.L11.018, kind: audio, source: own, license: OWN, status: planned, text: "Biz parktayız." }
+- { id: aud.own.s.L11.019, kind: audio, source: own, license: OWN, status: planned, text: "Ben evde değilim." }
+- { id: aud.own.s.L11.020, kind: audio, source: own, license: OWN, status: planned, text: "Sen parktasın." }
+- { id: aud.own.s.L11.021, kind: audio, source: own, license: OWN, status: planned, text: "Ben İstanbul'dayım." }
+- { id: aud.own.s.L12.001, kind: audio, source: own, license: OWN, status: planned, text: "Neredensin?" }
+- { id: aud.own.s.L12.002, kind: audio, source: own, license: OWN, status: planned, text: "Londra'danım." }
+- { id: aud.own.s.L12.003, kind: audio, source: own, license: OWN, status: planned, text: "İstanbul'danım." }
+- { id: aud.own.s.L12.004, kind: audio, source: own, license: OWN, status: planned, text: "Ali Ankara'dan." }
+- { id: aud.own.s.L12.005, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe nereden?" }
+- { id: aud.own.s.L12.006, kind: audio, source: own, license: OWN, status: planned, text: "Siz neredensiniz?" }
+- { id: aud.own.s.L12.007, kind: audio, source: own, license: OWN, status: planned, text: "Biz İzmir'deniz." }
+- { id: aud.own.s.L12.008, kind: audio, source: own, license: OWN, status: planned, text: "Ben Londra'dayım." }
+- { id: aud.own.s.L12.009, kind: audio, source: own, license: OWN, status: planned, text: "Ben Londra'danım." }
+- { id: aud.own.s.L12.010, kind: audio, source: own, license: OWN, status: planned, text: "Onlar Türkiye'den." }
+- { id: aud.own.s.L12.011, kind: audio, source: own, license: OWN, status: planned, text: "Bu çay Türkiye'den." }
+- { id: aud.own.s.L12.012, kind: audio, source: own, license: OWN, status: planned, text: "Sen İngiltere'den misin?" }
+- { id: aud.own.s.L12.013, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, İngiltere'den değilim." }
+- { id: aud.own.s.L12.014, kind: audio, source: own, license: OWN, status: planned, text: "Bu süt marketten." }
+- { id: aud.own.s.L12.015, kind: audio, source: own, license: OWN, status: planned, text: "Bu kitap kütüphaneden." }
+- { id: aud.own.s.L12.016, kind: audio, source: own, license: OWN, status: planned, text: "Biz İstanbul'danız." }
+- { id: aud.own.s.L13.001, kind: audio, source: own, license: OWN, status: planned, text: "Ben de." }
+- { id: aud.own.s.L13.002, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe de evde." }
+- { id: aud.own.s.L13.003, kind: audio, source: own, license: OWN, status: planned, text: "Ali ve Ayşe evde." }
+- { id: aud.own.s.L13.004, kind: audio, source: own, license: OWN, status: planned, text: "Ali evde ama Ayşe okulda." }
+- { id: aud.own.s.L13.005, kind: audio, source: own, license: OWN, status: planned, text: "Kedi de var." }
+- { id: aud.own.s.L13.006, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet de parkta." }
+- { id: aud.own.s.L13.007, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet parkta." }
+- { id: aud.own.s.L13.008, kind: audio, source: own, license: OWN, status: planned, text: "Kitap da çantada." }
+- { id: aud.own.s.L13.009, kind: audio, source: own, license: OWN, status: planned, text: "Ben de İstanbul'danım." }
+- { id: aud.own.s.L13.010, kind: audio, source: own, license: OWN, status: planned, text: "Sen de evde misin?" }
+- { id: aud.own.s.L13.011, kind: audio, source: own, license: OWN, status: planned, text: "Köpek ve kedi bahçede." }
+- { id: aud.own.s.L13.012, kind: audio, source: own, license: OWN, status: planned, text: "Kuş bahçede ama kedi evde." }
+- { id: aud.own.s.L13.013, kind: audio, source: own, license: OWN, status: planned, text: "Biz de parktayız." }
+- { id: aud.own.s.L13.014, kind: audio, source: own, license: OWN, status: planned, text: "Ben Londra'danım ama Ayşe İstanbul'dan." }
+- { id: aud.own.s.L13.015, kind: audio, source: own, license: OWN, status: planned, text: "Kitap Ahmet'te." }
+- { id: aud.own.s.L13.016, kind: audio, source: own, license: OWN, status: planned, text: "Evde de kedi var." }
+- { id: aud.own.s.L13.017, kind: audio, source: own, license: OWN, status: planned, text: "Tavuk da var." }
+- { id: aud.own.s.L13.018, kind: audio, source: own, license: OWN, status: planned, text: "Evde kedi var." }
+- { id: aud.own.s.L13.019, kind: audio, source: own, license: OWN, status: planned, text: "Kedi bahçede." }
+- { id: aud.own.s.L13.020, kind: audio, source: own, license: OWN, status: planned, text: "Bahçede köpek var mı?" }
+- { id: aud.own.s.T10.001, kind: audio, source: own, license: OWN, status: planned, text: "Bahçede bir köpek var." }
+- { id: aud.own.s.T10.002, kind: audio, source: own, license: OWN, status: planned, text: "Balık suda." }
+- { id: aud.own.s.T9.001, kind: audio, source: own, license: OWN, status: planned, text: "Banka nerede?" }
+- { id: aud.own.s.T9.002, kind: audio, source: own, license: OWN, status: planned, text: "Ali okulda." }
+- { id: aud.own.s.T9.003, kind: audio, source: own, license: OWN, status: planned, text: "Kütüphanedeyim." }
+- { id: aud.own.s.T9.004, kind: audio, source: own, license: OWN, status: planned, text: "Havalimanı büyük." }
+- { id: img.openmoji.envelope, kind: image, file: images/openmoji/2709.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-2709/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: aud.own.s.L12.017, kind: audio, source: own, license: OWN, status: planned, text: "Bu mektup Ali'den." }
+- { id: aud.own.s.L12.018, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet Paris'ten." }
+- { id: aud.own.s.L13.021, kind: audio, source: own, license: OWN, status: planned, text: "Ali de." }
+- { id: aud.own.s.L13.022, kind: audio, source: own, license: OWN, status: planned, text: "Ali'de." }
+- { id: aud.own.s.L13.023, kind: audio, source: own, license: OWN, status: planned, text: "Bende." }

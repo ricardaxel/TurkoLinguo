@@ -1,0 +1,13 @@
+id: T9
+title: City & places
+kind: core
+packs:
+  - id: T9.p1
+    unlock_after: L10
+    words: [w.pazar, w.hastane, w.eczane, w.market, w.banka, w.park, w.cami, w.sokak]
+    frames: [s.T9.001, s.T9.002]
+  - id: T9.p2
+    unlock_after: L11
+    words: [w.cadde, w.çarşı, w.istasyon, w.havalimanı, w.postane, w.kütüphane, w.köprü, w.şehir]
+    frames: [s.T9.003, s.T9.004]
+revisit: [L11, L12, L17]

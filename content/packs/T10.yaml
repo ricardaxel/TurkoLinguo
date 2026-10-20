@@ -1,0 +1,9 @@
+id: T10
+title: Animals
+kind: elective
+packs:
+  - id: T10.p1
+    unlock_after: L12
+    words: [w.keçi, w.köpek, w.kuş, w.balık, w.at, w.inek, w.koyun, w.tavuk]
+    frames: [s.T10.001, s.T10.002]
+revisit: [L13, L17, L18, L22, L29]

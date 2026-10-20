@@ -137,15 +137,18 @@
    },
    "L11": {
     "title": "Location + 'to be'; apostrophes",
-    "grammar": "g.L11.loc_copula"
+    "grammar": "g.L11.loc_copula",
+    "file": "lessons/L11.yaml"
    },
    "L12": {
     "title": "Ablative -DAn: from",
-    "grammar": "g.L12.abl"
+    "grammar": "g.L12.abl",
+    "file": "lessons/L12.yaml"
    },
    "L13": {
     "title": "Clitic de/da vs locative; ve, ama",
-    "grammar": "g.L13.clitic_de"
+    "grammar": "g.L13.clitic_de",
+    "file": "lessons/L13.yaml"
    },
    "L14": {
     "title": "Verbs, infinitive, imperative",
@@ -244,7 +247,7 @@
    "suffixes": [
     "sfx.loc"
    ],
-   "reference": "**-DA** means *in*, *at* or *on*: **ev·de** \"at home\", **masa·da** \"on the table\", **çanta·da** \"in the bag\".\n\n**Vowel (A):** look at the *last* vowel of the word.\na ı o u → **-da** · e i ö ü → **-de**\n\n**Consonant (D):** after one of the voiceless consonants **f s t k ç ş h p** (\"**F**ı**st**ı**kç**ı **Ş**a**h**a**p**\") → **-ta / -te**; otherwise **-da / -de**.\n\nThe word itself never changes before -DA: *kitap → kitapta*, *mutfak → mutfakta*.\nAfter a plural: **ev·ler·de** \"in the houses\".\n",
+   "reference": "**-DA** means *in*, *at* or *on*: **ev·de** \"at home\", **masa·da** \"on the table\", **çanta·da** \"in the bag\".\n\n**Vowel (A):** look at the *last* vowel of the word.\na ı o u → **-da** · e i ö ü → **-de**\n\n**Consonant (D):** after one of the voiceless consonants **f s t k ç ş h p** (\"**F**ı**st**ı**kç**ı **Ş**a**h**a**p**\") → **-ta / -te**; otherwise **-da / -de**.\n\nThe word itself never changes before -DA: *kitap → kitapta*, *mutfak → mutfakta*.\nException: a compound like *yatak odası* adds **n**: *yatak odası·n·da* (explained in L24).\nAfter a plural: **ev·ler·de** \"in the houses\".\n",
    "patterns": [
     {
      "id": "g.L10.loc.back",
@@ -303,6 +306,215 @@
     "after_vowel": "**{word}** ends in a vowel → always **d**: {answer}.",
     "detached": "The location ending is **attached** to the word: **{answer}**.",
     "stem_changed": "-DA starts with a consonant, so **{word}** doesn't change: **{answer}**.",
+    "accent": "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."
+   }
+  },
+  "g.L11.loc_copula": {
+   "id": "g.L11.loc_copula",
+   "title": "Location + 'to be'; apostrophes on names",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_1sg",
+    "sfx.cop_2sg",
+    "sfx.cop_1pl",
+    "sfx.cop_2pl",
+    "sfx.cop_3pl"
+   ],
+   "reference": "To say *I am at home*, put the \"to be\" endings from L5 **after** -DA:\n\n| Pronoun | Form | Meaning |\n|---|---|---|\n| ben | ev·de·**yim** | I am at home |\n| sen | ev·de·**sin** | you are at home |\n| o | ev·de | he / she is at home |\n| biz | ev·de·**yiz** | we are at home |\n| siz | ev·de·**siniz** | you (pl. / polite) are at home |\n| onlar | ev·de(·**ler**) | they are at home |\n\n**Buffer y:** -DA always ends in a vowel, so *-(y)Im* and *-(y)Iz* always get their **y**: ev·de·**y**im, park·ta·**y**ız.\n\n**Harmony:** the person ending looks at the vowel of -DA. **-da** → -yım, -sın, -yız, -sınız, -lar · **-de** → -yim, -sin, -yiz, -siniz, -ler.\n\n**Questions and negation** work as in L6–L7: *Evde misin?* \"Are you at home?\" · *Evde değilim.* \"I'm not at home.\"\n\n**Names take an apostrophe** before any ending: *İstanbul'da*, *Ankara'dayım*, *Ali'de* \"Ali has it, it's with Ali\". The ending follows the usual rules: *Ahmet'te* (t after t).\n\n*Neredesin?* \"Where are you?\" = nere·de·sin.\n",
+   "patterns": [
+    {
+     "id": "g.L11.loc_copula.back_1sg",
+     "description": "Back vowel: -da + -yım (I am …)",
+     "suffixes": [
+      "sfx.loc",
+      "sfx.cop_1sg"
+     ],
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel": "back"
+     }
+    },
+    {
+     "id": "g.L11.loc_copula.back_2sg",
+     "description": "Back vowel: -da + -sın (you are …)",
+     "suffixes": [
+      "sfx.loc",
+      "sfx.cop_2sg"
+     ],
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel": "back"
+     }
+    },
+    {
+     "id": "g.L11.loc_copula.front_2sg",
+     "description": "Front vowel: -de + -sin (you are …)",
+     "suffixes": [
+      "sfx.loc",
+      "sfx.cop_2sg"
+     ],
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel": "front"
+     }
+    },
+    {
+     "id": "g.L11.loc_copula.voiceless_1pl",
+     "description": "Fıstıkçı Şahap → -ta / -te, then -yız / -yiz (we are …)",
+     "suffixes": [
+      "sfx.loc",
+      "sfx.cop_1pl"
+     ],
+     "word_filter": {
+      "pos": "noun",
+      "ends_with": "voiceless"
+     }
+    },
+    {
+     "id": "g.L11.loc_copula.plural_2pl",
+     "description": "-sınız / -siniz (you plural / polite are …)",
+     "suffixes": [
+      "sfx.loc",
+      "sfx.cop_2pl"
+     ],
+     "word_filter": {
+      "pos": "noun"
+     }
+    },
+    {
+     "id": "g.L11.loc_copula.name",
+     "description": "Names: apostrophe before the ending (İstanbul'da, Ankara'dayım)",
+     "suffixes": [
+      "sfx.loc",
+      "sfx.cop_1sg"
+     ],
+     "word_filter": {
+      "pos": "name"
+     }
+    }
+   ],
+   "feedback": {
+    "vowel_back": "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-{D}a**.",
+    "vowel_front": "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-{D}e**.",
+    "last_not_first": "Only the **last** vowel counts, not the first one.",
+    "voiceless": "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: {answer}.",
+    "not_voiceless": "**{c}** is not in Fıstıkçı Şahap → **d**: {answer}.",
+    "after_vowel": "**{word}** ends in a vowel → always **d**: {answer}.",
+    "detached": "The location ending is **attached** to the word: **{answer}**.",
+    "stem_changed": "-DA starts with a consonant, so **{word}** doesn't change: **{answer}**.",
+    "no_buffer": "-DA ends in a vowel, so *-(y)Im / -(y)Iz* need the buffer **y**: **{answer}**.",
+    "person_harmony": "The person ending follows the vowel of **-DA** (a → ı, e → i): **{answer}**.",
+    "order": "Location first, then the person: **{answer}**.",
+    "apostrophe": "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**.",
+    "accent": "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."
+   }
+  },
+  "g.L12.abl": {
+   "id": "g.L12.abl",
+   "title": "Ablative -DAn: from",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "reference": "**-DAn** means *from*: **ev·den** \"from home\", **okul·dan** \"from school\", **İstanbul'dan** \"from Istanbul\".\n\nIt is the locative **-DA** plus **n**, so the same two questions decide its form:\n\n- **Vowel (A):** last vowel a ı o u → **-dan** · e i ö ü → **-den**\n- **Consonant (D):** after **f s t k ç ş h p** (\"Fıstıkçı Şahap\") → **-tan / -ten**; otherwise **-dan / -den**.\n\nThe word itself doesn't change: *kitap → kitaptan*, *sokak → sokaktan*. Exception: a compound like *yatak odası* adds **n**, as with -DA: *yatak odası·n·dan*. After a plural: **ev·ler·den**.\n\n**With \"to be\" endings** (L11), no verb is needed: *Neredensin?* \"Where are you from?\" — *Londra'danım.* \"I'm from London.\" -DAn ends in a consonant, so there is **no buffer y**: Londra'dan·**ım**, İzmir'den·**iz**.\n\n*Nerelisin?* (the L5 phrase) is the more standard way to ask where someone is from; *Neredensin?* is fine in conversation.\n\n⚠️ Don't mix them up: *Londra'dayım* \"I'm **in** London\" · *Londra'danım* \"I'm **from** London\".\n\nNames keep their apostrophe: *Türkiye'den*, *Ahmet'ten*.\n",
+   "patterns": [
+    {
+     "id": "g.L12.abl.back",
+     "description": "Back last vowel → -dan",
+     "suffix": "sfx.abl",
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel": "back",
+      "ends_with": "voiced_consonant"
+     }
+    },
+    {
+     "id": "g.L12.abl.front",
+     "description": "Front last vowel → -den",
+     "suffix": "sfx.abl",
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel": "front",
+      "ends_with": "voiced_consonant"
+     }
+    },
+    {
+     "id": "g.L12.abl.after_vowel",
+     "description": "Word ends in a vowel → d",
+     "suffix": "sfx.abl",
+     "word_filter": {
+      "pos": "noun",
+      "ends_with": "vowel"
+     }
+    },
+    {
+     "id": "g.L12.abl.voiceless",
+     "description": "Ends in f s t k ç ş h p → -tan / -ten",
+     "suffix": "sfx.abl",
+     "word_filter": {
+      "pos": "noun",
+      "ends_with": "voiceless"
+     }
+    },
+    {
+     "id": "g.L12.abl.last_vowel",
+     "description": "First and last vowels differ in harmony: only the last one counts",
+     "suffix": "sfx.abl",
+     "word_filter": {
+      "pos": "noun",
+      "last_vowel_differs_from_first": true
+     }
+    },
+    {
+     "id": "g.L12.abl.origin",
+     "description": "Where from: name + -DAn + -Im (Londra'danım), no buffer y",
+     "suffixes": [
+      "sfx.abl",
+      "sfx.cop_1sg"
+     ],
+     "word_filter": {
+      "pos": "name"
+     }
+    }
+   ],
+   "feedback": {
+    "vowel_back": "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-{D}an**.",
+    "vowel_front": "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-{D}en**.",
+    "last_not_first": "Only the **last** vowel counts, not the first one.",
+    "voiceless": "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: {answer}.",
+    "not_voiceless": "**{c}** is not in Fıstıkçı Şahap → **d**: {answer}.",
+    "after_vowel": "**{word}** ends in a vowel → always **d**: {answer}.",
+    "detached": "The *from* ending is **attached** to the word: **{answer}**.",
+    "stem_changed": "-DAn starts with a consonant, so **{word}** doesn't change: **{answer}**.",
+    "loc_for_abl": "**-DA** means *in / at*; *from* is **-DAn**: **{answer}**.",
+    "buffer_after_n": "-DAn ends in a consonant, so no buffer **y**: **{answer}**.",
+    "apostrophe": "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**.",
+    "accent": "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."
+   }
+  },
+  "g.L13.clitic_de": {
+   "id": "g.L13.clitic_de",
+   "title": "Clitic de/da 'too' vs locative -DA; ve, ama",
+   "suffixes": [],
+   "reference": "**de / da** = *too, also*. It is a **separate word**, placed right after the word it adds to:\n\n*Ben de.* \"Me too.\" · *Ayşe de evde.* \"Ayşe is at home **too**.\" · *Kitap da çantada.* \"The book is in the bag **too**.\"\n\n- **Vowel:** a/e harmony with the word before: a ı o u → **da**, e i ö ü → **de**.\n- **Consonant:** it **never** becomes *te / ta*: *Ahmet **de***, *kitap **da***, *tavuk **da*** (not ~~Ahmet te~~, ~~kitap ta~~).\n\n**Separate or attached?** The locative **-DA** is *attached* and does change d → t: *kitap**ta*** \"in the book\", *Ahmet'**te*** \"with Ahmet\". Test: leave the word out. If the sentence still makes sense, it was the clitic: *Ahmet ~~de~~ parkta* → *Ahmet parkta*. ✓\n\nBoth together: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n\nThe clitic never takes an apostrophe. Watch these pairs: *Ali de* \"Ali too\" / *Ali'de* \"Ali has it, it's with Ali\"; *ben de* \"me too\" / *bende* \"with me, I have it\".\n\n**ve** = *and* joins words: *Ali ve Ayşe evde.*\n**ama** = *but* joins two statements: *Ali evde ama Ayşe okulda.*\n",
+   "patterns": [
+    {
+     "id": "g.L13.clitic_de.harmony",
+     "description": "de after e i ö ü, da after a ı o u"
+    },
+    {
+     "id": "g.L13.clitic_de.never_t",
+     "description": "The clitic never becomes te / ta (Ahmet de, kitap da)"
+    },
+    {
+     "id": "g.L13.clitic_de.vs_loc",
+     "description": "Separate 'too' vs attached locative (Ahmet de / Ahmet'te)"
+    }
+   ],
+   "feedback": {
+    "clitic_never_t": "**de / da** 'too' never changes to **t**, even after Fıstıkçı Şahap: **{answer}**.",
+    "clitic_harmony": "**de / da** follows the last vowel of the word before it: **{answer}**.",
+    "clitic_separate": "*too* is a **separate** word: **{answer}**.",
+    "loc_attached": "The location ending is **attached** to the word: **{answer}**.",
     "accent": "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."
    }
   }
@@ -729,9 +941,1313 @@
      ]
     }
    }
+  },
+  "L11": {
+   "id": "L11",
+   "title": "Location + 'to be'; apostrophes",
+   "grammar": "g.L11.loc_copula",
+   "new_words": [
+    "w.şimdi"
+   ],
+   "not_yet": [
+    "from -DAn (Londra'danım) → L12",
+    "the separate word de 'too' (Ben de evdeyim) → L13",
+    "possessive + locative (evimdeyim) → L24"
+   ],
+   "sessions": {
+    "learn": {
+     "minutes": 3.5,
+     "cards": [
+      {
+       "kind": "hook",
+       "body": "📱 **Neredesin?** \"Where are you?\"\n🏠 **Evdeyim.** \"I'm at home.\"\n\nOne word, three pieces: **ev·de·yim** = home · at · I am.\n",
+       "sentences": [
+        "s.L11.001",
+        "s.L11.002"
+       ],
+       "audio": [
+        "aud.own.s.L11.001",
+        "aud.own.s.L11.002"
+       ]
+      },
+      {
+       "kind": "rule",
+       "title": "Location + person",
+       "body": "You already know both pieces: **-DA** \"at\" (L10) and the \"to be\" endings (L5). Put them in that order: **place · -DA · person**.\n\n| | okul \"school\" | ev \"home\" |\n|---|---|---|\n| ben | okul·da·**yım** | ev·de·**yim** |\n| sen | okul·da·**sın** | ev·de·**sin** |\n| o | okul·da | ev·de |\n| biz | okul·da·**yız** | ev·de·**yiz** |\n| siz | okul·da·**sınız** | ev·de·**siniz** |\n| onlar | okul·da(·**lar**) | ev·de(·**ler**) |\n\n💡 The pronoun is optional: *Okuldayım* already says \"I\".\n"
+      },
+      {
+       "kind": "rule",
+       "title": "Two small rules",
+       "body": "**1. Buffer y.** -DA always ends in a vowel, so -(y)Im and -(y)Iz always take **y**: ev·de·**y**im, park·ta·**y**ız.\n\n**2. Harmony keeps going.** The person ending looks at the vowel of -DA:\n\n| -DA gave… | then |\n|---|---|\n| **-da / -ta** | -yım, -sın, -yız, -sınız, -lar |\n| **-de / -te** | -yim, -sin, -yiz, -siniz, -ler |\n\n*park → park·ta → park·ta·yız* · *market → market·te → market·te·yim*\n"
+      },
+      {
+       "kind": "rule",
+       "title": "Questions and 'not'",
+       "body": "Same as L6–L7: the person ending moves onto **mI** or **değil**.\n\n*Parkta mısın?* \"Are you in the park?\" — *Evet, parktayım.* / *Hayır, parkta değilim.*\n\nThey: *-lAr* stays on the word: *Evdeler mi?* (But with *onlar*, people usually just say *Onlar evde*.)\n\n🔊 Stress falls just **before** the person ending: ev**DE**yim, park**TA**yız.\n",
+       "sentences": [
+        "s.L11.004",
+        "s.L11.019"
+       ]
+      },
+      {
+       "kind": "rule",
+       "title": "Names take an apostrophe",
+       "body": "Names of people and places keep their spelling, so an **apostrophe** separates the ending:\n\n*İstanbul'**da*** \"in Istanbul\" · *Ankara'**dayım*** \"I'm in Ankara\" · *Ali'**de*** \"Ali has it, it's with Ali\"\n\nThe ending follows the usual rules, based on how the name **sounds**: *Ahmet'**te*** (t after t), *İzmir'**deyim***, *Paris'**te***.\n\nOnly **names** get the apostrophe. Language names don't: *Türkçe**de***, not ~~Türkçe'de~~.\n\n🔊 Stress stays on the name: **AN**kara'dayım, **İZ**mir'de.\n",
+       "sentences": [
+        "s.L11.009",
+        "s.L11.010"
+       ],
+       "audio": [
+        "aud.own.s.L11.009",
+        "aud.own.s.L11.010"
+       ]
+      },
+      {
+       "kind": "examples",
+       "title": "Step by step",
+       "body": "Three questions, in order: **which place?** → **-da or -de, d or t?** → **which person?**\n\n- *we · park* → park·**ta** → park·ta·**yız**\n- *you · hospital* → hastane·**de** → hastane·de·**sin**\n- *I · Ankara* → Ankara·**'da** → Ankara'da·**yım**\n",
+       "audio": [
+        "aud.own.L11_worked_examples"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "id": "L11.learn.01",
+       "type": "build_word",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L5.copula"
+       ],
+       "tiles": [
+        "okul",
+        "da",
+        "yım"
+       ],
+       "answer": "okul·da·yım",
+       "feedback": {
+        "okul·yım·da": "Location first, then the person: **okul·da·yım**."
+       }
+      },
+      {
+       "id": "L11.learn.02",
+       "type": "type_form",
+       "grammar": [
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L11.loc_copula.front_2sg",
+       "base": "w.ev",
+       "suffixes": [
+        "sfx.loc",
+        "sfx.cop_2sg"
+       ],
+       "prompt": "you are at home",
+       "answer": "evdesin",
+       "feedback": {
+        "evdesın": "-de has a front vowel, so the person ending is **-sin**: evdesin."
+       }
+      },
+      {
+       "id": "L11.learn.03",
+       "type": "picture_choose",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L11.loc_copula.back_1sg",
+       "images": [
+        "img.own.person_in_park"
+       ],
+       "prompt": "Ben …",
+       "options": [
+        "parktayım",
+        "parkdayım",
+        "parktayim"
+       ],
+       "answer": "parktayım"
+      },
+      {
+       "id": "L11.learn.04",
+       "type": "contrast_pair",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L5.copula"
+       ],
+       "prompt": "We're in the park.",
+       "options": [
+        "s.L11.018",
+        "s.L11.020"
+       ],
+       "answer": "s.L11.018"
+      },
+      {
+       "id": "L11.learn.05",
+       "type": "build_word",
+       "grammar": [
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L11.loc_copula.name",
+       "tiles": [
+        "Ankara",
+        "'da",
+        "yım"
+       ],
+       "answer": "Ankara·'da·yım",
+       "note": "Fused display: Ankara'dayım."
+      },
+      {
+       "id": "L11.learn.06",
+       "type": "listen_choose",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L5.copula"
+       ],
+       "sentence": "s.L11.006",
+       "options": [
+        "We're at the bank.",
+        "I'm at the bank.",
+        "You're at the bank."
+       ],
+       "answer": "We're at the bank."
+      }
+     ]
+    },
+    "practise": {
+     "minutes": 5,
+     "items": [
+      {
+       "id": "L11.practise.01",
+       "type": "type_form",
+       "grammar": [
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L11.loc_copula.back_2sg",
+       "base": "w.okul",
+       "suffixes": [
+        "sfx.loc",
+        "sfx.cop_2sg"
+       ],
+       "prompt": "you are at school",
+       "answer": "okuldasın",
+       "feedback": {
+        "okuldasin": "-da has a back vowel, so the person ending is **-sın**: okuldasın."
+       }
+      },
+      {
+       "id": "L11.practise.02",
+       "type": "type_form",
+       "grammar": [
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L11.loc_copula.voiceless_1pl",
+       "base": "w.park",
+       "suffixes": [
+        "sfx.loc",
+        "sfx.cop_1pl"
+       ],
+       "prompt": "we are in the park",
+       "answer": "parktayız",
+       "feedback": {
+        "parkdayız": "**park** ends in **k**, one of the Fıstıkçı Şahap letters → **t**: parktayız.",
+        "parktaız": "-ta ends in a vowel, so -(y)Iz needs the buffer **y**: parktayız.",
+        "parktayiz": "-ta has a back vowel, so the person ending is **-yız**: parktayız."
+       }
+      },
+      {
+       "id": "L11.practise.03",
+       "type": "type_form",
+       "grammar": [
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L11.loc_copula.plural_2pl",
+       "base": "w.hastane",
+       "suffixes": [
+        "sfx.loc",
+        "sfx.cop_2pl"
+       ],
+       "prompt": "you (plural / polite) are at the hospital",
+       "answer": "hastanedesiniz"
+      },
+      {
+       "id": "L11.practise.04",
+       "type": "build_word",
+       "grammar": [
+        "g.L11.loc_copula"
+       ],
+       "tiles": [
+        "market",
+        "te",
+        "yim"
+       ],
+       "answer": "market·te·yim",
+       "feedback": {
+        "market·yim·te": "Location first, then the person: **market·te·yim**."
+       }
+      },
+      {
+       "id": "L11.practise.05",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L5.copula"
+       ],
+       "sentence": "s.L11.003",
+       "word_bank": [
+        "Ben",
+        "okuldayım",
+        "okuldasın",
+        "okuldeyim"
+       ]
+      },
+      {
+       "id": "L11.practise.06",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L3.basics"
+       ],
+       "pattern": "g.L11.loc_copula.name",
+       "sentence": "s.L11.009",
+       "word_bank": [
+        "Ayşe",
+        "İstanbul'da",
+        "İstanbulda",
+        "İstanbul'de"
+       ]
+      },
+      {
+       "id": "L11.practise.07",
+       "type": "translate_to_en",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L5.copula"
+       ],
+       "sentence": "s.L11.008",
+       "note": "With onlar, -lAr is usually left out; bahçedeler is correct but less common."
+      },
+      {
+       "id": "L11.practise.08",
+       "type": "spot_error",
+       "grammar": [
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L11.loc_copula.name",
+       "text": "Ben İstanbuldayım.",
+       "error": "İstanbuldayım",
+       "answer": "İstanbul'dayım",
+       "sentence": "s.L11.021",
+       "feedback": {
+        "İstanbuldayım": "**İstanbul** is a name, so it takes an apostrophe before the ending: **İstanbul'dayım**."
+       }
+      },
+      {
+       "id": "L11.practise.09",
+       "type": "spot_error",
+       "grammar": [
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L11.loc_copula.voiceless_1pl",
+       "text": "Biz parktayiz.",
+       "error": "parktayiz",
+       "answer": "parktayız",
+       "sentence": "s.L11.018",
+       "feedback": {
+        "parktayiz": "-ta has a back vowel, so the person ending is **-yız**: parktayız."
+       }
+      },
+      {
+       "id": "L11.practise.10",
+       "type": "qa",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L7.question"
+       ],
+       "question": "s.L11.004",
+       "images": [
+        "img.own.person_at_home"
+       ],
+       "answers": [
+        "(Hayır,) (ben) evdeyim."
+       ],
+       "feedback": "auto:g.L11.loc_copula"
+      },
+      {
+       "id": "L11.practise.11",
+       "type": "dictation",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L7.question"
+       ],
+       "pattern": "g.L11.loc_copula.name",
+       "sentence": "s.L11.014"
+      },
+      {
+       "id": "L11.practise.12",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L6.degil"
+       ],
+       "sentence": "s.L11.019",
+       "typed": true,
+       "answers": [
+        "Evde değilim."
+       ]
+      },
+      {
+       "id": "L11.practise.13",
+       "type": "contrast_pair",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L6.degil"
+       ],
+       "prompt": "I'm not at home.",
+       "options": [
+        "s.L11.019",
+        "s.L11.002"
+       ],
+       "answer": "s.L11.019"
+      },
+      {
+       "id": "L11.practise.14",
+       "type": "mini_dialogue",
+       "grammar": [
+        "g.L11.loc_copula",
+        "g.L7.question"
+       ],
+       "images": [
+        "img.openmoji.store"
+       ],
+       "turns": [
+        {
+         "speaker": "A",
+         "sentence": "s.L11.001"
+        },
+        {
+         "speaker": "B",
+         "blank": true,
+         "answers": [
+          "(Şimdi) (ben) marketteyim."
+         ]
+        },
+        {
+         "speaker": "A",
+         "sentence": "s.L11.003"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "L12": {
+   "id": "L12",
+   "title": "Ablative -DAn: from",
+   "grammar": "g.L12.abl",
+   "new_words": [
+    "w.nereden",
+    "w.mektup"
+   ],
+   "not_yet": [
+    "verbs of motion (evden geliyorum) → L14–L15",
+    "verbs that take the ablative (korkmak) → preview only, produced from L17",
+    "the separate word de 'too' (Ben de İstanbul'danım) → L13",
+    "origin with -lI (Londralıyım) → L28"
+   ],
+   "sessions": {
+    "learn": {
+     "minutes": 3.5,
+     "cards": [
+      {
+       "kind": "hook",
+       "body": "🌍 **Neredensin?** \"Where are you from?\"\n🇬🇧 **Londra'danım.** \"I'm from London.\"\n\n*From* is one more ending: **Londra'·dan·ım** = London · from · I am.\n",
+       "sentences": [
+        "s.L12.001",
+        "s.L12.002"
+       ],
+       "audio": [
+        "aud.own.s.L12.001",
+        "aud.own.s.L12.002"
+       ]
+      },
+      {
+       "kind": "rule",
+       "title": "-DAn = -DA + n",
+       "body": "You already know the hard part. **-DAn** is the locative plus **n**, with the same two choices:\n\n| Word ends in… | in / at (L10) | from |\n|---|---|---|\n| back vowel a ı o u | okul·da | okul·**dan** |\n| front vowel e i ö ü | ev·de | ev·**den** |\n| f s t k ç ş h p | kitap·ta, otobüs·te | kitap·**tan**, otobüs·**ten** |\n\n✅ The word doesn't change: *sokak → sokaktan*. Names keep the apostrophe: *İstanbul'dan*, *Türkiye'den*, *Paris'ten*.\n",
+       "interactive": {
+        "component": "suffix_steps",
+        "params": {
+         "words": [
+          "w.okul",
+          "w.ev",
+          "w.park",
+          "w.otobüs"
+         ],
+         "suffix": "sfx.abl"
+        }
+       }
+      },
+      {
+       "kind": "rule",
+       "title": "Where are you from?",
+       "body": "Add the \"to be\" endings, exactly as in L11:\n\n| | |\n|---|---|\n| ben | Londra'dan·**ım** |\n| sen | Londra'dan·**sın** |\n| o | Londra'dan |\n| biz | Londra'dan·**ız** |\n| siz | Londra'dan·**sınız** |\n\n-DAn ends in **n**, a consonant, so there's **no buffer y**: Londra'dan**ım**, İzmir'den**iz** (not ~~Londra'danyım~~).\n\n**Nereden?** \"Where from?\" = nere·den. *Neredensin?* \"Where are you from?\"\n\n💬 *Nerelisin?* (from L5) is the more standard way to ask; *Neredensin?* is fine in conversation.\n",
+       "sentences": [
+        "s.L12.003",
+        "s.L12.007"
+       ]
+      },
+      {
+       "kind": "note",
+       "title": "in or from?",
+       "body": "One letter changes the meaning. Listen for the **n**:\n\n- *Londra'**da**yım* \"I'm **in** London\"\n- *Londra'**dan**ım* \"I'm **from** London\"\n",
+       "sentences": [
+        "s.L12.008",
+        "s.L12.009"
+       ],
+       "audio": [
+        "aud.own.s.L12.008",
+        "aud.own.s.L12.009"
+       ]
+      },
+      {
+       "kind": "note",
+       "title": "Preview: verbs that want 'from'",
+       "body": "Some verbs take -DAn where English uses another preposition. You'll use them once you have verbs (L14–15); they come back in L17. Just notice them for now:\n\n- **korkmak** \"to be afraid **of**\": *kedi**den** korkmak* \"to be afraid of cats\"\n- **hoşlanmak** \"to like\": *çay**dan** hoşlanmak* \"to like tea\"\n"
+      }
+     ],
+     "items": [
+      {
+       "id": "L12.learn.01",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L12.abl"
+       ],
+       "pattern": "g.L12.abl.back",
+       "base": "w.okul",
+       "suffix": "sfx.abl",
+       "options": [
+        "dan",
+        "den",
+        "tan",
+        "ten"
+       ],
+       "answer": "dan",
+       "feedback": "auto:g.L12.abl"
+      },
+      {
+       "id": "L12.learn.02",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L12.abl"
+       ],
+       "pattern": "g.L12.abl.after_vowel",
+       "base": "w.hastane",
+       "suffix": "sfx.abl",
+       "options": [
+        "dan",
+        "den",
+        "tan",
+        "ten"
+       ],
+       "answer": "den",
+       "feedback": "auto:g.L12.abl"
+      },
+      {
+       "id": "L12.learn.03",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L12.abl"
+       ],
+       "pattern": "g.L12.abl.voiceless",
+       "base": "w.park",
+       "suffix": "sfx.abl",
+       "options": [
+        "dan",
+        "den",
+        "tan",
+        "ten"
+       ],
+       "answer": "tan",
+       "feedback": "auto:g.L12.abl"
+      },
+      {
+       "id": "L12.learn.04",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L12.abl"
+       ],
+       "pattern": "g.L12.abl.front",
+       "base": "w.ev",
+       "suffix": "sfx.abl",
+       "options": [
+        "dan",
+        "den",
+        "tan",
+        "ten"
+       ],
+       "answer": "den",
+       "feedback": "auto:g.L12.abl"
+      },
+      {
+       "id": "L12.learn.05",
+       "type": "picture_choose",
+       "grammar": [
+        "g.L12.abl",
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L12.abl.origin",
+       "images": [
+        "img.openmoji.flag_uk"
+       ],
+       "prompt": "Neredensin? — …",
+       "options": [
+        "Londra'danım",
+        "Londra'dayım",
+        "Londradanım"
+       ],
+       "answer": "Londra'danım",
+       "feedback": {
+        "Londra'dayım": "**-DA** means *in*; *from* is **-DAn**: **Londra'danım**.",
+        "Londradanım": "**Londra** is a name, so it takes an apostrophe before the ending: **Londra'danım**."
+       }
+      },
+      {
+       "id": "L12.learn.06",
+       "type": "listen_choose",
+       "grammar": [
+        "g.L12.abl",
+        "g.L11.loc_copula"
+       ],
+       "sentence": "s.L12.009",
+       "options": [
+        "I'm from London.",
+        "I'm in London."
+       ],
+       "answer": "I'm from London.",
+       "note": "Ear training for the n of -DAn."
+      }
+     ]
+    },
+    "practise": {
+     "minutes": 5,
+     "items": [
+      {
+       "id": "L12.practise.01",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L12.abl"
+       ],
+       "pattern": "g.L12.abl.last_vowel",
+       "base": "w.otobüs",
+       "suffix": "sfx.abl",
+       "options": [
+        "dan",
+        "den",
+        "tan",
+        "ten"
+       ],
+       "answer": "ten",
+       "feedback": "auto:g.L12.abl",
+       "note": "Trap: first vowel o is back, last vowel ü is front."
+      },
+      {
+       "id": "L12.practise.02",
+       "type": "pick_suffix",
+       "grammar": [
+        "g.L12.abl"
+       ],
+       "pattern": "g.L12.abl.voiceless",
+       "base": "w.kitap",
+       "suffix": "sfx.abl",
+       "options": [
+        "dan",
+        "den",
+        "tan",
+        "ten"
+       ],
+       "answer": "tan",
+       "feedback": "auto:g.L12.abl"
+      },
+      {
+       "id": "L12.practise.03",
+       "type": "type_form",
+       "grammar": [
+        "g.L12.abl"
+       ],
+       "pattern": "g.L12.abl.voiceless",
+       "base": "w.mutfak",
+       "suffixes": [
+        "sfx.abl"
+       ],
+       "prompt": "from the kitchen",
+       "answer": "mutfaktan",
+       "feedback": "auto:g.L12.abl"
+      },
+      {
+       "id": "L12.practise.04",
+       "type": "type_form",
+       "grammar": [
+        "g.L12.abl"
+       ],
+       "pattern": "g.L12.abl.after_vowel",
+       "base": "w.kütüphane",
+       "suffixes": [
+        "sfx.abl"
+       ],
+       "prompt": "from the library",
+       "answer": "kütüphaneden",
+       "feedback": "auto:g.L12.abl"
+      },
+      {
+       "id": "L12.practise.05",
+       "type": "build_word",
+       "grammar": [
+        "g.L12.abl",
+        "g.L4.plural"
+       ],
+       "tiles": [
+        "ev",
+        "den",
+        "ler"
+       ],
+       "answer": "ev·ler·den",
+       "feedback": {
+        "ev·den·ler": "The plural comes first, then the case: **ev·ler·den**."
+       }
+      },
+      {
+       "id": "L12.practise.06",
+       "type": "contrast_pair",
+       "grammar": [
+        "g.L12.abl",
+        "g.L11.loc_copula"
+       ],
+       "prompt": "I'm from London.",
+       "options": [
+        "s.L12.009",
+        "s.L12.008"
+       ],
+       "answer": "s.L12.009"
+      },
+      {
+       "id": "L12.practise.07",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L12.abl",
+        "g.L5.copula"
+       ],
+       "pattern": "g.L12.abl.origin",
+       "sentence": "s.L12.003",
+       "word_bank": [
+        "İstanbul'danım",
+        "İstanbul'dayım",
+        "İstanbuldanım"
+       ]
+      },
+      {
+       "id": "L12.practise.08",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L12.abl",
+        "g.L3.basics"
+       ],
+       "sentence": "s.L12.004",
+       "word_bank": [
+        "Ali",
+        "Ankara'dan",
+        "Ankara'da",
+        "Ankaradan"
+       ]
+      },
+      {
+       "id": "L12.practise.09",
+       "type": "translate_to_en",
+       "grammar": [
+        "g.L12.abl",
+        "g.L3.basics"
+       ],
+       "sentence": "s.L12.017"
+      },
+      {
+       "id": "L12.practise.15",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L12.abl",
+        "g.L3.basics"
+       ],
+       "pattern": "g.L12.abl.voiceless",
+       "sentence": "s.L12.018",
+       "word_bank": [
+        "Ahmet",
+        "Paris'ten",
+        "Paris'den",
+        "Paris'te"
+       ]
+      },
+      {
+       "id": "L12.practise.10",
+       "type": "spot_error",
+       "grammar": [
+        "g.L12.abl",
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L12.abl.origin",
+       "text": "Ben Londradanım.",
+       "error": "Londradanım",
+       "answer": "Londra'danım",
+       "sentence": "s.L12.009",
+       "feedback": {
+        "Londradanım": "**Londra** is a name, so it takes an apostrophe before the ending: **Londra'danım**."
+       }
+      },
+      {
+       "id": "L12.practise.11",
+       "type": "spot_error",
+       "grammar": [
+        "g.L12.abl",
+        "g.L3.basics"
+       ],
+       "pattern": "g.L12.abl.voiceless",
+       "text": "Bu süt marketden.",
+       "error": "marketden",
+       "answer": "marketten",
+       "sentence": "s.L12.014",
+       "feedback": "auto:g.L12.abl"
+      },
+      {
+       "id": "L12.practise.12",
+       "type": "qa",
+       "grammar": [
+        "g.L12.abl",
+        "g.L7.question",
+        "g.L6.degil"
+       ],
+       "question": "s.L12.012",
+       "images": [
+        "img.openmoji.flag_turkey"
+       ],
+       "answers": [
+        "Hayır, (ben) Türkiye'denim.",
+        "Hayır, (ben) İngiltere'den değilim, (ben) Türkiye'denim."
+       ],
+       "feedback": "auto:g.L12.abl"
+      },
+      {
+       "id": "L12.practise.13",
+       "type": "dictation",
+       "grammar": [
+        "g.L12.abl",
+        "g.L7.question",
+        "g.L5.copula"
+       ],
+       "sentence": "s.L12.006"
+      },
+      {
+       "id": "L12.practise.14",
+       "type": "mini_dialogue",
+       "grammar": [
+        "g.L12.abl",
+        "g.L7.question"
+       ],
+       "images": [
+        "img.openmoji.flag_uk"
+       ],
+       "turns": [
+        {
+         "speaker": "A",
+         "sentence": "s.L12.001"
+        },
+        {
+         "speaker": "B",
+         "blank": true,
+         "answers": [
+          "(Ben) Londra'danım."
+         ]
+        },
+        {
+         "speaker": "A",
+         "sentence": "s.L12.003"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "L13": {
+   "id": "L13",
+   "title": "Clitic de/da vs locative; ve, ama",
+   "grammar": "g.L13.clitic_de",
+   "new_words": [
+    "w.de",
+    "w.ve",
+    "w.ama"
+   ],
+   "not_yet": [
+    "de/da with verbs (Ahmet de geliyor) → L15",
+    "ile / -(y)lA 'and, with' → L27",
+    "the question form with de (Sen de mi?) → later review"
+   ],
+   "sessions": {
+    "learn": {
+     "minutes": 3.5,
+     "cards": [
+      {
+       "kind": "hook",
+       "body": "🙋 **Ben okuldayım.** \"I'm at school.\"\n🙋‍♀️ **Ben de!** \"Me too!\"\n\nThis **de** is not the ending from L10. It's a separate little word meaning **too**.\n",
+       "sentences": [
+        "s.L11.003",
+        "s.L13.001"
+       ],
+       "audio": [
+        "aud.own.s.L11.003",
+        "aud.own.s.L13.001"
+       ]
+      },
+      {
+       "kind": "rule",
+       "title": "de / da = too, also",
+       "body": "Put it **right after** the word it adds to, as a **separate word**:\n\n| Turkish | English |\n|---|---|\n| Ayşe **de** evde. | Ayşe is at home **too**. |\n| Kitap **da** çantada. | The book is in the bag **too**. |\n| Biz **de** parktayız. | We're in the park **too**. |\n\n**Vowel:** a/e harmony with the word before: a ı o u → **da**, e i ö ü → **de**.\n",
+       "sentences": [
+        "s.L13.002",
+        "s.L13.008",
+        "s.L13.013"
+       ]
+      },
+      {
+       "kind": "rule",
+       "title": "It never becomes te / ta",
+       "body": "Fıstıkçı Şahap does **not** apply to the clitic. It stays **d**:\n\n✅ Ahmet **de** · kitap **da** · tavuk **da**\n❌ ~~Ahmet te~~ · ~~kitap ta~~ · ~~tavuk ta~~\n\nThe locative, attached to the word, *does* change: kitap**ta** \"in the book\", Ahmet'**te** \"with Ahmet\".\n",
+       "sentences": [
+        "s.L13.006",
+        "s.L13.015"
+       ],
+       "audio": [
+        "aud.own.s.L13.006",
+        "aud.own.s.L13.015"
+       ]
+      },
+      {
+       "kind": "rule",
+       "title": "Attached or separate?",
+       "body": "**Test:** leave the *de / da* out. If the sentence still makes sense, it was \"too\", so write it **separately**.\n\n- *Ahmet ~~de~~ parkta.* → *Ahmet parkta.* ✓ → **Ahmet de** (too)\n- *Kedi bahçe ~~de~~.* → *Kedi bahçe.* ✗ → **bahçede** (in the garden)\n\nBoth at once: *Ev**de** **de** kedi var.* \"There's a cat at home **too**.\"\n\n⚠️ Two pairs that even native speakers mix up in writing:\n\n| too (separate) | location (attached) |\n|---|---|\n| **Ali de.** \"Ali too.\" | **Ali'de.** \"Ali has it.\" / \"It's with Ali.\" |\n| **Ben de.** \"Me too.\" | **Bende.** \"With me.\" / \"I have it.\" |\n\nThe clitic never takes an apostrophe: *Ali de*, not ~~Ali'de~~ for \"Ali too\".\n",
+       "sentences": [
+        "s.L13.016",
+        "s.L13.021",
+        "s.L13.022",
+        "s.L13.023"
+       ],
+       "audio": [
+        "aud.own.s.L13.021",
+        "aud.own.s.L13.022",
+        "aud.own.s.L13.023"
+       ]
+      },
+      {
+       "kind": "rule",
+       "title": "ve and ama",
+       "body": "**ve** \"and\" joins words: *Ali **ve** Ayşe evde.* \"Ali and Ayşe are at home.\"\n**ama** \"but\" joins two statements: *Ali evde **ama** Ayşe okulda.*\n",
+       "sentences": [
+        "s.L13.003",
+        "s.L13.004"
+       ],
+       "audio": [
+        "aud.own.s.L13.003",
+        "aud.own.s.L13.004"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "id": "L13.learn.01",
+       "type": "contrast_pair",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L13.clitic_de.vs_loc",
+       "prompt": "Ahmet is in the park too.",
+       "options": [
+        "s.L13.006",
+        "s.L13.007"
+       ],
+       "answer": "s.L13.006"
+      },
+      {
+       "id": "L13.learn.02",
+       "type": "picture_choose",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L13.clitic_de.harmony",
+       "images": [
+        "img.own.dog_and_cat_in_garden"
+       ],
+       "prompt": "Köpek bahçede. Kedi … bahçede.",
+       "options": [
+        "de",
+        "da",
+        "te"
+       ],
+       "answer": "de"
+      },
+      {
+       "id": "L13.learn.03",
+       "type": "picture_choose",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L13.clitic_de.never_t",
+       "images": [
+        "img.own.pen_and_book_in_bag"
+       ],
+       "prompt": "Kalem çantada. Kitap … çantada.",
+       "options": [
+        "da",
+        "ta",
+        "de"
+       ],
+       "answer": "da",
+       "note": "kitap ends in p, but the clitic never becomes ta."
+      },
+      {
+       "id": "L13.learn.04",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L13.clitic_de"
+       ],
+       "sentence": "s.L13.001",
+       "word_bank": [
+        "Ben",
+        "de",
+        "da",
+        "te"
+       ]
+      },
+      {
+       "id": "L13.learn.05",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L13.clitic_de.never_t",
+       "sentence": "s.L13.008",
+       "word_bank": [
+        "Kitap",
+        "da",
+        "ta",
+        "çantada",
+        "çantata"
+       ]
+      },
+      {
+       "id": "L13.learn.06",
+       "type": "listen_choose",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "sentence": "s.L13.003",
+       "options": [
+        "Ali and Ayşe are at home.",
+        "Ali is at home but Ayşe isn't.",
+        "Ali is at home too."
+       ],
+       "answer": "Ali and Ayşe are at home."
+      }
+     ]
+    },
+    "practise": {
+     "minutes": 5,
+     "items": [
+      {
+       "id": "L13.practise.01",
+       "type": "spot_error",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L13.clitic_de.never_t",
+       "text": "Ahmet te parkta.",
+       "error": "te",
+       "answer": "de",
+       "sentence": "s.L13.006",
+       "feedback": {
+        "te": "**de / da** 'too' never changes to **t**, even after Fıstıkçı Şahap: **Ahmet de**.",
+        "da": "**de / da** follows the last vowel of **Ahmet** (e): **Ahmet de**."
+       }
+      },
+      {
+       "id": "L13.practise.02",
+       "type": "spot_error",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L8.varyok"
+       ],
+       "pattern": "g.L13.clitic_de.never_t",
+       "text": "Tavuk ta var.",
+       "error": "ta",
+       "answer": "da",
+       "sentence": "s.L13.017",
+       "feedback": {
+        "ta": "**de / da** 'too' never changes to **t**, even after Fıstıkçı Şahap: **Tavuk da**.",
+        "de": "**de / da** follows the last vowel of **tavuk** (u): **Tavuk da**."
+       }
+      },
+      {
+       "id": "L13.practise.03",
+       "type": "spot_error",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L13.clitic_de.vs_loc",
+       "text": "Kedi bahçe de.",
+       "error": "bahçe de",
+       "answer": "bahçede",
+       "sentence": "s.L13.019",
+       "feedback": {
+        "bahçe de": "Here it means *in the garden*: the location ending is **attached**: **bahçede**."
+       }
+      },
+      {
+       "id": "L13.practise.04",
+       "type": "contrast_pair",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L8.varyok",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L13.clitic_de.vs_loc",
+       "prompt": "There's a cat at home too.",
+       "options": [
+        "s.L13.016",
+        "s.L13.018"
+       ],
+       "answer": "s.L13.016"
+      },
+      {
+       "id": "L13.practise.05",
+       "type": "picture_choose",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "images": [
+        "img.own.ali_home_ayse_school"
+       ],
+       "prompt": "Ali evde … Ayşe okulda.",
+       "options": [
+        "ama",
+        "ve",
+        "de"
+       ],
+       "answer": "ama"
+      },
+      {
+       "id": "L13.practise.06",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "sentence": "s.L13.004",
+       "word_bank": [
+        "Ali",
+        "evde",
+        "ama",
+        "ve",
+        "Ayşe",
+        "okulda",
+        "de"
+       ]
+      },
+      {
+       "id": "L13.practise.07",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "sentence": "s.L13.011",
+       "word_bank": [
+        "Köpek",
+        "ve",
+        "kedi",
+        "bahçede",
+        "de",
+        "ama"
+       ]
+      },
+      {
+       "id": "L13.practise.08",
+       "type": "translate_to_en",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L12.abl",
+        "g.L5.copula"
+       ],
+       "sentence": "s.L13.009"
+      },
+      {
+       "id": "L13.practise.09",
+       "type": "contrast_pair",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L11.loc_copula"
+       ],
+       "pattern": "g.L13.clitic_de.vs_loc",
+       "prompt": "Ali too.",
+       "options": [
+        "s.L13.021",
+        "s.L13.022"
+       ],
+       "answer": "s.L13.021",
+       "note": "Ali de (too) vs Ali'de (Ali has it): the clitic never takes an apostrophe."
+      },
+      {
+       "id": "L13.practise.10",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L11.loc_copula",
+        "g.L7.question"
+       ],
+       "sentence": "s.L13.010",
+       "typed": true
+      },
+      {
+       "id": "L13.practise.11",
+       "type": "dictation",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "sentence": "s.L13.012"
+      },
+      {
+       "id": "L13.practise.12",
+       "type": "qa",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L8.varyok",
+        "g.L7.question"
+       ],
+       "question": "s.L13.020",
+       "images": [
+        "img.own.dog_and_cat_in_garden"
+       ],
+       "answers": [
+        "Evet, (bir) köpek var. Kedi de var.",
+        "Evet, (bir) köpek ve (bir) kedi var.",
+        "Evet, kedi de var."
+       ]
+      },
+      {
+       "id": "L13.practise.13",
+       "type": "translate_to_tr",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L12.abl",
+        "g.L5.copula"
+       ],
+       "sentence": "s.L13.014",
+       "word_bank": [
+        "Ben",
+        "Londra'danım",
+        "ama",
+        "ve",
+        "Ayşe",
+        "İstanbul'dan",
+        "İstanbul'da"
+       ]
+      },
+      {
+       "id": "L13.practise.14",
+       "type": "contrast_pair",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L10.loc"
+       ],
+       "pattern": "g.L13.clitic_de.vs_loc",
+       "prompt": "Me too.",
+       "options": [
+        "s.L13.001",
+        "s.L13.023"
+       ],
+       "answer": "s.L13.001",
+       "note": "ben de (me too) vs bende (with me / I have it)."
+      },
+      {
+       "id": "L13.practise.15",
+       "type": "mini_dialogue",
+       "grammar": [
+        "g.L13.clitic_de",
+        "g.L11.loc_copula",
+        "g.L7.question"
+       ],
+       "images": [
+        "img.openmoji.park"
+       ],
+       "turns": [
+        {
+         "speaker": "A",
+         "sentence": "s.L11.001"
+        },
+        {
+         "speaker": "B",
+         "blank": true,
+         "answers": [
+          "(Ben) parktayım."
+         ]
+        },
+        {
+         "speaker": "A",
+         "sentence": "s.L13.013"
+        }
+       ]
+      }
+     ]
+    }
+   }
   }
  },
  "packs": {
+  "T10": {
+   "id": "T10",
+   "title": "Animals",
+   "kind": "elective",
+   "packs": [
+    {
+     "id": "T10.p1",
+     "unlock_after": "L12",
+     "words": [
+      "w.keçi",
+      "w.köpek",
+      "w.kuş",
+      "w.balık",
+      "w.at",
+      "w.inek",
+      "w.koyun",
+      "w.tavuk"
+     ],
+     "frames": [
+      "s.T10.001",
+      "s.T10.002"
+     ]
+    }
+   ],
+   "revisit": [
+    "L13",
+    "L17",
+    "L18",
+    "L22",
+    "L29"
+   ]
+  },
   "T8": {
    "id": "T8",
    "title": "Home & furniture",
@@ -776,6 +2292,54 @@
     "L10",
     "L19",
     "L24"
+   ]
+  },
+  "T9": {
+   "id": "T9",
+   "title": "City & places",
+   "kind": "core",
+   "packs": [
+    {
+     "id": "T9.p1",
+     "unlock_after": "L10",
+     "words": [
+      "w.pazar",
+      "w.hastane",
+      "w.eczane",
+      "w.market",
+      "w.banka",
+      "w.park",
+      "w.cami",
+      "w.sokak"
+     ],
+     "frames": [
+      "s.T9.001",
+      "s.T9.002"
+     ]
+    },
+    {
+     "id": "T9.p2",
+     "unlock_after": "L11",
+     "words": [
+      "w.cadde",
+      "w.çarşı",
+      "w.istasyon",
+      "w.havalimanı",
+      "w.postane",
+      "w.kütüphane",
+      "w.köprü",
+      "w.şehir"
+     ],
+     "frames": [
+      "s.T9.003",
+      "s.T9.004"
+     ]
+    }
+   ],
+   "revisit": [
+    "L11",
+    "L12",
+    "L17"
    ]
   }
  },
@@ -1189,6 +2753,490 @@
    "gloss": [
     "Ali (male name)"
    ]
+  },
+  "w.bu": {
+   "id": "w.bu",
+   "lemma": "bu",
+   "pos": "pron",
+   "gloss": [
+    "this"
+   ]
+  },
+  "w.ben": {
+   "id": "w.ben",
+   "lemma": "ben",
+   "pos": "pron",
+   "gloss": [
+    "I"
+   ]
+  },
+  "w.sen": {
+   "id": "w.sen",
+   "lemma": "sen",
+   "pos": "pron",
+   "gloss": [
+    "you (informal)"
+   ]
+  },
+  "w.o": {
+   "id": "w.o",
+   "lemma": "o",
+   "pos": "pron",
+   "gloss": [
+    "he",
+    "she",
+    "it",
+    "that"
+   ]
+  },
+  "w.biz": {
+   "id": "w.biz",
+   "lemma": "biz",
+   "pos": "pron",
+   "gloss": [
+    "we"
+   ],
+   "flags": [
+    "irr"
+   ],
+   "forms": {
+    "gen": "bizim"
+   }
+  },
+  "w.siz": {
+   "id": "w.siz",
+   "lemma": "siz",
+   "pos": "pron",
+   "gloss": [
+    "you (plural / polite)"
+   ]
+  },
+  "w.onlar": {
+   "id": "w.onlar",
+   "lemma": "onlar",
+   "pos": "pron",
+   "gloss": [
+    "they"
+   ]
+  },
+  "w.değil": {
+   "id": "w.değil",
+   "lemma": "değil",
+   "pos": "particle",
+   "gloss": [
+    "not"
+   ],
+   "notes": "Takes the personal endings: değilim, değilsin…"
+  },
+  "w.evet": {
+   "id": "w.evet",
+   "lemma": "evet",
+   "pos": "interj",
+   "gloss": [
+    "yes"
+   ]
+  },
+  "w.çay": {
+   "id": "w.çay",
+   "lemma": "çay",
+   "pos": "noun",
+   "gloss": [
+    "tea"
+   ]
+  },
+  "w.şimdi": {
+   "id": "w.şimdi",
+   "lemma": "şimdi",
+   "pos": "adv",
+   "gloss": [
+    "now"
+   ]
+  },
+  "w.nereden": {
+   "id": "w.nereden",
+   "lemma": "nereden",
+   "pos": "adv",
+   "gloss": [
+    "where from",
+    "from where"
+   ],
+   "notes": "nere·den: the ablative of nere-. Neredensin? 'Where are you from?'"
+  },
+  "w.mektup": {
+   "id": "w.mektup",
+   "lemma": "mektup",
+   "pos": "noun",
+   "gloss": [
+    "letter"
+   ],
+   "flags": [
+    "soft"
+   ],
+   "images": [
+    "img.openmoji.envelope"
+   ]
+  },
+  "w.de": {
+   "id": "w.de",
+   "lemma": "de",
+   "pos": "particle",
+   "gloss": [
+    "too",
+    "also"
+   ],
+   "notes": "Clitic, written separately: de after e i ö ü, da after a ı o u. Never te/ta."
+  },
+  "w.ve": {
+   "id": "w.ve",
+   "lemma": "ve",
+   "pos": "conj",
+   "gloss": [
+    "and"
+   ]
+  },
+  "w.ama": {
+   "id": "w.ama",
+   "lemma": "ama",
+   "pos": "conj",
+   "gloss": [
+    "but"
+   ]
+  },
+  "w.hastane": {
+   "id": "w.hastane",
+   "lemma": "hastane",
+   "pos": "noun",
+   "gloss": [
+    "hospital"
+   ],
+   "images": [
+    "img.openmoji.hospital"
+   ]
+  },
+  "w.eczane": {
+   "id": "w.eczane",
+   "lemma": "eczane",
+   "pos": "noun",
+   "gloss": [
+    "pharmacy"
+   ]
+  },
+  "w.market": {
+   "id": "w.market",
+   "lemma": "market",
+   "pos": "noun",
+   "gloss": [
+    "supermarket",
+    "grocery store"
+   ],
+   "images": [
+    "img.openmoji.store"
+   ]
+  },
+  "w.banka": {
+   "id": "w.banka",
+   "lemma": "banka",
+   "pos": "noun",
+   "gloss": [
+    "bank"
+   ],
+   "images": [
+    "img.openmoji.bank"
+   ]
+  },
+  "w.park": {
+   "id": "w.park",
+   "lemma": "park",
+   "pos": "noun",
+   "gloss": [
+    "park"
+   ],
+   "images": [
+    "img.openmoji.park"
+   ],
+   "notes": "One syllable: no softening (parkı)."
+  },
+  "w.cami": {
+   "id": "w.cami",
+   "lemma": "cami",
+   "pos": "noun",
+   "gloss": [
+    "mosque"
+   ],
+   "images": [
+    "img.openmoji.mosque"
+   ]
+  },
+  "w.sokak": {
+   "id": "w.sokak",
+   "lemma": "sokak",
+   "pos": "noun",
+   "gloss": [
+    "street"
+   ],
+   "flags": [
+    "soft"
+   ]
+  },
+  "w.pazar": {
+   "id": "w.pazar",
+   "lemma": "pazar",
+   "pos": "noun",
+   "gloss": [
+    "bazaar",
+    "open-air market"
+   ],
+   "notes": "Also 'Sunday' (T17). Replaces okul in T9.p1: okul is an L2 core word."
+  },
+  "w.cadde": {
+   "id": "w.cadde",
+   "lemma": "cadde",
+   "pos": "noun",
+   "gloss": [
+    "avenue",
+    "main street"
+   ]
+  },
+  "w.çarşı": {
+   "id": "w.çarşı",
+   "lemma": "çarşı",
+   "pos": "noun",
+   "gloss": [
+    "market",
+    "bazaar",
+    "shopping area"
+   ]
+  },
+  "w.istasyon": {
+   "id": "w.istasyon",
+   "lemma": "istasyon",
+   "pos": "noun",
+   "gloss": [
+    "station"
+   ]
+  },
+  "w.havalimanı": {
+   "id": "w.havalimanı",
+   "lemma": "havalimanı",
+   "pos": "noun",
+   "gloss": [
+    "airport"
+   ],
+   "flags": [
+    "compound"
+   ],
+   "forms": {
+    "pl": "havalimanları"
+   }
+  },
+  "w.postane": {
+   "id": "w.postane",
+   "lemma": "postane",
+   "pos": "noun",
+   "gloss": [
+    "post office"
+   ]
+  },
+  "w.kütüphane": {
+   "id": "w.kütüphane",
+   "lemma": "kütüphane",
+   "pos": "noun",
+   "gloss": [
+    "library"
+   ]
+  },
+  "w.köprü": {
+   "id": "w.köprü",
+   "lemma": "köprü",
+   "pos": "noun",
+   "gloss": [
+    "bridge"
+   ]
+  },
+  "w.şehir": {
+   "id": "w.şehir",
+   "lemma": "şehir",
+   "pos": "noun",
+   "gloss": [
+    "city"
+   ],
+   "flags": [
+    "drop"
+   ]
+  },
+  "w.köpek": {
+   "id": "w.köpek",
+   "lemma": "köpek",
+   "pos": "noun",
+   "gloss": [
+    "dog"
+   ],
+   "flags": [
+    "soft"
+   ],
+   "images": [
+    "img.openmoji.dog"
+   ]
+  },
+  "w.kuş": {
+   "id": "w.kuş",
+   "lemma": "kuş",
+   "pos": "noun",
+   "gloss": [
+    "bird"
+   ],
+   "images": [
+    "img.openmoji.bird"
+   ]
+  },
+  "w.balık": {
+   "id": "w.balık",
+   "lemma": "balık",
+   "pos": "noun",
+   "gloss": [
+    "fish"
+   ],
+   "flags": [
+    "soft"
+   ],
+   "images": [
+    "img.openmoji.fish"
+   ]
+  },
+  "w.at": {
+   "id": "w.at",
+   "lemma": "at",
+   "pos": "noun",
+   "gloss": [
+    "horse"
+   ],
+   "images": [
+    "img.openmoji.horse"
+   ]
+  },
+  "w.inek": {
+   "id": "w.inek",
+   "lemma": "inek",
+   "pos": "noun",
+   "gloss": [
+    "cow"
+   ],
+   "flags": [
+    "soft"
+   ],
+   "images": [
+    "img.openmoji.cow"
+   ]
+  },
+  "w.koyun": {
+   "id": "w.koyun",
+   "lemma": "koyun",
+   "pos": "noun",
+   "gloss": [
+    "sheep"
+   ],
+   "images": [
+    "img.openmoji.sheep"
+   ]
+  },
+  "w.tavuk": {
+   "id": "w.tavuk",
+   "lemma": "tavuk",
+   "pos": "noun",
+   "gloss": [
+    "chicken"
+   ],
+   "flags": [
+    "soft"
+   ],
+   "images": [
+    "img.openmoji.chicken"
+   ]
+  },
+  "w.keçi": {
+   "id": "w.keçi",
+   "lemma": "keçi",
+   "pos": "noun",
+   "gloss": [
+    "goat"
+   ],
+   "notes": "Moved up from T10 pack 3 to replace kedi, which is an L2 core word."
+  },
+  "w.Ayşe": {
+   "id": "w.Ayşe",
+   "lemma": "Ayşe",
+   "pos": "name",
+   "gloss": [
+    "Ayşe (female name)"
+   ]
+  },
+  "w.Ahmet": {
+   "id": "w.Ahmet",
+   "lemma": "Ahmet",
+   "pos": "name",
+   "gloss": [
+    "Ahmet (male name)"
+   ]
+  },
+  "w.İstanbul": {
+   "id": "w.İstanbul",
+   "lemma": "İstanbul",
+   "pos": "name",
+   "gloss": [
+    "Istanbul"
+   ]
+  },
+  "w.Ankara": {
+   "id": "w.Ankara",
+   "lemma": "Ankara",
+   "pos": "name",
+   "gloss": [
+    "Ankara"
+   ]
+  },
+  "w.İzmir": {
+   "id": "w.İzmir",
+   "lemma": "İzmir",
+   "pos": "name",
+   "gloss": [
+    "Izmir"
+   ]
+  },
+  "w.Londra": {
+   "id": "w.Londra",
+   "lemma": "Londra",
+   "pos": "name",
+   "gloss": [
+    "London"
+   ]
+  },
+  "w.Paris": {
+   "id": "w.Paris",
+   "lemma": "Paris",
+   "pos": "name",
+   "gloss": [
+    "Paris"
+   ],
+   "notes": "Pronounced as spelled, so harmony is regular: Paris'te, Paris'ten."
+  },
+  "w.Türkiye": {
+   "id": "w.Türkiye",
+   "lemma": "Türkiye",
+   "pos": "name",
+   "gloss": [
+    "Turkey",
+    "Türkiye"
+   ],
+   "notes": "T4 country."
+  },
+  "w.İngiltere": {
+   "id": "w.İngiltere",
+   "lemma": "İngiltere",
+   "pos": "name",
+   "gloss": [
+    "England"
+   ],
+   "notes": "T4 country."
   }
  },
  "sentences": {
@@ -1530,6 +3578,1397 @@
    "audio": "aud.own.s.L10.017",
    "native_required": true
   },
+  "s.L11.001": {
+   "id": "s.L11.001",
+   "tr": "Neredesin?",
+   "en": [
+    "Where are you?"
+   ],
+   "words": [
+    "w.nerede"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.001",
+   "native_required": true
+  },
+  "s.L11.002": {
+   "id": "s.L11.002",
+   "tr": "Evdeyim.",
+   "en": [
+    "I'm at home.",
+    "I am at home."
+   ],
+   "words": [
+    "w.ev"
+   ],
+   "grammar": [
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.002",
+   "native_required": true
+  },
+  "s.L11.003": {
+   "id": "s.L11.003",
+   "tr": "Ben okuldayım.",
+   "en": [
+    "I'm at school.",
+    "I am at school.",
+    "I'm in the school."
+   ],
+   "words": [
+    "w.ben",
+    "w.okul"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.003",
+   "native_required": true
+  },
+  "s.L11.004": {
+   "id": "s.L11.004",
+   "tr": "Sen parkta mısın?",
+   "en": [
+    "Are you in the park?",
+    "Are you at the park?"
+   ],
+   "words": [
+    "w.sen",
+    "w.park"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.004",
+   "native_required": true
+  },
+  "s.L11.005": {
+   "id": "s.L11.005",
+   "tr": "Hayır, ben evdeyim.",
+   "en": [
+    "No, I'm at home.",
+    "No, I am at home."
+   ],
+   "words": [
+    "w.hayır",
+    "w.ben",
+    "w.ev"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.005",
+   "native_required": true
+  },
+  "s.L11.006": {
+   "id": "s.L11.006",
+   "tr": "Biz bankadayız.",
+   "en": [
+    "We're at the bank.",
+    "We are at the bank.",
+    "We're in the bank."
+   ],
+   "words": [
+    "w.biz",
+    "w.banka"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.006",
+   "native_required": true
+  },
+  "s.L11.007": {
+   "id": "s.L11.007",
+   "tr": "Siz hastanede misiniz?",
+   "en": [
+    "Are you at the hospital?",
+    "Are you in the hospital?",
+    "Are you in hospital?"
+   ],
+   "words": [
+    "w.siz",
+    "w.hastane"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.007",
+   "native_required": true
+  },
+  "s.L11.008": {
+   "id": "s.L11.008",
+   "tr": "Onlar bahçede.",
+   "en": [
+    "They're in the garden.",
+    "They are in the garden."
+   ],
+   "words": [
+    "w.onlar",
+    "w.bahçe"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.008"
+  },
+  "s.L11.009": {
+   "id": "s.L11.009",
+   "tr": "Ayşe İstanbul'da.",
+   "en": [
+    "Ayşe is in Istanbul.",
+    "Ayşe is in İstanbul."
+   ],
+   "words": [
+    "w.Ayşe",
+    "w.İstanbul"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.009",
+   "native_required": true
+  },
+  "s.L11.010": {
+   "id": "s.L11.010",
+   "tr": "Ankara'dayım.",
+   "en": [
+    "I'm in Ankara.",
+    "I am in Ankara."
+   ],
+   "words": [
+    "w.Ankara"
+   ],
+   "grammar": [
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.010",
+   "native_required": true
+  },
+  "s.L11.011": {
+   "id": "s.L11.011",
+   "tr": "Ali eczanede değil.",
+   "en": [
+    "Ali isn't at the pharmacy.",
+    "Ali is not at the pharmacy.",
+    "Ali isn't in the pharmacy."
+   ],
+   "words": [
+    "w.Ali",
+    "w.eczane",
+    "w.değil"
+   ],
+   "grammar": [
+    "g.L6.degil",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.011"
+  },
+  "s.L11.012": {
+   "id": "s.L11.012",
+   "tr": "Şimdi marketteyim.",
+   "en": [
+    "I'm at the supermarket now.",
+    "Now I'm at the supermarket.",
+    "I'm at the shop now."
+   ],
+   "words": [
+    "w.şimdi",
+    "w.market"
+   ],
+   "grammar": [
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.012",
+   "native_required": true
+  },
+  "s.L11.013": {
+   "id": "s.L11.013",
+   "tr": "Sokaktayım.",
+   "en": [
+    "I'm in the street.",
+    "I'm on the street.",
+    "I am in the street."
+   ],
+   "words": [
+    "w.sokak"
+   ],
+   "grammar": [
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.013",
+   "native_required": true
+  },
+  "s.L11.014": {
+   "id": "s.L11.014",
+   "tr": "İzmir'de misin?",
+   "en": [
+    "Are you in Izmir?",
+    "Are you in İzmir?"
+   ],
+   "words": [
+    "w.İzmir"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.014",
+   "native_required": true
+  },
+  "s.L11.015": {
+   "id": "s.L11.015",
+   "tr": "Evet, İzmir'deyim.",
+   "en": [
+    "Yes, I'm in Izmir.",
+    "Yes, I'm in İzmir.",
+    "Yes, I am in Izmir."
+   ],
+   "words": [
+    "w.evet",
+    "w.İzmir"
+   ],
+   "grammar": [
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.015",
+   "native_required": true
+  },
+  "s.L11.016": {
+   "id": "s.L11.016",
+   "tr": "Biz Ali'deyiz.",
+   "en": [
+    "We're at Ali's.",
+    "We are at Ali's place.",
+    "We're at Ali's house."
+   ],
+   "words": [
+    "w.biz",
+    "w.Ali"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.016",
+   "native_required": true
+  },
+  "s.L11.017": {
+   "id": "s.L11.017",
+   "tr": "Siz neredesiniz?",
+   "en": [
+    "Where are you?"
+   ],
+   "words": [
+    "w.siz",
+    "w.nerede"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.017",
+   "native_required": true
+  },
+  "s.L11.018": {
+   "id": "s.L11.018",
+   "tr": "Biz parktayız.",
+   "en": [
+    "We're in the park.",
+    "We are in the park.",
+    "We're at the park."
+   ],
+   "words": [
+    "w.biz",
+    "w.park"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.018",
+   "native_required": true
+  },
+  "s.L11.019": {
+   "id": "s.L11.019",
+   "tr": "Ben evde değilim.",
+   "en": [
+    "I'm not at home.",
+    "I am not at home."
+   ],
+   "words": [
+    "w.ben",
+    "w.ev",
+    "w.değil"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L6.degil",
+    "g.L10.loc",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.019",
+   "native_required": true
+  },
+  "s.L11.020": {
+   "id": "s.L11.020",
+   "tr": "Sen parktasın.",
+   "en": [
+    "You're in the park.",
+    "You are in the park.",
+    "You're at the park."
+   ],
+   "words": [
+    "w.sen",
+    "w.park"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.020",
+   "native_required": true
+  },
+  "s.L11.021": {
+   "id": "s.L11.021",
+   "tr": "Ben İstanbul'dayım.",
+   "en": [
+    "I'm in Istanbul.",
+    "I am in Istanbul.",
+    "I'm in İstanbul."
+   ],
+   "words": [
+    "w.ben",
+    "w.İstanbul"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L11.021",
+   "native_required": true
+  },
+  "s.L12.001": {
+   "id": "s.L12.001",
+   "tr": "Neredensin?",
+   "en": [
+    "Where are you from?"
+   ],
+   "words": [
+    "w.nereden"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.001",
+   "native_required": true
+  },
+  "s.L12.002": {
+   "id": "s.L12.002",
+   "tr": "Londra'danım.",
+   "en": [
+    "I'm from London.",
+    "I am from London."
+   ],
+   "words": [
+    "w.Londra"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.002",
+   "native_required": true
+  },
+  "s.L12.003": {
+   "id": "s.L12.003",
+   "tr": "İstanbul'danım.",
+   "en": [
+    "I'm from Istanbul.",
+    "I am from Istanbul.",
+    "I'm from İstanbul."
+   ],
+   "words": [
+    "w.İstanbul"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.003",
+   "native_required": true
+  },
+  "s.L12.004": {
+   "id": "s.L12.004",
+   "tr": "Ali Ankara'dan.",
+   "en": [
+    "Ali is from Ankara."
+   ],
+   "words": [
+    "w.Ali",
+    "w.Ankara"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.004",
+   "native_required": true
+  },
+  "s.L12.005": {
+   "id": "s.L12.005",
+   "tr": "Ayşe nereden?",
+   "en": [
+    "Where is Ayşe from?"
+   ],
+   "words": [
+    "w.Ayşe",
+    "w.nereden"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L7.question",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.005",
+   "native_required": true
+  },
+  "s.L12.006": {
+   "id": "s.L12.006",
+   "tr": "Siz neredensiniz?",
+   "en": [
+    "Where are you from?"
+   ],
+   "words": [
+    "w.siz",
+    "w.nereden"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.006",
+   "native_required": true
+  },
+  "s.L12.007": {
+   "id": "s.L12.007",
+   "tr": "Biz İzmir'deniz.",
+   "en": [
+    "We're from Izmir.",
+    "We are from Izmir.",
+    "We're from İzmir."
+   ],
+   "words": [
+    "w.biz",
+    "w.İzmir"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.007",
+   "native_required": true
+  },
+  "s.L12.008": {
+   "id": "s.L12.008",
+   "tr": "Ben Londra'dayım.",
+   "en": [
+    "I'm in London.",
+    "I am in London."
+   ],
+   "words": [
+    "w.ben",
+    "w.Londra"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.008",
+   "native_required": true
+  },
+  "s.L12.009": {
+   "id": "s.L12.009",
+   "tr": "Ben Londra'danım.",
+   "en": [
+    "I'm from London.",
+    "I am from London."
+   ],
+   "words": [
+    "w.ben",
+    "w.Londra"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.009",
+   "native_required": true
+  },
+  "s.L12.010": {
+   "id": "s.L12.010",
+   "tr": "Onlar Türkiye'den.",
+   "en": [
+    "They're from Turkey.",
+    "They are from Turkey.",
+    "They're from Türkiye."
+   ],
+   "words": [
+    "w.onlar",
+    "w.Türkiye"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.010"
+  },
+  "s.L12.011": {
+   "id": "s.L12.011",
+   "tr": "Bu çay Türkiye'den.",
+   "en": [
+    "This tea is from Turkey.",
+    "This tea is from Türkiye."
+   ],
+   "words": [
+    "w.bu",
+    "w.çay",
+    "w.Türkiye"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.011"
+  },
+  "s.L12.012": {
+   "id": "s.L12.012",
+   "tr": "Sen İngiltere'den misin?",
+   "en": [
+    "Are you from England?"
+   ],
+   "words": [
+    "w.sen",
+    "w.İngiltere"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.012",
+   "native_required": true
+  },
+  "s.L12.013": {
+   "id": "s.L12.013",
+   "tr": "Hayır, İngiltere'den değilim.",
+   "en": [
+    "No, I'm not from England.",
+    "No, I am not from England."
+   ],
+   "words": [
+    "w.hayır",
+    "w.İngiltere",
+    "w.değil"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L6.degil",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.013",
+   "native_required": true
+  },
+  "s.L12.014": {
+   "id": "s.L12.014",
+   "tr": "Bu süt marketten.",
+   "en": [
+    "This milk is from the supermarket.",
+    "This milk is from the shop."
+   ],
+   "words": [
+    "w.bu",
+    "w.süt",
+    "w.market"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.014"
+  },
+  "s.L12.015": {
+   "id": "s.L12.015",
+   "tr": "Bu kitap kütüphaneden.",
+   "en": [
+    "This book is from the library."
+   ],
+   "words": [
+    "w.bu",
+    "w.kitap",
+    "w.kütüphane"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.015"
+  },
+  "s.L12.016": {
+   "id": "s.L12.016",
+   "tr": "Biz İstanbul'danız.",
+   "en": [
+    "We're from Istanbul.",
+    "We are from Istanbul.",
+    "We're from İstanbul."
+   ],
+   "words": [
+    "w.biz",
+    "w.İstanbul"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.016",
+   "native_required": true
+  },
+  "s.L12.017": {
+   "id": "s.L12.017",
+   "tr": "Bu mektup Ali'den.",
+   "en": [
+    "This letter is from Ali."
+   ],
+   "words": [
+    "w.bu",
+    "w.mektup",
+    "w.Ali"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.017"
+  },
+  "s.L12.018": {
+   "id": "s.L12.018",
+   "tr": "Ahmet Paris'ten.",
+   "en": [
+    "Ahmet is from Paris."
+   ],
+   "words": [
+    "w.Ahmet",
+    "w.Paris"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L12.018"
+  },
+  "s.L13.001": {
+   "id": "s.L13.001",
+   "tr": "Ben de.",
+   "en": [
+    "Me too.",
+    "Me too!",
+    "So am I."
+   ],
+   "words": [
+    "w.ben",
+    "w.de"
+   ],
+   "grammar": [
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.001",
+   "native_required": true
+  },
+  "s.L13.002": {
+   "id": "s.L13.002",
+   "tr": "Ayşe de evde.",
+   "en": [
+    "Ayşe is at home too.",
+    "Ayşe is also at home.",
+    "Ayşe is at home as well."
+   ],
+   "words": [
+    "w.Ayşe",
+    "w.de",
+    "w.ev"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.002"
+  },
+  "s.L13.003": {
+   "id": "s.L13.003",
+   "tr": "Ali ve Ayşe evde.",
+   "en": [
+    "Ali and Ayşe are at home."
+   ],
+   "words": [
+    "w.Ali",
+    "w.ve",
+    "w.Ayşe",
+    "w.ev"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.003"
+  },
+  "s.L13.004": {
+   "id": "s.L13.004",
+   "tr": "Ali evde ama Ayşe okulda.",
+   "en": [
+    "Ali is at home but Ayşe is at school.",
+    "Ali is at home, but Ayşe is at school."
+   ],
+   "words": [
+    "w.Ali",
+    "w.ev",
+    "w.ama",
+    "w.Ayşe",
+    "w.okul"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.004"
+  },
+  "s.L13.005": {
+   "id": "s.L13.005",
+   "tr": "Kedi de var.",
+   "en": [
+    "There's a cat too.",
+    "There is a cat too.",
+    "There's also a cat."
+   ],
+   "words": [
+    "w.kedi",
+    "w.de",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L8.varyok",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.005"
+  },
+  "s.L13.006": {
+   "id": "s.L13.006",
+   "tr": "Ahmet de parkta.",
+   "en": [
+    "Ahmet is in the park too.",
+    "Ahmet is also in the park.",
+    "Ahmet is at the park too."
+   ],
+   "words": [
+    "w.Ahmet",
+    "w.de",
+    "w.park"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.006"
+  },
+  "s.L13.007": {
+   "id": "s.L13.007",
+   "tr": "Ahmet parkta.",
+   "en": [
+    "Ahmet is in the park.",
+    "Ahmet is at the park."
+   ],
+   "words": [
+    "w.Ahmet",
+    "w.park"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.007"
+  },
+  "s.L13.008": {
+   "id": "s.L13.008",
+   "tr": "Kitap da çantada.",
+   "en": [
+    "The book is in the bag too.",
+    "The book is also in the bag."
+   ],
+   "words": [
+    "w.kitap",
+    "w.de",
+    "w.çanta"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.008"
+  },
+  "s.L13.009": {
+   "id": "s.L13.009",
+   "tr": "Ben de İstanbul'danım.",
+   "en": [
+    "I'm from Istanbul too.",
+    "I am also from Istanbul.",
+    "I'm from İstanbul too."
+   ],
+   "words": [
+    "w.ben",
+    "w.de",
+    "w.İstanbul"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula",
+    "g.L12.abl",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.009",
+   "native_required": true
+  },
+  "s.L13.010": {
+   "id": "s.L13.010",
+   "tr": "Sen de evde misin?",
+   "en": [
+    "Are you at home too?",
+    "Are you also at home?"
+   ],
+   "words": [
+    "w.sen",
+    "w.de",
+    "w.ev"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L11.loc_copula",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.010",
+   "native_required": true
+  },
+  "s.L13.011": {
+   "id": "s.L13.011",
+   "tr": "Köpek ve kedi bahçede.",
+   "en": [
+    "The dog and the cat are in the garden.",
+    "The dog and cat are in the garden."
+   ],
+   "words": [
+    "w.köpek",
+    "w.ve",
+    "w.kedi",
+    "w.bahçe"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.011"
+  },
+  "s.L13.012": {
+   "id": "s.L13.012",
+   "tr": "Kuş bahçede ama kedi evde.",
+   "en": [
+    "The bird is in the garden but the cat is at home.",
+    "The bird is in the garden, but the cat is in the house."
+   ],
+   "words": [
+    "w.kuş",
+    "w.bahçe",
+    "w.ama",
+    "w.kedi",
+    "w.ev"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.012"
+  },
+  "s.L13.013": {
+   "id": "s.L13.013",
+   "tr": "Biz de parktayız.",
+   "en": [
+    "We're in the park too.",
+    "We are in the park too.",
+    "We're also in the park."
+   ],
+   "words": [
+    "w.biz",
+    "w.de",
+    "w.park"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.013",
+   "native_required": true
+  },
+  "s.L13.014": {
+   "id": "s.L13.014",
+   "tr": "Ben Londra'danım ama Ayşe İstanbul'dan.",
+   "en": [
+    "I'm from London but Ayşe is from Istanbul.",
+    "I'm from London, but Ayşe is from Istanbul."
+   ],
+   "words": [
+    "w.ben",
+    "w.Londra",
+    "w.ama",
+    "w.Ayşe",
+    "w.İstanbul"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L11.loc_copula",
+    "g.L12.abl",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.014",
+   "native_required": true
+  },
+  "s.L13.015": {
+   "id": "s.L13.015",
+   "tr": "Kitap Ahmet'te.",
+   "en": [
+    "Ahmet has the book.",
+    "The book is with Ahmet.",
+    "The book is at Ahmet's."
+   ],
+   "words": [
+    "w.kitap",
+    "w.Ahmet"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.015"
+  },
+  "s.L13.016": {
+   "id": "s.L13.016",
+   "tr": "Evde de kedi var.",
+   "en": [
+    "There's a cat at home too.",
+    "There is a cat at home too.",
+    "There's also a cat at home."
+   ],
+   "words": [
+    "w.ev",
+    "w.de",
+    "w.kedi",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L8.varyok",
+    "g.L10.loc",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.016"
+  },
+  "s.L13.017": {
+   "id": "s.L13.017",
+   "tr": "Tavuk da var.",
+   "en": [
+    "There's a chicken too.",
+    "There's chicken too.",
+    "There is also a chicken."
+   ],
+   "words": [
+    "w.tavuk",
+    "w.de",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L8.varyok",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.017"
+  },
+  "s.L13.018": {
+   "id": "s.L13.018",
+   "tr": "Evde kedi var.",
+   "en": [
+    "There's a cat at home.",
+    "There is a cat in the house."
+   ],
+   "words": [
+    "w.ev",
+    "w.kedi",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L8.varyok",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.018"
+  },
+  "s.L13.019": {
+   "id": "s.L13.019",
+   "tr": "Kedi bahçede.",
+   "en": [
+    "The cat is in the garden."
+   ],
+   "words": [
+    "w.kedi",
+    "w.bahçe"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.019"
+  },
+  "s.L13.020": {
+   "id": "s.L13.020",
+   "tr": "Bahçede köpek var mı?",
+   "en": [
+    "Is there a dog in the garden?"
+   ],
+   "words": [
+    "w.bahçe",
+    "w.köpek",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L8.varyok",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.020",
+   "native_required": true
+  },
+  "s.L13.021": {
+   "id": "s.L13.021",
+   "tr": "Ali de.",
+   "en": [
+    "Ali too.",
+    "Ali as well.",
+    "And Ali."
+   ],
+   "words": [
+    "w.Ali",
+    "w.de"
+   ],
+   "grammar": [
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.021"
+  },
+  "s.L13.022": {
+   "id": "s.L13.022",
+   "tr": "Ali'de.",
+   "en": [
+    "Ali has it.",
+    "It's with Ali.",
+    "At Ali's.",
+    "It's at Ali's."
+   ],
+   "words": [
+    "w.Ali"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.022"
+  },
+  "s.L13.023": {
+   "id": "s.L13.023",
+   "tr": "Bende.",
+   "en": [
+    "I have it.",
+    "It's with me.",
+    "It's on me."
+   ],
+   "words": [
+    "w.ben"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.L13.023",
+   "native_required": true
+  },
+  "s.T10.001": {
+   "id": "s.T10.001",
+   "tr": "Bahçede bir köpek var.",
+   "en": [
+    "There is a dog in the garden.",
+    "There's a dog in the garden."
+   ],
+   "words": [
+    "w.bahçe",
+    "w.bir",
+    "w.köpek",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L10.loc",
+    "g.L8.varyok",
+    "g.L9.adj_num"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.T10.001"
+  },
+  "s.T10.002": {
+   "id": "s.T10.002",
+   "tr": "Balık suda.",
+   "en": [
+    "The fish is in the water."
+   ],
+   "words": [
+    "w.balık",
+    "w.su"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.T10.002"
+  },
   "s.T8.001": {
    "id": "s.T8.001",
    "tr": "Büyük bir mutfak.",
@@ -1568,6 +5007,82 @@
    },
    "audio": "aud.own.s.T8.002",
    "native_required": true
+  },
+  "s.T9.001": {
+   "id": "s.T9.001",
+   "tr": "Banka nerede?",
+   "en": [
+    "Where is the bank?"
+   ],
+   "words": [
+    "w.banka",
+    "w.nerede"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.T9.001",
+   "native_required": true
+  },
+  "s.T9.002": {
+   "id": "s.T9.002",
+   "tr": "Ali okulda.",
+   "en": [
+    "Ali is at school."
+   ],
+   "words": [
+    "w.Ali",
+    "w.okul"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L10.loc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.T9.002"
+  },
+  "s.T9.003": {
+   "id": "s.T9.003",
+   "tr": "Kütüphanedeyim.",
+   "en": [
+    "I'm in the library.",
+    "I am at the library."
+   ],
+   "words": [
+    "w.kütüphane"
+   ],
+   "grammar": [
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.T9.003",
+   "native_required": true
+  },
+  "s.T9.004": {
+   "id": "s.T9.004",
+   "tr": "Havalimanı büyük.",
+   "en": [
+    "The airport is big."
+   ],
+   "words": [
+    "w.havalimanı",
+    "w.büyük"
+   ],
+   "grammar": [
+    "g.L3.basics"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.T9.004"
   }
  },
  "suffixes": {
@@ -1936,6 +5451,309 @@
    ],
    "expected": "buzdolapları",
    "note": "compound: possessive moves after the plural"
+  },
+  {
+   "word": "w.ev",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_1sg"
+   ],
+   "expected": "evdeyim"
+  },
+  {
+   "word": "w.okul",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_2sg"
+   ],
+   "expected": "okuldasın"
+  },
+  {
+   "word": "w.park",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_1pl"
+   ],
+   "expected": "parktayız",
+   "note": "voiceless k → t, then buffer y"
+  },
+  {
+   "word": "w.hastane",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_2pl"
+   ],
+   "expected": "hastanedesiniz"
+  },
+  {
+   "word": "w.bahçe",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_3pl"
+   ],
+   "expected": "bahçedeler"
+  },
+  {
+   "word": "w.market",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_1sg"
+   ],
+   "expected": "marketteyim"
+  },
+  {
+   "word": "w.sokak",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_1sg"
+   ],
+   "expected": "sokaktayım",
+   "note": "soft flag ignored: -DA is consonant-initial"
+  },
+  {
+   "word": "w.şehir",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "şehirde",
+   "note": "drop flag ignored before a consonant"
+  },
+  {
+   "word": "w.havalimanı",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_1sg"
+   ],
+   "expected": "havalimanındayım",
+   "note": "compound: buffer n"
+  },
+  {
+   "word": "w.İstanbul",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "İstanbul'da",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.Ali",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "Ali'de",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.Ahmet",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "Ahmet'te",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.Ankara",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_1sg"
+   ],
+   "expected": "Ankara'dayım",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.İzmir",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_1sg"
+   ],
+   "expected": "İzmir'deyim",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.ev",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "evden"
+  },
+  {
+   "word": "w.okul",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "okuldan"
+  },
+  {
+   "word": "w.kitap",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "kitaptan",
+   "note": "no softening before a consonant"
+  },
+  {
+   "word": "w.otobüs",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "otobüsten",
+   "note": "only the last vowel counts"
+  },
+  {
+   "word": "w.banka",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "bankadan"
+  },
+  {
+   "word": "w.kütüphane",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "kütüphaneden"
+  },
+  {
+   "word": "w.ev",
+   "suffixes": [
+    "sfx.pl",
+    "sfx.abl"
+   ],
+   "expected": "evlerden"
+  },
+  {
+   "word": "w.saat",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "saatten",
+   "note": "front flag"
+  },
+  {
+   "word": "w.yatak_odası",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "yatak odasından",
+   "note": "compound: buffer n"
+  },
+  {
+   "word": "w.İstanbul",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "İstanbul'dan",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.Türkiye",
+   "suffixes": [
+    "sfx.abl",
+    "sfx.cop_1sg"
+   ],
+   "expected": "Türkiye'denim",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.Londra",
+   "suffixes": [
+    "sfx.abl",
+    "sfx.cop_1sg"
+   ],
+   "expected": "Londra'danım",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.İzmir",
+   "suffixes": [
+    "sfx.abl",
+    "sfx.cop_1pl"
+   ],
+   "expected": "İzmir'deniz",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.Ahmet",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "Ahmet'ten",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.market",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "markette"
+  },
+  {
+   "word": "w.park",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "parkta"
+  },
+  {
+   "word": "w.sokak",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "sokakta",
+   "note": "no softening before a consonant"
+  },
+  {
+   "word": "w.havalimanı",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "havalimanında",
+   "note": "compound: buffer n"
+  },
+  {
+   "word": "w.cami",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "camide"
+  },
+  {
+   "word": "w.eczane",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "eczanede"
+  },
+  {
+   "word": "w.köprü",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "köprüde"
+  },
+  {
+   "word": "w.ben",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "bende",
+   "note": "vs the clitic: ben de 'me too'"
+  },
+  {
+   "word": "w.Paris",
+   "suffixes": [
+    "sfx.loc"
+   ],
+   "expected": "Paris'te",
+   "pending": "engine: no apostrophe on proper nouns"
+  },
+  {
+   "word": "w.Paris",
+   "suffixes": [
+    "sfx.abl"
+   ],
+   "expected": "Paris'ten",
+   "pending": "engine: no apostrophe on proper nouns"
   }
  ],
  "assets": {
@@ -2360,6 +6178,802 @@
    "license": "OWN",
    "status": "planned",
    "text": "Yatak yeni mi?"
+  },
+  "img.openmoji.person": {
+   "id": "img.openmoji.person",
+   "kind": "image",
+   "file": "images/openmoji/1F9D1.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F9D1/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.school": {
+   "id": "img.openmoji.school",
+   "kind": "image",
+   "file": "images/openmoji/1F3EB.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F3EB/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.pen": {
+   "id": "img.openmoji.pen",
+   "kind": "image",
+   "file": "images/openmoji/1F58A.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F58A/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.hospital": {
+   "id": "img.openmoji.hospital",
+   "kind": "image",
+   "file": "images/openmoji/1F3E5.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F3E5/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.bank": {
+   "id": "img.openmoji.bank",
+   "kind": "image",
+   "file": "images/openmoji/1F3E6.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F3E6/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.store": {
+   "id": "img.openmoji.store",
+   "kind": "image",
+   "file": "images/openmoji/1F3EA.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F3EA/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.park": {
+   "id": "img.openmoji.park",
+   "kind": "image",
+   "file": "images/openmoji/1F3DE.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F3DE/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.mosque": {
+   "id": "img.openmoji.mosque",
+   "kind": "image",
+   "file": "images/openmoji/1F54C.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F54C/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.flag_turkey": {
+   "id": "img.openmoji.flag_turkey",
+   "kind": "image",
+   "file": "images/openmoji/1F1F9-1F1F7.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F1F9-1F1F7/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.flag_uk": {
+   "id": "img.openmoji.flag_uk",
+   "kind": "image",
+   "file": "images/openmoji/1F1EC-1F1E7.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F1EC-1F1E7/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.dog": {
+   "id": "img.openmoji.dog",
+   "kind": "image",
+   "file": "images/openmoji/1F415.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F415/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.bird": {
+   "id": "img.openmoji.bird",
+   "kind": "image",
+   "file": "images/openmoji/1F426.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F426/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.fish": {
+   "id": "img.openmoji.fish",
+   "kind": "image",
+   "file": "images/openmoji/1F41F.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F41F/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.horse": {
+   "id": "img.openmoji.horse",
+   "kind": "image",
+   "file": "images/openmoji/1F40E.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F40E/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.cow": {
+   "id": "img.openmoji.cow",
+   "kind": "image",
+   "file": "images/openmoji/1F404.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F404/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.sheep": {
+   "id": "img.openmoji.sheep",
+   "kind": "image",
+   "file": "images/openmoji/1F411.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F411/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.chicken": {
+   "id": "img.openmoji.chicken",
+   "kind": "image",
+   "file": "images/openmoji/1F414.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F414/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.own.person_in_park": {
+   "id": "img.own.person_in_park",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.person",
+    "img.openmoji.park"
+   ]
+  },
+  "img.own.person_at_home": {
+   "id": "img.own.person_at_home",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.person",
+    "img.openmoji.house"
+   ]
+  },
+  "img.own.dog_and_cat_in_garden": {
+   "id": "img.own.dog_and_cat_in_garden",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.dog",
+    "img.openmoji.cat"
+   ],
+   "notes": "Dog and cat together in a garden (L13)."
+  },
+  "img.own.pen_and_book_in_bag": {
+   "id": "img.own.pen_and_book_in_bag",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.pen",
+    "img.openmoji.book",
+    "img.openmoji.bag"
+   ]
+  },
+  "img.own.ali_home_ayse_school": {
+   "id": "img.own.ali_home_ayse_school",
+   "kind": "image",
+   "source": "own",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "modified": true,
+   "derived_from": [
+    "img.openmoji.person",
+    "img.openmoji.house",
+    "img.openmoji.school"
+   ],
+   "notes": "Two panels: Ali at home | Ayşe at school (L13)."
+  },
+  "aud.own.L11_worked_examples": {
+   "id": "aud.own.L11_worked_examples",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "parktayız, hastanedesin, Ankara'dayım"
+  },
+  "aud.own.s.L11.001": {
+   "id": "aud.own.s.L11.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Neredesin?"
+  },
+  "aud.own.s.L11.002": {
+   "id": "aud.own.s.L11.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Evdeyim."
+  },
+  "aud.own.s.L11.003": {
+   "id": "aud.own.s.L11.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben okuldayım."
+  },
+  "aud.own.s.L11.004": {
+   "id": "aud.own.s.L11.004",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Sen parkta mısın?"
+  },
+  "aud.own.s.L11.005": {
+   "id": "aud.own.s.L11.005",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Hayır, ben evdeyim."
+  },
+  "aud.own.s.L11.006": {
+   "id": "aud.own.s.L11.006",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Biz bankadayız."
+  },
+  "aud.own.s.L11.007": {
+   "id": "aud.own.s.L11.007",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Siz hastanede misiniz?"
+  },
+  "aud.own.s.L11.008": {
+   "id": "aud.own.s.L11.008",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Onlar bahçede."
+  },
+  "aud.own.s.L11.009": {
+   "id": "aud.own.s.L11.009",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ayşe İstanbul'da."
+  },
+  "aud.own.s.L11.010": {
+   "id": "aud.own.s.L11.010",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ankara'dayım."
+  },
+  "aud.own.s.L11.011": {
+   "id": "aud.own.s.L11.011",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali eczanede değil."
+  },
+  "aud.own.s.L11.012": {
+   "id": "aud.own.s.L11.012",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Şimdi marketteyim."
+  },
+  "aud.own.s.L11.013": {
+   "id": "aud.own.s.L11.013",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Sokaktayım."
+  },
+  "aud.own.s.L11.014": {
+   "id": "aud.own.s.L11.014",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "İzmir'de misin?"
+  },
+  "aud.own.s.L11.015": {
+   "id": "aud.own.s.L11.015",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Evet, İzmir'deyim."
+  },
+  "aud.own.s.L11.016": {
+   "id": "aud.own.s.L11.016",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Biz Ali'deyiz."
+  },
+  "aud.own.s.L11.017": {
+   "id": "aud.own.s.L11.017",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Siz neredesiniz?"
+  },
+  "aud.own.s.L11.018": {
+   "id": "aud.own.s.L11.018",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Biz parktayız."
+  },
+  "aud.own.s.L11.019": {
+   "id": "aud.own.s.L11.019",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben evde değilim."
+  },
+  "aud.own.s.L11.020": {
+   "id": "aud.own.s.L11.020",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Sen parktasın."
+  },
+  "aud.own.s.L11.021": {
+   "id": "aud.own.s.L11.021",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben İstanbul'dayım."
+  },
+  "aud.own.s.L12.001": {
+   "id": "aud.own.s.L12.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Neredensin?"
+  },
+  "aud.own.s.L12.002": {
+   "id": "aud.own.s.L12.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Londra'danım."
+  },
+  "aud.own.s.L12.003": {
+   "id": "aud.own.s.L12.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "İstanbul'danım."
+  },
+  "aud.own.s.L12.004": {
+   "id": "aud.own.s.L12.004",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali Ankara'dan."
+  },
+  "aud.own.s.L12.005": {
+   "id": "aud.own.s.L12.005",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ayşe nereden?"
+  },
+  "aud.own.s.L12.006": {
+   "id": "aud.own.s.L12.006",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Siz neredensiniz?"
+  },
+  "aud.own.s.L12.007": {
+   "id": "aud.own.s.L12.007",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Biz İzmir'deniz."
+  },
+  "aud.own.s.L12.008": {
+   "id": "aud.own.s.L12.008",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben Londra'dayım."
+  },
+  "aud.own.s.L12.009": {
+   "id": "aud.own.s.L12.009",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben Londra'danım."
+  },
+  "aud.own.s.L12.010": {
+   "id": "aud.own.s.L12.010",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Onlar Türkiye'den."
+  },
+  "aud.own.s.L12.011": {
+   "id": "aud.own.s.L12.011",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu çay Türkiye'den."
+  },
+  "aud.own.s.L12.012": {
+   "id": "aud.own.s.L12.012",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Sen İngiltere'den misin?"
+  },
+  "aud.own.s.L12.013": {
+   "id": "aud.own.s.L12.013",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Hayır, İngiltere'den değilim."
+  },
+  "aud.own.s.L12.014": {
+   "id": "aud.own.s.L12.014",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu süt marketten."
+  },
+  "aud.own.s.L12.015": {
+   "id": "aud.own.s.L12.015",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu kitap kütüphaneden."
+  },
+  "aud.own.s.L12.016": {
+   "id": "aud.own.s.L12.016",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Biz İstanbul'danız."
+  },
+  "aud.own.s.L13.001": {
+   "id": "aud.own.s.L13.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben de."
+  },
+  "aud.own.s.L13.002": {
+   "id": "aud.own.s.L13.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ayşe de evde."
+  },
+  "aud.own.s.L13.003": {
+   "id": "aud.own.s.L13.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali ve Ayşe evde."
+  },
+  "aud.own.s.L13.004": {
+   "id": "aud.own.s.L13.004",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali evde ama Ayşe okulda."
+  },
+  "aud.own.s.L13.005": {
+   "id": "aud.own.s.L13.005",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kedi de var."
+  },
+  "aud.own.s.L13.006": {
+   "id": "aud.own.s.L13.006",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ahmet de parkta."
+  },
+  "aud.own.s.L13.007": {
+   "id": "aud.own.s.L13.007",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ahmet parkta."
+  },
+  "aud.own.s.L13.008": {
+   "id": "aud.own.s.L13.008",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kitap da çantada."
+  },
+  "aud.own.s.L13.009": {
+   "id": "aud.own.s.L13.009",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben de İstanbul'danım."
+  },
+  "aud.own.s.L13.010": {
+   "id": "aud.own.s.L13.010",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Sen de evde misin?"
+  },
+  "aud.own.s.L13.011": {
+   "id": "aud.own.s.L13.011",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Köpek ve kedi bahçede."
+  },
+  "aud.own.s.L13.012": {
+   "id": "aud.own.s.L13.012",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kuş bahçede ama kedi evde."
+  },
+  "aud.own.s.L13.013": {
+   "id": "aud.own.s.L13.013",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Biz de parktayız."
+  },
+  "aud.own.s.L13.014": {
+   "id": "aud.own.s.L13.014",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben Londra'danım ama Ayşe İstanbul'dan."
+  },
+  "aud.own.s.L13.015": {
+   "id": "aud.own.s.L13.015",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kitap Ahmet'te."
+  },
+  "aud.own.s.L13.016": {
+   "id": "aud.own.s.L13.016",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Evde de kedi var."
+  },
+  "aud.own.s.L13.017": {
+   "id": "aud.own.s.L13.017",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Tavuk da var."
+  },
+  "aud.own.s.L13.018": {
+   "id": "aud.own.s.L13.018",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Evde kedi var."
+  },
+  "aud.own.s.L13.019": {
+   "id": "aud.own.s.L13.019",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kedi bahçede."
+  },
+  "aud.own.s.L13.020": {
+   "id": "aud.own.s.L13.020",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bahçede köpek var mı?"
+  },
+  "aud.own.s.T10.001": {
+   "id": "aud.own.s.T10.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bahçede bir köpek var."
+  },
+  "aud.own.s.T10.002": {
+   "id": "aud.own.s.T10.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Balık suda."
+  },
+  "aud.own.s.T9.001": {
+   "id": "aud.own.s.T9.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Banka nerede?"
+  },
+  "aud.own.s.T9.002": {
+   "id": "aud.own.s.T9.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali okulda."
+  },
+  "aud.own.s.T9.003": {
+   "id": "aud.own.s.T9.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kütüphanedeyim."
+  },
+  "aud.own.s.T9.004": {
+   "id": "aud.own.s.T9.004",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Havalimanı büyük."
+  },
+  "img.openmoji.envelope": {
+   "id": "img.openmoji.envelope",
+   "kind": "image",
+   "file": "images/openmoji/2709.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-2709/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "aud.own.s.L12.017": {
+   "id": "aud.own.s.L12.017",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu mektup Ali'den."
+  },
+  "aud.own.s.L12.018": {
+   "id": "aud.own.s.L12.018",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ahmet Paris'ten."
+  },
+  "aud.own.s.L13.021": {
+   "id": "aud.own.s.L13.021",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali de."
+  },
+  "aud.own.s.L13.022": {
+   "id": "aud.own.s.L13.022",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ali'de."
+  },
+  "aud.own.s.L13.023": {
+   "id": "aud.own.s.L13.023",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bende."
   }
  }
 }

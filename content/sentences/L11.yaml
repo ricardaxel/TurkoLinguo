@@ -1,0 +1,189 @@
+# Sentences used by lesson L11. `words` and `grammar` are hand-tagged for now.
+# Grammar tags: g.L5.copula = pronouns / person endings; g.L6.degil = değil; g.L7.question = mI and question words.
+
+- id: s.L11.001
+  tr: Neredesin?
+  en: ["Where are you?"]
+  words: [w.nerede]
+  grammar: [g.L7.question, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.001
+  native_required: true        # question intonation
+
+- id: s.L11.002
+  tr: Evdeyim.
+  en: ["I'm at home.", "I am at home."]
+  words: [w.ev]
+  grammar: [g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.002
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.003
+  tr: Ben okuldayım.
+  en: ["I'm at school.", "I am at school.", "I'm in the school."]
+  words: [w.ben, w.okul]
+  grammar: [g.L5.copula, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.003
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.004
+  tr: Sen parkta mısın?
+  en: ["Are you in the park?", "Are you at the park?"]
+  words: [w.sen, w.park]
+  grammar: [g.L5.copula, g.L7.question, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.004
+  native_required: true
+
+- id: s.L11.005
+  tr: Hayır, ben evdeyim.
+  en: ["No, I'm at home.", "No, I am at home."]
+  words: [w.hayır, w.ben, w.ev]
+  grammar: [g.L5.copula, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.005
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.006
+  tr: Biz bankadayız.
+  en: ["We're at the bank.", "We are at the bank.", "We're in the bank."]
+  words: [w.biz, w.banka]
+  grammar: [g.L5.copula, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.006
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.007
+  tr: Siz hastanede misiniz?
+  en: ["Are you at the hospital?", "Are you in the hospital?", "Are you in hospital?"]
+  words: [w.siz, w.hastane]
+  grammar: [g.L5.copula, g.L7.question, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.007
+  native_required: true
+
+- id: s.L11.008
+  tr: Onlar bahçede.
+  en: ["They're in the garden.", "They are in the garden."]
+  words: [w.onlar, w.bahçe]
+  grammar: [g.L5.copula, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.008
+
+- id: s.L11.009
+  tr: Ayşe İstanbul'da.
+  en: ["Ayşe is in Istanbul.", "Ayşe is in İstanbul."]
+  words: [w.Ayşe, w.İstanbul]
+  grammar: [g.L3.basics, g.L10.loc, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.009
+  native_required: true        # place-name stress: isTANbul
+
+- id: s.L11.010
+  tr: Ankara'dayım.
+  en: ["I'm in Ankara.", "I am in Ankara."]
+  words: [w.Ankara]
+  grammar: [g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.010
+  native_required: true        # place-name stress: ANkara
+
+- id: s.L11.011
+  tr: Ali eczanede değil.
+  en: ["Ali isn't at the pharmacy.", "Ali is not at the pharmacy.", "Ali isn't in the pharmacy."]
+  words: [w.Ali, w.eczane, w.değil]
+  grammar: [g.L6.degil, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L11.011
+
+- id: s.L11.012
+  tr: Şimdi marketteyim.
+  en: ["I'm at the supermarket now.", "Now I'm at the supermarket.", "I'm at the shop now."]
+  words: [w.şimdi, w.market]
+  grammar: [g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.012
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.013
+  tr: Sokaktayım.
+  en: ["I'm in the street.", "I'm on the street.", "I am in the street."]
+  words: [w.sokak]
+  grammar: [g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.013
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.014
+  tr: İzmir'de misin?
+  en: ["Are you in Izmir?", "Are you in İzmir?"]
+  words: [w.İzmir]
+  grammar: [g.L7.question, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.014
+  native_required: true
+
+- id: s.L11.015
+  tr: Evet, İzmir'deyim.
+  en: ["Yes, I'm in Izmir.", "Yes, I'm in İzmir.", "Yes, I am in Izmir."]
+  words: [w.evet, w.İzmir]
+  grammar: [g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.015
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.016
+  tr: Biz Ali'deyiz.
+  en: ["We're at Ali's.", "We are at Ali's place.", "We're at Ali's house."]
+  words: [w.biz, w.Ali]
+  grammar: [g.L5.copula, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.016
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.017
+  tr: Siz neredesiniz?
+  en: ["Where are you?"]
+  words: [w.siz, w.nerede]
+  grammar: [g.L5.copula, g.L7.question, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.017
+  native_required: true
+
+- id: s.L11.018
+  tr: Biz parktayız.
+  en: ["We're in the park.", "We are in the park.", "We're at the park."]
+  words: [w.biz, w.park]
+  grammar: [g.L5.copula, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.018
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.019
+  tr: Ben evde değilim.
+  en: ["I'm not at home.", "I am not at home."]
+  words: [w.ben, w.ev, w.değil]
+  grammar: [g.L5.copula, g.L6.degil, g.L10.loc, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.019
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.020
+  tr: Sen parktasın.
+  en: ["You're in the park.", "You are in the park.", "You're at the park."]
+  words: [w.sen, w.park]
+  grammar: [g.L5.copula, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.020
+  native_required: true        # stress falls before the person ending
+
+- id: s.L11.021
+  tr: Ben İstanbul'dayım.
+  en: ["I'm in Istanbul.", "I am in Istanbul.", "I'm in İstanbul."]
+  words: [w.ben, w.İstanbul]
+  grammar: [g.L5.copula, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L11.021
+  native_required: true        # place-name stress

@@ -1,0 +1,61 @@
+id: g.L12.abl
+title: "Ablative -DAn: from"
+suffixes: [sfx.abl]
+
+reference: |
+  **-DAn** means *from*: **ev·den** "from home", **okul·dan** "from school", **İstanbul'dan** "from Istanbul".
+
+  It is the locative **-DA** plus **n**, so the same two questions decide its form:
+
+  - **Vowel (A):** last vowel a ı o u → **-dan** · e i ö ü → **-den**
+  - **Consonant (D):** after **f s t k ç ş h p** ("Fıstıkçı Şahap") → **-tan / -ten**; otherwise **-dan / -den**.
+
+  The word itself doesn't change: *kitap → kitaptan*, *sokak → sokaktan*. Exception: a compound like *yatak odası* adds **n**, as with -DA: *yatak odası·n·dan*. After a plural: **ev·ler·den**.
+
+  **With "to be" endings** (L11), no verb is needed: *Neredensin?* "Where are you from?" — *Londra'danım.* "I'm from London." -DAn ends in a consonant, so there is **no buffer y**: Londra'dan·**ım**, İzmir'den·**iz**.
+
+  *Nerelisin?* (the L5 phrase) is the more standard way to ask where someone is from; *Neredensin?* is fine in conversation.
+
+  ⚠️ Don't mix them up: *Londra'dayım* "I'm **in** London" · *Londra'danım* "I'm **from** London".
+
+  Names keep their apostrophe: *Türkiye'den*, *Ahmet'ten*.
+
+patterns:
+  - id: g.L12.abl.back
+    description: "Back last vowel → -dan"
+    suffix: sfx.abl
+    word_filter: { pos: noun, last_vowel: back, ends_with: voiced_consonant }
+  - id: g.L12.abl.front
+    description: "Front last vowel → -den"
+    suffix: sfx.abl
+    word_filter: { pos: noun, last_vowel: front, ends_with: voiced_consonant }
+  - id: g.L12.abl.after_vowel
+    description: "Word ends in a vowel → d"
+    suffix: sfx.abl
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L12.abl.voiceless
+    description: "Ends in f s t k ç ş h p → -tan / -ten"
+    suffix: sfx.abl
+    word_filter: { pos: noun, ends_with: voiceless }
+  - id: g.L12.abl.last_vowel
+    description: "First and last vowels differ in harmony: only the last one counts"
+    suffix: sfx.abl
+    word_filter: { pos: noun, last_vowel_differs_from_first: true }
+  - id: g.L12.abl.origin
+    description: "Where from: name + -DAn + -Im (Londra'danım), no buffer y"
+    suffixes: [sfx.abl, sfx.cop_1sg]
+    word_filter: { pos: name }
+
+feedback:
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-{D}an**."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-{D}en**."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  voiceless: "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: {answer}."
+  not_voiceless: "**{c}** is not in Fıstıkçı Şahap → **d**: {answer}."
+  after_vowel: "**{word}** ends in a vowel → always **d**: {answer}."
+  detached: "The *from* ending is **attached** to the word: **{answer}**."
+  stem_changed: "-DAn starts with a consonant, so **{word}** doesn't change: **{answer}**."
+  loc_for_abl: "**-DA** means *in / at*; *from* is **-DAn**: **{answer}**."
+  buffer_after_n: "-DAn ends in a consonant, so no buffer **y**: **{answer}**."
+  apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."
