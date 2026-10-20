@@ -14,13 +14,20 @@ describe('turkish case mapping', () => {
 });
 
 describe('form engine: content/morphology/tests.yaml', () => {
-  it.each(content.morphTests.map((t) => [t.word, t.suffixes.join('+'), t.expected, t]))(
-    '%s + %s → %s',
-    (_w, _s, expected, t) => {
-      const test = t as (typeof content.morphTests)[number];
-      expect(inflect(word(test.word), test.suffixes, T)).toBe(expected);
-    },
-  );
+  type MorphTest = (typeof content.morphTests)[number] & { pending?: string };
+  const tests = content.morphTests as MorphTest[];
+  const row = (t: MorphTest) => [t.word, t.suffixes.join('+'), t.expected, t];
+  const run = (_w: unknown, _s: unknown, expected: unknown, t: unknown) => {
+    const test = t as MorphTest;
+    expect(inflect(word(test.word), test.suffixes, T)).toBe(expected);
+  };
+
+  it.each(tests.filter((t) => !t.pending).map(row))('%s + %s → %s', run);
+  // Known engine gaps (`pending:` in tests.yaml). These start failing once the engine handles
+  // them: then remove the `pending` field.
+  if (tests.some((t) => t.pending)) {
+    it.failing.each(tests.filter((t) => t.pending).map(row))('pending: %s + %s → %s', run);
+  }
 });
 
 describe('answer patterns', () => {
@@ -85,9 +92,11 @@ describe('locative feedback diagnosis', () => {
   });
 });
 
-describe('content integrity: every L10 answer agrees with the engine and checker', () => {
-  const lesson = content.lessons.L10;
-  const items = [...lesson.sessions.learn.items, ...lesson.sessions.practise.items];
+describe('content integrity: every lesson answer agrees with the engine and checker', () => {
+  const items = Object.values(content.lessons).flatMap((lesson) => [
+    ...lesson.sessions.learn.items,
+    ...lesson.sessions.practise.items,
+  ]);
 
   it.each(items.map((i) => [i.id, i]))('%s', (_id, it) => {
     const item = it as (typeof items)[number];
@@ -103,8 +112,12 @@ describe('content integrity: every L10 answer agrees with the engine and checker
         break;
       case 'translate_to_tr': {
         const s = content.sentences[item.sentence!];
-        const tokens = s.tr.replace(/[.,!?]/g, '').split(' ');
-        tokens.forEach((t) => expect(item.word_bank!.map(trLower)).toContain(trLower(t)));
+        if (item.word_bank) {
+          const tokens = s.tr.replace(/[.,!?]/g, '').split(' ');
+          tokens.forEach((t) => expect(item.word_bank!.map(trLower)).toContain(trLower(t)));
+        } else {
+          expect(checkTyped(s.tr, [s.tr, ...(item.answers ?? [])]).status).toBe('correct');
+        }
         break;
       }
       default:

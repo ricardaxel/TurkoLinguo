@@ -60,3 +60,60 @@
 
 # --- names (never need introducing) ---
 - { id: w.Ali, lemma: Ali, pos: name, gloss: [Ali (male name)] }
+
+# --- L3, L5, L6 function words (pronouns, bu, değil) ---
+- { id: w.bu, lemma: bu, pos: pron, gloss: [this] }
+- { id: w.ben, lemma: ben, pos: pron, gloss: [I] }
+- { id: w.sen, lemma: sen, pos: pron, gloss: [you (informal)] }
+- { id: w.o, lemma: o, pos: pron, gloss: [he, she, it, that] }
+- { id: w.biz, lemma: biz, pos: pron, gloss: [we], flags: [irr], forms: { gen: bizim } }
+- { id: w.siz, lemma: siz, pos: pron, gloss: [you (plural / polite)] }
+- { id: w.onlar, lemma: onlar, pos: pron, gloss: [they] }
+- { id: w.değil, lemma: değil, pos: particle, gloss: [not], notes: "Takes the personal endings: değilim, değilsin…" }
+- { id: w.evet, lemma: evet, pos: interj, gloss: ["yes"] }
+- { id: w.çay, lemma: çay, pos: noun, gloss: [tea] }
+
+# --- L11–L13 new words ---
+- { id: w.şimdi, lemma: şimdi, pos: adv, gloss: [now] }
+- { id: w.nereden, lemma: nereden, pos: adv, gloss: [where from, from where], notes: "nere·den: the ablative of nere-. Neredensin? 'Where are you from?'" }
+- { id: w.de, lemma: de, pos: particle, gloss: [too, also], notes: "Clitic, written separately: de after e i ö ü, da after a ı o u. Never te/ta." }
+- { id: w.ve, lemma: ve, pos: conj, gloss: [and] }
+- { id: w.ama, lemma: ama, pos: conj, gloss: [but] }
+
+# --- T9 city & places ---
+- { id: w.hastane, lemma: hastane, pos: noun, gloss: [hospital], images: [img.openmoji.hospital] }
+- { id: w.eczane, lemma: eczane, pos: noun, gloss: [pharmacy] }
+- { id: w.market, lemma: market, pos: noun, gloss: [supermarket, grocery store], images: [img.openmoji.store] }
+- { id: w.banka, lemma: banka, pos: noun, gloss: [bank], images: [img.openmoji.bank] }
+- { id: w.park, lemma: park, pos: noun, gloss: [park], images: [img.openmoji.park], notes: "One syllable: no softening (parkı)." }
+- { id: w.cami, lemma: cami, pos: noun, gloss: [mosque], images: [img.openmoji.mosque] }
+- { id: w.sokak, lemma: sokak, pos: noun, gloss: [street], flags: [soft] }
+- { id: w.pazar, lemma: pazar, pos: noun, gloss: [bazaar, open-air market], notes: "Also 'Sunday' (T17). Replaces okul in T9.p1: okul is an L2 core word." }
+- { id: w.cadde, lemma: cadde, pos: noun, gloss: [avenue, main street] }
+- { id: w.çarşı, lemma: çarşı, pos: noun, gloss: [market, bazaar, shopping area] }
+- { id: w.istasyon, lemma: istasyon, pos: noun, gloss: [station] }
+- { id: w.havalimanı, lemma: havalimanı, pos: noun, gloss: [airport], flags: [compound], forms: { pl: havalimanları } }
+- { id: w.postane, lemma: postane, pos: noun, gloss: [post office] }
+- { id: w.kütüphane, lemma: kütüphane, pos: noun, gloss: [library] }
+- { id: w.köprü, lemma: köprü, pos: noun, gloss: [bridge] }
+- { id: w.şehir, lemma: şehir, pos: noun, gloss: [city], flags: [drop] }
+
+# --- T10 animals (pack 1) ---
+- { id: w.köpek, lemma: köpek, pos: noun, gloss: [dog], flags: [soft], images: [img.openmoji.dog] }
+- { id: w.kuş, lemma: kuş, pos: noun, gloss: [bird], images: [img.openmoji.bird] }
+- { id: w.balık, lemma: balık, pos: noun, gloss: [fish], flags: [soft], images: [img.openmoji.fish] }
+- { id: w.at, lemma: at, pos: noun, gloss: [horse], images: [img.openmoji.horse] }
+- { id: w.inek, lemma: inek, pos: noun, gloss: [cow], flags: [soft], images: [img.openmoji.cow] }
+- { id: w.koyun, lemma: koyun, pos: noun, gloss: [sheep], images: [img.openmoji.sheep] }
+- { id: w.tavuk, lemma: tavuk, pos: noun, gloss: [chicken], flags: [soft], images: [img.openmoji.chicken] }
+- { id: w.keçi, lemma: keçi, pos: noun, gloss: [goat], notes: "Moved up from T10 pack 3 to replace kedi, which is an L2 core word." }
+
+# --- names and places (proper nouns: apostrophe before endings, never need introducing) ---
+- { id: w.Ayşe, lemma: Ayşe, pos: name, gloss: [Ayşe (female name)] }
+- { id: w.Ahmet, lemma: Ahmet, pos: name, gloss: [Ahmet (male name)] }
+- { id: w.İstanbul, lemma: İstanbul, pos: name, gloss: [Istanbul] }
+- { id: w.Ankara, lemma: Ankara, pos: name, gloss: [Ankara] }
+- { id: w.İzmir, lemma: İzmir, pos: name, gloss: [Izmir] }
+- { id: w.Londra, lemma: Londra, pos: name, gloss: [London] }
+- { id: w.Türkiye, lemma: Türkiye, pos: name, gloss: [Turkey, Türkiye], notes: "T4 country." }
+- { id: w.İngiltere, lemma: İngiltere, pos: name, gloss: [England], notes: "T4 country." }

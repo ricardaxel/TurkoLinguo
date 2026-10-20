@@ -1,0 +1,17 @@
+# Frame sentences for theme T10 (Animals, elective). Only grammar up to L12.
+
+- id: s.T10.001
+  tr: Bahçede bir köpek var.
+  en: ["There is a dog in the garden.", "There's a dog in the garden."]
+  words: [w.bahçe, w.bir, w.köpek, w.var]
+  grammar: [g.L10.loc, g.L8.varyok, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.T10.001
+
+- id: s.T10.002
+  tr: Balık suda.
+  en: ["The fish is in the water."]
+  words: [w.balık, w.su]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.T10.002

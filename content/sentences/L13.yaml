@@ -1,0 +1,166 @@
+# Sentences used by lesson L13. `words` and `grammar` are hand-tagged for now.
+# w.de = the clitic de/da "too" (separate word); the locative -DA is not a word and isn't tagged.
+
+- id: s.L13.001
+  tr: Ben de.
+  en: ["Me too.", "Me too!", "So am I."]
+  words: [w.ben, w.de]
+  grammar: [g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.001
+  native_required: true
+
+- id: s.L13.002
+  tr: Ayşe de evde.
+  en: ["Ayşe is at home too.", "Ayşe is also at home.", "Ayşe is at home as well."]
+  words: [w.Ayşe, w.de, w.ev]
+  grammar: [g.L3.basics, g.L10.loc, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.002
+
+- id: s.L13.003
+  tr: Ali ve Ayşe evde.
+  en: ["Ali and Ayşe are at home."]
+  words: [w.Ali, w.ve, w.Ayşe, w.ev]
+  grammar: [g.L3.basics, g.L10.loc, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.003
+
+- id: s.L13.004
+  tr: Ali evde ama Ayşe okulda.
+  en: ["Ali is at home but Ayşe is at school.", "Ali is at home, but Ayşe is at school."]
+  words: [w.Ali, w.ev, w.ama, w.Ayşe, w.okul]
+  grammar: [g.L3.basics, g.L10.loc, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.004
+
+- id: s.L13.005
+  tr: Kedi de var.
+  en: ["There's a cat too.", "There is a cat too.", "There's also a cat."]
+  words: [w.kedi, w.de, w.var]
+  grammar: [g.L8.varyok, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.005
+
+- id: s.L13.006
+  tr: Ahmet de parkta.
+  en: ["Ahmet is in the park too.", "Ahmet is also in the park.", "Ahmet is at the park too."]
+  words: [w.Ahmet, w.de, w.park]
+  grammar: [g.L3.basics, g.L10.loc, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.006
+
+- id: s.L13.007
+  tr: Ahmet parkta.
+  en: ["Ahmet is in the park.", "Ahmet is at the park."]
+  words: [w.Ahmet, w.park]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L13.007
+
+- id: s.L13.008
+  tr: Kitap da çantada.
+  en: ["The book is in the bag too.", "The book is also in the bag."]
+  words: [w.kitap, w.de, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.008
+
+- id: s.L13.009
+  tr: Ben de İstanbul'danım.
+  en: ["I'm from Istanbul too.", "I am also from Istanbul.", "I'm from İstanbul too."]
+  words: [w.ben, w.de, w.İstanbul]
+  grammar: [g.L5.copula, g.L11.loc_copula, g.L12.abl, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.009
+  native_required: true        # place-name stress
+
+- id: s.L13.010
+  tr: Sen de evde misin?
+  en: ["Are you at home too?", "Are you also at home?"]
+  words: [w.sen, w.de, w.ev]
+  grammar: [g.L5.copula, g.L7.question, g.L11.loc_copula, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.010
+  native_required: true
+
+- id: s.L13.011
+  tr: Köpek ve kedi bahçede.
+  en: ["The dog and the cat are in the garden.", "The dog and cat are in the garden."]
+  words: [w.köpek, w.ve, w.kedi, w.bahçe]
+  grammar: [g.L3.basics, g.L10.loc, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.011
+
+- id: s.L13.012
+  tr: Kuş bahçede ama kedi evde.
+  en: ["The bird is in the garden but the cat is at home.", "The bird is in the garden, but the cat is in the house."]
+  words: [w.kuş, w.bahçe, w.ama, w.kedi, w.ev]
+  grammar: [g.L3.basics, g.L10.loc, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.012
+
+- id: s.L13.013
+  tr: Biz de parktayız.
+  en: ["We're in the park too.", "We are in the park too.", "We're also in the park."]
+  words: [w.biz, w.de, w.park]
+  grammar: [g.L5.copula, g.L11.loc_copula, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.013
+
+- id: s.L13.014
+  tr: Ben Londra'danım ama Ayşe İstanbul'dan.
+  en: ["I'm from London but Ayşe is from Istanbul.", "I'm from London, but Ayşe is from Istanbul."]
+  words: [w.ben, w.Londra, w.ama, w.Ayşe, w.İstanbul]
+  grammar: [g.L5.copula, g.L11.loc_copula, g.L12.abl, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.014
+
+- id: s.L13.015
+  tr: Kitap Ahmet'te.
+  en: ["Ahmet has the book.", "The book is with Ahmet.", "The book is at Ahmet's."]
+  words: [w.kitap, w.Ahmet]
+  grammar: [g.L3.basics, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L13.015
+
+- id: s.L13.016
+  tr: Evde de kedi var.
+  en: ["There's a cat at home too.", "There is a cat at home too.", "There's also a cat at home."]
+  words: [w.ev, w.de, w.kedi, w.var]
+  grammar: [g.L8.varyok, g.L10.loc, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.016
+
+- id: s.L13.017
+  tr: Tavuk da var.
+  en: ["There's a chicken too.", "There's chicken too.", "There is also a chicken."]
+  words: [w.tavuk, w.de, w.var]
+  grammar: [g.L8.varyok, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L13.017
+
+- id: s.L13.018
+  tr: Evde kedi var.
+  en: ["There's a cat at home.", "There is a cat in the house."]
+  words: [w.ev, w.kedi, w.var]
+  grammar: [g.L8.varyok, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L13.018
+
+- id: s.L13.019
+  tr: Kedi bahçede.
+  en: ["The cat is in the garden."]
+  words: [w.kedi, w.bahçe]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L13.019
+
+- id: s.L13.020
+  tr: Bahçede köpek var mı?
+  en: ["Is there a dog in the garden?"]
+  words: [w.bahçe, w.köpek, w.var]
+  grammar: [g.L7.question, g.L8.varyok, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L13.020
+  native_required: true

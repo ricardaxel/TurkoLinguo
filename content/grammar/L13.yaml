@@ -1,0 +1,33 @@
+id: g.L13.clitic_de
+title: "Clitic de/da 'too' vs locative -DA; ve, ama"
+suffixes: []
+
+reference: |
+  **de / da** = *too, also*. It is a **separate word**, placed right after the word it adds to:
+
+  *Ben de.* "Me too." · *Ayşe de evde.* "Ayşe is at home **too**." · *Kitap da çantada.* "The book is in the bag **too**."
+
+  - **Vowel:** a/e harmony with the word before: a ı o u → **da**, e i ö ü → **de**.
+  - **Consonant:** it **never** becomes *te / ta*: *Ahmet **de***, *kitap **da***, *tavuk **da*** (not ~~Ahmet te~~, ~~kitap ta~~).
+
+  **Separate or attached?** The locative **-DA** is *attached* and does change d → t: *kitap**ta*** "in the book", *Ahmet'**te*** "at Ahmet's". Test: leave the word out. If the sentence still makes sense, it was the clitic: *Ahmet ~~de~~ parkta* → *Ahmet parkta*. ✓
+
+  Both together: *Ev**de** **de** kedi var.* "There's a cat at home **too**."
+
+  **ve** = *and* joins words: *Ali ve Ayşe evde.*
+  **ama** = *but* joins two statements: *Ali evde ama Ayşe okulda.*
+
+patterns:
+  - id: g.L13.clitic_de.harmony
+    description: "de after e i ö ü, da after a ı o u"
+  - id: g.L13.clitic_de.never_t
+    description: "The clitic never becomes te / ta (Ahmet de, kitap da)"
+  - id: g.L13.clitic_de.vs_loc
+    description: "Separate 'too' vs attached locative (Ahmet de / Ahmet'te)"
+
+feedback:
+  clitic_never_t: "**de / da** 'too' never changes to **t**, even after Fıstıkçı Şahap: **{answer}**."
+  clitic_harmony: "**de / da** follows the last vowel of the word before it: **{answer}**."
+  clitic_separate: "*too* is a **separate** word: **{answer}**."
+  loc_attached: "The location ending is **attached** to the word: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

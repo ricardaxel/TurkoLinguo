@@ -22,9 +22,9 @@ lessons:
   L8:  { title: "var / yok", grammar: g.L8.varyok }
   L9:  { title: "Adjectives & numbers 1–10", grammar: g.L9.adj_num }
   L10: { title: "Locative -DA: in / at / on", grammar: g.L10.loc, file: lessons/L10.yaml }
-  L11: { title: "Location + 'to be'; apostrophes", grammar: g.L11.loc_copula }
-  L12: { title: "Ablative -DAn: from", grammar: g.L12.abl }
-  L13: { title: "Clitic de/da vs locative; ve, ama", grammar: g.L13.clitic_de }
+  L11: { title: "Location + 'to be'; apostrophes", grammar: g.L11.loc_copula, file: lessons/L11.yaml }
+  L12: { title: "Ablative -DAn: from", grammar: g.L12.abl, file: lessons/L12.yaml }
+  L13: { title: "Clitic de/da vs locative; ve, ama", grammar: g.L13.clitic_de, file: lessons/L13.yaml }
   L14: { title: "Verbs, infinitive, imperative", grammar: g.L14.imperative }
   L15: { title: "Present continuous -(I)yor", grammar: g.L15.prog }
   L16: { title: "Present continuous: negative & questions", grammar: g.L16.prog_neg_q }

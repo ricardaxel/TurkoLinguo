@@ -1,0 +1,34 @@
+# Frame sentences for theme T9 (City & places). Pack 1: grammar up to L10; pack 2: up to L11.
+
+- id: s.T9.001
+  tr: Banka nerede?
+  en: ["Where is the bank?"]
+  words: [w.banka, w.nerede]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.T9.001
+  native_required: true
+
+- id: s.T9.002
+  tr: Ali okulda.
+  en: ["Ali is at school."]
+  words: [w.Ali, w.okul]
+  grammar: [g.L3.basics, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.T9.002
+
+- id: s.T9.003
+  tr: Kütüphanedeyim.
+  en: ["I'm in the library.", "I am at the library."]
+  words: [w.kütüphane]
+  grammar: [g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.T9.003
+
+- id: s.T9.004
+  tr: Havalimanı büyük.
+  en: ["The airport is big."]
+  words: [w.havalimanı, w.büyük]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T9.004

@@ -1,0 +1,144 @@
+# L11 — location + "to be"; apostrophes on names. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L11
+title: "Location + 'to be'; apostrophes"
+grammar: g.L11.loc_copula
+new_words: [w.şimdi]
+not_yet:
+  - "from -DAn (Londra'danım) → L12"
+  - "the separate word de 'too' (Ben de evdeyim) → L13"
+  - "possessive + locative (evimdeyim) → L24"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          📱 **Neredesin?** "Where are you?"
+          🏠 **Evdeyim.** "I'm at home."
+
+          One word, three pieces: **ev·de·yim** = home · at · I am.
+        sentences: [s.L11.001, s.L11.002]
+        audio: [aud.own.s.L11.001, aud.own.s.L11.002]
+
+      - kind: rule
+        title: "Location + person"
+        body: |
+          You already know both pieces: **-DA** "at" (L10) and the "to be" endings (L5). Put them in that order: **place · -DA · person**.
+
+          | | okul "school" | ev "home" |
+          |---|---|---|
+          | ben | okul·da·**yım** | ev·de·**yim** |
+          | sen | okul·da·**sın** | ev·de·**sin** |
+          | o | okul·da | ev·de |
+          | biz | okul·da·**yız** | ev·de·**yiz** |
+          | siz | okul·da·**sınız** | ev·de·**siniz** |
+          | onlar | okul·da(·**lar**) | ev·de(·**ler**) |
+
+          💡 The pronoun is optional: *Okuldayım* already says "I".
+
+      - kind: rule
+        title: "Two small rules"
+        body: |
+          **1. Buffer y.** -DA always ends in a vowel, so -(y)Im and -(y)Iz always take **y**: ev·de·**y**im, park·ta·**y**ız.
+
+          **2. Harmony keeps going.** The person ending looks at the vowel of -DA:
+
+          | -DA gave… | then |
+          |---|---|
+          | **-da / -ta** | -yım, -sın, -yız, -sınız, -lar |
+          | **-de / -te** | -yim, -sin, -yiz, -siniz, -ler |
+
+          *park → park·ta → park·ta·yız* · *market → market·te → market·te·yim*
+
+      - kind: rule
+        title: "Questions and 'not'"
+        body: |
+          Same as L6–L7: the person ending moves onto **mI** or **değil**.
+
+          *Parkta mısın?* "Are you in the park?" — *Evet, parktayım.* / *Hayır, parkta değilim.*
+        sentences: [s.L11.004, s.L11.019]
+
+      - kind: rule
+        title: "Names take an apostrophe"
+        body: |
+          Names of people and places keep their spelling, so an **apostrophe** separates the ending:
+
+          *İstanbul'**da*** "in Istanbul" · *Ankara'**dayım*** "I'm in Ankara" · *Ali'**de*** "at Ali's"
+
+          The ending follows the usual rules: *Ahmet'**te*** (t after t), *İzmir'**deyim***.
+
+          🔊 Stress stays on the name: **İS**tanbul'da, **AN**kara'dayım.
+        sentences: [s.L11.009, s.L11.010]
+        audio: [aud.own.s.L11.009, aud.own.s.L11.010]
+
+      - kind: examples
+        title: "Step by step"
+        body: |
+          Three questions, in order: **which place?** → **-da or -de, d or t?** → **which person?**
+
+          - *we · park* → park·**ta** → park·ta·**yız**
+          - *you · hospital* → hastane·**de** → hastane·de·**sin**
+          - *I · Ankara* → Ankara·**'da** → Ankara'da·**yım**
+        audio: [aud.own.L11_worked_examples]
+
+    items:
+      - { id: L11.learn.01, type: build_word, grammar: [g.L11.loc_copula, g.L5.copula], tiles: [okul, da, yım], answer: "okul·da·yım", feedback: { "okul·yım·da": "Location first, then the person: **okul·da·yım**." } }
+      - { id: L11.learn.02, type: type_form, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.front_2sg, base: w.ev, suffixes: [sfx.loc, sfx.cop_2sg], prompt: "you are at home", answer: evdesin, feedback: { evdesın: "-de has a front vowel, so the person ending is **-sin**: evdesin." } }
+      - id: L11.learn.03
+        type: picture_choose
+        grammar: [g.L11.loc_copula, g.L10.loc]
+        pattern: g.L11.loc_copula.back_1sg
+        images: [img.own.person_in_park]
+        prompt: "Ben …"
+        options: [parktayım, parkdayım, parktayim]
+        answer: parktayım
+      - id: L11.learn.04
+        type: contrast_pair
+        grammar: [g.L11.loc_copula, g.L5.copula]
+        prompt: "We're in the park."
+        options: [s.L11.018, s.L11.020]
+        answer: s.L11.018
+      - { id: L11.learn.05, type: build_word, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.name, tiles: [Ankara, "'da", yım], answer: "Ankara·'da·yım", note: "Fused display: Ankara'dayım." }
+      - id: L11.learn.06
+        type: listen_choose
+        grammar: [g.L11.loc_copula, g.L5.copula]
+        sentence: s.L11.006
+        options: ["We're at the bank.", "I'm at the bank.", "You're at the bank."]
+        answer: "We're at the bank."
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L11.practise.01, type: type_form, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.back_1sg, base: w.okul, suffixes: [sfx.loc, sfx.cop_2sg], prompt: "you are at school", answer: okuldasın, feedback: { okuldasin: "-da has a back vowel, so the person ending is **-sın**: okuldasın." } }
+      - { id: L11.practise.02, type: type_form, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.voiceless_1pl, base: w.park, suffixes: [sfx.loc, sfx.cop_1pl], prompt: "we are in the park", answer: parktayız, feedback: { parkdayız: "**park** ends in **k**, one of the Fıstıkçı Şahap letters → **t**: parktayız.", parktaız: "-ta ends in a vowel, so -(y)Iz needs the buffer **y**: parktayız.", parktayiz: "-ta has a back vowel, so the person ending is **-yız**: parktayız." } }
+      - { id: L11.practise.03, type: type_form, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.plural_2pl, base: w.hastane, suffixes: [sfx.loc, sfx.cop_2pl], prompt: "you (plural / polite) are at the hospital", answer: hastanedesiniz }
+      - { id: L11.practise.04, type: build_word, grammar: [g.L11.loc_copula], tiles: [market, te, yim], answer: "market·te·yim", feedback: { "market·yim·te": "Location first, then the person: **market·te·yim**." } }
+      - { id: L11.practise.05, type: translate_to_tr, grammar: [g.L11.loc_copula, g.L5.copula], sentence: s.L11.003, word_bank: [Ben, okuldayım, okuldasın, okuldeyim] }
+      - { id: L11.practise.06, type: translate_to_tr, grammar: [g.L11.loc_copula, g.L3.basics], pattern: g.L11.loc_copula.name, sentence: s.L11.009, word_bank: [Ayşe, İstanbul'da, İstanbulda, İstanbul'de] }
+      - { id: L11.practise.07, type: translate_to_en, grammar: [g.L11.loc_copula, g.L5.copula], sentence: s.L11.008, note: "Onlar bahçede is also correct Turkish; -lAr is optional when onlar is there." }
+      - { id: L11.practise.08, type: spot_error, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.name, text: "Ben İstanbuldayım.", error: İstanbuldayım, answer: İstanbul'dayım, sentence: s.L11.021, feedback: { İstanbuldayım: "**İstanbul** is a name, so it takes an apostrophe before the ending: **İstanbul'dayım**." } }
+      - { id: L11.practise.09, type: spot_error, grammar: [g.L11.loc_copula], pattern: g.L11.loc_copula.voiceless_1pl, text: "Biz parktayiz.", error: parktayiz, answer: parktayız, sentence: s.L11.018, feedback: { parktayiz: "-ta has a back vowel, so the person ending is **-yız**: parktayız." } }
+      - id: L11.practise.10
+        type: qa
+        grammar: [g.L11.loc_copula, g.L7.question]
+        question: s.L11.004
+        images: [img.own.person_at_home]
+        answers: ["(Hayır,) (ben) evdeyim."]
+        feedback: "auto:g.L11.loc_copula"
+      - { id: L11.practise.11, type: dictation, grammar: [g.L11.loc_copula, g.L7.question], pattern: g.L11.loc_copula.name, sentence: s.L11.014 }
+      - { id: L11.practise.12, type: translate_to_tr, grammar: [g.L11.loc_copula, g.L6.degil], sentence: s.L11.019, typed: true, answers: ["Evde değilim."] }
+      - id: L11.practise.13
+        type: contrast_pair
+        grammar: [g.L11.loc_copula, g.L6.degil]
+        prompt: "I'm not at home."
+        options: [s.L11.019, s.L11.002]
+        answer: s.L11.019
+      - id: L11.practise.14
+        type: mini_dialogue
+        grammar: [g.L11.loc_copula, g.L7.question]
+        images: [img.openmoji.store]
+        turns:
+          - { speaker: A, sentence: s.L11.001 }
+          - { speaker: B, blank: true, answers: ["(Şimdi) (ben) marketteyim."] }
+          - { speaker: A, sentence: s.L11.003 }

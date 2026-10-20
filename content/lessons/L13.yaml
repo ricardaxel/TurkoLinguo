@@ -1,0 +1,143 @@
+# L13 — clitic de/da "too" vs locative -DA; ve, ama. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L13
+title: "Clitic de/da vs locative; ve, ama"
+grammar: g.L13.clitic_de
+new_words: [w.de, w.ve, w.ama]
+not_yet:
+  - "de/da with verbs (Ahmet de geliyor) → L15"
+  - "ile / -(y)lA 'and, with' → L27"
+  - "the question form with de (Sen de mi?) → later review"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🙋 **Ben okuldayım.** "I'm at school."
+          🙋‍♀️ **Ben de!** "Me too!"
+
+          This **de** is not the ending from L10. It's a separate little word meaning **too**.
+        sentences: [s.L11.003, s.L13.001]
+        audio: [aud.own.s.L11.003, aud.own.s.L13.001]
+
+      - kind: rule
+        title: "de / da = too, also"
+        body: |
+          Put it **right after** the word it adds to, as a **separate word**:
+
+          | Turkish | English |
+          |---|---|
+          | Ayşe **de** evde. | Ayşe is at home **too**. |
+          | Kitap **da** çantada. | The book is in the bag **too**. |
+          | Biz **de** parktayız. | We're in the park **too**. |
+
+          **Vowel:** a/e harmony with the word before: a ı o u → **da**, e i ö ü → **de**.
+        sentences: [s.L13.002, s.L13.008, s.L13.013]
+
+      - kind: rule
+        title: "It never becomes te / ta"
+        body: |
+          Fıstıkçı Şahap does **not** apply to the clitic. It stays **d**:
+
+          ✅ Ahmet **de** · kitap **da** · tavuk **da**
+          ❌ ~~Ahmet te~~ · ~~kitap ta~~ · ~~tavuk ta~~
+
+          The locative, attached to the word, *does* change: kitap**ta** "in the book", Ahmet'**te** "at Ahmet's".
+        sentences: [s.L13.006, s.L13.015]
+        audio: [aud.own.s.L13.006, aud.own.s.L13.015]
+
+      - kind: rule
+        title: "Attached or separate?"
+        body: |
+          **Test:** leave the *de / da* out. If the sentence still makes sense, it was "too", so write it **separately**.
+
+          - *Ahmet ~~de~~ parkta.* → *Ahmet parkta.* ✓ → **Ahmet de** (too)
+          - *Kedi bahçe ~~de~~.* → *Kedi bahçe.* ✗ → **bahçede** (in the garden)
+
+          Both at once: *Ev**de** **de** kedi var.* "There's a cat at home **too**."
+        sentences: [s.L13.016]
+
+      - kind: rule
+        title: "ve and ama"
+        body: |
+          **ve** "and" joins words: *Ali **ve** Ayşe evde.* "Ali and Ayşe are at home."
+          **ama** "but" joins two statements: *Ali evde **ama** Ayşe okulda.*
+        sentences: [s.L13.003, s.L13.004]
+        audio: [aud.own.s.L13.003, aud.own.s.L13.004]
+
+    items:
+      - id: L13.learn.01
+        type: contrast_pair
+        grammar: [g.L13.clitic_de, g.L10.loc]
+        pattern: g.L13.clitic_de.vs_loc
+        prompt: "Ahmet is in the park too."
+        options: [s.L13.006, s.L13.007]
+        answer: s.L13.006
+      - id: L13.learn.02
+        type: picture_choose
+        grammar: [g.L13.clitic_de, g.L10.loc]
+        pattern: g.L13.clitic_de.harmony
+        images: [img.own.dog_and_cat_in_garden]
+        prompt: "Köpek bahçede. Kedi … bahçede."
+        options: [de, da, te]
+        answer: de
+      - id: L13.learn.03
+        type: picture_choose
+        grammar: [g.L13.clitic_de, g.L10.loc]
+        pattern: g.L13.clitic_de.never_t
+        images: [img.own.pen_and_book_in_bag]
+        prompt: "Kalem çantada. Kitap … çantada."
+        options: [da, ta, de]
+        answer: da
+        note: "kitap ends in p, but the clitic never becomes ta."
+      - { id: L13.learn.04, type: translate_to_tr, grammar: [g.L13.clitic_de], sentence: s.L13.001, word_bank: [Ben, de, da, te] }
+      - { id: L13.learn.05, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L10.loc], pattern: g.L13.clitic_de.never_t, sentence: s.L13.008, word_bank: [Kitap, da, ta, çantada, çantata] }
+      - id: L13.learn.06
+        type: listen_choose
+        grammar: [g.L13.clitic_de, g.L10.loc]
+        sentence: s.L13.003
+        options: ["Ali and Ayşe are at home.", "Ali is at home but Ayşe isn't.", "Ali is at home too."]
+        answer: "Ali and Ayşe are at home."
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L13.practise.01, type: spot_error, grammar: [g.L13.clitic_de, g.L10.loc], pattern: g.L13.clitic_de.never_t, text: "Ahmet te parkta.", error: te, answer: de, sentence: s.L13.006, feedback: { te: "**de / da** 'too' never changes to **t**, even after Fıstıkçı Şahap: **Ahmet de**.", da: "**de / da** follows the last vowel of **Ahmet** (e): **Ahmet de**." } }
+      - { id: L13.practise.02, type: spot_error, grammar: [g.L13.clitic_de, g.L8.varyok], pattern: g.L13.clitic_de.never_t, text: "Tavuk ta var.", error: ta, answer: da, sentence: s.L13.017, feedback: { ta: "**de / da** 'too' never changes to **t**, even after Fıstıkçı Şahap: **Tavuk da**.", de: "**de / da** follows the last vowel of **tavuk** (u): **Tavuk da**." } }
+      - { id: L13.practise.03, type: spot_error, grammar: [g.L13.clitic_de, g.L10.loc], pattern: g.L13.clitic_de.vs_loc, text: "Kedi bahçe de.", error: "bahçe de", answer: bahçede, sentence: s.L13.019, feedback: { "bahçe de": "Here it means *in the garden*: the location ending is **attached**: **bahçede**." } }
+      - id: L13.practise.04
+        type: contrast_pair
+        grammar: [g.L13.clitic_de, g.L8.varyok, g.L10.loc]
+        pattern: g.L13.clitic_de.vs_loc
+        prompt: "There's a cat at home too."
+        options: [s.L13.016, s.L13.018]
+        answer: s.L13.016
+      - id: L13.practise.05
+        type: picture_choose
+        grammar: [g.L13.clitic_de, g.L10.loc]
+        images: [img.own.ali_home_ayse_school]
+        prompt: "Ali evde … Ayşe okulda."
+        options: [ama, ve, de]
+        answer: ama
+      - { id: L13.practise.06, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L10.loc], sentence: s.L13.004, word_bank: [Ali, evde, ama, ve, Ayşe, okulda, de] }
+      - { id: L13.practise.07, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L10.loc], sentence: s.L13.011, word_bank: [Köpek, ve, kedi, bahçede, de, ama] }
+      - { id: L13.practise.08, type: translate_to_en, grammar: [g.L13.clitic_de, g.L12.abl, g.L5.copula], sentence: s.L13.009 }
+      - { id: L13.practise.09, type: translate_to_en, grammar: [g.L13.clitic_de, g.L11.loc_copula], pattern: g.L13.clitic_de.vs_loc, sentence: s.L13.015, note: "Locative on a person = 'with / at': no clitic here." }
+      - { id: L13.practise.10, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L11.loc_copula, g.L7.question], sentence: s.L13.010, typed: true }
+      - { id: L13.practise.11, type: dictation, grammar: [g.L13.clitic_de, g.L10.loc], sentence: s.L13.012 }
+      - id: L13.practise.12
+        type: qa
+        grammar: [g.L13.clitic_de, g.L8.varyok, g.L7.question]
+        question: s.L13.020
+        images: [img.own.dog_and_cat_in_garden]
+        answers: ["Evet, (bir) köpek var. Kedi de var.", "Evet, (bir) köpek ve (bir) kedi var.", "Evet, kedi de var."]
+      - { id: L13.practise.13, type: translate_to_tr, grammar: [g.L13.clitic_de, g.L12.abl, g.L5.copula], sentence: s.L13.014, word_bank: [Ben, Londra'danım, ama, ve, Ayşe, İstanbul'dan, İstanbul'da] }
+      - id: L13.practise.14
+        type: mini_dialogue
+        grammar: [g.L13.clitic_de, g.L11.loc_copula, g.L7.question]
+        images: [img.openmoji.park]
+        turns:
+          - { speaker: A, sentence: s.L11.001 }
+          - { speaker: B, blank: true, answers: ["(Ben) parktayım."] }
+          - { speaker: A, sentence: s.L13.013 }
