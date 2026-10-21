@@ -136,7 +136,7 @@
 - { id: w.yaş, lemma: yaş, pos: noun, gloss: [age], notes: "Kaç yaşındasın? — Yirmi beş yaşındayım (yaş·ı·n·da)." }
 
 # --- L26: time & days ---
-- { id: w.buçuk, lemma: buçuk, pos: noun, gloss: [and a half, half past], flags: [soft], notes: "Saat üç buçuk 'half past three'. 12:30 is yarım." }
+- { id: w.buçuk, lemma: buçuk, pos: noun, gloss: [and a half, half past], flags: [soft], notes: "Saat üç buçuk 'half past three'. 12:30: on iki buçuk or yarım." }
 - { id: w.ne_zaman, lemma: ne zaman, pos: adv, gloss: [when] }
 - { id: w.ders, lemma: ders, pos: noun, gloss: [lesson, class] }
 
@@ -265,7 +265,7 @@
 - { id: w.lira, lemma: lira, pos: noun, gloss: [lira] }
 - { id: w.kuruş, lemma: kuruş, pos: noun, gloss: [kuruş], notes: "1 lira = 100 kuruş." }
 - { id: w.tane, lemma: tane, pos: noun, gloss: [piece, item], notes: "Tanesi kaç lira? 'How much is one?'" }
-- { id: w.yarım, lemma: yarım, pos: adj, gloss: [half, half past twelve], notes: "yarım kilo 'half a kilo'; Saat yarım = 12:30 (L26)." }
+- { id: w.yarım, lemma: yarım, pos: adj, gloss: [half, half past twelve], notes: "yarım kilo 'half a kilo'; Saat yarım = Saat on iki buçuk = 12:30 (L26)." }
 - { id: w.kilo, lemma: kilo, pos: noun, gloss: [kilo, kilogram] }
 - { id: w.ceket, lemma: ceket, pos: noun, gloss: [jacket] }
 - { id: w.ayakkabı, lemma: ayakkabı, pos: noun, gloss: [shoe, shoes] }

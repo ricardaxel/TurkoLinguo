@@ -34,9 +34,9 @@ sessions:
           | 🕒 3:00 | Saat **üç**. |
           | 🕞 3:30 | Saat üç **buçuk**. |
           | 🕛 12:00 | Saat **on iki**. |
-          | 🕧 12:30 | Saat **yarım**. |
+          | 🕧 12:30 | Saat on iki buçuk. = Saat **yarım**. |
 
-          **buçuk** = "and a half". Only **12:30** (and 0:30) uses **yarım** "half": *Saat yarım.* For 1:30, say *Saat bir buçuk*.
+          **buçuk** = "and a half". **12:30** (and 0:30) can also be said with its own word, **yarım** "half": *Saat yarım.* = *Saat on iki buçuk.* For 1:30, it's always *Saat bir buçuk*.
         sentences: [s.L26.002, s.L26.003, s.L26.004, s.L26.026]
         audio: [aud.own.s.L26.002, aud.own.s.L26.003, aud.own.s.L26.004, aud.own.s.L26.026]
 
@@ -51,7 +51,7 @@ sessions:
           | üç, dört, beş | üç**te**, dört**te**, beş**te** (Fıstıkçı Şahap!) |
           | altı, dokuz, on | altı**da**, dokuz**da**, on**da** |
           | on bir, on iki | on bir**de**, on iki**de** |
-          | üç buçuk, yarım | üç buçuk**ta**, yarım**da** |
+          | üç buçuk, on iki buçuk / yarım | üç buçuk**ta**, on iki buçuk**ta** / yarım**da** |
 
           *Saat yedide kalkıyorum.* "I get up at seven."
         sentences: [s.L26.005, s.L26.006, s.L26.013]
@@ -105,7 +105,7 @@ sessions:
         options: ["Saat üç buçuk.", "Saat yarım.", "Saat üçte."]
         answer: "Saat üç buçuk."
         translation: "It's half past three."
-        feedback: { "Saat yarım.": "**yarım** is only 12:30. For the other hours, use **buçuk**: **Saat üç buçuk.**" }
+        feedback: { "Saat yarım.": "**yarım** works only for 12:30. For the other hours, use **buçuk**: **Saat üç buçuk.**" }
       - { id: L26.learn.03, type: pick_suffix, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.at_hour, base: w.üç, suffix: sfx.loc, options: [de, te, da, ta], answer: te, feedback: "auto:g.L26.time" }
       - { id: L26.learn.04, type: pick_suffix, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.at_hour, base: w.altı, suffix: sfx.loc, options: [da, de, ta, te], answer: da, feedback: "auto:g.L26.time" }
       - id: L26.learn.05
@@ -116,8 +116,9 @@ sessions:
         prompt: "Saat kaç?"
         options: ["Saat yarım.", "Saat on iki.", "Saat bir buçuk."]
         answer: "Saat yarım."
+        note: "Saat on iki buçuk is equally correct; it's left out of the options so there's one answer."
         translation: "It's half past twelve."
-      - { id: L26.learn.06, type: translate_to_tr, grammar: [g.L26.time, g.L11.loc_copula], pattern: g.L26.time.days, sentence: s.L26.009, word_bank: [Pazartesi, Pazartesinde, okuldayım, okuldasın], feedback: { "Pazartesinde okuldayım.": "Days take **no ending**: *pazartesi* already means *on Monday*: **Pazartesi okuldayım.**" } }
+      - { id: L26.learn.06, type: translate_to_tr, grammar: [g.L26.time, g.L11.loc_copula], pattern: g.L26.time.days, sentence: s.L26.009, word_bank: [Pazartesi, "Pazartesi'de", okuldayım, okuldasın], feedback: { "Pazartesi'de okuldayım.": "Days need no ending for *on Monday*, and they're not names, so no apostrophe: **Pazartesi okuldayım.**" } }
 
   practise:
     minutes: 5.5
@@ -135,7 +136,7 @@ sessions:
         answer: s.L26.002
         note: "Saat üç (it is three) vs Saat üçte (at three)."
       - { id: L26.practise.06, type: spot_error, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.at_hour, text: "Saat üçde.", error: üçde, answer: üçte, sentence: s.L26.006, feedback: { üçde: "**üç** ends in **ç**, one of the Fıstıkçı Şahap letters → **t**: **üçte**." } }
-      - { id: L26.practise.07, type: spot_error, grammar: [g.L26.time, g.L11.loc_copula], pattern: g.L26.time.days, text: "Pazartesinde okuldayım.", error: Pazartesinde, answer: Pazartesi, sentence: s.L26.009, feedback: { Pazartesinde: "Days take **no ending**: *pazartesi* already means *on Monday*: **Pazartesi okuldayım.**" } }
+      - { id: L26.practise.07, type: spot_error, grammar: [g.L26.time, g.L11.loc_copula], pattern: g.L26.time.days, text: "Pazartesi'de okuldayım.", error: "Pazartesi'de", answer: Pazartesi, sentence: s.L26.009, feedback: { "Pazartesi'de": "Days need no ending for *on Monday*, and they're not names, so no apostrophe: **Pazartesi okuldayım.**" } }
       - id: L26.practise.08
         type: qa
         grammar: [g.L26.time]
