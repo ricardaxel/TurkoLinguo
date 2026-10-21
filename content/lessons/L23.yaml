@@ -1,0 +1,148 @@
+# L23 — having: possessive + var / yok. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L23
+title: "Having: possessive + var/yok"
+grammar: g.L23.have
+new_words: [w.kaç]
+not_yet:
+  - "prices and 'Kaç lira?' → L25"
+  - "had / didn't have (vardı, yoktu) → L32"
+  - "a case after the possessive (evinde bahçe var) → L24"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          👫 **Benim bir kardeşim var.** "I have a sibling."
+          🚗 **Arabam yok.** "I don't have a car."
+
+          Turkish has no verb *to have*. It says "**my sibling exists**": possessive + **var** (L8).
+        sentences: [s.L23.001, s.L23.002]
+        audio: [aud.own.s.L23.001, aud.own.s.L23.002]
+
+      - kind: rule
+        title: "possessive + var / yok"
+        body: |
+          | | Turkish | English |
+          |---|---|---|
+          | ✓ | Araba**m var**. | I have a car. |
+          | ✗ | Araba**m yok**. | I don't have a car. |
+          | ? | Araba**n var mı**? | Do you have a car? |
+          | ? | Araba**n yok mu**? | Don't you have a car? |
+
+          The person is in the **possessive**: araba·**m** (I), araba·**n** (you), araba·**sı** (he / she), araba·**mız** (we)…
+
+          The pronoun is optional, as in L19: *(Senin) araban var mı?*
+
+          ❌ *I don't have* is **yok**, never ~~değil~~.
+        sentences: [s.L23.005, s.L23.020]
+        audio: [aud.own.s.L23.005, aud.own.s.L23.020]
+
+      - kind: rule
+        title: "Someone else has"
+        body: |
+          With a noun, the owner takes **-(n)In** (L21):
+
+          *Ali'**nin** iki çocuğ**u** var.* "Ali has two children."
+          *Ayşe'**nin** kedi**si** yok.* "Ayşe doesn't have a cat."
+          *Anne·m·**in** bir kedi**si** var.* "My mother has a cat."
+        sentences: [s.L23.007, s.L23.008, s.L23.015]
+        audio: [aud.own.s.L23.007, aud.own.s.L23.008, aud.own.s.L23.015]
+
+      - kind: rule
+        title: "Kaç? How many?"
+        body: |
+          **kaç** + a **singular** noun:
+
+          *Kaç kardeşin var?* "How many siblings do you have?"
+          *İki kardeşim var.* "I have two siblings."
+
+          After *kaç* or a number, the noun stays singular (L9): *iki çocuğu*, not ~~iki çocukları~~.
+
+          **Short answers:** *Var mı?* — *Evet, var.* / *Hayır, yok.*
+        sentences: [s.L23.003, s.L23.004, s.L23.011]
+        audio: [aud.own.s.L23.003, aud.own.s.L23.004, aud.own.s.L23.011]
+
+      - kind: note
+        title: "There is vs I have"
+        body: |
+          | | |
+          |---|---|
+          | *Evde süt var.* (L8) | There's milk at home. (no owner) |
+          | *Süt**üm** var.* | **I have** milk. |
+
+          The only difference is the possessive ending.
+        sentences: [s.L23.017, s.L23.016]
+        audio: [aud.own.s.L23.017, aud.own.s.L23.016]
+
+    items:
+      - id: L23.learn.01
+        type: picture_choose
+        grammar: [g.L23.have, g.L19.poss_sg]
+        pattern: g.L23.have.var
+        images: [img.openmoji.car]
+        prompt: "(Benim) bir … var."
+        options: [arabam, araba, arabası]
+        answer: arabam
+        translation: "I have a car."
+        feedback: { araba: "*have* = the **possessive** + var: bir **arabam** var.", arabası: "**arabası** is *his / her* car. *I have*: bir **arabam** var." }
+      - { id: L23.learn.02, type: translate_to_tr, grammar: [g.L23.have, g.L19.poss_sg], pattern: g.L23.have.yok, sentence: s.L23.002, word_bank: [Arabam, Araba, yok, değil, var] }
+      - id: L23.learn.03
+        type: contrast_pair
+        grammar: [g.L23.have, g.L8.varyok]
+        prompt: "Do you have milk?"
+        options: [s.L23.016, s.L23.017]
+        answer: s.L23.016
+      - id: L23.learn.04
+        type: listen_choose
+        grammar: [g.L23.have, g.L7.question]
+        pattern: g.L23.have.kac
+        sentence: s.L23.003
+        options: ["How many siblings do you have?", "Do you have a sibling?", "How many siblings does he have?"]
+        answer: "How many siblings do you have?"
+      - { id: L23.learn.05, type: type_form, grammar: [g.L23.have, g.L19.poss_sg, g.L21.gen], pattern: g.L23.have.owner, base: w.çocuk, suffixes: [sfx.poss_3sg], prompt: "Ali'nin iki … var. (child)", answer: çocuğu, feedback: { çocukları: "After a number the noun stays **singular**: iki **çocuğu**.", çocuku: "Softening (L17): before a vowel, final **k** → **ğ**: **çocuğu**." } }
+      - { id: L23.learn.06, type: translate_to_tr, grammar: [g.L23.have, g.L7.question], pattern: g.L23.have.question, sentence: s.L23.005, word_bank: [Senin, araban, arabam, var, mı, mi, yok] }
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L23.practise.01, type: type_form, grammar: [g.L23.have, g.L19.poss_sg], pattern: g.L23.have.question, base: w.kardeş, suffixes: [sfx.poss_2sg], prompt: "Kaç … var? (your sibling)", answer: kardeşin, feedback: { kardeşlerin: "After *kaç* the noun stays **singular**: Kaç **kardeşin** var?" } }
+      - { id: L23.practise.02, type: spot_error, grammar: [g.L23.have, g.L9.adj_num, g.L21.gen], pattern: g.L23.have.owner, text: "Ali'nin iki çocukları var.", error: çocukları, answer: çocuğu, sentence: s.L23.007, feedback: { çocukları: "After a number the noun stays **singular**: iki **çocuğu**." } }
+      - { id: L23.practise.03, type: spot_error, grammar: [g.L23.have, g.L21.gen], pattern: g.L23.have.yok, text: "Benim araba yok.", error: araba, answer: arabam, sentence: s.L23.020, feedback: { araba: "*have* = the **possessive** + var / yok: benim **arabam** yok." } }
+      - { id: L23.practise.04, type: translate_to_tr, grammar: [g.L23.have, g.L9.adj_num], sentence: s.L23.004, typed: true, answers: ["(Benim) iki kardeşim var."] }
+      - { id: L23.practise.05, type: translate_to_en, grammar: [g.L23.have, g.L21.gen, g.L9.adj_num], sentence: s.L23.014 }
+      - { id: L23.practise.06, type: translate_to_en, grammar: [g.L23.have, g.L13.clitic_de], sentence: s.L23.021 }
+      - id: L23.practise.07
+        type: qa
+        grammar: [g.L23.have, g.L7.question]
+        pattern: g.L23.have.question
+        question: s.L23.010
+        images: [img.openmoji.phone]
+        answers: ["Evet, (telefonum) var.", "Evet, (benim) (bir) telefonum var."]
+      - id: L23.practise.08
+        type: qa
+        grammar: [g.L23.have, g.L9.adj_num, g.L7.question]
+        pattern: g.L23.have.kac
+        question: s.L23.003
+        answers: ["(Benim) {bir|iki|üç|dört|beş|altı|yedi|sekiz|dokuz|on} kardeşim var.", "(Benim) kardeşim yok.", "Hiç kardeşim yok.", "Yok."]
+        note: "Any number is accepted: the learner answers about their own family."
+      - { id: L23.practise.09, type: dictation, grammar: [g.L23.have, g.L9.adj_num, g.L20.poss_pl], sentence: s.L23.013 }
+      - id: L23.practise.10
+        type: contrast_pair
+        grammar: [g.L23.have, g.L6.degil]
+        pattern: g.L23.have.yok
+        prompt: "We don't have a garden."
+        options: [s.L23.009, s.L23.022]
+        answer: s.L23.009
+        note: "yok = there isn't / don't have; değil = isn't, not."
+      - id: L23.practise.11
+        type: mini_dialogue
+        grammar: [g.L23.have, g.L7.question]
+        turns:
+          - { speaker: A, sentence: s.L23.005 }
+          - { speaker: B, blank: true, answers: ["Hayır, (benim) arabam yok.", "Hayır, yok.", "Evet, (benim) (bir) arabam var.", "Evet, var."] }
+      - { id: L23.practise.12, type: translate_to_tr, grammar: [g.L23.have, g.L20.poss_pl, g.L7.question], sentence: s.L23.012, typed: true, answers: ["Sizin kaç çocuğunuz var?"] }
+      - { id: L23.practise.13, type: type_form, grammar: [g.L23.have, g.L19.poss_sg], pattern: g.L23.have.var, base: w.oğul, suffixes: [sfx.poss_1sg], prompt: "Bir … var. (my son)", answer: oğlum, feedback: { oğulum: "**oğul** drops its last vowel before a vowel ending: **oğlum**." } }
+      - { id: L23.practise.14, type: translate_to_en, grammar: [g.L23.have, g.L21.gen], sentence: s.L23.015 }
+      - { id: L23.practise.15, type: translate_to_tr, grammar: [g.L23.have, g.L13.clitic_de], sentence: s.L23.019, word_bank: [Bir, erkek, kardeşim, kardeşi, ve, kız, var, yok] }

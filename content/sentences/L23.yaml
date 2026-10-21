@@ -1,0 +1,184 @@
+# Sentences used by lesson L23. `words` and `grammar` are hand-tagged for now.
+
+- id: s.L23.001
+  tr: Benim bir kardeşim var.
+  en: ["I have a sibling.", "I have a brother.", "I have a sister.", "I have one sibling."]
+  words: [w.ben, w.bir, w.kardeş, w.var]
+  grammar: [g.L8.varyok, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.001
+
+- id: s.L23.002
+  tr: Arabam yok.
+  en: ["I don't have a car.", "I do not have a car.", "I have no car."]
+  words: [w.araba, w.yok]
+  grammar: [g.L8.varyok, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.002
+
+- id: s.L23.003
+  tr: Kaç kardeşin var?
+  en: ["How many siblings do you have?", "How many brothers and sisters do you have?"]
+  words: [w.kaç, w.kardeş, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.003
+  native_required: true        # question intonation
+
+- id: s.L23.004
+  tr: İki kardeşim var.
+  en: ["I have two siblings.", "I have two brothers.", "I have two sisters.", "I've got two siblings."]
+  words: [w.iki, w.kardeş, w.var]
+  grammar: [g.L8.varyok, g.L9.adj_num, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.004
+
+- id: s.L23.005
+  tr: Senin araban var mı?
+  en: ["Do you have a car?", "Have you got a car?"]
+  words: [w.sen, w.araba, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.005
+  native_required: true        # question intonation
+
+- id: s.L23.006
+  tr: Evet, arabam var.
+  en: ["Yes, I have a car.", "Yes, I've got a car.", "Yes, I do."]
+  words: [w.evet, w.araba, w.var]
+  grammar: [g.L8.varyok, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.006
+
+- id: s.L23.007
+  tr: Ali'nin iki çocuğu var.
+  en: ["Ali has two children.", "Ali has two kids."]
+  words: [w.Ali, w.iki, w.çocuk, w.var]
+  grammar: [g.L8.varyok, g.L9.adj_num, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.007
+
+- id: s.L23.008
+  tr: Ayşe'nin kedisi yok.
+  en: ["Ayşe doesn't have a cat.", "Ayşe does not have a cat.", "Ayşe has no cat."]
+  words: [w.Ayşe, w.kedi, w.yok]
+  grammar: [g.L8.varyok, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.008
+
+- id: s.L23.009
+  tr: Bizim bahçemiz yok.
+  en: ["We don't have a garden.", "We do not have a garden.", "We have no garden."]
+  words: [w.biz, w.bahçe, w.yok]
+  grammar: [g.L8.varyok, g.L20.poss_pl, g.L21.gen, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.009
+
+- id: s.L23.010
+  tr: Telefonun var mı?
+  en: ["Do you have a phone?", "Have you got a phone?"]
+  words: [w.telefon, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.010
+  native_required: true        # question intonation
+
+- id: s.L23.011
+  tr: Hayır, yok.
+  en: ["No, I don't.", "No, I don't have one.", "No, there isn't."]
+  words: [w.hayır, w.yok]
+  grammar: [g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L23.011
+
+- id: s.L23.012
+  tr: Kaç çocuğunuz var?
+  en: ["How many children do you have?", "How many kids do you have?"]
+  words: [w.kaç, w.çocuk, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L20.poss_pl, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.012
+  native_required: true        # question intonation
+
+- id: s.L23.013
+  tr: Üç çocuğumuz var.
+  en: ["We have three children.", "We have three kids.", "We've got three children."]
+  words: [w.üç, w.çocuk, w.var]
+  grammar: [g.L8.varyok, g.L9.adj_num, g.L20.poss_pl, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.013
+
+- id: s.L23.014
+  tr: Onların büyük bir evi var.
+  en: ["They have a big house.", "They've got a big house."]
+  words: [w.onlar, w.büyük, w.bir, w.ev, w.var]
+  grammar: [g.L8.varyok, g.L9.adj_num, g.L19.poss_sg, g.L21.gen, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.014
+
+- id: s.L23.015
+  tr: Annemin bir kedisi var.
+  en: ["My mother has a cat.", "My mum has a cat.", "My mom has a cat."]
+  words: [w.anne, w.bir, w.kedi, w.var]
+  grammar: [g.L8.varyok, g.L19.poss_sg, g.L21.gen, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.015
+
+- id: s.L23.016
+  tr: Sütün var mı?
+  en: ["Do you have milk?", "Do you have any milk?", "Have you got any milk?"]
+  words: [w.süt, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.016
+  native_required: true        # question intonation
+
+- id: s.L23.017
+  tr: Evde süt var mı?
+  en: ["Is there milk at home?", "Is there any milk at home?", "Is there any milk in the house?"]
+  words: [w.ev, w.süt, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L23.017
+  native_required: true        # question intonation
+
+- id: s.L23.018
+  tr: Kardeşin var mı?
+  en: ["Do you have any siblings?", "Do you have a brother or sister?", "Have you got any siblings?"]
+  words: [w.kardeş, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.018
+  native_required: true        # question intonation
+
+- id: s.L23.019
+  tr: Bir erkek kardeşim ve bir kız kardeşim var.
+  en: ["I have a brother and a sister.", "I have one brother and one sister."]
+  words: [w.bir, w.erkek_kardeş, w.ve, w.kız_kardeş, w.var]
+  grammar: [g.L8.varyok, g.L13.clitic_de, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.019
+
+- id: s.L23.020
+  tr: Benim arabam yok.
+  en: ["I don't have a car.", "I do not have a car.", "I have no car."]
+  words: [w.ben, w.araba, w.yok]
+  grammar: [g.L8.varyok, g.L19.poss_sg, g.L21.gen, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.020
+
+- id: s.L23.021
+  tr: Benim de arabam yok.
+  en: ["I don't have a car either.", "I have no car either."]
+  words: [w.ben, w.de, w.araba, w.yok]
+  grammar: [g.L8.varyok, g.L13.clitic_de, g.L19.poss_sg, g.L21.gen, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.L23.021
+
+- id: s.L23.022
+  tr: Bahçede değiliz.
+  en: ["We're not in the garden.", "We are not in the garden.", "We aren't in the garden."]
+  words: [w.bahçe, w.değil]
+  grammar: [g.L6.degil, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L23.022

@@ -1,0 +1,151 @@
+# L21 — genitive -(n)In + the possession chain. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L21
+title: "Genitive -(n)In"
+grammar: g.L21.gen
+new_words: [w.kadın, w.adam]
+not_yet:
+  - "compounds without the genitive (okul kapısı, Türk kahvesi) → L22"
+  - "having with a noun owner (Ali'nin iki çocuğu var) → L23"
+  - "a case after the chain (Ali'nin evinde) → L24"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🚗 **Ali'nin arabası yeni.** "Ali's car is new."
+
+          English marks the owner with *'s*. Turkish marks **both**: the owner gets **-(n)In**, the thing gets **-(s)I** (L19).
+          **Ali'·nin araba·sı** = Ali-'s car-his.
+        sentences: [s.L21.001]
+        audio: [aud.own.s.L21.001]
+
+      - kind: rule
+        title: "-(n)In = 's, of"
+        body: |
+          | after a consonant: **-In** | after a vowel: **-nIn** |
+          |---|---|
+          | ev·**in** "of the house" | araba·**nın** "the car's" |
+          | kadın·**ın** "the woman's" | kedi·**nin** "the cat's" |
+          | okul·**un** "the school's" | Ali'**nin** "Ali's" |
+          | Ahmet'**in** "Ahmet's" | Ayşe'**nin** "Ayşe's" |
+
+          4-way harmony, as in L19. Names keep their apostrophe (L11). The word can change, as before a vowel in L17: *su → su·**y**·un*, *kitap → kitab·ın*.
+        sentences: [s.L21.004, s.L21.005]
+        audio: [aud.own.s.L21.004, aud.own.s.L21.005]
+
+      - kind: rule
+        title: "owner-(n)In + thing-(s)I"
+        body: |
+          Both words always get their ending:
+
+          | owner | thing | |
+          |---|---|---|
+          | Ali'**nin** | araba**sı** | Ali's car |
+          | kadın**ın** | çanta**sı** | the woman's bag |
+          | ev**in** | kapı**sı** | the door of the house |
+          | anne·m·**in** | ad**ı** | my mother's name |
+
+          ❌ ~~Ali'nin araba~~ — the thing needs *-(s)I* too.
+
+          ⚠️ *evin* alone = "your house" (L19). *evin kapısı* = "the door **of the house**": the next word shows it's the genitive.
+        sentences: [s.L21.006, s.L21.013, s.L21.020]
+        audio: [aud.own.s.L21.006, aud.own.s.L21.013]
+
+      - kind: rule
+        title: "Pronouns: benim, bizim…"
+        body: |
+          You've used these for emphasis since L19. They are the genitive of the pronouns:
+
+          | ben | sen | o | biz | siz | onlar |
+          |---|---|---|---|---|---|
+          | **benim** | senin | onun | **bizim** | sizin | onların |
+
+          **benim** and **bizim** are irregular (not ~~benin~~, ~~bizin~~). Compare the regular **siz → sizin**.
+
+          With a pronoun the thing still takes its ending: *bizim ev**imiz***, *onların araba**sı***.
+        sentences: [s.L21.007, s.L21.008]
+        audio: [aud.own.s.L21.007, aud.own.s.L21.008]
+
+      - kind: rule
+        title: "Kimin? Whose?"
+        body: |
+          **kim** "who" + -in = **kimin** "whose":
+
+          *Bu kimin kitabı?* "Whose book is this?"
+          *Ayşe'nin.* "Ayşe's." (or *Ayşe'nin kitabı.*)
+
+          🔊 A name keeps its own stress before the ending: *Ayşe'nin* is stressed like *Ayşe*.
+        sentences: [s.L21.002, s.L21.003]
+        audio: [aud.own.s.L21.002, aud.own.s.L21.003]
+
+      - kind: examples
+        title: "Step by step"
+        body: |
+          *the woman's bag*: **owner** + -(n)In → **thing** + -(s)I
+
+          - kadın → consonant → **-ın** → kadın·**ın**
+          - çanta → vowel → **-sı** → çanta·**sı**
+          - → **kadının çantası**
+        audio: [aud.own.L21_worked_examples]
+
+    items:
+      - { id: L21.learn.01, type: pick_suffix, grammar: [g.L21.gen], pattern: g.L21.gen.cons, base: w.kadın, suffix: sfx.gen, options: [ın, nın, in, un], answer: ın, feedback: { nın: "**kadın** ends in a consonant: **-ın**, no n: kadının.", in: "The last vowel of **kadın** is ı → **-ın**: kadının." } }
+      - { id: L21.learn.02, type: pick_suffix, grammar: [g.L21.gen], pattern: g.L21.gen.vowel, base: w.araba, suffix: sfx.gen, options: [nın, ın, nin, sı], answer: nın, feedback: { ın: "**araba** ends in a vowel, so the genitive takes **n**: arabanın.", sı: "**-sı** is the thing's ending (*his / her*). The owner takes **-nın**: arabanın." } }
+      - { id: L21.learn.03, type: type_form, grammar: [g.L21.gen, g.L11.loc_copula], pattern: g.L21.gen.name, base: w.Ali, suffixes: [sfx.gen], prompt: "Ali's", answer: "Ali'nin", feedback: { Alinin: "**Ali** is a name, so it takes an apostrophe before the ending: **Ali'nin**.", "Ali'in": "**Ali** ends in a vowel, so the genitive takes **n**: **Ali'nin**." } }
+      - id: L21.learn.04
+        type: picture_choose
+        grammar: [g.L21.gen, g.L19.poss_sg]
+        pattern: g.L21.gen.chain
+        images: [img.own.woman_with_bag]
+        prompt: "Kadının …"
+        options: [çantası, çanta, çantam]
+        answer: çantası
+        translation: "the woman's bag"
+        feedback: { çanta: "The thing owned takes **-(s)I** too: kadının **çantası**.", çantam: "**çantam** is *my bag*. The woman's bag: kadının **çantası**." }
+      - id: L21.learn.05
+        type: listen_choose
+        grammar: [g.L21.gen, g.L7.question]
+        sentence: s.L21.002
+        options: ["Whose book is this?", "Who is this?", "Is this your book?"]
+        answer: "Whose book is this?"
+      - { id: L21.learn.06, type: translate_to_tr, grammar: [g.L21.gen, g.L19.poss_sg], pattern: g.L21.gen.chain, sentence: s.L21.001, word_bank: [Ali'nin, Alinin, arabası, araba, yeni] }
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L21.practise.01, type: type_form, grammar: [g.L21.gen], pattern: g.L21.gen.cons, base: w.okul, suffixes: [sfx.gen], prompt: "of the school", answer: okulun, feedback: "auto:g.L21.gen" }
+      - { id: L21.practise.02, type: type_form, grammar: [g.L21.gen, g.L11.loc_copula], pattern: g.L21.gen.name, base: w.Ahmet, suffixes: [sfx.gen], prompt: "Ahmet's", answer: "Ahmet'in", feedback: { "Ahmet'nin": "**Ahmet** ends in a consonant: **-in**, no n: **Ahmet'in**.", Ahmetin: "**Ahmet** is a name, so it takes an apostrophe before the ending: **Ahmet'in**." } }
+      - { id: L21.practise.03, type: type_form, grammar: [g.L21.gen], base: w.su, suffixes: [sfx.gen], prompt: "of the water", answer: suyun, feedback: { sunun: "**su** is irregular: it adds **y**: **suyun**." } }
+      - { id: L21.practise.04, type: type_form, grammar: [g.L21.gen], pattern: g.L21.gen.pronoun, base: w.biz, suffixes: [sfx.gen], prompt: "our (biz + genitive)", answer: bizim, feedback: { bizin: "**biz** is irregular: **bizim** (compare the regular *sizin*)." } }
+      - { id: L21.practise.05, type: type_form, grammar: [g.L21.gen], pattern: g.L21.gen.pronoun, base: w.siz, suffixes: [sfx.gen], prompt: "your, plural / polite (siz + genitive)", answer: sizin, feedback: { sizim: "Only **benim** and **bizim** end in m. **siz** is regular: **sizin**." } }
+      - { id: L21.practise.06, type: spot_error, grammar: [g.L21.gen, g.L19.poss_sg], pattern: g.L21.gen.chain, text: "Ali'nin araba yeni.", error: araba, answer: arabası, sentence: s.L21.001, feedback: { araba: "The thing owned takes **-(s)I** too: Ali'nin **arabası**." } }
+      - { id: L21.practise.07, type: spot_error, grammar: [g.L21.gen, g.L10.loc], pattern: g.L21.gen.name, text: "Ahmet'nin kedisi bahçede.", error: "Ahmet'nin", answer: "Ahmet'in", sentence: s.L21.005, feedback: { "Ahmet'nin": "**Ahmet** ends in a consonant: **-in**, no n: **Ahmet'in**." } }
+      - id: L21.practise.08
+        type: qa
+        grammar: [g.L21.gen, g.L7.question]
+        question: s.L21.016
+        images: [img.own.ali_with_car]
+        answers: ["(Bu) Ali'nin (arabası)."]
+      - { id: L21.practise.09, type: translate_to_en, grammar: [g.L21.gen, g.L19.poss_sg], sentence: s.L21.013 }
+      - { id: L21.practise.10, type: translate_to_tr, grammar: [g.L21.gen, g.L10.loc], sentence: s.L21.004, typed: true }
+      - { id: L21.practise.11, type: dictation, grammar: [g.L21.gen, g.L11.loc_copula], sentence: s.L21.018 }
+      - id: L21.practise.12
+        type: contrast_pair
+        grammar: [g.L21.gen, g.L19.poss_sg]
+        prompt: "Your house is big."
+        options: [s.L21.020, s.L21.021]
+        answer: s.L21.020
+        note: "evin alone = your house; okulun bahçesi = the garden of the school."
+      - { id: L21.practise.13, type: translate_to_tr, grammar: [g.L21.gen, g.L7.question], sentence: s.L21.012, word_bank: [Adamın, Adamnın, Adam, adı, ad, ne] }
+      - { id: L21.practise.14, type: translate_to_en, grammar: [g.L21.gen, g.L15.prog], sentence: s.L21.022 }
+      - id: L21.practise.15
+        type: mini_dialogue
+        grammar: [g.L21.gen, g.L7.question]
+        images: [img.own.ayse_with_book]
+        turns:
+          - { speaker: A, sentence: s.L21.002 }
+          - { speaker: B, blank: true, answers: ["Ayşe'nin.", "(Bu) Ayşe'nin kitabı."] }
+          - { speaker: A, sentence: s.L21.010 }
+          - { speaker: B, sentence: s.L21.011 }

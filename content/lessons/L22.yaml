@@ -1,0 +1,146 @@
+# L22 — compound nouns (no genitive: a "type of" relation). Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L22
+title: "Compound nouns"
+grammar: g.L22.compound
+new_words: [w.Türk_kahvesi, w.otobüs_durağı, w.mama, w.üniversite]
+not_yet:
+  - "a case after a compound (otobüs durağında, İstanbul Üniversitesi'nde) → L24"
+  - "a possessed compound with a person other than 'my' (yatak odamız) is not drilled"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          ☕ **Bir Türk kahvesi, lütfen.** "A Turkish coffee, please."
+          🚏 **Otobüs durağı nerede?** "Where is the bus stop?"
+
+          Two nouns, and the second one gets **-(s)I**, as if it were "Turk coffee-**its**".
+        sentences: [s.L22.001, s.L22.002]
+        audio: [aud.own.s.L22.001, aud.own.s.L22.002]
+
+      - kind: rule
+        title: "noun + noun-(s)I"
+        body: |
+          The first noun says **what kind**. Only the second one takes an ending:
+
+          | Turkish | literally | English |
+          |---|---|---|
+          | Türk kahve·**si** | Turk coffee-its | Turkish coffee |
+          | otobüs durağ·**ı** | bus stop-its | bus stop |
+          | kedi mama·**sı** | cat food-its | cat food |
+          | araba anahtar·**ı** | car key-its | car key |
+          | İstanbul Üniversite·**si** | Istanbul university-its | Istanbul University |
+
+          The ending is the L19 *-(s)I*, with the usual changes: *durak → durağı*, *bardak → çay bardağı*.
+
+          You already know three: **yatak odası**, **buzdolabı**, **havalimanı**.
+        sentences: [s.L22.003, s.L22.007, s.L22.004]
+        audio: [aud.own.s.L22.003, aud.own.s.L22.007, aud.own.s.L22.004]
+
+      - kind: rule
+        title: "With or without -(n)In?"
+        body: |
+          | | | |
+          |---|---|---|
+          | okul**un** kapı**sı** | **the school's** door | a particular school owns it (L21) |
+          | okul kapı**sı** | **a school door** | the kind of door |
+
+          The genitive points at **an owner**. No genitive = **a type**.
+
+          *Bu bir okul kapısı.* "This is a school door." · *Bu okulun kapısı.* "This is the school's door."
+        sentences: [s.L22.006, s.L22.009]
+        audio: [aud.own.s.L22.006, aud.own.s.L22.009]
+
+      - kind: rule
+        title: "Plural"
+        body: |
+          -lAr goes **in front of** the -(s)I, which comes back as **-I**:
+
+          Türk kahve·si → Türk kahve·**ler·i** "Turkish coffees"
+          otobüs durağ·ı → otobüs durak·**lar·ı** "bus stops"
+
+          ❌ ~~Türk kahvesiler~~
+        sentences: [s.L22.008]
+        audio: [aud.own.s.L22.008]
+
+      - kind: note
+        title: "Owner + compound"
+        body: |
+          A compound can have an owner too. The -(s)I covers both:
+
+          *Ali'nin araba anahtarı* "Ali's car key" (not ~~araba anahtarısı~~)
+
+          And with *my*: the -(s)I is **replaced** (L19): *yatak oda**m*** "my bedroom", *araba anahtar**ım*** "my car key".
+        sentences: [s.L22.010]
+
+    items:
+      - id: L22.learn.01
+        type: picture_choose
+        grammar: [g.L22.compound, g.L3.basics]
+        images: [img.openmoji.coffee]
+        prompt: "Bir Türk …, lütfen."
+        options: [kahvesi, kahve, kahvenin]
+        answer: kahvesi
+        translation: "A Turkish coffee, please."
+        feedback: { kahve: "In a compound the second noun takes **-(s)I**: Türk **kahvesi**.", kahvenin: "**-nin** marks an owner (L21). In a compound the second noun takes **-(s)I**: Türk **kahvesi**." }
+      - { id: L22.learn.02, type: type_form, grammar: [g.L22.compound], pattern: g.L22.compound.soft, base: w.durak, suffixes: [sfx.poss_3sg], prompt: "otobüs … (bus stop)", answer: durağı, feedback: { durakı: "Softening (L17): before a vowel, final **k** → **ğ**: otobüs **durağı**.", durak: "In a compound the second noun takes **-(s)I**: otobüs **durağı**." } }
+      - { id: L22.learn.03, type: pick_suffix, grammar: [g.L22.compound], pattern: g.L22.compound.after_vowel, base: w.mama, suffix: sfx.poss_3sg, options: [sı, ı, nın], answer: sı, feedback: { ı: "**mama** ends in a vowel, so the ending takes **s**: kedi **maması**.", nın: "No genitive in a compound. The second noun takes **-(s)I**: kedi **maması**." } }
+      - id: L22.learn.04
+        type: contrast_pair
+        grammar: [g.L22.compound, g.L21.gen]
+        pattern: g.L22.compound.vs_gen
+        prompt: "This is a school door."
+        options: [s.L22.006, s.L22.009]
+        answer: s.L22.006
+      - { id: L22.learn.05, type: build_word, grammar: [g.L22.compound, g.L4.plural], pattern: g.L22.compound.plural, tiles: ["Türk kahve", ler, i], answer: "Türk kahve·ler·i", feedback: { "Türk kahve·i·ler": "In the plural, -lAr comes first and the -(s)I moves to the end: **Türk kahve·ler·i**." } }
+      - id: L22.learn.06
+        type: listen_choose
+        grammar: [g.L22.compound, g.L7.question]
+        sentence: s.L22.002
+        options: ["Where is the bus stop?", "Where is the bus?", "Is the bus at the stop?"]
+        answer: "Where is the bus stop?"
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L22.practise.01, type: type_form, grammar: [g.L22.compound, g.L4.plural], pattern: g.L22.compound.plural, base: w.Türk_kahvesi, suffixes: [sfx.pl], prompt: "Turkish coffees", answer: "Türk kahveleri", feedback: { "Türk kahvesiler": "In the plural, -lAr comes first and the -(s)I moves to the end: **Türk kahveleri**." } }
+      - { id: L22.practise.02, type: type_form, grammar: [g.L22.compound], pattern: g.L22.compound.after_consonant, base: w.anahtar, suffixes: [sfx.poss_3sg], prompt: "araba … (car key)", answer: anahtarı, feedback: "auto:g.L22.compound" }
+      - { id: L22.practise.03, type: type_form, grammar: [g.L22.compound], pattern: g.L22.compound.soft, base: w.bardak, suffixes: [sfx.poss_3sg], prompt: "çay … (tea glass)", answer: bardağı, feedback: { bardakı: "Softening (L17): before a vowel, final **k** → **ğ**: çay **bardağı**." } }
+      - { id: L22.practise.04, type: spot_error, grammar: [g.L22.compound, g.L7.question], text: "Otobüs durak nerede?", error: durak, answer: durağı, sentence: s.L22.002, feedback: { durak: "In a compound the second noun takes **-(s)I**: otobüs **durağı**." } }
+      - { id: L22.practise.05, type: spot_error, grammar: [g.L22.compound, g.L3.basics], text: "Bir Türk kahve, lütfen.", error: kahve, answer: kahvesi, sentence: s.L22.001, feedback: { kahve: "In a compound the second noun takes **-(s)I**: Türk **kahvesi**." } }
+      - { id: L22.practise.06, type: translate_to_en, grammar: [g.L22.compound, g.L10.loc], sentence: s.L22.007 }
+      - { id: L22.practise.07, type: translate_to_tr, grammar: [g.L22.compound, g.L10.loc], sentence: s.L22.003, word_bank: [Kedi, Kedinin, maması, mama, dolapta] }
+      - { id: L22.practise.08, type: translate_to_tr, grammar: [g.L22.compound, g.L21.gen, g.L7.question], sentence: s.L22.010, typed: true }
+      - { id: L22.practise.09, type: dictation, grammar: [g.L22.compound, g.L3.basics], sentence: s.L22.013 }
+      - id: L22.practise.10
+        type: qa
+        grammar: [g.L22.compound, g.L8.varyok, g.L7.question]
+        question: s.L22.011
+        answers: ["Evet, (kedi maması) var.", "Hayır, (kedi maması) yok."]
+      - id: L22.practise.11
+        type: picture_choose
+        grammar: [g.L22.compound, g.L3.basics]
+        images: [img.openmoji.university]
+        prompt: "İstanbul …"
+        options: [Üniversitesi, Üniversite, Üniversitenin]
+        answer: Üniversitesi
+        translation: "Istanbul University"
+        feedback: { Üniversite: "A name + a noun is a compound too: İstanbul **Üniversitesi**.", Üniversitenin: "No genitive in a compound: İstanbul **Üniversitesi**." }
+      - { id: L22.practise.12, type: translate_to_en, grammar: [g.L22.compound, g.L4.plural], pattern: g.L22.compound.plural, sentence: s.L22.008 }
+      - id: L22.practise.13
+        type: contrast_pair
+        grammar: [g.L22.compound, g.L21.gen]
+        pattern: g.L22.compound.vs_gen
+        prompt: "This is the school's door."
+        options: [s.L22.009, s.L22.006]
+        answer: s.L22.009
+      - { id: L22.practise.14, type: translate_to_en, grammar: [g.L22.compound, g.L15.prog], sentence: s.L22.014 }
+      - id: L22.practise.15
+        type: mini_dialogue
+        grammar: [g.L22.compound, g.L7.question]
+        images: [img.openmoji.bus_stop]
+        turns:
+          - { speaker: A, sentence: s.L22.002 }
+          - { speaker: B, blank: true, answers: ["(Otobüs durağı) {orada|burada}."] }

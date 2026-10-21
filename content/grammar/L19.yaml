@@ -1,0 +1,84 @@
+id: g.L19.poss_sg
+title: "Possessives (singular owners): my, your, his / her"
+suffixes: [sfx.poss_1sg, sfx.poss_2sg, sfx.poss_3sg]
+
+reference: |
+  *my house*, *your car*, *her cat*: Turkish adds an ending to the **thing owned**.
+
+  | | after a consonant | after a vowel |
+  |---|---|---|
+  | my | ev·**im**, okul·**um** | araba·**m**, kedi·**m** |
+  | your | ev·**in**, okul·**un** | araba·**n**, kedi·**n** |
+  | his / her / its | ev·**i**, okul·**u** | araba·**sı**, kedi·**si** |
+
+  **Vowel (I):** 4-way harmony with the last vowel, as with *mI* (L7): a ı → **ı** · e i → **i** · o u → **u** · ö ü → **ü**.
+
+  **Buffers:** after a vowel, *my* and *your* lose their vowel (araba·**m**, araba·**n**), and *his / her* takes **s** (araba·**sı**).
+
+  **Stem changes** (the endings start with a vowel, as in L17):
+  - softening: *kitap → kitab·ım*, *sokak → sokağ·ım*, *çocuk → çocuğ·u*
+  - vowel drop: *oğul → oğl·um*, *burun → burn·um*, *ağız → ağz·ım*, *şehir → şehr·im*
+  - front exceptions: *saat → saat·im*
+  - irregular: *su → su·y·um, su·y·un, su·y·u*
+
+  **Pronouns are optional**, for emphasis or contrast: *(Benim) evim.* "My house." · *Senin kitabın* · *Onun arabası*. Because *-(s)I* means *his*, *her* or *its*, *onun* can make it clear who the owner is.
+
+  **Compounds** like *yatak odası* already end in a possessive. It is **replaced**, not doubled: *yatak oda·m* "my bedroom", *yatak oda·n*, *yatak oda·sı* (not ~~yatak odasım~~).
+
+  ⚠️ **Stress tells two words apart:** *öğretme**NİM*** "my teacher" (the possessive is stressed) vs *öğret**MEN**im* "I'm a teacher" (the copula of L5 is never stressed).
+
+patterns:
+  - id: g.L19.poss_sg.cons_1sg
+    description: "After a consonant: -Im (evim, okulum)"
+    suffix: sfx.poss_1sg
+    word_filter: { pos: noun, ends_with: voiced_consonant }
+  - id: g.L19.poss_sg.vowel_1sg
+    description: "After a vowel: -m (arabam)"
+    suffix: sfx.poss_1sg
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L19.poss_sg.cons_2sg
+    description: "After a consonant: -In (evin, okulun)"
+    suffix: sfx.poss_2sg
+    word_filter: { pos: noun, ends_with: voiced_consonant }
+  - id: g.L19.poss_sg.vowel_2sg
+    description: "After a vowel: -n (araban)"
+    suffix: sfx.poss_2sg
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L19.poss_sg.cons_3sg
+    description: "After a consonant: -I (evi, okulu)"
+    suffix: sfx.poss_3sg
+    word_filter: { pos: noun, ends_with: voiced_consonant }
+  - id: g.L19.poss_sg.vowel_3sg
+    description: "After a vowel: -sI (arabası, kedisi)"
+    suffix: sfx.poss_3sg
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L19.poss_sg.soft
+    description: "Softening before the vowel: kitabım, sokağım, çocuğu"
+    suffix: sfx.poss_1sg
+    word_filter: { pos: noun, flags: [soft] }
+  - id: g.L19.poss_sg.drop
+    description: "Vowel drop: oğlum, şehrim"
+    suffix: sfx.poss_1sg
+    word_filter: { pos: noun, flags: [drop] }
+  - id: g.L19.poss_sg.front
+    description: "Front exceptions: saatim"
+    suffix: sfx.poss_1sg
+    word_filter: { pos: noun, flags: [front] }
+  - id: g.L19.poss_sg.vs_copula
+    description: "öğretmeNİM 'my teacher' vs öğretMENim 'I'm a teacher' (stress)"
+
+feedback:
+  vowel_back: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_front: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_round: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  detached: "The possessive ending is **attached** to the word: **{answer}**."
+  # used by the per-item feedback maps until the engine diagnoses vowel-initial endings
+  after_vowel: "**{word}** ends in a vowel: *my* = **-m**, *your* = **-n**, *his / her* = **-sI**: **{answer}**."
+  after_consonant: "**{word}** ends in a consonant, so the ending starts with a vowel: **{answer}**."
+  soften: "Softening (L17): before a vowel, final **p ç t k** → **b c d ğ**: **{answer}**."
+  drop: "**{word}** drops its last vowel before a vowel ending: **{answer}**."
+  front: "**{word}** is an exception: it takes front-vowel endings: **{answer}**."
+  irregular_su: "**su** is irregular: it adds **y**: suyum, suyun, suyu."
+  compound: "**{word}** already ends in a possessive: replace it, don't add a second one: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

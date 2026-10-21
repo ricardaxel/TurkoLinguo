@@ -66,6 +66,10 @@
 - { id: w.ben, lemma: ben, pos: pron, gloss: [I], forms: { dat: bana } }
 - { id: w.sen, lemma: sen, pos: pron, gloss: [you (informal)], forms: { dat: sana } }
 - { id: w.o, lemma: o, pos: pron, gloss: [he, she, it, that], forms: { acc: onu, dat: ona, loc: onda } }
+- { id: w.bu, lemma: bu, pos: pron, gloss: [this] }
+- { id: w.ben, lemma: ben, pos: pron, gloss: [I], flags: [irr], forms: { gen: benim } }
+- { id: w.sen, lemma: sen, pos: pron, gloss: [you (informal)] }
+- { id: w.o, lemma: o, pos: pron, gloss: [he, she, it, that] }
 - { id: w.biz, lemma: biz, pos: pron, gloss: [we], flags: [irr], forms: { gen: bizim } }
 - { id: w.siz, lemma: siz, pos: pron, gloss: [you (plural / polite)] }
 - { id: w.onlar, lemma: onlar, pos: pron, gloss: [they] }
@@ -234,3 +238,116 @@
 - { id: w.Türkçe, lemma: Türkçe, pos: noun, gloss: [Turkish (language)], notes: "T4 language. Not a name: no apostrophe (Türkçede)." }
 - { id: w.taksi, lemma: taksi, pos: noun, gloss: [taxi], images: [img.openmoji.taxi], notes: "T2 cognate." }
 - { id: w.şu, lemma: şu, pos: pron, gloss: [that (near)], forms: { acc: şunu, dat: şuna, loc: şunda }, notes: "L3. Takes n before case endings: şunu, şuna." }
+# --- L19: possessives (singular owners) ---
+- { id: w.ad, lemma: ad, pos: noun, gloss: [name], notes: "One syllable: no softening (adım, adın, adı). Adın ne? 'What's your name?'" }
+- { id: w.arkadaş, lemma: arkadaş, pos: noun, gloss: [friend] }
+
+# --- L20: possessives (plural owners) ---
+- { id: w.sınıf, lemma: sınıf, pos: noun, gloss: [classroom, class] }
+
+# --- L21: genitive ---
+- { id: w.kadın, lemma: kadın, pos: noun, gloss: [woman], images: [img.openmoji.woman], notes: "No vowel drop: kadını, kadının." }
+- { id: w.adam, lemma: adam, pos: noun, gloss: [man], images: [img.openmoji.man] }
+
+# --- L22: compound nouns ---
+- { id: w.Türk_kahvesi, lemma: Türk kahvesi, pos: noun, gloss: [Turkish coffee], flags: [compound], forms: { pl: Türk kahveleri }, images: [img.openmoji.coffee] }
+- { id: w.otobüs_durağı, lemma: otobüs durağı, pos: noun, gloss: [bus stop], flags: [compound], forms: { pl: otobüs durakları }, images: [img.openmoji.bus_stop] }
+- { id: w.mama, lemma: mama, pos: noun, gloss: [pet food, baby food], notes: "kedi maması 'cat food', köpek maması 'dog food'." }
+- { id: w.üniversite, lemma: üniversite, pos: noun, gloss: [university], images: [img.openmoji.university] }
+
+# --- L23: having ---
+- { id: w.kaç, lemma: kaç, pos: adv, gloss: [how many], notes: "Followed by a singular noun: Kaç kardeşin var? Prices ('Kaç lira?') in L25." }
+
+# --- L24: cases after possessives (+ health chunks for T18) ---
+- { id: w.ağrımak, lemma: ağrımak, pos: verb, gloss: [hurt, ache], stem: ağrı, notes: "Başım ağrıyor. 'My head hurts.' The body part takes the possessive." }
+- { id: w.geçmiş_olsun, lemma: geçmiş olsun, pos: phrase, gloss: [get well soon], notes: "Said to anyone who is ill or has had bad luck." }
+
+# --- T15 clothes (elective) ---
+# pantolon and ceket are T2 cognates, so pack 1 uses mont and çorap instead (as T10 swapped kedi for keçi).
+- { id: w.gömlek, lemma: gömlek, pos: noun, gloss: [shirt], flags: [soft], images: [img.openmoji.shirt] }
+- { id: w.tişört, lemma: tişört, pos: noun, gloss: [T-shirt], images: [img.openmoji.tshirt], notes: "No softening: tişörtü." }
+- { id: w.etek, lemma: etek, pos: noun, gloss: [skirt], flags: [soft] }
+- { id: w.elbise, lemma: elbise, pos: noun, gloss: [dress], images: [img.openmoji.dress] }
+- { id: w.mont, lemma: mont, pos: noun, gloss: [coat, jacket], images: [img.openmoji.coat] }
+- { id: w.kazak, lemma: kazak, pos: noun, gloss: [sweater, jumper], flags: [soft] }
+- { id: w.ayakkabı, lemma: ayakkabı, pos: noun, gloss: [shoe, shoes], images: [img.openmoji.shoe], notes: "Historically a compound, now an ordinary word: ayakkabılar, ayakkabım." }
+- { id: w.çorap, lemma: çorap, pos: noun, gloss: [sock, socks], flags: [soft], images: [img.openmoji.socks] }
+- { id: w.şapka, lemma: şapka, pos: noun, gloss: [hat, cap], images: [img.openmoji.hat] }
+- { id: w.eldiven, lemma: eldiven, pos: noun, gloss: [glove, gloves], images: [img.openmoji.gloves] }
+- { id: w.atkı, lemma: atkı, pos: noun, gloss: [scarf], images: [img.openmoji.scarf] }
+- { id: w.kemer, lemma: kemer, pos: noun, gloss: [belt] }
+- { id: w.gözlük, lemma: gözlük, pos: noun, gloss: [glasses, spectacles], flags: [soft], images: [img.openmoji.glasses] }
+- { id: w.pijama, lemma: pijama, pos: noun, gloss: [pyjamas, pajamas] }
+- { id: w.terlik, lemma: terlik, pos: noun, gloss: [slipper, slippers], flags: [soft] }
+- { id: w.palto, lemma: palto, pos: noun, gloss: [overcoat] }
+
+# --- T16 market & shopping ---
+- { id: w.para, lemma: para, pos: noun, gloss: [money], images: [img.openmoji.money] }
+- { id: w.lira, lemma: lira, pos: noun, gloss: [lira], notes: "Turkish lira. 'Kaç lira?' 'How many lira?' in L25." }
+- { id: w.kilo, lemma: kilo, pos: noun, gloss: [kilo, kilogram] }
+- { id: w.yarım, lemma: yarım, pos: num, gloss: [half], notes: "yarım kilo 'half a kilo'." }
+- { id: w.tane, lemma: tane, pos: noun, gloss: [piece, item], notes: "Counter: iki tane elma 'two apples'." }
+- { id: w.fiyat, lemma: fiyat, pos: noun, gloss: [price], notes: "No softening: fiyatı." }
+- { id: w.poşet, lemma: poşet, pos: noun, gloss: [plastic bag, carrier bag], images: [img.openmoji.shopping_bags], notes: "No softening: poşeti." }
+- { id: w.fiş, lemma: fiş, pos: noun, gloss: [receipt], images: [img.openmoji.receipt] }
+- { id: w.kuruş, lemma: kuruş, pos: noun, gloss: [kuruş (1/100 lira)] }
+- { id: w.indirim, lemma: indirim, pos: noun, gloss: [discount, sale] }
+- { id: w.kart, lemma: kart, pos: noun, gloss: [card, bank card], images: [img.openmoji.credit_card] }
+- { id: w.fatura, lemma: fatura, pos: noun, gloss: [bill, invoice] }
+- { id: w.kasa, lemma: kasa, pos: noun, gloss: [till, checkout] }
+- { id: w.alışveriş, lemma: alışveriş, pos: noun, gloss: [shopping] }
+- { id: w.müşteri, lemma: müşteri, pos: noun, gloss: [customer] }
+- { id: w.cüzdan, lemma: cüzdan, pos: noun, gloss: [wallet, purse], images: [img.openmoji.purse] }
+
+# --- T18 body & health (elective) ---
+# göz is an L2 core word, so pack 1 uses el and ayak instead.
+- { id: w.baş, lemma: baş, pos: noun, gloss: [head] }
+- { id: w.yüz.face, lemma: yüz, pos: noun, gloss: [face], notes: "Also 'hundred' (w.yüz.hundred, L25)." }
+- { id: w.kulak, lemma: kulak, pos: noun, gloss: [ear], flags: [soft], images: [img.openmoji.ear] }
+- { id: w.burun, lemma: burun, pos: noun, gloss: [nose], flags: [drop], images: [img.openmoji.nose] }
+- { id: w.ağız, lemma: ağız, pos: noun, gloss: [mouth], flags: [drop], images: [img.openmoji.mouth] }
+- { id: w.diş, lemma: diş, pos: noun, gloss: [tooth], images: [img.openmoji.tooth] }
+- { id: w.el, lemma: el, pos: noun, gloss: [hand], images: [img.openmoji.hand] }
+- { id: w.ayak, lemma: ayak, pos: noun, gloss: [foot], flags: [soft], images: [img.openmoji.foot] }
+- { id: w.saç, lemma: saç, pos: noun, gloss: [hair], notes: "One syllable: no softening (saçı)." }
+- { id: w.kol, lemma: kol, pos: noun, gloss: [arm] }
+- { id: w.bacak, lemma: bacak, pos: noun, gloss: [leg], flags: [soft], images: [img.openmoji.leg] }
+- { id: w.karın, lemma: karın, pos: noun, gloss: [belly, stomach], flags: [drop] }
+- { id: w.sırt, lemma: sırt, pos: noun, gloss: [back] }
+- { id: w.kalp, lemma: kalp, pos: noun, gloss: [heart], flags: [front, soft], images: [img.openmoji.heart] }
+- { id: w.boyun, lemma: boyun, pos: noun, gloss: [neck], flags: [drop] }
+- { id: w.parmak, lemma: parmak, pos: noun, gloss: [finger], flags: [soft] }
+
+# --- shared (needed by L19–L24) ---
+# Introduced by other batches (L2 core nouns, L7–L9, L14 verbs, T1, T3–T7, T12–T14). Same IDs, deduped at merge.
+- { id: w.araba, lemma: araba, pos: noun, gloss: [car], images: [img.openmoji.car] }
+- { id: w.ne, lemma: ne, pos: pron, gloss: [what], flags: [irr], forms: { gen: neyin } }
+- { id: w.kim, lemma: kim, pos: pron, gloss: [who] }
+- { id: w.yok, lemma: yok, pos: particle, gloss: [there isn't, there aren't] }
+- { id: w.üç, lemma: üç, pos: num, gloss: [three] }
+- { id: w.küçük, lemma: küçük, pos: adj, gloss: [small, little] }
+- { id: w.güzel, lemma: güzel, pos: adj, gloss: [beautiful, nice] }
+- { id: w.kırmızı, lemma: kırmızı, pos: adj, gloss: [red] }
+- { id: w.mavi, lemma: mavi, pos: adj, gloss: [blue] }
+- { id: w.lütfen, lemma: lütfen, pos: interj, gloss: [please] }
+- { id: w.kapı, lemma: kapı, pos: noun, gloss: [door] }
+- { id: w.anahtar, lemma: anahtar, pos: noun, gloss: [key] }
+- { id: w.Türk, lemma: Türk, pos: noun, gloss: [Turk, Turkish], notes: "T4 nationality. Capitalised, but no apostrophe before endings: Türküm." }
+- { id: w.kahve, lemma: kahve, pos: noun, gloss: [coffee] }
+- { id: w.öğretmen, lemma: öğretmen, pos: noun, gloss: [teacher] }
+- { id: w.öğrenci, lemma: öğrenci, pos: noun, gloss: [student, pupil] }
+- { id: w.doktor, lemma: doktor, pos: noun, gloss: [doctor] }
+- { id: w.durak, lemma: durak, pos: noun, gloss: [stop (bus, tram)], flags: [soft] }
+- { id: w.bardak, lemma: bardak, pos: noun, gloss: [glass (for drinking)], flags: [soft] }
+- { id: w.domates, lemma: domates, pos: noun, gloss: [tomato, tomatoes] }
+- { id: w.anne, lemma: anne, pos: noun, gloss: [mother, mum] }
+- { id: w.baba, lemma: baba, pos: noun, gloss: [father, dad] }
+- { id: w.kardeş, lemma: kardeş, pos: noun, gloss: [sibling, brother, sister] }
+- { id: w.kız_kardeş, lemma: kız kardeş, pos: noun, gloss: [sister] }
+- { id: w.erkek_kardeş, lemma: erkek kardeş, pos: noun, gloss: [brother] }
+- { id: w.çocuk, lemma: çocuk, pos: noun, gloss: [child, kid], flags: [soft] }
+- { id: w.gelmek, lemma: gelmek, pos: verb, gloss: [come], stem: gel }
+- { id: w.gitmek, lemma: gitmek, pos: verb, gloss: [go], flags: [irr], stem: git, notes: "t → d before a vowel: gidiyor." }
+- { id: w.içmek, lemma: içmek, pos: verb, gloss: [drink], stem: iç }
+- { id: w.okumak, lemma: okumak, pos: verb, gloss: [read], stem: oku }
+- { id: w.bakmak, lemma: bakmak, pos: verb, gloss: [look (at)], stem: bak, notes: "Takes the dative: kediye bakıyor." }

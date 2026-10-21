@@ -1,0 +1,13 @@
+id: T18
+title: Body & health
+kind: elective
+packs:
+  - id: T18.p1
+    unlock_after: L23
+    words: [w.baş, w.yüz.face, w.kulak, w.burun, w.ağız, w.diş, w.el, w.ayak]
+    frames: [s.T18.001, s.T18.002]
+  - id: T18.p2
+    unlock_after: L24
+    words: [w.saç, w.kol, w.bacak, w.karın, w.sırt, w.kalp, w.boyun, w.parmak]
+    frames: [s.T18.003, s.T18.004]
+revisit: [L24, L35]

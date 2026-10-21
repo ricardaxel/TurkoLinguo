@@ -192,3 +192,90 @@
 - { word: w.gelmek,   suffixes: [sfx.prog, sfx.q, sfx.cop_1sg], expected: geliyor muyum,  pending: "verbs: mI after -yor is mu; buffer y on mu" }
 - { word: w.gelmek,   suffixes: [sfx.prog, sfx.cop_3pl, sfx.q], expected: geliyorlar mı, pending: "verbs: -lAr before mI" }
 - { word: w.gelmek,   suffixes: [sfx.neg, sfx.prog, sfx.q, sfx.cop_2sg], expected: gelmiyor musun, pending: "verbs: negative question" }
+# ---------- L19–L24: possessives, genitive, compounds, buffer n ----------
+# Possessives, singular owners (L19)
+- { word: w.ev,      suffixes: [sfx.poss_1sg], expected: evim }
+- { word: w.ev,      suffixes: [sfx.poss_2sg], expected: evin }
+- { word: w.ev,      suffixes: [sfx.poss_3sg], expected: evi }
+- { word: w.okul,    suffixes: [sfx.poss_1sg], expected: okulum,   note: "4-way harmony: o → u" }
+- { word: w.araba,   suffixes: [sfx.poss_1sg], expected: arabam,   note: "after a vowel: -m" }
+- { word: w.araba,   suffixes: [sfx.poss_2sg], expected: araban }
+- { word: w.araba,   suffixes: [sfx.poss_3sg], expected: arabası,  note: "buffer s" }
+- { word: w.kedi,    suffixes: [sfx.poss_3sg], expected: kedisi }
+- { word: w.kitap,   suffixes: [sfx.poss_1sg], expected: kitabım,  note: "softening" }
+- { word: w.sokak,   suffixes: [sfx.poss_1sg], expected: sokağım,  note: "softening" }
+- { word: w.çocuk,   suffixes: [sfx.poss_3sg], expected: çocuğu,   note: "softening" }
+- { word: w.oğul,    suffixes: [sfx.poss_1sg], expected: oğlum,    note: "vowel drop" }
+- { word: w.burun,   suffixes: [sfx.poss_1sg], expected: burnum,   note: "vowel drop" }
+- { word: w.ağız,    suffixes: [sfx.poss_1sg], expected: ağzım,    note: "vowel drop" }
+- { word: w.şehir,   suffixes: [sfx.poss_1sg], expected: şehrim,   note: "vowel drop" }
+- { word: w.saat,    suffixes: [sfx.poss_1sg], expected: saatim,   note: "front flag" }
+- { word: w.ad,      suffixes: [sfx.poss_1sg], expected: adım,     note: "one syllable: no softening" }
+- { word: w.su,      suffixes: [sfx.poss_3sg], expected: suyu,     note: "irregular (forms.poss3)" }
+- { word: w.su,      suffixes: [sfx.poss_1sg], expected: suyum,    note: "irregular", pending: "engine has no forms key for poss_1sg; su + -(I)m gives *sum*" }
+- { word: w.su,      suffixes: [sfx.poss_2sg], expected: suyun,    note: "irregular", pending: "engine has no forms key for poss_2sg; su + -(I)n gives *sun*" }
+- { word: w.yatak_odası, suffixes: [sfx.poss_1sg], expected: yatak odam, note: "compound: the possessive is replaced", pending: "engine appends -m to the compound (yatak odasım) instead of replacing -sI" }
+- { word: w.buzdolabı,   suffixes: [sfx.poss_1sg], expected: buzdolabım, note: "compound in -I (not -sI): appending -m gives the right form" }
+- { word: w.kalp,    suffixes: [sfx.poss_3sg], expected: kalbi,    note: "front + soft" }
+- { word: w.kulak,   suffixes: [sfx.poss_3sg], expected: kulağı }
+- { word: w.ayak,    suffixes: [sfx.poss_1sg], expected: ayağım }
+- { word: w.baş,     suffixes: [sfx.poss_1sg], expected: başım }
+
+# Possessives, plural owners (L20)
+- { word: w.ev,      suffixes: [sfx.poss_1pl], expected: evimiz }
+- { word: w.ev,      suffixes: [sfx.poss_2pl], expected: eviniz }
+- { word: w.ev,      suffixes: [sfx.poss_3pl], expected: evleri }
+- { word: w.araba,   suffixes: [sfx.poss_1pl], expected: arabamız }
+- { word: w.araba,   suffixes: [sfx.poss_2pl], expected: arabanız }
+- { word: w.araba,   suffixes: [sfx.poss_3pl], expected: arabaları }
+- { word: w.okul,    suffixes: [sfx.poss_2pl], expected: okulunuz }
+- { word: w.kitap,   suffixes: [sfx.poss_1pl], expected: kitabımız, note: "softening" }
+- { word: w.oğul,    suffixes: [sfx.poss_1pl], expected: oğlumuz,  note: "vowel drop" }
+- { word: w.çocuk,   suffixes: [sfx.poss_3pl], expected: çocukları, note: "-lArI is consonant-initial: no softening" }
+- { word: w.saat,    suffixes: [sfx.poss_1pl], expected: saatimiz, note: "front flag on the first vowel only; the second follows it" }
+- { word: w.arkadaş, suffixes: [sfx.pl, sfx.poss_1pl], expected: arkadaşlarımız, note: "plural before possessive" }
+
+# Genitive (L21)
+- { word: w.ev,      suffixes: [sfx.gen], expected: evin }
+- { word: w.araba,   suffixes: [sfx.gen], expected: arabanın,  note: "buffer n" }
+- { word: w.kadın,   suffixes: [sfx.gen], expected: kadının }
+- { word: w.okul,    suffixes: [sfx.gen], expected: okulun }
+- { word: w.Ali,     suffixes: [sfx.gen], expected: "Ali'nin" }
+- { word: w.Ahmet,   suffixes: [sfx.gen], expected: "Ahmet'in" }
+- { word: w.Ayşe,    suffixes: [sfx.gen], expected: "Ayşe'nin" }
+- { word: w.ben,     suffixes: [sfx.gen], expected: benim,     note: "irregular" }
+- { word: w.sen,     suffixes: [sfx.gen], expected: senin }
+- { word: w.o,       suffixes: [sfx.gen], expected: onun }
+- { word: w.biz,     suffixes: [sfx.gen], expected: bizim,     note: "irregular" }
+- { word: w.siz,     suffixes: [sfx.gen], expected: sizin,     note: "regular, unlike bizim" }
+- { word: w.onlar,   suffixes: [sfx.gen], expected: onların }
+- { word: w.kim,     suffixes: [sfx.gen], expected: kimin }
+- { word: w.anne,    suffixes: [sfx.poss_1sg, sfx.gen], expected: annemin, note: "possessed owner" }
+
+# Compounds (L22)
+- { word: w.durak,   suffixes: [sfx.poss_3sg], expected: durağı,   note: "otobüs durağı" }
+- { word: w.mama,    suffixes: [sfx.poss_3sg], expected: maması,   note: "kedi maması" }
+- { word: w.bardak,  suffixes: [sfx.poss_3sg], expected: bardağı,  note: "çay bardağı" }
+- { word: w.kahve,   suffixes: [sfx.pl, sfx.poss_3sg], expected: kahveleri, note: "Türk kahveleri: plural before -(s)I" }
+- { word: w.Türk_kahvesi,   suffixes: [sfx.pl], expected: Türk kahveleri,   note: "compound plural (forms.pl)" }
+- { word: w.otobüs_durağı,  suffixes: [sfx.pl], expected: otobüs durakları, note: "compound plural (forms.pl)" }
+
+# Buffer n after a 3rd-person possessive (L24)
+- { word: w.ev,      suffixes: [sfx.poss_3sg, sfx.loc], expected: evinde }
+- { word: w.ev,      suffixes: [sfx.poss_3sg, sfx.abl], expected: evinden }
+- { word: w.ev,      suffixes: [sfx.poss_3sg, sfx.dat], expected: evine,  note: "same form as ev·in·e 'to your house'" }
+- { word: w.ev,      suffixes: [sfx.poss_2sg, sfx.dat], expected: evine }
+- { word: w.araba,   suffixes: [sfx.poss_3sg, sfx.acc], expected: arabasını }
+- { word: w.araba,   suffixes: [sfx.poss_3sg, sfx.loc], expected: arabasında }
+- { word: w.okul,    suffixes: [sfx.poss_3sg, sfx.dat], expected: okuluna }
+- { word: w.kedi,    suffixes: [sfx.poss_3sg, sfx.dat], expected: kedisine }
+- { word: w.kitap,   suffixes: [sfx.poss_3sg, sfx.acc], expected: kitabını }
+- { word: w.kitap,   suffixes: [sfx.poss_2sg, sfx.acc], expected: kitabını, note: "your book (object): same form" }
+- { word: w.su,      suffixes: [sfx.poss_3sg, sfx.acc], expected: suyunu }
+- { word: w.ev,      suffixes: [sfx.poss_3pl, sfx.loc], expected: evlerinde }
+- { word: w.ev,      suffixes: [sfx.poss_1sg, sfx.loc], expected: evimde, note: "1st person: no n" }
+- { word: w.ev,      suffixes: [sfx.poss_1pl, sfx.abl], expected: evimizden }
+- { word: w.araba,   suffixes: [sfx.poss_1sg, sfx.acc], expected: arabamı, note: "1st person: buffer y not needed after m" }
+- { word: w.oda,     suffixes: [sfx.poss_1sg, sfx.loc, sfx.cop_1sg], expected: odamdayım }
+- { word: w.çanta,   suffixes: [sfx.poss_3sg, sfx.loc], expected: çantasında }
+- { word: w.otobüs_durağı, suffixes: [sfx.loc], expected: otobüs durağında, note: "compound: buffer n" }

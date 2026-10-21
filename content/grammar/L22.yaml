@@ -1,0 +1,54 @@
+id: g.L22.compound
+title: "Compound nouns: Türk kahvesi, otobüs durağı"
+suffixes: [sfx.poss_3sg]
+
+reference: |
+  Two nouns, **no genitive**, and **-(s)I** on the second one = a *type* of thing:
+
+  | Turkish | literally | English |
+  |---|---|---|
+  | Türk kahve·**si** | Turk coffee-its | Turkish coffee |
+  | otobüs durağ·**ı** | bus stop-its | bus stop |
+  | kedi mama·**sı** | cat food-its | cat food |
+  | araba anahtar·**ı** | car key-its | car key |
+  | İstanbul Üniversite·**si** | Istanbul university-its | Istanbul University |
+
+  The second noun follows L19: buffer **s** after a vowel, softening before the vowel (*durak → durağı*, *bardak → çay bardağı*). You already know some: *yatak odası*, *buzdolabı*, *havalimanı*.
+
+  **With or without the genitive?**
+  - *okul**un** kapı**sı*** "**the school's** door" — one particular school owns it (L21).
+  - *okul kapı**sı*** "**a school door**" — the kind of door.
+
+  **Plural:** -lAr goes in **before** the -(s)I, which comes back as **-I**: *Türk kahve·**ler·i*** "Turkish coffees", *otobüs durak·**lar·ı***.
+
+  **Possessive:** the -(s)I is **replaced** (as in L19): *yatak oda·**m*** "my bedroom". **Case endings** after it take **n**: *otobüs durağı·**n**·da* (L24).
+
+patterns:
+  - id: g.L22.compound.after_vowel
+    description: "Second noun ends in a vowel: -sI (kedi maması)"
+    suffix: sfx.poss_3sg
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L22.compound.after_consonant
+    description: "Second noun ends in a consonant: -I (araba anahtarı)"
+    suffix: sfx.poss_3sg
+    word_filter: { pos: noun, ends_with: voiced_consonant }
+  - id: g.L22.compound.soft
+    description: "Softening: otobüs durağı, çay bardağı"
+    suffix: sfx.poss_3sg
+    word_filter: { pos: noun, flags: [soft] }
+  - id: g.L22.compound.vs_gen
+    description: "Type (okul kapısı) vs owner (okulun kapısı)"
+  - id: g.L22.compound.plural
+    description: "Plural: Türk kahveleri (-lAr before the -I)"
+
+feedback:
+  vowel_back: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_front: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_round: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  detached: "The ending is **attached** to the second noun: **{answer}**."
+  # used by the per-item feedback maps
+  needs_poss: "In a compound the second noun takes **-(s)I**: **{answer}**."
+  soften: "Softening (L17): before a vowel, final **p ç t k** → **b c d ğ**: **{answer}**."
+  plural: "In the plural, -lAr comes first and the -(s)I moves to the end: **{answer}**."
+  no_gen: "A *type* of thing has no genitive on the first noun: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

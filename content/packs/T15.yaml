@@ -1,0 +1,13 @@
+id: T15
+title: Clothes
+kind: elective
+packs:
+  - id: T15.p1
+    unlock_after: L24
+    words: [w.gömlek, w.tişört, w.etek, w.elbise, w.mont, w.kazak, w.ayakkabı, w.çorap]
+    frames: [s.T15.001, s.T15.002]
+  - id: T15.p2
+    unlock_after: L24
+    words: [w.şapka, w.eldiven, w.atkı, w.kemer, w.gözlük, w.pijama, w.terlik, w.palto]
+    frames: [s.T15.003, s.T15.004]
+revisit: [L25, L29]

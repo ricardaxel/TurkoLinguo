@@ -1,0 +1,138 @@
+# L20 — possessives (plural owners) + softening review. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L20
+title: "Possessives (plural owners)"
+grammar: g.L20.poss_pl
+new_words: [w.sınıf]
+not_yet:
+  - "the genitive with nouns (Ali'nin arabası); bizim / sizin / onların are shown here only as words for emphasis → L21"
+  - "having (Arabamız var) → L23"
+  - "a case after a possessive (evimizde, evlerinde) → L24"
+  - "evleri 'their house / his houses / their houses' is explained, not drilled"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🏠 **Bu bizim evimiz.** "This is our house."
+          🚗 **Sizin arabanız nerede?** "Where is your car?"
+
+          *our* and *your* (plural / polite) are the L19 endings plus **-Iz**: ev·im → ev·im·**iz**.
+        sentences: [s.L20.001, s.L20.003]
+        audio: [aud.own.s.L20.001, aud.own.s.L20.003]
+
+      - kind: rule
+        title: "our, your, their"
+        body: |
+          | | ev | okul | araba |
+          |---|---|---|---|
+          | our | ev·**imiz** | okul·**umuz** | araba·**mız** |
+          | your (pl. / polite) | ev·**iniz** | okul·**unuz** | araba·**nız** |
+          | their | ev·**leri** | okul·**ları** | araba·**ları** |
+
+          **our / your:** both vowels follow 4-way harmony. After a vowel, the first one drops: araba·**mız**.
+
+          **their = -lArI** for every word. Only 2-way harmony at the start: **-leri / -ları**.
+        sentences: [s.L20.005, s.L20.010]
+        audio: [aud.own.s.L20.005, aud.own.s.L20.010]
+
+      - kind: rule
+        title: "Softening review"
+        body: |
+          *our* and *your* start with a vowel, so the L17 changes apply:
+
+          kitap → kitab·**ımız** · sokak → sokağ·**ımız** · oğul → oğl·**umuz** · renk → reng·**iniz**
+
+          *their* starts with **l**, a consonant, so nothing changes: kitap·**ları**, çocuk·**ları**, oğul·**ları**.
+        sentences: [s.L20.012, s.L20.011]
+        audio: [aud.own.s.L20.012, aud.own.s.L20.011]
+
+      - kind: rule
+        title: "Plural + possessive"
+        body: |
+          The plural comes **first**, then the possessive:
+
+          kitap·**lar**·ım "my books" · arkadaş·**lar**·ımız "our friends" · çocuk·**lar**·ımız "our children"
+
+          ❌ ~~kitapımlar~~
+        sentences: [s.L20.021, s.L20.019]
+        audio: [aud.own.s.L20.019]
+
+      - kind: note
+        title: "evleri: three meanings"
+        body: |
+          | ev·**leri** | their house |
+          |---|---|
+          | ev·ler·**i** | his / her houses |
+          | ev·**leri** | their houses (not ~~evlerleri~~) |
+
+          Context usually tells them apart. A pronoun makes it explicit: **onların evi** "their house", **onun evleri** "his / her houses".
+
+          💡 With *onların*, people usually use the simple *-(s)I*: *Onların evi İzmir'de.* "Their house is in Izmir."
+        sentences: [s.L20.007, s.L20.006]
+        audio: [aud.own.s.L20.007, aud.own.s.L20.006]
+
+      - kind: summary
+        title: "All six"
+        body: |
+          | | after a consonant | after a vowel |
+          |---|---|---|
+          | my | ev·im | araba·m |
+          | your | ev·in | araba·n |
+          | his / her | ev·i | araba·sı |
+          | our | ev·imiz | araba·mız |
+          | your (pl.) | ev·iniz | araba·nız |
+          | their | ev·leri | araba·ları |
+
+          Pronouns for emphasis: **benim, senin, onun, bizim, sizin, onların**.
+        audio: [aud.own.L20_summary]
+
+    items:
+      - { id: L20.learn.01, type: type_form, grammar: [g.L20.poss_pl], pattern: g.L20.poss_pl.cons_1pl, base: w.ev, suffixes: [sfx.poss_1pl], prompt: "our house", answer: evimiz, feedback: { evmiz: "**ev** ends in a consonant, so the ending starts with a vowel: **ev·imiz**.", evımız: "**ev** has a front vowel (e) → **-imiz**: evimiz." } }
+      - { id: L20.learn.02, type: pick_suffix, grammar: [g.L20.poss_pl], pattern: g.L20.poss_pl.any_2pl, base: w.araba, suffix: sfx.poss_2pl, options: [nız, ınız, niz, nuz], answer: nız, feedback: "auto:g.L20.poss_pl" }
+      - { id: L20.learn.03, type: pick_suffix, grammar: [g.L20.poss_pl], pattern: g.L20.poss_pl.any_3pl, base: w.okul, suffix: sfx.poss_3pl, options: [ları, leri, ı, sı], answer: ları, feedback: { leri: "The last vowel of **okul** is u, a back vowel → **-ları**.", ı: "**-ı** is *his / her*. *their* is **-ları**: okulları.", sı: "**okul** ends in a consonant, and *their* is **-ları**: okulları." } }
+      - { id: L20.learn.04, type: build_word, grammar: [g.L20.poss_pl, g.L4.plural], pattern: g.L20.poss_pl.pl_poss, tiles: [arkadaş, lar, ımız], answer: "arkadaş·lar·ımız", feedback: { "arkadaş·ımız·lar": "The plural comes first, then the possessive: **arkadaş·lar·ımız**." } }
+      - id: L20.learn.05
+        type: contrast_pair
+        grammar: [g.L20.poss_pl, g.L19.poss_sg]
+        prompt: "Their mother is a doctor."
+        options: [s.L20.014, s.L20.015]
+        answer: s.L20.014
+        note: "anneleri 'their mother' vs annesi 'his / her mother'."
+      - id: L20.learn.06
+        type: listen_choose
+        grammar: [g.L20.poss_pl, g.L7.question]
+        sentence: s.L20.003
+        options: ["Where is your car?", "Where is our car?", "Where is their car?"]
+        answer: "Where is your car?"
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L20.practise.01, type: type_form, grammar: [g.L20.poss_pl], pattern: g.L20.poss_pl.any_2pl, base: w.okul, suffixes: [sfx.poss_2pl], prompt: "your (plural / polite) school", answer: okulunuz, feedback: { okulınız: "4-way harmony: after **o / u** → **u**: okulunuz.", okulunız: "Both vowels follow the last vowel of **okul** (u): **okulunuz**." } }
+      - { id: L20.practise.02, type: type_form, grammar: [g.L20.poss_pl], pattern: g.L20.poss_pl.soft, base: w.kitap, suffixes: [sfx.poss_1pl], prompt: "our book", answer: kitabımız, feedback: { kitapımız: "Softening (L17): before a vowel, final **p** → **b**: **kitabımız**." } }
+      - { id: L20.practise.03, type: type_form, grammar: [g.L20.poss_pl], base: w.oğul, suffixes: [sfx.poss_1pl], prompt: "our son", answer: oğlumuz, feedback: { oğulumuz: "**oğul** drops its last vowel before a vowel ending: **oğlumuz**." } }
+      - { id: L20.practise.04, type: type_form, grammar: [g.L20.poss_pl], pattern: g.L20.poss_pl.any_3pl, base: w.çocuk, suffixes: [sfx.poss_3pl], prompt: "their child", answer: çocukları, feedback: { çocuğları: "-lArI starts with a consonant, so **çocuk** doesn't change: **çocukları**.", çocuğu: "**çocuğu** is *his / her* child. *their* is **-ları**: çocukları." } }
+      - { id: L20.practise.05, type: type_form, grammar: [g.L20.poss_pl], base: w.saat, suffixes: [sfx.poss_1pl], prompt: "our clock", answer: saatimiz, feedback: { saatımız: "**saat** is an exception: it takes front-vowel endings: **saatimiz**." } }
+      - { id: L20.practise.06, type: spot_error, grammar: [g.L20.poss_pl, g.L3.basics], text: "Bu bizim evmiz.", error: evmiz, answer: evimiz, sentence: s.L20.001, feedback: { evmiz: "**ev** ends in a consonant, so the ending starts with a vowel: **ev·imiz**." } }
+      - { id: L20.practise.07, type: translate_to_en, grammar: [g.L20.poss_pl, g.L3.basics], sentence: s.L20.007, note: "evleri: their house / their houses / his (her) houses. All are accepted." }
+      - { id: L20.practise.08, type: translate_to_tr, grammar: [g.L20.poss_pl, g.L7.question], sentence: s.L20.003, typed: true, answers: ["Arabanız nerede?"] }
+      - { id: L20.practise.09, type: translate_to_tr, grammar: [g.L20.poss_pl, g.L10.loc], sentence: s.L20.018, word_bank: [Annemiz, Anneniz, Annemız, mutfakta, mutfağta] }
+      - { id: L20.practise.10, type: dictation, grammar: [g.L20.poss_pl, g.L3.basics], sentence: s.L20.009 }
+      - { id: L20.practise.11, type: translate_to_tr, grammar: [g.L20.poss_pl, g.L4.plural, g.L10.loc], pattern: g.L20.poss_pl.pl_poss, sentence: s.L20.019, word_bank: [Arkadaşlarımız, Arkadaşımızlar, parkta, parkda] }
+      - { id: L20.practise.12, type: translate_to_en, grammar: [g.L20.poss_pl, g.L15.prog, g.L17.dat], sentence: s.L20.020 }
+      - id: L20.practise.13
+        type: contrast_pair
+        grammar: [g.L20.poss_pl, g.L3.basics]
+        prompt: "Our teacher is Turkish."
+        options: [s.L20.005, s.L20.022]
+        answer: s.L20.005
+      - { id: L20.practise.14, type: spot_error, grammar: [g.L20.poss_pl, g.L3.basics], text: "Bizim sokakımız yeni.", error: sokakımız, answer: sokağımız, sentence: s.L20.012, feedback: { sokakımız: "Softening (L17): before a vowel, final **k** → **ğ**: **sokağımız**." } }
+      - id: L20.practise.15
+        type: mini_dialogue
+        grammar: [g.L20.poss_pl, g.L7.question]
+        images: [img.openmoji.bag]
+        turns:
+          - { speaker: A, sentence: s.L20.016 }
+          - { speaker: B, blank: true, answers: ["Evet, (bu) (bizim) çantamız."] }

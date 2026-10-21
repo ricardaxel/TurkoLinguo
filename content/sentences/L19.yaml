@@ -1,0 +1,250 @@
+# Sentences used by lesson L19. `words` and `grammar` are hand-tagged for now.
+# benim / senin / onun are tagged as the pronoun (w.ben …); the genitive itself is taught in L21.
+
+- id: s.L19.001
+  tr: Bu benim evim.
+  en: ["This is my house.", "This is my home."]
+  words: [w.bu, w.ben, w.ev]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.001
+  native_required: true        # the possessive ending is stressed
+
+- id: s.L19.002
+  tr: Arabam yeni.
+  en: ["My car is new."]
+  words: [w.araba, w.yeni]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.002
+
+- id: s.L19.003
+  tr: Annem evde.
+  en: ["My mother is at home.", "My mum is at home.", "My mom is at home."]
+  words: [w.anne, w.ev]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.003
+
+- id: s.L19.004
+  tr: Senin kitabın nerede?
+  en: ["Where is your book?", "Where's your book?"]
+  words: [w.sen, w.kitap, w.nerede]
+  grammar: [g.L7.question, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.004
+  native_required: true        # question intonation
+
+- id: s.L19.005
+  tr: Kitabım çantada.
+  en: ["My book is in the bag."]
+  words: [w.kitap, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.005
+
+- id: s.L19.006
+  tr: Adın ne?
+  en: ["What's your name?", "What is your name?"]
+  words: [w.ad, w.ne]
+  grammar: [g.L7.question, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.006
+  native_required: true        # question intonation
+
+- id: s.L19.007
+  tr: Adım Ayşe.
+  en: ["My name is Ayşe.", "My name's Ayşe."]
+  words: [w.ad, w.Ayşe]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.007
+
+- id: s.L19.008
+  tr: Onun adı Ali.
+  en: ["His name is Ali.", "His name's Ali."]
+  words: [w.o, w.ad, w.Ali]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.008
+
+- id: s.L19.009
+  tr: Oğlum okulda.
+  en: ["My son is at school.", "My son is in school."]
+  words: [w.oğul, w.okul]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.009
+
+- id: s.L19.010
+  tr: Benim şehrim büyük.
+  en: ["My city is big.", "My town is big."]
+  words: [w.ben, w.şehir, w.büyük]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.010
+
+- id: s.L19.011
+  tr: Saatim masada.
+  en: ["My watch is on the table.", "My clock is on the table."]
+  words: [w.saat, w.masa]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.011
+
+- id: s.L19.012
+  tr: Suyun masada.
+  en: ["Your water is on the table."]
+  words: [w.su, w.masa]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.012
+
+- id: s.L19.013
+  tr: Yatak odam küçük.
+  en: ["My bedroom is small."]
+  words: [w.yatak_odası, w.küçük]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.013
+
+- id: s.L19.014
+  tr: Arkadaşım İstanbul'da.
+  en: ["My friend is in Istanbul.", "My friend is in İstanbul."]
+  words: [w.arkadaş, w.İstanbul]
+  grammar: [g.L3.basics, g.L10.loc, g.L11.loc_copula, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.014
+
+- id: s.L19.015
+  tr: Babası doktor.
+  en: ["His father is a doctor.", "Her father is a doctor."]
+  words: [w.baba, w.doktor]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.015
+
+- id: s.L19.016
+  tr: Evi büyük.
+  en: ["His house is big.", "Her house is big.", "Its house is big."]
+  words: [w.ev, w.büyük]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.016
+
+- id: s.L19.017
+  tr: Kedin bahçede.
+  en: ["Your cat is in the garden."]
+  words: [w.kedi, w.bahçe]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.017
+
+- id: s.L19.018
+  tr: Çocuğu parkta.
+  en: ["His child is in the park.", "Her child is in the park.", "His child is at the park.", "Her child is at the park."]
+  words: [w.çocuk, w.park]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.018
+
+- id: s.L19.019
+  tr: Telefonun nerede?
+  en: ["Where is your phone?", "Where's your phone?"]
+  words: [w.telefon, w.nerede]
+  grammar: [g.L7.question, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.019
+  native_required: true        # question intonation
+
+- id: s.L19.020
+  tr: Benim adım Ahmet.
+  en: ["My name is Ahmet.", "My name's Ahmet."]
+  words: [w.ben, w.ad, w.Ahmet]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.020
+
+- id: s.L19.021
+  tr: Kardeşim öğrenci.
+  en: ["My brother is a student.", "My sister is a student.", "My sibling is a student."]
+  words: [w.kardeş, w.öğrenci]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.021
+
+- id: s.L19.022
+  tr: Kahven burada.
+  en: ["Your coffee is here.", "Here's your coffee."]
+  words: [w.kahve, w.burada]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.022
+
+- id: s.L19.023
+  tr: Ben öğretmenim.
+  en: ["I'm a teacher.", "I am a teacher."]
+  words: [w.ben, w.öğretmen]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L19.023
+  native_required: true        # copula unstressed: öğretMENim
+
+- id: s.L19.024
+  tr: Bu benim öğretmenim.
+  en: ["This is my teacher."]
+  words: [w.bu, w.ben, w.öğretmen]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.024
+  native_required: true        # possessive stressed: öğretmeNİM
+
+- id: s.L19.025
+  tr: Öğretmenim okulda.
+  en: ["My teacher is at school.", "My teacher is in the school."]
+  words: [w.öğretmen, w.okul]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.025
+  native_required: true        # the possessive ending is stressed
+
+- id: s.L19.026
+  tr: Öğretmeni okulda.
+  en: ["His teacher is at school.", "Her teacher is at school."]
+  words: [w.öğretmen, w.okul]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.026
+
+- id: s.L19.027
+  tr: Bu senin kitabın mı?
+  en: ["Is this your book?"]
+  words: [w.bu, w.sen, w.kitap]
+  grammar: [g.L3.basics, g.L7.question, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.027
+  native_required: true        # question intonation
+
+- id: s.L19.028
+  tr: Evet, bu benim kitabım.
+  en: ["Yes, this is my book.", "Yes, it's my book."]
+  words: [w.evet, w.bu, w.ben, w.kitap]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.028
+
+- id: s.L19.029
+  tr: Annem çay içiyor.
+  en: ["My mother is drinking tea.", "My mum is drinking tea.", "My mom is drinking tea."]
+  words: [w.anne, w.çay, w.içmek]
+  grammar: [g.L15.prog, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.029
+
+- id: s.L19.030
+  tr: Onun arabası kırmızı.
+  en: ["His car is red.", "Her car is red."]
+  words: [w.o, w.araba, w.kırmızı]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L19.030
