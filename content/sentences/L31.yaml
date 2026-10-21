@@ -1,0 +1,189 @@
+# Sentences used by lesson L31 (past: negative & questions). `words` and `grammar` are hand-tagged.
+
+- id: s.L31.001
+  tr: Dün gelmedim.
+  en: ["I didn't come yesterday.", "I did not come yesterday."]
+  words: [w.dün, w.gelmek]
+  grammar: [g.L30.past, g.L31.past_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L31.001
+  native_required: true        # stress before -mA
+
+- id: s.L31.002
+  tr: Dün kitap okumadım.
+  en: ["I didn't read a book yesterday.", "I didn't read yesterday."]
+  words: [w.dün, w.kitap, w.okumak]
+  grammar: [g.L30.past, g.L31.past_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L31.002
+  native_required: true        # stress before -mA
+
+- id: s.L31.003
+  tr: Geldin mi?
+  en: ["Did you come?", "Have you come?", "Are you here?"]
+  words: [w.gelmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.003
+  native_required: true
+
+- id: s.L31.004
+  tr: Evet, geldim.
+  en: ["Yes, I came.", "Yes, I did.", "Yes, I've come."]
+  words: [w.evet, w.gelmek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L31.004
+
+- id: s.L31.005
+  tr: Hayır, gelmedim.
+  en: ["No, I didn't come.", "No, I didn't.", "No, I haven't come."]
+  words: [w.hayır, w.gelmek]
+  grammar: [g.L30.past, g.L31.past_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L31.005
+  native_required: true        # stress before -mA
+
+- id: s.L31.006
+  tr: Geliyor musun?
+  en: ["Are you coming?"]
+  words: [w.gelmek]
+  grammar: [g.L15.prog, g.L16.prog_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.006
+  native_required: true
+
+- id: s.L31.007
+  tr: Çay içtin mi?
+  en: ["Did you drink tea?", "Did you have tea?", "Have you had tea?"]
+  words: [w.çay, w.içmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.007
+  native_required: true
+
+- id: s.L31.008
+  tr: Ali geldi mi?
+  en: ["Did Ali come?", "Has Ali come?", "Has Ali arrived?"]
+  words: [w.Ali, w.gelmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.008
+  native_required: true
+
+- id: s.L31.009
+  tr: Dün okula gittiniz mi?
+  en: ["Did you go to school yesterday?"]
+  words: [w.dün, w.okul, w.gitmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L31.009
+  native_required: true
+
+- id: s.L31.010
+  tr: Geldiler mi?
+  en: ["Did they come?", "Have they come?", "Have they arrived?"]
+  words: [w.gelmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.010
+  native_required: true
+
+- id: s.L31.011
+  tr: Gelmedin mi?
+  en: ["Didn't you come?", "Did you not come?", "Haven't you come?"]
+  words: [w.gelmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.011
+  native_required: true
+
+- id: s.L31.012
+  tr: Ne zaman geldin?
+  en: ["When did you come?", "When did you arrive?"]
+  words: [w.ne_zaman, w.gelmek]
+  grammar: [g.L30.past, g.L31.past_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L31.012
+  native_required: true        # question intonation
+
+- id: s.L31.013
+  tr: Ayşe dün okula gitmedi.
+  en: ["Ayşe didn't go to school yesterday.", "Yesterday Ayşe didn't go to school."]
+  words: [w.Ayşe, w.dün, w.okul, w.gitmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L31.013
+  native_required: true        # stress before -mA
+
+- id: s.L31.014
+  tr: Dün akşam film izlemedik.
+  en: ["We didn't watch a film last night.", "We didn't watch a movie last night.", "We didn't watch a film yesterday evening."]
+  words: [w.dün, w.akşam, w.film, w.izlemek]
+  grammar: [g.L30.past, g.L31.past_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L31.014
+  native_required: true        # stress before -mA
+
+- id: s.L31.015
+  tr: Kahvaltı yaptın mı?
+  en: ["Did you have breakfast?", "Have you had breakfast?"]
+  words: [w.kahvaltı, w.yapmak]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.015
+  native_required: true
+
+- id: s.L31.016
+  tr: Hayır, yapmadım.
+  en: ["No, I didn't.", "No, I haven't."]
+  words: [w.hayır, w.yapmak]
+  grammar: [g.L30.past, g.L31.past_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L31.016
+  native_required: true        # stress before -mA
+
+- id: s.L31.017
+  tr: Gidiyor musunuz?
+  en: ["Are you going?", "Are you leaving?"]
+  words: [w.gitmek]
+  grammar: [g.L15.prog, g.L16.prog_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.017
+  native_required: true
+
+- id: s.L31.018
+  tr: Gittiniz mi?
+  en: ["Did you go?", "Have you gone?"]
+  words: [w.gitmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.018
+  native_required: true
+
+- id: s.L31.019
+  tr: Pilav yemedim.
+  en: ["I didn't eat rice.", "I didn't eat (the) pilaf.", "I didn't have rice."]
+  words: [w.pilav, w.yemek]
+  grammar: [g.L30.past, g.L31.past_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L31.019
+  native_required: true        # stress before -mA
+
+- id: s.L31.020
+  tr: Ali'yi gördün mü?
+  en: ["Did you see Ali?", "Have you seen Ali?"]
+  words: [w.Ali, w.görmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L31.020
+  native_required: true
+
+- id: s.L31.021
+  tr: Kitap okudun mu?
+  en: ["Did you read a book?", "Did you read?"]
+  words: [w.kitap, w.okumak]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L31.021
+  native_required: true

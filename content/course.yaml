@@ -41,9 +41,9 @@ lessons:
   L27: { title: "-(y)lA / ile", grammar: g.L27.ile }
   L28: { title: "-lI / -sIz, origin, -CI", grammar: g.L28.li_siz }
   L29: { title: "Comparison: daha, en", grammar: g.L29.comparison }
-  L30: { title: "Past tense -DI", grammar: g.L30.past }
-  L31: { title: "Past: negative & questions", grammar: g.L31.past_neg_q }
-  L32: { title: "Past of 'to be': -(y)DI", grammar: g.L32.copula_past }
-  L33: { title: "Future -(y)AcAK", grammar: g.L33.future }
-  L34: { title: "istemek + -mAk", grammar: g.L34.istemek }
-  L35: { title: "Need: -mAk lazım / gerek", grammar: g.L35.lazim }
+  L30: { title: "Past tense -DI", grammar: g.L30.past, file: lessons/L30.yaml }
+  L31: { title: "Past: negative & questions", grammar: g.L31.past_neg_q, file: lessons/L31.yaml }
+  L32: { title: "Past of 'to be': -(y)DI", grammar: g.L32.copula_past, file: lessons/L32.yaml }
+  L33: { title: "Future -(y)AcAK", grammar: g.L33.future, file: lessons/L33.yaml }
+  L34: { title: "istemek + -mAk", grammar: g.L34.istemek, file: lessons/L34.yaml }
+  L35: { title: "Need: -mAk lazım / gerek", grammar: g.L35.lazim, file: lessons/L35.yaml }

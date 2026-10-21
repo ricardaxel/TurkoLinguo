@@ -1,0 +1,197 @@
+# Sentences used by lesson L32 (past of "to be" -(y)DI). `words` and `grammar` are hand-tagged.
+
+- id: s.L32.001
+  tr: Dün evdeydim.
+  en: ["I was at home yesterday.", "Yesterday I was at home."]
+  words: [w.dün, w.ev]
+  grammar: [g.L32.copula_past, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L32.001
+  native_required: true        # -(y)DI is unstressed: evDEydim
+
+- id: s.L32.002
+  tr: Hastaydım.
+  en: ["I was ill.", "I was sick."]
+  words: [w.hasta]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.L32.002
+  native_required: true        # hasTAydım
+
+- id: s.L32.003
+  tr: Geçen yıl öğrenciydim.
+  en: ["I was a student last year.", "Last year I was a student."]
+  words: [w.geçen, w.yıl, w.öğrenci]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.L32.003
+  native_required: true        # -(y)DI is unstressed
+
+- id: s.L32.004
+  tr: Babam öğretmendi.
+  en: ["My father was a teacher.", "My dad was a teacher."]
+  words: [w.baba, w.öğretmen]
+  grammar: [g.L32.copula_past, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L32.004
+
+- id: s.L32.005
+  tr: Çok yorgunduk.
+  en: ["We were very tired."]
+  words: [w.çok, w.yorgun]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.L32.005
+  native_required: true        # -(y)DI is unstressed
+
+- id: s.L32.006
+  tr: Ev büyüktü.
+  en: ["The house was big.", "The house was large."]
+  words: [w.ev, w.büyük]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.L32.006
+
+- id: s.L32.007
+  tr: Geçen hafta Ankara'daydım.
+  en: ["I was in Ankara last week.", "Last week I was in Ankara."]
+  words: [w.geçen, w.hafta, w.Ankara]
+  grammar: [g.L32.copula_past, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L32.007
+  native_required: true        # place-name stress: ANkara'daydım
+
+- id: s.L32.008
+  tr: Neredeydin?
+  en: ["Where were you?"]
+  words: [w.nerede]
+  grammar: [g.L32.copula_past, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L32.008
+  native_required: true        # question intonation
+
+- id: s.L32.009
+  tr: Parktaydık.
+  en: ["We were in the park.", "We were at the park."]
+  words: [w.park]
+  grammar: [g.L32.copula_past, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L32.009
+  native_required: true        # -(y)DI is unstressed
+
+- id: s.L32.010
+  tr: Evde miydin?
+  en: ["Were you at home?", "Were you home?"]
+  words: [w.ev]
+  grammar: [g.L32.copula_past, g.L7.question, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L32.010
+  native_required: true
+
+- id: s.L32.011
+  tr: Hasta mıydın?
+  en: ["Were you ill?", "Were you sick?"]
+  words: [w.hasta]
+  grammar: [g.L32.copula_past, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L32.011
+  native_required: true
+
+- id: s.L32.012
+  tr: Hayır, hasta değildim.
+  en: ["No, I wasn't ill.", "No, I wasn't sick.", "No, I was not ill."]
+  words: [w.hayır, w.hasta, w.değil]
+  grammar: [g.L32.copula_past, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L32.012
+
+- id: s.L32.013
+  tr: Dün evde süt yoktu.
+  en: ["There was no milk at home yesterday.", "There wasn't any milk at home yesterday."]
+  words: [w.dün, w.ev, w.süt, w.yok]
+  grammar: [g.L32.copula_past, g.L8.varyok, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L32.013
+
+- id: s.L32.014
+  tr: Bahçede bir kedi vardı.
+  en: ["There was a cat in the garden."]
+  words: [w.bahçe, w.bir, w.kedi, w.var]
+  grammar: [g.L32.copula_past, g.L8.varyok, g.L10.loc, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L32.014
+
+- id: s.L32.015
+  tr: Hava soğuktu.
+  en: ["It was cold.", "The weather was cold."]
+  words: [w.hava, w.soğuk]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.L32.015
+
+- id: s.L32.016
+  tr: Dün hava güneşliydi.
+  en: ["It was sunny yesterday.", "Yesterday it was sunny.", "The weather was sunny yesterday."]
+  words: [w.dün, w.hava, w.güneşli]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.L32.016
+
+- id: s.L32.017
+  tr: Hasta idim.
+  en: ["I was ill.", "I was sick."]
+  words: [w.hasta]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.L32.017
+
+- id: s.L32.018
+  tr: Öğrenci miydiniz?
+  en: ["Were you students?", "Were you a student?"]
+  words: [w.öğrenci]
+  grammar: [g.L32.copula_past, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L32.018
+  native_required: true
+
+- id: s.L32.019
+  tr: Çocuklar bahçedeydi.
+  en: ["The children were in the garden.", "The kids were in the garden."]
+  words: [w.çocuk, w.bahçe]
+  grammar: [g.L32.copula_past, g.L4.plural, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L32.019
+
+- id: s.L32.020
+  tr: Çay sıcaktı.
+  en: ["The tea was hot."]
+  words: [w.çay, w.sıcak]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.L32.020
+
+- id: s.L32.021
+  tr: Evde değildim.
+  en: ["I wasn't at home.", "I wasn't home.", "I was not at home."]
+  words: [w.ev, w.değil]
+  grammar: [g.L32.copula_past, g.L6.degil, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L32.021
+
+- id: s.L32.022
+  tr: Hastayım.
+  en: ["I'm ill.", "I am sick.", "I'm sick."]
+  words: [w.hasta]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L32.022
+  native_required: true        # hasTAyım
+
+- id: s.L32.023
+  tr: Evdeydiniz.
+  en: ["You were at home.", "You were home."]
+  words: [w.ev]
+  grammar: [g.L32.copula_past, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L32.023
+  native_required: true        # -(y)DI is unstressed

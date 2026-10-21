@@ -1,0 +1,13 @@
+id: T21
+title: Travel & holidays
+kind: elective
+packs:
+  - id: T21.p1
+    unlock_after: L32
+    words: [w.tatil, w.deniz, w.plaj, w.dağ, w.pasaport, w.bavul, w.harita, w.kamp]
+    frames: [s.T21.001, s.T21.002, s.T21.003]
+  - id: T21.p2
+    unlock_after: L34
+    words: [w.rezervasyon, w.turist, w.rehber, w.yolculuk, w.hediye, w.fotoğraf, w.manzara, w.ada]
+    frames: [s.T21.004, s.T21.005]
+revisit: [L33, L34, L35]

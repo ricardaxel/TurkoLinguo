@@ -1,0 +1,214 @@
+# Sentences used by lesson L30 (past -DI). `words` and `grammar` are hand-tagged for now.
+# Verbs are tagged by their dictionary form (w.gelmek); the tense ending is grammar, not a word.
+
+- id: s.L30.001
+  tr: Dün geldim.
+  en: ["I came yesterday.", "I arrived yesterday."]
+  words: [w.dün, w.gelmek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.001
+
+- id: s.L30.002
+  tr: Dün okula gittim.
+  en: ["I went to school yesterday.", "Yesterday I went to school."]
+  words: [w.dün, w.okul, w.gitmek]
+  grammar: [g.L30.past, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L30.002
+
+- id: s.L30.003
+  tr: Dün evde kitap okudum.
+  en: ["I read a book at home yesterday.", "Yesterday I read a book at home.", "I read at home yesterday."]
+  words: [w.dün, w.ev, w.kitap, w.okumak]
+  grammar: [g.L30.past, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L30.003
+
+- id: s.L30.004
+  tr: Çay içtim.
+  en: ["I drank tea.", "I had tea.", "I had some tea."]
+  words: [w.çay, w.içmek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.004
+
+- id: s.L30.005
+  tr: Ne yaptın?
+  en: ["What did you do?"]
+  words: [w.ne, w.yapmak]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.005
+  native_required: true        # question intonation
+
+- id: s.L30.006
+  tr: Film izledim.
+  en: ["I watched a film.", "I watched a movie."]
+  words: [w.film, w.izlemek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.006
+
+- id: s.L30.007
+  tr: Ali geldi.
+  en: ["Ali came.", "Ali has come.", "Ali arrived."]
+  words: [w.Ali, w.gelmek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.007
+
+- id: s.L30.008
+  tr: Dün akşam pilav yedik.
+  en: ["We ate rice last night.", "We had rice last night.", "We ate pilaf yesterday evening.", "We had pilaf yesterday evening."]
+  words: [w.dün, w.akşam, w.pilav, w.yemek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.008
+
+- id: s.L30.009
+  tr: Geçen hafta İzmir'e gittiniz.
+  en: ["You went to Izmir last week.", "Last week you went to Izmir.", "You went to İzmir last week."]
+  words: [w.geçen, w.hafta, w.İzmir, w.gitmek]
+  grammar: [g.L30.past, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L30.009
+  native_required: true        # place-name stress
+
+- id: s.L30.010
+  tr: Onlar geçen yıl Türkiye'ye geldiler.
+  en: ["They came to Türkiye last year.", "They came to Turkey last year.", "Last year they came to Turkey."]
+  words: [w.onlar, w.geçen, w.yıl, w.Türkiye, w.gelmek]
+  grammar: [g.L30.past, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L30.010
+  native_required: true        # place-name stress
+
+- id: s.L30.011
+  tr: Ben de çay içtim.
+  en: ["I drank tea too.", "I had tea too.", "I also had tea."]
+  words: [w.ben, w.de, w.çay, w.içmek]
+  grammar: [g.L30.past, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L30.011
+
+- id: s.L30.012
+  tr: Evet dedim.
+  en: ["I said yes."]
+  words: [w.evet, w.demek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.012
+
+- id: s.L30.013
+  tr: Kahvaltı yaptım.
+  en: ["I had breakfast.", "I made breakfast."]
+  words: [w.kahvaltı, w.yapmak]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.013
+
+- id: s.L30.014
+  tr: Dün çok çalıştım.
+  en: ["I worked a lot yesterday.", "I studied a lot yesterday.", "Yesterday I worked a lot."]
+  words: [w.dün, w.çok, w.çalışmak]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.014
+
+- id: s.L30.015
+  tr: Müzik dinledik.
+  en: ["We listened to music."]
+  words: [w.müzik, w.dinlemek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.015
+
+- id: s.L30.016
+  tr: Ayşe dün geldi ama Ahmet bugün geldi.
+  en: ["Ayşe came yesterday but Ahmet came today.", "Ayşe came yesterday, but Ahmet came today."]
+  words: [w.Ayşe, w.dün, w.gelmek, w.ama, w.Ahmet, w.bugün]
+  grammar: [g.L30.past, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L30.016
+
+- id: s.L30.017
+  tr: Saat yedide kalktım.
+  en: ["I got up at seven.", "I got up at seven o'clock."]
+  words: [w.saat, w.yedi, w.kalkmak]
+  grammar: [g.L30.past, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L30.017
+
+- id: s.L30.018
+  tr: Eve gittik.
+  en: ["We went home."]
+  words: [w.ev, w.gitmek]
+  grammar: [g.L30.past, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L30.018
+
+- id: s.L30.019
+  tr: Bugün kahve içtim.
+  en: ["I drank coffee today.", "I had coffee today.", "Today I had coffee."]
+  words: [w.bugün, w.kahve, w.içmek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.019
+
+- id: s.L30.020
+  tr: Kahve içiyorum.
+  en: ["I'm drinking coffee.", "I am drinking coffee."]
+  words: [w.kahve, w.içmek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L30.020
+
+- id: s.L30.021
+  tr: Ali'yi gördüm.
+  en: ["I saw Ali."]
+  words: [w.Ali, w.görmek]
+  grammar: [g.L30.past, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L30.021
+
+- id: s.L30.022
+  tr: Futbol oynadık.
+  en: ["We played football.", "We played soccer."]
+  words: [w.futbol, w.oynamak]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.022
+
+- id: s.L30.023
+  tr: Ahmet ve Ayşe geldiler.
+  en: ["Ahmet and Ayşe came.", "Ahmet and Ayşe arrived."]
+  words: [w.Ahmet, w.ve, w.Ayşe, w.gelmek]
+  grammar: [g.L30.past, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L30.023
+
+- id: s.L30.024
+  tr: Dün ne yaptın?
+  en: ["What did you do yesterday?"]
+  words: [w.dün, w.ne, w.yapmak]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.024
+  native_required: true        # question intonation
+
+- id: s.L30.025
+  tr: Geldik.
+  en: ["We came.", "We've arrived.", "We arrived."]
+  words: [w.gelmek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.025
+
+- id: s.L30.026
+  tr: Geldiniz.
+  en: ["You came.", "You've arrived.", "You arrived."]
+  words: [w.gelmek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L30.026

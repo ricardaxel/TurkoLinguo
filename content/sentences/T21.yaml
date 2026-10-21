@@ -1,0 +1,43 @@
+# Frame sentences for theme T21 (Travel & holidays, elective).
+# Pack 1 unlocks after L32 (grammar up to the past of "to be"); pack 2 after L34.
+
+- id: s.T21.001
+  tr: Geçen yaz Antalya'daydım.
+  en: ["I was in Antalya last summer.", "Last summer I was in Antalya."]
+  words: [w.geçen, w.yaz, w.Antalya]
+  grammar: [g.L32.copula_past, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.T21.001
+  native_required: true        # place-name stress
+
+- id: s.T21.002
+  tr: Tatilde denizde yüzdük.
+  en: ["We swam in the sea on holiday.", "On vacation we swam in the sea."]
+  words: [w.tatil, w.deniz, w.yüzmek]
+  grammar: [g.L30.past, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.T21.002
+
+- id: s.T21.003
+  tr: Pasaportum bavulda.
+  en: ["My passport is in the suitcase.", "My passport is in my suitcase."]
+  words: [w.pasaport, w.bavul]
+  grammar: [g.L19.poss_sg, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.T21.003
+
+- id: s.T21.004
+  tr: Adaya gitmek istiyoruz.
+  en: ["We want to go to the island.", "We'd like to go to the island."]
+  words: [w.ada, w.gitmek, w.istemek]
+  grammar: [g.L34.istemek, g.L17.dat, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.T21.004
+
+- id: s.T21.005
+  tr: Yolculuk çok güzeldi.
+  en: ["The trip was very nice.", "The journey was really nice.", "The trip was lovely."]
+  words: [w.yolculuk, w.çok, w.güzel]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.T21.005

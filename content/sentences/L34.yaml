@@ -1,0 +1,152 @@
+# Sentences used by lesson L34 (istemek + -mAk). `words` and `grammar` are hand-tagged.
+
+- id: s.L34.001
+  tr: Çay istiyorum.
+  en: ["I want tea.", "I'd like tea.", "I'd like some tea."]
+  words: [w.çay, w.istemek]
+  grammar: [g.L15.prog, g.L34.istemek]
+  source: { kind: original }
+  audio: aud.own.s.L34.001
+
+- id: s.L34.002
+  tr: Çay içmek istiyorum.
+  en: ["I want to drink tea.", "I'd like to drink tea.", "I want to have tea."]
+  words: [w.çay, w.içmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L34.002
+
+- id: s.L34.003
+  tr: Ne yapmak istiyorsun?
+  en: ["What do you want to do?", "What would you like to do?"]
+  words: [w.ne, w.yapmak, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L34.003
+  native_required: true        # question intonation
+
+- id: s.L34.004
+  tr: Uyumak istiyorum.
+  en: ["I want to sleep.", "I'd like to sleep."]
+  words: [w.uyumak, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L34.004
+
+- id: s.L34.005
+  tr: Kahve istemiyorum.
+  en: ["I don't want coffee.", "I don't want any coffee."]
+  words: [w.kahve, w.istemek]
+  grammar: [g.L34.istemek, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L34.005
+  native_required: true        # stress before -mA
+
+- id: s.L34.006
+  tr: Gitmek istemiyorum.
+  en: ["I don't want to go."]
+  words: [w.gitmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L34.006
+  native_required: true        # stress before -mA
+
+- id: s.L34.007
+  tr: Çay istiyor musun?
+  en: ["Do you want tea?", "Would you like tea?", "Would you like some tea?"]
+  words: [w.çay, w.istemek]
+  grammar: [g.L34.istemek, g.L16.prog_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L34.007
+  native_required: true
+
+- id: s.L34.008
+  tr: Yüzmek istiyor musun?
+  en: ["Do you want to swim?", "Do you want to go swimming?", "Would you like to swim?"]
+  words: [w.yüzmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L16.prog_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L34.008
+  native_required: true
+
+- id: s.L34.009
+  tr: Antalya'ya gitmek istiyoruz.
+  en: ["We want to go to Antalya.", "We'd like to go to Antalya."]
+  words: [w.Antalya, w.gitmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L34.009
+  native_required: true        # place-name stress
+
+- id: s.L34.010
+  tr: Ali film izlemek istiyor.
+  en: ["Ali wants to watch a film.", "Ali wants to watch a movie."]
+  words: [w.Ali, w.film, w.izlemek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L34.010
+
+- id: s.L34.011
+  tr: Ne istiyorsun?
+  en: ["What do you want?", "What would you like?"]
+  words: [w.ne, w.istemek]
+  grammar: [g.L34.istemek, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L34.011
+  native_required: true        # question intonation
+
+- id: s.L34.012
+  tr: Su istiyorum.
+  en: ["I want water.", "I'd like water.", "I'd like some water."]
+  words: [w.su, w.istemek]
+  grammar: [g.L34.istemek, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L34.012
+
+- id: s.L34.013
+  tr: Bu akşam evde oturmak istiyorum.
+  en: ["I want to stay at home this evening.", "I want to stay home tonight.", "I'd like to stay in this evening."]
+  words: [w.bu, w.akşam, w.ev, w.oturmak, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L34.013
+
+- id: s.L34.014
+  tr: Kitap okumak istiyorum.
+  en: ["I want to read a book.", "I want to read."]
+  words: [w.kitap, w.okumak, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L34.014
+
+- id: s.L34.015
+  tr: Onlar pilav yemek istiyorlar.
+  en: ["They want to eat rice.", "They want to eat pilaf.", "They'd like to eat rice."]
+  words: [w.onlar, w.pilav, w.yemek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L34.015
+
+- id: s.L34.016
+  tr: Ben de gelmek istiyorum.
+  en: ["I want to come too.", "I'd like to come too.", "I also want to come."]
+  words: [w.ben, w.de, w.gelmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L34.016
+
+- id: s.L34.017
+  tr: Dün film izlemek istedim.
+  en: ["I wanted to watch a film yesterday.", "Yesterday I wanted to watch a movie."]
+  words: [w.dün, w.film, w.izlemek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.L34.017
+
+- id: s.L34.018
+  tr: Tatile gitmek istiyorum.
+  en: ["I want to go on holiday.", "I want to go on vacation."]
+  words: [w.tatil, w.gitmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L34.018

@@ -1,0 +1,43 @@
+# Frame sentences for theme T20 (Weather & seasons, core).
+# Pack 1 unlocks after L31 (grammar up to the past -DI); pack 2 after L33.
+# "Yağmur yağıyor" = "it's raining": rain + the verb yağmak "to fall (rain, snow)".
+
+- id: s.T20.001
+  tr: Dün kar yağdı.
+  en: ["It snowed yesterday.", "Yesterday it snowed."]
+  words: [w.dün, w.kar, w.yağmak]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.T20.001
+
+- id: s.T20.002
+  tr: Bugün yağmur yağıyor.
+  en: ["It's raining today.", "It is raining today.", "Today it's raining."]
+  words: [w.bugün, w.yağmur, w.yağmak]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.T20.002
+
+- id: s.T20.003
+  tr: Hava güneşli.
+  en: ["It's sunny.", "The weather is sunny.", "It is sunny."]
+  words: [w.hava, w.güneşli]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T20.003
+
+- id: s.T20.004
+  tr: Dün hava rüzgârlıydı.
+  en: ["It was windy yesterday.", "Yesterday it was windy.", "The weather was windy yesterday."]
+  words: [w.dün, w.hava, w.rüzgârlı]
+  grammar: [g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.T20.004
+
+- id: s.T20.005
+  tr: İlkbaharda hava serin.
+  en: ["In spring the weather is cool.", "It's cool in spring."]
+  words: [w.ilkbahar, w.hava, w.serin]
+  grammar: [g.L10.loc, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T20.005

@@ -199,3 +199,176 @@
 - { id: aud.own.s.L13.021, kind: audio, source: own, license: OWN, status: planned, text: "Ali de." }
 - { id: aud.own.s.L13.022, kind: audio, source: own, license: OWN, status: planned, text: "Ali'de." }
 - { id: aud.own.s.L13.023, kind: audio, source: own, license: OWN, status: planned, text: "Bende." }
+
+# ---------- L30–L35, T20, T21 ----------
+# Images: OpenMoji (CC BY-SA 4.0)
+- { id: img.openmoji.film, kind: image, file: images/openmoji/1F3AC.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3AC/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.rice, kind: image, file: images/openmoji/1F35A.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F35A/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.tea, kind: image, file: images/openmoji/1F375.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F375/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.fried_egg, kind: image, file: images/openmoji/1F373.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F373/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.swimmer, kind: image, file: images/openmoji/1F3CA.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3CA/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.sleeping, kind: image, file: images/openmoji/1F634.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F634/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.droplet, kind: image, file: images/openmoji/1F4A7.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F4A7/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.sick, kind: image, file: images/openmoji/1F912.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F912/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.sun, kind: image, file: images/openmoji/2600.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-2600/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.sun_behind_cloud, kind: image, file: images/openmoji/26C5.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-26C5/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.rain, kind: image, file: images/openmoji/1F327.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F327/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.snow, kind: image, file: images/openmoji/1F328.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F328/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.cloud, kind: image, file: images/openmoji/2601.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-2601/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.wind, kind: image, file: images/openmoji/1F32C.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F32C/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.wave, kind: image, file: images/openmoji/1F30A.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F30A/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.beach, kind: image, file: images/openmoji/1F3D6.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3D6/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.mountain, kind: image, file: images/openmoji/26F0.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-26F0/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.passport_control, kind: image, file: images/openmoji/1F6C2.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F6C2/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.suitcase, kind: image, file: images/openmoji/1F9F3.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F9F3/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.map, kind: image, file: images/openmoji/1F5FA.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F5FA/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.camping, kind: image, file: images/openmoji/1F3D5.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3D5/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.gift, kind: image, file: images/openmoji/1F381.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F381/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.camera, kind: image, file: images/openmoji/1F4F7.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F4F7/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.island, kind: image, file: images/openmoji/1F3DD.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3DD/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+# Audio: our recording session
+- { id: aud.own.s.L30.001, kind: audio, source: own, license: OWN, status: planned, text: "Dün geldim." }
+- { id: aud.own.s.L30.002, kind: audio, source: own, license: OWN, status: planned, text: "Dün okula gittim." }
+- { id: aud.own.s.L30.003, kind: audio, source: own, license: OWN, status: planned, text: "Dün evde kitap okudum." }
+- { id: aud.own.s.L30.004, kind: audio, source: own, license: OWN, status: planned, text: "Çay içtim." }
+- { id: aud.own.s.L30.005, kind: audio, source: own, license: OWN, status: planned, text: "Ne yaptın?" }
+- { id: aud.own.s.L30.006, kind: audio, source: own, license: OWN, status: planned, text: "Film izledim." }
+- { id: aud.own.s.L30.007, kind: audio, source: own, license: OWN, status: planned, text: "Ali geldi." }
+- { id: aud.own.s.L30.008, kind: audio, source: own, license: OWN, status: planned, text: "Dün akşam pilav yedik." }
+- { id: aud.own.s.L30.009, kind: audio, source: own, license: OWN, status: planned, text: "Geçen hafta İzmir'e gittiniz." }
+- { id: aud.own.s.L30.010, kind: audio, source: own, license: OWN, status: planned, text: "Onlar geçen yıl Türkiye'ye geldiler." }
+- { id: aud.own.s.L30.011, kind: audio, source: own, license: OWN, status: planned, text: "Ben de çay içtim." }
+- { id: aud.own.s.L30.012, kind: audio, source: own, license: OWN, status: planned, text: "Evet dedim." }
+- { id: aud.own.s.L30.013, kind: audio, source: own, license: OWN, status: planned, text: "Kahvaltı yaptım." }
+- { id: aud.own.s.L30.014, kind: audio, source: own, license: OWN, status: planned, text: "Dün çok çalıştım." }
+- { id: aud.own.s.L30.015, kind: audio, source: own, license: OWN, status: planned, text: "Müzik dinledik." }
+- { id: aud.own.s.L30.016, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe dün geldi ama Ahmet bugün geldi." }
+- { id: aud.own.s.L30.017, kind: audio, source: own, license: OWN, status: planned, text: "Saat yedide kalktım." }
+- { id: aud.own.s.L30.018, kind: audio, source: own, license: OWN, status: planned, text: "Eve gittik." }
+- { id: aud.own.s.L30.019, kind: audio, source: own, license: OWN, status: planned, text: "Bugün kahve içtim." }
+- { id: aud.own.s.L30.020, kind: audio, source: own, license: OWN, status: planned, text: "Kahve içiyorum." }
+- { id: aud.own.s.L30.021, kind: audio, source: own, license: OWN, status: planned, text: "Ali'yi gördüm." }
+- { id: aud.own.s.L30.022, kind: audio, source: own, license: OWN, status: planned, text: "Futbol oynadık." }
+- { id: aud.own.s.L30.023, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet ve Ayşe geldiler." }
+- { id: aud.own.s.L30.024, kind: audio, source: own, license: OWN, status: planned, text: "Dün ne yaptın?" }
+- { id: aud.own.s.L30.025, kind: audio, source: own, license: OWN, status: planned, text: "Geldik." }
+- { id: aud.own.s.L30.026, kind: audio, source: own, license: OWN, status: planned, text: "Geldiniz." }
+- { id: aud.own.s.L31.001, kind: audio, source: own, license: OWN, status: planned, text: "Dün gelmedim." }
+- { id: aud.own.s.L31.002, kind: audio, source: own, license: OWN, status: planned, text: "Dün kitap okumadım." }
+- { id: aud.own.s.L31.003, kind: audio, source: own, license: OWN, status: planned, text: "Geldin mi?" }
+- { id: aud.own.s.L31.004, kind: audio, source: own, license: OWN, status: planned, text: "Evet, geldim." }
+- { id: aud.own.s.L31.005, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, gelmedim." }
+- { id: aud.own.s.L31.006, kind: audio, source: own, license: OWN, status: planned, text: "Geliyor musun?" }
+- { id: aud.own.s.L31.007, kind: audio, source: own, license: OWN, status: planned, text: "Çay içtin mi?" }
+- { id: aud.own.s.L31.008, kind: audio, source: own, license: OWN, status: planned, text: "Ali geldi mi?" }
+- { id: aud.own.s.L31.009, kind: audio, source: own, license: OWN, status: planned, text: "Dün okula gittiniz mi?" }
+- { id: aud.own.s.L31.010, kind: audio, source: own, license: OWN, status: planned, text: "Geldiler mi?" }
+- { id: aud.own.s.L31.011, kind: audio, source: own, license: OWN, status: planned, text: "Gelmedin mi?" }
+- { id: aud.own.s.L31.012, kind: audio, source: own, license: OWN, status: planned, text: "Ne zaman geldin?" }
+- { id: aud.own.s.L31.013, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe dün okula gitmedi." }
+- { id: aud.own.s.L31.014, kind: audio, source: own, license: OWN, status: planned, text: "Dün akşam film izlemedik." }
+- { id: aud.own.s.L31.015, kind: audio, source: own, license: OWN, status: planned, text: "Kahvaltı yaptın mı?" }
+- { id: aud.own.s.L31.016, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, yapmadım." }
+- { id: aud.own.s.L31.017, kind: audio, source: own, license: OWN, status: planned, text: "Gidiyor musunuz?" }
+- { id: aud.own.s.L31.018, kind: audio, source: own, license: OWN, status: planned, text: "Gittiniz mi?" }
+- { id: aud.own.s.L31.019, kind: audio, source: own, license: OWN, status: planned, text: "Pilav yemedim." }
+- { id: aud.own.s.L31.020, kind: audio, source: own, license: OWN, status: planned, text: "Ali'yi gördün mü?" }
+- { id: aud.own.s.L31.021, kind: audio, source: own, license: OWN, status: planned, text: "Kitap okudun mu?" }
+- { id: aud.own.s.L32.001, kind: audio, source: own, license: OWN, status: planned, text: "Dün evdeydim." }
+- { id: aud.own.s.L32.002, kind: audio, source: own, license: OWN, status: planned, text: "Hastaydım." }
+- { id: aud.own.s.L32.003, kind: audio, source: own, license: OWN, status: planned, text: "Geçen yıl öğrenciydim." }
+- { id: aud.own.s.L32.004, kind: audio, source: own, license: OWN, status: planned, text: "Babam öğretmendi." }
+- { id: aud.own.s.L32.005, kind: audio, source: own, license: OWN, status: planned, text: "Çok yorgunduk." }
+- { id: aud.own.s.L32.006, kind: audio, source: own, license: OWN, status: planned, text: "Ev büyüktü." }
+- { id: aud.own.s.L32.007, kind: audio, source: own, license: OWN, status: planned, text: "Geçen hafta Ankara'daydım." }
+- { id: aud.own.s.L32.008, kind: audio, source: own, license: OWN, status: planned, text: "Neredeydin?" }
+- { id: aud.own.s.L32.009, kind: audio, source: own, license: OWN, status: planned, text: "Parktaydık." }
+- { id: aud.own.s.L32.010, kind: audio, source: own, license: OWN, status: planned, text: "Evde miydin?" }
+- { id: aud.own.s.L32.011, kind: audio, source: own, license: OWN, status: planned, text: "Hasta mıydın?" }
+- { id: aud.own.s.L32.012, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, hasta değildim." }
+- { id: aud.own.s.L32.013, kind: audio, source: own, license: OWN, status: planned, text: "Dün evde süt yoktu." }
+- { id: aud.own.s.L32.014, kind: audio, source: own, license: OWN, status: planned, text: "Bahçede bir kedi vardı." }
+- { id: aud.own.s.L32.015, kind: audio, source: own, license: OWN, status: planned, text: "Hava soğuktu." }
+- { id: aud.own.s.L32.016, kind: audio, source: own, license: OWN, status: planned, text: "Dün hava güneşliydi." }
+- { id: aud.own.s.L32.017, kind: audio, source: own, license: OWN, status: planned, text: "Hasta idim." }
+- { id: aud.own.s.L32.018, kind: audio, source: own, license: OWN, status: planned, text: "Öğrenci miydiniz?" }
+- { id: aud.own.s.L32.019, kind: audio, source: own, license: OWN, status: planned, text: "Çocuklar bahçedeydi." }
+- { id: aud.own.s.L32.020, kind: audio, source: own, license: OWN, status: planned, text: "Çay sıcaktı." }
+- { id: aud.own.s.L32.021, kind: audio, source: own, license: OWN, status: planned, text: "Evde değildim." }
+- { id: aud.own.s.L32.022, kind: audio, source: own, license: OWN, status: planned, text: "Hastayım." }
+- { id: aud.own.s.L32.023, kind: audio, source: own, license: OWN, status: planned, text: "Evdeydiniz." }
+- { id: aud.own.s.L33.001, kind: audio, source: own, license: OWN, status: planned, text: "Yarın geleceğim." }
+- { id: aud.own.s.L33.002, kind: audio, source: own, license: OWN, status: planned, text: "Yarın gelecek misin?" }
+- { id: aud.own.s.L33.003, kind: audio, source: own, license: OWN, status: planned, text: "Evet, geleceğim." }
+- { id: aud.own.s.L33.004, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, gelmeyeceğim." }
+- { id: aud.own.s.L33.005, kind: audio, source: own, license: OWN, status: planned, text: "Gelecek hafta İstanbul'a gideceğiz." }
+- { id: aud.own.s.L33.006, kind: audio, source: own, license: OWN, status: planned, text: "Seneye Türkiye'ye gideceğim." }
+- { id: aud.own.s.L33.007, kind: audio, source: own, license: OWN, status: planned, text: "Bu akşam kitap okuyacağım." }
+- { id: aud.own.s.L33.008, kind: audio, source: own, license: OWN, status: planned, text: "Film saat sekizde başlayacak." }
+- { id: aud.own.s.L33.009, kind: audio, source: own, license: OWN, status: planned, text: "Seni bekleyeceğim." }
+- { id: aud.own.s.L33.010, kind: audio, source: own, license: OWN, status: planned, text: "Sana yardım edeceğim." }
+- { id: aud.own.s.L33.011, kind: audio, source: own, license: OWN, status: planned, text: "Ne yiyeceksin?" }
+- { id: aud.own.s.L33.012, kind: audio, source: own, license: OWN, status: planned, text: "Ali ne diyecek?" }
+- { id: aud.own.s.L33.013, kind: audio, source: own, license: OWN, status: planned, text: "Yarın yağmur yağacak." }
+- { id: aud.own.s.L33.014, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe gelecek mi?" }
+- { id: aud.own.s.L33.015, kind: audio, source: own, license: OWN, status: planned, text: "Siz de gelecek misiniz?" }
+- { id: aud.own.s.L33.016, kind: audio, source: own, license: OWN, status: planned, text: "Onlar yarın gelecekler." }
+- { id: aud.own.s.L33.017, kind: audio, source: own, license: OWN, status: planned, text: "Yarın çalışmayacağım." }
+- { id: aud.own.s.L33.018, kind: audio, source: own, license: OWN, status: planned, text: "Bu akşam ne yapacaksın?" }
+- { id: aud.own.s.L33.019, kind: audio, source: own, license: OWN, status: planned, text: "Çay yapacağım." }
+- { id: aud.own.s.L33.020, kind: audio, source: own, license: OWN, status: planned, text: "Gelecek hafta tatile gideceğiz." }
+- { id: aud.own.s.L33.021, kind: audio, source: own, license: OWN, status: planned, text: "Antalya'ya gideceğim." }
+- { id: aud.own.s.L33.022, kind: audio, source: own, license: OWN, status: planned, text: "Yarın geliyorum." }
+- { id: aud.own.s.L33.023, kind: audio, source: own, license: OWN, status: planned, text: "Geleceğiz." }
+- { id: aud.own.s.L33.024, kind: audio, source: own, license: OWN, status: planned, text: "Geleceksiniz." }
+- { id: aud.own.s.L34.001, kind: audio, source: own, license: OWN, status: planned, text: "Çay istiyorum." }
+- { id: aud.own.s.L34.002, kind: audio, source: own, license: OWN, status: planned, text: "Çay içmek istiyorum." }
+- { id: aud.own.s.L34.003, kind: audio, source: own, license: OWN, status: planned, text: "Ne yapmak istiyorsun?" }
+- { id: aud.own.s.L34.004, kind: audio, source: own, license: OWN, status: planned, text: "Uyumak istiyorum." }
+- { id: aud.own.s.L34.005, kind: audio, source: own, license: OWN, status: planned, text: "Kahve istemiyorum." }
+- { id: aud.own.s.L34.006, kind: audio, source: own, license: OWN, status: planned, text: "Gitmek istemiyorum." }
+- { id: aud.own.s.L34.007, kind: audio, source: own, license: OWN, status: planned, text: "Çay istiyor musun?" }
+- { id: aud.own.s.L34.008, kind: audio, source: own, license: OWN, status: planned, text: "Yüzmek istiyor musun?" }
+- { id: aud.own.s.L34.009, kind: audio, source: own, license: OWN, status: planned, text: "Antalya'ya gitmek istiyoruz." }
+- { id: aud.own.s.L34.010, kind: audio, source: own, license: OWN, status: planned, text: "Ali film izlemek istiyor." }
+- { id: aud.own.s.L34.011, kind: audio, source: own, license: OWN, status: planned, text: "Ne istiyorsun?" }
+- { id: aud.own.s.L34.012, kind: audio, source: own, license: OWN, status: planned, text: "Su istiyorum." }
+- { id: aud.own.s.L34.013, kind: audio, source: own, license: OWN, status: planned, text: "Bu akşam evde oturmak istiyorum." }
+- { id: aud.own.s.L34.014, kind: audio, source: own, license: OWN, status: planned, text: "Kitap okumak istiyorum." }
+- { id: aud.own.s.L34.015, kind: audio, source: own, license: OWN, status: planned, text: "Onlar pilav yemek istiyorlar." }
+- { id: aud.own.s.L34.016, kind: audio, source: own, license: OWN, status: planned, text: "Ben de gelmek istiyorum." }
+- { id: aud.own.s.L34.017, kind: audio, source: own, license: OWN, status: planned, text: "Dün film izlemek istedim." }
+- { id: aud.own.s.L34.018, kind: audio, source: own, license: OWN, status: planned, text: "Tatile gitmek istiyorum." }
+- { id: aud.own.s.L35.001, kind: audio, source: own, license: OWN, status: planned, text: "Gitmem lazım." }
+- { id: aud.own.s.L35.002, kind: audio, source: own, license: OWN, status: planned, text: "Eve gitmem lazım." }
+- { id: aud.own.s.L35.003, kind: audio, source: own, license: OWN, status: planned, text: "Çalışmak lazım." }
+- { id: aud.own.s.L35.004, kind: audio, source: own, license: OWN, status: planned, text: "Ne yapmam lazım?" }
+- { id: aud.own.s.L35.005, kind: audio, source: own, license: OWN, status: planned, text: "Doktora gitmen lazım." }
+- { id: aud.own.s.L35.006, kind: audio, source: own, license: OWN, status: planned, text: "Ali'nin gelmesi lazım." }
+- { id: aud.own.s.L35.007, kind: audio, source: own, license: OWN, status: planned, text: "Saat yedide kalkmamız lazım." }
+- { id: aud.own.s.L35.008, kind: audio, source: own, license: OWN, status: planned, text: "Beklemeniz gerek." }
+- { id: aud.own.s.L35.009, kind: audio, source: own, license: OWN, status: planned, text: "Gelmeleri lazım." }
+- { id: aud.own.s.L35.010, kind: audio, source: own, license: OWN, status: planned, text: "Gitmen gerekmiyor." }
+- { id: aud.own.s.L35.011, kind: audio, source: own, license: OWN, status: planned, text: "Gelmen lazım değil." }
+- { id: aud.own.s.L35.012, kind: audio, source: own, license: OWN, status: planned, text: "Bana su lazım." }
+- { id: aud.own.s.L35.013, kind: audio, source: own, license: OWN, status: planned, text: "Sana ne lazım?" }
+- { id: aud.own.s.L35.014, kind: audio, source: own, license: OWN, status: planned, text: "Bana bir kalem lazım." }
+- { id: aud.own.s.L35.015, kind: audio, source: own, license: OWN, status: planned, text: "Bize yardım lazım." }
+- { id: aud.own.s.L35.016, kind: audio, source: own, license: OWN, status: planned, text: "Su içmem gerek." }
+- { id: aud.own.s.L35.017, kind: audio, source: own, license: OWN, status: planned, text: "Bugün markete gitmem lazım." }
+- { id: aud.own.s.L35.018, kind: audio, source: own, license: OWN, status: planned, text: "Ne zaman gelmem lazım?" }
+- { id: aud.own.s.L35.019, kind: audio, source: own, license: OWN, status: planned, text: "Yarın çalışmam gerekmiyor." }
+- { id: aud.own.s.L35.020, kind: audio, source: own, license: OWN, status: planned, text: "Gitmek istiyorum." }
+- { id: aud.own.s.L35.021, kind: audio, source: own, license: OWN, status: planned, text: "Gitmemiz lazım." }
+- { id: aud.own.s.L35.022, kind: audio, source: own, license: OWN, status: planned, text: "Gitmeniz lazım." }
+- { id: aud.own.s.L35.023, kind: audio, source: own, license: OWN, status: planned, text: "Gitmek lazım." }
+- { id: aud.own.s.T20.001, kind: audio, source: own, license: OWN, status: planned, text: "Dün kar yağdı." }
+- { id: aud.own.s.T20.002, kind: audio, source: own, license: OWN, status: planned, text: "Bugün yağmur yağıyor." }
+- { id: aud.own.s.T20.003, kind: audio, source: own, license: OWN, status: planned, text: "Hava güneşli." }
+- { id: aud.own.s.T20.004, kind: audio, source: own, license: OWN, status: planned, text: "Dün hava rüzgârlıydı." }
+- { id: aud.own.s.T20.005, kind: audio, source: own, license: OWN, status: planned, text: "İlkbaharda hava serin." }
+- { id: aud.own.s.T21.001, kind: audio, source: own, license: OWN, status: planned, text: "Geçen yaz Antalya'daydım." }
+- { id: aud.own.s.T21.002, kind: audio, source: own, license: OWN, status: planned, text: "Tatilde denizde yüzdük." }
+- { id: aud.own.s.T21.003, kind: audio, source: own, license: OWN, status: planned, text: "Pasaportum bavulda." }
+- { id: aud.own.s.T21.004, kind: audio, source: own, license: OWN, status: planned, text: "Adaya gitmek istiyoruz." }
+- { id: aud.own.s.T21.005, kind: audio, source: own, license: OWN, status: planned, text: "Yolculuk çok güzeldi." }

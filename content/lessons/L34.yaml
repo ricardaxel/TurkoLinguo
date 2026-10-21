@@ -1,0 +1,145 @@
+# L34 — istemek + -mAk "want / want to". Model: L10–L13. Format: docs/CONTENT_FORMAT.md
+id: L34
+title: "istemek + -mAk"
+grammar: g.L34.istemek
+new_words: [w.istemek]
+not_yet:
+  - "wanting someone else to act (Gelmeni istiyorum, -mAsInI) → A2"
+  - "the accusative infinitive (içmeyi istiyorum) is also heard: not taught, not used as a distractor"
+  - "the aorist for polite offers (Çay ister misin?) → A2"
+  - "-mAk with other verbs (sevmek, bilmek) → A2"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          ☕ **Ne istiyorsun?** "What do you want?" — **Çay istiyorum.** "I want tea."
+          😴 **Ne yapmak istiyorsun?** "What do you want to do?" — **Uyumak istiyorum.** "I want to sleep."
+        sentences: [s.L34.011, s.L34.001, s.L34.003, s.L34.004]
+        audio: [aud.own.s.L34.011, aud.own.s.L34.001, aud.own.s.L34.003, aud.own.s.L34.004]
+
+      - kind: rule
+        title: "A thing or an action?"
+        body: |
+          **istemek** "to want" is a regular verb: *ist·iyor·um, ist·iyor·sun, ist·iyor…*
+
+          | want a **thing** | want **to do** |
+          |---|---|
+          | Çay istiyorum. | Çay **içmek** istiyorum. |
+          | I want tea. | I want **to drink** tea. |
+          | Kitap istiyorum. | Kitap **okumak** istiyorum. |
+
+          For an action, use the **dictionary form** (*-mak / -mek*, L14) right before *istemek*.
+        sentences: [s.L34.001, s.L34.002, s.L34.014]
+        audio: [aud.own.s.L34.001, aud.own.s.L34.002, aud.own.s.L34.014]
+
+      - kind: rule
+        title: "Only istemek changes"
+        body: |
+          The infinitive stays exactly as in the dictionary. Person and tense go on **istemek**:
+
+          - Gitmek **istiyorum** · Gitmek **istiyorsun** · Ali gitmek **istiyor**
+          - Gitmek **istiyoruz** · Gitmek **istedim** (L30)
+
+          The infinitive takes its own words in front: *[Antalya'ya gitmek] istiyoruz.* "We want to go to Antalya."
+        sentences: [s.L34.009, s.L34.010]
+        audio: [aud.own.s.L34.009, aud.own.s.L34.010]
+
+      - kind: rule
+        title: "Not and questions"
+        body: |
+          **Not:** make *istemek* negative: *Gitmek **istemiyorum**.* "I don't want to go."
+          (*Gitmemek istiyorum* = "I want **not** to go": a different meaning.)
+
+          **Questions:** *Çay istiyor **musun**?* "Do you want tea?" · *Yüzmek istiyor **musun**?*
+          *Ne yapmak istiyorsun?* "What do you want to do?"
+        sentences: [s.L34.006, s.L34.007, s.L34.008]
+        audio: [aud.own.s.L34.006, aud.own.s.L34.007, aud.own.s.L34.008]
+
+      - kind: note
+        title: "You do it yourself"
+        body: |
+          *-mAk istiyorum* means **I** want to do it myself. "I want **you** to come" uses another form, which comes in A2.
+        sentences: [s.L34.016]
+        audio: [aud.own.s.L34.016]
+
+    items:
+      - id: L34.learn.01
+        type: contrast_pair
+        grammar: [g.L34.istemek, g.L14.imperative]
+        pattern: g.L34.istemek.noun_vs_verb
+        prompt: "I want to drink tea."
+        options: [s.L34.002, s.L34.001]
+        answer: s.L34.002
+      - { id: L34.learn.02, type: translate_to_tr, grammar: [g.L34.istemek, g.L14.imperative], pattern: g.L34.istemek.infinitive, sentence: s.L34.004, word_bank: [Uyumak, istiyorum, uyuyorum, uyudum] }
+      - id: L34.learn.03
+        type: picture_choose
+        grammar: [g.L34.istemek, g.L14.imperative, g.L16.prog_neg_q]
+        pattern: g.L34.istemek.infinitive
+        images: [img.openmoji.swimmer]
+        prompt: "… istiyor musun?"
+        options: [Yüzmek, Yüzüyor, Yüzdün]
+        answer: Yüzmek
+        translation: "Do you want to swim?"
+        feedback: { Yüzüyor: "Before *istemek*, use the dictionary form **-mAk**: **Yüzmek** istiyor musun?", Yüzdün: "Before *istemek*, use the dictionary form **-mAk**: **Yüzmek** istiyor musun?" }
+      - { id: L34.learn.04, type: translate_to_tr, grammar: [g.L34.istemek, g.L16.prog_neg_q], pattern: g.L34.istemek.negative, sentence: s.L34.006, word_bank: [Gitmek, istemiyorum, istiyorum, gitmiyorum] }
+      - id: L34.learn.05
+        type: listen_choose
+        grammar: [g.L34.istemek, g.L14.imperative]
+        sentence: s.L34.010
+        options: ["Ali wants to watch a film.", "Ali is watching a film.", "Ali wants a film."]
+        answer: "Ali wants to watch a film."
+      - { id: L34.learn.06, type: translate_to_tr, grammar: [g.L34.istemek, g.L14.imperative], pattern: g.L34.istemek.question, sentence: s.L34.003, word_bank: [Ne, yapmak, istiyorsun, yapıyorsun, istiyor, musun] }
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L34.practise.01, type: spot_error, grammar: [g.L34.istemek, g.L14.imperative], pattern: g.L34.istemek.infinitive, text: "Çay içiyor istiyorum.", error: içiyor, answer: içmek, sentence: s.L34.002, feedback: { içiyor: "Before *istemek*, use the dictionary form **-mAk**: **içmek** istiyorum." } }
+      - { id: L34.practise.02, type: spot_error, grammar: [g.L34.istemek, g.L16.prog_neg_q], pattern: g.L34.istemek.negative, text: "Gitmek istiyorum değil.", error: "istiyorum değil", answer: istemiyorum, sentence: s.L34.006, feedback: { "istiyorum değil": "To say *don't want to*, make **istemek** negative with -mA: **istemiyorum**. (*değil* is for nouns and adjectives.)" } }
+      - { id: L34.practise.03, type: spot_error, grammar: [g.L34.istemek, g.L14.imperative], pattern: g.L34.istemek.infinitive, text: "Kitap okumek istiyorum.", error: okumek, answer: okumak, sentence: s.L34.014, feedback: { okumek: "-mAk follows 2-way harmony: the last vowel of **oku-** is **u** → **-mak**: **okumak**." } }
+      - { id: L34.practise.04, type: spot_error, grammar: [g.L34.istemek, g.L14.imperative], pattern: g.L34.istemek.infinitive, text: "Ali istiyor film izlemek.", error: "istiyor film izlemek", answer: "film izlemek istiyor", sentence: s.L34.010, feedback: { "istiyor film izlemek": "The verb comes last, and the infinitive comes right before *istemek*: **Ali film izlemek istiyor.**" } }
+      - id: L34.practise.05
+        type: contrast_pair
+        grammar: [g.L34.istemek, g.L14.imperative]
+        pattern: g.L34.istemek.noun_vs_verb
+        prompt: "What do you want?"
+        options: [s.L34.011, s.L34.003]
+        answer: s.L34.011
+      - { id: L34.practise.06, type: translate_to_tr, grammar: [g.L34.istemek, g.L17.dat], sentence: s.L34.009, word_bank: [Antalya'ya, gitmek, istiyoruz, gidiyoruz, Antalya'da, istiyorum] }
+      - { id: L34.practise.07, type: translate_to_en, grammar: [g.L34.istemek, g.L10.loc], sentence: s.L34.013 }
+      - id: L34.practise.08
+        type: qa
+        grammar: [g.L34.istemek, g.L14.imperative]
+        question: s.L34.003
+        images: [img.openmoji.sleeping]
+        answers: ["(Ben) uyumak istiyorum."]
+      - { id: L34.practise.09, type: dictation, grammar: [g.L34.istemek, g.L14.imperative], sentence: s.L34.015 }
+      - { id: L34.practise.10, type: translate_to_tr, grammar: [g.L34.istemek, g.L13.clitic_de], sentence: s.L34.016, typed: true }
+      - { id: L34.practise.11, type: translate_to_tr, grammar: [g.L34.istemek, g.L30.past], sentence: s.L34.017, typed: true, answers: ["Dün bir film izlemek istedim."] }
+      - id: L34.practise.12
+        type: mini_dialogue
+        grammar: [g.L34.istemek, g.L7.question]
+        turns:
+          - { speaker: A, sentence: s.L34.007 }
+          - { speaker: B, blank: true, answers: ["Evet, (çay) istiyorum.", "Hayır, (çay) istemiyorum."] }
+          - { speaker: A, sentence: s.L34.003 }
+          - { speaker: B, blank: true, answers: ["(Ben) {uyumak|kitap okumak|film izlemek|yüzmek} istiyorum."] }
+      - id: L34.practise.13
+        type: picture_choose
+        grammar: [g.L34.istemek, g.L14.imperative]
+        pattern: g.L34.istemek.noun_vs_verb
+        images: [img.openmoji.tea]
+        prompt: "Çay … istiyorum."
+        options: [içmek, içiyorum, içtim]
+        answer: içmek
+        translation: "I want to drink tea."
+        feedback: { içiyorum: "Only *istemek* takes the person: **Çay içmek istiyorum.**", içtim: "Only *istemek* takes the tense: **Çay içmek istiyorum.**" }
+      - id: L34.practise.14
+        type: listen_choose
+        grammar: [g.L34.istemek, g.L7.question]
+        sentence: s.L34.008
+        options: ["Do you want to swim?", "Are you swimming?", "Did you swim?"]
+        answer: "Do you want to swim?"
+      - { id: L34.practise.15, type: translate_to_tr, grammar: [g.L34.istemek, g.L16.prog_neg_q], pattern: g.L34.istemek.negative, sentence: s.L34.005, word_bank: [Kahve, istemiyorum, istiyorum, değil, istemedim] }
