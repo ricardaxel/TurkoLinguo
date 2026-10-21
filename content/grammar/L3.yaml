@@ -1,0 +1,30 @@
+id: g.L3.basics
+title: "This / that, bir, no 'is' in the 3rd person"
+suffixes: []
+
+reference: |
+  **bu** "this" (here, near me) · **şu** "that" (near, or pointing at it) · **o** "that" (over there).
+
+  *Bu ne?* "What is this?" → *Bu bir kitap.* "This is a book."
+
+  **No "is":** the 3rd person needs no verb "to be". *Bu kitap.* = "This is a book." *O Ali.* = "That's Ali." / "He's Ali."
+
+  **bir** = "a / an" (and "one"). It is **optional**: *Bu bir kitap.* = *Bu kitap.* There is **no word for "the"**.
+
+  **o** = he, she, it **and** that. Turkish has no gender: *O Ayşe.* "She's Ayşe." · *O Ali.* "He's Ali." · *O bir araba.* "It's a car." / "That's a car."
+
+  **ne** "what" comes where the answer will be: *Bu **ne**?* → *Bu **bir kitap**.* There is no extra word for the question.
+
+patterns:
+  - id: g.L3.basics.demonstratives
+    description: "bu / şu / o: this, that, that over there"
+  - id: g.L3.basics.no_is
+    description: "No 'is' in the 3rd person: Bu kitap. O Ali."
+  - id: g.L3.basics.bir
+    description: "bir = a / an, optional; no word for 'the'"
+  - id: g.L3.basics.o_no_gender
+    description: "o = he / she / it / that"
+
+feedback:
+  no_is: "There's no word for *is*: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

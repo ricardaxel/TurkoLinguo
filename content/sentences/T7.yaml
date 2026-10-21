@@ -1,0 +1,52 @@
+# Frame sentences for theme T7 (Colours & adjectives). Packs 1–2: grammar up to L8; pack 3: up to L9.
+
+- id: s.T7.001
+  tr: Çanta mavi.
+  en: ["The bag is blue."]
+  words: [w.çanta, w.mavi]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T7.001
+
+- id: s.T7.002
+  tr: Kalem siyah mı?
+  en: ["Is the pen black?", "Is the pencil black?"]
+  words: [w.kalem, w.siyah]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.T7.002
+  native_required: true        # mI intonation
+
+- id: s.T7.003
+  tr: Ev büyük mü?
+  en: ["Is the house big?"]
+  words: [w.ev, w.büyük]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.T7.003
+  native_required: true        # mI intonation
+
+- id: s.T7.004
+  tr: Kahve sıcak.
+  en: ["The coffee is hot."]
+  words: [w.kahve, w.sıcak]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T7.004
+
+- id: s.T7.005
+  tr: Uzun bir gün.
+  en: ["A long day."]
+  words: [w.uzun, w.bir, w.gün]
+  grammar: [g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.T7.005
+
+- id: s.T7.006
+  tr: Türkçe zor mu?
+  en: ["Is Turkish difficult?", "Is Turkish hard?"]
+  words: [w.Türkçe, w.zor]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.T7.006
+  native_required: true        # mI intonation

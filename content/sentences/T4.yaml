@@ -1,0 +1,34 @@
+# Frame sentences for theme T4 (Nationalities). Pack 1: grammar up to L4; pack 2: up to L5.
+
+- id: s.T4.001
+  tr: Ahmet Türk.
+  en: ["Ahmet is Turkish.", "Ahmet is a Turk."]
+  words: [w.Ahmet, w.Türk]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T4.001
+
+- id: s.T4.002
+  tr: O Alman.
+  en: ["He's German.", "She's German.", "He is German.", "She is German."]
+  words: [w.o, w.Alman]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T4.002
+
+- id: s.T4.003
+  tr: Bu kitap Türkçe.
+  en: ["This book is in Turkish.", "This book is Turkish."]
+  words: [w.bu, w.kitap, w.Türkçe]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T4.003
+
+- id: s.T4.004
+  tr: Ben Kanadalıyım.
+  en: ["I'm Canadian.", "I am Canadian."]
+  words: [w.ben, w.Kanadalı]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.T4.004
+  native_required: true        # copula unstressed: kanadaLIyım

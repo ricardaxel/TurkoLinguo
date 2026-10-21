@@ -1,0 +1,180 @@
+# L3 — bu / şu / o, bir, no "is" in the 3rd person. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L3
+title: "This / that, bir, no 'is' in the 3rd person"
+grammar: g.L3.basics
+new_words: [w.bu, w.şu, w.o, w.bir, w.ne, w.bilgisayar]
+not_yet:
+  - "plurals (kitaplar) → L4"
+  - "I am / you are (öğretmenim) → L5"
+  - "yes/no questions with mI (Bu kitap mı?) → L7"
+  - "adjective + bir + noun (güzel bir ev) → L9"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          📕 **Bu ne?** "What is this?"
+          **Bu bir kitap.** "This is a book."
+
+          Look closely: there's no word for **is**. *Bu bir kitap* = "this a book".
+        sentences: [s.L3.001, s.L3.002]
+        audio: [aud.own.s.L3.001, aud.own.s.L3.002]
+
+      - kind: rule
+        title: "bu, şu, o"
+        body: |
+          | Turkish | English | Where? |
+          |---|---|---|
+          | **bu** | this | here, next to me |
+          | **şu** | that | near, or *that one* (pointing) |
+          | **o** | that | over there, further away |
+
+          *Bu bir kedi.* "This is a cat." · *Şu bir sandalye.* "That's a chair." · *O bir araba.* "That's a car."
+        sentences: [s.L3.010, s.L3.005, s.L3.007]
+        audio: [aud.own.s.L3.010, aud.own.s.L3.005, aud.own.s.L3.007]
+
+      - kind: rule
+        title: "No 'is'"
+        body: |
+          For **he / she / it / this / that**, Turkish needs no verb "to be". Just put the two words side by side:
+
+          | Turkish | Word by word | English |
+          |---|---|---|
+          | Bu kitap. | this book | This **is** a book. |
+          | O Ali. | that Ali | That**'s** Ali. / He**'s** Ali. |
+
+          💡 *I am* and *you are* do need an ending. That's L5.
+        sentences: [s.L3.003, s.L3.008]
+
+      - kind: rule
+        title: "bir = a, and no 'the'"
+        body: |
+          **bir** means "a / an" (and "one"). Here it's **optional**:
+
+          *Bu **bir** kitap.* = *Bu kitap.* "This is a book."
+
+          There is **no word for "the"**. *kitap* = "book", "a book" or "the book", depending on context.
+
+      - kind: rule
+        title: "o = he, she, it, that"
+        body: |
+          Turkish has **no gender**. One word, **o**, covers *he*, *she*, *it* and *that*:
+
+          *O Ali.* "He's Ali." · *O Ayşe.* "She's Ayşe." · *O bir araba.* "It's a car."
+
+          The context tells you which one is meant.
+        sentences: [s.L3.009, s.L3.012]
+        audio: [aud.own.s.L3.009, aud.own.s.L3.012]
+
+      - kind: examples
+        title: "Questions with ne"
+        body: |
+          **ne** "what" sits where the answer will go. The word order doesn't change:
+
+          - *Bu **ne**?* → *Bu **bir kitap**.*
+          - *Şu **ne**?* → *Şu **bir pencere**.*
+          - *O **ne**?* → *O **bir çanta**.*
+
+          🔊 Your voice goes up on **ne**.
+        sentences: [s.L3.004, s.L3.013, s.L3.006, s.L3.015]
+        audio: [aud.own.s.L3.004, aud.own.s.L3.013]
+
+    items:
+      - id: L3.learn.01
+        type: picture_choose
+        grammar: [g.L3.basics]
+        pattern: g.L3.basics.no_is
+        images: [img.openmoji.book]
+        prompt: "Bu bir …"
+        options: [kitap, kalem, kedi]
+        answer: kitap
+        translation: "This is a book."
+      - { id: L3.learn.02, type: translate_to_tr, grammar: [g.L3.basics], pattern: g.L3.basics.no_is, sentence: s.L3.002, word_bank: [Bu, bir, kitap, ne, o], answers: ["Bu kitap."] }
+      - id: L3.learn.03
+        type: listen_choose
+        grammar: [g.L3.basics]
+        pattern: g.L3.basics.demonstratives
+        sentence: s.L3.007
+        options: [img.openmoji.car, img.openmoji.bus, img.openmoji.house]
+        answer: img.openmoji.car
+      - id: L3.learn.04
+        type: picture_choose
+        grammar: [g.L3.basics]
+        pattern: g.L3.basics.o_no_gender
+        images: [img.openmoji.woman]
+        prompt: "*O Ayşe.* Here **o** means …"
+        options: ["she", "he", "this"]
+        answer: "she"
+        translation: "O Ayşe. = She's Ayşe. o is he, she, it or that."
+      - { id: L3.learn.05, type: translate_to_tr, grammar: [g.L3.basics], sentence: s.L3.001, word_bank: [Bu, ne, bir, şu] }
+      - id: L3.learn.06
+        type: listen_choose
+        grammar: [g.L3.basics]
+        pattern: g.L3.basics.o_no_gender
+        sentence: s.L3.008
+        options: ["He's Ali.", "This is Ali's.", "What is that?"]
+        answer: "He's Ali."
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L3.practise.01, type: translate_to_tr, grammar: [g.L3.basics], pattern: g.L3.basics.demonstratives, sentence: s.L3.005, typed: true, answers: ["Şu sandalye."] }
+      - { id: L3.practise.02, type: translate_to_en, grammar: [g.L3.basics], sentence: s.L3.010 }
+      - id: L3.practise.03
+        type: qa
+        grammar: [g.L3.basics]
+        pattern: g.L3.basics.no_is
+        question: s.L3.001
+        images: [img.openmoji.phone]
+        answers: ["(Bu) (bir) telefon."]
+      - id: L3.practise.04
+        type: qa
+        grammar: [g.L3.basics]
+        pattern: g.L3.basics.no_is
+        question: s.L3.006
+        images: [img.openmoji.car]
+        answers: ["(O) (bir) araba."]
+      - { id: L3.practise.05, type: translate_to_tr, grammar: [g.L3.basics], pattern: g.L3.basics.o_no_gender, sentence: s.L3.008, typed: true }
+      - id: L3.practise.06
+        type: listen_choose
+        grammar: [g.L3.basics]
+        sentence: s.L3.011
+        options: [img.openmoji.computer, img.openmoji.phone, img.openmoji.book]
+        answer: img.openmoji.computer
+      - { id: L3.practise.07, type: dictation, grammar: [g.L3.basics], sentence: s.L3.004 }
+      - id: L3.practise.08
+        type: picture_choose
+        grammar: [g.L3.basics]
+        pattern: g.L3.basics.no_is
+        images: [img.openmoji.key]
+        prompt: "Bu bir …"
+        options: [anahtar, kapı, saat]
+        answer: anahtar
+        translation: "This is a key."
+      - { id: L3.practise.09, type: translate_to_en, grammar: [g.L3.basics], pattern: g.L3.basics.o_no_gender, sentence: s.L3.012 }
+      - id: L3.practise.10
+        type: contrast_pair
+        grammar: [g.L3.basics]
+        pattern: g.L3.basics.demonstratives
+        prompt: "This is a bag."
+        options: [s.L3.014, s.L3.015]
+        answer: s.L3.014
+        note: "bu = this (here); o = that (over there)."
+      - { id: L3.practise.11, type: dictation, grammar: [g.L3.basics], sentence: s.L3.016 }
+      - { id: L3.practise.12, type: translate_to_tr, grammar: [g.L3.basics], pattern: g.L3.basics.bir, sentence: s.L3.010, typed: true, answers: ["Bu kedi."], note: "bir is optional." }
+      - id: L3.practise.13
+        type: qa
+        grammar: [g.L3.basics]
+        question: s.L3.004
+        images: [img.openmoji.door]
+        answers: ["(Şu) (bir) kapı."]
+      - id: L3.practise.14
+        type: mini_dialogue
+        grammar: [g.L3.basics]
+        images: [img.openmoji.computer]
+        turns:
+          - { speaker: A, sentence: s.L3.001 }
+          - { speaker: B, blank: true, answers: ["(Bu) (bir) bilgisayar."] }
+          - { speaker: A, sentence: s.L10.016 }

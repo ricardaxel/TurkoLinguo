@@ -1,0 +1,172 @@
+# Sentences used by lesson L9. Grammar tags: g.L9.adj_num = adjective order, bir placement, numbers 1–10.
+
+- id: s.L9.001
+  tr: Güzel bir ev.
+  en: ["A beautiful house.", "A nice house.", "A beautiful home."]
+  words: [w.güzel, w.bir, w.ev]
+  grammar: [g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.001
+
+- id: s.L9.002
+  tr: Ev büyük.
+  en: ["The house is big.", "The house is large."]
+  words: [w.ev, w.büyük]
+  grammar: [g.L3.basics, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.002
+
+- id: s.L9.003
+  tr: Ev çok güzel.
+  en: ["The house is very beautiful.", "The house is very nice."]
+  words: [w.ev, w.çok, w.güzel]
+  grammar: [g.L3.basics, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.003
+
+- id: s.L9.004
+  tr: Kırmızı bir araba.
+  en: ["A red car."]
+  words: [w.kırmızı, w.bir, w.araba]
+  grammar: [g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.004
+
+- id: s.L9.005
+  tr: Araba kırmızı.
+  en: ["The car is red."]
+  words: [w.araba, w.kırmızı]
+  grammar: [g.L3.basics, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.005
+
+- id: s.L9.006
+  tr: Üç kedi.
+  en: ["Three cats."]
+  words: [w.üç, w.kedi]
+  grammar: [g.L4.plural, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.006
+
+- id: s.L9.007
+  tr: Beş kitap var.
+  en: ["There are five books."]
+  words: [w.beş, w.kitap, w.var]
+  grammar: [g.L4.plural, g.L8.varyok, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.007
+
+- id: s.L9.008
+  tr: Büyük bir ev.
+  en: ["A big house.", "A large house."]
+  words: [w.büyük, w.bir, w.ev]
+  grammar: [g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.008
+
+- id: s.L9.009
+  tr: Telefon yeni mi?
+  en: ["Is the phone new?"]
+  words: [w.telefon, w.yeni]
+  grammar: [g.L3.basics, g.L7.question, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.009
+  native_required: true        # mI intonation
+
+- id: s.L9.010
+  tr: Bu çok pahalı.
+  en: ["This is very expensive.", "It's very expensive."]
+  words: [w.bu, w.çok, w.pahalı]
+  grammar: [g.L3.basics, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.010
+
+- id: s.L9.011
+  tr: Su soğuk mu?
+  en: ["Is the water cold?"]
+  words: [w.su, w.soğuk]
+  grammar: [g.L3.basics, g.L7.question, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.011
+  native_required: true        # mI intonation
+
+- id: s.L9.012
+  tr: On öğrenci var.
+  en: ["There are ten students."]
+  words: [w.on, w.öğrenci, w.var]
+  grammar: [g.L4.plural, g.L8.varyok, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.012
+
+- id: s.L9.013
+  tr: Dört büyük ev.
+  en: ["Four big houses.", "Four large houses."]
+  words: [w.dört, w.büyük, w.ev]
+  grammar: [g.L4.plural, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.013
+
+- id: s.L9.014
+  tr: Çok güzel bir ev.
+  en: ["A very beautiful house.", "A very nice house."]
+  words: [w.çok, w.güzel, w.bir, w.ev]
+  grammar: [g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.014
+
+- id: s.L9.015
+  tr: İki sıcak çay, lütfen.
+  en: ["Two hot teas, please.", "Two hot cups of tea, please."]
+  words: [w.iki, w.sıcak, w.çay, w.lütfen]
+  grammar: [g.L4.plural, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.015
+
+- id: s.L9.016
+  tr: Yedi gün.
+  en: ["Seven days."]
+  words: [w.yedi, w.gün]
+  grammar: [g.L4.plural, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.016
+
+- id: s.L9.017
+  tr: Ben yeni bir öğrenciyim.
+  en: ["I'm a new student.", "I am a new student."]
+  words: [w.ben, w.yeni, w.bir, w.öğrenci]
+  grammar: [g.L5.copula, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.017
+  native_required: true        # copula unstressed: öğrenCİyim
+
+- id: s.L9.018
+  tr: Üç kitap var.
+  en: ["There are three books."]
+  words: [w.üç, w.kitap, w.var]
+  grammar: [g.L4.plural, g.L8.varyok, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.018
+
+- id: s.L9.019
+  tr: Sekiz kalem.
+  en: ["Eight pens.", "Eight pencils."]
+  words: [w.sekiz, w.kalem]
+  grammar: [g.L4.plural, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.019
+
+- id: s.L9.020
+  tr: Mavi bir çanta.
+  en: ["A blue bag."]
+  words: [w.mavi, w.bir, w.çanta]
+  grammar: [g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.020
+
+- id: s.L9.021
+  tr: Evet, su çok soğuk.
+  en: ["Yes, the water is very cold."]
+  words: [w.evet, w.su, w.çok, w.soğuk]
+  grammar: [g.L3.basics, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L9.021

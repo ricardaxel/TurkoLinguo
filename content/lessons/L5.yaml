@@ -1,0 +1,160 @@
+# L5 — personal pronouns + "to be" endings: the first 4-way harmony. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L5
+title: "Personal pronouns + 'to be' endings"
+grammar: g.L5.copula
+new_words: [w.ben, w.sen, w.biz, w.siz, w.onlar, w.hasta, w.yorgun, w.mutlu, w.iyi, w.nereli]
+not_yet:
+  - "-DIr (O doktordur) → not taught at A1"
+  - "negation (öğretmen değilim) → L6"
+  - "questions (öğrenci misin?) → L7"
+  - "-lI (Nereli, Amerikalı) as a suffix → L28; here only as words and a fixed phrase"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          🧑‍🏫 **Ben öğretmenim.** "I'm a teacher."
+          🤒 **Ben hastayım.** "I'm ill."
+
+          No verb "am": Turkish adds an **ending**. **öğretmen·im** = teacher · I am.
+        sentences: [s.L5.001, s.L5.007]
+        audio: [aud.own.s.L5.001, aud.own.s.L5.007]
+
+      - kind: rule
+        title: "The pronouns"
+        body: |
+          | | singular | plural |
+          |---|---|---|
+          | 1st | **ben** I | **biz** we |
+          | 2nd | **sen** you | **siz** you (plural, or polite) |
+          | 3rd | **o** he / she / it | **onlar** they |
+
+          💡 **siz** is also the polite "you", for one person you don't know well: a shop assistant, a teacher.
+
+      - kind: rule
+        title: "The 'to be' endings"
+        body: |
+          | | ending | öğretmen | hasta |
+          |---|---|---|---|
+          | ben | **-(y)Im** | öğretmen·**im** | hasta·**yım** |
+          | sen | **-sIn** | öğretmen·**sin** | hasta·**sın** |
+          | o | – | öğretmen | hasta |
+          | biz | **-(y)Iz** | öğretmen·**iz** | hasta·**yız** |
+          | siz | **-sInIz** | öğretmen·**siniz** | hasta·**sınız** |
+          | onlar | **-lAr** | öğretmen(·**ler**) | hasta(·**lar**) |
+
+          - **o**: no ending, as in L3: *O doktor.* "He's a doctor."
+          - **onlar**: -lAr is usually left out: *Onlar öğrenci.* "They're students."
+          - The pronoun is optional: *Yorgunum.* already means "I'm tired."
+        sentences: [s.L5.003, s.L5.006]
+
+      - kind: rule
+        title: "I: your first 4-way harmony"
+        body: |
+          The **I** in these endings has four shapes (L2). It copies the corner of the **last vowel**:
+
+          | Last vowel | I = | Examples |
+          |---|---|---|
+          | a ı | **ı** | hasta·yım, Fransız·ım |
+          | e i | **i** | öğretmen·im, iyi·yim |
+          | o u | **u** | doktor·um, yorgun·um, mutlu·yum |
+          | ö ü | **ü** | Türk·üm |
+
+      - kind: rule
+        title: "The buffer y"
+        body: |
+          **-(y)Im** and **-(y)Iz** start with a vowel. Turkish doesn't like two vowels side by side, so after a **vowel** a **y** slips in:
+
+          | ends in a vowel | ends in a consonant |
+          |---|---|
+          | hasta·**y**ım, iyi·**y**im, öğrenci·**y**iz | öğretmen·im, Türk·üm, yorgun·uz |
+
+          -sIn and -sInIz start with **s**, so they never need it: *hasta·sın, öğretmen·sin*.
+
+      - kind: note
+        title: "Stress and a fixed phrase"
+        body: |
+          🔊 The ending is **never stressed**. Stress stays just before it: *öğret**MEN**im*, *has**TA**yım*, ***TÜR**küm*.
+
+          **Nerelisin?** "Where are you from?" → *İngilizim.* "I'm English." · *Amerikalıyım.* "I'm American." · *Türküm.* "I'm Turkish."
+
+          Learn *Nerelisin?* (polite: *Nerelisiniz?*) as a fixed phrase. Its pieces are explained in L28.
+        sentences: [s.L5.011, s.L5.012, s.L5.013]
+        audio: [aud.own.s.L5.011, aud.own.s.L5.012, aud.own.s.L5.013]
+
+      - kind: examples
+        title: "Step by step"
+        body: |
+          Three questions: **who?** → **does the word end in a vowel (buffer y)?** → **which vowel (4-way)?**
+
+          - *I · tired* → yorgun + -(y)Im → consonant, no y → u → **yorgun·um**
+          - *we · students* → öğrenci + -(y)Iz → vowel, y → i → **öğrenci·yiz**
+          - *you · happy* → mutlu + -sIn → u → **mutlu·sun**
+        audio: [aud.own.L5_worked_examples]
+
+    items:
+      - { id: L5.learn.01, type: pick_suffix, grammar: [g.L5.copula], pattern: g.L5.copula.1sg_consonant, base: w.öğretmen, suffix: sfx.cop_1sg, options: [im, ım, yim], answer: im, feedback: "auto:g.L5.copula" }
+      - { id: L5.learn.02, type: pick_suffix, grammar: [g.L5.copula], pattern: g.L5.copula.1sg_vowel, base: w.hasta, suffix: sfx.cop_1sg, options: [yım, ım, yim], answer: yım, feedback: "auto:g.L5.copula" }
+      - { id: L5.learn.03, type: pick_suffix, grammar: [g.L5.copula], pattern: g.L5.copula.1sg_consonant, base: w.Türk, suffix: sfx.cop_1sg, options: [üm, um, im, yüm], answer: üm, feedback: "auto:g.L5.copula" }
+      - id: L5.learn.04
+        type: picture_choose
+        grammar: [g.L5.copula]
+        pattern: g.L5.copula.1sg_consonant
+        images: [img.openmoji.teacher]
+        prompt: "Ben …"
+        options: [öğretmenim, öğretmenyim, öğretmenım]
+        answer: öğretmenim
+        translation: "I'm a teacher."
+      - id: L5.learn.05
+        type: contrast_pair
+        grammar: [g.L5.copula, g.L3.basics]
+        pattern: g.L5.copula.third_person
+        prompt: "I'm ill."
+        options: [s.L5.007, s.L5.017]
+        answer: s.L5.007
+      - id: L5.learn.06
+        type: listen_choose
+        grammar: [g.L5.copula]
+        sentence: s.L5.015
+        options: ["We're students.", "You're a student.", "They're students."]
+        answer: "We're students."
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L5.practise.01, type: pick_suffix, grammar: [g.L5.copula], pattern: g.L5.copula.1sg_consonant, base: w.yorgun, suffix: sfx.cop_1sg, options: [um, üm, yum, ım], answer: um, feedback: "auto:g.L5.copula" }
+      - { id: L5.practise.02, type: pick_suffix, grammar: [g.L5.copula], pattern: g.L5.copula.2sg, base: w.mutlu, suffix: sfx.cop_2sg, options: [sun, sın, sün, sin], answer: sun, feedback: "auto:g.L5.copula" }
+      - { id: L5.practise.03, type: type_form, grammar: [g.L5.copula], pattern: g.L5.copula.1sg_vowel, base: w.iyi, suffixes: [sfx.cop_1sg], prompt: "I'm fine", answer: iyiyim, feedback: { iyiim: "**iyi** ends in a vowel, so the ending needs the buffer **y**: **iyiyim**." } }
+      - { id: L5.practise.04, type: type_form, grammar: [g.L5.copula], pattern: g.L5.copula.1pl, base: w.öğrenci, suffixes: [sfx.cop_1pl], prompt: "we are students", answer: öğrenciyiz, feedback: "auto:g.L5.copula" }
+      - { id: L5.practise.05, type: type_form, grammar: [g.L5.copula], pattern: g.L5.copula.2pl, base: w.doktor, suffixes: [sfx.cop_2pl], prompt: "you (plural / polite) are doctors", answer: doktorsunuz, feedback: "auto:g.L5.copula" }
+      - { id: L5.practise.06, type: type_form, grammar: [g.L5.copula], pattern: g.L5.copula.1sg_consonant, base: w.İngiliz, suffixes: [sfx.cop_1sg], prompt: "I'm English", answer: İngilizim, feedback: "auto:g.L5.copula" }
+      - { id: L5.practise.07, type: spot_error, grammar: [g.L5.copula], pattern: g.L5.copula.1sg_vowel, text: "Ben hastaım.", error: hastaım, answer: hastayım, sentence: s.L5.007, feedback: { hastaım: "**hasta** ends in a vowel, so the ending needs the buffer **y**: **hastayım**." } }
+      - { id: L5.practise.08, type: spot_error, grammar: [g.L5.copula], pattern: g.L5.copula.1sg_consonant, text: "Ben öğretmenyim.", error: öğretmenyim, answer: öğretmenim, sentence: s.L5.001, feedback: "auto:g.L5.copula" }
+      - { id: L5.practise.09, type: translate_to_tr, grammar: [g.L5.copula], sentence: s.L5.004, word_bank: [Biz, Türküz, Türkiz, Türkız, Türküm] }
+      - { id: L5.practise.10, type: translate_to_tr, grammar: [g.L5.copula], sentence: s.L5.002, typed: true, answers: ["Öğrencisin."] }
+      - { id: L5.practise.11, type: translate_to_en, grammar: [g.L5.copula], sentence: s.L5.019 }
+      - { id: L5.practise.12, type: dictation, grammar: [g.L5.copula], sentence: s.L5.009 }
+      - id: L5.practise.13
+        type: qa
+        grammar: [g.L5.copula]
+        question: s.L5.011
+        images: [img.openmoji.flag_us]
+        answers: ["(Ben) Amerikalıyım."]
+        feedback: { Amerikalım: "**Amerikalı** ends in a vowel, so the ending needs the buffer **y**: **Amerikalıyım**." }
+      - id: L5.practise.14
+        type: contrast_pair
+        grammar: [g.L5.copula]
+        pattern: g.L5.copula.1pl
+        prompt: "We're tired."
+        options: [s.L5.019, s.L5.008]
+        answer: s.L5.019
+      - id: L5.practise.15
+        type: mini_dialogue
+        grammar: [g.L5.copula]
+        images: [img.openmoji.flag_uk]
+        turns:
+          - { speaker: A, sentence: s.L5.011 }
+          - { speaker: B, blank: true, answers: ["(Ben) İngilizim."] }
+          - { speaker: A, sentence: s.L5.014 }

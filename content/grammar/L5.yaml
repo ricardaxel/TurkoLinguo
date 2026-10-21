@@ -1,0 +1,58 @@
+id: g.L5.copula
+title: "Personal pronouns + 'to be' endings"
+suffixes: [sfx.cop_1sg, sfx.cop_2sg, sfx.cop_1pl, sfx.cop_2pl, sfx.cop_3pl]
+
+reference: |
+  *I am / you are …* is an **ending** on the word: **öğretmen·im** "I am a teacher".
+
+  | Pronoun | Ending | öğretmen "teacher" | hasta "ill" |
+  |---|---|---|---|
+  | ben "I" | **-(y)Im** | öğretmen·**im** | hasta·**yım** |
+  | sen "you" | **-sIn** | öğretmen·**sin** | hasta·**sın** |
+  | o "he / she / it" | – | öğretmen | hasta |
+  | biz "we" | **-(y)Iz** | öğretmen·**iz** | hasta·**yız** |
+  | siz "you (plural / polite)" | **-sInIz** | öğretmen·**siniz** | hasta·**sınız** |
+  | onlar "they" | **-lAr** (often left out) | öğretmen(·**ler**) | hasta(·**lar**) |
+
+  **Vowel (I):** 4-way harmony on the last vowel: a ı → **ı** · e i → **i** · o u → **u** · ö ü → **ü**: *Türk·**ü**m, yorgun·**u**m, iyi·y**i**m*.
+
+  **Buffer y:** *-(y)Im* and *-(y)Iz* take a **y** only after a vowel: *hasta·**y**ım, iyi·**y**im* but *öğretmen·im, Türk·üm*.
+
+  **3rd person:** no ending (L3): *O doktor.* With **onlar**, -lAr is usually left out: *Onlar öğrenci.*
+
+  The pronoun is optional, because the ending already says who: *(Ben) yorgunum.* **siz** is also the polite "you".
+
+  **Stress:** the ending is never stressed. Stress stays on the syllable before it: *öğret**MEN**im, has**TA**yım*.
+
+  Fixed phrase (explained in L28): *Nerelisin?* "Where are you from?" — *İngilizim. / Amerikalıyım.*
+
+patterns:
+  - id: g.L5.copula.1sg_vowel
+    description: "After a vowel: buffer y + -Im (hastayım, iyiyim)"
+    suffix: sfx.cop_1sg
+    word_filter: { pos: adj, ends_with: vowel }
+  - id: g.L5.copula.1sg_consonant
+    description: "After a consonant: no buffer (yorgunum, Türküm)"
+    suffix: sfx.cop_1sg
+    word_filter: { pos: adj, ends_with: voiced_consonant }
+  - id: g.L5.copula.2sg
+    description: "-sIn: you are (hastasın, yorgunsun)"
+    suffix: sfx.cop_2sg
+    word_filter: { pos: adj }
+  - id: g.L5.copula.1pl
+    description: "-(y)Iz: we are (hastayız, yorgunuz)"
+    suffix: sfx.cop_1pl
+    word_filter: { pos: adj }
+  - id: g.L5.copula.2pl
+    description: "-sInIz: you (plural / polite) are"
+    suffix: sfx.cop_2pl
+    word_filter: { pos: adj }
+  - id: g.L5.copula.third_person
+    description: "3rd person: no ending (O doktor. Onlar öğrenci.)"
+
+feedback:
+  person_harmony: "The ending follows the last vowel of **{word}**, **{v}**: a ı → ı · e i → i · o u → u · ö ü → ü. So: **{answer}**."
+  no_buffer: "**{word}** ends in a vowel, so the ending needs the buffer **y**: **{answer}**."
+  buffer_after_n: "**{word}** ends in a consonant, so there's no buffer y: **{answer}**."
+  detached: "The 'to be' ending is **attached** to the word: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

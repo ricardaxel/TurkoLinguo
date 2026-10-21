@@ -1,0 +1,17 @@
+id: T1
+title: Greetings & politeness
+kind: core
+packs:
+  - id: T1.p1
+    unlock_after: L1
+    words: [w.selam, w.günaydın, w.iyi_akşamlar, w.iyi_geceler, w.iyi_günler, w.görüşürüz, w.hoşça_kal, w.güle_güle]
+    frames: [s.T1.001, s.T1.002]
+  - id: T1.p2
+    unlock_after: L2
+    words: [w.teşekkürler, w.teşekkür_ederim, w.sağ_ol, w.rica_ederim, w.lütfen, w.özür_dilerim, w.evet, w.hayır]
+    frames: [s.T1.003, s.T1.004]
+  - id: T1.p3
+    unlock_after: L7
+    words: [w.fena_değil, w.hoş_geldiniz, w.hoş_bulduk, w.tamam, w.efendim, w.afiyet_olsun, w.kolay_gelsin, w.pardon]
+    frames: [s.T1.005, s.T1.006]
+revisit: [L7, L8]

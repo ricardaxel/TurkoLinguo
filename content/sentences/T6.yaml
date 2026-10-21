@@ -1,0 +1,35 @@
+# Frame sentences for theme T6 (Café). Pack 1: grammar up to L7; pack 2: up to L8.
+
+- id: s.T6.001
+  tr: Bu kahve mi?
+  en: ["Is this coffee?"]
+  words: [w.bu, w.kahve]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.T6.001
+  native_required: true        # mI intonation
+
+- id: s.T6.002
+  tr: Hayır, bu çay.
+  en: ["No, this is tea.", "No, it's tea."]
+  words: [w.hayır, w.bu, w.çay]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T6.002
+
+- id: s.T6.003
+  tr: Şeker var mı?
+  en: ["Is there any sugar?", "Is there sugar?", "Do you have sugar?"]
+  words: [w.şeker, w.var]
+  grammar: [g.L7.question, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.T6.003
+  native_required: true        # mI intonation
+
+- id: s.T6.004
+  tr: Bal yok.
+  en: ["There's no honey.", "There isn't any honey."]
+  words: [w.bal, w.yok]
+  grammar: [g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.T6.004

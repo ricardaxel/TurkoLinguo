@@ -1,0 +1,175 @@
+# L8 — var / yok "there is / there isn't", with café words (T6). Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L8
+title: "var / yok"
+grammar: g.L8.varyok
+new_words: [w.var, w.yok]
+not_yet:
+  - "where something is (Evde kedi var) → L10"
+  - "having (Arabam var) → L23"
+  - "past (vardı / yoktu) → L32"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          ☕ **Çay var mı?** "Is there any tea?"
+          **Var.** "There is." · **Yok.** "There isn't."
+
+          Two little words do a lot of work in a Turkish café.
+        sentences: [s.L8.001, s.L8.002, s.L8.003]
+        audio: [aud.own.s.L8.001, aud.own.s.L8.002, aud.own.s.L8.003]
+
+      - kind: rule
+        title: "var and yok"
+        body: |
+          **var** = there is / there are · **yok** = there isn't / there aren't. They go at the **end**:
+
+          | | |
+          |---|---|
+          | Kahve **var**. | There's coffee. |
+          | Süt **yok**. | There's no milk. |
+          | Çay **yok**, kahve **var**. | There's no tea, there's coffee. |
+
+          After *çok* the noun stays singular (L4): *Çok ekmek var.* "There's a lot of bread."
+        sentences: [s.L8.006, s.L8.012, s.L8.014]
+        audio: [aud.own.s.L8.006, aud.own.s.L8.012]
+
+      - kind: rule
+        title: "Asking and answering"
+        body: |
+          Ask with **mı** (L7): ***var mı?*** · ***yok mu?***
+
+          *Ekmek var mı?* "Is there any bread?" — **Var.** / **Yok.**
+
+          ✅ Answer with **var** or **yok**. A bare *Evet* or *Hayır* sounds unfinished; *Evet, var.* and *Hayır, yok.* are fine.
+
+          🔊 The voice rises on **var**: *Çay **VAR** mı?*
+        sentences: [s.L8.007, s.L8.016]
+        audio: [aud.own.s.L8.007, aud.own.s.L8.016]
+
+      - kind: rule
+        title: "yok or değil?"
+        body: |
+          Both mean "not", but they answer different questions:
+
+          | | |
+          |---|---|
+          | **yok**: it isn't **there** | *Peynir yok.* "There's no cheese." |
+          | **değil**: it isn't **that** (L6) | *Bu peynir değil.* "This isn't cheese." |
+        sentences: [s.L8.008, s.L8.017]
+        audio: [aud.own.s.L8.008, aud.own.s.L8.017]
+
+    items:
+      - id: L8.learn.01
+        type: picture_choose
+        grammar: [g.L8.varyok]
+        pattern: g.L8.varyok.statement
+        images: [img.openmoji.coffee]
+        prompt: "Kahve …"
+        options: [var, yok, değil]
+        answer: var
+        translation: "There's coffee."
+      - id: L8.learn.02
+        type: picture_choose
+        grammar: [g.L8.varyok]
+        pattern: g.L8.varyok.statement
+        images: [img.own.no_milk]
+        prompt: "Süt …"
+        options: [yok, var, değil]
+        answer: yok
+        translation: "There's no milk."
+      - id: L8.learn.03
+        type: contrast_pair
+        grammar: [g.L8.varyok, g.L7.question]
+        pattern: g.L8.varyok.question
+        prompt: "Is there any coffee?"
+        options: [s.L8.004, s.T6.001]
+        answer: s.L8.004
+        note: "Kahve var mı? asks if there is coffee; Bu kahve mi? asks if this is coffee."
+      - { id: L8.learn.04, type: translate_to_tr, grammar: [g.L8.varyok, g.L7.question], pattern: g.L8.varyok.question, sentence: s.L8.001, word_bank: [Çay, var, mı, mi, yok] }
+      - id: L8.learn.05
+        type: listen_choose
+        grammar: [g.L8.varyok]
+        sentence: s.L8.006
+        options: [img.own.no_milk, img.openmoji.milk, img.openmoji.coffee]
+        answer: img.own.no_milk
+      - id: L8.learn.06
+        type: qa
+        grammar: [g.L8.varyok, g.L7.question]
+        pattern: g.L8.varyok.question
+        question: s.L8.001
+        images: [img.openmoji.tea]
+        answers: ["(Evet,) var.", "(Evet,) çay var."]
+        feedback: { Evet: "Answer with **var** or **yok**: **Var.** / **Evet, var.**", "Evet.": "Answer with **var** or **yok**: **Var.** / **Evet, var.**" }
+
+  practise:
+    minutes: 5
+    items:
+      - id: L8.practise.01
+        type: qa
+        grammar: [g.L8.varyok, g.L7.question]
+        pattern: g.L8.varyok.question
+        question: s.L8.007
+        images: [img.own.no_bread]
+        answers: ["(Hayır,) yok.", "(Hayır,) ekmek yok."]
+        feedback: { Hayır: "Answer with **var** or **yok**: **Yok.** / **Hayır, yok.**", "Hayır, değil.": "For 'there isn't', use **yok**, not değil: **Hayır, yok.**" }
+      - id: L8.practise.02
+        type: qa
+        grammar: [g.L8.varyok, g.L7.question]
+        pattern: g.L8.varyok.question
+        question: s.L8.004
+        images: [img.openmoji.coffee]
+        answers: ["(Evet,) var.", "(Evet,) kahve var."]
+      - { id: L8.practise.03, type: spot_error, grammar: [g.L8.varyok, g.L7.question], pattern: g.L8.varyok.question, text: "Çay var mi?", error: mi, answer: mı, sentence: s.L8.001, feedback: { mi: "**mI** follows the last vowel of **var** (a) → **mı**: **var mı**." } }
+      - { id: L8.practise.04, type: translate_to_tr, grammar: [g.L8.varyok], sentence: s.L8.012, typed: true }
+      - { id: L8.practise.05, type: translate_to_en, grammar: [g.L8.varyok, g.L4.plural], sentence: s.L8.014 }
+      - { id: L8.practise.06, type: dictation, grammar: [g.L8.varyok, g.L7.question], sentence: s.L8.013 }
+      - id: L8.practise.07
+        type: picture_choose
+        grammar: [g.L8.varyok]
+        pattern: g.L8.varyok.statement
+        images: [img.own.no_cheese]
+        prompt: "Peynir …"
+        options: [yok, var, değil]
+        answer: yok
+        translation: "There's no cheese."
+      - id: L8.practise.08
+        type: contrast_pair
+        grammar: [g.L8.varyok, g.L6.degil]
+        pattern: g.L8.varyok.yok_vs_degil
+        prompt: "There's no cheese."
+        options: [s.L8.008, s.L8.017]
+        answer: s.L8.008
+        note: "yok = not there; değil = not that."
+      - { id: L8.practise.09, type: translate_to_tr, grammar: [g.L8.varyok, g.L7.question], sentence: s.L8.011, word_bank: [Su, var, mı, mu, yok] }
+      - id: L8.practise.10
+        type: listen_choose
+        grammar: [g.L8.varyok]
+        sentence: s.L8.009
+        options: ["There are olives.", "There are no olives.", "Are there olives?"]
+        answer: "There are olives."
+      - id: L8.practise.11
+        type: qa
+        grammar: [g.L8.varyok, g.L7.question]
+        pattern: g.L8.varyok.question
+        question: s.L8.013
+        images: [img.own.no_egg]
+        answers: ["(Hayır,) yok.", "(Hayır,) yumurta yok."]
+      - id: L8.practise.12
+        type: contrast_pair
+        grammar: [g.L8.varyok, g.L7.question]
+        pattern: g.L8.varyok.question
+        prompt: "Isn't there any coffee?"
+        options: [s.L8.016, s.L8.004]
+        answer: s.L8.016
+      - { id: L8.practise.13, type: translate_to_tr, grammar: [g.L8.varyok, g.L7.question], sentence: s.L8.010, typed: true }
+      - id: L8.practise.14
+        type: mini_dialogue
+        grammar: [g.L8.varyok, g.L7.question, g.L4.plural]
+        images: [img.openmoji.tea]
+        turns:
+          - { speaker: A, sentence: s.L8.001 }
+          - { speaker: B, blank: true, answers: ["(Evet,) var.", "(Evet,) çay var."] }
+          - { speaker: A, sentence: s.L8.015 }

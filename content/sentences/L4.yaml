@@ -1,0 +1,97 @@
+# Sentences used by lesson L4. Grammar tags: g.L4.plural = -lAr, and no plural after numbers / çok.
+
+- id: s.L4.001
+  tr: İki kitap.
+  en: ["Two books."]
+  words: [w.iki, w.kitap]
+  grammar: [g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.001
+
+- id: s.L4.002
+  tr: Kitaplar yeni.
+  en: ["The books are new.", "Books are new."]
+  words: [w.kitap, w.yeni]
+  grammar: [g.L3.basics, g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.002
+
+- id: s.L4.003
+  tr: Evler eski.
+  en: ["The houses are old.", "Houses are old."]
+  words: [w.ev, w.eski]
+  grammar: [g.L3.basics, g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.003
+
+- id: s.L4.004
+  tr: Bu kitaplar yeni.
+  en: ["These books are new."]
+  words: [w.bu, w.kitap, w.yeni]
+  grammar: [g.L3.basics, g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.004
+
+- id: s.L4.005
+  tr: İki kedi.
+  en: ["Two cats."]
+  words: [w.iki, w.kedi]
+  grammar: [g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.005
+
+- id: s.L4.006
+  tr: Çok kitap.
+  en: ["A lot of books.", "Lots of books.", "Many books."]
+  words: [w.çok, w.kitap]
+  grammar: [g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.006
+
+- id: s.L4.007
+  tr: Çok kedi.
+  en: ["A lot of cats.", "Lots of cats.", "Many cats."]
+  words: [w.çok, w.kedi]
+  grammar: [g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.007
+
+- id: s.L4.008
+  tr: Saatler eski.
+  en: ["The clocks are old.", "The watches are old."]
+  words: [w.saat, w.eski]
+  grammar: [g.L3.basics, g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.008
+
+- id: s.L4.009
+  tr: Bu iki kitap yeni.
+  en: ["These two books are new."]
+  words: [w.bu, w.iki, w.kitap, w.yeni]
+  grammar: [g.L3.basics, g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.009
+
+- id: s.L4.010
+  tr: Arabalar yeni.
+  en: ["The cars are new.", "Cars are new."]
+  words: [w.araba, w.yeni]
+  grammar: [g.L3.basics, g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.010
+
+- id: s.L4.011
+  tr: Telefonlar eski.
+  en: ["The phones are old.", "Phones are old."]
+  words: [w.telefon, w.eski]
+  grammar: [g.L3.basics, g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.011
+
+- id: s.L4.012
+  tr: Bu kalemler yeni.
+  en: ["These pens are new.", "These pencils are new."]
+  words: [w.bu, w.kalem, w.yeni]
+  grammar: [g.L3.basics, g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L4.012

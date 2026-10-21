@@ -70,3 +70,57 @@
 - { word: w.ben,     suffixes: [sfx.loc], expected: bende,     note: "vs the clitic: ben de 'me too'" }
 - { word: w.Paris,   suffixes: [sfx.loc], expected: "Paris'te" }
 - { word: w.Paris,   suffixes: [sfx.abl], expected: "Paris'ten" }
+
+# Plural -lAr (L4)
+- { word: w.kitap,   suffixes: [sfx.pl], expected: kitaplar }
+- { word: w.ev,      suffixes: [sfx.pl], expected: evler }
+- { word: w.araba,   suffixes: [sfx.pl], expected: arabalar }
+- { word: w.göz,     suffixes: [sfx.pl], expected: gözler }
+- { word: w.otobüs,  suffixes: [sfx.pl], expected: otobüsler, note: "only the last vowel counts" }
+- { word: w.telefon, suffixes: [sfx.pl], expected: telefonlar, note: "only the last vowel counts" }
+- { word: w.saat,    suffixes: [sfx.pl], expected: saatler,   note: "front flag" }
+- { word: w.Türk,    suffixes: [sfx.pl], expected: Türkler,   note: "nationality word: no apostrophe" }
+- { word: w.ev_hanımı, suffixes: [sfx.pl], expected: ev hanımları, note: "compound: forms.pl" }
+
+# "To be" endings (L5): buffer y only after a vowel, 4-way harmony
+- { word: w.öğretmen, suffixes: [sfx.cop_1sg], expected: öğretmenim }
+- { word: w.hasta,    suffixes: [sfx.cop_1sg], expected: hastayım,  note: "buffer y" }
+- { word: w.iyi,      suffixes: [sfx.cop_1sg], expected: iyiyim,    note: "buffer y" }
+- { word: w.Türk,     suffixes: [sfx.cop_1sg], expected: Türküm,    note: "one syllable: no softening" }
+- { word: w.yorgun,   suffixes: [sfx.cop_1sg], expected: yorgunum }
+- { word: w.İngiliz,  suffixes: [sfx.cop_1sg], expected: İngilizim }
+- { word: w.Amerikalı, suffixes: [sfx.cop_1sg], expected: Amerikalıyım }
+- { word: w.aç,       suffixes: [sfx.cop_1sg], expected: açım,      note: "one syllable: no softening" }
+- { word: w.küçük,    suffixes: [sfx.cop_1sg], expected: küçüğüm,   note: "softening before the vowel-initial copula" }
+- { word: w.mutlu,    suffixes: [sfx.cop_2sg], expected: mutlusun }
+- { word: w.öğrenci,  suffixes: [sfx.cop_1pl], expected: öğrenciyiz }
+- { word: w.yorgun,   suffixes: [sfx.cop_1pl], expected: yorgunuz }
+- { word: w.Türk,     suffixes: [sfx.cop_1pl], expected: Türküz }
+- { word: w.doktor,   suffixes: [sfx.cop_2pl], expected: doktorsunuz }
+- { word: w.İngiliz,  suffixes: [sfx.cop_2pl], expected: İngilizsiniz }
+- { word: w.öğrenci,  suffixes: [sfx.cop_3pl], expected: öğrenciler }
+- { word: w.ev_hanımı, suffixes: [sfx.cop_1sg], expected: ev hanımıyım, note: "compound: buffer y, no n" }
+
+# değil + person endings (L6): değil never harmonises with the word before
+- { word: w.değil, suffixes: [sfx.cop_1sg], expected: değilim }
+- { word: w.değil, suffixes: [sfx.cop_2sg], expected: değilsin }
+- { word: w.değil, suffixes: [sfx.cop_1pl], expected: değiliz }
+- { word: w.değil, suffixes: [sfx.cop_2pl], expected: değilsiniz }
+- { word: w.değil, suffixes: [sfx.cop_3pl], expected: değiller }
+
+# Question particle mI (L7): separate word, 4-way harmony, person ending on mI
+- { word: w.hasta,   suffixes: [sfx.q], expected: hasta mı }
+- { word: w.öğretmen, suffixes: [sfx.q], expected: öğretmen mi }
+- { word: w.doktor,  suffixes: [sfx.q], expected: doktor mu }
+- { word: w.Türk,    suffixes: [sfx.q], expected: Türk mü }
+- { word: w.var,     suffixes: [sfx.q], expected: var mı }
+- { word: w.yok,     suffixes: [sfx.q], expected: yok mu }
+- { word: w.hasta,   suffixes: [sfx.q, sfx.cop_2sg], expected: hasta mısın }
+- { word: w.yorgun,  suffixes: [sfx.q, sfx.cop_2sg], expected: yorgun musun }
+- { word: w.Türk,    suffixes: [sfx.q, sfx.cop_2sg], expected: Türk müsün }
+- { word: w.öğrenci, suffixes: [sfx.q, sfx.cop_2sg], expected: öğrenci misin }
+- { word: w.hasta,   suffixes: [sfx.q, sfx.cop_1sg], expected: hasta mıyım, note: "buffer y after mI" }
+- { word: w.öğrenci, suffixes: [sfx.q, sfx.cop_1pl], expected: öğrenci miyiz }
+- { word: w.doktor,  suffixes: [sfx.q, sfx.cop_2pl], expected: doktor musunuz }
+- { word: w.İngiliz, suffixes: [sfx.q, sfx.cop_2pl], expected: İngiliz misiniz }
+- { word: w.öğrenci, suffixes: [sfx.pl, sfx.q], expected: öğrenciler mi, note: "3rd plural: -lAr stays on the word" }

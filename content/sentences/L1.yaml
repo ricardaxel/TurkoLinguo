@@ -1,0 +1,73 @@
+# Sentences used by lesson L1. Single words for the sound drills. Every L1 recording is native.
+
+- id: s.L1.001
+  tr: Merhaba!
+  en: ["Hello!", "Hi!"]
+  words: [w.merhaba]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.L1.001
+  native_required: true        # L1: every recording is native (stress: MERhaba)
+
+- id: s.L1.002
+  tr: kız
+  en: ["girl", "a girl", "daughter"]
+  words: [w.kız]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L1.002
+  native_required: true        # minimal pair kız / kaz
+
+- id: s.L1.003
+  tr: kaz
+  en: ["goose", "a goose"]
+  words: [w.kaz]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L1.003
+  native_required: true        # minimal pair kız / kaz
+
+- id: s.L1.004
+  tr: kır
+  en: ["countryside", "the countryside"]
+  words: [w.kır]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L1.004
+  native_required: true        # minimal pair kır / kir
+
+- id: s.L1.005
+  tr: kir
+  en: ["dirt"]
+  words: [w.kir]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L1.005
+  native_required: true        # minimal pair kır / kir
+
+- id: s.L1.006
+  tr: çam
+  en: ["pine", "pine tree", "a pine tree"]
+  words: [w.çam]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L1.006
+  native_required: true        # minimal pair çam / cam
+
+- id: s.L1.007
+  tr: cam
+  en: ["glass", "window pane"]
+  words: [w.cam]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L1.007
+  native_required: true        # minimal pair çam / cam
+
+- id: s.L1.008
+  tr: dağ
+  en: ["mountain", "a mountain"]
+  words: [w.dağ]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L1.008
+  native_required: true        # ğ lengthens the vowel: "daa"

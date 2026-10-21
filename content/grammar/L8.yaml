@@ -1,0 +1,29 @@
+id: g.L8.varyok
+title: "var / yok: there is / there isn't"
+suffixes: []
+
+reference: |
+  **var** = "there is / there are" · **yok** = "there isn't / there aren't". They come at the **end**:
+
+  *Çay var.* "There's tea." · *Süt yok.* "There's no milk."
+
+  **Question:** add **mı** (L7): *Çay var mı?* "Is there any tea?" · *Kahve yok mu?* "Isn't there any coffee?"
+
+  **Answer with var or yok**, not with evet / hayır alone: *Çay var mı?* — ***Var.*** / ***Yok.*** (*Evet, var.* and *Hayır, yok.* are fine too, but **var / yok** is the real answer.)
+
+  **yok, not değil:** *değil* denies what something **is** (*Bu peynir değil.* "This isn't cheese."); *yok* says something **isn't there** (*Peynir yok.* "There's no cheese.").
+
+  The noun stays singular after *çok* and numbers, as in L4: *Çok ekmek var.* "There's a lot of bread."
+
+patterns:
+  - id: g.L8.varyok.statement
+    description: "X var / X yok: there is / there isn't"
+  - id: g.L8.varyok.question
+    description: "X var mı? — Var. / Yok."
+  - id: g.L8.varyok.yok_vs_degil
+    description: "yok (not there) vs değil (not something)"
+
+feedback:
+  answer_var_yok: "Answer with **var** or **yok**: **{answer}**."
+  yok_not_degil: "For 'there isn't', use **yok**, not değil: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

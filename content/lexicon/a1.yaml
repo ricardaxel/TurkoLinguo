@@ -119,3 +119,187 @@
 - { id: w.Paris, lemma: Paris, pos: name, gloss: [Paris], notes: "Pronounced as spelled, so harmony is regular: Paris'te, Paris'ten." }
 - { id: w.Türkiye, lemma: Türkiye, pos: name, gloss: [Turkey, Türkiye], notes: "T4 country." }
 - { id: w.İngiltere, lemma: İngiltere, pos: name, gloss: [England], notes: "T4 country." }
+
+# --- L1: alphabet & pronunciation (minimal pairs and sound showcases) ---
+- { id: w.merhaba, lemma: merhaba, pos: interj, gloss: [hello, hi], images: [img.openmoji.waving_hand], notes: "Stressed on the first syllable: MERhaba." }
+- { id: w.kız, lemma: kız, pos: noun, gloss: [girl, daughter], images: [img.openmoji.girl], notes: "Minimal pairs (L1): kız / kaz, kır / kir." }
+- { id: w.kaz, lemma: kaz, pos: noun, gloss: [goose] }
+- { id: w.kır, lemma: kır, pos: noun, gloss: [countryside], notes: "Minimal pair (L1): kır / kir." }
+- { id: w.kir, lemma: kir, pos: noun, gloss: [dirt] }
+- { id: w.çam, lemma: çam, pos: noun, gloss: [pine, pine tree], images: [img.openmoji.evergreen_tree], notes: "Minimal pair (L1): çam / cam." }
+- { id: w.cam, lemma: cam, pos: noun, gloss: [glass, window pane], notes: "The material. A drinking glass is bardak." }
+- { id: w.dağ, lemma: dağ, pos: noun, gloss: [mountain], images: [img.openmoji.mountain], notes: "ğ lengthens the vowel: 'daa'. Also on the T21 list." }
+
+# --- L2: vowel harmony (core nouns; ev, okul, kitap, su, masa, kedi are above) ---
+- { id: w.göz, lemma: göz, pos: noun, gloss: [eye], images: [img.openmoji.eye] }
+- { id: w.gün, lemma: gün, pos: noun, gloss: [day], images: [img.openmoji.calendar] }
+- { id: w.araba, lemma: araba, pos: noun, gloss: [car], images: [img.openmoji.car] }
+
+# --- L3: bu / şu / o, bir, ne ---
+- { id: w.şu, lemma: şu, pos: pron, gloss: [that], notes: "Nearer than o, or pointing at something both speakers can see." }
+- { id: w.ne, lemma: ne, pos: pron, gloss: [what], flags: [irr], forms: { gen: neyin } }
+- { id: w.bilgisayar, lemma: bilgisayar, pos: noun, gloss: [computer], images: [img.openmoji.computer] }
+
+# --- L4: plural -lAr ---
+- { id: w.çok, lemma: çok, pos: adv, gloss: [many, a lot of, very], notes: "çok + singular noun: çok kitap 'a lot of books' (L4). çok + adjective: çok güzel 'very beautiful' (L9)." }
+- { id: w.eski, lemma: eski, pos: adj, gloss: [old], notes: "For things (eski bir ev). Old people: yaşlı (later)." }
+
+# --- L5: personal endings (states) ---
+- { id: w.hasta, lemma: hasta, pos: adj, gloss: [ill, sick], images: [img.openmoji.sick_face] }
+- { id: w.yorgun, lemma: yorgun, pos: adj, gloss: [tired], images: [img.openmoji.tired_face] }
+- { id: w.mutlu, lemma: mutlu, pos: adj, gloss: [happy], images: [img.openmoji.happy_face] }
+- { id: w.iyi, lemma: iyi, pos: adj, gloss: [good, well, fine] }
+- { id: w.nereli, lemma: nereli, pos: adv, gloss: [from where], notes: "nere + -lI (explained in L28). In L5 only in the fixed phrases Nerelisin? / Nerelisiniz?" }
+
+# --- L6: değil ---
+- { id: w.aç, lemma: aç, pos: adj, gloss: [hungry], notes: "One syllable: no softening (açım, açız)." }
+- { id: w.evli, lemma: evli, pos: adj, gloss: [married] }
+
+# --- L7: question words ---
+- { id: w.kim, lemma: kim, pos: pron, gloss: [who] }
+- { id: w.nasıl, lemma: nasıl, pos: adv, gloss: [how], notes: "Nasılsın? 'How are you?' Question words never take mI." }
+
+# --- L8: var / yok ---
+- { id: w.yok, lemma: yok, pos: particle, gloss: [there isn't, there aren't] }
+
+# --- L9: numbers 3–10 (bir and iki are above) ---
+- { id: w.üç, lemma: üç, pos: num, gloss: [three] }
+- { id: w.dört, lemma: dört, pos: num, gloss: [four] }
+- { id: w.beş, lemma: beş, pos: num, gloss: [five] }
+- { id: w.altı, lemma: altı, pos: num, gloss: [six] }
+- { id: w.yedi, lemma: yedi, pos: num, gloss: [seven] }
+- { id: w.sekiz, lemma: sekiz, pos: num, gloss: [eight] }
+- { id: w.dokuz, lemma: dokuz, pos: num, gloss: [nine] }
+- { id: w.on, lemma: "on", pos: num, gloss: [ten] }
+
+# --- T1: greetings & politeness (teşekkürler, evet, hayır are above) ---
+- { id: w.selam, lemma: selam, pos: interj, gloss: [hi], notes: "Informal." }
+- { id: w.günaydın, lemma: günaydın, pos: interj, gloss: [good morning] }
+- { id: w.iyi_akşamlar, lemma: iyi akşamlar, pos: phrase, gloss: [good evening] }
+- { id: w.iyi_geceler, lemma: iyi geceler, pos: phrase, gloss: [good night] }
+- { id: w.iyi_günler, lemma: iyi günler, pos: phrase, gloss: [have a nice day, good day] }
+- { id: w.görüşürüz, lemma: görüşürüz, pos: phrase, gloss: [see you] }
+- { id: w.hoşça_kal, lemma: hoşça kal, pos: phrase, gloss: [bye], notes: "Said by the one leaving. Polite / plural: hoşça kalın." }
+- { id: w.güle_güle, lemma: güle güle, pos: phrase, gloss: [bye], notes: "Said by the one staying." }
+- { id: w.teşekkür_ederim, lemma: teşekkür ederim, pos: phrase, gloss: [thank you] }
+- { id: w.sağ_ol, lemma: sağ ol, pos: phrase, gloss: [thanks], notes: "Informal. Polite / plural: sağ olun." }
+- { id: w.rica_ederim, lemma: rica ederim, pos: phrase, gloss: ["you're welcome"] }
+- { id: w.lütfen, lemma: lütfen, pos: interj, gloss: [please] }
+- { id: w.özür_dilerim, lemma: özür dilerim, pos: phrase, gloss: ["I'm sorry"] }
+- { id: w.fena_değil, lemma: fena değil, pos: phrase, gloss: [not bad] }
+- { id: w.hoş_geldiniz, lemma: hoş geldiniz, pos: phrase, gloss: [welcome], notes: "The answer is hoş bulduk." }
+- { id: w.hoş_bulduk, lemma: hoş bulduk, pos: phrase, gloss: [glad to be here], notes: "The answer to hoş geldiniz." }
+- { id: w.tamam, lemma: tamam, pos: interj, gloss: [OK, okay] }
+- { id: w.efendim, lemma: efendim, pos: interj, gloss: ["pardon?", sir, madam], notes: "Also how many people answer the phone." }
+- { id: w.afiyet_olsun, lemma: afiyet olsun, pos: phrase, gloss: [enjoy your meal] }
+- { id: w.kolay_gelsin, lemma: kolay gelsin, pos: phrase, gloss: [may it be easy], notes: "Said to someone who is working (culture card)." }
+- { id: w.pardon, lemma: pardon, pos: interj, gloss: [excuse me, sorry] }
+
+# --- T1b: survival phrases (set phrases: shown unsegmented, never used to build forms) ---
+- { id: w.anlamadım, lemma: anlamadım, pos: phrase, gloss: ["I didn't understand"] }
+- { id: w.bilmiyorum, lemma: bilmiyorum, pos: phrase, gloss: ["I don't know"] }
+- { id: w.Türkçe_konuşur_musunuz, lemma: Türkçe konuşur musunuz, pos: phrase, gloss: ["Do you speak Turkish?"] }
+- { id: w.İngilizce_biliyor_musunuz, lemma: İngilizce biliyor musunuz, pos: phrase, gloss: ["Do you know English?", "Do you speak English?"] }
+- { id: w.tekrar_eder_misiniz, lemma: tekrar eder misiniz, pos: phrase, gloss: ["Could you repeat that?"] }
+- { id: w.daha_yavaş_konuşur_musunuz, lemma: daha yavaş konuşur musunuz, pos: phrase, gloss: ["Could you speak more slowly?"] }
+- { id: w.bu_ne_demek, lemma: bu ne demek, pos: phrase, gloss: ["What does this mean?"] }
+- { id: w.bir_çay_alabilir_miyim, lemma: bir çay alabilir miyim, pos: phrase, gloss: ["Can I have a tea?"] }
+
+# --- T2: international cognates (otobüs, telefon are above) ---
+- { id: w.taksi, lemma: taksi, pos: noun, gloss: [taxi], images: [img.openmoji.taxi] }
+- { id: w.tren, lemma: tren, pos: noun, gloss: [train], images: [img.openmoji.train] }
+- { id: w.metro, lemma: metro, pos: noun, gloss: [metro, underground, subway], images: [img.openmoji.metro] }
+- { id: w.otel, lemma: otel, pos: noun, gloss: [hotel], images: [img.openmoji.hotel] }
+- { id: w.restoran, lemma: restoran, pos: noun, gloss: [restaurant] }
+- { id: w.müzik, lemma: müzik, pos: noun, gloss: [music], flags: [soft], images: [img.openmoji.music] }
+- { id: w.müze, lemma: müze, pos: noun, gloss: [museum] }
+- { id: w.film, lemma: film, pos: noun, gloss: [film, movie], images: [img.openmoji.film] }
+- { id: w.futbol, lemma: futbol, pos: noun, gloss: [football, soccer], images: [img.openmoji.football] }
+- { id: w.kafe, lemma: kafe, pos: noun, gloss: [café] }
+- { id: w.televizyon, lemma: televizyon, pos: noun, gloss: [television, TV], images: [img.openmoji.television] }
+- { id: w.asansör, lemma: asansör, pos: noun, gloss: [lift, elevator] }
+- { id: w.pantolon, lemma: pantolon, pos: noun, gloss: [trousers, pants], images: [img.openmoji.jeans] }
+- { id: w.ceket, lemma: ceket, pos: noun, gloss: [jacket], flags: [nosoft], notes: "Loanword: ceketi, not cekedi." }
+
+# --- T3: classroom & everyday objects (kalem, çanta, saat, pencere are above) ---
+- { id: w.defter, lemma: defter, pos: noun, gloss: [notebook, exercise book], images: [img.openmoji.notebook] }
+- { id: w.sandalye, lemma: sandalye, pos: noun, gloss: [chair], images: [img.openmoji.chair] }
+- { id: w.kapı, lemma: kapı, pos: noun, gloss: [door], images: [img.openmoji.door] }
+- { id: w.anahtar, lemma: anahtar, pos: noun, gloss: [key], images: [img.openmoji.key] }
+
+# --- T4: nationalities & languages (countries are names: Türkiye, İngiltere above) ---
+- { id: w.Türk, lemma: Türk, pos: noun, gloss: [Turkish, Turk], notes: "Nationality words are not names: no apostrophe (Türküm, Türkler)." }
+- { id: w.İngiliz, lemma: İngiliz, pos: noun, gloss: [English, British, Englishman, Englishwoman] }
+- { id: w.Amerikalı, lemma: Amerikalı, pos: noun, gloss: [American], notes: "Amerika + -lI (L28)." }
+- { id: w.Alman, lemma: Alman, pos: noun, gloss: [German] }
+- { id: w.Fransız, lemma: Fransız, pos: noun, gloss: [French, Frenchman, Frenchwoman] }
+- { id: w.İtalyan, lemma: İtalyan, pos: noun, gloss: [Italian] }
+- { id: w.İspanyol, lemma: İspanyol, pos: noun, gloss: [Spanish, Spaniard] }
+- { id: w.Japon, lemma: Japon, pos: noun, gloss: [Japanese] }
+- { id: w.Kanadalı, lemma: Kanadalı, pos: noun, gloss: [Canadian], notes: "Kanada + -lI (L28)." }
+- { id: w.Türkçe, lemma: Türkçe, pos: noun, gloss: [Turkish (language)], notes: "Language names take no apostrophe: Türkçede." }
+- { id: w.İngilizce, lemma: İngilizce, pos: noun, gloss: [English (language)] }
+- { id: w.Almanca, lemma: Almanca, pos: noun, gloss: [German (language)] }
+- { id: w.Fransızca, lemma: Fransızca, pos: noun, gloss: [French (language)] }
+- { id: w.İspanyolca, lemma: İspanyolca, pos: noun, gloss: [Spanish (language)] }
+- { id: w.İtalyanca, lemma: İtalyanca, pos: noun, gloss: [Italian (language)] }
+- { id: w.Japonca, lemma: Japonca, pos: noun, gloss: [Japanese (language)] }
+
+# --- T5: jobs ---
+- { id: w.öğretmen, lemma: öğretmen, pos: noun, gloss: [teacher], images: [img.openmoji.teacher] }
+- { id: w.öğrenci, lemma: öğrenci, pos: noun, gloss: [student, pupil], images: [img.openmoji.student] }
+- { id: w.doktor, lemma: doktor, pos: noun, gloss: [doctor], images: [img.openmoji.health_worker] }
+- { id: w.hemşire, lemma: hemşire, pos: noun, gloss: [nurse] }
+- { id: w.mühendis, lemma: mühendis, pos: noun, gloss: [engineer] }
+- { id: w.avukat, lemma: avukat, pos: noun, gloss: [lawyer] }
+- { id: w.aşçı, lemma: aşçı, pos: noun, gloss: [cook, chef], images: [img.openmoji.cook] }
+- { id: w.garson, lemma: garson, pos: noun, gloss: [waiter, waitress] }
+- { id: w.polis, lemma: polis, pos: noun, gloss: [police officer, police], images: [img.openmoji.police_officer] }
+- { id: w.satıcı, lemma: satıcı, pos: noun, gloss: [seller, salesperson] }
+- { id: w.işçi, lemma: işçi, pos: noun, gloss: [worker] }
+- { id: w.memur, lemma: memur, pos: noun, gloss: [civil servant, official] }
+- { id: w.ev_hanımı, lemma: ev hanımı, pos: noun, gloss: [homemaker, housewife], flags: [compound], forms: { pl: ev hanımları } }
+- { id: w.emekli, lemma: emekli, pos: noun, gloss: [retired, retired person] }
+- { id: w.şoför, lemma: şoför, pos: noun, gloss: [driver] }
+- { id: w.kuaför, lemma: kuaför, pos: noun, gloss: [hairdresser] }
+
+# --- T6: café (çay, süt are above) ---
+- { id: w.kahve, lemma: kahve, pos: noun, gloss: [coffee], images: [img.openmoji.coffee] }
+- { id: w.ekmek, lemma: ekmek, pos: noun, gloss: [bread], flags: [soft], images: [img.openmoji.bread] }
+- { id: w.peynir, lemma: peynir, pos: noun, gloss: [cheese], images: [img.openmoji.cheese] }
+- { id: w.zeytin, lemma: zeytin, pos: noun, gloss: [olive, olives], images: [img.openmoji.olive] }
+- { id: w.yumurta, lemma: yumurta, pos: noun, gloss: [egg], images: [img.openmoji.egg] }
+- { id: w.simit, lemma: simit, pos: noun, gloss: [simit (sesame bread ring)], flags: [soft], notes: "simidi, simide." }
+- { id: w.meyve_suyu, lemma: meyve suyu, pos: noun, gloss: [fruit juice, juice], flags: [compound], forms: { pl: meyve suları } }
+- { id: w.şeker, lemma: şeker, pos: noun, gloss: [sugar] }
+- { id: w.bal, lemma: bal, pos: noun, gloss: [honey], images: [img.openmoji.honey] }
+- { id: w.reçel, lemma: reçel, pos: noun, gloss: [jam] }
+- { id: w.tereyağı, lemma: tereyağı, pos: noun, gloss: [butter], flags: [compound], forms: { pl: tereyağları } }
+- { id: w.poğaça, lemma: poğaça, pos: noun, gloss: [poğaça (savoury pastry)] }
+- { id: w.kahvaltı, lemma: kahvaltı, pos: noun, gloss: [breakfast], notes: "Historically a compound, now an ordinary word: kahvaltıda." }
+- { id: w.tost, lemma: tost, pos: noun, gloss: [toasted sandwich] }
+
+# --- T7: colours & basic adjectives (büyük, yeni are above) ---
+- { id: w.kırmızı, lemma: kırmızı, pos: adj, gloss: [red], images: [img.openmoji.red_circle] }
+- { id: w.mavi, lemma: mavi, pos: adj, gloss: [blue], images: [img.openmoji.blue_circle] }
+- { id: w.yeşil, lemma: yeşil, pos: adj, gloss: [green], images: [img.openmoji.green_circle] }
+- { id: w.sarı, lemma: sarı, pos: adj, gloss: [yellow], images: [img.openmoji.yellow_circle] }
+- { id: w.siyah, lemma: siyah, pos: adj, gloss: [black], images: [img.openmoji.black_circle] }
+- { id: w.beyaz, lemma: beyaz, pos: adj, gloss: [white], images: [img.openmoji.white_circle] }
+- { id: w.pembe, lemma: pembe, pos: adj, gloss: [pink] }
+- { id: w.gri, lemma: gri, pos: adj, gloss: [grey, gray] }
+- { id: w.küçük, lemma: küçük, pos: adj, gloss: [small, little], flags: [soft] }
+- { id: w.güzel, lemma: güzel, pos: adj, gloss: [beautiful, nice, pretty] }
+- { id: w.çirkin, lemma: çirkin, pos: adj, gloss: [ugly] }
+- { id: w.sıcak, lemma: sıcak, pos: adj, gloss: [hot, warm], flags: [soft] }
+- { id: w.soğuk, lemma: soğuk, pos: adj, gloss: [cold], flags: [soft] }
+- { id: w.ucuz, lemma: ucuz, pos: adj, gloss: [cheap] }
+- { id: w.pahalı, lemma: pahalı, pos: adj, gloss: [expensive] }
+- { id: w.uzun, lemma: uzun, pos: adj, gloss: [long, tall] }
+- { id: w.kısa, lemma: kısa, pos: adj, gloss: [short] }
+- { id: w.kötü, lemma: kötü, pos: adj, gloss: [bad] }
+- { id: w.kolay, lemma: kolay, pos: adj, gloss: [easy] }
+- { id: w.zor, lemma: zor, pos: adj, gloss: [difficult, hard] }
+- { id: w.turuncu, lemma: turuncu, pos: adj, gloss: [orange (colour)], images: [img.openmoji.orange_circle] }
+- { id: w.mor, lemma: mor, pos: adj, gloss: [purple], images: [img.openmoji.purple_circle] }
+- { id: w.kahverengi, lemma: kahverengi, pos: adj, gloss: [brown], images: [img.openmoji.brown_circle] }

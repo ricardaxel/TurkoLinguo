@@ -1,0 +1,9 @@
+id: T1b
+title: Survival phrases
+kind: core
+packs:
+  - id: T1b.p1
+    unlock_after: L3
+    words: [w.anlamadım, w.bilmiyorum, w.Türkçe_konuşur_musunuz, w.İngilizce_biliyor_musunuz, w.tekrar_eder_misiniz, w.daha_yavaş_konuşur_musunuz, w.bu_ne_demek, w.bir_çay_alabilir_miyim]
+    frames: [s.T1b.001, s.T1b.002]
+revisit: [L7, L8]

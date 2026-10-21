@@ -1,0 +1,151 @@
+# L7 — yes/no questions with mI; question words. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L7
+title: "Questions with mI"
+grammar: g.L7.question
+new_words: [w.kim, w.nerede, w.nasıl]
+not_yet:
+  - "var mı? 'is there?' → L8"
+  - "mI with verbs (Geliyor musun?) → L16; after the past (Geldin mi?) → L31"
+  - "negative questions (Öğrenci değil misin?) → later review"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          🧑‍🎓 **Öğrenci misin?** "Are you a student?"
+          **Evet, öğrenciyim.** "Yes, I'm a student."
+
+          The question is a little separate word, **mi**, and the "you are" ending rides on it: **mi·sin**.
+        sentences: [s.L7.001, s.L7.002]
+        audio: [aud.own.s.L7.001, aud.own.s.L7.002]
+
+      - kind: rule
+        title: "mI: a separate word"
+        body: |
+          Put **mI** right after the word you're asking about. It is written **separately**, but it still follows **4-way harmony** with that word's last vowel:
+
+          | Last vowel | mI = | Example |
+          |---|---|---|
+          | a ı | **mı** | Hasta **mı**? |
+          | e i | **mi** | Öğretmen **mi**? |
+          | o u | **mu** | Doktor **mu**? |
+          | ö ü | **mü** | Türk **mü**? |
+
+          The **m** never changes. In the 3rd person, that's all: *Ayşe öğretmen mi?* "Is Ayşe a teacher?"
+        sentences: [s.L7.003, s.L7.004]
+        audio: [aud.own.s.L7.003, aud.own.s.L7.004]
+
+      - kind: rule
+        title: "The person ending goes on mI"
+        body: |
+          | | hasta | öğrenci |
+          |---|---|---|
+          | ben | hasta **mıyım**? | öğrenci **miyim**? |
+          | sen | hasta **mısın**? | öğrenci **misin**? |
+          | o | hasta **mı**? | öğrenci **mi**? |
+          | biz | hasta **mıyız**? | öğrenci **miyiz**? |
+          | siz | hasta **mısınız**? | öğrenci **misiniz**? |
+          | onlar | hasta**lar mı**? | öğrenci**ler mi**? |
+
+          - mI ends in a vowel, so *-(y)Im / -(y)Iz* take the **y**: mı·**y**ım, mi·**y**iz.
+          - **They:** -lAr stays on the word: *Öğrenciler mi?* (not ~~öğrenci miler~~).
+        sentences: [s.L7.005, s.L7.008]
+        audio: [aud.own.s.L7.005, aud.own.s.L7.008]
+
+      - kind: rule
+        title: "Stress and intonation"
+        body: |
+          🔊 The stress jumps to the syllable **just before mI**, and the voice rises there: *has**TA** mı?* · *öğren**Cİ** misin?* · ***TÜRK** müsün?*
+
+          mI itself is never stressed.
+        sentences: [s.L7.006]
+        audio: [aud.own.s.L7.006]
+
+      - kind: rule
+        title: "Question words: no mI"
+        body: |
+          | | |
+          |---|---|
+          | **ne** | what | *Bu ne?* |
+          | **kim** | who | *O kim?* |
+          | **nerede** | where | *Ali nerede?* |
+          | **nasıl** | how | *Nasılsın?* |
+
+          A question word already makes the question, so **never** add mI: *Ali nerede?* (not ~~Ali nerede mi?~~).
+
+          With a question word, the person ending goes on the question word: **Nasılsın?** "How are you?" — **İyiyim.** "I'm fine." (Polite: *Nasılsınız?*)
+        sentences: [s.L7.011, s.L7.012, s.L7.009, s.L7.010]
+        audio: [aud.own.s.L7.009, aud.own.s.L7.010]
+
+    items:
+      - id: L7.learn.01
+        type: picture_choose
+        grammar: [g.L7.question, g.L5.copula]
+        pattern: g.L7.question.2sg
+        images: [img.openmoji.student]
+        prompt: "Öğrenci …?"
+        options: [misin, mısın, musun]
+        answer: misin
+        translation: "Are you a student?"
+      - { id: L7.learn.02, type: type_form, grammar: [g.L7.question, g.L5.copula], pattern: g.L7.question.2sg, base: w.hasta, suffixes: [sfx.q, sfx.cop_2sg], prompt: "are you ill?", answer: "hasta mısın", feedback: { hastamısın: "**mI** is written as a **separate word**: **hasta mısın**.", "hasta misin": "**mI** follows the last vowel of **hasta**: **a** → **mı**: **hasta mısın**.", "hasta mı sın": "The person ending is attached to **mI**: **hasta mısın**." } }
+      - id: L7.learn.03
+        type: contrast_pair
+        grammar: [g.L7.question, g.L3.basics]
+        prompt: "Is Ayşe a teacher?"
+        options: [s.L7.004, s.L5.018]
+        answer: s.L7.004
+      - { id: L7.learn.04, type: translate_to_tr, grammar: [g.L7.question, g.L5.copula], pattern: g.L7.question.question_words, sentence: s.L7.009, word_bank: [Nasılsın, Nasıl, misin, Ne] }
+      - id: L7.learn.05
+        type: listen_choose
+        grammar: [g.L7.question, g.L4.plural]
+        pattern: g.L7.question.3pl
+        sentence: s.L7.008
+        options: ["Are they students?", "Are you a student?", "Are we students?"]
+        answer: "Are they students?"
+      - { id: L7.learn.06, type: translate_to_tr, grammar: [g.L7.question, g.L5.copula], pattern: g.L7.question.2sg, sentence: s.L7.001, word_bank: [Öğrenci, misin, mısın, mi, sen], answers: ["Sen öğrenci misin?"] }
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L7.practise.01, type: type_form, grammar: [g.L7.question, g.L5.copula], pattern: g.L7.question.2sg, base: w.yorgun, suffixes: [sfx.q, sfx.cop_2sg], prompt: "are you tired?", answer: "yorgun musun", feedback: { yorgunmusun: "**mI** is written as a **separate word**: **yorgun musun**.", "yorgun mısın": "Look at the last vowel of **yorgun**, **u**: o u → **mu**: **yorgun musun**." } }
+      - { id: L7.practise.02, type: type_form, grammar: [g.L7.question, g.L5.copula], pattern: g.L7.question.2sg, base: w.Türk, suffixes: [sfx.q, sfx.cop_2sg], prompt: "are you Turkish?", answer: "Türk müsün", feedback: { Türkmüsün: "**mI** is written as a **separate word**: **Türk müsün**." } }
+      - { id: L7.practise.03, type: type_form, grammar: [g.L7.question, g.L4.plural], pattern: g.L7.question.3pl, base: w.öğrenci, suffixes: [sfx.pl, sfx.q], prompt: "are they students?", answer: "öğrenciler mi", feedback: { "öğrenci miler": "In the 3rd person plural, **-lAr** stays on the word: **öğrenciler mi**." } }
+      - { id: L7.practise.04, type: type_form, grammar: [g.L7.question, g.L5.copula], pattern: g.L7.question.2pl, base: w.doktor, suffixes: [sfx.q, sfx.cop_2pl], prompt: "are you a doctor? (polite)", answer: "doktor musunuz" }
+      - { id: L7.practise.05, type: type_form, grammar: [g.L7.question, g.L5.copula], pattern: g.L7.question.1sg, base: w.hasta, suffixes: [sfx.q, sfx.cop_1sg], prompt: "am I ill?", answer: "hasta mıyım", feedback: { "hasta mıım": "**mI** ends in a vowel, so -(y)Im needs the buffer **y**: **hasta mıyım**." } }
+      - id: L7.practise.06
+        type: picture_choose
+        grammar: [g.L7.question, g.L3.basics]
+        pattern: g.L7.question.question_words
+        images: [img.openmoji.man]
+        prompt: "Where is Ali?"
+        options: ["Ali nerede?", "Ali nerede mi?"]
+        answer: "Ali nerede?"
+        translation: "Where is Ali? Question words (ne, kim, nerede, nasıl) never take mI."
+      - { id: L7.practise.07, type: spot_error, grammar: [g.L7.question, g.L3.basics], pattern: g.L7.question.harmony, text: "Hasta mi?", error: mi, answer: mı, sentence: s.L7.003, feedback: { mi: "**mI** follows the last vowel of **hasta**: **a** → **mı**." } }
+      - { id: L7.practise.08, type: spot_error, grammar: [g.L7.question, g.L5.copula], pattern: g.L7.question.harmony, text: "Yorgun misin?", error: misin, answer: musun, sentence: s.L7.005, feedback: { misin: "Look at the last vowel of **yorgun**, **u**: o u → **mu**: **musun**." } }
+      - { id: L7.practise.09, type: translate_to_tr, grammar: [g.L7.question, g.L5.copula], sentence: s.L7.015, typed: true, answers: ["İngiliz misiniz?"] }
+      - { id: L7.practise.10, type: translate_to_en, grammar: [g.L7.question, g.L3.basics], sentence: s.L7.011 }
+      - id: L7.practise.11
+        type: qa
+        grammar: [g.L7.question, g.L3.basics]
+        question: s.L7.013
+        images: [img.openmoji.notebook]
+        answers: ["Hayır, (bu) (bir) defter."]
+      - { id: L7.practise.12, type: dictation, grammar: [g.L7.question, g.L5.copula], sentence: s.L7.006 }
+      - id: L7.practise.13
+        type: contrast_pair
+        grammar: [g.L7.question, g.L4.plural]
+        pattern: g.L7.question.3pl
+        prompt: "Are they students?"
+        options: [s.L7.008, s.L7.001]
+        answer: s.L7.008
+      - { id: L7.practise.14, type: translate_to_tr, grammar: [g.L7.question, g.L5.copula], sentence: s.L7.018, word_bank: [Sen, aç, mısın, misin, musun], answers: ["Aç mısın?"] }
+      - id: L7.practise.15
+        type: mini_dialogue
+        grammar: [g.L7.question, g.L5.copula]
+        images: [img.openmoji.waving_hand]
+        turns:
+          - { speaker: A, sentence: s.L7.009 }
+          - { speaker: B, blank: true, answers: ["(Ben) iyiyim(, teşekkürler).", "İyiyim, sağ ol.", "Teşekkürler, iyiyim.", "İyiyim, teşekkür ederim."] }

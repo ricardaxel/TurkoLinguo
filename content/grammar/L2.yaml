@@ -1,0 +1,37 @@
+id: g.L2.harmony
+title: "Vowel harmony: the two families"
+suffixes: []
+
+reference: |
+  Turkish endings **change their vowel** to match the word. The **last vowel** of the word decides.
+
+  In the course, endings are written with capital letters for the vowel that changes: **A** and **I**.
+
+  **A: 2-way harmony** (a or e)
+
+  | Last vowel | A = |
+  |---|---|
+  | a ı o u (back) | **a** |
+  | e i ö ü (front) | **e** |
+
+  **I: 4-way harmony** (ı, i, u or ü)
+
+  | | unrounded | rounded |
+  |---|---|---|
+  | **back** | a ı → **ı** | o u → **u** |
+  | **front** | e i → **i** | ö ü → **ü** |
+
+  **Only the last vowel counts:** *ki·**tap*** → a → A = a, I = ı · *o·to·**büs*** → ü → A = e, I = ü · *te·le·**fon*** → o → A = a, I = u.
+
+  A few words are **rebels**: their last vowel is back, but they take front endings (*saat* "clock", *kalp* "heart"). The app marks them; you'll meet them one by one.
+
+patterns:
+  - id: g.L2.harmony.two_way
+    description: "A: back vowel → a, front vowel → e"
+  - id: g.L2.harmony.four_way
+    description: "I: a ı → ı, e i → i, o u → u, ö ü → ü"
+  - id: g.L2.harmony.last_vowel
+    description: "Only the last vowel counts (kitap, otobüs, telefon)"
+
+feedback:
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

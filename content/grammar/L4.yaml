@@ -1,0 +1,45 @@
+id: g.L4.plural
+title: "Plural -lAr"
+suffixes: [sfx.pl]
+
+reference: |
+  **-lAr** makes a noun plural: **kitap·lar** "books", **ev·ler** "houses".
+
+  **Vowel (A):** 2-way harmony on the *last* vowel of the word.
+  a ı o u → **-lar** · e i ö ü → **-ler**
+
+  *araba·lar, kız·lar, okul·lar* · *kedi·ler, göz·ler, gün·ler* · *o·to·büs·ler* (only the last vowel counts).
+
+  The consonant never changes, and neither does the word: *kitap → kitaplar*.
+
+  **No plural after a number or çok:** *iki kitap* "two books", *çok kitap* "a lot of books" (not ~~iki kitaplar~~). The number already says "more than one".
+
+  Rebels take front endings: *saat → saat·ler*.
+
+patterns:
+  - id: g.L4.plural.back
+    description: "Back last vowel → -lar"
+    suffix: sfx.pl
+    word_filter: { pos: noun, last_vowel: back }
+  - id: g.L4.plural.front
+    description: "Front last vowel → -ler"
+    suffix: sfx.pl
+    word_filter: { pos: noun, last_vowel: front }
+  - id: g.L4.plural.last_vowel
+    description: "First and last vowels differ in harmony: only the last one counts"
+    suffix: sfx.pl
+    word_filter: { pos: noun, last_vowel_differs_from_first: true }
+  - id: g.L4.plural.rebel
+    description: "Rebels (front flag): saat → saatler"
+    suffix: sfx.pl
+    word_filter: { pos: noun, flags: [front] }
+  - id: g.L4.plural.after_number
+    description: "No plural after a number or çok: iki kitap, çok kitap"
+
+feedback:
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-lar**: {answer}."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-ler**: {answer}."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  detached: "The plural ending is **attached** to the word: **{answer}**."
+  after_number: "After a number or **çok**, the noun stays singular: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

@@ -1,0 +1,162 @@
+# L9 — adjectives (order, bir placement, predicate) and numbers 1–10. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L9
+title: "Adjectives & numbers 1–10"
+grammar: g.L9.adj_num
+new_words: [w.üç, w.dört, w.beş, w.altı, w.yedi, w.sekiz, w.dokuz, w.on]
+not_yet:
+  - "numbers 11–1000, kaç, prices → L25"
+  - "comparison (daha büyük, en güzel) → L29"
+  - "adjectives with -lI / -sIz (şekerli) → L28"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🏡 **Güzel bir ev.** "A beautiful house."
+          **Ev çok güzel.** "The house is very beautiful."
+
+          Same words, different order, different meaning.
+        sentences: [s.L9.001, s.L9.003]
+        audio: [aud.own.s.L9.001, aud.own.s.L9.003]
+
+      - kind: rule
+        title: "Adjective first, bir in the middle"
+        body: |
+          As in English, the adjective comes **before** the noun. But **bir** sits **between** them:
+
+          | Turkish | English |
+          |---|---|
+          | büyük ev | (the) big house |
+          | büyük **bir** ev | **a** big house |
+          | kırmızı **bir** araba | **a** red car |
+
+          ❌ ~~bir büyük ev~~ (that word order means something else; don't use it yet)
+        sentences: [s.L9.008, s.L9.004]
+        audio: [aud.own.s.L9.008, aud.own.s.L9.004]
+
+      - kind: rule
+        title: "The house is big"
+        body: |
+          To say what something **is like**, put the adjective **after** the noun, with no "is" (L3):
+
+          | describing | saying |
+          |---|---|
+          | büyük bir ev "a big house" | Ev büyük. "The house is big." |
+          | kırmızı bir araba "a red car" | Araba kırmızı. "The car is red." |
+
+          **çok** before an adjective = **very**: *Ev çok güzel.* · *çok güzel bir ev* "a very beautiful house".
+        sentences: [s.L9.002, s.L9.005, s.L9.014]
+        audio: [aud.own.s.L9.002, aud.own.s.L9.005]
+
+      - kind: rule
+        title: "Numbers 1–10"
+        body: |
+          | | | | | |
+          |---|---|---|---|---|
+          | 1 **bir** | 2 **iki** | 3 **üç** | 4 **dört** | 5 **beş** |
+          | 6 **altı** | 7 **yedi** | 8 **sekiz** | 9 **dokuz** | 10 **on** |
+
+          After a number the noun stays **singular** (L4): *üç kedi* "three cats", *beş kitap var* "there are five books".
+
+          Number, then adjective, then noun: *dört büyük ev* "four big houses".
+        sentences: [s.L9.006, s.L9.007, s.L9.013]
+        audio: [aud.own.L9_numbers]
+
+    items:
+      - { id: L9.learn.01, type: translate_to_tr, grammar: [g.L9.adj_num], pattern: g.L9.adj_num.adj_bir_noun, sentence: s.L9.001, word_bank: [güzel, bir, ev, büyük], feedback: { "bir güzel ev": "**bir** goes between the adjective and the noun: **güzel bir ev**." } }
+      - id: L9.learn.02
+        type: picture_choose
+        grammar: [g.L9.adj_num]
+        pattern: g.L9.adj_num.adj_bir_noun
+        images: [img.openmoji.car]
+        prompt: "A red car: …"
+        options: ["kırmızı bir araba", "bir araba kırmızı", "araba bir kırmızı"]
+        answer: "kırmızı bir araba"
+        translation: "A red car. Adjective, then bir, then the noun."
+      - id: L9.learn.03
+        type: contrast_pair
+        grammar: [g.L9.adj_num, g.L3.basics]
+        pattern: g.L9.adj_num.predicate
+        prompt: "The house is big."
+        options: [s.L9.002, s.L9.008]
+        answer: s.L9.002
+      - id: L9.learn.04
+        type: picture_choose
+        grammar: [g.L9.adj_num]
+        pattern: g.L9.adj_num.numbers
+        images: [img.own.three_cats]
+        prompt: "… kedi"
+        options: [üç, iki, beş]
+        answer: üç
+        translation: "Three cats."
+      - id: L9.learn.05
+        type: picture_choose
+        grammar: [g.L9.adj_num, g.L4.plural]
+        pattern: g.L9.adj_num.numbers
+        images: [img.own.three_cats]
+        prompt: "Üç …"
+        options: [kedi, kediler]
+        answer: kedi
+        translation: "Three cats. After a number, the noun stays singular."
+      - id: L9.learn.06
+        type: listen_choose
+        grammar: [g.L9.adj_num, g.L8.varyok]
+        pattern: g.L9.adj_num.numbers
+        sentence: s.L9.007
+        options: ["There are five books.", "There are four books.", "There are two books."]
+        answer: "There are five books."
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L9.practise.01, type: translate_to_tr, grammar: [g.L9.adj_num], pattern: g.L9.adj_num.adj_bir_noun, sentence: s.L9.004, word_bank: [Kırmızı, bir, araba, arabalar], feedback: { "bir Kırmızı araba": "**bir** goes between the adjective and the noun: **kırmızı bir araba**." } }
+      - { id: L9.practise.02, type: translate_to_tr, grammar: [g.L9.adj_num, g.L3.basics], pattern: g.L9.adj_num.cok, sentence: s.L9.003, typed: true }
+      - { id: L9.practise.03, type: spot_error, grammar: [g.L9.adj_num, g.L4.plural, g.L8.varyok], pattern: g.L9.adj_num.numbers, text: "Üç kitaplar var.", error: kitaplar, answer: kitap, sentence: s.L9.018, feedback: { kitaplar: "After a number, the noun stays singular: **üç kitap**." } }
+      - { id: L9.practise.04, type: dictation, grammar: [g.L9.adj_num, g.L8.varyok], pattern: g.L9.adj_num.numbers, sentence: s.L9.012 }
+      - { id: L9.practise.05, type: dictation, grammar: [g.L9.adj_num], pattern: g.L9.adj_num.numbers, sentence: s.L9.016 }
+      - { id: L9.practise.06, type: translate_to_en, grammar: [g.L9.adj_num], pattern: g.L9.adj_num.cok, sentence: s.L9.014 }
+      - id: L9.practise.07
+        type: qa
+        grammar: [g.L9.adj_num, g.L7.question]
+        pattern: g.L9.adj_num.predicate
+        question: s.L9.011
+        images: [img.openmoji.ice]
+        answers: ["Evet, (su) (çok) soğuk."]
+      - id: L9.practise.08
+        type: picture_choose
+        grammar: [g.L9.adj_num]
+        pattern: g.L9.adj_num.numbers
+        images: [img.openmoji.keycap_7]
+        prompt: "7 = …"
+        options: [yedi, sekiz, dokuz]
+        answer: yedi
+        translation: "yedi = seven."
+      - id: L9.practise.09
+        type: picture_choose
+        grammar: [g.L9.adj_num]
+        pattern: g.L9.adj_num.numbers
+        images: [img.openmoji.keycap_10]
+        prompt: "10 = …"
+        options: ["on", dokuz, altı]
+        answer: "on"
+        translation: "on = ten."
+      - { id: L9.practise.10, type: translate_to_tr, grammar: [g.L9.adj_num, g.L5.copula], sentence: s.L9.017, word_bank: [Ben, yeni, bir, öğrenciyim, öğrenci], answers: ["Yeni bir öğrenciyim."] }
+      - id: L9.practise.11
+        type: contrast_pair
+        grammar: [g.L9.adj_num, g.L3.basics]
+        pattern: g.L9.adj_num.predicate
+        prompt: "A very beautiful house."
+        options: [s.L9.014, s.L9.003]
+        answer: s.L9.014
+      - { id: L9.practise.12, type: translate_to_tr, grammar: [g.L9.adj_num, g.L4.plural], sentence: s.L9.013, typed: true, feedback: { "dört büyük evler": "After a number, the noun stays singular: **dört büyük ev**." } }
+      - { id: L9.practise.13, type: translate_to_en, grammar: [g.L9.adj_num, g.L3.basics], sentence: s.L9.010 }
+      - id: L9.practise.14
+        type: mini_dialogue
+        grammar: [g.L9.adj_num, g.L8.varyok, g.L7.question]
+        images: [img.openmoji.tea]
+        turns:
+          - { speaker: A, sentence: s.L8.001 }
+          - { speaker: B, blank: true, answers: ["(Evet,) var.", "(Evet,) çay var."] }
+          - { speaker: A, sentence: s.L9.015 }

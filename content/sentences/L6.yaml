@@ -1,0 +1,148 @@
+# Sentences used by lesson L6. Grammar tags: g.L6.degil = değil + person endings.
+
+- id: s.L6.001
+  tr: Ben öğretmen değilim.
+  en: ["I'm not a teacher.", "I am not a teacher."]
+  words: [w.ben, w.öğretmen, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.001
+  native_required: true        # stress on the word before değil: öğretMEN değilim
+
+- id: s.L6.002
+  tr: Sen hasta değilsin.
+  en: ["You aren't ill.", "You're not ill.", "You are not sick."]
+  words: [w.sen, w.hasta, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.002
+
+- id: s.L6.003
+  tr: O doktor değil.
+  en: ["He isn't a doctor.", "She isn't a doctor.", "He's not a doctor.", "She's not a doctor."]
+  words: [w.o, w.doktor, w.değil]
+  grammar: [g.L3.basics, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.003
+
+- id: s.L6.004
+  tr: Biz yorgun değiliz.
+  en: ["We aren't tired.", "We're not tired.", "We are not tired."]
+  words: [w.biz, w.yorgun, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.004
+
+- id: s.L6.005
+  tr: Siz Türk değilsiniz.
+  en: ["You aren't Turkish.", "You're not Turkish.", "You are not Turkish."]
+  words: [w.siz, w.Türk, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.005
+
+- id: s.L6.006
+  tr: Onlar öğrenci değil.
+  en: ["They aren't students.", "They're not students.", "They are not students."]
+  words: [w.onlar, w.öğrenci, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.006
+
+- id: s.L6.007
+  tr: Ben aç değilim.
+  en: ["I'm not hungry.", "I am not hungry."]
+  words: [w.ben, w.aç, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.007
+
+- id: s.L6.008
+  tr: Ayşe evli değil.
+  en: ["Ayşe isn't married.", "Ayşe is not married."]
+  words: [w.Ayşe, w.evli, w.değil]
+  grammar: [g.L3.basics, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.008
+
+- id: s.L6.009
+  tr: Ben İngiliz değilim, Amerikalıyım.
+  en: ["I'm not English, I'm American.", "I am not English, I am American."]
+  words: [w.ben, w.İngiliz, w.değil, w.Amerikalı]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.009
+
+- id: s.L6.010
+  tr: Bu bir kitap değil.
+  en: ["This isn't a book.", "This is not a book.", "It isn't a book."]
+  words: [w.bu, w.bir, w.kitap, w.değil]
+  grammar: [g.L3.basics, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.010
+
+- id: s.L6.011
+  tr: Ayşe hasta değil, yorgun.
+  en: ["Ayşe isn't ill, she's tired.", "Ayşe is not sick, she is tired."]
+  words: [w.Ayşe, w.hasta, w.değil, w.yorgun]
+  grammar: [g.L3.basics, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.011
+
+- id: s.L6.012
+  tr: Biz aç değiliz.
+  en: ["We aren't hungry.", "We're not hungry.", "We are not hungry."]
+  words: [w.biz, w.aç, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.012
+
+- id: s.L6.013
+  tr: Ben evli değilim.
+  en: ["I'm not married.", "I am not married."]
+  words: [w.ben, w.evli, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.013
+
+- id: s.L6.014
+  tr: Ben açım.
+  en: ["I'm hungry.", "I am hungry."]
+  words: [w.ben, w.aç]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L6.014
+  native_required: true        # copula unstressed: Açım
+
+- id: s.L6.015
+  tr: Ben hasta değilim.
+  en: ["I'm not ill.", "I am not ill.", "I'm not sick."]
+  words: [w.ben, w.hasta, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.015
+
+- id: s.L6.016
+  tr: Ayşe evli.
+  en: ["Ayşe is married.", "Ayşe's married."]
+  words: [w.Ayşe, w.evli]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L6.016
+
+- id: s.L6.017
+  tr: Ben yorgun değilim.
+  en: ["I'm not tired.", "I am not tired."]
+  words: [w.ben, w.yorgun, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L6.017
+
+- id: s.L6.018
+  tr: Sen Amerikalısın.
+  en: ["You're American.", "You are American."]
+  words: [w.sen, w.Amerikalı]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L6.018
+  native_required: true        # copula unstressed: amerikaLIsın

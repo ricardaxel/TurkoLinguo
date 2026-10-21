@@ -1,0 +1,13 @@
+id: T2
+title: International cognates
+kind: core
+packs:
+  - id: T2.p1
+    unlock_after: L1
+    words: [w.taksi, w.tren, w.metro, w.otel, w.restoran, w.müzik, w.otobüs, w.telefon]
+    frames: [s.T2.001]
+  - id: T2.p2
+    unlock_after: L3
+    words: [w.müze, w.film, w.futbol, w.kafe, w.televizyon, w.asansör, w.pantolon, w.ceket]
+    frames: [s.T2.002, s.T2.003]
+revisit: [L3, L11]

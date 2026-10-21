@@ -1,0 +1,13 @@
+id: T4
+title: Nationalities & languages
+kind: core
+packs:
+  - id: T4.p1
+    unlock_after: L4
+    words: [w.Türk, w.İngiliz, w.Amerikalı, w.Alman, w.Fransız, w.İtalyan, w.İspanyol, w.Japon]
+    frames: [s.T4.001, s.T4.002]
+  - id: T4.p2
+    unlock_after: L5
+    words: [w.Kanadalı, w.Türkçe, w.İngilizce, w.Almanca, w.Fransızca, w.İspanyolca, w.İtalyanca, w.Japonca]
+    frames: [s.T4.003, s.T4.004]
+revisit: [L5, L7, L11, L12, L28]

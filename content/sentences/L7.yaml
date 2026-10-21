@@ -1,0 +1,180 @@
+# Sentences used by lesson L7. Grammar tags: g.L7.question = mI and question words (ne, kim, nerede, nasıl).
+
+- id: s.L7.001
+  tr: Öğrenci misin?
+  en: ["Are you a student?"]
+  words: [w.öğrenci]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.001
+  native_required: true        # mI intonation, stress before mI: öğrenCİ misin
+
+- id: s.L7.002
+  tr: Evet, öğrenciyim.
+  en: ["Yes, I'm a student.", "Yes, I am a student."]
+  words: [w.evet, w.öğrenci]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L7.002
+  native_required: true        # copula unstressed
+
+- id: s.L7.003
+  tr: Hasta mı?
+  en: ["Is he ill?", "Is she ill?", "Is he sick?", "Is she sick?"]
+  words: [w.hasta]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.003
+  native_required: true        # mI intonation
+
+- id: s.L7.004
+  tr: Ayşe öğretmen mi?
+  en: ["Is Ayşe a teacher?"]
+  words: [w.Ayşe, w.öğretmen]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.004
+  native_required: true        # mI intonation
+
+- id: s.L7.005
+  tr: Yorgun musun?
+  en: ["Are you tired?"]
+  words: [w.yorgun]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.005
+  native_required: true        # mI intonation
+
+- id: s.L7.006
+  tr: Türk müsün?
+  en: ["Are you Turkish?"]
+  words: [w.Türk]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.006
+  native_required: true        # mI intonation
+
+- id: s.L7.007
+  tr: Siz doktor musunuz?
+  en: ["Are you a doctor?", "Are you doctors?"]
+  words: [w.siz, w.doktor]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.007
+  native_required: true        # mI intonation
+
+- id: s.L7.008
+  tr: Öğrenciler mi?
+  en: ["Are they students?"]
+  words: [w.öğrenci]
+  grammar: [g.L4.plural, g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.008
+  native_required: true        # mI intonation
+
+- id: s.L7.009
+  tr: Nasılsın?
+  en: ["How are you?"]
+  words: [w.nasıl]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.009
+  native_required: true        # question intonation
+
+- id: s.L7.010
+  tr: İyiyim, teşekkürler.
+  en: ["I'm fine, thanks.", "I'm good, thanks.", "I'm well, thank you."]
+  words: [w.iyi, w.teşekkürler]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L7.010
+  native_required: true        # copula unstressed
+
+- id: s.L7.011
+  tr: O kim?
+  en: ["Who is that?", "Who's that?", "Who is he?", "Who is she?"]
+  words: [w.o, w.kim]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.011
+  native_required: true        # question intonation
+
+- id: s.L7.012
+  tr: Ali nerede?
+  en: ["Where is Ali?", "Where's Ali?"]
+  words: [w.Ali, w.nerede]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.012
+  native_required: true        # question intonation
+
+- id: s.L7.013
+  tr: Bu kitap mı?
+  en: ["Is this a book?"]
+  words: [w.bu, w.kitap]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.013
+  native_required: true        # mI intonation
+
+- id: s.L7.014
+  tr: Hayır, bu bir defter.
+  en: ["No, this is a notebook.", "No, it's a notebook."]
+  words: [w.hayır, w.bu, w.bir, w.defter]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L7.014
+
+- id: s.L7.015
+  tr: Siz İngiliz misiniz?
+  en: ["Are you English?", "Are you British?"]
+  words: [w.siz, w.İngiliz]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.015
+  native_required: true        # mI intonation
+
+- id: s.L7.016
+  tr: Evet, İngilizim.
+  en: ["Yes, I'm English.", "Yes, I am English."]
+  words: [w.evet, w.İngiliz]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L7.016
+  native_required: true        # copula unstressed
+
+- id: s.L7.017
+  tr: Ali evli mi?
+  en: ["Is Ali married?"]
+  words: [w.Ali, w.evli]
+  grammar: [g.L3.basics, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.017
+  native_required: true        # mI intonation
+
+- id: s.L7.018
+  tr: Sen aç mısın?
+  en: ["Are you hungry?"]
+  words: [w.sen, w.aç]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.018
+  native_required: true        # mI intonation
+
+- id: s.L7.019
+  tr: Hayır, aç değilim.
+  en: ["No, I'm not hungry.", "No, I am not hungry."]
+  words: [w.hayır, w.aç, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L7.019
+
+- id: s.L7.020
+  tr: Nasılsınız?
+  en: ["How are you?"]
+  words: [w.nasıl]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L7.020
+  native_required: true        # question intonation
+

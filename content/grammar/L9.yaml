@@ -1,0 +1,31 @@
+id: g.L9.adj_num
+title: "Adjectives & numbers 1–10"
+suffixes: []
+
+reference: |
+  **The adjective comes before the noun:** *büyük ev* "big house", *kırmızı araba* "red car".
+
+  **bir goes between the adjective and the noun:** ***güzel bir ev*** "a beautiful house" (not ~~bir güzel ev~~ in normal speech).
+
+  **As the predicate**, the adjective comes after, with no "is" (L3): *Ev büyük.* "The house is big." Compare *büyük bir ev* "a big house".
+
+  **çok** + adjective = "very": *çok güzel* "very beautiful", *çok güzel bir ev* "a very beautiful house".
+
+  **Numbers 1–10:** bir, iki, üç, dört, beş, altı, yedi, sekiz, dokuz, on.
+
+  After a number the noun stays **singular** (L4): *üç kedi* "three cats", *beş kitap var* "there are five books". Number + adjective + noun: *dört büyük ev* "four big houses".
+
+patterns:
+  - id: g.L9.adj_num.adj_bir_noun
+    description: "Adjective + bir + noun: güzel bir ev"
+  - id: g.L9.adj_num.predicate
+    description: "Adjective as predicate: Ev büyük. (vs büyük bir ev)"
+  - id: g.L9.adj_num.numbers
+    description: "Numbers 1–10 + singular noun: üç kedi"
+  - id: g.L9.adj_num.cok
+    description: "çok + adjective = very: çok güzel"
+
+feedback:
+  bir_position: "**bir** goes between the adjective and the noun: **{answer}**."
+  after_number: "After a number, the noun stays singular: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

@@ -1,0 +1,196 @@
+# Sentences used by lesson L5. Grammar tags: g.L5.copula = pronouns + "to be" endings.
+
+- id: s.L5.001
+  tr: Ben öğretmenim.
+  en: ["I'm a teacher.", "I am a teacher."]
+  words: [w.ben, w.öğretmen]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.001
+  native_required: true        # copula unstressed: öğretMENim
+
+- id: s.L5.002
+  tr: Sen öğrencisin.
+  en: ["You're a student.", "You are a student."]
+  words: [w.sen, w.öğrenci]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.002
+  native_required: true        # copula unstressed: öğrenCİsin
+
+- id: s.L5.003
+  tr: O doktor.
+  en: ["He's a doctor.", "She's a doctor.", "He is a doctor.", "She is a doctor."]
+  words: [w.o, w.doktor]
+  grammar: [g.L3.basics, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.003
+
+- id: s.L5.004
+  tr: Biz Türküz.
+  en: ["We're Turkish.", "We are Turkish.", "We're Turks."]
+  words: [w.biz, w.Türk]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.004
+  native_required: true        # copula unstressed: TÜRküz
+
+- id: s.L5.005
+  tr: Siz İngilizsiniz.
+  en: ["You're English.", "You are English.", "You're British."]
+  words: [w.siz, w.İngiliz]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.005
+  native_required: true        # copula unstressed: ingiLİZsiniz
+
+- id: s.L5.006
+  tr: Onlar öğrenci.
+  en: ["They're students.", "They are students."]
+  words: [w.onlar, w.öğrenci]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.006
+
+- id: s.L5.007
+  tr: Ben hastayım.
+  en: ["I'm ill.", "I am ill.", "I'm sick.", "I am sick."]
+  words: [w.ben, w.hasta]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.007
+  native_required: true        # copula unstressed: hasTAyım
+
+- id: s.L5.008
+  tr: Ben yorgunum.
+  en: ["I'm tired.", "I am tired."]
+  words: [w.ben, w.yorgun]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.008
+  native_required: true        # copula unstressed: yorGUNum
+
+- id: s.L5.009
+  tr: Sen mutlusun.
+  en: ["You're happy.", "You are happy."]
+  words: [w.sen, w.mutlu]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.009
+  native_required: true        # copula unstressed: mutLUsun
+
+- id: s.L5.010
+  tr: İyiyim.
+  en: ["I'm fine.", "I'm good.", "I'm well.", "I am fine."]
+  words: [w.iyi]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.010
+  native_required: true        # copula unstressed: iYİyim
+
+- id: s.L5.011
+  tr: Nerelisin?
+  en: ["Where are you from?"]
+  words: [w.nereli]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.011
+  native_required: true        # question intonation
+  phrase: true                  # nere + -lI (L28) + question word (L7): a fixed phrase for now
+
+- id: s.L5.012
+  tr: İngilizim.
+  en: ["I'm English.", "I am English.", "I'm British."]
+  words: [w.İngiliz]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.012
+  native_required: true        # copula unstressed: ingiLİzim
+
+- id: s.L5.013
+  tr: Amerikalıyım.
+  en: ["I'm American.", "I am American."]
+  words: [w.Amerikalı]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.013
+  native_required: true        # copula unstressed: amerikaLIyım
+
+- id: s.L5.014
+  tr: Ben Türküm.
+  en: ["I'm Turkish.", "I am Turkish.", "I'm a Turk."]
+  words: [w.ben, w.Türk]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.014
+  native_required: true        # copula unstressed: TÜRküm
+
+- id: s.L5.015
+  tr: Biz öğrenciyiz.
+  en: ["We're students.", "We are students."]
+  words: [w.biz, w.öğrenci]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.015
+  native_required: true        # copula unstressed: öğrenCİyiz
+
+- id: s.L5.016
+  tr: Siz doktorsunuz.
+  en: ["You're a doctor.", "You are a doctor.", "You're doctors.", "You are doctors."]
+  words: [w.siz, w.doktor]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.016
+  native_required: true        # copula unstressed: dokTORsunuz
+
+- id: s.L5.017
+  tr: Ali hasta.
+  en: ["Ali is ill.", "Ali is sick.", "Ali's ill."]
+  words: [w.Ali, w.hasta]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L5.017
+
+- id: s.L5.018
+  tr: Ayşe öğretmen.
+  en: ["Ayşe is a teacher.", "Ayşe's a teacher."]
+  words: [w.Ayşe, w.öğretmen]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L5.018
+
+- id: s.L5.019
+  tr: Biz yorgunuz.
+  en: ["We're tired.", "We are tired."]
+  words: [w.biz, w.yorgun]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.019
+  native_required: true        # copula unstressed: yorGUnuz
+
+- id: s.L5.020
+  tr: Onlar mutlu.
+  en: ["They're happy.", "They are happy."]
+  words: [w.onlar, w.mutlu]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.020
+
+- id: s.L5.021
+  tr: Nerelisiniz?
+  en: ["Where are you from?"]
+  words: [w.nereli]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.021
+  native_required: true        # question intonation
+  phrase: true                  # polite / plural of Nerelisin?
+
+- id: s.L5.022
+  tr: Ben öğrenciyim.
+  en: ["I'm a student.", "I am a student."]
+  words: [w.ben, w.öğrenci]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L5.022
+  native_required: true        # copula unstressed: öğrenCİyim

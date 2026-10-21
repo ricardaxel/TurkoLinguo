@@ -1,0 +1,248 @@
+# L2 — vowel harmony. A pattern lesson: no ending has a meaning yet. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L2
+title: "Vowel harmony: the two families"
+grammar: g.L2.harmony
+new_words: [w.ev, w.okul, w.kitap, w.su, w.masa, w.kedi, w.göz, w.gün, w.araba]
+not_yet:
+  - "what the endings mean: plural -lAr → L4, 'to be' endings → L5"
+  - "rebels (saat, kalp) beyond a teaser card"
+  - "sentences (Bu bir kitap) → L3"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🏠 **ev** "house" · 🚗 **araba** "car"
+
+          Soon you'll add endings to words, and the ending **changes its vowel** to match the word: one ending, two or four shapes.
+
+          This lesson trains one skill only: **find the last vowel, and know its family.**
+
+      - kind: rule
+        title: "Two families: front and back"
+        body: |
+          The 8 vowels split into two families:
+
+          | back | front |
+          |---|---|
+          | **a ı o u** | **e i ö ü** |
+
+          *Back* vowels are made at the back of the mouth, *front* vowels at the front. Say *a* then *e* and feel your tongue move forward.
+
+      - kind: rule
+        title: "A = a or e"
+        body: |
+          An ending written with **A** has two shapes. The **last vowel** of the word picks one:
+
+          | Last vowel | A = | Words |
+          |---|---|---|
+          | a ı o u | **a** | ar**a**b**a**, k**ı**z, ok**u**l |
+          | e i ö ü | **e** | **e**v, k**e**d**i**, g**ö**z, g**ü**n |
+
+          This is **2-way harmony**.
+
+      - kind: rule
+        title: "I = ı, i, u or ü"
+        body: |
+          An ending written with **I** has four shapes. Think of the vowels as a 2×2 square:
+
+          | | lips spread | lips rounded |
+          |---|---|---|
+          | **back** | a ı → **ı** | o u → **u** |
+          | **front** | e i → **i** | ö ü → **ü** |
+
+          The I copies the **corner** of the last vowel: *araba* → **ı** · *kedi* → **i** · *okul* → **u** · *göz* → **ü**.
+
+          This is **4-way harmony**.
+
+      - kind: rule
+        title: "Only the last vowel counts"
+        body: |
+          Long words can mix families. Ignore everything but the **last** vowel:
+
+          - ki·**ta**p → **a** → A = a, I = ı
+          - o·to·**bü**s → **ü** → A = e, I = ü
+          - te·le·**fo**n → **o** → A = a, I = u
+
+      - kind: examples
+        title: "Step by step"
+        body: |
+          Two questions, every time: **which is the last vowel?** then **which family / corner?**
+
+          | Word | Last vowel | A | I |
+          |---|---|---|---|
+          | masa | a | a | ı |
+          | su | u | a | u |
+          | ev | e | e | i |
+          | gün | ü | e | ü |
+        audio: [aud.own.L2_worked_examples]
+
+      - kind: note
+        title: "Rebels (a teaser)"
+        body: |
+          A handful of words break the rule: their last vowel is back, but they take **front** endings. *saat* "clock" and *kalp* "heart" are two.
+
+          Don't learn them now. The app marks every rebel when you meet it.
+
+    items:
+      - id: L2.learn.01
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.two_way
+        images: [img.openmoji.house]
+        prompt: "**ev**: which family is its last vowel?"
+        options: ["front (e i ö ü)", "back (a ı o u)"]
+        answer: "front (e i ö ü)"
+        translation: "ev = house. e is a front vowel."
+      - id: L2.learn.02
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.two_way
+        images: [img.openmoji.car]
+        prompt: "**araba** + A → A = …"
+        options: [a, e]
+        answer: a
+        translation: "araba = car. Last vowel a (back) → A = a."
+      - id: L2.learn.03
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.last_vowel
+        images: [img.openmoji.book]
+        prompt: "**kitap** + A → A = …"
+        options: [a, e]
+        answer: a
+        translation: "kitap = book. The first vowel is i, but the last one is a (back) → A = a."
+      - id: L2.learn.04
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.four_way
+        images: [img.openmoji.eye]
+        prompt: "**göz** + I → I = …"
+        options: [ı, i, u, ü]
+        answer: ü
+        translation: "göz = eye. ö is front and rounded → I = ü."
+      - id: L2.learn.05
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.four_way
+        images: [img.openmoji.school]
+        prompt: "**okul** + I → I = …"
+        options: [ı, i, u, ü]
+        answer: u
+        translation: "okul = school. Last vowel u (back, rounded) → I = u."
+      - id: L2.learn.06
+        type: listen_choose
+        grammar: [g.L2.harmony, g.L1.alphabet]
+        sentence: s.L2.001
+        options: ["eye", "day", "car"]
+        answer: "eye"
+
+  practise:
+    minutes: 5
+    items:
+      - id: L2.practise.01
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.two_way
+        images: [img.openmoji.cat]
+        prompt: "**kedi** + A → A = …"
+        options: [a, e]
+        answer: e
+        translation: "kedi = cat. Last vowel i (front) → A = e."
+      - id: L2.practise.02
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.last_vowel
+        images: [img.openmoji.bus]
+        prompt: "**otobüs** + A → A = …"
+        options: [a, e]
+        answer: e
+        translation: "otobüs = bus. The first vowel is o, but the last one is ü (front) → A = e."
+      - id: L2.practise.03
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.four_way
+        images: [img.openmoji.girl]
+        prompt: "**kız** + I → I = …"
+        options: [ı, i, u, ü]
+        answer: ı
+        translation: "kız = girl. ı is back and spread → I = ı."
+      - id: L2.practise.04
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.four_way
+        images: [img.openmoji.cat]
+        prompt: "**kedi** + I → I = …"
+        options: [ı, i, u, ü]
+        answer: i
+        translation: "kedi = cat. Last vowel i (front, spread) → I = i."
+      - id: L2.practise.05
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.four_way
+        images: [img.openmoji.calendar]
+        prompt: "**gün** + I → I = …"
+        options: [ı, i, u, ü]
+        answer: ü
+        translation: "gün = day. ü is front and rounded → I = ü."
+      - id: L2.practise.06
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.four_way
+        images: [img.openmoji.droplet]
+        prompt: "**su** + I → I = …"
+        options: [ı, i, u, ü]
+        answer: u
+        translation: "su = water. u is back and rounded → I = u."
+      - id: L2.practise.07
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.last_vowel
+        images: [img.openmoji.phone]
+        prompt: "**te·le·fon**: which vowel decides the ending?"
+        options: [e, o]
+        answer: o
+        translation: "telefon = phone. Only the last vowel counts: o → back family."
+      - id: L2.practise.08
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.two_way
+        images: [img.own.table]
+        prompt: "**masa**: which family is its last vowel?"
+        options: ["front (e i ö ü)", "back (a ı o u)"]
+        answer: "back (a ı o u)"
+        translation: "masa = table. a is a back vowel."
+      - id: L2.practise.09
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.four_way
+        images: [img.openmoji.house]
+        prompt: "**ev** + I → I = …"
+        options: [ı, i, u, ü]
+        answer: i
+        translation: "ev = house. e is front and spread → I = i."
+      - id: L2.practise.10
+        type: picture_choose
+        grammar: [g.L2.harmony]
+        pattern: g.L2.harmony.four_way
+        images: [img.openmoji.car]
+        prompt: "**araba** + I → I = …"
+        options: [ı, i, u, ü]
+        answer: ı
+        translation: "araba = car. a is back and spread → I = ı."
+      - id: L2.practise.11
+        type: listen_choose
+        grammar: [g.L2.harmony, g.L1.alphabet]
+        sentence: s.L2.002
+        options: ["day", "eye", "water"]
+        answer: "day"
+      - id: L2.practise.12
+        type: listen_choose
+        grammar: [g.L2.harmony, g.L1.alphabet]
+        sentence: s.L2.004
+        options: ["book", "table", "car"]
+        answer: "book"
+      - { id: L2.practise.13, type: dictation, grammar: [g.L2.harmony, g.L1.alphabet], sentence: s.L2.001 }
+      - { id: L2.practise.14, type: dictation, grammar: [g.L2.harmony, g.L1.alphabet], sentence: s.L2.005, note: "o·to·büs: two dots on the last vowel only." }

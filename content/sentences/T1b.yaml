@@ -1,0 +1,21 @@
+# Frame sentences for theme T1b (Survival phrases). All set phrases: shown unsegmented.
+
+- id: s.T1b.001
+  tr: Anlamadım.
+  en: ["I didn't understand.", "I don't understand."]
+  words: [w.anlamadım]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.T1b.001
+  native_required: true        # T1b phrases are always native
+  phrase: true
+
+- id: s.T1b.002
+  tr: Bu ne demek?
+  en: ["What does this mean?", "What does that mean?"]
+  words: [w.bu_ne_demek]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.T1b.002
+  native_required: true        # question intonation
+  phrase: true
