@@ -2,7 +2,7 @@ import { State } from 'ts-fsrs';
 import { content, word } from '../../content';
 import type { Item } from '../../content/types';
 import { inflect } from '../../engine/morph';
-import { buildReview, endingVariants, knownWords, matchesFilter } from '../../review/build';
+import { buildReview, canReview, endingVariants, knownWords, lessonItemsFor, matchesFilter } from '../../review/build';
 import { acceptedFor, gradeChoice, gradeTyped } from '../../session/grade';
 import {
   cardsForReview, completeLessonSession, completeReview, emptyProgress, lessonWords, MAX_NEW_PER_DAY, MAX_NEW_PER_REVIEW, newCardBudget,
@@ -95,6 +95,36 @@ describe('review selection', () => {
   });
 });
 
+describe('rule-only patterns (no suffix to generate)', () => {
+  const L13 = content.lessons.L13;
+  const p = completeLessonSession(emptyProgress(), 'L13', 'practise', allCorrect(L13.sessions.practise.items), t0);
+  const RULE = 'g.L13.clitic_de.vs_loc';
+
+  it('come back in reviews as one of their lesson exercises', () => {
+    const due = cardsForReview(p, at(30));
+    expect(due.map((c) => c.id)).toContain(RULE);
+    const s = buildReview(p, due, seeded(3));
+    const item = s.items.find((i) => s.cardFor[i.id] === RULE)!;
+    expect(item).toBeDefined();
+    expect(item.pattern).toBe(RULE);
+    expect(lessonItemsFor(RULE).map((i) => i.type)).toContain(item.type);
+  });
+
+  it('get rated, so they leave the queue', () => {
+    const due = cardsForReview(p, at(30));
+    const s = buildReview(p, due, seeded(3));
+    const after = completeReview(p, allCorrect(s.items), s.cardFor, at(30));
+    expect(new Date(after.cards[RULE].fsrs.due).getTime()).toBeGreaterThan(at(30).getTime());
+  });
+
+  it('a card that can never produce an exercise is not counted as due', () => {
+    const stuck = { ...p.cards[RULE], id: 'g.L13.clitic_de.no_such_rule' };
+    const q = { ...p, cards: { ...p.cards, [stuck.id]: stuck } };
+    expect(canReview(stuck)).toBe(false);
+    expect(cardsForReview(q, at(30)).map((c) => c.id)).not.toContain(stuck.id);
+  });
+});
+
 describe('review items', () => {
   const p = completeLessonSession(emptyProgress(), 'L10', 'practise', allCorrect(L10.sessions.practise.items), t0);
   const known = knownWords(p);
@@ -110,6 +140,18 @@ describe('review items', () => {
     expect(voiceless).not.toContain('masa');
     const differs = known.filter((w) => matchesFilter(w, { pos: 'noun', last_vowel_differs_from_first: true })).map((w) => w.lemma);
     expect(differs).toContain('otobüs');
+  });
+
+  it('nodrill words never match', () => {
+    const w = { ...content.lexicon['w.büyük'], flags: ['nodrill' as const] };
+    expect(matchesFilter(content.lexicon['w.büyük'], { pos: 'adj' })).toBe(true);
+    expect(matchesFilter(w, { pos: 'adj' })).toBe(false);
+  });
+
+  it('compounds only match patterns that ask for them', () => {
+    const odası = content.lexicon['w.yatak_odası'];
+    expect(matchesFilter(odası, { pos: 'noun' })).toBe(false);
+    expect(matchesFilter(odası, { pos: 'noun', flags: ['compound'] })).toBe(true);
   });
 
   it.each([1, 2, 3, 4, 5])('every generated item is answerable with its own answer (seed %i)', (seed) => {
@@ -170,8 +212,11 @@ describe('review items for suffix-chain patterns (L11, L12)', () => {
     expect(gradeTyped(item, wrong, accepted, lang).message).toContain('Fıstıkçı Şahap');
   });
 
-  // names aren't word cards (lessonWords), so name patterns have no word to draw
-  it.each(['g.L11.loc_copula.name', 'g.L12.abl.origin'])('%s: no item without a known name', (id) => {
-    expect(buildReview(p, [p.cards[id]], seeded(1)).items).toEqual([]);
+  // names aren't word cards (lessonWords), so name patterns have no word to draw:
+  // they fall back to one of their lesson exercises instead of getting stuck
+  it.each(['g.L11.loc_copula.name', 'g.L12.abl.origin'])('%s: falls back to a lesson exercise', (id) => {
+    const [item] = buildReview(p, [p.cards[id]], seeded(1)).items;
+    expect(item.pattern).toBe(id);
+    expect(lessonItemsFor(id).some((i) => i.type === item.type)).toBe(true);
   });
 });

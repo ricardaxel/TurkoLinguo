@@ -8,6 +8,7 @@ import { createEmptyCard, fsrs, generatorParameters, Rating, State, type Card, t
 import { content } from '../content';
 import type { Item } from '../content/types';
 import type { Status } from '../engine/check';
+import { canReview, knownWords } from '../review/build';
 
 export type CardKind = 'pattern' | 'word';
 
@@ -163,7 +164,9 @@ export const newCardBudget = (p: Progress, now: Date) =>
 
 /** Cards for the next review: due ones first (most overdue first), then a few new ones (daily cap). */
 export function cardsForReview(p: Progress, now: Date): ReviewCard[] {
-  const all = Object.values(p.cards);
+  // cards that can't produce an exercise yet would never be rated and would block the queue
+  const known = knownWords(p);
+  const all = Object.values(p.cards).filter((c) => canReview(c, known));
   const due = all
     .filter((c) => c.fsrs.state !== State.New && new Date(c.fsrs.due) <= now)
     .sort((a, b) => a.fsrs.due.localeCompare(b.fsrs.due));
