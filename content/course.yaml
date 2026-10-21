@@ -36,11 +36,11 @@ lessons:
   L22: { title: "Compound nouns", grammar: g.L22.compound }
   L23: { title: "Having: possessive + var/yok", grammar: g.L23.have }
   L24: { title: "Cases after possessives: buffer n", grammar: g.L24.poss_case }
-  L25: { title: "Numbers 11–1000, prices", grammar: g.L25.numbers }
-  L26: { title: "Time & days", grammar: g.L26.time }
-  L27: { title: "-(y)lA / ile", grammar: g.L27.ile }
-  L28: { title: "-lI / -sIz, origin, -CI", grammar: g.L28.li_siz }
-  L29: { title: "Comparison: daha, en", grammar: g.L29.comparison }
+  L25: { title: "Numbers 11–1000, prices", grammar: g.L25.numbers, file: lessons/L25.yaml }
+  L26: { title: "Time & days", grammar: g.L26.time, file: lessons/L26.yaml }
+  L27: { title: "-(y)lA / ile", grammar: g.L27.ile, file: lessons/L27.yaml }
+  L28: { title: "-lI / -sIz, origin, -CI", grammar: g.L28.li_siz, file: lessons/L28.yaml }
+  L29: { title: "Comparison: daha, en", grammar: g.L29.comparison, file: lessons/L29.yaml }
   L30: { title: "Past tense -DI", grammar: g.L30.past }
   L31: { title: "Past: negative & questions", grammar: g.L31.past_neg_q }
   L32: { title: "Past of 'to be': -(y)DI", grammar: g.L32.copula_past }

@@ -1,0 +1,54 @@
+id: g.L28.li_siz
+title: "-lI / -sIz, origin, -CI"
+suffixes: [sfx.li, sfx.siz, sfx.ci]
+
+reference: |
+  **-lI** "with" and **-sIz** "without" make adjectives from nouns:
+
+  | Noun | -lI | -sIz |
+  |---|---|---|
+  | şeker "sugar" | şeker·**li** "with sugar" | şeker·**siz** "without sugar" |
+  | süt "milk" | süt·**lü** | süt·**süz** |
+  | tuz "salt" | tuz·**lu** "salty" | tuz·**suz** |
+
+  - **4-way harmony (I):** a ı → ı · e i → i · o u → u · ö ü → ü.
+  - Both start with a consonant, so the word **doesn't change**: *süt·lü* (not ~~südlü~~).
+  - They work like any adjective: before the noun (*sütlü kahve* "coffee with milk") or as the predicate (*Çay şekerli.* "The tea has sugar in it.").
+  - Some have their own meaning: **evli** "married" (ev "home"), **tuzlu** "salty".
+
+  **Origin:** -lI on a place says where someone is from: **İstanbul·lu**, **Ankara·lı**, **İzmir·li**, **Londra·lı**. *Nereli·sin?* "Where are you from?" — *İzmirli·yim.* "I'm from İzmir."
+
+  ⚠️ **No apostrophe**: -lI makes a new word, it isn't an ending on the name. *İstanbullu*, not ~~İstanbul'lu~~. (Compare *İstanbul'da*, where -DA is an ending.) The "to be" endings then attach normally: *Ankaralı·yım* (buffer y after a vowel), *İzmirli·siniz*.
+
+  **-CI** "person who sells / does": **kahve·ci** "coffee seller, café", **süt·çü** "milkman", **balık·çı** "fishmonger, fisherman", **kitap·çı** "bookseller, bookshop", **gazete·ci** "journalist".
+
+  - **C** follows the D rule: **ç** after f s t k ç ş h p (Fıstıkçı Şahap), otherwise **c**.
+  - 4-way harmony for the vowel, and the word doesn't change: *balık·çı* (not ~~balığçı~~).
+
+patterns:
+  - id: g.L28.li_siz.li
+    description: "-lI 'with' (4-way harmony): şekerli, tuzlu, sütlü"
+    suffix: sfx.li
+    word_filter: { pos: noun }
+  - id: g.L28.li_siz.siz
+    description: "-sIz 'without' (4-way harmony): şekersiz, tuzsuz, sütsüz"
+    suffix: sfx.siz
+    word_filter: { pos: noun }
+  - id: g.L28.li_siz.origin
+    description: "Origin: place + -lI, no apostrophe (İstanbullu, Ankaralı, İzmirliyim)"
+  - id: g.L28.li_siz.ci_voiceless
+    description: "-CI after f s t k ç ş h p → -çı / -çi / -çu / -çü (sütçü, balıkçı)"
+  - id: g.L28.li_siz.ci_voiced
+    description: "-CI otherwise → -cı / -ci / -cu / -cü (kahveci, gazeteci)"
+
+feedback:
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel, so the ending has **ı** or **u**: {answer}."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel, so the ending has **i** or **ü**: {answer}."
+  vowel_round: "4-way harmony: a ı → **ı**, e i → **i**, o u → **u**, ö ü → **ü**. The last vowel of **{word}** is **{v}**: {answer}."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  stem_changed: "The ending starts with a consonant, so **{word}** doesn't change: **{answer}**."
+  detached: "The ending is **attached** to the word: **{answer}**."
+  no_apostrophe: "-lI makes a **new word**, so there's **no apostrophe**: **{answer}**."
+  ci_voiceless: "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **ç**: {answer}."
+  ci_voiced: "**{c}** is not in Fıstıkçı Şahap → **c**: {answer}."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

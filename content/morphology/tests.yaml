@@ -70,3 +70,73 @@
 - { word: w.ben,     suffixes: [sfx.loc], expected: bende,     note: "vs the clitic: ben de 'me too'" }
 - { word: w.Paris,   suffixes: [sfx.loc], expected: "Paris'te" }
 - { word: w.Paris,   suffixes: [sfx.abl], expected: "Paris'ten" }
+
+# ---------- L25–L29 ----------
+# Age and prices (L25): possessive + buffer n (L24)
+- { word: w.yaş,     suffixes: [sfx.poss_3sg, sfx.loc], expected: yaşında, note: "Kaç yaşındasın? fixed pattern" }
+- { word: w.tane,    suffixes: [sfx.poss_3sg], expected: tanesi }
+- { word: w.kilo,    suffixes: [sfx.poss_3sg], expected: kilosu }
+
+# At what time? number + -DA (L26)
+- { word: w.bir,     suffixes: [sfx.loc], expected: birde }
+- { word: w.iki,     suffixes: [sfx.loc], expected: ikide }
+- { word: w.üç,      suffixes: [sfx.loc], expected: üçte,     note: "ç is voiceless" }
+- { word: w.dört,    suffixes: [sfx.loc], expected: dörtte }
+- { word: w.beş,     suffixes: [sfx.loc], expected: beşte }
+- { word: w.altı,    suffixes: [sfx.loc], expected: altıda }
+- { word: w.dokuz,   suffixes: [sfx.loc], expected: dokuzda }
+- { word: w.on,      suffixes: [sfx.loc], expected: onda }
+- { word: w.buçuk,   suffixes: [sfx.loc], expected: buçukta, note: "soft flag ignored before a consonant" }
+- { word: w.yarım,   suffixes: [sfx.loc], expected: yarımda }
+- { word: w.haziran, suffixes: [sfx.loc], expected: haziranda }
+- { word: w.eylül,   suffixes: [sfx.loc], expected: eylülde }
+- { word: w.hafta_sonu, suffixes: [sfx.loc], expected: hafta sonunda, note: "compound: buffer n" }
+
+# -(y)lA "with, by" (L27): 2-way harmony, buffer y, no softening, no buffer n after a possessive
+- { word: w.otobüs,  suffixes: [sfx.ins], expected: otobüsle, note: "only the last vowel counts" }
+- { word: w.tren,    suffixes: [sfx.ins], expected: trenle }
+- { word: w.araba,   suffixes: [sfx.ins], expected: arabayla, note: "buffer y" }
+- { word: w.taksi,   suffixes: [sfx.ins], expected: taksiyle }
+- { word: w.metro,   suffixes: [sfx.ins], expected: metroyla }
+- { word: w.uçak,    suffixes: [sfx.ins], expected: uçakla,   note: "no softening: consonant-initial after a consonant" }
+- { word: w.kalem,   suffixes: [sfx.ins], expected: kalemle }
+- { word: w.saat,    suffixes: [sfx.ins], expected: saatle,   note: "front flag" }
+- { word: w.onlar,   suffixes: [sfx.ins], expected: onlarla }
+- { word: w.Ali,     suffixes: [sfx.ins], expected: "Ali'yle" }
+- { word: w.Ayşe,    suffixes: [sfx.ins], expected: "Ayşe'yle" }
+- { word: w.Ahmet,   suffixes: [sfx.ins], expected: "Ahmet'le" }
+- { word: w.arkadaş, suffixes: [sfx.poss_1sg, sfx.ins], expected: arkadaşımla }
+- { word: w.anne,    suffixes: [sfx.poss_1sg, sfx.ins], expected: annemle }
+- { word: w.kardeş,  suffixes: [sfx.poss_3sg, sfx.ins], expected: kardeşiyle, note: "no buffer n before -(y)lA" }
+- { word: w.ben,     suffixes: [sfx.ins], expected: benimle,  pending: "pronouns take -lA on the genitive form (benim·le); engine gives benle" }
+- { word: w.sen,     suffixes: [sfx.ins], expected: seninle,  pending: "pronouns take -lA on the genitive form (senin·le)" }
+- { word: w.o,       suffixes: [sfx.ins], expected: onunla,   pending: "pronouns take -lA on the genitive form (onun·la); engine gives oyla" }
+- { word: w.biz,     suffixes: [sfx.ins], expected: bizimle,  pending: "pronouns take -lA on the genitive form (bizim·le)" }
+- { word: w.siz,     suffixes: [sfx.ins], expected: sizinle,  pending: "pronouns take -lA on the genitive form (sizin·le)" }
+- { word: w.kim,     suffixes: [sfx.ins], expected: kiminle,  pending: "kim takes -lA on the genitive form (kimin·le); engine gives kimle (colloquial)" }
+
+# -lI / -sIz / -CI (L28): 4-way harmony, consonant-initial (no stem change)
+- { word: w.şeker,   suffixes: [sfx.li],  expected: şekerli }
+- { word: w.şeker,   suffixes: [sfx.siz], expected: şekersiz }
+- { word: w.tuz,     suffixes: [sfx.li],  expected: tuzlu }
+- { word: w.tuz,     suffixes: [sfx.siz], expected: tuzsuz }
+- { word: w.süt,     suffixes: [sfx.li],  expected: sütlü }
+- { word: w.süt,     suffixes: [sfx.siz], expected: sütsüz }
+- { word: w.ev,      suffixes: [sfx.li],  expected: evli }
+- { word: w.kahve,   suffixes: [sfx.ci],  expected: kahveci }
+- { word: w.gazete,  suffixes: [sfx.ci],  expected: gazeteci }
+- { word: w.süt,     suffixes: [sfx.ci],  expected: sütçü,   note: "C → ç after Fıstıkçı Şahap" }
+- { word: w.balık,   suffixes: [sfx.ci],  expected: balıkçı, note: "no softening before a consonant" }
+- { word: w.kitap,   suffixes: [sfx.ci],  expected: kitapçı }
+- { word: w.İstanbul, suffixes: [sfx.li], expected: İstanbullu, pending: "derivational -lI on a name takes no apostrophe; engine gives İstanbul'lu" }
+- { word: w.Ankara,  suffixes: [sfx.li],  expected: Ankaralı,   pending: "derivational -lI on a name takes no apostrophe" }
+- { word: w.İzmir,   suffixes: [sfx.li, sfx.cop_1sg], expected: İzmirliyim, pending: "derivational -lI on a name takes no apostrophe" }
+- { word: w.Londra,  suffixes: [sfx.li, sfx.cop_1pl], expected: Londralıyız, pending: "derivational -lI on a name takes no apostrophe" }
+
+# Comparison (L29): ablative of the thing compared with
+- { word: w.köpek,   suffixes: [sfx.abl], expected: köpekten }
+- { word: w.kahve,   suffixes: [sfx.abl], expected: kahveden }
+- { word: w.tren,    suffixes: [sfx.abl], expected: trenden }
+- { word: w.ben,     suffixes: [sfx.abl], expected: benden }
+- { word: w.sen,     suffixes: [sfx.abl], expected: senden }
+- { word: w.o,       suffixes: [sfx.abl], expected: ondan,   pending: "pronoun o takes buffer n before case endings (ona, onu, onda, ondan); engine gives odan" }

@@ -1,0 +1,164 @@
+# L28 — -lI / -sIz "with / without", origin, -CI. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L28
+title: "-lI / -sIz, origin, -CI"
+grammar: g.L28.li_siz
+new_words: [w.nereli, w.evli, w.bekâr, w.gazete]
+not_yet:
+  - "-lIk (gözlük, kitaplık) and -CA (Türkçe as a pattern) → A2 word-building"
+  - "-sIz + person endings in long chains (parasızım) → later review"
+  - "country + -lI as nationality (Amerikalı, Kanadalı) → T4 words, recapped here only in a note"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          🍵 **Çay şekerli mi?** "Is there sugar in the tea?" — **Hayır, şekersiz.** "No, without sugar."
+          🌍 **Nerelisin?** "Where are you from?" — **İzmirliyim.** "I'm from İzmir."
+
+          Remember *Nerelisin?* from L5? Now you can take it apart: **nere·li·sin**.
+        sentences: [s.L28.001, s.L28.002, s.L28.003, s.L28.004]
+        audio: [aud.own.s.L28.001, aud.own.s.L28.002, aud.own.s.L28.003, aud.own.s.L28.004]
+
+      - kind: rule
+        title: "-lI with, -sIz without"
+        body: |
+          Two endings that turn a noun into an adjective. Both use **4-way harmony (I)**: a ı → **ı** · e i → **i** · o u → **u** · ö ü → **ü**
+
+          | Noun | with | without |
+          |---|---|---|
+          | şeker "sugar" | şeker·**li** | şeker·**siz** |
+          | tuz "salt" | tuz·**lu** "salty" | tuz·**suz** |
+          | süt "milk" | süt·**lü** | süt·**süz** |
+          | para "money" | para·**lı** | para·**sız** "free, broke" |
+
+          They start with a consonant, so the word **doesn't change**: *süt·lü*.
+
+          Use them like any adjective: *sütlü kahve* "coffee with milk", *Çorba çok tuzlu.* "The soup is very salty."
+        sentences: [s.L28.005, s.L28.006, s.L28.017]
+        audio: [aud.own.s.L28.005, aud.own.s.L28.006, aud.own.s.L28.017]
+        interactive:
+          component: suffix_steps
+          params: { words: [w.şeker, w.tuz, w.süt], suffix: sfx.li }
+
+      - kind: rule
+        title: "Where are you from? -lI"
+        body: |
+          On a place, -lI means *from there*:
+
+          | Place | Person from there |
+          |---|---|
+          | İstanbul | İstanbul**lu** |
+          | Ankara | Ankara**lı** |
+          | İzmir | İzmir**li** |
+          | Londra | Londra**lı** |
+
+          ⚠️ **No apostrophe!** -lI makes a **new word**; it isn't an ending on the name. *İstanbullu*, not ~~İstanbul'lu~~. Compare *İstanbul'da* "in Istanbul" (an ending → apostrophe).
+
+          Add "to be" as usual: *Ankaralı·**yım*** (buffer y), *İzmirli·**siniz***. And **Nere·li·sin?** = where · from · you are.
+        sentences: [s.L28.010, s.L28.011, s.L28.023, s.L28.024]
+        audio: [aud.own.s.L28.010, aud.own.s.L28.011, aud.own.s.L28.023, aud.own.s.L28.024]
+
+      - kind: rule
+        title: "-CI: the person who sells or does it"
+        body: |
+          **-CI** makes jobs and shops:
+
+          | | |
+          |---|---|
+          | kahve → kahve**ci** | coffee seller, café |
+          | gazete → gazete**ci** | journalist |
+          | süt → süt**çü** | milkman |
+          | balık → balık**çı** | fishmonger, fisherman |
+          | kitap → kitap**çı** | bookseller, bookshop |
+
+          **C** works like **D**: **ç** after f s t k ç ş h p (Fıstıkçı Şahap, the pistachio seller, is a *fıstık·çı* himself!), otherwise **c**. The vowel follows 4-way harmony, and the word doesn't change: *balıkçı*, not ~~balığçı~~.
+        sentences: [s.L28.013, s.L28.015, s.L28.016]
+        audio: [aud.own.s.L28.013, aud.own.s.L28.015, aud.own.s.L28.016]
+
+      - kind: note
+        title: "Words with a life of their own"
+        body: |
+          Some -lI words have their own meaning:
+
+          - **evli** "married" (ev = home): *Ali evli mi? — Evet, evli. İki çocuğu var.*
+          - Its opposite is a separate word: **bekâr** "single": *Ben bekârım.*
+          - **Nereli** "from where": *Nerelisin?*
+
+          You already know a few from T4: *Amerika·lı, Kanada·lı*.
+        sentences: [s.L28.007, s.L28.008, s.L28.009]
+        audio: [aud.own.s.L28.007, aud.own.s.L28.008, aud.own.s.L28.009]
+
+    items:
+      - { id: L28.learn.01, type: pick_suffix, grammar: [g.L28.li_siz], pattern: g.L28.li_siz.li, base: w.şeker, suffix: sfx.li, options: [li, lı, lu, lü], answer: li, feedback: "auto:g.L28.li_siz" }
+      - { id: L28.learn.02, type: pick_suffix, grammar: [g.L28.li_siz], pattern: g.L28.li_siz.li, base: w.tuz, suffix: sfx.li, options: [lı, li, lu, lü], answer: lu, feedback: "auto:g.L28.li_siz" }
+      - { id: L28.learn.03, type: pick_suffix, grammar: [g.L28.li_siz], pattern: g.L28.li_siz.siz, base: w.süt, suffix: sfx.siz, options: [siz, sız, suz, süz], answer: süz, feedback: "auto:g.L28.li_siz" }
+      - id: L28.learn.04
+        type: picture_choose
+        grammar: [g.L28.li_siz, g.L5.copula]
+        pattern: g.L28.li_siz.origin
+        images: [img.openmoji.flag_uk]
+        prompt: "Nerelisin? — …"
+        options: [Londralıyım, "Londra'lıyım", "Londra'dayım"]
+        answer: Londralıyım
+        translation: "Where are you from? — I'm from London."
+        feedback: { "Londra'lıyım": "-lI makes a **new word**, so there's **no apostrophe**: **Londralıyım**.", "Londra'dayım": "**Londra'dayım** means *I'm in London*. *From* (origin) is **-lI**: **Londralıyım**." }
+      - id: L28.learn.05
+        type: picture_choose
+        grammar: [g.L28.li_siz, g.L19.poss_sg]
+        pattern: g.L28.li_siz.ci_voiceless
+        images: [img.openmoji.fish]
+        prompt: "Babam …"
+        options: [balıkçı, balıkcı, balığçı]
+        answer: balıkçı
+        translation: "My father is a fisherman."
+        feedback: { balıkcı: "**balık** ends in **k**, one of the Fıstıkçı Şahap letters → **ç**: **balıkçı**.", balığçı: "-CI starts with a consonant, so **balık** doesn't change: **balıkçı**." }
+      - { id: L28.learn.06, type: translate_to_tr, grammar: [g.L28.li_siz, g.L15.prog], pattern: g.L28.li_siz.siz, sentence: s.L28.017, word_bank: [Şekersiz, Şekerli, Şekersız, çay, içiyorum] }
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L28.practise.01, type: type_form, grammar: [g.L28.li_siz], pattern: g.L28.li_siz.siz, base: w.şeker, suffixes: [sfx.siz], prompt: "without sugar", answer: şekersiz, feedback: "auto:g.L28.li_siz" }
+      - { id: L28.practise.02, type: type_form, grammar: [g.L28.li_siz], pattern: g.L28.li_siz.li, base: w.süt, suffixes: [sfx.li], prompt: "with milk", answer: sütlü, feedback: "auto:g.L28.li_siz" }
+      - { id: L28.practise.03, type: type_form, grammar: [g.L28.li_siz], pattern: g.L28.li_siz.ci_voiced, base: w.kahve, suffixes: [sfx.ci], prompt: "coffee seller, café", answer: kahveci, feedback: { kahveçi: "**kahve** ends in a vowel, not a Fıstıkçı Şahap letter → **c**: **kahveci**." } }
+      - { id: L28.practise.04, type: type_form, grammar: [g.L28.li_siz], pattern: g.L28.li_siz.ci_voiceless, base: w.süt, suffixes: [sfx.ci], prompt: "milkman", answer: sütçü, feedback: { sütcü: "**süt** ends in **t**, one of the Fıstıkçı Şahap letters → **ç**: **sütçü**.", sütçu: "4-way harmony: the last vowel of **süt** is **ü** → **ü**: **sütçü**." } }
+      - { id: L28.practise.05, type: spot_error, grammar: [g.L28.li_siz, g.L3.basics], pattern: g.L28.li_siz.origin, text: "Ayşe İstanbul'lu.", error: "İstanbul'lu", answer: İstanbullu, sentence: s.L28.010, feedback: { "İstanbul'lu": "-lI makes a **new word**, so there's **no apostrophe**: **İstanbullu**." } }
+      - { id: L28.practise.06, type: spot_error, grammar: [g.L28.li_siz, g.L19.poss_sg], pattern: g.L28.li_siz.ci_voiced, text: "Annem gazeteçi.", error: gazeteçi, answer: gazeteci, sentence: s.L28.015, feedback: { gazeteçi: "**gazete** ends in a vowel, not a Fıstıkçı Şahap letter → **c**: **gazeteci**." } }
+      - id: L28.practise.07
+        type: contrast_pair
+        grammar: [g.L28.li_siz, g.L11.loc_copula]
+        pattern: g.L28.li_siz.origin
+        prompt: "I'm from London."
+        options: [s.L28.025, s.L12.008]
+        answer: s.L28.025
+        note: "Londralıyım (from London) vs Londra'dayım (in London)."
+      - id: L28.practise.08
+        type: qa
+        grammar: [g.L28.li_siz, g.L5.copula, g.L7.question]
+        pattern: g.L28.li_siz.origin
+        question: s.L28.003
+        images: [img.openmoji.flag_turkey]
+        answers: ["(Ben) {İstanbulluyum|Ankaralıyım|İzmirliyim}.", "(Ben) Türküm.", "(Ben) Türkiye'denim."]
+        translation: "Where are you from? — I'm from Istanbul / Ankara / İzmir (Turkey)."
+        feedback: { "İstanbul'luyum.": "-lI makes a **new word**, so there's **no apostrophe**: **İstanbulluyum**.", "Ankara'lıyım.": "-lI makes a **new word**, so there's **no apostrophe**: **Ankaralıyım**.", "İzmir'liyim.": "-lI makes a **new word**, so there's **no apostrophe**: **İzmirliyim**." }
+      - id: L28.practise.09
+        type: mini_dialogue
+        grammar: [g.L28.li_siz, g.L7.question]
+        pattern: g.L28.li_siz.li
+        images: [img.openmoji.coffee]
+        turns:
+          - { speaker: A, sentence: s.L28.021 }
+          - { speaker: B, blank: true, answers: ["{Sütlü|Sütsüz}, lütfen."] }
+      - { id: L28.practise.10, type: translate_to_en, grammar: [g.L28.li_siz, g.L9.adj_num], sentence: s.L28.006 }
+      - { id: L28.practise.11, type: translate_to_tr, grammar: [g.L28.li_siz, g.L13.clitic_de, g.L7.question, g.L5.copula], pattern: g.L28.li_siz.origin, sentence: s.L28.019, typed: true }
+      - { id: L28.practise.12, type: dictation, grammar: [g.L28.li_siz, g.L11.loc_copula, g.L13.clitic_de], pattern: g.L28.li_siz.origin, sentence: s.L28.024, note: "One apostrophe (Londra'dayım: an ending) and none (İstanbulluyum: a new word)." }
+      - { id: L28.practise.13, type: translate_to_en, grammar: [g.L28.li_siz, g.L23.have, g.L19.poss_sg], sentence: s.L28.008 }
+      - id: L28.practise.14
+        type: listen_choose
+        grammar: [g.L28.li_siz, g.L7.question]
+        pattern: g.L28.li_siz.ci_voiced
+        sentence: s.L28.014
+        options: ["Where is the café?", "Where is the coffee?", "Is there any coffee?"]
+        answer: "Where is the café?"
+      - { id: L28.practise.15, type: translate_to_tr, grammar: [g.L28.li_siz, g.L9.adj_num], pattern: g.L28.li_siz.li, sentence: s.L28.005, word_bank: [Bir, sütlü, sütsüz, süt, kahve, lütfen] }

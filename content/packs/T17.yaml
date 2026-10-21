@@ -1,0 +1,21 @@
+id: T17
+title: Time, days, months
+kind: core
+packs:
+  - id: T17.p1
+    unlock_after: L25
+    words: [w.pazartesi, w.salı, w.çarşamba, w.perşembe, w.cuma, w.cumartesi, w.pazar.sunday, w.hafta]
+    frames: [s.T17.001, s.T17.002]
+  - id: T17.p2
+    unlock_after: L25
+    words: [w.bugün, w.yarın, w.dün, w.sabah, w.öğleden_sonra, w.akşam, w.gece, w.dakika]
+    frames: [s.T17.003, s.T17.004]
+  - id: T17.p3
+    unlock_after: L26
+    words: [w.ocak, w.şubat, w.mart, w.nisan, w.mayıs, w.haziran, w.temmuz, w.ağustos]
+    frames: [s.T17.005]
+  - id: T17.p4
+    unlock_after: L26
+    words: [w.eylül, w.ekim, w.kasım, w.aralık, w.ay, w.yıl, w.hafta_sonu, w.öğle]
+    frames: [s.T17.006, s.T17.007]
+revisit: [L26, L30, L33]

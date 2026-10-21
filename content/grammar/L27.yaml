@@ -1,0 +1,68 @@
+id: g.L27.ile
+title: "-(y)lA / ile: with, by"
+suffixes: [sfx.ins]
+
+reference: |
+  **-(y)lA** means *with* or *by*:
+
+  - **by** (transport): *otobüs·le* "by bus", *tren·le* "by train", *araba·yla* "by car"
+  - **with** (together): *arkadaş·ım·la* "with my friend", *Ali'·yle* "with Ali"
+  - **with** (a tool or an ingredient): *kalem·le* "with a pen", *süt·le* "with milk"
+
+  **Form:** 2-way harmony only (**-la / -le**), and the buffer **y** after a vowel: araba·**y**la, taksi·**y**le. The **l** never changes, so there's no d/t question and the word doesn't change: *uçak·la* (not ~~uçağla~~).
+
+  **ile:** the same thing as a separate word. It **never changes**: *otobüs ile*, *Ali ile*, *tren ile*. The suffix is more common in speech; *ile* is common in writing.
+
+  **Names** take an apostrophe before the suffix: *Ali'yle*, *Ayşe'yle*, *Ahmet'le*. With *ile*, no apostrophe: *Ali ile*.
+
+  **Pronouns** use their genitive form (L21) + -lA:
+
+  | | with … |
+  |---|---|
+  | ben → benim | **benimle** |
+  | sen → senin | **seninle** |
+  | o → onun | **onunla** |
+  | biz → bizim | **bizimle** |
+  | siz → sizin | **sizinle** |
+  | onlar | **onlarla** |
+
+  *Kiminle?* "With whom?" (kim → kimin + le).
+
+  After a 3rd-person possessive, there is **no** buffer n: *kardeşi·yle* "with his sibling" (compare *kardeşi·n·de*, L24).
+
+  **ile = and:** *Ali ile Ayşe evde.* "Ali and Ayşe are at home." Here it joins two nouns, like *ve*.
+
+patterns:
+  - id: g.L27.ile.back
+    description: "Back last vowel → -la / -yla"
+    suffix: sfx.ins
+    word_filter: { pos: noun, last_vowel: back }
+  - id: g.L27.ile.front
+    description: "Front last vowel → -le / -yle"
+    suffix: sfx.ins
+    word_filter: { pos: noun, last_vowel: front }
+  - id: g.L27.ile.after_vowel
+    description: "Word ends in a vowel → buffer y (arabayla, taksiyle)"
+    suffix: sfx.ins
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L27.ile.name
+    description: "Names: apostrophe before the suffix (Ali'yle, Ahmet'le)"
+    suffix: sfx.ins
+    word_filter: { pos: name }
+  - id: g.L27.ile.pronoun
+    description: "Pronouns: genitive + -lA (benimle, seninle, onunla, kiminle)"
+  - id: g.L27.ile.separate
+    description: "ile as a separate word never changes (Ali ile, otobüs ile)"
+
+feedback:
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-la**: {answer}."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-le**: {answer}."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  no_buffer: "**{word}** ends in a vowel, so -(y)lA needs the buffer **y**: **{answer}**."
+  buffer_after_n: "**{word}** ends in a consonant, so there's no buffer **y**: **{answer}**."
+  detached: "Either attach it (**{answer}**) or write the full word **ile**."
+  stem_changed: "-(y)lA starts with a consonant (or y), so **{word}** doesn't change: **{answer}**."
+  apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
+  pronoun_gen: "Pronouns take -lA on their **genitive** form: benim·le, senin·le, onun·la: **{answer}**."
+  ile_never_changes: "The separate word **ile** never changes: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

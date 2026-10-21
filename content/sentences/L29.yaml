@@ -1,0 +1,219 @@
+# Sentences used by lesson L29 (comparison: daha, en). `words` and `grammar` are hand-tagged for now.
+# The -DAn of comparison is tagged g.L12.abl as well as g.L29.comparison.
+
+- id: s.L29.001
+  tr: At köpekten büyük.
+  en: ["The horse is bigger than the dog.", "A horse is bigger than a dog.", "Horses are bigger than dogs."]
+  words: [w.at, w.köpek, w.büyük]
+  grammar: [g.L29.comparison, g.L12.abl, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.001
+
+- id: s.L29.002
+  tr: At köpekten daha büyük.
+  en: ["The horse is bigger than the dog.", "A horse is bigger than a dog.", "Horses are bigger than dogs."]
+  words: [w.at, w.köpek, w.daha, w.büyük]
+  grammar: [g.L29.comparison, g.L12.abl, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.002
+
+- id: s.L29.003
+  tr: İstanbul Ankara'dan büyük.
+  en: ["Istanbul is bigger than Ankara.", "İstanbul is bigger than Ankara."]
+  words: [w.İstanbul, w.Ankara, w.büyük]
+  grammar: [g.L29.comparison, g.L12.abl, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.003
+  native_required: true        # place-name stress
+
+- id: s.L29.004
+  tr: Bu daha ucuz.
+  en: ["This one is cheaper.", "This is cheaper."]
+  words: [w.bu, w.daha, w.ucuz]
+  grammar: [g.L29.comparison, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.004
+
+- id: s.L29.005
+  tr: Hangisi daha ucuz?
+  en: ["Which one is cheaper?", "Which is cheaper?"]
+  words: [w.hangisi, w.daha, w.ucuz]
+  grammar: [g.L29.comparison]
+  source: { kind: original }
+  audio: aud.own.s.L29.005
+  native_required: true
+
+- id: s.L29.006
+  tr: En büyük şehir İstanbul.
+  en: ["The biggest city is Istanbul.", "The largest city is İstanbul."]
+  words: [w.en, w.büyük, w.şehir, w.İstanbul]
+  grammar: [g.L29.comparison, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.006
+  native_required: true        # place-name stress
+
+- id: s.L29.007
+  tr: Türkiye'nin en büyük şehri İstanbul.
+  en: ["Turkey's biggest city is Istanbul.", "The biggest city in Turkey is Istanbul.", "The largest city in Türkiye is İstanbul."]
+  words: [w.Türkiye, w.en, w.büyük, w.şehir, w.İstanbul]
+  grammar: [g.L29.comparison, g.L21.gen, g.L19.poss_sg, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.007
+  native_required: true        # place-name stress
+
+- id: s.L29.008
+  tr: En iyi arkadaşım Ayşe.
+  en: ["My best friend is Ayşe.", "Ayşe is my best friend."]
+  words: [w.en, w.iyi, w.arkadaş, w.Ayşe]
+  grammar: [g.L29.comparison, g.L19.poss_sg, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.008
+
+- id: s.L29.009
+  tr: Bu ceket çok daha pahalı.
+  en: ["This jacket is much more expensive.", "This jacket is a lot more expensive."]
+  words: [w.bu, w.ceket, w.çok, w.daha, w.pahalı]
+  grammar: [g.L29.comparison, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.009
+
+- id: s.L29.010
+  tr: Daha az şeker, lütfen.
+  en: ["Less sugar, please."]
+  words: [w.daha, w.az, w.şeker, w.lütfen]
+  grammar: [g.L29.comparison]
+  source: { kind: original }
+  audio: aud.own.s.L29.010
+
+- id: s.L29.011
+  tr: Ben senden uzunum.
+  en: ["I'm taller than you.", "I am taller than you."]
+  words: [w.ben, w.sen, w.uzun]
+  grammar: [g.L29.comparison, g.L12.abl, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L29.011
+
+- id: s.L29.012
+  tr: Ayşe benden büyük.
+  en: ["Ayşe is older than me.", "Ayşe is older than I am.", "Ayşe is bigger than me."]
+  words: [w.Ayşe, w.ben, w.büyük]
+  grammar: [g.L29.comparison, g.L12.abl, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.012
+
+- id: s.L29.013
+  tr: Çay kahveden ucuz.
+  en: ["Tea is cheaper than coffee.", "The tea is cheaper than the coffee."]
+  words: [w.çay, w.kahve, w.ucuz]
+  grammar: [g.L29.comparison, g.L12.abl, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.013
+
+- id: s.L29.014
+  tr: Uçak trenden daha pahalı.
+  en: ["The plane is more expensive than the train.", "Flying is more expensive than the train.", "The plane costs more than the train."]
+  words: [w.uçak, w.tren, w.daha, w.pahalı]
+  grammar: [g.L29.comparison, g.L12.abl, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.014
+
+- id: s.L29.015
+  tr: Hangisi daha iyi?
+  en: ["Which one is better?", "Which is better?"]
+  words: [w.hangisi, w.daha, w.iyi]
+  grammar: [g.L29.comparison]
+  source: { kind: original }
+  audio: aud.own.s.L29.015
+  native_required: true
+
+- id: s.L29.016
+  tr: Bu kitap o kitaptan daha kolay.
+  en: ["This book is easier than that book.", "This book is easier than that one."]
+  words: [w.bu, w.kitap, w.o, w.daha, w.kolay]
+  grammar: [g.L29.comparison, g.L12.abl, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.016
+
+- id: s.L29.017
+  tr: En ucuz ceket bu.
+  en: ["This is the cheapest jacket.", "The cheapest jacket is this one."]
+  words: [w.en, w.ucuz, w.ceket, w.bu]
+  grammar: [g.L29.comparison, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.017
+
+- id: s.L29.018
+  tr: Ben daha az kahve içiyorum.
+  en: ["I drink less coffee.", "I'm drinking less coffee."]
+  words: [w.ben, w.daha, w.az, w.kahve, w.içmek]
+  grammar: [g.L29.comparison, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L29.018
+
+- id: s.L29.019
+  tr: Ankara İzmir'den daha soğuk.
+  en: ["Ankara is colder than İzmir.", "Ankara is colder than Izmir."]
+  words: [w.Ankara, w.İzmir, w.daha, w.soğuk]
+  grammar: [g.L29.comparison, g.L12.abl, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.019
+  native_required: true        # place-name stress
+
+- id: s.L29.020
+  tr: Kardeşim benden küçük.
+  en: ["My sibling is younger than me.", "My brother is younger than me.", "My sister is younger than me.", "My sibling is younger than I am."]
+  words: [w.kardeş, w.ben, w.küçük]
+  grammar: [g.L29.comparison, g.L12.abl, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L29.020
+
+- id: s.L29.021
+  tr: Kırmızı ceket daha güzel.
+  en: ["The red jacket is nicer.", "The red jacket is more beautiful.", "The red jacket is prettier."]
+  words: [w.kırmızı, w.ceket, w.daha, w.güzel]
+  grammar: [g.L29.comparison, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L29.021
+
+- id: s.L29.022
+  tr: En pahalı ayakkabı hangisi?
+  en: ["Which shoes are the most expensive?", "Which is the most expensive shoe?", "Which shoe is the most expensive?"]
+  words: [w.en, w.pahalı, w.ayakkabı, w.hangisi]
+  grammar: [g.L29.comparison]
+  source: { kind: original }
+  audio: aud.own.s.L29.022
+  native_required: true
+
+- id: s.L29.023
+  tr: Ali benden daha çok çalışıyor.
+  en: ["Ali works more than me.", "Ali works more than I do.", "Ali is working more than me."]
+  words: [w.Ali, w.ben, w.daha, w.çok, w.çalışmak]
+  grammar: [g.L29.comparison, g.L12.abl, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L29.023
+
+- id: s.L29.024
+  tr: Bu daha ucuz ama o daha güzel.
+  en: ["This one is cheaper but that one is nicer.", "This is cheaper, but that one is more beautiful."]
+  words: [w.bu, w.daha, w.ucuz, w.ama, w.o, w.güzel]
+  grammar: [g.L29.comparison, g.L13.clitic_de, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L29.024
+
+- id: s.L29.025
+  tr: Hangisi daha büyük?
+  en: ["Which one is bigger?", "Which is bigger?"]
+  words: [w.hangisi, w.daha, w.büyük]
+  grammar: [g.L29.comparison]
+  source: { kind: original }
+  audio: aud.own.s.L29.025
+  native_required: true
+
+- id: s.L29.026
+  tr: Hangisi daha iyi, çay mı kahve mi?
+  en: ["Which is better, tea or coffee?", "Which one is better, tea or coffee?"]
+  words: [w.hangisi, w.daha, w.iyi, w.çay, w.kahve]
+  grammar: [g.L29.comparison, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L29.026
+  native_required: true        # alternative-question intonation
