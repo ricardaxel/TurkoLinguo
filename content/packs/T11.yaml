@@ -1,0 +1,9 @@
+id: T11
+title: Daily routine
+kind: core
+packs:
+  - id: T11.p1
+    unlock_after: L14
+    words: [w.uyanmak, w.kalkmak, w.yıkanmak, w.giyinmek, w.kahvaltı_yapmak, w.çalışmak, w.dinlenmek, w.uyumak]
+    frames: [s.T11.001, s.T11.002, s.T11.003]
+revisit: [L15, L26, L30]

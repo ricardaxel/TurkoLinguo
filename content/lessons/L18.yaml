@@ -1,0 +1,167 @@
+# L18 — accusative -(y)I: the specific direct object. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L18
+title: "Accusative -(y)I: the specific object"
+grammar: g.L18.acc
+new_words: [w.sevmek, w.almak, w.tanımak]
+not_yet:
+  - "bir + accusative 'a certain …' (Bir kitabı okudum) → mentioned only; needs the past (L30)"
+  - "possessive + accusative (kitabımı, arabasını) → L24"
+  - "generic objects of sevmek (Çayı severim) → with the aorist (A2); here sevmek has specific objects"
+  - "oğul with a case ending (oğlunu) → only with a possessive, L24"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          🍎 **Bir elma yiyorum.** "I'm eating **an** apple."
+          🍎 **Elmayı yiyorum.** "I'm eating **the** apple."
+
+          Same apple, different question: does the listener know **which one**?
+        sentences: [s.L18.001, s.L18.002]
+        audio: [aud.own.s.L18.001, aud.own.s.L18.002]
+
+      - kind: rule
+        title: "-(y)I = a specific object"
+        body: |
+          When the object of a verb is **specific** (you both know which one), it takes **-(y)I**:
+
+          | Not specific | Specific |
+          |---|---|
+          | *Elma yiyorum.* "I'm eating apples / an apple." | *Elma**yı** yiyorum.* "I'm eating the apple." |
+          | *Bir elma yiyorum.* "I'm eating an apple." | *Bu elma**yı** yiyorum.* "I'm eating this apple." |
+          | *Kitap okuyorum.* "I'm reading (books)." | *Kitab**ı** okuyorum.* "I'm reading the book." |
+
+          ⚠️ It's not simply "the": English says *the* in many places where Turkish has no ending (*Kedi bahçede.* "**The** cat is in the garden." is a subject, not an object).
+        sentences: [s.L18.003, s.L18.008]
+        audio: [aud.own.s.L18.003, aud.own.s.L18.008]
+
+      - kind: rule
+        title: "Always specific"
+        body: |
+          Some objects are specific by nature, so they **always** take -(y)I:
+
+          - **names**: *Ali'**yi** görüyorum.* · *Ahmet'**i** tanıyor musun?* · *İstanbul'**u** seviyorum.*
+          - **pronouns**: beni, seni, **onu**, bizi, sizi, onları; **bunu**, **şunu**
+          - **bu / şu / o** + noun: *Bu kitab**ı** okuyorum.*
+
+          *Seni seviyorum.* "I love you." · *Bunu alıyorum.* "I'll take this."
+        sentences: [s.L18.004, s.L18.006, s.L18.014]
+        audio: [aud.own.s.L18.004, aud.own.s.L18.006, aud.own.s.L18.014]
+
+      - kind: rule
+        title: "The form"
+        body: |
+          You already know the mechanics from the dative (L17): buffer y after a vowel, softening, names with an apostrophe. Only the vowel is new: it's 4-way (I).
+
+          | Word | to (L17) | object |
+          |---|---|---|
+          | ev | ev·e | ev·**i** |
+          | okul | okul·a | okul·**u** |
+          | elma | elma·ya | elma·**yı** |
+          | kitap | kita**b**·a | kita**b**·**ı** |
+          | köpek | köpe**ğ**·e | köpe**ğ**·**i** |
+          | Ali | Ali'ye | Ali'**yi** |
+
+          Irregular: **su → suyu**, **ne → neyi**.
+        sentences: [s.L18.009, s.L18.015]
+        audio: [aud.own.s.L18.009, aud.own.s.L18.015]
+
+      - kind: note
+        title: "Word order"
+        body: |
+          An object **without** the ending is glued to the verb: nothing goes between them.
+
+          ✅ *Her gün **kitap okuyorum**.* "I read every day."
+          ❌ ~~Kitap her gün okuyorum.~~
+
+          With the ending it can move: *Kitab**ı** her gün okuyorum.* "I read the book every day."
+        sentences: [s.L18.017, s.L18.018]
+        audio: [aud.own.s.L18.017, aud.own.s.L18.018]
+
+      - kind: note
+        title: "Verbs with their own case"
+        body: |
+          The verbs from L17 keep their case, even with a specific thing:
+
+          - *Kedi**ye** bakıyorum.* "I'm looking at the cat." (bakmak + -(y)A)
+          - *Kedi**yi** görüyorum.* "I can see the cat." (görmek + -(y)I)
+          - *Köpek**ten** korkuyorum.* "I'm afraid of the dog." (korkmak + -DAn)
+        sentences: [s.L17.008, s.L18.020, s.L17.017]
+
+    items:
+      - id: L18.learn.01
+        type: contrast_pair
+        grammar: [g.L18.acc, g.L15.prog]
+        pattern: g.L18.acc.specific
+        prompt: "I'm eating the apple."
+        options: [s.L18.002, s.L18.001]
+        answer: s.L18.002
+      - { id: L18.learn.02, type: pick_suffix, grammar: [g.L18.acc], pattern: g.L18.acc.front, base: w.ev, suffix: sfx.acc, options: [ı, i, u, ü], answer: i, feedback: "auto:g.L18.acc" }
+      - { id: L18.learn.03, type: pick_suffix, grammar: [g.L18.acc], pattern: g.L18.acc.after_vowel, base: w.elma, suffix: sfx.acc, options: [ı, yı, yi, yu], answer: yı, feedback: "auto:g.L18.acc" }
+      - id: L18.learn.04
+        type: picture_choose
+        grammar: [g.L18.acc, g.L15.prog]
+        pattern: g.L18.acc.name
+        images: [img.openmoji.man]
+        prompt: "… görüyorum."
+        options: ["Ali'yi", "Ali", "Ali'ye"]
+        answer: "Ali'yi"
+        translation: "I can see Ali."
+        feedback: { Ali: "Names are always specific → **-(y)I**: **Ali'yi**.", "Ali'ye": "**görmek** takes the accusative, not the dative: **Ali'yi**." }
+      - { id: L18.learn.05, type: translate_to_tr, grammar: [g.L18.acc, g.L15.prog], pattern: g.L18.acc.pronoun, sentence: s.L18.006, word_bank: [Seni, Sen, Sana, seviyorum] }
+      - id: L18.learn.06
+        type: listen_choose
+        grammar: [g.L18.acc, g.L15.prog]
+        sentence: s.L18.016
+        options: ["I'm eating the bread.", "I'm eating bread.", "I'm eating a piece of bread."]
+        answer: "I'm eating the bread."
+        note: "Ear training: ekmeği = the (specific) bread."
+
+  practise:
+    minutes: 6
+    items:
+      - { id: L18.practise.01, type: pick_suffix, grammar: [g.L18.acc], pattern: g.L18.acc.back, base: w.okul, suffix: sfx.acc, options: [ı, i, u, ü], answer: u, feedback: "auto:g.L18.acc" }
+      - { id: L18.practise.02, type: type_form, grammar: [g.L18.acc], pattern: g.L18.acc.soft, base: w.kitap, suffixes: [sfx.acc], prompt: "the book (object)", answer: kitabı, feedback: { kitapı: "**kitap** ends in **p**: before a vowel it softens to **b**: **kitabı**.", kitabi: "-(y)I follows the last vowel: **a** → **ı**: **kitabı**." } }
+      - { id: L18.practise.03, type: type_form, grammar: [g.L18.acc], pattern: g.L18.acc.soft, base: w.köpek, suffixes: [sfx.acc], prompt: "the dog (object)", answer: köpeği, feedback: { köpeki: "**köpek** ends in **k**: before a vowel it softens to **ğ**: **köpeği**.", köpeğü: "-(y)I follows the last vowel: **e** → **i**: **köpeği**." } }
+      - { id: L18.practise.04, type: type_form, grammar: [g.L18.acc], pattern: g.L18.acc.after_vowel, base: w.su, suffixes: [sfx.acc], prompt: "the water (object)", answer: suyu, feedback: { suyü: "-(y)I follows the last vowel: **u** → **u**: **suyu**.", su: "Specific water → **-(y)I**: **suyu**." } }
+      - { id: L18.practise.05, type: build_word, grammar: [g.L18.acc, g.L4.plural], tiles: [kedi, ler, i], answer: "kedi·ler·i", feedback: { "kedi·i·ler": "The plural comes first, then the case: **kedi·ler·i**." } }
+      - id: L18.practise.06
+        type: contrast_pair
+        grammar: [g.L18.acc, g.L17.dat, g.L15.prog]
+        pattern: g.L18.acc.other_case
+        prompt: "I'm looking at the cat."
+        options: [s.L17.008, s.L18.020]
+        answer: s.L17.008
+      - { id: L18.practise.07, type: translate_to_tr, grammar: [g.L18.acc, g.L3.basics, g.L15.prog], pattern: g.L18.acc.specific, sentence: s.L18.008, word_bank: [Bu, kitabı, kitap, kitapı, okuyorum] }
+      - { id: L18.practise.08, type: translate_to_tr, grammar: [g.L18.acc, g.L15.prog, g.L7.question], pattern: g.L18.acc.name, sentence: s.L18.005, word_bank: ["Ahmet'i", Ahmet, "Ahmet'e", tanıyor, musun] }
+      - { id: L18.practise.09, type: translate_to_en, grammar: [g.L18.acc, g.L15.prog], sentence: s.L18.023 }
+      - { id: L18.practise.10, type: spot_error, grammar: [g.L18.acc, g.L15.prog], pattern: g.L18.acc.position, text: "Kitap her gün okuyorum.", error: "Kitap her gün", answer: "Her gün kitap", sentence: s.L18.017, feedback: { "Kitap her gün": "An object without the ending must sit right before the verb: **Her gün kitap okuyorum.**" } }
+      - { id: L18.practise.11, type: spot_error, grammar: [g.L18.acc, g.L15.prog], pattern: g.L18.acc.pronoun, text: "Bu alıyorum.", error: Bu, answer: Bunu, sentence: s.L18.014, feedback: { Bu: "Pronouns are always specific → **-(y)I**, and *bu* adds **n**: **Bunu**." } }
+      - id: L18.practise.12
+        type: picture_choose
+        grammar: [g.L18.acc, g.L9.adj_num, g.L15.prog]
+        pattern: g.L18.acc.specific
+        images: [img.openmoji.envelope]
+        prompt: "Ali bir … okuyor."
+        options: [mektup, mektubu, mektuba]
+        answer: mektup
+        translation: "Ali is reading a letter."
+        feedback: { mektubu: "*bir* + noun is not specific → no ending: **bir mektup**.", mektuba: "**okumak** takes a direct object, not *to*: **bir mektup**." }
+      - id: L18.practise.13
+        type: qa
+        grammar: [g.L18.acc, g.L15.prog, g.L7.question]
+        question: s.L18.024
+        images: [img.openmoji.apple]
+        answers: ["(Bir) elma yiyorum.", "Elmayı yiyorum.", "(Ben) (bir) elma yiyorum."]
+      - { id: L18.practise.14, type: translate_to_tr, grammar: [g.L18.acc, g.L15.prog], sentence: s.L18.012, typed: true, answers: ["(Biz) sizi bekliyoruz."] }
+      - { id: L18.practise.15, type: dictation, grammar: [g.L18.acc, g.L15.prog, g.L7.question], sentence: s.L18.013 }
+      - id: L18.practise.16
+        type: mini_dialogue
+        grammar: [g.L18.acc, g.L15.prog, g.L16.prog_neg_q, g.L7.question]
+        images: [img.openmoji.man]
+        turns:
+          - { speaker: A, sentence: s.L18.005 }
+          - { speaker: B, blank: true, answers: ["Hayır, (onu) tanımıyorum.", "Hayır, Ahmet'i tanımıyorum.", "Evet, (onu) tanıyorum.", "Evet, Ahmet'i tanıyorum."] }
+          - { speaker: A, sentence: s.L18.026 }

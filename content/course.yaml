@@ -25,11 +25,11 @@ lessons:
   L11: { title: "Location + 'to be'; apostrophes", grammar: g.L11.loc_copula, file: lessons/L11.yaml }
   L12: { title: "Ablative -DAn: from", grammar: g.L12.abl, file: lessons/L12.yaml }
   L13: { title: "Clitic de/da vs locative; ve, ama", grammar: g.L13.clitic_de, file: lessons/L13.yaml }
-  L14: { title: "Verbs, infinitive, imperative", grammar: g.L14.imperative }
-  L15: { title: "Present continuous -(I)yor", grammar: g.L15.prog }
-  L16: { title: "Present continuous: negative & questions", grammar: g.L16.prog_neg_q }
-  L17: { title: "Dative -(y)A + softening & vowel drop", grammar: g.L17.dat }
-  L18: { title: "Accusative -(y)I: the specific object", grammar: g.L18.acc }
+  L14: { title: "Verbs, infinitive, imperative", grammar: g.L14.imperative, file: lessons/L14.yaml }
+  L15: { title: "Present continuous -(I)yor", grammar: g.L15.prog, file: lessons/L15.yaml }
+  L16: { title: "Present continuous: negative & questions", grammar: g.L16.prog_neg_q, file: lessons/L16.yaml }
+  L17: { title: "Dative -(y)A + softening & vowel drop", grammar: g.L17.dat, file: lessons/L17.yaml }
+  L18: { title: "Accusative -(y)I: the specific object", grammar: g.L18.acc, file: lessons/L18.yaml }
   L19: { title: "Possessives (singular owners)", grammar: g.L19.poss_sg }
   L20: { title: "Possessives (plural owners)", grammar: g.L20.poss_pl }
   L21: { title: "Genitive -(n)In", grammar: g.L21.gen }

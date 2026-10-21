@@ -1,0 +1,72 @@
+id: g.L18.acc
+title: "Accusative -(y)I: the specific object"
+suffixes: [sfx.acc]
+
+reference: |
+  **-(y)I** marks a **specific** direct object: one that you and the listener can identify. It is *not* a "the" ending.
+
+  *Bir elma yiyorum.* "I'm eating an apple." · *Elma yiyorum.* "I'm eating apples / an apple." (what kind of thing)
+  *Elma**yı** yiyorum.* "I'm eating **the** apple." (that one, we both know which)
+
+  **Rules of thumb**
+  1. **Always** with names, pronouns and *bu / şu / o* + noun: *Ali'**yi** görüyorum.* · *Ahmet'**i** tanıyorum.* · *İstanbul'**u** seviyorum.* · *Bu kitab**ı** okuyorum.*
+  2. A **bare** noun or **bir** + noun is not specific: no ending. *Kitap okuyorum.* · *Bir mektup okuyorum.*
+  3. An object **without** the ending must sit **right before the verb**: *Her gün kitap okuyorum.* (not ~~Kitap her gün okuyorum~~). With the ending it can move: *Kitabı her gün okuyorum.*
+
+  **Forms** (same mechanics as the dative in L17, but a 4-way vowel):
+
+  | | |
+  |---|---|
+  | after a consonant | ev·**i**, okul·**u**, köpek → köpe**ğ**·**i**, kitap → kita**b**·**ı** |
+  | after a vowel (buffer y) | elma·**yı**, kedi·**yi**, Ali'**yi** |
+  | irregular | su → **suyu**, ne → **neyi** |
+
+  **Pronouns:** beni, seni, onu, bizi, sizi, onları · **bunu**, **şunu**, onu.
+
+  **Not every verb takes an object in the accusative.** Verbs that take another case keep it, even for specific things: *Kediye bakıyorum.* (bakmak + -(y)A) · *Köpekten korkuyorum.* (korkmak + -DAn). Compare *Kediyi görüyorum.* "I see the cat."
+
+patterns:
+  - id: g.L18.acc.back
+    description: "Back last vowel → -ı / -u (okulu, parkı)"
+    suffix: sfx.acc
+    word_filter: { pos: noun, last_vowel: back, ends_with: voiced_consonant }
+  - id: g.L18.acc.front
+    description: "Front last vowel → -i / -ü (evi, sütü)"
+    suffix: sfx.acc
+    word_filter: { pos: noun, last_vowel: front, ends_with: voiced_consonant }
+  - id: g.L18.acc.after_vowel
+    description: "Word ends in a vowel → buffer y (elmayı, kediyi)"
+    suffix: sfx.acc
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L18.acc.soft
+    description: "Softening before the vowel (kitabı, köpeği)"
+    suffix: sfx.acc
+    word_filter: { pos: noun, flags: [soft] }
+  - id: g.L18.acc.name
+    description: "Names: always specific, apostrophe (Ali'yi, Ahmet'i, İstanbul'u)"
+    suffix: sfx.acc
+    word_filter: { pos: name }
+  - id: g.L18.acc.pronoun
+    description: "Pronouns: beni, seni, onu, bizi, sizi, onları; bunu, şunu"
+  - id: g.L18.acc.specific
+    description: "Specific object → -(y)I; bare noun or bir + noun → no ending"
+  - id: g.L18.acc.position
+    description: "An object without the ending sits right before the verb"
+  - id: g.L18.acc.other_case
+    description: "bakmak / binmek (-(y)A) and korkmak / hoşlanmak (-DAn) keep their case"
+
+feedback:
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-ı / -u**: {answer}."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-i / -ü**: {answer}."
+  vowel_round: "-(y)I has four forms: after **o u ö ü** → **u / ü**, after **a ı e i** → **ı / i**: {answer}."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  no_buffer: "**{word}** ends in a vowel, so the ending needs the buffer **y**: **{answer}**."
+  buffer_after_n: "**{word}** ends in a consonant, so no buffer **y**: **{answer}**."
+  detached: "The object ending is **attached** to the word: **{answer}**."
+  apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
+  soften: "**{word}** ends in **{c}**: before a vowel it softens (p ç k → b c ğ): **{answer}**."
+  always_specific: "Names, pronouns and *bu / şu / o* + noun are always specific → **-(y)I**: **{answer}**."
+  not_specific: "*a / some* (not a specific one) → no ending: **{answer}**."
+  position: "An object without the ending must sit right before the verb: **{answer}**."
+  other_case: "**{word}** doesn't take the accusative: it keeps its own case: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

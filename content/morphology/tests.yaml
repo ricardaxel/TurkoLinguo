@@ -70,3 +70,125 @@
 - { word: w.ben,     suffixes: [sfx.loc], expected: bende,     note: "vs the clitic: ben de 'me too'" }
 - { word: w.Paris,   suffixes: [sfx.loc], expected: "Paris'te" }
 - { word: w.Paris,   suffixes: [sfx.abl], expected: "Paris'ten" }
+
+# ---------- L14–L18 (Unit 3 Actions) ----------
+
+# Dative -(y)A (L17): buffer y, softening, one-syllable words, final t, vowel drop, front, compound, names
+- { word: w.ev,        suffixes: [sfx.dat], expected: eve }
+- { word: w.okul,      suffixes: [sfx.dat], expected: okula }
+- { word: w.araba,     suffixes: [sfx.dat], expected: arabaya,   note: "buffer y" }
+- { word: w.hastane,   suffixes: [sfx.dat], expected: hastaneye, note: "buffer y" }
+- { word: w.otobüs,    suffixes: [sfx.dat], expected: otobüse,   note: "only the last vowel counts" }
+- { word: w.sokak,     suffixes: [sfx.dat], expected: sokağa,    note: "softening k → ğ" }
+- { word: w.ağaç,      suffixes: [sfx.dat], expected: ağaca,     note: "softening ç → c" }
+- { word: w.renk,      suffixes: [sfx.dat], expected: renge,     note: "softening nk → ng" }
+- { word: w.dolap,     suffixes: [sfx.dat], expected: dolaba,    note: "softening p → b" }
+- { word: w.durak,     suffixes: [sfx.dat], expected: durağa }
+- { word: w.uçak,      suffixes: [sfx.dat], expected: uçağa }
+- { word: w.top,       suffixes: [sfx.dat], expected: topa,      note: "one syllable: no softening" }
+- { word: w.at,        suffixes: [sfx.dat], expected: ata,       note: "one syllable: no softening" }
+- { word: w.saç,       suffixes: [sfx.dat], expected: saça,      note: "one syllable: no softening" }
+- { word: w.kurt,      suffixes: [sfx.dat], expected: kurda,     note: "one-syllable exception: softens" }
+- { word: w.uç,        suffixes: [sfx.dat], expected: uca,       note: "one-syllable exception: softens" }
+- { word: w.bilet,     suffixes: [sfx.dat], expected: bilete,    note: "final t stays (nosoft)" }
+- { word: w.bisiklet,  suffixes: [sfx.dat], expected: bisiklete, note: "final t stays (nosoft)" }
+- { word: w.şehir,     suffixes: [sfx.dat], expected: şehre,     note: "vowel drop" }
+- { word: w.isim,      suffixes: [sfx.dat], expected: isme,      note: "vowel drop" }
+- { word: w.saat,      suffixes: [sfx.dat], expected: saate,     note: "front flag" }
+- { word: w.buzdolabı, suffixes: [sfx.dat], expected: buzdolabına, note: "compound: buffer n" }
+- { word: w.İstanbul,  suffixes: [sfx.dat], expected: "İstanbul'a" }
+- { word: w.İzmir,     suffixes: [sfx.dat], expected: "İzmir'e" }
+- { word: w.Paris,     suffixes: [sfx.dat], expected: "Paris'e" }
+- { word: w.Londra,    suffixes: [sfx.dat], expected: "Londra'ya", note: "name ending in a vowel: buffer y" }
+- { word: w.Ahmet,     suffixes: [sfx.dat], expected: "Ahmet'e",  note: "names never soften in writing" }
+- { word: w.Zonguldak, suffixes: [sfx.dat], expected: "Zonguldak'a", note: "names never soften in writing" }
+- { word: w.ben,       suffixes: [sfx.dat], expected: bana,      note: "irregular" }
+- { word: w.sen,       suffixes: [sfx.dat], expected: sana,      note: "irregular" }
+- { word: w.o,         suffixes: [sfx.dat], expected: ona,       note: "pronominal n" }
+- { word: w.biz,       suffixes: [sfx.dat], expected: bize }
+- { word: w.siz,       suffixes: [sfx.dat], expected: size }
+- { word: w.onlar,     suffixes: [sfx.dat], expected: onlara }
+- { word: w.bu,        suffixes: [sfx.dat], expected: buna,      note: "pronominal n" }
+
+# Accusative -(y)I (L18): 4-way vowel, same mechanics as the dative
+- { word: w.ev,        suffixes: [sfx.acc], expected: evi }
+- { word: w.okul,      suffixes: [sfx.acc], expected: okulu }
+- { word: w.elma,      suffixes: [sfx.acc], expected: elmayı,    note: "buffer y" }
+- { word: w.kedi,      suffixes: [sfx.acc], expected: kediyi,    note: "buffer y" }
+- { word: w.çorba,     suffixes: [sfx.acc], expected: çorbayı }
+- { word: w.köpek,     suffixes: [sfx.acc], expected: köpeği,    note: "softening k → ğ" }
+- { word: w.ekmek,     suffixes: [sfx.acc], expected: ekmeği,    note: "softening k → ğ" }
+- { word: w.mektup,    suffixes: [sfx.acc], expected: mektubu,   note: "softening p → b, rounded vowel → u" }
+- { word: w.kurt,      suffixes: [sfx.acc], expected: kurdu,     note: "one-syllable exception: softens" }
+- { word: w.top,       suffixes: [sfx.acc], expected: topu,      note: "one syllable: no softening" }
+- { word: w.bilet,     suffixes: [sfx.acc], expected: bileti,    note: "final t stays (nosoft)" }
+- { word: w.şehir,     suffixes: [sfx.acc], expected: şehri,     note: "vowel drop" }
+- { word: w.isim,      suffixes: [sfx.acc], expected: ismi,      note: "vowel drop" }
+- { word: w.ne,        suffixes: [sfx.acc], expected: neyi }
+- { word: w.kedi,      suffixes: [sfx.pl, sfx.acc], expected: kedileri }
+- { word: w.Ali,       suffixes: [sfx.acc], expected: "Ali'yi" }
+- { word: w.Ayşe,      suffixes: [sfx.acc], expected: "Ayşe'yi" }
+- { word: w.Ahmet,     suffixes: [sfx.acc], expected: "Ahmet'i",  note: "names never soften in writing" }
+- { word: w.İstanbul,  suffixes: [sfx.acc], expected: "İstanbul'u" }
+- { word: w.ben,       suffixes: [sfx.acc], expected: beni }
+- { word: w.sen,       suffixes: [sfx.acc], expected: seni }
+- { word: w.o,         suffixes: [sfx.acc], expected: onu,       note: "pronominal n" }
+- { word: w.biz,       suffixes: [sfx.acc], expected: bizi }
+- { word: w.siz,       suffixes: [sfx.acc], expected: sizi }
+- { word: w.onlar,     suffixes: [sfx.acc], expected: onları }
+- { word: w.bu,        suffixes: [sfx.acc], expected: bunu,      note: "pronominal n" }
+- { word: w.şu,        suffixes: [sfx.acc], expected: şunu,      note: "pronominal n" }
+
+# Verbs (L14–L16): the engine doesn't inflect verbs yet (it keeps -mAk: gelmek + -(I)yor → gelmekiyor).
+# It needs: strip -mAk from the lemma; t → d (gitmek, etmek only); ye/de → yi/di before -yor, yiy/dey before -In;
+# stem-final a/e → ı/i/u/ü before -yor; -mA → -mI before -yor; mI as a separate word after -yor.
+# Polite / plural command -(y)In (L14)
+- { word: w.gelmek,   suffixes: [sfx.imp_pol], expected: gelin,   pending: "verbs: strip -mAk" }
+- { word: w.oturmak,  suffixes: [sfx.imp_pol], expected: oturun,  pending: "verbs: strip -mAk" }
+- { word: w.bakmak,   suffixes: [sfx.imp_pol], expected: bakın,   pending: "verbs: strip -mAk; no k → ğ in verbs" }
+- { word: w.görmek,   suffixes: [sfx.imp_pol], expected: görün,   pending: "verbs: strip -mAk" }
+- { word: w.okumak,   suffixes: [sfx.imp_pol], expected: okuyun,  pending: "verbs: strip -mAk; buffer y" }
+- { word: w.beklemek, suffixes: [sfx.imp_pol], expected: bekleyin, pending: "verbs: strip -mAk; buffer y" }
+- { word: w.yapmak,   suffixes: [sfx.imp_pol], expected: yapın,   pending: "verbs: strip -mAk; no p → b" }
+- { word: w.içmek,    suffixes: [sfx.imp_pol], expected: için,    pending: "verbs: strip -mAk; no ç → c" }
+- { word: w.gitmek,   suffixes: [sfx.imp_pol], expected: gidin,   pending: "verbs: t → d before a vowel (gitmek, etmek only)" }
+- { word: w.etmek,    suffixes: [sfx.imp_pol], expected: edin,    pending: "verbs: t → d before a vowel (gitmek, etmek only)" }
+- { word: w.yemek,    suffixes: [sfx.imp_pol], expected: yiyin,   pending: "verbs: ye → yiy before -In" }
+- { word: w.demek,    suffixes: [sfx.imp_pol], expected: deyin,   pending: "verbs: de → dey before -In" }
+
+# Present continuous -(I)yor (L15)
+- { word: w.gelmek,   suffixes: [sfx.prog], expected: geliyor,   pending: "verbs: strip -mAk" }
+- { word: w.bakmak,   suffixes: [sfx.prog], expected: bakıyor,   pending: "verbs: strip -mAk" }
+- { word: w.görmek,   suffixes: [sfx.prog], expected: görüyor,   pending: "verbs: strip -mAk" }
+- { word: w.oturmak,  suffixes: [sfx.prog], expected: oturuyor,  pending: "verbs: strip -mAk" }
+- { word: w.okumak,   suffixes: [sfx.prog], expected: okuyor,    pending: "verbs: strip -mAk; no extra vowel after a vowel" }
+- { word: w.uyumak,   suffixes: [sfx.prog], expected: uyuyor,    pending: "verbs: strip -mAk; no extra vowel after a vowel" }
+- { word: w.başlamak, suffixes: [sfx.prog], expected: başlıyor,  pending: "verbs: stem-final a → ı before -yor" }
+- { word: w.beklemek, suffixes: [sfx.prog], expected: bekliyor,  pending: "verbs: stem-final e → i before -yor" }
+- { word: w.oynamak,  suffixes: [sfx.prog], expected: oynuyor,   pending: "verbs: stem-final a → u before -yor (vowel before it is o)" }
+- { word: w.söylemek, suffixes: [sfx.prog], expected: söylüyor,  pending: "verbs: stem-final e → ü before -yor (vowel before it is ö)" }
+- { word: w.anlamak,  suffixes: [sfx.prog], expected: anlıyor,   pending: "verbs: stem-final a → ı before -yor" }
+- { word: w.gitmek,   suffixes: [sfx.prog], expected: gidiyor,   pending: "verbs: t → d (gitmek, etmek only)" }
+- { word: w.etmek,    suffixes: [sfx.prog], expected: ediyor,    pending: "verbs: t → d (gitmek, etmek only)" }
+- { word: w.atmak,    suffixes: [sfx.prog], expected: atıyor,    pending: "verbs: strip -mAk; NO t → d" }
+- { word: w.yatmak,   suffixes: [sfx.prog], expected: yatıyor,   pending: "verbs: strip -mAk; NO t → d" }
+- { word: w.yemek,    suffixes: [sfx.prog], expected: yiyor,     pending: "verbs: irregular ye → yi" }
+- { word: w.demek,    suffixes: [sfx.prog], expected: diyor,     pending: "verbs: irregular de → di" }
+- { word: w.gelmek,   suffixes: [sfx.prog, sfx.cop_1sg], expected: geliyorum,    pending: "verbs: strip -mAk; person ending follows -yor (u)" }
+- { word: w.gelmek,   suffixes: [sfx.prog, sfx.cop_2sg], expected: geliyorsun,   pending: "verbs: strip -mAk; person ending follows -yor (u)" }
+- { word: w.gelmek,   suffixes: [sfx.prog, sfx.cop_1pl], expected: geliyoruz,    pending: "verbs: strip -mAk; person ending follows -yor (u)" }
+- { word: w.gelmek,   suffixes: [sfx.prog, sfx.cop_2pl], expected: geliyorsunuz, pending: "verbs: strip -mAk; person ending follows -yor (u)" }
+- { word: w.gelmek,   suffixes: [sfx.prog, sfx.cop_3pl], expected: geliyorlar,   pending: "verbs: strip -mAk" }
+- { word: w.bakmak,   suffixes: [sfx.prog, sfx.cop_1sg], expected: bakıyorum,    pending: "verbs: strip -mAk" }
+- { word: w.yemek,    suffixes: [sfx.prog, sfx.cop_2pl], expected: yiyorsunuz,   pending: "verbs: irregular ye → yi" }
+
+# Negative and questions (L16)
+- { word: w.gelmek,   suffixes: [sfx.neg, sfx.prog, sfx.cop_1sg], expected: gelmiyorum, pending: "verbs: -mA → -mI before -yor" }
+- { word: w.bakmak,   suffixes: [sfx.neg, sfx.prog, sfx.cop_1sg], expected: bakmıyorum, pending: "verbs: -mA → -mI before -yor" }
+- { word: w.okumak,   suffixes: [sfx.neg, sfx.prog, sfx.cop_1sg], expected: okumuyorum, pending: "verbs: -mA → -mI before -yor" }
+- { word: w.görmek,   suffixes: [sfx.neg, sfx.prog, sfx.cop_1sg], expected: görmüyorum, pending: "verbs: -mA → -mI before -yor" }
+- { word: w.gitmek,   suffixes: [sfx.neg, sfx.prog], expected: gitmiyor,  pending: "verbs: no t → d before a consonant" }
+- { word: w.gelmek,   suffixes: [sfx.prog, sfx.q, sfx.cop_2sg], expected: geliyor musun,  pending: "verbs: mI after -yor is mu; person ending on mu" }
+- { word: w.gelmek,   suffixes: [sfx.prog, sfx.q, sfx.cop_1sg], expected: geliyor muyum,  pending: "verbs: mI after -yor is mu; buffer y on mu" }
+- { word: w.gelmek,   suffixes: [sfx.prog, sfx.cop_3pl, sfx.q], expected: geliyorlar mı, pending: "verbs: -lAr before mI" }
+- { word: w.gelmek,   suffixes: [sfx.neg, sfx.prog, sfx.q, sfx.cop_2sg], expected: gelmiyor musun, pending: "verbs: negative question" }

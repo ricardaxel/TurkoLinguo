@@ -1,0 +1,161 @@
+# L15 — present continuous -(I)yor. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L15
+title: "Present continuous -(I)yor"
+grammar: g.L15.prog
+new_words: [w.görmek, w.beklemek, w.başlamak, w.oynamak, w.konuşmak, w.her]
+not_yet:
+  - "negative and questions (gelmiyorum, geliyor musun?) → L16"
+  - "going TO a place (Eve gidiyorum) → L17"
+  - "a specific object (Kitabı okuyorum) → L18: objects stay general here (Kitap okuyorum)"
+  - "the review patterns are rule cards only: the form engine doesn't inflect verbs yet"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          📱 **Ne yapıyorsun?** "What are you doing?"
+          📖 **Kitap okuyorum.** "I'm reading (a book)."
+
+          **oku·yor·um** = read · -ing · I. The person endings are the ones you know from L5.
+        sentences: [s.L15.001, s.L15.002]
+        audio: [aud.own.s.L15.001, aud.own.s.L15.002]
+
+      - kind: rule
+        title: "Stem + -(I)yor"
+        body: |
+          Take the stem (drop -mAk) and add **-(I)yor**:
+
+          | Stem ends in… | Add | Examples |
+          |---|---|---|
+          | a consonant | **ı / i / u / ü** + yor | bak·**ıyor**, gel·**iyor**, otur·**uyor**, gör·**üyor** |
+          | a vowel | just **yor** | oku·**yor**, uyu·**yor** |
+
+          The first vowel follows 4-way harmony (I), as in L14's *-(y)In*.
+        sentences: [s.L15.003, s.L15.014]
+        audio: [aud.own.s.L15.003, aud.own.s.L15.014]
+
+      - kind: rule
+        title: "-yor never changes"
+        body: |
+          This is the first ending that **ignores harmony**: *-yor* is always *-yor*. So the person endings always follow **o**, and take their **u**-form:
+
+          | | gel·mek | bak·mak |
+          |---|---|---|
+          | ben | gel·iyor·**um** | bak·ıyor·**um** |
+          | sen | gel·iyor·**sun** | bak·ıyor·**sun** |
+          | o | gel·iyor | bak·ıyor |
+          | biz | gel·iyor·**uz** | bak·ıyor·**uz** |
+          | siz | gel·iyor·**sunuz** | bak·ıyor·**sunuz** |
+          | onlar | gel·iyor(·**lar**) | bak·ıyor(·**lar**) |
+
+          ✅ geliyor**um** · ❌ ~~geliyorim~~ · ❌ ~~geliyoryum~~ (-yor ends in a consonant: no buffer y)
+        sentences: [s.L15.009, s.L15.010]
+        audio: [aud.own.s.L15.009, aud.own.s.L15.010]
+
+      - kind: rule
+        title: "Stems ending in a or e"
+        body: |
+          A stem-final **a / e** can't stay before -yor. It turns into ı / i / u / ü, following the vowel **before** it:
+
+          | Stem | Vowel before | -yor |
+          |---|---|---|
+          | başla | **a** → ı | başl**ı**yor |
+          | bekle | **e** → i | bekl**i**yor |
+          | oyna | **o** → u | oyn**u**yor |
+          | söyle | **ö** → ü | söyl**ü**yor |
+
+          Two irregular verbs: **yemek → yiyor**, **demek → diyor**.
+        sentences: [s.L15.004, s.L15.005]
+        audio: [aud.own.s.L15.004, aud.own.s.L15.005]
+
+      - kind: note
+        title: "t → d: only git and et"
+        body: |
+          As in the commands (*gidin, edin*): **gitmek → gidiyor**, **etmek → ediyor**.
+
+          ⚠️ Only these two. Other stems ending in t keep it: **atmak → atıyor** "throws", **yatmak → yatıyor** "lies down".
+        sentences: [s.L15.013]
+        audio: [aud.own.s.L15.013]
+
+      - kind: note
+        title: "Now and every day"
+        body: |
+          English has two tenses here; Turkish uses -(I)yor for both:
+
+          - *Şimdi çalışıyorum.* "I'm working **now**."
+          - *Her gün çay içiyorum.* "I drink tea **every day**."
+        sentences: [s.L15.017, s.L15.008]
+        audio: [aud.own.s.L15.017, aud.own.s.L15.008]
+
+    items:
+      - { id: L15.learn.01, type: build_word, grammar: [g.L15.prog, g.L5.copula], pattern: g.L15.prog.consonant, tiles: [gel, iyor, um], answer: "gel·iyor·um", feedback: { "gel·um·iyor": "-(I)yor first, then the person: **gel·iyor·um**." } }
+      - id: L15.learn.02
+        type: picture_choose
+        grammar: [g.L15.prog, g.L5.copula]
+        pattern: g.L15.prog.person
+        images: [img.openmoji.book]
+        prompt: "Kitap okuyor… ."
+        options: [um, im, yum]
+        answer: um
+        translation: "I'm reading a book."
+        feedback: { im: "**-yor** never changes, so the person ending is always the **u**-form: **okuyorum**.", yum: "-yor ends in a consonant, so no buffer **y**: **okuyorum**." }
+      - id: L15.learn.03
+        type: picture_choose
+        grammar: [g.L15.prog]
+        pattern: g.L15.prog.vowel
+        images: [img.openmoji.sleeping_face]
+        prompt: "uyumak → Ayşe … ."
+        options: [uyuyor, uyuuyor, uyumakıyor]
+        answer: uyuyor
+        translation: "Ayşe is sleeping."
+        feedback: { uyuuyor: "The stem **uyu** ends in a vowel: just add **-yor**, no extra vowel: **uyuyor**.", uyumakıyor: "Drop -mak first: the ending goes on the **stem**: **uyuyor**." }
+      - id: L15.learn.04
+        type: picture_choose
+        grammar: [g.L15.prog]
+        pattern: g.L15.prog.a_e_change
+        images: [img.openmoji.person]
+        prompt: "beklemek → Ayşe … ."
+        options: [bekliyor, bekleyor, bekleiyor]
+        answer: bekliyor
+        translation: "Ayşe is waiting."
+        feedback: { bekleyor: "A stem-final **e** turns into **i** before -yor (the vowel before it is e): **bekliyor**.", bekleiyor: "A stem-final **e** turns into **i** before -yor (the vowel before it is e): **bekliyor**." }
+      - { id: L15.learn.05, type: translate_to_tr, grammar: [g.L15.prog], sentence: s.L15.003, word_bank: [Ali, geliyor, gel, gelmek, geliyorum] }
+      - id: L15.learn.06
+        type: listen_choose
+        grammar: [g.L15.prog, g.L5.copula]
+        sentence: s.L15.008
+        options: ["I drink tea every day.", "I'm drinking tea now.", "Drink tea every day!"]
+        answer: "I drink tea every day."
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L15.practise.01, type: translate_to_tr, grammar: [g.L15.prog, g.L5.copula], pattern: g.L15.prog.consonant, sentence: s.L15.024, typed: true, answers: ["Ben bakıyorum."], note: "bak + ıyor + um: no k → ğ in verbs." }
+      - { id: L15.practise.02, type: translate_to_tr, grammar: [g.L15.prog, g.L5.copula, g.L10.loc, g.L9.adj_num], pattern: g.L15.prog.consonant, sentence: s.L15.014, typed: true, answers: ["(Ben) bahçede bir kedi görüyorum.", "Bahçede kedi görüyorum."] }
+      - { id: L15.practise.03, type: translate_to_tr, grammar: [g.L15.prog, g.L5.copula], pattern: g.L15.prog.a_e_change, sentence: s.L15.005, typed: true, answers: ["(Biz) şimdi başlıyoruz.", "Başlıyoruz."] }
+      - { id: L15.practise.04, type: translate_to_tr, grammar: [g.L15.prog], pattern: g.L15.prog.a_e_change, sentence: s.L15.025, typed: true, note: "oyna → oynuyor: the vowel before the a is o → u." }
+      - { id: L15.practise.05, type: translate_to_tr, grammar: [g.L15.prog, g.L5.copula], pattern: g.L15.prog.irregular, sentence: s.L15.026, typed: true, answers: ["Ben gidiyorum."], note: "git → gidiyor: t → d." }
+      - { id: L15.practise.06, type: build_word, grammar: [g.L15.prog, g.L5.copula], pattern: g.L15.prog.person, tiles: [otur, uyor, sunuz], answer: "otur·uyor·sunuz" }
+      - { id: L15.practise.07, type: translate_to_tr, grammar: [g.L15.prog, g.L5.copula], pattern: g.L15.prog.irregular, sentence: s.L15.010, word_bank: [Siz, ne, yiyorsunuz, yeyorsunuz, yiyorsünüz] }
+      - { id: L15.practise.08, type: translate_to_tr, grammar: [g.L15.prog, g.L10.loc, g.L4.plural], pattern: g.L15.prog.a_e_change, sentence: s.L15.006, word_bank: [Kediler, bahçede, oynuyor, oynayor, oynıyor] }
+      - { id: L15.practise.09, type: translate_to_en, grammar: [g.L15.prog, g.L13.clitic_de], sentence: s.L15.018 }
+      - { id: L15.practise.10, type: spot_error, grammar: [g.L15.prog, g.L5.copula], pattern: g.L15.prog.person, text: "Türkçe konuşuyorım.", error: konuşuyorım, answer: konuşuyorum, sentence: s.L15.007, feedback: { konuşuyorım: "**-yor** never changes, so the person ending is always the **u**-form: **konuşuyorum**." } }
+      - { id: L15.practise.11, type: spot_error, grammar: [g.L15.prog], pattern: g.L15.prog.a_e_change, text: "Ayşe bekleyor.", error: bekleyor, answer: bekliyor, sentence: s.L15.004, feedback: { bekleyor: "A stem-final **e** turns into **i** before -yor: **bekliyor**." } }
+      - id: L15.practise.12
+        type: contrast_pair
+        grammar: [g.L15.prog, g.L14.imperative]
+        prompt: "Ali is coming."
+        options: [s.L15.003, s.L14.015]
+        answer: s.L15.003
+      - { id: L15.practise.13, type: translate_to_tr, grammar: [g.L15.prog, g.L5.copula, g.L11.loc_copula], sentence: s.L15.012, typed: true, answers: ["(Ben) İstanbul'da oturuyorum."] }
+      - { id: L15.practise.14, type: dictation, grammar: [g.L15.prog, g.L5.copula], sentence: s.L15.015 }
+      - id: L15.practise.15
+        type: mini_dialogue
+        grammar: [g.L15.prog, g.L5.copula, g.L13.clitic_de]
+        images: [img.openmoji.hot_drink]
+        turns:
+          - { speaker: A, sentence: s.L15.001 }
+          - { speaker: B, blank: true, answers: ["(Şimdi) (ben) çay içiyorum.", "(Ben) şimdi çay içiyorum."] }
+          - { speaker: A, sentence: s.L15.023 }

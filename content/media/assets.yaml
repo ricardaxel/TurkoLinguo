@@ -199,3 +199,191 @@
 - { id: aud.own.s.L13.021, kind: audio, source: own, license: OWN, status: planned, text: "Ali de." }
 - { id: aud.own.s.L13.022, kind: audio, source: own, license: OWN, status: planned, text: "Ali'de." }
 - { id: aud.own.s.L13.023, kind: audio, source: own, license: OWN, status: planned, text: "Bende." }
+
+# ---------- L14–L18, T11–T14 ----------
+# Images: OpenMoji (CC BY-SA 4.0)
+- { id: img.openmoji.waving_hand, kind: image, file: images/openmoji/1F44B.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F44B/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.walking, kind: image, file: images/openmoji/1F6B6.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F6B6/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.hot_drink, kind: image, file: images/openmoji/2615.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-2615/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.plate, kind: image, file: images/openmoji/1F37D.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F37D/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.chair, kind: image, file: images/openmoji/1FA91.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1FA91/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.eyes, kind: image, file: images/openmoji/1F440.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F440/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.alarm_clock, kind: image, file: images/openmoji/23F0.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-23F0/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.shower, kind: image, file: images/openmoji/1F6BF.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F6BF/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.shirt, kind: image, file: images/openmoji/1F455.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F455/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.cooking, kind: image, file: images/openmoji/1F373.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F373/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.briefcase, kind: image, file: images/openmoji/1F4BC.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F4BC/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.sleeping_face, kind: image, file: images/openmoji/1F634.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F634/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.train, kind: image, file: images/openmoji/1F686.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F686/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.metro, kind: image, file: images/openmoji/1F687.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F687/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.airplane, kind: image, file: images/openmoji/2708.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-2708/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.ferry, kind: image, file: images/openmoji/26F4.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-26F4/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.bicycle, kind: image, file: images/openmoji/1F6B2.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F6B2/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.minibus, kind: image, file: images/openmoji/1F690.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F690/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.ticket, kind: image, file: images/openmoji/1F3AB.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3AB/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.bus_stop, kind: image, file: images/openmoji/1F68F.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F68F/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.ball, kind: image, file: images/openmoji/26BD.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-26BD/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.wolf, kind: image, file: images/openmoji/1F43A.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F43A/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.meat, kind: image, file: images/openmoji/1F969.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F969/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.rice, kind: image, file: images/openmoji/1F35A.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F35A/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.soup, kind: image, file: images/openmoji/1F372.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F372/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.salad, kind: image, file: images/openmoji/1F957.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F957/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.pasta, kind: image, file: images/openmoji/1F35D.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F35D/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.potato, kind: image, file: images/openmoji/1F954.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F954/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.tomato, kind: image, file: images/openmoji/1F345.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F345/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.onion, kind: image, file: images/openmoji/1F9C5.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F9C5/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.bell_pepper, kind: image, file: images/openmoji/1FAD1.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1FAD1/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.apple, kind: image, file: images/openmoji/1F34E.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F34E/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.orange, kind: image, file: images/openmoji/1F34A.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F34A/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.banana, kind: image, file: images/openmoji/1F34C.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F34C/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.grapes, kind: image, file: images/openmoji/1F347.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F347/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.watermelon, kind: image, file: images/openmoji/1F349.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F349/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.child, kind: image, file: images/openmoji/1F9D2.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F9D2/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.girl, kind: image, file: images/openmoji/1F467.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F467/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.old_man, kind: image, file: images/openmoji/1F474.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F474/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.old_woman, kind: image, file: images/openmoji/1F475.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F475/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.car, kind: image, file: images/openmoji/1F697.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F697/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.bread, kind: image, file: images/openmoji/1F35E.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F35E/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.taxi, kind: image, file: images/openmoji/1F695.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F695/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+# Images: our composites (adaptations of CC BY-SA icons → CC BY-SA)
+- { id: img.own.man_and_woman, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.man, img.openmoji.woman], compose: { layout: row, items: [img.openmoji.man, img.openmoji.woman] }, notes: "Two people: 'they' (L16)." }
+- { id: img.own.person_to_hospital, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.walking, img.openmoji.hospital], compose: { layout: row, items: [img.openmoji.walking, img.openmoji.hospital] }, notes: "Someone walking toward a hospital (L17)." }
+- { id: img.own.person_to_school, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.walking, img.openmoji.school], compose: { layout: row, items: [img.openmoji.walking, img.openmoji.school] }, notes: "Someone walking toward a school (L17)." }
+# Audio: our recording session
+- { id: aud.own.s.L14.001, kind: audio, source: own, license: OWN, status: planned, text: "Gel!" }
+- { id: aud.own.s.L14.002, kind: audio, source: own, license: OWN, status: planned, text: "Otur!" }
+- { id: aud.own.s.L14.003, kind: audio, source: own, license: OWN, status: planned, text: "Gelin, lütfen." }
+- { id: aud.own.s.L14.004, kind: audio, source: own, license: OWN, status: planned, text: "Oturun, lütfen." }
+- { id: aud.own.s.L14.005, kind: audio, source: own, license: OWN, status: planned, text: "Su iç!" }
+- { id: aud.own.s.L14.006, kind: audio, source: own, license: OWN, status: planned, text: "Kitap okuyun." }
+- { id: aud.own.s.L14.007, kind: audio, source: own, license: OWN, status: planned, text: "Gidin, lütfen." }
+- { id: aud.own.s.L14.008, kind: audio, source: own, license: OWN, status: planned, text: "Yiyin, lütfen!" }
+- { id: aud.own.s.L14.009, kind: audio, source: own, license: OWN, status: planned, text: "Bak!" }
+- { id: aud.own.s.L14.010, kind: audio, source: own, license: OWN, status: planned, text: "Bakın!" }
+- { id: aud.own.s.L14.011, kind: audio, source: own, license: OWN, status: planned, text: "Ekmek yiyin." }
+- { id: aud.own.s.L14.012, kind: audio, source: own, license: OWN, status: planned, text: "Burada oturun." }
+- { id: aud.own.s.L14.013, kind: audio, source: own, license: OWN, status: planned, text: "Çay iç!" }
+- { id: aud.own.s.L14.014, kind: audio, source: own, license: OWN, status: planned, text: "Lütfen oturunuz." }
+- { id: aud.own.s.L14.015, kind: audio, source: own, license: OWN, status: planned, text: "Ali, gel!" }
+- { id: aud.own.s.L14.016, kind: audio, source: own, license: OWN, status: planned, text: "Ali, Ayşe, gelin!" }
+- { id: aud.own.s.L14.017, kind: audio, source: own, license: OWN, status: planned, text: "Ali, Ayşe, çay için!" }
+- { id: aud.own.s.L14.018, kind: audio, source: own, license: OWN, status: planned, text: "Şimdi yapın." }
+- { id: aud.own.s.L15.001, kind: audio, source: own, license: OWN, status: planned, text: "Ne yapıyorsun?" }
+- { id: aud.own.s.L15.002, kind: audio, source: own, license: OWN, status: planned, text: "Kitap okuyorum." }
+- { id: aud.own.s.L15.003, kind: audio, source: own, license: OWN, status: planned, text: "Ali geliyor." }
+- { id: aud.own.s.L15.004, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe bekliyor." }
+- { id: aud.own.s.L15.005, kind: audio, source: own, license: OWN, status: planned, text: "Şimdi başlıyoruz." }
+- { id: aud.own.s.L15.006, kind: audio, source: own, license: OWN, status: planned, text: "Kediler bahçede oynuyor." }
+- { id: aud.own.s.L15.007, kind: audio, source: own, license: OWN, status: planned, text: "Türkçe konuşuyorum." }
+- { id: aud.own.s.L15.008, kind: audio, source: own, license: OWN, status: planned, text: "Her gün çay içiyorum." }
+- { id: aud.own.s.L15.009, kind: audio, source: own, license: OWN, status: planned, text: "Biz parkta oturuyoruz." }
+- { id: aud.own.s.L15.010, kind: audio, source: own, license: OWN, status: planned, text: "Siz ne yiyorsunuz?" }
+- { id: aud.own.s.L15.011, kind: audio, source: own, license: OWN, status: planned, text: "Onlar geliyor." }
+- { id: aud.own.s.L15.012, kind: audio, source: own, license: OWN, status: planned, text: "İstanbul'da oturuyorum." }
+- { id: aud.own.s.L15.013, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet gidiyor." }
+- { id: aud.own.s.L15.014, kind: audio, source: own, license: OWN, status: planned, text: "Bahçede bir kedi görüyorum." }
+- { id: aud.own.s.L15.015, kind: audio, source: own, license: OWN, status: planned, text: "Her gün kahvaltı yapıyorum." }
+- { id: aud.own.s.L15.016, kind: audio, source: own, license: OWN, status: planned, text: "Ali kahve içiyor." }
+- { id: aud.own.s.L15.017, kind: audio, source: own, license: OWN, status: planned, text: "Şimdi çalışıyorum." }
+- { id: aud.own.s.L15.018, kind: audio, source: own, license: OWN, status: planned, text: "Ali kitap okuyor ama Ayşe uyuyor." }
+- { id: aud.own.s.L15.019, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe ekmek yiyor." }
+- { id: aud.own.s.L15.020, kind: audio, source: own, license: OWN, status: planned, text: "Kalkıyorum." }
+- { id: aud.own.s.L15.021, kind: audio, source: own, license: OWN, status: planned, text: "Ben de geliyorum." }
+- { id: aud.own.s.L15.022, kind: audio, source: own, license: OWN, status: planned, text: "Onlar uyuyorlar." }
+- { id: aud.own.s.L15.023, kind: audio, source: own, license: OWN, status: planned, text: "Ben de çay içiyorum." }
+- { id: aud.own.s.L16.001, kind: audio, source: own, license: OWN, status: planned, text: "Anlamıyorum." }
+- { id: aud.own.s.L16.002, kind: audio, source: own, license: OWN, status: planned, text: "Bilmiyorum." }
+- { id: aud.own.s.L16.003, kind: audio, source: own, license: OWN, status: planned, text: "Geliyor musun?" }
+- { id: aud.own.s.L16.004, kind: audio, source: own, license: OWN, status: planned, text: "Evet, geliyorum." }
+- { id: aud.own.s.L16.005, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, gelmiyorum." }
+- { id: aud.own.s.L16.006, kind: audio, source: own, license: OWN, status: planned, text: "Kahve içmiyorum." }
+- { id: aud.own.s.L16.007, kind: audio, source: own, license: OWN, status: planned, text: "Türkçe konuşuyor musunuz?" }
+- { id: aud.own.s.L16.008, kind: audio, source: own, license: OWN, status: planned, text: "Ali evde çalışıyor mu?" }
+- { id: aud.own.s.L16.009, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, Ali evde çalışmıyor." }
+- { id: aud.own.s.L16.010, kind: audio, source: own, license: OWN, status: planned, text: "Geliyorlar mı?" }
+- { id: aud.own.s.L16.011, kind: audio, source: own, license: OWN, status: planned, text: "Gelmiyor musun?" }
+- { id: aud.own.s.L16.012, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe kahve içmiyor." }
+- { id: aud.own.s.L16.013, kind: audio, source: own, license: OWN, status: planned, text: "Biz şimdi çalışmıyoruz." }
+- { id: aud.own.s.L16.014, kind: audio, source: own, license: OWN, status: planned, text: "Kitap okumuyorum." }
+- { id: aud.own.s.L16.015, kind: audio, source: own, license: OWN, status: planned, text: "Kedi uyumuyor, oynuyor." }
+- { id: aud.own.s.L16.016, kind: audio, source: own, license: OWN, status: planned, text: "Bekliyor musunuz?" }
+- { id: aud.own.s.L16.017, kind: audio, source: own, license: OWN, status: planned, text: "Ali bakmıyor." }
+- { id: aud.own.s.L16.018, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, Türkçe konuşmuyorum." }
+- { id: aud.own.s.L16.019, kind: audio, source: own, license: OWN, status: planned, text: "Ben de konuşmuyorum." }
+- { id: aud.own.s.L17.001, kind: audio, source: own, license: OWN, status: planned, text: "Nereye gidiyorsun?" }
+- { id: aud.own.s.L17.002, kind: audio, source: own, license: OWN, status: planned, text: "Eve gidiyorum." }
+- { id: aud.own.s.L17.003, kind: audio, source: own, license: OWN, status: planned, text: "Okula gidiyorum." }
+- { id: aud.own.s.L17.004, kind: audio, source: own, license: OWN, status: planned, text: "Ali İstanbul'a gidiyor." }
+- { id: aud.own.s.L17.005, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe İzmir'e gidiyor." }
+- { id: aud.own.s.L17.006, kind: audio, source: own, license: OWN, status: planned, text: "Otobüse biniyorum." }
+- { id: aud.own.s.L17.007, kind: audio, source: own, license: OWN, status: planned, text: "Bana bak!" }
+- { id: aud.own.s.L17.008, kind: audio, source: own, license: OWN, status: planned, text: "Kediye bakıyorum." }
+- { id: aud.own.s.L17.009, kind: audio, source: own, license: OWN, status: planned, text: "Buraya gel!" }
+- { id: aud.own.s.L17.010, kind: audio, source: own, license: OWN, status: planned, text: "Oraya gitmiyorum." }
+- { id: aud.own.s.L17.011, kind: audio, source: own, license: OWN, status: planned, text: "Paris'e gidiyoruz." }
+- { id: aud.own.s.L17.012, kind: audio, source: own, license: OWN, status: planned, text: "Londra'ya gidiyor musun?" }
+- { id: aud.own.s.L17.013, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet şehre gidiyor." }
+- { id: aud.own.s.L17.014, kind: audio, source: own, license: OWN, status: planned, text: "Kitaba bakın." }
+- { id: aud.own.s.L17.015, kind: audio, source: own, license: OWN, status: planned, text: "Kedi sokağa bakıyor." }
+- { id: aud.own.s.L17.016, kind: audio, source: own, license: OWN, status: planned, text: "Ağaca bak!" }
+- { id: aud.own.s.L17.017, kind: audio, source: own, license: OWN, status: planned, text: "Köpekten korkuyorum." }
+- { id: aud.own.s.L17.018, kind: audio, source: own, license: OWN, status: planned, text: "Kahveden hoşlanmıyorum." }
+- { id: aud.own.s.L17.019, kind: audio, source: own, license: OWN, status: planned, text: "Durağa gidiyorum." }
+- { id: aud.own.s.L17.020, kind: audio, source: own, license: OWN, status: planned, text: "Uçağa biniyoruz." }
+- { id: aud.own.s.L17.021, kind: audio, source: own, license: OWN, status: planned, text: "Vapura biniyor musunuz?" }
+- { id: aud.own.s.L17.022, kind: audio, source: own, license: OWN, status: planned, text: "Zonguldak'a gidiyorum." }
+- { id: aud.own.s.L17.023, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet'e bak!" }
+- { id: aud.own.s.L17.024, kind: audio, source: own, license: OWN, status: planned, text: "Sana bakıyorum." }
+- { id: aud.own.s.L17.025, kind: audio, source: own, license: OWN, status: planned, text: "Onlar bize geliyor." }
+- { id: aud.own.s.L17.026, kind: audio, source: own, license: OWN, status: planned, text: "Saate bak!" }
+- { id: aud.own.s.L17.027, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe hastaneye gidiyor." }
+- { id: aud.own.s.L17.028, kind: audio, source: own, license: OWN, status: planned, text: "Buzdolabına bak!" }
+- { id: aud.own.s.L17.029, kind: audio, source: own, license: OWN, status: planned, text: "Ali bisiklete biniyor." }
+- { id: aud.own.s.L17.030, kind: audio, source: own, license: OWN, status: planned, text: "Okula gitmiyorum, eve gidiyorum." }
+- { id: aud.own.s.L17.031, kind: audio, source: own, license: OWN, status: planned, text: "Okulda değilim, okula gidiyorum." }
+- { id: aud.own.s.L17.032, kind: audio, source: own, license: OWN, status: planned, text: "Ben de okula gidiyorum." }
+- { id: aud.own.s.L18.001, kind: audio, source: own, license: OWN, status: planned, text: "Bir elma yiyorum." }
+- { id: aud.own.s.L18.002, kind: audio, source: own, license: OWN, status: planned, text: "Elmayı yiyorum." }
+- { id: aud.own.s.L18.003, kind: audio, source: own, license: OWN, status: planned, text: "Elma yiyorum." }
+- { id: aud.own.s.L18.004, kind: audio, source: own, license: OWN, status: planned, text: "Ali'yi görüyorum." }
+- { id: aud.own.s.L18.005, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet'i tanıyor musun?" }
+- { id: aud.own.s.L18.006, kind: audio, source: own, license: OWN, status: planned, text: "Seni seviyorum." }
+- { id: aud.own.s.L18.007, kind: audio, source: own, license: OWN, status: planned, text: "Onu tanımıyorum." }
+- { id: aud.own.s.L18.008, kind: audio, source: own, license: OWN, status: planned, text: "Bu kitabı okuyorum." }
+- { id: aud.own.s.L18.009, kind: audio, source: own, license: OWN, status: planned, text: "Suyu iç!" }
+- { id: aud.own.s.L18.010, kind: audio, source: own, license: OWN, status: planned, text: "İstanbul'u seviyorum." }
+- { id: aud.own.s.L18.011, kind: audio, source: own, license: OWN, status: planned, text: "Bizi bekliyorlar." }
+- { id: aud.own.s.L18.012, kind: audio, source: own, license: OWN, status: planned, text: "Sizi bekliyoruz." }
+- { id: aud.own.s.L18.013, kind: audio, source: own, license: OWN, status: planned, text: "Onları görüyor musun?" }
+- { id: aud.own.s.L18.014, kind: audio, source: own, license: OWN, status: planned, text: "Bunu alıyorum." }
+- { id: aud.own.s.L18.015, kind: audio, source: own, license: OWN, status: planned, text: "Köpeği görüyorum." }
+- { id: aud.own.s.L18.016, kind: audio, source: own, license: OWN, status: planned, text: "Ekmeği yiyorum." }
+- { id: aud.own.s.L18.017, kind: audio, source: own, license: OWN, status: planned, text: "Her gün kitap okuyorum." }
+- { id: aud.own.s.L18.018, kind: audio, source: own, license: OWN, status: planned, text: "Kitabı her gün okuyorum." }
+- { id: aud.own.s.L18.019, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe'yi bekliyorum." }
+- { id: aud.own.s.L18.020, kind: audio, source: own, license: OWN, status: planned, text: "Kediyi görüyorum." }
+- { id: aud.own.s.L18.021, kind: audio, source: own, license: OWN, status: planned, text: "Bu çorbayı seviyorum." }
+- { id: aud.own.s.L18.022, kind: audio, source: own, license: OWN, status: planned, text: "Ali bir mektup okuyor." }
+- { id: aud.own.s.L18.023, kind: audio, source: own, license: OWN, status: planned, text: "Ali mektubu okuyor." }
+- { id: aud.own.s.L18.024, kind: audio, source: own, license: OWN, status: planned, text: "Ne yiyorsun?" }
+- { id: aud.own.s.L18.025, kind: audio, source: own, license: OWN, status: planned, text: "Beni anlıyor musun?" }
+- { id: aud.own.s.L18.026, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet bizi bekliyor." }
+- { id: aud.own.s.T11.001, kind: audio, source: own, license: OWN, status: planned, text: "Kalk!" }
+- { id: aud.own.s.T11.002, kind: audio, source: own, license: OWN, status: planned, text: "Uyu!" }
+- { id: aud.own.s.T11.003, kind: audio, source: own, license: OWN, status: planned, text: "Şimdi dinlenin." }
+- { id: aud.own.s.T12.001, kind: audio, source: own, license: OWN, status: planned, text: "Otobüs geliyor mu?" }
+- { id: aud.own.s.T12.002, kind: audio, source: own, license: OWN, status: planned, text: "Tren gelmiyor." }
+- { id: aud.own.s.T12.003, kind: audio, source: own, license: OWN, status: planned, text: "Durak nerede?" }
+- { id: aud.own.s.T13.001, kind: audio, source: own, license: OWN, status: planned, text: "Pilav yiyorum." }
+- { id: aud.own.s.T13.002, kind: audio, source: own, license: OWN, status: planned, text: "Pazardan geliyorum." }
+- { id: aud.own.s.T13.003, kind: audio, source: own, license: OWN, status: planned, text: "Domates var mı?" }
+- { id: aud.own.s.T13.004, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe muz yemiyor." }
+- { id: aud.own.s.T14.001, kind: audio, source: own, license: OWN, status: planned, text: "Çocuk okulda." }
+- { id: aud.own.s.T14.002, kind: audio, source: own, license: OWN, status: planned, text: "Çocuklar parkta oynuyor." }
+- { id: aud.own.s.T14.003, kind: audio, source: own, license: OWN, status: planned, text: "Dede çay içiyor." }
+- { id: aud.own.s.T14.004, kind: audio, source: own, license: OWN, status: planned, text: "Kız kitap okuyor." }
+- { id: aud.own.s.L15.024, kind: audio, source: own, license: OWN, status: planned, text: "Bakıyorum." }
+- { id: aud.own.s.L15.025, kind: audio, source: own, license: OWN, status: planned, text: "Ali oynuyor." }
+- { id: aud.own.s.L15.026, kind: audio, source: own, license: OWN, status: planned, text: "Gidiyorum." }
+- { id: aud.own.s.L16.020, kind: audio, source: own, license: OWN, status: planned, text: "Bakmıyorum." }
+- { id: aud.own.s.L16.021, kind: audio, source: own, license: OWN, status: planned, text: "Gitmiyoruz." }
