@@ -1,0 +1,33 @@
+# Frame sentences for theme T18 (Body & health). Pack 1: grammar up to L23; pack 2: up to L24.
+
+- id: s.T18.001
+  tr: Burnum kırmızı.
+  en: ["My nose is red."]
+  words: [w.burun, w.kırmızı]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.T18.001
+
+- id: s.T18.002
+  tr: Kedinin kulakları küçük.
+  en: ["The cat's ears are small."]
+  words: [w.kedi, w.kulak, w.küçük]
+  grammar: [g.L3.basics, g.L4.plural, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.T18.002
+
+- id: s.T18.003
+  tr: Sırtım ağrıyor.
+  en: ["My back hurts.", "My back aches.", "I have backache."]
+  words: [w.sırt, w.ağrımak]
+  grammar: [g.L15.prog, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.T18.003
+
+- id: s.T18.004
+  tr: Ali'nin kolu ağrıyor.
+  en: ["Ali's arm hurts.", "Ali's arm aches."]
+  words: [w.Ali, w.kol, w.ağrımak]
+  grammar: [g.L15.prog, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.T18.004

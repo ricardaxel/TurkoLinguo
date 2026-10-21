@@ -1,0 +1,34 @@
+# Frame sentences for theme T16 (Market & shopping). Both packs: grammar up to L24.
+
+- id: s.T16.001
+  tr: Bir kilo domates, lütfen.
+  en: ["A kilo of tomatoes, please.", "One kilo of tomatoes, please."]
+  words: [w.bir, w.kilo, w.domates, w.lütfen]
+  grammar: [g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.T16.001
+
+- id: s.T16.002
+  tr: Paran var mı?
+  en: ["Do you have money?", "Do you have any money?", "Have you got any money?"]
+  words: [w.para, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.T16.002
+  native_required: true        # question intonation
+
+- id: s.T16.003
+  tr: Kartım yok.
+  en: ["I don't have a card.", "I have no card."]
+  words: [w.kart, w.yok]
+  grammar: [g.L8.varyok, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.T16.003
+
+- id: s.T16.004
+  tr: Cüzdanım çantamda.
+  en: ["My wallet is in my bag.", "My purse is in my bag."]
+  words: [w.cüzdan, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.T16.004

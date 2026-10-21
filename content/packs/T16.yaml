@@ -1,0 +1,13 @@
+id: T16
+title: Market & shopping
+kind: core
+packs:
+  - id: T16.p1
+    unlock_after: L24
+    words: [w.para, w.lira, w.kilo, w.yarım, w.tane, w.fiyat, w.poşet, w.fiş]
+    frames: [s.T16.001, s.T16.002]
+  - id: T16.p2
+    unlock_after: L24
+    words: [w.kuruş, w.indirim, w.kart, w.fatura, w.kasa, w.alışveriş, w.müşteri, w.cüzdan]
+    frames: [s.T16.003, s.T16.004]
+revisit: [L25, L29]

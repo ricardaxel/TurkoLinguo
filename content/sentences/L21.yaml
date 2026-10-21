@@ -1,0 +1,193 @@
+# Sentences used by lesson L21. `words` and `grammar` are hand-tagged for now.
+# Pronoun genitives (benim, bizim…) and kimin are tagged as the pronoun (w.ben, w.kim …).
+
+- id: s.L21.001
+  tr: Ali'nin arabası yeni.
+  en: ["Ali's car is new."]
+  words: [w.Ali, w.araba, w.yeni]
+  grammar: [g.L3.basics, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.001
+
+- id: s.L21.002
+  tr: Bu kimin kitabı?
+  en: ["Whose book is this?", "Whose is this book?"]
+  words: [w.bu, w.kim, w.kitap]
+  grammar: [g.L3.basics, g.L7.question, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.002
+  native_required: true        # question intonation
+
+- id: s.L21.003
+  tr: Ayşe'nin.
+  en: ["Ayşe's.", "It's Ayşe's."]
+  words: [w.Ayşe]
+  grammar: [g.L11.loc_copula, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.003
+  native_required: true        # stress stays on the name
+
+- id: s.L21.004
+  tr: Kadının çantası masada.
+  en: ["The woman's bag is on the table."]
+  words: [w.kadın, w.çanta, w.masa]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.004
+
+- id: s.L21.005
+  tr: Ahmet'in kedisi bahçede.
+  en: ["Ahmet's cat is in the garden."]
+  words: [w.Ahmet, w.kedi, w.bahçe]
+  grammar: [g.L3.basics, g.L10.loc, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.005
+
+- id: s.L21.006
+  tr: Evin kapısı kırmızı.
+  en: ["The door of the house is red.", "The house's door is red.", "The front door is red."]
+  words: [w.ev, w.kapı, w.kırmızı]
+  grammar: [g.L3.basics, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.006
+
+- id: s.L21.007
+  tr: Bizim evimiz büyük.
+  en: ["Our house is big.", "Our home is big."]
+  words: [w.biz, w.ev, w.büyük]
+  grammar: [g.L3.basics, g.L20.poss_pl, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.007
+
+- id: s.L21.008
+  tr: Onların arabası nerede?
+  en: ["Where is their car?", "Where's their car?"]
+  words: [w.onlar, w.araba, w.nerede]
+  grammar: [g.L7.question, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.008
+  native_required: true        # question intonation
+
+- id: s.L21.009
+  tr: Öğretmenin kitabı çantada.
+  en: ["The teacher's book is in the bag."]
+  words: [w.öğretmen, w.kitap, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.009
+
+- id: s.L21.010
+  tr: Bu senin telefonun mu?
+  en: ["Is this your phone?"]
+  words: [w.bu, w.sen, w.telefon]
+  grammar: [g.L3.basics, g.L7.question, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.010
+  native_required: true        # question intonation
+
+- id: s.L21.011
+  tr: Hayır, Ali'nin telefonu.
+  en: ["No, it's Ali's phone.", "No, Ali's phone."]
+  words: [w.hayır, w.Ali, w.telefon]
+  grammar: [g.L3.basics, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.011
+
+- id: s.L21.012
+  tr: Adamın adı ne?
+  en: ["What's the man's name?", "What is the man's name?"]
+  words: [w.adam, w.ad, w.ne]
+  grammar: [g.L7.question, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.012
+  native_required: true        # question intonation
+
+- id: s.L21.013
+  tr: Annemin adı Ayşe.
+  en: ["My mother's name is Ayşe.", "My mum's name is Ayşe.", "My mom's name is Ayşe."]
+  words: [w.anne, w.ad, w.Ayşe]
+  grammar: [g.L3.basics, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.013
+
+- id: s.L21.014
+  tr: Kedinin suyu burada.
+  en: ["The cat's water is here."]
+  words: [w.kedi, w.su, w.burada]
+  grammar: [g.L3.basics, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.014
+
+- id: s.L21.015
+  tr: Ahmet'in annesi doktor.
+  en: ["Ahmet's mother is a doctor.", "Ahmet's mum is a doctor.", "Ahmet's mom is a doctor."]
+  words: [w.Ahmet, w.anne, w.doktor]
+  grammar: [g.L3.basics, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.015
+
+- id: s.L21.016
+  tr: Bu kimin arabası?
+  en: ["Whose car is this?", "Whose is this car?"]
+  words: [w.bu, w.kim, w.araba]
+  grammar: [g.L3.basics, g.L7.question, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.016
+  native_required: true        # question intonation
+
+- id: s.L21.017
+  tr: Ali'nin.
+  en: ["Ali's.", "It's Ali's."]
+  words: [w.Ali]
+  grammar: [g.L11.loc_copula, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.017
+  native_required: true        # stress stays on the name
+
+- id: s.L21.018
+  tr: Arkadaşımın evi İzmir'de.
+  en: ["My friend's house is in Izmir.", "My friend's house is in İzmir.", "My friend's home is in Izmir."]
+  words: [w.arkadaş, w.ev, w.İzmir]
+  grammar: [g.L3.basics, g.L10.loc, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.018
+
+- id: s.L21.019
+  tr: Kadın Ali'nin annesi.
+  en: ["The woman is Ali's mother.", "The woman is Ali's mum.", "The woman is Ali's mom."]
+  words: [w.kadın, w.Ali, w.anne]
+  grammar: [g.L3.basics, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.019
+
+- id: s.L21.020
+  tr: Evin büyük.
+  en: ["Your house is big.", "Your home is big."]
+  words: [w.ev, w.büyük]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L21.020
+
+- id: s.L21.021
+  tr: Okulun bahçesi büyük.
+  en: ["The school's garden is big.", "The school garden is big.", "The garden of the school is big."]
+  words: [w.okul, w.bahçe, w.büyük]
+  grammar: [g.L3.basics, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.021
+
+- id: s.L21.022
+  tr: Ali'nin kardeşi kitap okuyor.
+  en: ["Ali's brother is reading a book.", "Ali's sister is reading a book.", "Ali's sibling is reading a book."]
+  words: [w.Ali, w.kardeş, w.kitap, w.okumak]
+  grammar: [g.L11.loc_copula, g.L15.prog, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.022
+
+- id: s.L21.023
+  tr: Bu Ayşe'nin kitabı.
+  en: ["This is Ayşe's book.", "It's Ayşe's book."]
+  words: [w.bu, w.Ayşe, w.kitap]
+  grammar: [g.L3.basics, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L21.023

@@ -1,0 +1,205 @@
+# Sentences used by lesson L24. `words` and `grammar` are hand-tagged for now.
+
+- id: s.L24.001
+  tr: Kedi Ali'nin evinde.
+  en: ["The cat is at Ali's house.", "The cat is in Ali's house.", "The cat is at Ali's."]
+  words: [w.kedi, w.Ali, w.ev]
+  grammar: [g.L3.basics, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.001
+
+- id: s.L24.002
+  tr: Kitabım çantamda.
+  en: ["My book is in my bag."]
+  words: [w.kitap, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.002
+
+- id: s.L24.003
+  tr: Kitabı çantasında.
+  en: ["His book is in his bag.", "Her book is in her bag."]
+  words: [w.kitap, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.003
+
+- id: s.L24.004
+  tr: Ayşe kitabını okuyor.
+  en: ["Ayşe is reading her book.", "Ayşe is reading his book.", "Ayşe is reading your book."]
+  words: [w.Ayşe, w.kitap, w.okumak]
+  grammar: [g.L15.prog, g.L18.acc, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.004
+
+- id: s.L24.005
+  tr: Ali okuluna gidiyor.
+  en: ["Ali is going to his school.", "Ali is going to school.", "Ali is going to your school."]
+  words: [w.Ali, w.okul, w.gitmek]
+  grammar: [g.L15.prog, g.L17.dat, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.005
+
+- id: s.L24.006
+  tr: Ali otobüs durağında.
+  en: ["Ali is at the bus stop."]
+  words: [w.Ali, w.otobüs_durağı]
+  grammar: [g.L3.basics, g.L10.loc, g.L22.compound, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.006
+
+- id: s.L24.007
+  tr: Onlar evlerinde.
+  en: ["They're at home.", "They are at home.", "They're in their house.", "They are at their house."]
+  words: [w.onlar, w.ev]
+  grammar: [g.L5.copula, g.L10.loc, g.L20.poss_pl, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.007
+
+- id: s.L24.008
+  tr: Odamdayım.
+  en: ["I'm in my room.", "I am in my room."]
+  words: [w.oda]
+  grammar: [g.L10.loc, g.L11.loc_copula, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.008
+  native_required: true        # stress falls before the person ending
+
+- id: s.L24.009
+  tr: Evine gidiyorum.
+  en: ["I'm going to your house.", "I'm going to his house.", "I'm going to her house.", "I am going to your house."]
+  words: [w.ev, w.gitmek]
+  grammar: [g.L15.prog, g.L17.dat, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.009
+
+- id: s.L24.010
+  tr: Senin evine gidiyorum.
+  en: ["I'm going to your house.", "I am going to your house.", "I'm going to your place."]
+  words: [w.sen, w.ev, w.gitmek]
+  grammar: [g.L15.prog, g.L17.dat, g.L19.poss_sg, g.L21.gen, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.010
+
+- id: s.L24.011
+  tr: Onun evine gidiyorum.
+  en: ["I'm going to his house.", "I'm going to her house.", "I am going to his house.", "I am going to her house."]
+  words: [w.o, w.ev, w.gitmek]
+  grammar: [g.L15.prog, g.L17.dat, g.L19.poss_sg, g.L21.gen, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.011
+
+- id: s.L24.012
+  tr: Başım ağrıyor.
+  en: ["My head hurts.", "I have a headache.", "I've got a headache.", "My head aches."]
+  words: [w.baş, w.ağrımak]
+  grammar: [g.L15.prog, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L24.012
+
+- id: s.L24.013
+  tr: Ayşe'nin kulağı ağrıyor.
+  en: ["Ayşe's ear hurts.", "Ayşe has an earache.", "Ayşe has earache."]
+  words: [w.Ayşe, w.kulak, w.ağrımak]
+  grammar: [g.L15.prog, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L24.013
+
+- id: s.L24.014
+  tr: Telefonun çantanda mı?
+  en: ["Is your phone in your bag?"]
+  words: [w.telefon, w.çanta]
+  grammar: [g.L7.question, g.L10.loc, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.014
+  native_required: true        # question intonation
+
+- id: s.L24.015
+  tr: Ayşe evinden geliyor.
+  en: ["Ayşe is coming from her house.", "Ayşe is coming from home.", "Ayşe is coming from your house."]
+  words: [w.Ayşe, w.ev, w.gelmek]
+  grammar: [g.L15.prog, g.L12.abl, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.015
+
+- id: s.L24.016
+  tr: Kedi yatak odasında.
+  en: ["The cat is in the bedroom."]
+  words: [w.kedi, w.yatak_odası]
+  grammar: [g.L3.basics, g.L10.loc, g.L22.compound, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.016
+
+- id: s.L24.017
+  tr: Ali kedisine bakıyor.
+  en: ["Ali is looking at his cat.", "Ali is looking after his cat.", "Ali is looking at your cat."]
+  words: [w.Ali, w.kedi, w.bakmak]
+  grammar: [g.L15.prog, g.L17.dat, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.017
+
+- id: s.L24.018
+  tr: Suyunu içiyor.
+  en: ["He's drinking his water.", "She's drinking her water.", "He is drinking his water.", "She is drinking her water.", "He's drinking your water.", "She's drinking your water."]
+  words: [w.su, w.içmek]
+  grammar: [g.L15.prog, g.L18.acc, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.018
+
+- id: s.L24.019
+  tr: Ayağım ağrıyor.
+  en: ["My foot hurts.", "My foot aches."]
+  words: [w.ayak, w.ağrımak]
+  grammar: [g.L15.prog, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L24.019
+
+- id: s.L24.020
+  tr: Geçmiş olsun!
+  en: ["Get well soon!", "I hope you feel better soon!"]
+  words: [w.geçmiş_olsun]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.L24.020
+  phrase: true
+
+- id: s.L24.021
+  tr: Neren ağrıyor?
+  en: ["Where does it hurt?", "What hurts?"]
+  words: [w.ağrımak]
+  grammar: [g.L7.question, g.L15.prog, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L24.021
+  native_required: true        # question intonation
+
+- id: s.L24.022
+  tr: Ali'nin evinde bir kedi var.
+  en: ["There's a cat at Ali's house.", "There is a cat in Ali's house.", "Ali has a cat at his house."]
+  words: [w.Ali, w.ev, w.bir, w.kedi, w.var]
+  grammar: [g.L8.varyok, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.022
+
+- id: s.L24.023
+  tr: Evimizde bahçe yok.
+  en: ["Our house doesn't have a garden.", "There's no garden at our house.", "There is no garden at our house."]
+  words: [w.ev, w.bahçe, w.yok]
+  grammar: [g.L8.varyok, g.L10.loc, g.L20.poss_pl, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.023
+
+- id: s.L24.024
+  tr: Telefonum masada.
+  en: ["My phone is on the table."]
+  words: [w.telefon, w.masa]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L24.024
+
+- id: s.L24.025
+  tr: Kitabını okuyorum.
+  en: ["I'm reading your book.", "I'm reading his book.", "I'm reading her book.", "I am reading your book."]
+  words: [w.kitap, w.okumak]
+  grammar: [g.L15.prog, g.L18.acc, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L24.025

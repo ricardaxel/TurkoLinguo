@@ -1,0 +1,136 @@
+# Sentences used by lesson L22. `words` and `grammar` are hand-tagged for now.
+# Lexicalised compounds are single words (w.Türk_kahvesi, w.otobüs_durağı, w.yatak_odası);
+# free compounds are tagged as their two nouns (kedi maması → w.kedi, w.mama).
+
+- id: s.L22.001
+  tr: Bir Türk kahvesi, lütfen.
+  en: ["A Turkish coffee, please.", "One Turkish coffee, please."]
+  words: [w.bir, w.Türk_kahvesi, w.lütfen]
+  grammar: [g.L3.basics, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.001
+
+- id: s.L22.002
+  tr: Otobüs durağı nerede?
+  en: ["Where is the bus stop?", "Where's the bus stop?"]
+  words: [w.otobüs_durağı, w.nerede]
+  grammar: [g.L7.question, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.002
+  native_required: true        # question intonation
+
+- id: s.L22.003
+  tr: Kedi maması dolapta.
+  en: ["The cat food is in the cupboard."]
+  words: [w.kedi, w.mama, w.dolap]
+  grammar: [g.L3.basics, g.L10.loc, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.003
+
+- id: s.L22.004
+  tr: İstanbul Üniversitesi büyük.
+  en: ["Istanbul University is big.", "İstanbul University is big."]
+  words: [w.İstanbul, w.üniversite]
+  grammar: [g.L3.basics, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.004
+  native_required: true        # stress stays on the name
+
+- id: s.L22.005
+  tr: Okulun kapısı kırmızı.
+  en: ["The school's door is red.", "The door of the school is red."]
+  words: [w.okul, w.kapı, w.kırmızı]
+  grammar: [g.L3.basics, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L22.005
+
+- id: s.L22.006
+  tr: Bu bir okul kapısı.
+  en: ["This is a school door."]
+  words: [w.bu, w.bir, w.okul, w.kapı]
+  grammar: [g.L3.basics, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.006
+
+- id: s.L22.007
+  tr: Araba anahtarı çantada.
+  en: ["The car key is in the bag.", "The car keys are in the bag."]
+  words: [w.araba, w.anahtar, w.çanta]
+  grammar: [g.L3.basics, g.L10.loc, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.007
+
+- id: s.L22.008
+  tr: Türk kahveleri burada.
+  en: ["The Turkish coffees are here.", "Here are the Turkish coffees."]
+  words: [w.Türk_kahvesi, w.burada]
+  grammar: [g.L3.basics, g.L4.plural, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.008
+
+- id: s.L22.009
+  tr: Bu okulun kapısı.
+  en: ["This is the school's door.", "This is the door of the school."]
+  words: [w.bu, w.okul, w.kapı]
+  grammar: [g.L3.basics, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L22.009
+
+- id: s.L22.010
+  tr: Ali'nin araba anahtarı nerede?
+  en: ["Where is Ali's car key?", "Where's Ali's car key?"]
+  words: [w.Ali, w.araba, w.anahtar, w.nerede]
+  grammar: [g.L7.question, g.L11.loc_copula, g.L21.gen, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.010
+  native_required: true        # question intonation
+
+- id: s.L22.011
+  tr: Kedi maması var mı?
+  en: ["Is there any cat food?", "Is there cat food?", "Do we have cat food?"]
+  words: [w.kedi, w.mama, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.011
+  native_required: true        # question intonation
+
+- id: s.L22.012
+  tr: Çay bardağı masada.
+  en: ["The tea glass is on the table."]
+  words: [w.çay, w.bardak, w.masa]
+  grammar: [g.L3.basics, g.L10.loc, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.012
+
+- id: s.L22.013
+  tr: Otobüs durağı burada.
+  en: ["The bus stop is here.", "Here's the bus stop."]
+  words: [w.otobüs_durağı, w.burada]
+  grammar: [g.L3.basics, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.013
+
+- id: s.L22.014
+  tr: Ayşe Türk kahvesi içiyor.
+  en: ["Ayşe is drinking Turkish coffee.", "Ayşe is drinking a Turkish coffee."]
+  words: [w.Ayşe, w.Türk_kahvesi, w.içmek]
+  grammar: [g.L15.prog, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.014
+
+- id: s.L22.015
+  tr: Otobüs durağı orada.
+  en: ["The bus stop is there.", "The bus stop is over there."]
+  words: [w.otobüs_durağı, w.orada]
+  grammar: [g.L3.basics, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.015
+
+- id: s.L22.016
+  tr: Yatak odası nerede?
+  en: ["Where is the bedroom?", "Where's the bedroom?"]
+  words: [w.yatak_odası, w.nerede]
+  grammar: [g.L7.question, g.L22.compound]
+  source: { kind: original }
+  audio: aud.own.s.L22.016
+  native_required: true        # question intonation

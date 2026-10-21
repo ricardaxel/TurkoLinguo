@@ -1,0 +1,62 @@
+id: g.L21.gen
+title: "Genitive -(n)In: Ali's, the woman's, whose"
+suffixes: [sfx.gen]
+
+reference: |
+  **-(n)In** marks the **owner**: *Ali'**nin*** "Ali's", *kadın·**ın*** "the woman's", *ev·**in*** "of the house".
+
+  - after a consonant: **-In** → ev·**in**, kadın·**ın**, okul·**un**, Ahmet'**in**
+  - after a vowel: **-nIn** → araba·**nın**, kedi·**nin**, Ali'**nin**, Ayşe'**nin**
+  - 4-way harmony, as in L19. Names keep their apostrophe (L11).
+
+  **The pattern: owner-(n)In + thing-(s)I.** Both words are marked:
+
+  *Ali'**nin** araba**sı*** "Ali's car" · *kadın**ın** çanta**sı*** "the woman's bag" · *ev**in** kapı**sı*** "the door of the house"
+
+  The owner can be a possessed noun too: *anne·m·**in** ad·**ı*** "my mother's name".
+
+  **Pronouns:**
+
+  | ben | sen | o | biz | siz | onlar |
+  |---|---|---|---|---|---|
+  | **benim** | senin | onun | **bizim** | sizin | onların |
+
+  *benim* and *bizim* are irregular (not ~~benin~~, ~~bizin~~). Compare the regular *siz → sizin*. Irregular noun: *su → suyun*.
+
+  **Kimin?** "whose?" = kim + -in: *Bu kimin kitabı?* "Whose book is this?" — *Ali'nin.* "Ali's."
+
+  ⚠️ *evin* can be *of the house* (genitive) or *your house* (L19). If a possessed noun follows (*evin kapısı*), it's the genitive.
+
+patterns:
+  - id: g.L21.gen.cons
+    description: "After a consonant: -In (evin, kadının)"
+    suffix: sfx.gen
+    word_filter: { pos: noun, ends_with: voiced_consonant }
+  - id: g.L21.gen.vowel
+    description: "After a vowel: -nIn (arabanın, kedinin)"
+    suffix: sfx.gen
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L21.gen.name
+    description: "Names: apostrophe + -(n)In (Ali'nin, Ahmet'in)"
+    suffix: sfx.gen
+    word_filter: { pos: name }
+  - id: g.L21.gen.pronoun
+    description: "Pronouns: benim, senin, onun, bizim, sizin, onların"
+    suffix: sfx.gen
+    word_filter: { pos: pron }
+  - id: g.L21.gen.chain
+    description: "owner-(n)In + thing-(s)I (Ali'nin arabası)"
+
+feedback:
+  vowel_back: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_front: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_round: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  detached: "The genitive ending is **attached** to the word: **{answer}**."
+  apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
+  # used by the per-item feedback maps
+  n_after_vowel: "**{word}** ends in a vowel, so the genitive takes **n**: **{answer}**."
+  no_n_after_consonant: "**{word}** ends in a consonant: **-In**, no n: **{answer}**."
+  irregular_pron: "**{word}** is irregular: **{answer}** (compare the regular *sizin*)."
+  thing_needs_poss: "The thing owned takes **-(s)I** too: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

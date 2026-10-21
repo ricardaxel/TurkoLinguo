@@ -1,0 +1,49 @@
+id: g.L23.have
+title: "Having: possessive + var / yok"
+suffixes: []
+
+reference: |
+  Turkish has no verb *to have*. It says "**my car exists**": possessive (L19–L20) + **var** / **yok** (L8).
+
+  | | Turkish | English |
+  |---|---|---|
+  | ✓ | (Benim) bir araba**m var**. | I have a car. |
+  | ✗ | Araba**m yok**. | I don't have a car. |
+  | ? | (Senin) araba**n var mı**? | Do you have a car? |
+  | ? | Araba**n yok mu**? | Don't you have a car? |
+
+  The pronoun in the genitive is optional (*benim*, *senin*, *bizim*…). With a noun, the owner takes **-(n)In** (L21): *Ali'**nin** iki çocuğ**u** var.* "Ali has two children."
+
+  **How many?** *Kaç* + **singular** noun: *Kaç kardeşin var?* "How many siblings do you have?" — *İki kardeşim var.* After a number the noun stays singular too (L9): *iki çocuğu*, not ~~iki çocukları~~.
+
+  **Short answers:** *Var mı?* — *Evet, var.* / *Hayır, yok.*
+
+  Compare L8: *Evde süt var.* "There's milk at home." (no owner) · *Sütüm var.* "I have milk."
+
+patterns:
+  - id: g.L23.have.var
+    description: "possessive + var: Arabam var."
+    suffixes: [sfx.poss_1sg]
+    word_filter: { pos: noun }
+  - id: g.L23.have.yok
+    description: "possessive + yok: Arabam yok."
+    suffixes: [sfx.poss_1sg]
+    word_filter: { pos: noun }
+  - id: g.L23.have.question
+    description: "possessive + var mı?: Araban var mı?"
+    suffixes: [sfx.poss_2sg]
+    word_filter: { pos: noun }
+  - id: g.L23.have.kac
+    description: "Kaç + singular noun: Kaç kardeşin var?"
+  - id: g.L23.have.owner
+    description: "Noun owner: Ali'nin iki çocuğu var."
+
+feedback:
+  vowel_back: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_front: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_round: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  # used by the per-item feedback maps
+  needs_poss: "*have* = the **possessive** + var: **{answer}**."
+  singular: "After *kaç* or a number, the noun stays **singular**: **{answer}**."
+  yok_not_degil: "*don't have* = **yok**, not değil: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

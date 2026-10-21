@@ -1,0 +1,68 @@
+id: g.L24.poss_case
+title: "Cases after possessives: the buffer n"
+suffixes: [sfx.poss_3sg, sfx.poss_3pl, sfx.loc, sfx.abl, sfx.dat, sfx.acc]
+
+reference: |
+  After a **3rd-person** possessive (*-(s)I*, *-lArI*), every case ending takes an **n**:
+
+  | | -DA in | -DAn from | -(y)A to | -(y)I object |
+  |---|---|---|---|---|
+  | ev·i | ev·i·**n**·de | ev·i·**n**·den | ev·i·**n**·e | ev·i·**n**·i |
+  | araba·sı | araba·sı·**n**·da | araba·sı·**n**·dan | araba·sı·**n**·a | araba·sı·**n**·ı |
+  | ev·leri | ev·leri·**n**·de | ev·leri·**n**·den | ev·leri·**n**·e | ev·leri·**n**·i |
+
+  The **n** replaces the buffer **y**: *araba·sı·n·ı*, not ~~arabasıyı~~. *-DA* and *-DAn* always stay **d** after it: *evinde*.
+
+  It's the same n you saw in *yatak odası·n·da* (L10) and *Ali'nin evi·n·de* "at Ali's house". Compounds work the same way: *otobüs durağı·n·da* "at the bus stop".
+
+  **Other persons: no n.** ev·im·**de** "in my house", ev·in·**e** "to your house", ev·imiz·**den**, araba·m·**ı**.
+
+  ⚠️ **Same form, two meanings:** *evine* = ev·in·e "to **your** house" **or** ev·i·n·e "to **his / her** house". Likewise *evinde*, *kitabını*. A pronoun makes it clear: *senin evine* / *onun evine*.
+
+  **With "to be"** (L11): *Odamdayım.* "I'm in my room." · *Evindesin.* "You're at his house." / "You're at your house."
+
+patterns:
+  - id: g.L24.poss_case.loc
+    description: "-(s)I + n + -DA (evinde, arabasında)"
+    suffixes: [sfx.poss_3sg, sfx.loc]
+    word_filter: { pos: noun }
+  - id: g.L24.poss_case.acc
+    description: "-(s)I + n + -I (arabasını)"
+    suffixes: [sfx.poss_3sg, sfx.acc]
+    word_filter: { pos: noun }
+  - id: g.L24.poss_case.dat
+    description: "-(s)I + n + -A (okuluna)"
+    suffixes: [sfx.poss_3sg, sfx.dat]
+    word_filter: { pos: noun }
+  - id: g.L24.poss_case.abl
+    description: "-(s)I + n + -DAn (evinden)"
+    suffixes: [sfx.poss_3sg, sfx.abl]
+    word_filter: { pos: noun }
+  - id: g.L24.poss_case.pl3
+    description: "-lArI + n + case (evlerinde)"
+    suffixes: [sfx.poss_3pl, sfx.loc]
+    word_filter: { pos: noun }
+  - id: g.L24.poss_case.no_n
+    description: "1st / 2nd person: no n (evimde, evine)"
+    suffixes: [sfx.poss_1sg, sfx.loc]
+    word_filter: { pos: noun }
+  - id: g.L24.poss_case.compound
+    description: "Compounds take n too (otobüs durağında)"
+    suffix: sfx.loc
+    word_filter: { pos: noun, flags: [compound] }
+
+feedback:
+  vowel_back: "Look at the last vowel: **{v}** is a back vowel (a ı o u) → **{answer}**."
+  vowel_front: "Look at the last vowel: **{v}** is a front vowel (e i ö ü) → **{answer}**."
+  vowel_round: "4-way harmony on the last vowel (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  voiceless: "After the buffer **n**, -DA stays **d**: **{answer}**."
+  not_voiceless: "After the buffer **n**, -DA stays **d**: **{answer}**."
+  detached: "The endings are **attached** to the word: **{answer}**."
+  no_buffer: "After a 3rd-person possessive the buffer is **n**: **{answer}**."
+  buffer_after_n: "After a 3rd-person possessive the buffer is **n**, not y: **{answer}**."
+  # used by the per-item feedback maps
+  missing_n: "After a 3rd-person possessive, the case ending needs **n**: **{answer}**."
+  y_for_n: "After *-(s)I* the buffer is **n**, not y: **{answer}**."
+  extra_n: "Only the **3rd person** (-sI, -lArI) takes the n: **{answer}**."
+  order: "Possessive first, then n, then the case: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."
