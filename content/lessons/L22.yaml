@@ -2,7 +2,7 @@
 id: L22
 title: "Compound nouns"
 grammar: g.L22.compound
-new_words: [w.Türk_kahvesi, w.otobüs_durağı, w.mama, w.üniversite]
+new_words: [w.Türk_kahvesi, w.otobüs_durağı, w.mama, w.üniversite, w.bardak]
 not_yet:
   - "a case after a compound (otobüs durağında, İstanbul Üniversitesi'nde) → L24"
   - "a possessed compound with a person other than 'my' (yatak odamız) is not drilled"

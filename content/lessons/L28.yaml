@@ -2,7 +2,7 @@
 id: L28
 title: "-lI / -sIz, origin, -CI"
 grammar: g.L28.li_siz
-new_words: [w.nereli, w.evli, w.bekâr, w.gazete]
+new_words: [w.nereli, w.evli, w.bekâr, w.gazete, w.tuz]
 not_yet:
   - "-lIk (gözlük, kitaplık) and -CA (Türkçe as a pattern) → A2 word-building"
   - "-sIz + person endings in long chains (parasızım) → later review"

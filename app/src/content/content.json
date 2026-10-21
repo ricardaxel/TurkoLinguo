@@ -6716,7 +6716,8 @@
    "grammar": "g.L19.poss_sg",
    "new_words": [
     "w.ad",
-    "w.arkadaş"
+    "w.arkadaş",
+    "w.oğul"
    ],
    "not_yet": [
     "our / your (pl.) / their (evimiz, eviniz, evleri) → L20",
@@ -8476,7 +8477,8 @@
     "w.Türk_kahvesi",
     "w.otobüs_durağı",
     "w.mama",
-    "w.üniversite"
+    "w.üniversite",
+    "w.bardak"
    ],
    "not_yet": [
     "a case after a compound (otobüs durağında, İstanbul Üniversitesi'nde) → L24",
@@ -10257,7 +10259,8 @@
    "new_words": [
     "w.buçuk",
     "w.ne_zaman",
-    "w.ders"
+    "w.ders",
+    "w.öğle_yemeği"
    ],
    "not_yet": [
     "minutes past / to (üçü beş geçiyor, üçe beş var) → extension pack (needs the accusative and dative on times)",
@@ -11244,7 +11247,8 @@
     "w.nereli",
     "w.evli",
     "w.bekâr",
-    "w.gazete"
+    "w.gazete",
+    "w.tuz"
    ],
    "not_yet": [
     "-lIk (gözlük, kitaplık) and -CA (Türkçe as a pattern) → A2 word-building",
@@ -12552,7 +12556,8 @@
    "title": "Past tense -DI",
    "grammar": "g.L30.past",
    "new_words": [
-    "w.geçen"
+    "w.geçen",
+    "w.demek"
    ],
    "not_yet": [
     "negative and questions (gelmedim, Geldin mi?) → L31",
@@ -13918,7 +13923,8 @@
    "new_words": [
     "w.gelecek",
     "w.seneye",
-    "w.yardım"
+    "w.yardım",
+    "w.etmek"
    ],
    "not_yet": [
     "future of 'to be' (evde olacağım) → A2 (olmak)",

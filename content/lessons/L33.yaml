@@ -2,7 +2,7 @@
 id: L33
 title: "Future -(y)AcAK"
 grammar: g.L33.future
-new_words: [w.gelecek, w.seneye, w.yardım]
+new_words: [w.gelecek, w.seneye, w.yardım, w.etmek]
 not_yet:
   - "future of 'to be' (evde olacağım) → A2 (olmak)"
   - "future in the past (gelecektim) → A2"

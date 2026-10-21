@@ -3,7 +3,7 @@
 id: L26
 title: "Time & days"
 grammar: g.L26.time
-new_words: [w.buçuk, w.ne_zaman, w.ders]
+new_words: [w.buçuk, w.ne_zaman, w.ders, w.öğle_yemeği]
 not_yet:
   - "minutes past / to (üçü beş geçiyor, üçe beş var) → extension pack (needs the accusative and dative on times)"
   - "dün with a verb (Dün okuldaydım) → L30–L32"

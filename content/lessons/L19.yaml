@@ -2,7 +2,7 @@
 id: L19
 title: "Possessives (singular owners)"
 grammar: g.L19.poss_sg
-new_words: [w.ad, w.arkadaş]
+new_words: [w.ad, w.arkadaş, w.oğul]
 not_yet:
   - "our / your (pl.) / their (evimiz, eviniz, evleri) → L20"
   - "the genitive with nouns (Ali'nin arabası); benim / senin / onun are shown here only as words for emphasis → L21"
