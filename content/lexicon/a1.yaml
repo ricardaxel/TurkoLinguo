@@ -351,3 +351,152 @@
 - { id: w.içmek, lemma: içmek, pos: verb, gloss: [drink], stem: iç }
 - { id: w.okumak, lemma: okumak, pos: verb, gloss: [read], stem: oku }
 - { id: w.bakmak, lemma: bakmak, pos: verb, gloss: [look (at)], stem: bak, notes: "Takes the dative: kediye bakıyor." }
+# --- L25: numbers 11–1000, prices, kaç ---
+- { id: w.yirmi, lemma: yirmi, pos: num, gloss: [twenty] }
+- { id: w.otuz, lemma: otuz, pos: num, gloss: [thirty] }
+- { id: w.kırk, lemma: kırk, pos: num, gloss: [forty] }
+- { id: w.elli, lemma: elli, pos: num, gloss: [fifty] }
+- { id: w.altmış, lemma: altmış, pos: num, gloss: [sixty] }
+- { id: w.yetmiş, lemma: yetmiş, pos: num, gloss: [seventy] }
+- { id: w.seksen, lemma: seksen, pos: num, gloss: [eighty] }
+- { id: w.doksan, lemma: doksan, pos: num, gloss: [ninety] }
+- { id: w.yüz.hundred, lemma: yüz, pos: num, gloss: [hundred, one hundred], notes: "Never 'bir yüz'. Homonym of yüz 'face' (T18)." }
+- { id: w.bin, lemma: bin, pos: num, gloss: [thousand, one thousand], notes: "Never 'bir bin'." }
+- { id: w.kaç, lemma: kaç, pos: pron, gloss: [how many, how much], notes: "Followed by a singular noun: kaç elma. Saat kaç? / Saat kaçta? (L26)" }
+- { id: w.ne_kadar, lemma: ne kadar, pos: adv, gloss: [how much] }
+- { id: w.yaş, lemma: yaş, pos: noun, gloss: [age], notes: "Kaç yaşındasın? — Yirmi beş yaşındayım (yaş·ı·n·da)." }
+
+# --- L26: time & days ---
+- { id: w.buçuk, lemma: buçuk, pos: noun, gloss: [and a half, half past], flags: [soft], notes: "Saat üç buçuk 'half past three'. 12:30: on iki buçuk or yarım." }
+- { id: w.ne_zaman, lemma: ne zaman, pos: adv, gloss: [when] }
+- { id: w.ders, lemma: ders, pos: noun, gloss: [lesson, class] }
+
+# --- T17 time, days, months ---
+- { id: w.pazartesi, lemma: pazartesi, pos: noun, gloss: [Monday], notes: "Days are lowercase. pazar + ertesi 'the day after Sunday'." }
+- { id: w.salı, lemma: salı, pos: noun, gloss: [Tuesday] }
+- { id: w.çarşamba, lemma: çarşamba, pos: noun, gloss: [Wednesday] }
+- { id: w.perşembe, lemma: perşembe, pos: noun, gloss: [Thursday] }
+- { id: w.cuma, lemma: cuma, pos: noun, gloss: [Friday] }
+- { id: w.cumartesi, lemma: cumartesi, pos: noun, gloss: [Saturday] }
+- { id: w.pazar.sunday, lemma: pazar, pos: noun, gloss: [Sunday], notes: "Same word as pazar 'bazaar' (T9)." }
+- { id: w.hafta, lemma: hafta, pos: noun, gloss: [week] }
+- { id: w.bugün, lemma: bugün, pos: adv, gloss: [today] }
+- { id: w.yarın, lemma: yarın, pos: adv, gloss: [tomorrow] }
+- { id: w.dün, lemma: dün, pos: adv, gloss: [yesterday], notes: "Used with the past tense (L30)." }
+- { id: w.sabah, lemma: sabah, pos: noun, gloss: [morning, in the morning] }
+- { id: w.öğleden_sonra, lemma: öğleden sonra, pos: adv, gloss: [afternoon, in the afternoon], notes: "öğle·den sonra 'after noon'." }
+- { id: w.akşam, lemma: akşam, pos: noun, gloss: [evening, in the evening] }
+- { id: w.gece, lemma: gece, pos: noun, gloss: [night, at night] }
+- { id: w.dakika, lemma: dakika, pos: noun, gloss: [minute] }
+- { id: w.ocak, lemma: ocak, pos: noun, gloss: [January], flags: [soft], notes: "Months are lowercase. Also 'stove, hearth'." }
+- { id: w.şubat, lemma: şubat, pos: noun, gloss: [February] }
+- { id: w.mart, lemma: mart, pos: noun, gloss: [March] }
+- { id: w.nisan, lemma: nisan, pos: noun, gloss: [April] }
+- { id: w.mayıs, lemma: mayıs, pos: noun, gloss: [May] }
+- { id: w.haziran, lemma: haziran, pos: noun, gloss: [June] }
+- { id: w.temmuz, lemma: temmuz, pos: noun, gloss: [July] }
+- { id: w.ağustos, lemma: ağustos, pos: noun, gloss: [August] }
+- { id: w.eylül, lemma: eylül, pos: noun, gloss: [September] }
+- { id: w.ekim, lemma: ekim, pos: noun, gloss: [October] }
+- { id: w.kasım, lemma: kasım, pos: noun, gloss: [November] }
+- { id: w.aralık, lemma: aralık, pos: noun, gloss: [December], flags: [soft] }
+- { id: w.ay, lemma: ay, pos: noun, gloss: [month, moon] }
+- { id: w.yıl, lemma: yıl, pos: noun, gloss: [year] }
+- { id: w.hafta_sonu, lemma: hafta sonu, pos: noun, gloss: [weekend], flags: [compound], forms: { pl: hafta sonları } }
+- { id: w.öğle, lemma: öğle, pos: noun, gloss: [noon, midday], notes: "öğle yemeği 'lunch', öğleden sonra 'afternoon'." }
+
+# --- L27: -(y)lA / ile ---
+- { id: w.ile, lemma: ile, pos: postp, gloss: [with, by, and], notes: "Separate word, never changes. Suffix form -(y)lA: otobüsle, arabayla." }
+- { id: w.arkadaş, lemma: arkadaş, pos: noun, gloss: [friend] }
+- { id: w.birlikte, lemma: birlikte, pos: adv, gloss: [together] }
+
+# --- L28: -lI / -sIz, origin, -CI ---
+- { id: w.nereli, lemma: nereli, pos: adj, gloss: [from where], notes: "nere·li: Nerelisin? 'Where are you from?' (phrase in L5, explained in L28)." }
+- { id: w.evli, lemma: evli, pos: adj, gloss: [married], notes: "ev·li, lexicalised." }
+- { id: w.bekâr, lemma: bekâr, pos: adj, gloss: [single, unmarried] }
+- { id: w.gazete, lemma: gazete, pos: noun, gloss: [newspaper], notes: "gazete·ci 'journalist'." }
+
+# --- L29: comparison ---
+- { id: w.daha, lemma: daha, pos: adv, gloss: [more], notes: "Optional after X-DAn: At köpekten (daha) büyük." }
+- { id: w.en, lemma: en, pos: adv, gloss: [most, the most], notes: "en büyük 'the biggest'." }
+- { id: w.hangisi, lemma: hangisi, pos: pron, gloss: [which one] }
+- { id: w.az, lemma: az, pos: adj, gloss: [little, few, less], notes: "daha az 'less'." }
+
+# --- T19 hobbies & free time ---
+- { id: w.dinlemek, lemma: dinlemek, pos: verb, stem: dinle, gloss: [listen, listen to], notes: "müzik dinlemek" }
+- { id: w.izlemek, lemma: izlemek, pos: verb, stem: izle, gloss: [watch], notes: "film izlemek" }
+- { id: w.oynamak, lemma: oynamak, pos: verb, stem: oyna, gloss: [play], notes: "futbol oynamak" }
+- { id: w.yüzmek, lemma: yüzmek, pos: verb, stem: yüz, gloss: [swim] }
+- { id: w.spor, lemma: spor, pos: noun, gloss: [sport, sports], notes: "spor yapmak 'do sport'" }
+- { id: w.yürüyüş, lemma: yürüyüş, pos: noun, gloss: [walk, hike], notes: "yürüyüş yapmak 'go for a walk'" }
+- { id: w.dans, lemma: dans, pos: noun, gloss: [dance, dancing], notes: "dans etmek 'dance'" }
+- { id: w.resim, lemma: resim, pos: noun, gloss: [picture, painting], flags: [drop], notes: "resim yapmak 'paint, draw'. resmi" }
+- { id: w.şarkı, lemma: şarkı, pos: noun, gloss: [song], notes: "şarkı söylemek 'sing'" }
+- { id: w.söylemek, lemma: söylemek, pos: verb, stem: söyle, gloss: [say, sing (a song)] }
+- { id: w.fotoğraf, lemma: fotoğraf, pos: noun, gloss: [photo, photograph], notes: "fotoğraf çekmek 'take photos'" }
+- { id: w.çekmek, lemma: çekmek, pos: verb, stem: çek, gloss: [pull, take (a photo)] }
+- { id: w.seyahat, lemma: seyahat, pos: noun, gloss: [travel, trip], notes: "seyahat etmek 'travel'" }
+- { id: w.hobi, lemma: hobi, pos: noun, gloss: [hobby] }
+- { id: w.boş, lemma: boş, pos: adj, gloss: [empty, free], notes: "boş zaman 'free time'" }
+- { id: w.zaman, lemma: zaman, pos: noun, gloss: [time] }
+
+# --- shared (needed by L25–L29) ---
+# Words introduced by other batches' lessons and packs (L1–L24, T2–T16). Listed here so this
+# batch validates on its own; dedupe at merge.
+- { id: w.üç, lemma: üç, pos: num, gloss: [three] }
+- { id: w.dört, lemma: dört, pos: num, gloss: [four] }
+- { id: w.beş, lemma: beş, pos: num, gloss: [five] }
+- { id: w.altı, lemma: altı, pos: num, gloss: [six] }
+- { id: w.yedi, lemma: yedi, pos: num, gloss: [seven] }
+- { id: w.sekiz, lemma: sekiz, pos: num, gloss: [eight] }
+- { id: w.dokuz, lemma: dokuz, pos: num, gloss: [nine] }
+- { id: w.on, lemma: "on", pos: num, gloss: [ten] }
+- { id: w.ne, lemma: ne, pos: pron, gloss: [what], flags: [irr], forms: { gen: neyin } }
+- { id: w.kim, lemma: kim, pos: pron, gloss: [who] }
+- { id: w.çok, lemma: çok, pos: adv, gloss: [very, a lot, many] }
+- { id: w.lütfen, lemma: lütfen, pos: interj, gloss: [please] }
+- { id: w.kahve, lemma: kahve, pos: noun, gloss: [coffee] }
+- { id: w.şeker, lemma: şeker, pos: noun, gloss: [sugar] }
+- { id: w.kahvaltı, lemma: kahvaltı, pos: noun, gloss: [breakfast] }
+- { id: w.güzel, lemma: güzel, pos: adj, gloss: [beautiful, nice] }
+- { id: w.küçük, lemma: küçük, pos: adj, gloss: [small, little, young] }
+- { id: w.uzun, lemma: uzun, pos: adj, gloss: [long, tall] }
+- { id: w.iyi, lemma: iyi, pos: adj, gloss: [good, well] }
+- { id: w.soğuk, lemma: soğuk, pos: adj, gloss: [cold] }
+- { id: w.kolay, lemma: kolay, pos: adj, gloss: [easy] }
+- { id: w.ucuz, lemma: ucuz, pos: adj, gloss: [cheap] }
+- { id: w.pahalı, lemma: pahalı, pos: adj, gloss: [expensive] }
+- { id: w.kırmızı, lemma: kırmızı, pos: adj, gloss: [red] }
+- { id: w.araba, lemma: araba, pos: noun, gloss: [car] }
+- { id: w.gün, lemma: gün, pos: noun, gloss: [day] }
+- { id: w.öğrenci, lemma: öğrenci, pos: noun, gloss: [student, pupil] }
+- { id: w.tren, lemma: tren, pos: noun, gloss: [train] }
+- { id: w.taksi, lemma: taksi, pos: noun, gloss: [taxi] }
+- { id: w.metro, lemma: metro, pos: noun, gloss: [metro, underground, subway] }
+- { id: w.film, lemma: film, pos: noun, gloss: [film, movie] }
+- { id: w.müzik, lemma: müzik, pos: noun, gloss: [music] }
+- { id: w.futbol, lemma: futbol, pos: noun, gloss: [football, soccer] }
+- { id: w.kafe, lemma: kafe, pos: noun, gloss: [café] }
+- { id: w.uçak, lemma: uçak, pos: noun, gloss: [plane, aeroplane], flags: [soft] }
+- { id: w.bisiklet, lemma: bisiklet, pos: noun, gloss: [bicycle, bike] }
+- { id: w.gitmek, lemma: gitmek, pos: verb, stem: git, gloss: [go], flags: [irr], notes: "t → d before a vowel: gidiyor." }
+- { id: w.gelmek, lemma: gelmek, pos: verb, stem: gel, gloss: [come] }
+- { id: w.içmek, lemma: içmek, pos: verb, stem: iç, gloss: [drink] }
+- { id: w.yapmak, lemma: yapmak, pos: verb, stem: yap, gloss: [do, make] }
+- { id: w.kalkmak, lemma: kalkmak, pos: verb, stem: kalk, gloss: [get up] }
+- { id: w.çalışmak, lemma: çalışmak, pos: verb, stem: çalış, gloss: [work, study] }
+- { id: w.elma, lemma: elma, pos: noun, gloss: [apple] }
+- { id: w.tuz, lemma: tuz, pos: noun, gloss: [salt] }
+- { id: w.çorba, lemma: çorba, pos: noun, gloss: [soup] }
+- { id: w.öğle_yemeği, lemma: öğle yemeği, pos: noun, gloss: [lunch], flags: [compound], forms: { pl: öğle yemekleri } }
+- { id: w.anne, lemma: anne, pos: noun, gloss: [mother, mum] }
+- { id: w.baba, lemma: baba, pos: noun, gloss: [father, dad] }
+- { id: w.kardeş, lemma: kardeş, pos: noun, gloss: [sibling, brother, sister] }
+- { id: w.çocuk, lemma: çocuk, pos: noun, gloss: [child], flags: [soft] }
+- { id: w.lira, lemma: lira, pos: noun, gloss: [lira] }
+- { id: w.kuruş, lemma: kuruş, pos: noun, gloss: [kuruş], notes: "1 lira = 100 kuruş." }
+- { id: w.tane, lemma: tane, pos: noun, gloss: [piece, item], notes: "Tanesi kaç lira? 'How much is one?'" }
+- { id: w.yarım, lemma: yarım, pos: adj, gloss: [half, half past twelve], notes: "yarım kilo 'half a kilo'; Saat yarım = Saat on iki buçuk = 12:30 (L26)." }
+- { id: w.kilo, lemma: kilo, pos: noun, gloss: [kilo, kilogram] }
+- { id: w.ceket, lemma: ceket, pos: noun, gloss: [jacket] }
+- { id: w.ayakkabı, lemma: ayakkabı, pos: noun, gloss: [shoe, shoes] }

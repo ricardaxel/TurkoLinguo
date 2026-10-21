@@ -1,0 +1,149 @@
+# L29 — comparison: daha, en. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L29
+title: "Comparison: daha, en"
+grammar: g.L29.comparison
+new_words: [w.daha, w.en, w.hangisi, w.az]
+not_yet:
+  - "kadar 'as … as' (Ali kadar uzun) → A2 postpositions"
+  - "en + plural possessive (en iyisi, en ucuzu) → shown in reviews later"
+  - "daha with verbs in the past (daha önce) → L30+"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🐎🐕 **At köpekten büyük.** "The horse is bigger than the dog."
+
+          No *-er* ending and no *than* word. Turkish says "the horse is big **from** the dog", using the ablative from L12: **köpek·ten**.
+        images: [img.own.horse_and_dog]
+        sentences: [s.L29.001]
+        audio: [aud.own.s.L29.001]
+
+      - kind: rule
+        title: "X Y-DAn (daha) big"
+        body: |
+          The thing you compare **with** takes **-DAn**. The adjective never changes:
+
+          | Turkish | English |
+          |---|---|
+          | At köpek**ten** (daha) büyük. | The horse is bigger than the dog. |
+          | İstanbul Ankara'**dan** büyük. | Istanbul is bigger than Ankara. |
+          | Çay kahve**den** ucuz. | Tea is cheaper than coffee. |
+          | Ben sen**den** uzunum. | I'm taller than you. |
+
+          **daha** "more" is optional when there's a -DAn word. Without one, you need it: *Bu **daha** ucuz.* "This one is cheaper."
+
+          Pronouns: ben**den**, sen**den**, on**dan**, biz**den**, siz**den**, onlar**dan**.
+        sentences: [s.L29.002, s.L29.003, s.L29.013, s.L29.011, s.L29.004]
+        audio: [aud.own.s.L29.002, aud.own.s.L29.003, aud.own.s.L29.013, aud.own.s.L29.011, aud.own.s.L29.004]
+
+      - kind: rule
+        title: "en = the most"
+        body: |
+          Put **en** before the adjective:
+
+          - **en** büyük "the biggest" · **en** ucuz "the cheapest" · **en** iyi "the best"
+          - *En büyük şehir İstanbul.* "The biggest city is Istanbul."
+          - *Türkiye'nin en büyük şehri İstanbul.* "Turkey's biggest city is Istanbul."
+          - *En iyi arkadaşım Ayşe.* "My best friend is Ayşe."
+
+          Even *good → better → best* is regular: **iyi → daha iyi → en iyi**.
+        sentences: [s.L29.006, s.L29.007, s.L29.008]
+        audio: [aud.own.s.L29.006, aud.own.s.L29.007, aud.own.s.L29.008]
+
+      - kind: rule
+        title: "Which one?"
+        body: |
+          **Hangisi?** "Which one?"
+
+          - *Hangisi daha ucuz?* "Which one is cheaper?" — *Bu daha ucuz.*
+          - *Hangisi daha iyi, çay mı kahve mi?* "Which is better, tea or coffee?"
+        sentences: [s.L29.005, s.L29.004, s.L29.026]
+        audio: [aud.own.s.L29.005, aud.own.s.L29.026]
+
+      - kind: note
+        title: "much more, less"
+        body: |
+          - **çok daha** "much more": *Bu ceket **çok daha** pahalı.* "This jacket is much more expensive."
+          - **daha az** "less": *Daha az şeker, lütfen.* "Less sugar, please."
+          - **daha çok** "more" (with verbs): *Ali benden daha çok çalışıyor.* "Ali works more than me."
+        sentences: [s.L29.009, s.L29.010, s.L29.023]
+        audio: [aud.own.s.L29.009, aud.own.s.L29.010, aud.own.s.L29.023]
+
+    items:
+      - id: L29.learn.01
+        type: picture_choose
+        grammar: [g.L29.comparison, g.L12.abl]
+        pattern: g.L29.comparison.than
+        images: [img.own.horse_and_dog]
+        prompt: "At köpek… büyük."
+        options: [ten, te, den]
+        answer: ten
+        translation: "The horse is bigger than the dog."
+        feedback: { te: "**-DA** means *in / at*; *than* is **-DAn**: **köpekten**.", den: "**köpek** ends in **k**, one of the Fıstıkçı Şahap letters → **t**: **köpekten**." }
+      - id: L29.learn.02
+        type: picture_choose
+        grammar: [g.L29.comparison, g.L12.abl]
+        pattern: g.L29.comparison.than
+        images: [img.own.horse_and_dog]
+        prompt: "Köpek attan …"
+        options: [küçük, büyük]
+        answer: küçük
+        translation: "The dog is smaller than the horse."
+      - { id: L29.learn.03, type: translate_to_tr, grammar: [g.L29.comparison, g.L3.basics], pattern: g.L29.comparison.daha, sentence: s.L29.004, word_bank: [Bu, daha, en, ucuz, ucuzlar] }
+      - id: L29.learn.04
+        type: listen_choose
+        grammar: [g.L29.comparison, g.L12.abl]
+        pattern: g.L29.comparison.than
+        sentence: s.L29.003
+        options: ["Istanbul is bigger than Ankara.", "Ankara is bigger than Istanbul.", "Istanbul is as big as Ankara."]
+        answer: "Istanbul is bigger than Ankara."
+        note: "Direction check: the -DAn word is the smaller one."
+      - id: L29.learn.05
+        type: contrast_pair
+        grammar: [g.L29.comparison, g.L3.basics]
+        pattern: g.L29.comparison.en
+        prompt: "This is the cheapest jacket."
+        options: [s.L29.017, s.L29.004]
+        answer: s.L29.017
+      - { id: L29.learn.06, type: translate_to_tr, grammar: [g.L29.comparison, g.L19.poss_sg], pattern: g.L29.comparison.en, sentence: s.L29.008, word_bank: [En, Daha, iyi, arkadaşım, Ayşe], answers: ["Ayşe en iyi arkadaşım."] }
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L29.practise.01, type: spot_error, grammar: [g.L29.comparison, g.L12.abl], pattern: g.L29.comparison.than, text: "At köpekte büyük.", error: köpekte, answer: köpekten, sentence: s.L29.001, feedback: { köpekte: "**-DA** means *in / at*; *than* is **-DAn**: **köpekten**." } }
+      - { id: L29.practise.02, type: spot_error, grammar: [g.L29.comparison, g.L12.abl], pattern: g.L29.comparison.than, text: "İstanbul Ankaradan büyük.", error: Ankaradan, answer: "Ankara'dan", sentence: s.L29.003, feedback: { Ankaradan: "**Ankara** is a name, so it takes an apostrophe before the ending: **Ankara'dan**." } }
+      - { id: L29.practise.03, type: spot_error, grammar: [g.L29.comparison, g.L21.gen, g.L19.poss_sg], pattern: g.L29.comparison.en, text: "Türkiye'nin daha büyük şehri İstanbul.", error: daha, answer: en, sentence: s.L29.007, feedback: { daha: "*The biggest* is **en** before the adjective: **en büyük**." } }
+      - { id: L29.practise.04, type: translate_to_tr, grammar: [g.L29.comparison, g.L12.abl], pattern: g.L29.comparison.than, sentence: s.L29.013, typed: true, answers: ["Çay kahveden daha ucuz."], feedback: { "Çay kahvede ucuz.": "**-DA** means *in / at*; *than* is **-DAn**: **kahveden**." } }
+      - { id: L29.practise.05, type: translate_to_tr, grammar: [g.L29.comparison, g.L12.abl, g.L5.copula], pattern: g.L29.comparison.than, sentence: s.L29.011, typed: true, answers: ["(Ben) senden (daha) uzunum."] }
+      - id: L29.practise.06
+        type: qa
+        grammar: [g.L29.comparison, g.L12.abl]
+        pattern: g.L29.comparison.hangisi
+        question: s.L29.025
+        images: [img.own.horse_and_dog]
+        answers: ["At (köpekten) (daha) büyük.", "At."]
+        translation: "Which one is bigger? — The horse (is bigger than the dog)."
+      - { id: L29.practise.07, type: translate_to_en, grammar: [g.L29.comparison, g.L21.gen, g.L19.poss_sg], sentence: s.L29.007 }
+      - { id: L29.practise.08, type: translate_to_en, grammar: [g.L29.comparison, g.L12.abl, g.L15.prog], sentence: s.L29.023 }
+      - { id: L29.practise.09, type: dictation, grammar: [g.L29.comparison], pattern: g.L29.comparison.daha, sentence: s.L29.009 }
+      - { id: L29.practise.10, type: translate_to_tr, grammar: [g.L29.comparison], pattern: g.L29.comparison.daha, sentence: s.L29.010, word_bank: [Daha, az, çok, şeker, şekerli, lütfen] }
+      - id: L29.practise.11
+        type: listen_choose
+        grammar: [g.L29.comparison, g.L12.abl]
+        pattern: g.L29.comparison.than
+        sentence: s.L29.012
+        options: ["Ayşe is older than me.", "I'm older than Ayşe.", "Ayşe is with me."]
+        answer: "Ayşe is older than me."
+      - id: L29.practise.12
+        type: mini_dialogue
+        grammar: [g.L29.comparison, g.L7.question]
+        pattern: g.L29.comparison.hangisi
+        images: [img.own.tea_and_coffee]
+        turns:
+          - { speaker: A, sentence: s.L29.026 }
+          - { speaker: B, blank: true, answers: ["{Çay|Kahve} (daha iyi).", "{Çay|Kahve} {kahveden|çaydan} (daha) iyi."] }
+      - { id: L29.practise.13, type: translate_to_tr, grammar: [g.L29.comparison, g.L12.abl], pattern: g.L29.comparison.than, sentence: s.L29.019, typed: true, answers: ["Ankara İzmir'den soğuk."] }
+      - { id: L29.practise.14, type: translate_to_tr, grammar: [g.L29.comparison, g.L12.abl, g.L19.poss_sg], pattern: g.L29.comparison.than, sentence: s.L29.020, word_bank: [Kardeşim, benden, bende, küçük, daha], answers: ["Kardeşim benden daha küçük."] }

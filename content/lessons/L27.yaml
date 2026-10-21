@@ -1,0 +1,153 @@
+# L27 — -(y)lA / ile "with, by". Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L27
+title: "-(y)lA / ile"
+grammar: g.L27.ile
+new_words: [w.ile, w.arkadaş, w.birlikte]
+not_yet:
+  - "hakkında 'about', -(y)ArAk 'by doing' → A2"
+  - "birlikte as a full postposition drill (Ali'yle birlikte) → shown once, reviewed later"
+  - "the colloquial forms benle, onla → mentioned only as non-standard"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          🚌 **Okula otobüsle gidiyorum.** "I go to school **by** bus."
+          🧑‍🤝‍🧑 **Arkadaşımla parktayım.** "I'm in the park **with** my friend."
+
+          English needs two words, *by* and *with*. Turkish uses one ending: **-(y)lA**.
+        images: [img.openmoji.bus]
+        sentences: [s.L27.001, s.L27.002]
+        audio: [aud.own.s.L27.001, aud.own.s.L27.002]
+
+      - kind: rule
+        title: "-(y)lA = with, by"
+        body: |
+          Only **two** forms, **-la / -le** (2-way harmony, like -DA), plus the buffer **y** after a vowel:
+
+          | Word ends in… | Ending | Examples |
+          |---|---|---|
+          | consonant, back vowel | **-la** | uçak·**la**, arkadaşım·**la** |
+          | consonant, front vowel | **-le** | otobüs·**le**, tren·**le**, kalem·**le** |
+          | vowel a ı o u | **-yla** | araba·**yla**, metro·**yla** |
+          | vowel e i ö ü | **-yle** | taksi·**yle**, anne·**yle** |
+
+          ✅ The **l** never changes (no d/t question) and the word stays as it is: *uçak → uçakla*, not ~~uçağla~~.
+
+          It covers: **by** (*trenle* "by train"), **with** someone (*Ali'yle* "with Ali") and **with** something (*kalemle* "with a pen", *sütle* "with milk").
+        sentences: [s.L27.003, s.L27.004, s.L27.013]
+        audio: [aud.own.s.L27.003, aud.own.s.L27.004, aud.own.s.L27.013]
+        interactive:
+          component: suffix_steps
+          params: { words: [w.otobüs, w.uçak, w.araba, w.taksi], suffix: sfx.ins }
+
+      - kind: rule
+        title: "ile: the separate word"
+        body: |
+          **ile** is the same thing written as a separate word. It **never changes**, whatever the vowels:
+
+          | suffix | separate |
+          |---|---|
+          | otobüs**le** | otobüs **ile** |
+          | uçak**la** | uçak **ile** |
+          | Ali'**yle** | Ali **ile** |
+
+          Names take an apostrophe before the suffix (*Ali'yle, Ayşe'yle, Ahmet'le*), but not before *ile*.
+
+          The suffix is more common when speaking; *ile* is common in writing.
+        sentences: [s.L27.005, s.L27.006, s.L27.023, s.L27.026]
+        audio: [aud.own.s.L27.005, aud.own.s.L27.006]
+
+      - kind: rule
+        title: "With me, with you"
+        body: |
+          Pronouns add -lA to their **genitive** form (L21):
+
+          | | | with … |
+          |---|---|---|
+          | ben | benim | **benimle** |
+          | sen | senin | **seninle** |
+          | o | onun | **onunla** |
+          | biz | bizim | **bizimle** |
+          | siz | sizin | **sizinle** |
+          | onlar | — | **onlarla** |
+
+          **Kiminle?** "With whom?" (kim → kimin → kiminle). *Kiminle gidiyorsun? — Annemle.*
+
+          💬 You'll hear *benle, onla* in casual speech, but write **benimle, onunla**.
+        sentences: [s.L27.009, s.L27.010, s.L27.007, s.L27.008]
+        audio: [aud.own.s.L27.009, aud.own.s.L27.010, aud.own.s.L27.007, aud.own.s.L27.008]
+
+      - kind: note
+        title: "ile = and; birlikte"
+        body: |
+          Between two nouns, **ile** can mean *and*, like **ve** (L13):
+
+          *Ali **ile** Ayşe evde.* "Ali and Ayşe are at home."
+
+          After a possessive (*kardeşi* "her sibling"), -(y)lA takes the buffer **y**, not the **n** of L24: *Ayşe kardeşi**yle** parkta.*
+
+          **birlikte** "together" often follows: *Ayşe'yle birlikte okula gidiyoruz.* "Ayşe and I go to school together."
+        sentences: [s.L27.012, s.L27.018, s.L27.024]
+        audio: [aud.own.s.L27.012, aud.own.s.L27.018, aud.own.s.L27.024]
+
+    items:
+      - { id: L27.learn.01, type: pick_suffix, grammar: [g.L27.ile], pattern: g.L27.ile.front, base: w.otobüs, suffix: sfx.ins, options: [la, le, yla, yle], answer: le, feedback: "auto:g.L27.ile", note: "Trap: first vowel o is back, last vowel ü is front." }
+      - { id: L27.learn.02, type: pick_suffix, grammar: [g.L27.ile], pattern: g.L27.ile.after_vowel, base: w.araba, suffix: sfx.ins, options: [la, le, yla, yle], answer: yla, feedback: "auto:g.L27.ile" }
+      - { id: L27.learn.03, type: pick_suffix, grammar: [g.L27.ile], pattern: g.L27.ile.front, base: w.tren, suffix: sfx.ins, options: [la, le, yla, yle], answer: le, feedback: "auto:g.L27.ile" }
+      - id: L27.learn.04
+        type: picture_choose
+        grammar: [g.L27.ile, g.L15.prog]
+        pattern: g.L27.ile.after_vowel
+        images: [img.openmoji.taxi]
+        prompt: "… gidiyorum."
+        options: [Taksiyle, Taksile, Taksiyla]
+        answer: Taksiyle
+        translation: "I'm going by taxi."
+        feedback: { Taksile: "**taksi** ends in a vowel, so -(y)lA needs the buffer **y**: **taksiyle**.", Taksiyla: "Look at the last vowel of **taksi**: **i** is a front vowel → **-yle**: taksiyle." }
+      - { id: L27.learn.05, type: translate_to_tr, grammar: [g.L27.ile, g.L17.dat, g.L15.prog], sentence: s.L27.001, word_bank: [Okula, otobüsle, otobüste, gidiyorum, geliyorum] }
+      - id: L27.learn.06
+        type: listen_choose
+        grammar: [g.L27.ile, g.L10.loc]
+        sentence: s.L27.012
+        options: ["Ali and Ayşe are at home.", "Ali is at Ayşe's house.", "Ali is at home too."]
+        answer: "Ali and Ayşe are at home."
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L27.practise.01, type: pick_suffix, grammar: [g.L27.ile], pattern: g.L27.ile.back, base: w.uçak, suffix: sfx.ins, options: [la, le, yla, yle], answer: la, feedback: "auto:g.L27.ile", note: "No softening: -(y)lA starts with a consonant here → uçakla." }
+      - { id: L27.practise.02, type: type_form, grammar: [g.L27.ile], pattern: g.L27.ile.front, base: w.kalem, suffixes: [sfx.ins], prompt: "with a pen", answer: kalemle, feedback: "auto:g.L27.ile" }
+      - { id: L27.practise.03, type: type_form, grammar: [g.L27.ile], pattern: g.L27.ile.after_vowel, base: w.metro, suffixes: [sfx.ins], prompt: "by metro", answer: metroyla, feedback: "auto:g.L27.ile" }
+      - { id: L27.practise.04, type: translate_to_tr, grammar: [g.L27.ile, g.L21.gen, g.L16.prog_neg_q], pattern: g.L27.ile.pronoun, sentence: s.L27.009, word_bank: [Benimle, Benle, geliyor, musun, misin], feedback: { "Benle geliyor musun?": "Pronouns take -lA on their **genitive** form: benim·le: **Benimle geliyor musun?**" } }
+      - { id: L27.practise.05, type: spot_error, grammar: [g.L27.ile, g.L21.gen, g.L15.prog], pattern: g.L27.ile.pronoun, text: "Onla çalışıyorum.", error: Onla, answer: Onunla, sentence: s.L27.011, feedback: { Onla: "Pronouns take -lA on their **genitive** form: onun·la: **Onunla**." } }
+      - { id: L27.practise.06, type: spot_error, grammar: [g.L27.ile, g.L15.prog], pattern: g.L27.ile.name, text: "Aliyle geliyorum.", error: Aliyle, answer: "Ali'yle", sentence: s.L27.006, feedback: { Aliyle: "**Ali** is a name, so it takes an apostrophe before the ending: **Ali'yle**." } }
+      - { id: L27.practise.07, type: spot_error, grammar: [g.L27.ile, g.L15.prog], pattern: g.L27.ile.separate, text: "Uçak ila geliyorum.", error: ila, answer: ile, sentence: s.L27.026, feedback: { ila: "The separate word **ile** never changes: **uçak ile** (or *uçakla*)." } }
+      - id: L27.practise.08
+        type: qa
+        grammar: [g.L27.ile, g.L7.question, g.L15.prog]
+        pattern: g.L27.ile.after_vowel
+        question: s.L27.014
+        images: [img.openmoji.metro]
+        answers: ["Hayır, (ben) metroyla (gidiyorum).", "Hayır, (ben) metro ile (gidiyorum)."]
+        translation: "Are you going by taxi? — No, I'm going by metro."
+      - { id: L27.practise.09, type: translate_to_en, grammar: [g.L27.ile, g.L19.poss_sg, g.L10.loc], sentence: s.L27.018 }
+      - { id: L27.practise.10, type: translate_to_tr, grammar: [g.L27.ile, g.L17.dat, g.L15.prog], sentence: s.L27.003, typed: true, answers: ["(Biz) İzmir'e {trenle|tren ile} gidiyoruz.", "(Biz) {trenle|tren ile} İzmir'e gidiyoruz."] }
+      - { id: L27.practise.11, type: dictation, grammar: [g.L27.ile, g.L15.prog], pattern: g.L27.ile.name, sentence: s.L27.016 }
+      - { id: L27.practise.12, type: translate_to_tr, grammar: [g.L27.ile, g.L10.loc], pattern: g.L27.ile.separate, sentence: s.L27.012, word_bank: [Ali, ile, ila, Ayşe, evde, evden] }
+      - { id: L27.practise.13, type: translate_to_en, grammar: [g.L27.ile, g.L18.acc, g.L15.prog], sentence: s.L27.013 }
+      - id: L27.practise.14
+        type: listen_choose
+        grammar: [g.L27.ile, g.L12.abl, g.L15.prog]
+        sentence: s.L27.021
+        options: ["I'm coming from London by plane.", "I'm going to London by plane.", "I'm in London with my friend."]
+        answer: "I'm coming from London by plane."
+      - id: L27.practise.15
+        type: mini_dialogue
+        grammar: [g.L27.ile, g.L21.gen, g.L16.prog_neg_q]
+        pattern: g.L27.ile.pronoun
+        turns:
+          - { speaker: A, sentence: s.L27.009 }
+          - { speaker: B, blank: true, answers: ["Evet, (ben) seninle geliyorum.", "Evet, seninle."] }

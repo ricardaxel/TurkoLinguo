@@ -1,0 +1,217 @@
+# Sentences used by lesson L28 (-lI / -sIz, origin, -CI). `words` and `grammar` are hand-tagged for now.
+# Derived words are tagged with their root (şekerli → w.şeker, İstanbullu → w.İstanbul),
+# except lexicalised ones with their own entry (w.evli, w.nereli).
+
+- id: s.L28.001
+  tr: Çay şekerli mi?
+  en: ["Is the tea sweetened?", "Does the tea have sugar in it?", "Is there sugar in the tea?", "Is the tea with sugar?"]
+  words: [w.çay, w.şeker]
+  grammar: [g.L28.li_siz, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L28.001
+  native_required: true
+
+- id: s.L28.002
+  tr: Hayır, şekersiz.
+  en: ["No, it's without sugar.", "No, without sugar.", "No, it's unsweetened.", "No, it has no sugar."]
+  words: [w.hayır, w.şeker]
+  grammar: [g.L28.li_siz]
+  source: { kind: original }
+  audio: aud.own.s.L28.002
+
+- id: s.L28.003
+  tr: Nerelisin?
+  en: ["Where are you from?"]
+  words: [w.nereli]
+  grammar: [g.L28.li_siz, g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L28.003
+  native_required: true
+
+- id: s.L28.004
+  tr: İzmirliyim.
+  en: ["I'm from İzmir.", "I'm from Izmir.", "I am from Izmir."]
+  words: [w.İzmir]
+  grammar: [g.L28.li_siz, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L28.004
+  native_required: true        # place-name stress
+
+- id: s.L28.005
+  tr: Bir sütlü kahve, lütfen.
+  en: ["A coffee with milk, please.", "One coffee with milk, please.", "A white coffee, please."]
+  words: [w.bir, w.süt, w.kahve, w.lütfen]
+  grammar: [g.L28.li_siz, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L28.005
+
+- id: s.L28.006
+  tr: Çorba çok tuzlu.
+  en: ["The soup is very salty.", "The soup is too salty."]
+  words: [w.çorba, w.çok, w.tuz]
+  grammar: [g.L28.li_siz, g.L9.adj_num, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L28.006
+
+- id: s.L28.007
+  tr: Ali evli mi?
+  en: ["Is Ali married?"]
+  words: [w.Ali, w.evli]
+  grammar: [g.L28.li_siz, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L28.007
+  native_required: true
+
+- id: s.L28.008
+  tr: Evet, evli. İki çocuğu var.
+  en: ["Yes, he's married. He has two children.", "Yes, he is married. He has two kids."]
+  words: [w.evet, w.evli, w.iki, w.çocuk, w.var]
+  grammar: [g.L28.li_siz, g.L23.have, g.L19.poss_sg, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L28.008
+
+- id: s.L28.009
+  tr: Ben bekârım.
+  en: ["I'm single.", "I am single.", "I'm not married."]
+  words: [w.ben, w.bekâr]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L28.009
+
+- id: s.L28.010
+  tr: Ayşe İstanbullu.
+  en: ["Ayşe is from Istanbul.", "Ayşe is from İstanbul."]
+  words: [w.Ayşe, w.İstanbul]
+  grammar: [g.L28.li_siz, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L28.010
+  native_required: true        # place-name stress
+
+- id: s.L28.011
+  tr: Ahmet Ankaralı.
+  en: ["Ahmet is from Ankara."]
+  words: [w.Ahmet, w.Ankara]
+  grammar: [g.L28.li_siz, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L28.011
+  native_required: true        # place-name stress
+
+- id: s.L28.012
+  tr: Biz Londralıyız.
+  en: ["We're from London.", "We are from London.", "We are Londoners."]
+  words: [w.biz, w.Londra]
+  grammar: [g.L28.li_siz, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L28.012
+  native_required: true        # place-name stress
+
+- id: s.L28.013
+  tr: Babam balıkçı.
+  en: ["My father is a fisherman.", "My dad is a fishmonger.", "My father is a fishmonger.", "My dad is a fisherman."]
+  words: [w.baba, w.balık]
+  grammar: [g.L28.li_siz, g.L19.poss_sg, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L28.013
+
+- id: s.L28.014
+  tr: Kahveci nerede?
+  en: ["Where is the café?", "Where's the coffee shop?", "Where is the coffee seller?"]
+  words: [w.kahve, w.nerede]
+  grammar: [g.L28.li_siz, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L28.014
+  native_required: true
+
+- id: s.L28.015
+  tr: Annem gazeteci.
+  en: ["My mother is a journalist.", "My mum is a journalist.", "My mom is a journalist."]
+  words: [w.anne, w.gazete]
+  grammar: [g.L28.li_siz, g.L19.poss_sg, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L28.015
+
+- id: s.L28.016
+  tr: Sütçü geliyor.
+  en: ["The milkman is coming.", "Here comes the milkman."]
+  words: [w.süt, w.gelmek]
+  grammar: [g.L28.li_siz, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L28.016
+
+- id: s.L28.017
+  tr: Şekersiz çay içiyorum.
+  en: ["I drink tea without sugar.", "I drink unsweetened tea.", "I'm drinking tea without sugar."]
+  words: [w.şeker, w.çay, w.içmek]
+  grammar: [g.L28.li_siz, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L28.017
+
+- id: s.L28.018
+  tr: Kitapçı bu sokakta.
+  en: ["The bookshop is on this street.", "The bookstore is in this street.", "The bookseller is on this street."]
+  words: [w.kitap, w.bu, w.sokak]
+  grammar: [g.L28.li_siz, g.L10.loc, g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L28.018
+
+- id: s.L28.019
+  tr: Sen de İzmirli misin?
+  en: ["Are you from İzmir too?", "Are you from Izmir too?", "Are you also from Izmir?"]
+  words: [w.sen, w.de, w.İzmir]
+  grammar: [g.L28.li_siz, g.L13.clitic_de, g.L7.question, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L28.019
+  native_required: true
+
+- id: s.L28.020
+  tr: Hayır, Ankaralıyım.
+  en: ["No, I'm from Ankara.", "No, I am from Ankara."]
+  words: [w.hayır, w.Ankara]
+  grammar: [g.L28.li_siz, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L28.020
+  native_required: true        # place-name stress
+
+- id: s.L28.021
+  tr: Kahve sütlü mü, sütsüz mü?
+  en: ["Coffee with milk or without?", "Do you want the coffee with or without milk?", "Is the coffee with milk or without milk?"]
+  words: [w.kahve, w.süt]
+  grammar: [g.L28.li_siz, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L28.021
+  native_required: true        # alternative-question intonation
+
+- id: s.L28.022
+  tr: Sütsüz, lütfen.
+  en: ["Without milk, please.", "No milk, please."]
+  words: [w.süt, w.lütfen]
+  grammar: [g.L28.li_siz]
+  source: { kind: original }
+  audio: aud.own.s.L28.022
+
+- id: s.L28.023
+  tr: Ben İstanbulluyum.
+  en: ["I'm from Istanbul.", "I am from İstanbul."]
+  words: [w.ben, w.İstanbul]
+  grammar: [g.L28.li_siz, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L28.023
+  native_required: true        # place-name stress
+
+- id: s.L28.024
+  tr: Ben Londra'dayım ama İstanbulluyum.
+  en: ["I'm in London but I'm from Istanbul.", "I am in London, but I'm from İstanbul."]
+  words: [w.ben, w.Londra, w.ama, w.İstanbul]
+  grammar: [g.L28.li_siz, g.L11.loc_copula, g.L13.clitic_de, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L28.024
+  native_required: true        # place-name stress
+
+- id: s.L28.025
+  tr: Ben Londralıyım.
+  en: ["I'm from London.", "I am from London.", "I'm a Londoner."]
+  words: [w.ben, w.Londra]
+  grammar: [g.L28.li_siz, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.L28.025
+  native_required: true        # place-name stress

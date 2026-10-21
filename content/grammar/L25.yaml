@@ -1,0 +1,40 @@
+id: g.L25.numbers
+title: "Numbers 11–1000, prices, kaç"
+suffixes: []
+
+reference: |
+  **Tens:** on 10 · yirmi 20 · otuz 30 · kırk 40 · elli 50 · altmış 60 · yetmiş 70 · seksen 80 · doksan 90.
+
+  **Build numbers like English, biggest part first, as separate words:** on bir 11, yirmi beş 25, otuz yedi 37, doksan dokuz 99.
+
+  **Hundreds and thousands:** yüz 100 · iki yüz 200 · üç yüz elli 350 · bin 1000 · iki bin 2000 · bin dokuz yüz doksan dokuz 1999 · iki bin yirmi altı 2026.
+
+  ⚠️ 100 is just **yüz** and 1000 is just **bin**, never ~~bir yüz~~ or ~~bir bin~~. From 200 on, the multiplier goes in front: iki yüz, üç bin.
+
+  ⚠️ Each part is a **separate word**: *yüz yirmi beş*, not ~~yüzyirmibeş~~.
+
+  **kaç** "how many" is followed by a **singular** noun, just like a number (L4): *Kaç elma var?* (not ~~kaç elmalar~~), *Kaç kardeşin var?*
+
+  **Prices:** 1 lira = 100 kuruş. *On beş lira elli kuruş* = 15.50 TL.
+
+  - *Kaç lira?* "How many lira?" · *Bu ne kadar?* "How much is this?"
+  - *Tanesi kaç lira?* "How much is one / each?" (tane "piece" + the possessive -sI, L19)
+  - *Elmanın kilosu kaç lira?* "How much is a kilo of apples?"
+
+  **Age:** *Kaç yaşındasın?* "How old are you?" — *Yirmi beş yaşındayım.* "I'm 25." The pattern is fixed: number + **yaşında** + "to be" ending.
+
+patterns:
+  - id: g.L25.numbers.tens
+    description: "Tens and compound numbers as separate words (yirmi beş, doksan dokuz)"
+  - id: g.L25.numbers.hundreds
+    description: "yüz and bin without bir; iki yüz, üç bin"
+  - id: g.L25.numbers.kac_singular
+    description: "kaç + singular noun (Kaç elma var?)"
+  - id: g.L25.numbers.prices
+    description: "Prices: Kaç lira? Bu ne kadar? Tanesi kaç lira? lira + kuruş"
+
+feedback:
+  no_bir: "100 is just **yüz** and 1000 is just **bin**: no *bir* in front: **{answer}**."
+  separate_words: "Numbers are written as **separate words**: **{answer}**."
+  kac_singular: "After **kaç**, the noun stays **singular**, as after a number: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

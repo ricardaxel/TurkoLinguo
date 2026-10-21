@@ -30,17 +30,17 @@ lessons:
   L16: { title: "Present continuous: negative & questions", grammar: g.L16.prog_neg_q }
   L17: { title: "Dative -(y)A + softening & vowel drop", grammar: g.L17.dat }
   L18: { title: "Accusative -(y)I: the specific object", grammar: g.L18.acc }
-  L19: { title: "Possessives (singular owners)", grammar: g.L19.poss_sg, file: lessons/L19.yaml }
-  L20: { title: "Possessives (plural owners)", grammar: g.L20.poss_pl, file: lessons/L20.yaml }
-  L21: { title: "Genitive -(n)In", grammar: g.L21.gen, file: lessons/L21.yaml }
-  L22: { title: "Compound nouns", grammar: g.L22.compound, file: lessons/L22.yaml }
-  L23: { title: "Having: possessive + var/yok", grammar: g.L23.have, file: lessons/L23.yaml }
-  L24: { title: "Cases after possessives: buffer n", grammar: g.L24.poss_case, file: lessons/L24.yaml }
-  L25: { title: "Numbers 11–1000, prices", grammar: g.L25.numbers }
-  L26: { title: "Time & days", grammar: g.L26.time }
-  L27: { title: "-(y)lA / ile", grammar: g.L27.ile }
-  L28: { title: "-lI / -sIz, origin, -CI", grammar: g.L28.li_siz }
-  L29: { title: "Comparison: daha, en", grammar: g.L29.comparison }
+  L19: { title: "Possessives (singular owners)", grammar: g.L19.poss_sg }
+  L20: { title: "Possessives (plural owners)", grammar: g.L20.poss_pl }
+  L21: { title: "Genitive -(n)In", grammar: g.L21.gen }
+  L22: { title: "Compound nouns", grammar: g.L22.compound }
+  L23: { title: "Having: possessive + var/yok", grammar: g.L23.have }
+  L24: { title: "Cases after possessives: buffer n", grammar: g.L24.poss_case }
+  L25: { title: "Numbers 11–1000, prices", grammar: g.L25.numbers, file: lessons/L25.yaml }
+  L26: { title: "Time & days", grammar: g.L26.time, file: lessons/L26.yaml }
+  L27: { title: "-(y)lA / ile", grammar: g.L27.ile, file: lessons/L27.yaml }
+  L28: { title: "-lI / -sIz, origin, -CI", grammar: g.L28.li_siz, file: lessons/L28.yaml }
+  L29: { title: "Comparison: daha, en", grammar: g.L29.comparison, file: lessons/L29.yaml }
   L30: { title: "Past tense -DI", grammar: g.L30.past }
   L31: { title: "Past: negative & questions", grammar: g.L31.past_neg_q }
   L32: { title: "Past of 'to be': -(y)DI", grammar: g.L32.copula_past }

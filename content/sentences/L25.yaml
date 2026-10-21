@@ -1,0 +1,251 @@
+# Sentences used by lesson L25 (numbers 11–1000, prices, kaç). `words` and `grammar` are hand-tagged for now.
+# Numbers are tagged word by word: yüz yirmi beş → w.yüz.hundred, w.yirmi, w.beş.
+
+- id: s.L25.001
+  tr: Bu ne kadar?
+  en: ["How much is this?", "How much is it?", "How much does this cost?"]
+  words: [w.bu, w.ne_kadar]
+  grammar: [g.L3.basics, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.001
+  native_required: true
+
+- id: s.L25.002
+  tr: Yüz yirmi beş lira.
+  en: ["125 lira.", "A hundred and twenty-five lira.", "One hundred twenty-five lira."]
+  words: [w.yüz.hundred, w.yirmi, w.beş, w.lira]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.002
+
+- id: s.L25.003
+  tr: Kaç lira?
+  en: ["How many lira?", "How much?", "How much is it?"]
+  words: [w.kaç, w.lira]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.003
+  native_required: true
+
+- id: s.L25.004
+  tr: On beş lira elli kuruş.
+  en: ["15 lira 50 kuruş.", "Fifteen lira fifty kuruş.", "15.50 lira."]
+  words: [w.on, w.beş, w.lira, w.elli, w.kuruş]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.004
+
+- id: s.L25.005
+  tr: Tanesi kaç lira?
+  en: ["How much is one?", "How much each?", "How much is it each?", "How much is one of them?", "How many lira each?"]
+  words: [w.tane, w.kaç, w.lira]
+  grammar: [g.L25.numbers, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L25.005
+  native_required: true
+
+- id: s.L25.006
+  tr: Kaç elma var?
+  en: ["How many apples are there?"]
+  words: [w.kaç, w.elma, w.var]
+  grammar: [g.L25.numbers, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L25.006
+  native_required: true
+
+- id: s.L25.007
+  tr: Kaç yaşındasın?
+  en: ["How old are you?"]
+  words: [w.kaç, w.yaş]
+  grammar: [g.L25.numbers, g.L19.poss_sg, g.L24.poss_case, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L25.007
+  native_required: true
+
+- id: s.L25.008
+  tr: Yirmi beş yaşındayım.
+  en: ["I'm 25.", "I am twenty-five years old.", "I'm twenty-five.", "I am 25 years old."]
+  words: [w.yirmi, w.beş, w.yaş]
+  grammar: [g.L25.numbers, g.L19.poss_sg, g.L24.poss_case, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L25.008
+
+- id: s.L25.009
+  tr: Bu ayakkabı yüz lira.
+  en: ["These shoes are 100 lira.", "These shoes cost a hundred lira.", "This shoe is 100 lira."]
+  words: [w.bu, w.ayakkabı, w.yüz.hundred, w.lira]
+  grammar: [g.L3.basics, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.009
+
+- id: s.L25.010
+  tr: Bu ceket seksen lira.
+  en: ["This jacket is 80 lira.", "This jacket costs eighty lira."]
+  words: [w.bu, w.ceket, w.seksen, w.lira]
+  grammar: [g.L3.basics, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.010
+
+- id: s.L25.011
+  tr: Yüz elli lira.
+  en: ["150 lira.", "A hundred and fifty lira."]
+  words: [w.yüz.hundred, w.elli, w.lira]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.011
+
+- id: s.L25.012
+  tr: Yüz on beş lira.
+  en: ["115 lira.", "A hundred and fifteen lira."]
+  words: [w.yüz.hundred, w.on, w.beş, w.lira]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.012
+
+- id: s.L25.013
+  tr: On sekiz lira.
+  en: ["18 lira.", "Eighteen lira."]
+  words: [w.on, w.sekiz, w.lira]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.013
+
+- id: s.L25.014
+  tr: Seksen lira.
+  en: ["80 lira.", "Eighty lira."]
+  words: [w.seksen, w.lira]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.014
+
+- id: s.L25.015
+  tr: Bu ceket yüz yirmi beş lira.
+  en: ["This jacket is 125 lira.", "This jacket costs a hundred and twenty-five lira."]
+  words: [w.bu, w.ceket, w.yüz.hundred, w.yirmi, w.beş, w.lira]
+  grammar: [g.L3.basics, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.015
+
+- id: s.L25.016
+  tr: Bu telefon bin lira.
+  en: ["This phone is 1000 lira.", "This phone costs a thousand lira."]
+  words: [w.bu, w.telefon, w.bin, w.lira]
+  grammar: [g.L3.basics, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.016
+
+- id: s.L25.017
+  tr: Elmanın kilosu kaç lira?
+  en: ["How much is a kilo of apples?", "How much are the apples per kilo?", "How many lira is a kilo of apples?"]
+  words: [w.elma, w.kilo, w.kaç, w.lira]
+  grammar: [g.L25.numbers, g.L21.gen, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L25.017
+  native_required: true
+
+- id: s.L25.018
+  tr: Kırk lira.
+  en: ["40 lira.", "Forty lira."]
+  words: [w.kırk, w.lira]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.018
+
+- id: s.L25.019
+  tr: Çok pahalı!
+  en: ["That's very expensive!", "Very expensive!", "It's too expensive!", "It's very expensive!"]
+  words: [w.çok, w.pahalı]
+  grammar: [g.L3.basics, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L25.019
+  native_required: true        # exclamation intonation
+
+- id: s.L25.020
+  tr: Bu kitap altmış yedi lira.
+  en: ["This book is 67 lira.", "This book costs sixty-seven lira."]
+  words: [w.bu, w.kitap, w.altmış, w.yedi, w.lira]
+  grammar: [g.L3.basics, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.020
+
+- id: s.L25.021
+  tr: Ahmet yetmiş iki yaşında.
+  en: ["Ahmet is 72.", "Ahmet is seventy-two years old.", "Ahmet is 72 years old."]
+  words: [w.Ahmet, w.yetmiş, w.iki, w.yaş]
+  grammar: [g.L3.basics, g.L25.numbers, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.L25.021
+
+- id: s.L25.022
+  tr: Okulda üç yüz öğrenci var.
+  en: ["There are 300 students at the school.", "There are three hundred students in the school.", "The school has 300 students."]
+  words: [w.okul, w.üç, w.yüz.hundred, w.öğrenci, w.var]
+  grammar: [g.L10.loc, g.L8.varyok, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.022
+
+- id: s.L25.023
+  tr: Kaç kardeşin var?
+  en: ["How many siblings do you have?", "How many brothers and sisters do you have?"]
+  words: [w.kaç, w.kardeş, w.var]
+  grammar: [g.L25.numbers, g.L23.have, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L25.023
+  native_required: true
+
+- id: s.L25.024
+  tr: İki kardeşim var.
+  en: ["I have two siblings.", "I have two brothers and sisters."]
+  words: [w.iki, w.kardeş, w.var]
+  grammar: [g.L9.adj_num, g.L23.have, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L25.024
+
+- id: s.L25.025
+  tr: Bu araba iki yüz bin lira.
+  en: ["This car is 200,000 lira.", "This car costs two hundred thousand lira."]
+  words: [w.bu, w.araba, w.iki, w.yüz.hundred, w.bin, w.lira]
+  grammar: [g.L3.basics, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.025
+
+- id: s.L25.026
+  tr: Elli lira.
+  en: ["50 lira.", "Fifty lira."]
+  words: [w.elli, w.lira]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.026
+
+- id: s.L25.027
+  tr: Tanesi on beş lira.
+  en: ["They're 15 lira each.", "15 lira each.", "One is fifteen lira.", "It's 15 lira each."]
+  words: [w.tane, w.on, w.beş, w.lira]
+  grammar: [g.L25.numbers, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L25.027
+
+- id: s.L25.028
+  tr: Otuz dokuz.
+  en: ["39.", "Thirty-nine."]
+  words: [w.otuz, w.dokuz]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.028
+
+- id: s.L25.029
+  tr: Masada kaç kitap var?
+  en: ["How many books are there on the table?", "How many books are on the table?"]
+  words: [w.masa, w.kaç, w.kitap, w.var]
+  grammar: [g.L10.loc, g.L8.varyok, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.029
+  native_required: true
+
+- id: s.L25.030
+  tr: Doksan dokuz lira doksan kuruş.
+  en: ["99 lira 90 kuruş.", "99.90 lira.", "Ninety-nine lira ninety kuruş."]
+  words: [w.doksan, w.dokuz, w.lira, w.kuruş]
+  grammar: [g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L25.030

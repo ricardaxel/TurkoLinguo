@@ -1,0 +1,58 @@
+# Frame sentences for theme T17 (Time, days, months). Packs 1–2: grammar up to L25; packs 3–4: up to L26.
+
+- id: s.T17.001
+  tr: Bugün pazartesi.
+  en: ["Today is Monday.", "It's Monday today."]
+  words: [w.bugün, w.pazartesi]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T17.001
+
+- id: s.T17.002
+  tr: Bir haftada yedi gün var.
+  en: ["There are seven days in a week.", "A week has seven days."]
+  words: [w.bir, w.hafta, w.yedi, w.gün, w.var]
+  grammar: [g.L9.adj_num, g.L10.loc, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.T17.002
+
+- id: s.T17.003
+  tr: Yarın salı.
+  en: ["Tomorrow is Tuesday.", "It's Tuesday tomorrow."]
+  words: [w.yarın, w.salı]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T17.003
+
+- id: s.T17.004
+  tr: Sabah kahve içiyorum.
+  en: ["I drink coffee in the morning.", "In the morning I drink coffee.", "I'm drinking coffee this morning."]
+  words: [w.sabah, w.kahve, w.içmek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.T17.004
+
+- id: s.T17.005
+  tr: Haziranda İstanbul'dayım.
+  en: ["I'm in Istanbul in June.", "In June I'm in İstanbul."]
+  words: [w.haziran, w.İstanbul]
+  grammar: [g.L10.loc, g.L11.loc_copula, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.T17.005
+  native_required: true        # place-name stress
+
+- id: s.T17.006
+  tr: Bir yılda on iki ay var.
+  en: ["There are twelve months in a year.", "A year has twelve months."]
+  words: [w.bir, w.yıl, w.on, w.iki, w.ay, w.var]
+  grammar: [g.L9.adj_num, g.L10.loc, g.L8.varyok, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.T17.006
+
+- id: s.T17.007
+  tr: Hafta sonu evdeyiz.
+  en: ["We're at home at the weekend.", "At the weekend we're at home.", "We're home on the weekend."]
+  words: [w.hafta_sonu, w.ev]
+  grammar: [g.L11.loc_copula, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.T17.007

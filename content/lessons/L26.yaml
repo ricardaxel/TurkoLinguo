@@ -1,0 +1,176 @@
+# L26 — time & days. Model: L10. Format: docs/CONTENT_FORMAT.md
+# Days, parts of the day, bugün / yarın / dün are pre-taught in T17 (unlocks after L25).
+id: L26
+title: "Time & days"
+grammar: g.L26.time
+new_words: [w.buçuk, w.ne_zaman, w.ders]
+not_yet:
+  - "minutes past / to (üçü beş geçiyor, üçe beş var) → extension pack (needs the accusative and dative on times)"
+  - "dün with a verb (Dün okuldaydım) → L30–L32"
+  - "habitual plural days (pazartesileri) → later review"
+  - "dates (ayın kaçı?) → later extension"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          🕒 **Saat kaç?** "What time is it?" — **Saat üç.** "It's three."
+          🎬 **Film saat kaçta?** "What time is the film?" — **Saat dokuzda.** "At nine."
+
+          *What time?* and *At what time?* differ by one ending you already know: **-DA**.
+        images: [img.openmoji.clock_three]
+        sentences: [s.L26.001, s.L26.002, s.L26.008, s.L26.007]
+        audio: [aud.own.s.L26.001, aud.own.s.L26.002, aud.own.s.L26.008, aud.own.s.L26.007]
+
+      - kind: rule
+        title: "What time is it?"
+        body: |
+          **Saat** "hour, clock" + the number:
+
+          | | |
+          |---|---|
+          | 🕒 3:00 | Saat **üç**. |
+          | 🕞 3:30 | Saat üç **buçuk**. |
+          | 🕛 12:00 | Saat **on iki**. |
+          | 🕧 12:30 | Saat on iki buçuk. = Saat **yarım**. |
+
+          **buçuk** = "and a half". **12:30** (and 0:30) can also be said with its own word, **yarım** "half": *Saat yarım.* = *Saat on iki buçuk.* For 1:30, it's always *Saat bir buçuk*.
+        sentences: [s.L26.002, s.L26.003, s.L26.004, s.L26.026]
+        audio: [aud.own.s.L26.002, aud.own.s.L26.003, aud.own.s.L26.004, aud.own.s.L26.026]
+
+      - kind: rule
+        title: "At what time? → -DA"
+        body: |
+          **Saat kaçta?** "At what time?" Put **-DA** (L10) on the **last word** of the time. Same two questions as always: *which vowel? which consonant?*
+
+          | | at … |
+          |---|---|
+          | bir, iki, yedi, sekiz | bir**de**, iki**de**, yedi**de**, sekiz**de** |
+          | üç, dört, beş | üç**te**, dört**te**, beş**te** (Fıstıkçı Şahap!) |
+          | altı, dokuz, on | altı**da**, dokuz**da**, on**da** |
+          | on bir, on iki | on bir**de**, on iki**de** |
+          | üç buçuk, on iki buçuk / yarım | üç buçuk**ta**, on iki buçuk**ta** / yarım**da** |
+
+          *Saat yedide kalkıyorum.* "I get up at seven."
+        sentences: [s.L26.005, s.L26.006, s.L26.013]
+        audio: [aud.own.s.L26.005, aud.own.s.L26.006, aud.own.s.L26.013]
+        interactive:
+          component: suffix_steps
+          params: { words: [w.iki, w.üç, w.altı, w.buçuk], suffix: sfx.loc }
+
+      - kind: rule
+        title: "Days: no ending"
+        body: |
+          Hours need **-DA**, but days and parts of the day need **nothing**:
+
+          - **Pazartesi** okuldayım. "I'm at school **on** Monday."
+          - **Akşam** evdeyim. "I'm at home **in** the evening."
+          - **Yarın sabah** İzmir'e gidiyorum. "I'm going to İzmir tomorrow morning."
+
+          Days and months are written in **lowercase**: *pazartesi, salı, çarşamba, perşembe, cuma, cumartesi, pazar*.
+
+          *Bugün günlerden ne?* "What day is it today?" — *Bugün salı.*
+        sentences: [s.L26.009, s.L26.018, s.L26.022, s.L26.010, s.L26.011]
+        audio: [aud.own.s.L26.009, aud.own.s.L26.018, aud.own.s.L26.010, aud.own.s.L26.011]
+
+      - kind: note
+        title: "Good to know"
+        body: |
+          - **pazar** means both *Sunday* and *bazaar*: *Pazar günü pazara gidiyoruz.* "On Sunday we go to the bazaar."
+          - Timetables use the 24-hour clock: *saat on dokuz* = 19:00.
+          - **dün** "yesterday" needs the past tense, so you'll use it from L30.
+          - *üçü beş geçiyor* "five past three" and *üçe beş var* "five to three" come later, in an extension pack.
+        sentences: [s.L26.027]
+        audio: [aud.own.s.L26.027]
+
+    items:
+      - id: L26.learn.01
+        type: picture_choose
+        grammar: [g.L26.time]
+        pattern: g.L26.time.hour
+        images: [img.openmoji.clock_three]
+        prompt: "Saat kaç? — Saat …"
+        options: [üç, üç buçuk, üçte]
+        answer: üç
+        translation: "What time is it? — It's three o'clock."
+        feedback: { "üçte": "**üçte** means *at three*. To say what time it **is**, no ending: **Saat üç.**", "üç buçuk": "**buçuk** = half past. The clock shows three o'clock: **Saat üç.**" }
+      - id: L26.learn.02
+        type: picture_choose
+        grammar: [g.L26.time]
+        pattern: g.L26.time.half
+        images: [img.openmoji.clock_three_thirty]
+        prompt: "Saat kaç?"
+        options: ["Saat üç buçuk.", "Saat yarım.", "Saat üçte."]
+        answer: "Saat üç buçuk."
+        translation: "It's half past three."
+        feedback: { "Saat yarım.": "**yarım** works only for 12:30. For the other hours, use **buçuk**: **Saat üç buçuk.**" }
+      - { id: L26.learn.03, type: pick_suffix, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.at_hour, base: w.üç, suffix: sfx.loc, options: [de, te, da, ta], answer: te, feedback: "auto:g.L26.time" }
+      - { id: L26.learn.04, type: pick_suffix, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.at_hour, base: w.altı, suffix: sfx.loc, options: [da, de, ta, te], answer: da, feedback: "auto:g.L26.time" }
+      - id: L26.learn.05
+        type: picture_choose
+        grammar: [g.L26.time]
+        pattern: g.L26.time.half
+        images: [img.openmoji.clock_twelve_thirty]
+        prompt: "Saat kaç?"
+        options: ["Saat yarım.", "Saat on iki.", "Saat bir buçuk."]
+        answer: "Saat yarım."
+        note: "Saat on iki buçuk is equally correct; it's left out of the options so there's one answer."
+        translation: "It's half past twelve."
+      - { id: L26.learn.06, type: translate_to_tr, grammar: [g.L26.time, g.L11.loc_copula], pattern: g.L26.time.days, sentence: s.L26.009, word_bank: [Pazartesi, "Pazartesi'de", okuldayım, okuldasın], feedback: { "Pazartesi'de okuldayım.": "Days need no ending for *on Monday*, and they're not names, so no apostrophe: **Pazartesi okuldayım.**" } }
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L26.practise.01, type: type_form, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.at_hour, base: w.dört, suffixes: [sfx.loc], prompt: "at four (o'clock)", answer: dörtte, feedback: "auto:g.L26.time" }
+      - { id: L26.practise.02, type: type_form, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.at_hour, base: w.dokuz, suffixes: [sfx.loc], prompt: "at nine (o'clock)", answer: dokuzda, feedback: "auto:g.L26.time" }
+      - { id: L26.practise.03, type: pick_suffix, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.half, base: w.buçuk, suffix: sfx.loc, options: [ta, da, te, de], answer: ta, feedback: "auto:g.L26.time", note: "üç buçukta: the ending goes on the last word." }
+      - { id: L26.practise.04, type: pick_suffix, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.half, base: w.yarım, suffix: sfx.loc, options: [da, de, ta, te], answer: da, feedback: "auto:g.L26.time" }
+      - id: L26.practise.05
+        type: contrast_pair
+        grammar: [g.L26.time, g.L10.loc]
+        pattern: g.L26.time.at_hour
+        prompt: "It's three o'clock."
+        options: [s.L26.002, s.L26.006]
+        answer: s.L26.002
+        note: "Saat üç (it is three) vs Saat üçte (at three)."
+      - { id: L26.practise.06, type: spot_error, grammar: [g.L26.time, g.L10.loc], pattern: g.L26.time.at_hour, text: "Saat üçde.", error: üçde, answer: üçte, sentence: s.L26.006, feedback: { üçde: "**üç** ends in **ç**, one of the Fıstıkçı Şahap letters → **t**: **üçte**." } }
+      - { id: L26.practise.07, type: spot_error, grammar: [g.L26.time, g.L11.loc_copula], pattern: g.L26.time.days, text: "Pazartesi'de okuldayım.", error: "Pazartesi'de", answer: Pazartesi, sentence: s.L26.009, feedback: { "Pazartesi'de": "Days need no ending for *on Monday*, and they're not names, so no apostrophe: **Pazartesi okuldayım.**" } }
+      - id: L26.practise.08
+        type: qa
+        grammar: [g.L26.time]
+        pattern: g.L26.time.hour
+        question: s.L26.001
+        images: [img.openmoji.clock_nine]
+        answers: ["(Saat) dokuz."]
+        translation: "What time is it? — It's nine o'clock."
+      - id: L26.practise.09
+        type: qa
+        grammar: [g.L26.time, g.L10.loc]
+        pattern: g.L26.time.half
+        question: s.L26.008
+        images: [img.openmoji.clock_eight_thirty]
+        answers: ["(Film) (saat) sekiz buçukta."]
+        translation: "What time is the film? — At half past eight."
+        feedback: { "Sekiz buçuk.": "*At* a time needs **-DA** on the last word: **sekiz buçukta**.", "Saat sekiz buçuk.": "*At* a time needs **-DA** on the last word: **Saat sekiz buçukta.**" }
+      - { id: L26.practise.10, type: translate_to_en, grammar: [g.L26.time, g.L12.abl, g.L4.plural, g.L7.question], sentence: s.L26.010 }
+      - { id: L26.practise.11, type: translate_to_tr, grammar: [g.L26.time, g.L10.loc, g.L15.prog], pattern: g.L26.time.at_hour, sentence: s.L26.013, typed: true, answers: ["(Ben) (saat) yedide kalkıyorum."] }
+      - id: L26.practise.12
+        type: listen_choose
+        grammar: [g.L26.time, g.L10.loc]
+        pattern: g.L26.time.half
+        sentence: s.L26.025
+        options: ["Lunch is at 12:30.", "Lunch is at 12:00.", "Lunch is at 1:30."]
+        answer: "Lunch is at 12:30."
+      - { id: L26.practise.13, type: dictation, grammar: [g.L26.time, g.L10.loc, g.L25.numbers], sentence: s.L26.015 }
+      - { id: L26.practise.14, type: translate_to_tr, grammar: [g.L26.time, g.L13.clitic_de, g.L16.prog_neg_q], pattern: g.L26.time.days, sentence: s.L26.019, word_bank: [Cumartesi, ve, pazar, çalışmıyorum, çalışıyorum, pazarda] }
+      - { id: L26.practise.15, type: translate_to_tr, grammar: [g.L26.time, g.L17.dat, g.L15.prog], pattern: g.L26.time.days, sentence: s.L26.022, typed: true, answers: ["(Ben) yarın sabah İzmir'e gidiyorum."] }
+      - id: L26.practise.16
+        type: mini_dialogue
+        grammar: [g.L26.time, g.L10.loc, g.L15.prog, g.L13.clitic_de]
+        images: [img.openmoji.clock_seven]
+        turns:
+          - { speaker: A, sentence: s.L26.014 }
+          - { speaker: B, blank: true, answers: ["(Ben) (saat) yedide (kalkıyorum)."] }
+          - { speaker: A, sentence: s.L13.001 }

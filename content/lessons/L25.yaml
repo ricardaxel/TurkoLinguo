@@ -1,0 +1,171 @@
+# L25 — numbers 11–1000, prices, kaç. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L25
+title: "Numbers 11–1000, prices, kaç"
+grammar: g.L25.numbers
+new_words: [w.yirmi, w.otuz, w.kırk, w.elli, w.altmış, w.yetmiş, w.seksen, w.doksan, w.yüz.hundred, w.bin, w.kaç, w.ne_kadar, w.yaş]
+not_yet:
+  - "ordinals (birinci, ikinci) and dates (ayın kaçı?) → later extension"
+  - "years with -DA (2026'da) → after T17 months, in a review"
+  - "clock times (saat üç) → L26"
+  - "comparing prices (Bu daha ucuz) → L29"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          🛍️ **Bu ne kadar?** "How much is this?"
+          🏷️ **Yüz yirmi beş lira.** "125 lira."
+
+          Big numbers in Turkish are built like a sum, biggest part first: **yüz · yirmi · beş** = 100 + 20 + 5.
+        sentences: [s.L25.001, s.L25.002]
+        audio: [aud.own.s.L25.001, aud.own.s.L25.002]
+
+      - kind: rule
+        title: "The tens"
+        body: |
+          You know 1–10 (L9). Learn eight new words and you can count to 99:
+
+          | | | | |
+          |---|---|---|---|
+          | 10 **on** | 20 **yirmi** | 30 **otuz** | 40 **kırk** |
+          | 50 **elli** | 60 **altmış** | 70 **yetmiş** | 80 **seksen** |
+          | 90 **doksan** | | | |
+
+          Then just add the units, as **separate words**: on **bir** 11, yirmi **beş** 25, otuz **yedi** 37, doksan **dokuz** 99.
+
+          ⚠️ Listen carefully: **sekiz** 8 · **on sekiz** 18 · **seksen** 80.
+        audio: [aud.own.L25_tens]
+
+      - kind: rule
+        title: "100 and 1000"
+        body: |
+          **yüz** = 100 and **bin** = 1000. No *bir* in front:
+
+          ✅ yüz · bin
+          ❌ ~~bir yüz~~ · ~~bir bin~~
+
+          From 200, the multiplier goes first: **iki yüz** 200, **üç yüz elli** 350, **iki bin** 2000.
+
+          | | |
+          |---|---|
+          | 125 | yüz yirmi beş |
+          | 1453 | bin dört yüz elli üç |
+          | 2026 | iki bin yirmi altı |
+
+          Every part is a **separate word**: *yüz yirmi beş*, not ~~yüzyirmibeş~~.
+        audio: [aud.own.L25_hundreds]
+
+      - kind: rule
+        title: "kaç = how many"
+        body: |
+          **kaç** works like a number, so the noun after it stays **singular** (as in L4: *iki kitap*):
+
+          - **Kaç elma** var? "How many apples are there?" (not ~~kaç elmalar~~)
+          - **Kaç kardeşin** var? — İki kardeşim var.
+
+          **Age** uses a fixed pattern: number + **yaşında** + "to be":
+
+          - *Kaç yaşındasın?* "How old are you?"
+          - *Yirmi beş yaşındayım.* "I'm 25." · *Ahmet yetmiş iki yaşında.*
+        sentences: [s.L25.006, s.L25.023, s.L25.007, s.L25.008]
+        audio: [aud.own.s.L25.006, aud.own.s.L25.007, aud.own.s.L25.008]
+
+      - kind: rule
+        title: "Prices"
+        body: |
+          1 **lira** = 100 **kuruş**. Say the lira, then the kuruş: **On beş lira elli kuruş.** = 15.50 TL.
+
+          Three ways to ask:
+
+          | | |
+          |---|---|
+          | **Kaç lira?** | How many lira? |
+          | **Bu ne kadar?** | How much is this? |
+          | **Tanesi kaç lira?** | How much is one / each? |
+
+          At the market, prices are per kilo: *Elmanın kilosu kaç lira?* "How much is a kilo of apples?" — *Kırk lira.*
+        sentences: [s.L25.003, s.L25.004, s.L25.005, s.L25.017, s.L25.018]
+        audio: [aud.own.s.L25.003, aud.own.s.L25.004, aud.own.s.L25.005, aud.own.s.L25.017]
+
+    items:
+      - id: L25.learn.01
+        type: listen_choose
+        grammar: [g.L25.numbers]
+        pattern: g.L25.numbers.tens
+        sentence: s.L25.002
+        options: ["125 lira", "225 lira", "152 lira"]
+        answer: "125 lira"
+      - id: L25.learn.02
+        type: listen_choose
+        grammar: [g.L25.numbers, g.L3.basics]
+        pattern: g.L25.numbers.tens
+        sentence: s.L25.010
+        options: ["80 lira", "18 lira", "8 lira"]
+        answer: "80 lira"
+        note: "Ear training: sekiz / on sekiz / seksen."
+      - id: L25.learn.03
+        type: contrast_pair
+        grammar: [g.L25.numbers]
+        pattern: g.L25.numbers.hundreds
+        prompt: "150 lira."
+        options: [s.L25.011, s.L25.012]
+        answer: s.L25.011
+      - { id: L25.learn.04, type: translate_to_tr, grammar: [g.L25.numbers, g.L3.basics], pattern: g.L25.numbers.prices, sentence: s.L25.001, word_bank: [Bu, ne, kadar, kaç, kim] }
+      - { id: L25.learn.05, type: translate_to_tr, grammar: [g.L25.numbers, g.L8.varyok], pattern: g.L25.numbers.kac_singular, sentence: s.L25.006, word_bank: [Kaç, elma, elmalar, var, yok], feedback: { "Kaç elmalar var?": "After **kaç**, the noun stays **singular**, as after a number: **Kaç elma var?**" } }
+      - { id: L25.learn.06, type: spot_error, grammar: [g.L25.numbers, g.L3.basics], pattern: g.L25.numbers.hundreds, text: "Bu ayakkabı bir yüz lira.", error: "bir yüz", answer: "yüz", sentence: s.L25.009, feedback: { "bir yüz": "100 is just **yüz**: no *bir* in front: **Bu ayakkabı yüz lira.**" } }
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L25.practise.01, type: spot_error, grammar: [g.L25.numbers, g.L8.varyok], pattern: g.L25.numbers.kac_singular, text: "Masada kaç kitaplar var?", error: kitaplar, answer: kitap, sentence: s.L25.029, feedback: { kitaplar: "After **kaç**, the noun stays **singular**, as after a number: **kaç kitap**." } }
+      - { id: L25.practise.02, type: spot_error, grammar: [g.L25.numbers, g.L3.basics], pattern: g.L25.numbers.tens, text: "Bu ceket yüzyirmibeş lira.", error: yüzyirmibeş, answer: "yüz yirmi beş", sentence: s.L25.015, feedback: { yüzyirmibeş: "Numbers are written as **separate words**: **yüz yirmi beş**." } }
+      - { id: L25.practise.03, type: spot_error, grammar: [g.L25.numbers, g.L3.basics], pattern: g.L25.numbers.hundreds, text: "Bu telefon bir bin lira.", error: "bir bin", answer: bin, sentence: s.L25.016, feedback: { "bir bin": "1000 is just **bin**: no *bir* in front: **Bu telefon bin lira.**" } }
+      - id: L25.practise.04
+        type: listen_choose
+        grammar: [g.L25.numbers, g.L19.poss_sg, g.L24.poss_case]
+        pattern: g.L25.numbers.tens
+        sentence: s.L25.021
+        options: ["72", "27", "62"]
+        answer: "72"
+        note: "altmış 60 / yetmiş 70: a classic mix-up."
+      - { id: L25.practise.05, type: translate_to_tr, grammar: [g.L25.numbers], pattern: g.L25.numbers.prices, sentence: s.L25.004, word_bank: ["On", beş, lira, elli, kuruş, bir, yüz] }
+      - { id: L25.practise.06, type: translate_to_en, grammar: [g.L25.numbers, g.L19.poss_sg], pattern: g.L25.numbers.prices, sentence: s.L25.005 }
+      - { id: L25.practise.07, type: dictation, grammar: [g.L25.numbers, g.L3.basics], pattern: g.L25.numbers.tens, sentence: s.L25.020 }
+      - id: L25.practise.08
+        type: contrast_pair
+        grammar: [g.L25.numbers]
+        pattern: g.L25.numbers.tens
+        prompt: "18 lira."
+        options: [s.L25.013, s.L25.014]
+        answer: s.L25.013
+      - { id: L25.practise.09, type: translate_to_tr, grammar: [g.L25.numbers, g.L3.basics], pattern: g.L25.numbers.prices, sentence: s.L25.010, typed: true }
+      - { id: L25.practise.10, type: translate_to_tr, grammar: [g.L25.numbers, g.L19.poss_sg, g.L24.poss_case, g.L11.loc_copula], sentence: s.L25.008, typed: true, answers: ["Ben yirmi beş yaşındayım."], feedback: { "Yirmi beş yaşımdayım.": "Age uses a fixed pattern with **yaşında** for every person: **Yirmi beş yaşındayım.**" } }
+      - { id: L25.practise.11, type: translate_to_en, grammar: [g.L25.numbers, g.L10.loc, g.L8.varyok], sentence: s.L25.022 }
+      - id: L25.practise.12
+        type: qa
+        grammar: [g.L25.numbers, g.L23.have, g.L19.poss_sg]
+        question: s.L25.023
+        images: [img.openmoji.man, img.openmoji.woman]
+        answers: ["(Benim) iki kardeşim var.", "İki."]
+        translation: "How many siblings do you have? — I have two siblings."
+      - id: L25.practise.13
+        type: picture_choose
+        grammar: [g.L25.numbers, g.L21.gen, g.L19.poss_sg]
+        pattern: g.L25.numbers.prices
+        images: [img.openmoji.apple]
+        prompt: "Elmanın kilosu … lira?"
+        options: [kaç, ne, kim]
+        answer: kaç
+        translation: "How much is a kilo of apples?"
+      - { id: L25.practise.14, type: translate_to_tr, grammar: [g.L25.numbers, g.L3.basics], pattern: g.L25.numbers.hundreds, sentence: s.L25.025, word_bank: [Bu, araba, iki, yüz, bin, lira, bir] }
+      - id: L25.practise.15
+        type: mini_dialogue
+        grammar: [g.L25.numbers, g.L3.basics, g.L9.adj_num]
+        pattern: g.L25.numbers.prices
+        images: [img.openmoji.coat]
+        turns:
+          - { speaker: A, blank: true, answers: ["{Bu ne kadar|Bu kaç lira|Ne kadar|Kaç lira}?", "Bu ceket {ne kadar|kaç lira}?"] }
+          - { speaker: B, sentence: s.L25.010 }
+          - { speaker: A, sentence: s.L25.019 }

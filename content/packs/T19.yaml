@@ -1,0 +1,13 @@
+id: T19
+title: Hobbies & free time
+kind: elective
+packs:
+  - id: T19.p1
+    unlock_after: L29
+    words: [w.dinlemek, w.izlemek, w.oynamak, w.yüzmek, w.spor, w.yürüyüş, w.dans, w.resim]
+    frames: [s.T19.001, s.T19.002, s.T19.003]
+  - id: T19.p2
+    unlock_after: L29
+    words: [w.şarkı, w.söylemek, w.fotoğraf, w.çekmek, w.seyahat, w.hobi, w.boş, w.zaman]
+    frames: [s.T19.004, s.T19.005, s.T19.006]
+revisit: [L30, L34]

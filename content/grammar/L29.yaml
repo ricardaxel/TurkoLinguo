@@ -1,0 +1,39 @@
+id: g.L29.comparison
+title: "Comparison: daha, en"
+suffixes: []
+
+reference: |
+  **X is bigger than Y:** *X Y-DAn (daha) büyük.* The thing you compare **with** takes the ablative **-DAn** (L12), "bigger **from** Y":
+
+  *At köpek**ten** (daha) büyük.* "The horse is bigger than the dog."
+  *İstanbul Ankara'**dan** büyük.* "Istanbul is bigger than Ankara."
+
+  - **daha** "more" is optional when the -DAn word is there. Without it, you need **daha**: *Bu **daha** ucuz.* "This one is cheaper."
+  - Pronouns: *benden, senden, ondan, bizden, sizden, onlardan*. *Ben senden uzunum.* "I'm taller than you."
+  - **çok daha** "much more": *Bu ceket çok daha pahalı.* "This jacket is much more expensive."
+  - **daha az** "less": *Daha az şeker, lütfen.* "Less sugar, please." **daha çok** "more": *Ali benden daha çok çalışıyor.*
+
+  **The most:** **en** + adjective: *en büyük* "the biggest", *en ucuz* "the cheapest", *en iyi* "the best". *En büyük şehir İstanbul.* · *Türkiye'nin en büyük şehri İstanbul.*
+
+  **Which one?** **Hangisi?** *Hangisi daha ucuz?* "Which one is cheaper?" — *Bu daha ucuz.*
+
+  ⚠️ Turkish has no *-er / -est* endings, and the adjective never changes: *daha büyük* "bigger", *en büyük* "biggest". Even *good → better → best* is regular: *iyi → daha iyi → en iyi*.
+
+patterns:
+  - id: g.L29.comparison.than
+    description: "X Y-DAn (daha) ADJ: At köpekten (daha) büyük."
+  - id: g.L29.comparison.daha
+    description: "daha + ADJ without -DAn: Bu daha ucuz. çok daha, daha az"
+  - id: g.L29.comparison.en
+    description: "en + ADJ: en büyük, en iyi"
+  - id: g.L29.comparison.hangisi
+    description: "Hangisi daha …? — Bu daha …"
+
+feedback:
+  than_abl: "The thing you compare **with** takes **-DAn** (\"bigger from Y\"): **{answer}**."
+  loc_for_abl: "**-DA** means *in / at*; *than* is **-DAn**: **{answer}**."
+  voiceless: "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: {answer}."
+  apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
+  daha_needed: "Without a *than* word, you need **daha**: **{answer}**."
+  en_most: "*The most* is **en** before the adjective: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

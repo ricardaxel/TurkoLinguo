@@ -1,0 +1,217 @@
+# Sentences used by lesson L27 (-(y)lA / ile). `words` and `grammar` are hand-tagged for now.
+# The separate word ile is tagged w.ile; the suffix -(y)lA is not a word and isn't tagged.
+
+- id: s.L27.001
+  tr: Okula otobüsle gidiyorum.
+  en: ["I go to school by bus.", "I'm going to school by bus."]
+  words: [w.okul, w.otobüs, w.gitmek]
+  grammar: [g.L27.ile, g.L17.dat, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.001
+
+- id: s.L27.002
+  tr: Arkadaşımla parktayım.
+  en: ["I'm in the park with my friend.", "I'm at the park with my friend."]
+  words: [w.arkadaş, w.park]
+  grammar: [g.L27.ile, g.L19.poss_sg, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L27.002
+
+- id: s.L27.003
+  tr: İzmir'e trenle gidiyoruz.
+  en: ["We're going to İzmir by train.", "We go to Izmir by train.", "We're going to Izmir by train."]
+  words: [w.İzmir, w.tren, w.gitmek]
+  grammar: [g.L27.ile, g.L17.dat, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.003
+  native_required: true        # place-name stress
+
+- id: s.L27.004
+  tr: Ankara'ya arabayla gidiyorum.
+  en: ["I'm going to Ankara by car.", "I go to Ankara by car."]
+  words: [w.Ankara, w.araba, w.gitmek]
+  grammar: [g.L27.ile, g.L17.dat, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.004
+  native_required: true        # place-name stress
+
+- id: s.L27.005
+  tr: Ali ile geliyorum.
+  en: ["I'm coming with Ali.", "I come with Ali."]
+  words: [w.Ali, w.ile, w.gelmek]
+  grammar: [g.L27.ile, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.005
+
+- id: s.L27.006
+  tr: Ali'yle geliyorum.
+  en: ["I'm coming with Ali.", "I come with Ali."]
+  words: [w.Ali, w.gelmek]
+  grammar: [g.L27.ile, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.006
+
+- id: s.L27.007
+  tr: Kiminle gidiyorsun?
+  en: ["Who are you going with?", "With whom are you going?"]
+  words: [w.kim, w.gitmek]
+  grammar: [g.L27.ile, g.L21.gen, g.L15.prog, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L27.007
+  native_required: true
+
+- id: s.L27.008
+  tr: Annemle.
+  en: ["With my mother.", "With my mum.", "With my mom."]
+  words: [w.anne]
+  grammar: [g.L27.ile, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L27.008
+
+- id: s.L27.009
+  tr: Benimle geliyor musun?
+  en: ["Are you coming with me?", "Will you come with me?"]
+  words: [w.ben, w.gelmek]
+  grammar: [g.L27.ile, g.L21.gen, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L27.009
+  native_required: true
+
+- id: s.L27.010
+  tr: Evet, seninle geliyorum.
+  en: ["Yes, I'm coming with you.", "Yes, I'll come with you."]
+  words: [w.evet, w.sen, w.gelmek]
+  grammar: [g.L27.ile, g.L21.gen, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.010
+
+- id: s.L27.011
+  tr: Onunla çalışıyorum.
+  en: ["I work with him.", "I work with her.", "I'm working with him.", "I'm working with her."]
+  words: [w.o, w.çalışmak]
+  grammar: [g.L27.ile, g.L21.gen, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.011
+
+- id: s.L27.012
+  tr: Ali ile Ayşe evde.
+  en: ["Ali and Ayşe are at home."]
+  words: [w.Ali, w.ile, w.Ayşe, w.ev]
+  grammar: [g.L27.ile, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L27.012
+
+- id: s.L27.013
+  tr: Kahveyi sütle içiyorum.
+  en: ["I drink the coffee with milk.", "I drink my coffee with milk.", "I'm drinking the coffee with milk."]
+  words: [w.kahve, w.süt, w.içmek]
+  grammar: [g.L27.ile, g.L18.acc, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.013
+
+- id: s.L27.014
+  tr: Taksiyle mi gidiyorsun?
+  en: ["Are you going by taxi?", "Do you go by taxi?"]
+  words: [w.taksi, w.gitmek]
+  grammar: [g.L27.ile, g.L7.question, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.014
+  native_required: true
+
+- id: s.L27.015
+  tr: Hayır, metroyla gidiyorum.
+  en: ["No, I'm going by metro.", "No, I go by metro.", "No, I'm going by subway.", "No, I'm taking the metro."]
+  words: [w.hayır, w.metro, w.gitmek]
+  grammar: [g.L27.ile, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.015
+
+- id: s.L27.016
+  tr: Ahmet'le kahve içiyoruz.
+  en: ["We're drinking coffee with Ahmet.", "Ahmet and I are drinking coffee.", "We drink coffee with Ahmet."]
+  words: [w.Ahmet, w.kahve, w.içmek]
+  grammar: [g.L27.ile, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.016
+
+- id: s.L27.017
+  tr: Bizimle geliyor musunuz?
+  en: ["Are you coming with us?", "Will you come with us?"]
+  words: [w.biz, w.gelmek]
+  grammar: [g.L27.ile, g.L21.gen, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L27.017
+  native_required: true
+
+- id: s.L27.018
+  tr: Ayşe kardeşiyle parkta.
+  en: ["Ayşe is in the park with her sibling.", "Ayşe is at the park with her brother.", "Ayşe is at the park with her sister."]
+  words: [w.Ayşe, w.kardeş, w.park]
+  grammar: [g.L27.ile, g.L19.poss_sg, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L27.018
+
+- id: s.L27.019
+  tr: Bisikletle geliyorum.
+  en: ["I'm coming by bike.", "I come by bicycle.", "I'm coming by bicycle."]
+  words: [w.bisiklet, w.gelmek]
+  grammar: [g.L27.ile, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.019
+
+- id: s.L27.020
+  tr: Arkadaşlarımla kafedeyim.
+  en: ["I'm at the café with my friends.", "I'm in a café with my friends."]
+  words: [w.arkadaş, w.kafe]
+  grammar: [g.L27.ile, g.L4.plural, g.L19.poss_sg, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L27.020
+
+- id: s.L27.021
+  tr: Londra'dan uçakla geliyorum.
+  en: ["I'm coming from London by plane.", "I come from London by plane.", "I'm flying in from London."]
+  words: [w.Londra, w.uçak, w.gelmek]
+  grammar: [g.L27.ile, g.L12.abl, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.021
+  native_required: true        # place-name stress
+
+- id: s.L27.022
+  tr: Onlarla parktayım.
+  en: ["I'm in the park with them.", "I'm at the park with them."]
+  words: [w.onlar, w.park]
+  grammar: [g.L27.ile, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L27.022
+
+- id: s.L27.023
+  tr: Otobüs ile gidiyorum.
+  en: ["I'm going by bus.", "I go by bus."]
+  words: [w.otobüs, w.ile, w.gitmek]
+  grammar: [g.L27.ile, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.023
+
+- id: s.L27.024
+  tr: Ayşe'yle birlikte okula gidiyoruz.
+  en: ["Ayşe and I go to school together.", "We're going to school together with Ayşe.", "I go to school together with Ayşe."]
+  words: [w.Ayşe, w.birlikte, w.okul, w.gitmek]
+  grammar: [g.L27.ile, g.L17.dat, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.024
+
+- id: s.L27.025
+  tr: Sizinle geliyorum.
+  en: ["I'm coming with you.", "I'll come with you."]
+  words: [w.siz, w.gelmek]
+  grammar: [g.L27.ile, g.L21.gen, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.025
+
+- id: s.L27.026
+  tr: Uçak ile geliyorum.
+  en: ["I'm coming by plane.", "I come by plane."]
+  words: [w.uçak, w.ile, w.gelmek]
+  grammar: [g.L27.ile, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L27.026
