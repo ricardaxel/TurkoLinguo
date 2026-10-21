@@ -14376,7 +14376,8 @@
    "forms": {
     "acc": "suyu",
     "gen": "suyun",
-    "poss3": "suyu"
+    "poss3": "suyu",
+    "before_vowel": "suy"
    }
   },
   "w.masa": {
@@ -15260,7 +15261,8 @@
     "go"
    ],
    "flags": [
-    "irr"
+    "irr",
+    "soft"
    ],
    "forms": {
     "imp_pol": "gidin",
@@ -15308,7 +15310,8 @@
    ],
    "forms": {
     "imp_pol": "yiyin",
-    "prog": "yiyor"
+    "prog": "yiyor",
+    "fut": "yiyecek"
    },
    "images": [
     "img.openmoji.plate"
@@ -15368,7 +15371,8 @@
     "make"
    ],
    "flags": [
-    "irr"
+    "irr",
+    "soft"
    ],
    "forms": {
     "imp_pol": "edin",
@@ -15390,7 +15394,8 @@
    ],
    "forms": {
     "imp_pol": "deyin",
-    "prog": "diyor"
+    "prog": "diyor",
+    "fut": "diyecek"
    },
    "notes": "Bu ne demek? 'What does this mean?' (T1b).",
    "stem": "de"
@@ -34027,232 +34032,203 @@
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "gelin",
-   "pending": "verbs: strip -mAk"
+   "expected": "gelin"
   },
   {
    "word": "w.oturmak",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "oturun",
-   "pending": "verbs: strip -mAk"
+   "expected": "oturun"
   },
   {
    "word": "w.bakmak",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "bakın",
-   "pending": "verbs: strip -mAk; no k → ğ in verbs"
+   "expected": "bakın"
   },
   {
    "word": "w.görmek",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "görün",
-   "pending": "verbs: strip -mAk"
+   "expected": "görün"
   },
   {
    "word": "w.okumak",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "okuyun",
-   "pending": "verbs: strip -mAk; buffer y"
+   "expected": "okuyun"
   },
   {
    "word": "w.beklemek",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "bekleyin",
-   "pending": "verbs: strip -mAk; buffer y"
+   "expected": "bekleyin"
   },
   {
    "word": "w.yapmak",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "yapın",
-   "pending": "verbs: strip -mAk; no p → b"
+   "expected": "yapın"
   },
   {
    "word": "w.içmek",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "için",
-   "pending": "verbs: strip -mAk; no ç → c"
+   "expected": "için"
   },
   {
    "word": "w.gitmek",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "gidin",
-   "pending": "verbs: t → d before a vowel (gitmek, etmek only)"
+   "expected": "gidin"
   },
   {
    "word": "w.etmek",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "edin",
-   "pending": "verbs: t → d before a vowel (gitmek, etmek only)"
+   "expected": "edin"
   },
   {
    "word": "w.yemek",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "yiyin",
-   "pending": "verbs: ye → yiy before -In"
+   "expected": "yiyin"
   },
   {
    "word": "w.demek",
    "suffixes": [
     "sfx.imp_pol"
    ],
-   "expected": "deyin",
-   "pending": "verbs: de → dey before -In"
+   "expected": "deyin"
   },
   {
    "word": "w.gelmek",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "geliyor",
-   "pending": "verbs: strip -mAk"
+   "expected": "geliyor"
   },
   {
    "word": "w.bakmak",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "bakıyor",
-   "pending": "verbs: strip -mAk"
+   "expected": "bakıyor"
   },
   {
    "word": "w.görmek",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "görüyor",
-   "pending": "verbs: strip -mAk"
+   "expected": "görüyor"
   },
   {
    "word": "w.oturmak",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "oturuyor",
-   "pending": "verbs: strip -mAk"
+   "expected": "oturuyor"
   },
   {
    "word": "w.okumak",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "okuyor",
-   "pending": "verbs: strip -mAk; no extra vowel after a vowel"
+   "expected": "okuyor"
   },
   {
    "word": "w.uyumak",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "uyuyor",
-   "pending": "verbs: strip -mAk; no extra vowel after a vowel"
+   "expected": "uyuyor"
   },
   {
    "word": "w.başlamak",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "başlıyor",
-   "pending": "verbs: stem-final a → ı before -yor"
+   "expected": "başlıyor"
   },
   {
    "word": "w.beklemek",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "bekliyor",
-   "pending": "verbs: stem-final e → i before -yor"
+   "expected": "bekliyor"
   },
   {
    "word": "w.oynamak",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "oynuyor",
-   "pending": "verbs: stem-final a → u before -yor (vowel before it is o)"
+   "expected": "oynuyor"
   },
   {
    "word": "w.söylemek",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "söylüyor",
-   "pending": "verbs: stem-final e → ü before -yor (vowel before it is ö)"
+   "expected": "söylüyor"
   },
   {
    "word": "w.anlamak",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "anlıyor",
-   "pending": "verbs: stem-final a → ı before -yor"
+   "expected": "anlıyor"
   },
   {
    "word": "w.gitmek",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "gidiyor",
-   "pending": "verbs: t → d (gitmek, etmek only)"
+   "expected": "gidiyor"
   },
   {
    "word": "w.etmek",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "ediyor",
-   "pending": "verbs: t → d (gitmek, etmek only)"
+   "expected": "ediyor"
   },
   {
    "word": "w.atmak",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "atıyor",
-   "pending": "verbs: strip -mAk; NO t → d"
+   "expected": "atıyor"
   },
   {
    "word": "w.yatmak",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "yatıyor",
-   "pending": "verbs: strip -mAk; NO t → d"
+   "expected": "yatıyor"
   },
   {
    "word": "w.yemek",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "yiyor",
-   "pending": "verbs: irregular ye → yi"
+   "expected": "yiyor"
   },
   {
    "word": "w.demek",
    "suffixes": [
     "sfx.prog"
    ],
-   "expected": "diyor",
-   "pending": "verbs: irregular de → di"
+   "expected": "diyor"
   },
   {
    "word": "w.gelmek",
@@ -34260,8 +34236,7 @@
     "sfx.prog",
     "sfx.cop_1sg"
    ],
-   "expected": "geliyorum",
-   "pending": "verbs: strip -mAk; person ending follows -yor (u)"
+   "expected": "geliyorum"
   },
   {
    "word": "w.gelmek",
@@ -34269,8 +34244,7 @@
     "sfx.prog",
     "sfx.cop_2sg"
    ],
-   "expected": "geliyorsun",
-   "pending": "verbs: strip -mAk; person ending follows -yor (u)"
+   "expected": "geliyorsun"
   },
   {
    "word": "w.gelmek",
@@ -34278,8 +34252,7 @@
     "sfx.prog",
     "sfx.cop_1pl"
    ],
-   "expected": "geliyoruz",
-   "pending": "verbs: strip -mAk; person ending follows -yor (u)"
+   "expected": "geliyoruz"
   },
   {
    "word": "w.gelmek",
@@ -34287,8 +34260,7 @@
     "sfx.prog",
     "sfx.cop_2pl"
    ],
-   "expected": "geliyorsunuz",
-   "pending": "verbs: strip -mAk; person ending follows -yor (u)"
+   "expected": "geliyorsunuz"
   },
   {
    "word": "w.gelmek",
@@ -34296,8 +34268,7 @@
     "sfx.prog",
     "sfx.cop_3pl"
    ],
-   "expected": "geliyorlar",
-   "pending": "verbs: strip -mAk"
+   "expected": "geliyorlar"
   },
   {
    "word": "w.bakmak",
@@ -34305,8 +34276,7 @@
     "sfx.prog",
     "sfx.cop_1sg"
    ],
-   "expected": "bakıyorum",
-   "pending": "verbs: strip -mAk"
+   "expected": "bakıyorum"
   },
   {
    "word": "w.yemek",
@@ -34314,8 +34284,7 @@
     "sfx.prog",
     "sfx.cop_2pl"
    ],
-   "expected": "yiyorsunuz",
-   "pending": "verbs: irregular ye → yi"
+   "expected": "yiyorsunuz"
   },
   {
    "word": "w.gelmek",
@@ -34324,8 +34293,7 @@
     "sfx.prog",
     "sfx.cop_1sg"
    ],
-   "expected": "gelmiyorum",
-   "pending": "verbs: -mA → -mI before -yor"
+   "expected": "gelmiyorum"
   },
   {
    "word": "w.bakmak",
@@ -34334,8 +34302,7 @@
     "sfx.prog",
     "sfx.cop_1sg"
    ],
-   "expected": "bakmıyorum",
-   "pending": "verbs: -mA → -mI before -yor"
+   "expected": "bakmıyorum"
   },
   {
    "word": "w.okumak",
@@ -34344,8 +34311,7 @@
     "sfx.prog",
     "sfx.cop_1sg"
    ],
-   "expected": "okumuyorum",
-   "pending": "verbs: -mA → -mI before -yor"
+   "expected": "okumuyorum"
   },
   {
    "word": "w.görmek",
@@ -34354,8 +34320,7 @@
     "sfx.prog",
     "sfx.cop_1sg"
    ],
-   "expected": "görmüyorum",
-   "pending": "verbs: -mA → -mI before -yor"
+   "expected": "görmüyorum"
   },
   {
    "word": "w.gitmek",
@@ -34363,8 +34328,7 @@
     "sfx.neg",
     "sfx.prog"
    ],
-   "expected": "gitmiyor",
-   "pending": "verbs: no t → d before a consonant"
+   "expected": "gitmiyor"
   },
   {
    "word": "w.gelmek",
@@ -34373,8 +34337,7 @@
     "sfx.q",
     "sfx.cop_2sg"
    ],
-   "expected": "geliyor musun",
-   "pending": "verbs: mI after -yor is mu; person ending on mu"
+   "expected": "geliyor musun"
   },
   {
    "word": "w.gelmek",
@@ -34383,8 +34346,7 @@
     "sfx.q",
     "sfx.cop_1sg"
    ],
-   "expected": "geliyor muyum",
-   "pending": "verbs: mI after -yor is mu; buffer y on mu"
+   "expected": "geliyor muyum"
   },
   {
    "word": "w.gelmek",
@@ -34393,8 +34355,7 @@
     "sfx.cop_3pl",
     "sfx.q"
    ],
-   "expected": "geliyorlar mı",
-   "pending": "verbs: -lAr before mI"
+   "expected": "geliyorlar mı"
   },
   {
    "word": "w.gelmek",
@@ -34404,8 +34365,7 @@
     "sfx.q",
     "sfx.cop_2sg"
    ],
-   "expected": "gelmiyor musun",
-   "pending": "verbs: negative question"
+   "expected": "gelmiyor musun"
   },
   {
    "word": "w.ev",
@@ -34552,8 +34512,7 @@
     "sfx.poss_1sg"
    ],
    "expected": "suyum",
-   "note": "irregular",
-   "pending": "engine has no forms key for poss_1sg; su + -(I)m gives *sum*"
+   "note": "irregular"
   },
   {
    "word": "w.su",
@@ -34561,8 +34520,7 @@
     "sfx.poss_2sg"
    ],
    "expected": "suyun",
-   "note": "irregular",
-   "pending": "engine has no forms key for poss_2sg; su + -(I)n gives *sun*"
+   "note": "irregular"
   },
   {
    "word": "w.yatak_odası",
@@ -34570,8 +34528,7 @@
     "sfx.poss_1sg"
    ],
    "expected": "yatak odam",
-   "note": "compound: the possessive is replaced",
-   "pending": "engine appends -m to the compound (yatak odasım) instead of replacing -sI"
+   "note": "compound: the possessive is replaced"
   },
   {
    "word": "w.buzdolabı",
@@ -35244,48 +35201,42 @@
    "suffixes": [
     "sfx.ins"
    ],
-   "expected": "benimle",
-   "pending": "pronouns take -lA on the genitive form (benim·le); engine gives benle"
+   "expected": "benimle"
   },
   {
    "word": "w.sen",
    "suffixes": [
     "sfx.ins"
    ],
-   "expected": "seninle",
-   "pending": "pronouns take -lA on the genitive form (senin·le)"
+   "expected": "seninle"
   },
   {
    "word": "w.o",
    "suffixes": [
     "sfx.ins"
    ],
-   "expected": "onunla",
-   "pending": "pronouns take -lA on the genitive form (onun·la); engine gives oyla"
+   "expected": "onunla"
   },
   {
    "word": "w.biz",
    "suffixes": [
     "sfx.ins"
    ],
-   "expected": "bizimle",
-   "pending": "pronouns take -lA on the genitive form (bizim·le)"
+   "expected": "bizimle"
   },
   {
    "word": "w.siz",
    "suffixes": [
     "sfx.ins"
    ],
-   "expected": "sizinle",
-   "pending": "pronouns take -lA on the genitive form (sizin·le)"
+   "expected": "sizinle"
   },
   {
    "word": "w.kim",
    "suffixes": [
     "sfx.ins"
    ],
-   "expected": "kiminle",
-   "pending": "kim takes -lA on the genitive form (kimin·le); engine gives kimle (colloquial)"
+   "expected": "kiminle"
   },
   {
    "word": "w.şeker",
@@ -35378,16 +35329,14 @@
    "suffixes": [
     "sfx.li"
    ],
-   "expected": "İstanbullu",
-   "pending": "derivational -lI on a name takes no apostrophe; engine gives İstanbul'lu"
+   "expected": "İstanbullu"
   },
   {
    "word": "w.Ankara",
    "suffixes": [
     "sfx.li"
    ],
-   "expected": "Ankaralı",
-   "pending": "derivational -lI on a name takes no apostrophe"
+   "expected": "Ankaralı"
   },
   {
    "word": "w.İzmir",
@@ -35395,8 +35344,7 @@
     "sfx.li",
     "sfx.cop_1sg"
    ],
-   "expected": "İzmirliyim",
-   "pending": "derivational -lI on a name takes no apostrophe"
+   "expected": "İzmirliyim"
   },
   {
    "word": "w.Londra",
@@ -35404,8 +35352,7 @@
     "sfx.li",
     "sfx.cop_1pl"
    ],
-   "expected": "Londralıyız",
-   "pending": "derivational -lI on a name takes no apostrophe"
+   "expected": "Londralıyız"
   },
   {
    "word": "w.köpek",
@@ -35447,8 +35394,7 @@
    "suffixes": [
     "sfx.abl"
    ],
-   "expected": "ondan",
-   "pending": "pronoun o takes buffer n before case endings (ona, onu, onda, ondan); engine gives odan"
+   "expected": "ondan"
   },
   {
    "word": "w.ev",
@@ -35605,8 +35551,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "geldim",
-   "pending": "verb stem"
+   "expected": "geldim"
   },
   {
    "word": "w.gelmek",
@@ -35614,8 +35559,7 @@
     "sfx.past",
     "sfx.kpers_1pl"
    ],
-   "expected": "geldik",
-   "pending": "verb stem"
+   "expected": "geldik"
   },
   {
    "word": "w.gelmek",
@@ -35623,8 +35567,7 @@
     "sfx.past",
     "sfx.kpers_2pl"
    ],
-   "expected": "geldiniz",
-   "pending": "verb stem"
+   "expected": "geldiniz"
   },
   {
    "word": "w.gelmek",
@@ -35632,8 +35575,7 @@
     "sfx.past",
     "sfx.kpers_3pl"
    ],
-   "expected": "geldiler",
-   "pending": "verb stem"
+   "expected": "geldiler"
   },
   {
    "word": "w.okumak",
@@ -35641,8 +35583,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "okudum",
-   "pending": "verb stem"
+   "expected": "okudum"
   },
   {
    "word": "w.görmek",
@@ -35650,8 +35591,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "gördüm",
-   "pending": "verb stem"
+   "expected": "gördüm"
   },
   {
    "word": "w.yapmak",
@@ -35659,8 +35599,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "yaptım",
-   "pending": "verb stem"
+   "expected": "yaptım"
   },
   {
    "word": "w.içmek",
@@ -35668,8 +35607,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "içtim",
-   "pending": "verb stem"
+   "expected": "içtim"
   },
   {
    "word": "w.gitmek",
@@ -35677,8 +35615,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "gittim",
-   "pending": "verb stem; t stays before a consonant"
+   "expected": "gittim"
   },
   {
    "word": "w.yemek",
@@ -35686,8 +35623,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "yedim",
-   "pending": "verb stem; regular in the past"
+   "expected": "yedim"
   },
   {
    "word": "w.demek",
@@ -35695,8 +35631,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "dedim",
-   "pending": "verb stem; regular in the past"
+   "expected": "dedim"
   },
   {
    "word": "w.gelmek",
@@ -35705,8 +35640,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "gelmedim",
-   "pending": "verb stem"
+   "expected": "gelmedim"
   },
   {
    "word": "w.gitmek",
@@ -35715,8 +35649,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "gitmedim",
-   "pending": "verb stem"
+   "expected": "gitmedim"
   },
   {
    "word": "w.okumak",
@@ -35725,8 +35658,7 @@
     "sfx.past",
     "sfx.kpers_1sg"
    ],
-   "expected": "okumadım",
-   "pending": "verb stem"
+   "expected": "okumadım"
   },
   {
    "word": "w.gelmek",
@@ -35735,8 +35667,7 @@
     "sfx.kpers_2sg",
     "sfx.q"
    ],
-   "expected": "geldin mi",
-   "pending": "verb stem"
+   "expected": "geldin mi"
   },
   {
    "word": "w.gelmek",
@@ -35744,8 +35675,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "geleceğim",
-   "pending": "verb stem"
+   "expected": "geleceğim"
   },
   {
    "word": "w.gelmek",
@@ -35753,8 +35683,7 @@
     "sfx.fut",
     "sfx.cop_1pl"
    ],
-   "expected": "geleceğiz",
-   "pending": "verb stem"
+   "expected": "geleceğiz"
   },
   {
    "word": "w.gelmek",
@@ -35762,8 +35691,7 @@
     "sfx.fut",
     "sfx.cop_2sg"
    ],
-   "expected": "geleceksin",
-   "pending": "verb stem; k stays before a consonant"
+   "expected": "geleceksin"
   },
   {
    "word": "w.gelmek",
@@ -35771,8 +35699,7 @@
     "sfx.fut",
     "sfx.cop_2pl"
    ],
-   "expected": "geleceksiniz",
-   "pending": "verb stem"
+   "expected": "geleceksiniz"
   },
   {
    "word": "w.gelmek",
@@ -35780,8 +35707,7 @@
     "sfx.fut",
     "sfx.cop_3pl"
    ],
-   "expected": "gelecekler",
-   "pending": "verb stem"
+   "expected": "gelecekler"
   },
   {
    "word": "w.yapmak",
@@ -35789,8 +35715,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "yapacağım",
-   "pending": "verb stem"
+   "expected": "yapacağım"
   },
   {
    "word": "w.okumak",
@@ -35798,8 +35723,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "okuyacağım",
-   "pending": "verb stem; buffer y"
+   "expected": "okuyacağım"
   },
   {
    "word": "w.başlamak",
@@ -35807,8 +35731,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "başlayacağım",
-   "pending": "verb stem; buffer y, no raising in spelling"
+   "expected": "başlayacağım"
   },
   {
    "word": "w.beklemek",
@@ -35816,8 +35739,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "bekleyeceğim",
-   "pending": "verb stem; buffer y, no raising in spelling"
+   "expected": "bekleyeceğim"
   },
   {
    "word": "w.gitmek",
@@ -35825,8 +35747,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "gideceğim",
-   "pending": "verb stem; t → d before a vowel"
+   "expected": "gideceğim"
   },
   {
    "word": "w.etmek",
@@ -35834,8 +35755,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "edeceğim",
-   "pending": "verb stem; t → d before a vowel"
+   "expected": "edeceğim"
   },
   {
    "word": "w.yemek",
@@ -35843,8 +35763,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "yiyeceğim",
-   "pending": "verb stem; ye → yi"
+   "expected": "yiyeceğim"
   },
   {
    "word": "w.demek",
@@ -35852,8 +35771,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "diyeceğim",
-   "pending": "verb stem; de → di"
+   "expected": "diyeceğim"
   },
   {
    "word": "w.gelmek",
@@ -35862,8 +35780,7 @@
     "sfx.fut",
     "sfx.cop_1sg"
    ],
-   "expected": "gelmeyeceğim",
-   "pending": "verb stem"
+   "expected": "gelmeyeceğim"
   },
   {
    "word": "w.gelmek",
@@ -35872,16 +35789,14 @@
     "sfx.q",
     "sfx.cop_2sg"
    ],
-   "expected": "gelecek misin",
-   "pending": "verb stem; person ending on the separate mI"
+   "expected": "gelecek misin"
   },
   {
    "word": "w.gitmek",
    "suffixes": [
     "sfx.inf"
    ],
-   "expected": "gitmek",
-   "pending": "verb stem"
+   "expected": "gitmek"
   },
   {
    "word": "w.gitmek",
@@ -35889,8 +35804,7 @@
     "sfx.vn",
     "sfx.poss_1sg"
    ],
-   "expected": "gitmem",
-   "pending": "verb stem"
+   "expected": "gitmem"
   },
   {
    "word": "w.gitmek",
@@ -35898,8 +35812,7 @@
     "sfx.vn",
     "sfx.poss_2sg"
    ],
-   "expected": "gitmen",
-   "pending": "verb stem"
+   "expected": "gitmen"
   },
   {
    "word": "w.gitmek",
@@ -35907,8 +35820,7 @@
     "sfx.vn",
     "sfx.poss_3sg"
    ],
-   "expected": "gitmesi",
-   "pending": "verb stem"
+   "expected": "gitmesi"
   },
   {
    "word": "w.gitmek",
@@ -35916,8 +35828,7 @@
     "sfx.vn",
     "sfx.poss_1pl"
    ],
-   "expected": "gitmemiz",
-   "pending": "verb stem"
+   "expected": "gitmemiz"
   },
   {
    "word": "w.gitmek",
@@ -35925,8 +35836,7 @@
     "sfx.vn",
     "sfx.poss_2pl"
    ],
-   "expected": "gitmeniz",
-   "pending": "verb stem"
+   "expected": "gitmeniz"
   },
   {
    "word": "w.gitmek",
@@ -35934,8 +35844,7 @@
     "sfx.vn",
     "sfx.poss_3pl"
    ],
-   "expected": "gitmeleri",
-   "pending": "verb stem"
+   "expected": "gitmeleri"
   },
   {
    "word": "w.kalkmak",
@@ -35943,8 +35852,7 @@
     "sfx.vn",
     "sfx.poss_1pl"
    ],
-   "expected": "kalkmamız",
-   "pending": "verb stem"
+   "expected": "kalkmamız"
   }
  ],
  "assets": {

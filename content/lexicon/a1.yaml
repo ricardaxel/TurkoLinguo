@@ -5,7 +5,7 @@
 - { id: w.ev, lemma: ev, pos: noun, gloss: [house, home], images: [img.openmoji.house], audio: aud.ll.ev }
 - { id: w.okul, lemma: okul, pos: noun, gloss: [school], audio: aud.ll.okul }
 - { id: w.kitap, lemma: kitap, pos: noun, gloss: [book], flags: [soft], images: [img.openmoji.book], audio: aud.ll.kitap }
-- { id: w.su, lemma: su, pos: noun, gloss: [water], flags: [irr], forms: { acc: suyu, gen: suyun, poss3: suyu } }
+- { id: w.su, lemma: su, pos: noun, gloss: [water], flags: [irr], forms: { acc: suyu, gen: suyun, poss3: suyu, before_vowel: suy } }
 - { id: w.masa, lemma: masa, pos: noun, gloss: [table], images: [img.own.table], audio: aud.ll.masa }
 - { id: w.kedi, lemma: kedi, pos: noun, gloss: [cat], images: [img.openmoji.cat], audio: aud.ll.kedi }
 
@@ -122,17 +122,17 @@
 
 # --- L14: verbs, infinitive, imperative ---
 # Verbs: lemma = infinitive (-mAk). The stem (= the informal command) is the lemma minus -mAk.
-# `forms` on verbs records irregular stems for the form engine (not used by it yet).
+# `forms` on verbs record irregular forms the engine uses as a whole (imp_pol, prog, fut); [soft] = t → d before a vowel.
 - {id: w.gelmek, lemma: gelmek, pos: verb, gloss: [come], images: [img.openmoji.waving_hand], stem: gel}
-- {id: w.gitmek, lemma: gitmek, pos: verb, gloss: [go], flags: [irr], forms: {imp_pol: gidin, prog: gidiyor}, images: [img.openmoji.walking], notes: 't → d before a vowel: gidin, gidiyor.', stem: git}
+- {id: w.gitmek, lemma: gitmek, pos: verb, gloss: [go], flags: [irr, soft], forms: {imp_pol: gidin, prog: gidiyor}, images: [img.openmoji.walking], notes: 't → d before a vowel: gidin, gidiyor.', stem: git}
 - {id: w.yapmak, lemma: yapmak, pos: verb, gloss: [do, make], notes: 'No p → b: yapın, yapıyor.', stem: yap}
 - {id: w.içmek, lemma: içmek, pos: verb, gloss: [drink], images: [img.openmoji.hot_drink], notes: 'No ç → c: için, içiyor.', stem: iç}
-- {id: w.yemek, lemma: yemek, pos: verb, gloss: [eat], flags: [irr], forms: {imp_pol: yiyin, prog: yiyor}, images: [img.openmoji.plate], notes: 'ye → yi: yiyin, yiyor. Also the noun ''food, meal''.', stem: ye}
+- {id: w.yemek, lemma: yemek, pos: verb, gloss: [eat], flags: [irr], forms: {imp_pol: yiyin, prog: yiyor, fut: yiyecek}, images: [img.openmoji.plate], notes: 'ye → yi: yiyin, yiyor. Also the noun ''food, meal''.', stem: ye}
 - {id: w.okumak, lemma: okumak, pos: verb, gloss: [read, study], images: [img.openmoji.book], stem: oku}
 - {id: w.oturmak, lemma: oturmak, pos: verb, gloss: [sit, sit down, live, stay], images: [img.openmoji.chair], notes: 'Also ''to live (somewhere)'': İzmir''de oturuyorum.', stem: otur}
 - {id: w.bakmak, lemma: bakmak, pos: verb, gloss: [look, look (at)], images: [img.openmoji.eyes], notes: 'Takes the dative: Kediye bak! ''Look at the cat!'' (L17). No k → ğ: bakın, bakıyor.', stem: bak}
-- {id: w.etmek, lemma: etmek, pos: verb, gloss: [do, make], flags: [irr], forms: {imp_pol: edin, prog: ediyor}, notes: 'Mostly in pairs: teşekkür etmek, dans etmek. t → d before a vowel.', stem: et}
-- {id: w.demek, lemma: demek, pos: verb, gloss: [say, mean], flags: [irr], forms: {imp_pol: deyin, prog: diyor}, notes: 'Bu ne demek? ''What does this mean?'' (T1b).', stem: de}
+- {id: w.etmek, lemma: etmek, pos: verb, gloss: [do, make], flags: [irr, soft], forms: {imp_pol: edin, prog: ediyor}, notes: 'Mostly in pairs: teşekkür etmek, dans etmek. t → d before a vowel.', stem: et}
+- {id: w.demek, lemma: demek, pos: verb, gloss: [say, mean], flags: [irr], forms: {imp_pol: deyin, prog: diyor, fut: diyecek}, notes: 'Bu ne demek? ''What does this mean?'' (T1b).', stem: de}
 
 # --- T11 daily routine verbs ---
 - { id: w.uyanmak, lemma: uyanmak, pos: verb, gloss: [wake up], images: [img.openmoji.alarm_clock] }

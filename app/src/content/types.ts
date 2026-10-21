@@ -10,6 +10,8 @@ export interface Word {
   gloss: string[];
   flags?: Flag[];
   forms?: Record<string, string>;
+  /** Verbs: the stem suffixes attach to, when it isn't the infinitive minus -mAk. */
+  stem?: string;
   images?: string[];
   audio?: string;
   notes?: string;
