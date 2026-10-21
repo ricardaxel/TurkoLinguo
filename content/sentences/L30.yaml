@@ -102,7 +102,7 @@
 
 - id: s.L30.013
   tr: Kahvaltı yaptım.
-  en: ["I had breakfast.", "I made breakfast."]
+  en: ["I had breakfast."]
   words: [w.kahvaltı, w.yapmak]
   grammar: [g.L30.past]
   source: { kind: original }

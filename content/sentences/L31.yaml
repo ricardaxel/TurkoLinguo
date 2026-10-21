@@ -20,7 +20,7 @@
 
 - id: s.L31.003
   tr: Geldin mi?
-  en: ["Did you come?", "Have you come?", "Are you here?"]
+  en: ["Did you come?", "Have you come?"]
   words: [w.gelmek]
   grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
   source: { kind: original }
