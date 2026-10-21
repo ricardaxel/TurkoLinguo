@@ -1,0 +1,173 @@
+# L35 — need / must: -mAk lazım / gerek; -mA + possessive. Model: L10–L13. Format: docs/CONTENT_FORMAT.md
+id: L35
+title: "Need: -mAk lazım / gerek"
+grammar: g.L35.lazim
+new_words: [w.lazım, w.gerek, w.gerekmek]
+not_yet:
+  - "-mAlI 'must' → A2"
+  - "the negative aorist gitmem 'I don't go': never used here (it sounds the same as the verbal noun)"
+  - "-mA + possessive as an object (gitmesini istiyorum) → A2"
+  - "gerek yok 'no need': accepted in answers, not taught"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          ⌚ **Gitmem lazım!** "I need to go!"
+          💧 **Bana su lazım.** "I need water."
+
+          **lazım** = necessary. Literally: "**my going** is necessary", "**to me**, water is necessary".
+        sentences: [s.L35.001, s.L35.012]
+        audio: [aud.own.s.L35.001, aud.own.s.L35.012]
+
+      - kind: rule
+        title: "In general: -mAk lazım"
+        body: |
+          With the dictionary form, *lazım* says what's necessary **in general**, for nobody in particular:
+
+          *Çalışmak lazım.* "One has to work." · *Gitmek lazım.* "It's time to go." / "We have to go."
+
+          **gerek** means the same: *Çalışmak gerek.*
+        sentences: [s.L35.003, s.L35.023]
+        audio: [aud.own.s.L35.003, aud.own.s.L35.023]
+
+      - kind: rule
+        title: "Who needs to? -mA + my, your, his…"
+        body: |
+          Swap *-mAk* for **-mA** and add the possessive endings (L19–L20): "**my** going, **your** going…".
+
+          | | gitmek | çalışmak |
+          |---|---|---|
+          | I | git·me·**m** lazım | çalış·ma·**m** lazım |
+          | you | git·me·**n** lazım | çalış·ma·**n** lazım |
+          | he / she | git·me·**si** lazım | çalış·ma·**sı** lazım |
+          | we | git·me·**miz** lazım | çalış·ma·**mız** lazım |
+          | you (pl.) | git·me·**niz** lazım | çalış·ma·**nız** lazım |
+          | they | git·me·**leri** lazım | çalış·ma·**ları** lazım |
+
+          -mA ends in a vowel → the short possessives: **-m, -n, -sI**.
+          With a name, the owner is in the genitive (L21): *Ali'**nin** gel·me·**si** lazım.*
+
+          *lazım* never changes. ⚠️ This -mA is **not** "not": *gitmem lazım* = "I **need** to go".
+        sentences: [s.L35.002, s.L35.006, s.L35.021]
+        audio: [aud.own.s.L35.002, aud.own.s.L35.006, aud.own.s.L35.021]
+
+      - kind: rule
+        title: "Questions and 'no need'"
+        body: |
+          - *Ne yapmam lazım?* "What do I need to do?" · *Ne zaman gelmem lazım?*
+          - **Not necessary:** *Gelmen **lazım değil**.* or *Gelmen **gerekmiyor**.* "You don't need to come."
+            (*gerekmek* "to be necessary" is a verb, so it takes -mIyor.)
+        sentences: [s.L35.004, s.L35.011, s.L35.010]
+        audio: [aud.own.s.L35.004, aud.own.s.L35.011, aud.own.s.L35.010]
+
+      - kind: rule
+        title: "Needing a thing: bana, sana…"
+        body: |
+          With a **noun**, the person goes in the **dative** (L17): "to me, water is necessary".
+
+          | | |
+          |---|---|
+          | **Bana** su lazım. | I need water. |
+          | **Sana** ne lazım? | What do you need? |
+          | **Bize** yardım lazım. | We need help. |
+
+          ❌ ~~Ben su lazım.~~ ✅ **Bana** su lazım.
+        sentences: [s.L35.012, s.L35.013, s.L35.015]
+        audio: [aud.own.s.L35.012, aud.own.s.L35.013, aud.own.s.L35.015]
+
+      - kind: summary
+        title: "Want or need?"
+        body: |
+          | | |
+          |---|---|
+          | Gitmek **istiyorum**. | I **want** to go. (L34: -mAk, person on *istemek*) |
+          | Gitme**m** **lazım**. | I **need** to go. (-mA + person, *lazım* stays) |
+        sentences: [s.L35.020, s.L35.001]
+        audio: [aud.own.s.L35.020, aud.own.s.L35.001]
+
+    items:
+      - id: L35.learn.01
+        type: contrast_pair
+        grammar: [g.L35.lazim, g.L19.poss_sg]
+        pattern: g.L35.lazim.person
+        prompt: "I need to go."
+        options: [s.L35.001, s.L35.023]
+        answer: s.L35.001
+      - { id: L35.learn.02, type: build_word, grammar: [g.L35.lazim, g.L20.poss_pl], pattern: g.L35.lazim.harmony, tiles: [çalış, ma, mız], answer: "çalış·ma·mız", note: "Fused: çalışmamız lazım 'we need to work'." }
+      - { id: L35.learn.03, type: translate_to_tr, grammar: [g.L35.lazim, g.L17.dat], pattern: g.L35.lazim.person, sentence: s.L35.002, word_bank: [Eve, gitmem, lazım, gitmek, gitmen, Evde] }
+      - id: L35.learn.04
+        type: picture_choose
+        grammar: [g.L35.lazim, g.L17.dat]
+        pattern: g.L35.lazim.dative
+        images: [img.openmoji.droplet]
+        prompt: "… su lazım."
+        options: [Bana, Ben, Benim]
+        answer: Bana
+        translation: "I need water."
+        feedback: { Ben: "With *lazım* + a thing, the person is in the dative: **Bana** su lazım.", Benim: "With *lazım* + a thing, the person is in the dative: **Bana** su lazım." }
+      - id: L35.learn.05
+        type: picture_choose
+        grammar: [g.L35.lazim, g.L17.dat]
+        pattern: g.L35.lazim.person
+        images: [img.openmoji.sick]
+        prompt: "Doktora … lazım. (you)"
+        options: [gitmen, gitmek, gidiyorsun]
+        answer: gitmen
+        translation: "You need to go to the doctor."
+        feedback: { gitmek: "For a person, use **-mA** + the possessive: **gitmen** lazım. (*Gitmek lazım* is for nobody in particular.)", gidiyorsun: "*lazım* needs **-mA** + the possessive: **gitmen** lazım." }
+      - id: L35.learn.06
+        type: listen_choose
+        grammar: [g.L35.lazim, g.L16.prog_neg_q]
+        pattern: g.L35.lazim.negative
+        sentence: s.L35.010
+        options: ["You don't need to go.", "You need to go.", "You don't want to go."]
+        answer: "You don't need to go."
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L35.practise.01, type: spot_error, grammar: [g.L35.lazim, g.L17.dat], pattern: g.L35.lazim.dative, text: "Ben su lazım.", error: Ben, answer: Bana, sentence: s.L35.012, feedback: { Ben: "With *lazım* + a thing, the person is in the dative: **Bana** su lazım." } }
+      - { id: L35.practise.02, type: spot_error, grammar: [g.L35.lazim, g.L20.poss_pl, g.L26.time], pattern: g.L35.lazim.harmony, text: "Saat yedide kalkmemiz lazım.", error: kalkmemiz, answer: kalkmamız, sentence: s.L35.007, feedback: { kalkmemiz: "-mA follows 2-way harmony: **kalk-** has **a** → **-ma**, and the possessive follows: **kalkmamız**." } }
+      - { id: L35.practise.03, type: spot_error, grammar: [g.L35.lazim, g.L21.gen], pattern: g.L35.lazim.person, text: "Ali'nin gelmek lazım.", error: gelmek, answer: gelmesi, sentence: s.L35.006, feedback: { gelmek: "For a person, use **-mA** + the possessive: *Ali'nin* … **gelmesi** lazım." } }
+      - { id: L35.practise.04, type: build_word, grammar: [g.L35.lazim, g.L20.poss_pl], pattern: g.L35.lazim.person, tiles: [gel, me, leri], answer: "gel·me·leri", note: "gelmeleri lazım 'they need to come'." }
+      - { id: L35.practise.05, type: translate_to_tr, grammar: [g.L35.lazim, g.L19.poss_sg], pattern: g.L35.lazim.person, sentence: s.L35.004, word_bank: [Ne, yapmam, lazım, yapmak, yapıyorum, mı] }
+      - { id: L35.practise.06, type: translate_to_en, grammar: [g.L35.lazim, g.L20.poss_pl], sentence: s.L35.008 }
+      - id: L35.practise.07
+        type: contrast_pair
+        grammar: [g.L35.lazim, g.L34.istemek]
+        prompt: "I want to go."
+        options: [s.L35.020, s.L35.001]
+        answer: s.L35.020
+      - id: L35.practise.08
+        type: qa
+        grammar: [g.L35.lazim, g.L17.dat]
+        question: s.L35.013
+        images: [img.openmoji.droplet]
+        answers: ["(Bana) su lazım.", "(Bana) su gerek."]
+      - { id: L35.practise.09, type: dictation, grammar: [g.L35.lazim, g.L17.dat], sentence: s.L35.017 }
+      - { id: L35.practise.10, type: translate_to_tr, grammar: [g.L35.lazim, g.L16.prog_neg_q], pattern: g.L35.lazim.negative, sentence: s.L35.019, typed: true, answers: ["Yarın çalışmam lazım değil.", "Yarın çalışmam gerekmiyor."] }
+      - { id: L35.practise.11, type: translate_to_tr, grammar: [g.L35.lazim, g.L17.dat], pattern: g.L35.lazim.dative, sentence: s.L35.015, word_bank: [Bize, yardım, lazım, Biz, Bizim] }
+      - id: L35.practise.12
+        type: contrast_pair
+        grammar: [g.L35.lazim, g.L20.poss_pl]
+        pattern: g.L35.lazim.person
+        prompt: "We need to go."
+        options: [s.L35.021, s.L35.022]
+        answer: s.L35.021
+      - { id: L35.practise.13, type: translate_to_tr, grammar: [g.L35.lazim, g.L6.degil], pattern: g.L35.lazim.negative, sentence: s.L35.011, typed: true, answers: ["Gelmen gerekmiyor.", "Gelmene gerek yok."] }
+      - id: L35.practise.14
+        type: mini_dialogue
+        grammar: [g.L35.lazim, g.L17.dat]
+        turns:
+          - { speaker: A, sentence: s.L35.013 }
+          - { speaker: B, blank: true, answers: ["(Bana) {su|bir kalem|yardım} lazım.", "(Bana) {su|bir kalem|yardım} gerek."] }
+      - id: L35.practise.15
+        type: listen_choose
+        grammar: [g.L35.lazim, g.L20.poss_pl]
+        sentence: s.L35.009
+        options: ["They need to come.", "They want to come.", "They didn't come."]
+        answer: "They need to come."
+      - { id: L35.practise.16, type: translate_to_en, grammar: [g.L35.lazim, g.L14.imperative], pattern: g.L35.lazim.general, sentence: s.L35.003 }

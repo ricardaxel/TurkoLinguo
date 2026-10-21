@@ -1,0 +1,75 @@
+id: g.L32.copula_past
+title: "Past of 'to be': -(y)DI"
+suffixes: [sfx.cop_past, sfx.kpers_1sg, sfx.kpers_2sg, sfx.kpers_1pl, sfx.kpers_2pl, sfx.kpers_3pl]
+
+reference: |
+  **-(y)DI** = *was / were*. It goes on nouns, adjectives and places, where L5 and L11 put *-(y)Im, -sIn…*:
+
+  *hasta·y·dı·m* "I was ill" · *öğrenci·y·di·m* "I was a student" · *ev·de·y·di·m* "I was at home"
+
+  **After a vowel → y:** *hasta·ydı, öğrenci·ydi, ev·de·ydi, park·ta·ydı*.
+  **After a consonant → no y, and the D rule:** *öğretmen·di, yorgun·du*, but *Türk·tü* (k is a Fıstıkçı Şahap letter).
+  **I:** 4-way harmony, as in -DI.
+
+  **Person endings:** the short "k" set from L30:
+
+  | Pronoun | hasta | evde | öğretmen |
+  |---|---|---|---|
+  | ben | hasta·ydı·**m** | evde·ydi·**m** | öğretmen·di·**m** |
+  | sen | hasta·ydı·**n** | evde·ydi·**n** | öğretmen·di·**n** |
+  | o | hasta·ydı | evde·ydi | öğretmen·di |
+  | biz | hasta·ydı·**k** | evde·ydi·**k** | öğretmen·di·**k** |
+  | siz | hasta·ydı·**nız** | evde·ydi·**niz** | öğretmen·di·**niz** |
+  | onlar | hasta·ydı·**lar** | evde·ydi·**ler** | öğretmen·di·**ler** |
+
+  **Names** keep their apostrophe: *Ankara'daydım*. **There was / wasn't:** *var·dı*, *yok·tu*.
+
+  **Not:** *değil* takes the ending: *değil·di·m* "I wasn't", *Hasta değildim.*
+
+  **Questions:** *mI* is a separate word and **carries** -(y)DI and the person: *Evde **miydin**?* (mi + ydi + n) · *Hasta **mıydın**?* · *Öğrenci **miydiniz**?*
+
+  🔊 -(y)DI is never stressed: has**TA**ydım, ev**DE**ydim, **AN**kara'daydım.
+
+  **Written form idi:** in formal writing the ending can stand as a separate word, *idi*: *Hasta idim* = *Hastaydım*. Recognise it; say *hastaydım*.
+
+patterns:
+  - id: g.L32.copula_past.after_vowel_1sg
+    description: "After a vowel: buffer y (hastaydım, yeniydim)"
+    suffixes: [sfx.cop_past, sfx.kpers_1sg]
+    word_filter: { pos: adj, ends_with: vowel }
+  - id: g.L32.copula_past.voiced_1sg
+    description: "After a consonant not in Fıstıkçı Şahap: no y, -dI (yorgundum)"
+    suffixes: [sfx.cop_past, sfx.kpers_1sg]
+    word_filter: { pos: adj, ends_with: voiced_consonant }
+  - id: g.L32.copula_past.voiceless_1pl
+    description: "After Fıstıkçı Şahap: -tI (büyüktük)"
+    suffixes: [sfx.cop_past, sfx.kpers_1pl]
+    word_filter: { pos: adj, ends_with: voiceless }
+  - id: g.L32.copula_past.loc_1sg
+    description: "Location + was: -DA·ydı·m (evdeydim, parktaydım)"
+    suffixes: [sfx.loc, sfx.cop_past, sfx.kpers_1sg]
+    word_filter: { pos: noun }
+  - id: g.L32.copula_past.loc_2pl
+    description: "Location + you were (pl. / polite): -DA·ydı·nız (evdeydiniz)"
+    suffixes: [sfx.loc, sfx.cop_past, sfx.kpers_2pl]
+    word_filter: { pos: noun }
+  - id: g.L32.copula_past.name
+    description: "Names: apostrophe, then -DA·ydı·m (Ankara'daydım)"
+    suffixes: [sfx.loc, sfx.cop_past, sfx.kpers_1sg]
+    word_filter: { pos: name }
+  - id: g.L32.copula_past.question
+    description: "mI carries -(y)DI + person: Evde miydin?, Hasta mıydın?"
+  - id: g.L32.copula_past.var_yok
+    description: "vardı / yoktu, değildim"
+
+feedback:
+  no_buffer: "**{word}** ends in a vowel, so -(y)DI needs the buffer **y**: **{answer}**."
+  buffer_after_consonant: "**{word}** ends in a consonant: no **y**: **{answer}**."
+  voiceless: "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: **{answer}**."
+  not_voiceless: "**{c}** is not in Fıstıkçı Şahap → **d**: **{answer}**."
+  vowel_round: "-(y)DI has four forms (ı i u ü), like -DI: **{answer}**."
+  person_harmony: "The person ending follows the vowel before it: **{answer}**."
+  person_set: "*was / were* uses the short person endings: **-m, -n, –, -k, -nIz, -lAr**: **{answer}**."
+  mi_carries: "In a question, **mI** carries the past and the person: **{answer}**."
+  apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

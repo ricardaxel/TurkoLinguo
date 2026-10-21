@@ -1,0 +1,13 @@
+id: T20
+title: Weather & seasons
+kind: core
+packs:
+  - id: T20.p1
+    unlock_after: L31
+    words: [w.hava, w.güneş, w.yağmur, w.kar, w.yağmak, w.güneşli, w.yaz, w.kış]
+    frames: [s.T20.001, s.T20.002, s.T20.003]
+  - id: T20.p2
+    unlock_after: L33
+    words: [w.ilkbahar, w.sonbahar, w.rüzgâr, w.bulut, w.bulutlu, w.rüzgârlı, w.mevsim, w.serin]
+    frames: [s.T20.004, s.T20.005]
+revisit: [L32, L33]

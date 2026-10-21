@@ -500,3 +500,110 @@
 - { id: w.kilo, lemma: kilo, pos: noun, gloss: [kilo, kilogram] }
 - { id: w.ceket, lemma: ceket, pos: noun, gloss: [jacket] }
 - { id: w.ayakkabı, lemma: ayakkabı, pos: noun, gloss: [shoe, shoes] }
+# --- L30: past -DI ---
+- { id: w.geçen, lemma: geçen, pos: adj, gloss: [last, past], notes: "geçen hafta 'last week', geçen yıl 'last year'. Literally 'passing' (geçmek)." }
+
+# --- L31: past negative & questions ---
+- { id: w.ne_zaman, lemma: ne zaman, pos: adv, gloss: [when], notes: "Question word: Ne zaman geldin? 'When did you come?'" }
+
+# --- L32: past of "to be" ---
+- { id: w.hasta, lemma: hasta, pos: adj, gloss: [ill, sick], notes: "Also a noun: 'patient'. hasta + -(y)DI → hastaydım." }
+- { id: w.yorgun, lemma: yorgun, pos: adj, gloss: [tired] }
+
+# --- L33: future -(y)AcAK ---
+- { id: w.gelecek, lemma: gelecek, pos: adj, gloss: [next, coming], notes: "gelecek hafta 'next week'. The future form of gelmek used as an adjective: 'the coming week'." }
+- { id: w.seneye, lemma: seneye, pos: adv, gloss: [next year], notes: "sene 'year' + dative." }
+- { id: w.yardım, lemma: yardım, pos: noun, gloss: [help], notes: "yardım etmek 'to help' (+ dative): Sana yardım edeceğim." }
+
+# --- L34: istemek ---
+- { id: w.istemek, lemma: istemek, pos: verb, stem: iste, gloss: [want], notes: "Regular: istiyorum, istedim, isteyeceğim. + -mAk 'want to': Gitmek istiyorum." }
+
+# --- L35: lazım / gerek ---
+- { id: w.lazım, lemma: lazım, pos: adj, gloss: [necessary, needed], notes: "Never changes: Gitmem lazım 'I need to go', Bana su lazım 'I need water'." }
+- { id: w.gerek, lemma: gerek, pos: noun, gloss: [necessary, need], notes: "Like lazım: Gitmem gerek." }
+- { id: w.gerekmek, lemma: gerekmek, pos: verb, stem: gerek, gloss: [be necessary], notes: "Mostly the negative: Gitmen gerekmiyor 'you don't need to go'." }
+
+# --- T20 weather & seasons ---
+- { id: w.hava, lemma: hava, pos: noun, gloss: [weather, air], images: [img.openmoji.sun_behind_cloud] }
+- { id: w.güneş, lemma: güneş, pos: noun, gloss: [sun], images: [img.openmoji.sun] }
+- { id: w.yağmur, lemma: yağmur, pos: noun, gloss: [rain], images: [img.openmoji.rain] }
+- { id: w.kar, lemma: kar, pos: noun, gloss: [snow], images: [img.openmoji.snow] }
+- { id: w.yağmak, lemma: yağmak, pos: verb, stem: yağ, gloss: [fall (of rain or snow)], notes: "Yağmur yağıyor 'it's raining', Kar yağdı 'it snowed'." }
+- { id: w.güneşli, lemma: güneşli, pos: adj, gloss: [sunny], notes: "güneş + -lI (L28)." }
+- { id: w.yaz, lemma: yaz, pos: noun, gloss: [summer] }
+- { id: w.kış, lemma: kış, pos: noun, gloss: [winter], images: [img.openmoji.snow] }
+- { id: w.ilkbahar, lemma: ilkbahar, pos: noun, gloss: [spring] }
+- { id: w.sonbahar, lemma: sonbahar, pos: noun, gloss: [autumn, fall] }
+- { id: w.rüzgâr, lemma: rüzgâr, pos: noun, gloss: [wind], images: [img.openmoji.wind] }
+- { id: w.bulut, lemma: bulut, pos: noun, gloss: [cloud], images: [img.openmoji.cloud], notes: "bulut → bulutu (no softening)." }
+- { id: w.bulutlu, lemma: bulutlu, pos: adj, gloss: [cloudy] }
+- { id: w.rüzgârlı, lemma: rüzgârlı, pos: adj, gloss: [windy] }
+- { id: w.mevsim, lemma: mevsim, pos: noun, gloss: [season] }
+- { id: w.serin, lemma: serin, pos: adj, gloss: [cool] }
+
+# --- T21 travel & holidays ---
+- { id: w.tatil, lemma: tatil, pos: noun, gloss: [holiday, vacation], notes: "tatile gitmek 'to go on holiday', tatilde 'on holiday'." }
+- { id: w.deniz, lemma: deniz, pos: noun, gloss: [sea], images: [img.openmoji.wave] }
+- { id: w.plaj, lemma: plaj, pos: noun, gloss: [beach], images: [img.openmoji.beach] }
+- { id: w.dağ, lemma: dağ, pos: noun, gloss: [mountain], images: [img.openmoji.mountain] }
+- { id: w.pasaport, lemma: pasaport, pos: noun, gloss: [passport], images: [img.openmoji.passport_control] }
+- { id: w.bavul, lemma: bavul, pos: noun, gloss: [suitcase], images: [img.openmoji.suitcase] }
+- { id: w.harita, lemma: harita, pos: noun, gloss: [map], images: [img.openmoji.map] }
+- { id: w.kamp, lemma: kamp, pos: noun, gloss: [camp, camping], images: [img.openmoji.camping], notes: "One syllable: no softening (kampı)." }
+- { id: w.rezervasyon, lemma: rezervasyon, pos: noun, gloss: [reservation, booking] }
+- { id: w.turist, lemma: turist, pos: noun, gloss: [tourist] }
+- { id: w.rehber, lemma: rehber, pos: noun, gloss: [guide, tour guide] }
+- { id: w.yolculuk, lemma: yolculuk, pos: noun, gloss: [journey, trip], flags: [soft] }
+- { id: w.hediye, lemma: hediye, pos: noun, gloss: [gift, present], images: [img.openmoji.gift] }
+- { id: w.fotoğraf, lemma: fotoğraf, pos: noun, gloss: [photo, photograph], images: [img.openmoji.camera] }
+- { id: w.manzara, lemma: manzara, pos: noun, gloss: [view, scenery] }
+- { id: w.ada, lemma: ada, pos: noun, gloss: [island], images: [img.openmoji.island] }
+- { id: w.Antalya, lemma: Antalya, pos: name, gloss: [Antalya] }
+
+# --- shared (needed by L30–L35; introduced by earlier batches: L14–L18 verbs, T2, T4–T7, T11, T13, T14, T17, T19) ---
+# Verbs: id and lemma = dictionary form, `stem` = the form endings attach to.
+- { id: w.gelmek, lemma: gelmek, pos: verb, stem: gel, gloss: [come] }
+- { id: w.gitmek, lemma: gitmek, pos: verb, stem: git, flags: [irr], gloss: [go], notes: "t → d before a vowel: gidiyor, gideceğim. Before a consonant it stays: gittim, gitmek." }
+- { id: w.yapmak, lemma: yapmak, pos: verb, stem: yap, gloss: [do, make] }
+- { id: w.içmek, lemma: içmek, pos: verb, stem: iç, gloss: [drink] }
+- { id: w.yemek, lemma: yemek, pos: verb, stem: ye, flags: [irr], gloss: [eat], notes: "ye → yi before -yor and -yAcAK: yiyorum, yiyeceğim. Regular in the past: yedim." }
+- { id: w.okumak, lemma: okumak, pos: verb, stem: oku, gloss: [read] }
+- { id: w.oturmak, lemma: oturmak, pos: verb, stem: otur, gloss: [sit, stay, live] }
+- { id: w.demek, lemma: demek, pos: verb, stem: de, flags: [irr], gloss: [say, mean], notes: "de → di before -yor and -yAcAK: diyorum, diyeceğim. Regular in the past: dedim." }
+- { id: w.etmek, lemma: etmek, pos: verb, stem: et, flags: [irr], gloss: [do, make], notes: "Mostly with a noun: yardım etmek, dans etmek. t → d before a vowel: ediyor, edeceğim." }
+- { id: w.başlamak, lemma: başlamak, pos: verb, stem: başla, gloss: [start, begin] }
+- { id: w.beklemek, lemma: beklemek, pos: verb, stem: bekle, gloss: [wait, wait for] }
+- { id: w.görmek, lemma: görmek, pos: verb, stem: gör, gloss: [see] }
+- { id: w.kalkmak, lemma: kalkmak, pos: verb, stem: kalk, gloss: [get up] }
+- { id: w.uyumak, lemma: uyumak, pos: verb, stem: uyu, gloss: [sleep] }
+- { id: w.çalışmak, lemma: çalışmak, pos: verb, stem: çalış, gloss: [work, study] }
+- { id: w.izlemek, lemma: izlemek, pos: verb, stem: izle, gloss: [watch] }
+- { id: w.dinlemek, lemma: dinlemek, pos: verb, stem: dinle, gloss: [listen, listen to] }
+- { id: w.oynamak, lemma: oynamak, pos: verb, stem: oyna, gloss: [play] }
+- { id: w.yüzmek, lemma: yüzmek, pos: verb, stem: yüz, gloss: [swim] }
+- { id: w.film, lemma: film, pos: noun, gloss: [film, movie] }
+- { id: w.müzik, lemma: müzik, pos: noun, gloss: [music] }
+- { id: w.futbol, lemma: futbol, pos: noun, gloss: [football, soccer] }
+- { id: w.kahve, lemma: kahve, pos: noun, gloss: [coffee] }
+- { id: w.kahvaltı, lemma: kahvaltı, pos: noun, gloss: [breakfast] }
+- { id: w.pilav, lemma: pilav, pos: noun, gloss: [rice (cooked), pilaf] }
+- { id: w.dün, lemma: dün, pos: adv, gloss: [yesterday] }
+- { id: w.bugün, lemma: bugün, pos: adv, gloss: [today] }
+- { id: w.yarın, lemma: yarın, pos: adv, gloss: [tomorrow] }
+- { id: w.akşam, lemma: akşam, pos: noun, gloss: [evening] }
+- { id: w.hafta, lemma: hafta, pos: noun, gloss: [week] }
+- { id: w.yıl, lemma: yıl, pos: noun, gloss: [year] }
+- { id: w.yedi, lemma: yedi, pos: num, gloss: [seven] }
+- { id: w.sekiz, lemma: sekiz, pos: num, gloss: [eight] }
+- { id: w.çok, lemma: çok, pos: adv, gloss: [very, a lot, many] }
+- { id: w.ne, lemma: ne, pos: pron, gloss: [what], flags: [irr] }
+- { id: w.yok, lemma: yok, pos: particle, gloss: [there isn't, there aren't] }
+- { id: w.öğrenci, lemma: öğrenci, pos: noun, gloss: [student] }
+- { id: w.öğretmen, lemma: öğretmen, pos: noun, gloss: [teacher] }
+- { id: w.doktor, lemma: doktor, pos: noun, gloss: [doctor] }
+- { id: w.Türk, lemma: Türk, pos: noun, gloss: [Turk, Turkish (person)], notes: "Nationality, not a name: no apostrophe (Türktü)." }
+- { id: w.baba, lemma: baba, pos: noun, gloss: [father, dad] }
+- { id: w.çocuk, lemma: çocuk, pos: noun, gloss: [child], flags: [soft] }
+- { id: w.sıcak, lemma: sıcak, pos: adj, gloss: [hot, warm] }
+- { id: w.soğuk, lemma: soğuk, pos: adj, gloss: [cold] }
+- { id: w.güzel, lemma: güzel, pos: adj, gloss: [beautiful, nice] }

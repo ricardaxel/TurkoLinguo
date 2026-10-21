@@ -1,0 +1,178 @@
+# L33 — future -(y)AcAK. Model: L10–L13. Format: docs/CONTENT_FORMAT.md
+id: L33
+title: "Future -(y)AcAK"
+grammar: g.L33.future
+new_words: [w.gelecek, w.seneye, w.yardım]
+not_yet:
+  - "future of 'to be' (evde olacağım) → A2 (olmak)"
+  - "future in the past (gelecektim) → A2"
+  - "the aorist for offers and promises (Yardım ederim) → A2"
+  - "Gelecek miyim? (1st person question): shown in the reference only"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          📱 **Yarın gelecek misin?** "Will you come tomorrow?"
+          🙋 **Evet, geleceğim!** "Yes, I'll come!"
+
+          **gel·eceğ·im** = come · *will* · I.
+        sentences: [s.L33.002, s.L33.003]
+        audio: [aud.own.s.L33.002, aud.own.s.L33.003]
+
+      - kind: rule
+        title: "-(y)AcAK = will"
+        body: |
+          Stem + **-acak / -ecek** (2-way harmony) + the person endings you know from the present (L5, L15):
+
+          | | gel- | yap- |
+          |---|---|---|
+          | ben | gel·**eceğ**·im | yap·**acağ**·ım |
+          | sen | gel·ecek·sin | yap·acak·sın |
+          | o | gel·ecek | yap·acak |
+          | biz | gel·**eceğ**·iz | yap·**acağ**·ız |
+          | siz | gel·ecek·siniz | yap·acak·sınız |
+          | onlar | gel·ecek·ler | yap·acak·lar |
+
+          ⚠️ **k → ğ** before a vowel: *gelece**ğ**im*, *gelece**ğ**iz*. Before a consonant it stays: *gelece**k**sin*. (Softening, as in *kitap → kitabı*.)
+        sentences: [s.L33.023, s.L33.024, s.L33.016]
+        audio: [aud.own.s.L33.023, aud.own.s.L33.024, aud.own.s.L33.016]
+
+      - kind: rule
+        title: "After a vowel: y"
+        body: |
+          | | |
+          |---|---|
+          | oku- | oku·**y**acağım |
+          | başla- | başla·**y**acağım |
+          | bekle- | bekle·**y**eceğim |
+
+          🗣️ In fast speech you'll hear *bekliycem, başlıycam*: the vowel before **y** rises and the ending shrinks. Understand it; **write** *bekleyeceğim*.
+        sentences: [s.L33.007, s.L33.009]
+        audio: [aud.own.s.L33.007, aud.own.s.L33.009]
+
+      - kind: rule
+        title: "The four stems that change"
+        body: |
+          The same four as in the present (L15), because -(y)AcAK starts with a vowel:
+
+          | | present | future |
+          |---|---|---|
+          | git- | **gid**iyorum | **gid**eceğim |
+          | et- | **ed**iyorum | **ed**eceğim |
+          | ye- | **yi**yorum | **yi**yeceğim |
+          | de- | **di**yorum | **di**yeceğim |
+        sentences: [s.L33.010, s.L33.011, s.L33.012]
+        audio: [aud.own.s.L33.010, aud.own.s.L33.011, aud.own.s.L33.012]
+
+      - kind: rule
+        title: "Not and questions"
+        body: |
+          **Not:** stem · **mA** · **yAcAK** · person: *gel·me·yeceğ·im* "I won't come", *çalış·ma·yacağ·ım*.
+          🗣️ Spoken: *gelmiycem*. Written: **gelmeyeceğim**.
+
+          **Questions** work like the present: the person ending **moves onto mI**:
+
+          | present | future |
+          |---|---|
+          | Geliyor **musun**? | Gelecek **misin**? |
+          | Ayşe geliyor **mu**? | Ayşe gelecek **mi**? |
+          | Geliyor **musunuz**? | Gelecek **misiniz**? |
+
+          (Only the past is different: *Geldi**n** mi?*)
+        sentences: [s.L33.004, s.L33.014, s.L33.015]
+        audio: [aud.own.s.L33.004, aud.own.s.L33.014, aud.own.s.L33.015]
+
+      - kind: examples
+        title: "When?"
+        body: |
+          - **yarın** "tomorrow" · **bu akşam** "this evening"
+          - **gelecek hafta** "next week" (*gelecek* = "the coming") · **seneye** "next year"
+
+          *Gelecek hafta İstanbul'a gideceğiz.* "We'll go to Istanbul next week."
+
+          💡 For fixed plans, the present also works: *Yarın geliyorum.* "I'm coming tomorrow."
+        sentences: [s.L33.005, s.L33.006, s.L33.022]
+        audio: [aud.own.s.L33.005, aud.own.s.L33.006, aud.own.s.L33.022]
+
+    items:
+      - { id: L33.learn.01, type: build_word, grammar: [g.L33.future], pattern: g.L33.future.k_to_g, tiles: [gel, eceğ, im], answer: "gel·eceğ·im", feedback: { "gel·im·eceğ": "Future first, then the person: **gel·eceğ·im**." } }
+      - id: L33.learn.02
+        type: picture_choose
+        grammar: [g.L33.future]
+        pattern: g.L33.future.harmony
+        images: [img.openmoji.rain]
+        prompt: "Yarın yağmur …"
+        options: [yağacak, yağecek, yağdı]
+        answer: yağacak
+        translation: "It will rain tomorrow."
+        feedback: { yağecek: "The last vowel of **yağ-** is **a**, a back vowel → **-acak**: yağacak.", yağdı: "*Yarın* is tomorrow → future: **yağacak**." }
+      - { id: L33.learn.03, type: translate_to_tr, grammar: [g.L33.future], pattern: g.L33.future.k_to_g, sentence: s.L33.001, word_bank: [Yarın, geleceğim, gelecekim, gelceğim] }
+      - id: L33.learn.04
+        type: contrast_pair
+        grammar: [g.L33.future]
+        pattern: g.L33.future.k_to_g
+        prompt: "We'll come."
+        options: [s.L33.023, s.L33.024]
+        answer: s.L33.023
+      - { id: L33.learn.05, type: translate_to_tr, grammar: [g.L33.future, g.L7.question], pattern: g.L33.future.question, sentence: s.L33.002, word_bank: [Yarın, gelecek, misin, mi, geleceksin] }
+      - id: L33.learn.06
+        type: listen_choose
+        grammar: [g.L33.future, g.L16.prog_neg_q]
+        pattern: g.L33.future.negative
+        sentence: s.L33.004
+        options: ["No, I won't come.", "No, I didn't come.", "Yes, I'll come."]
+        answer: "No, I won't come."
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L33.practise.01, type: spot_error, grammar: [g.L33.future], pattern: g.L33.future.k_to_g, text: "Yarın gelecekim.", error: gelecekim, answer: geleceğim, sentence: s.L33.001, feedback: { gelecekim: "Before a vowel, the **k** of -AcAK softens to **ğ**: **geleceğim**." } }
+      - { id: L33.practise.02, type: spot_error, grammar: [g.L33.future], pattern: g.L33.future.buffer, text: "Bu akşam kitap okuacağım.", error: okuacağım, answer: okuyacağım, sentence: s.L33.007, feedback: { okuacağım: "**oku-** ends in a vowel, so -(y)AcAK needs the buffer **y**: **okuyacağım**." } }
+      - { id: L33.practise.03, type: spot_error, grammar: [g.L33.future, g.L18.acc], pattern: g.L33.future.buffer, text: "Seni bekliyeceğim.", error: bekliyeceğim, answer: bekleyeceğim, sentence: s.L33.009, feedback: { bekliyeceğim: "In speech it sounds like *-iy-*, but the spelling keeps the **e** of *bekle-*: **bekleyeceğim**." } }
+      - { id: L33.practise.04, type: spot_error, grammar: [g.L33.future, g.L7.question], pattern: g.L33.future.question, text: "Yarın geleceksin mi?", error: "geleceksin mi", answer: "gelecek misin", sentence: s.L33.002, feedback: { "geleceksin mi": "As with -(I)yor, the person ending moves onto **mI**: **gelecek misin?**" } }
+      - { id: L33.practise.05, type: build_word, grammar: [g.L33.future], pattern: g.L33.future.stem_change, tiles: [gid, eceğ, iz], answer: "gid·eceğ·iz", note: "git → gid before a vowel, as in gidiyoruz." }
+      - { id: L33.practise.06, type: translate_to_tr, grammar: [g.L33.future, g.L17.dat], pattern: g.L33.future.stem_change, sentence: s.L33.005, word_bank: [Gelecek, hafta, İstanbul'a, gideceğiz, gitceğiz, gitecekiz, İstanbul'da] }
+      - { id: L33.practise.07, type: translate_to_en, grammar: [g.L33.future], sentence: s.L33.012 }
+      - id: L33.practise.08
+        type: picture_choose
+        grammar: [g.L33.future]
+        pattern: g.L33.future.stem_change
+        images: [img.openmoji.rice]
+        prompt: "Ne yiyeceksin? — Pilav …"
+        options: [yiyeceğim, yeyeceğim, yiyecekim]
+        answer: yiyeceğim
+        translation: "What will you eat? — I'll eat rice."
+        feedback: { yeyeceğim: "**ye-** changes to **yi-** before a vowel ending: **yiyeceğim** (like *yiyorum*).", yiyecekim: "Before a vowel, the **k** softens to **ğ**: **yiyeceğim**." }
+      - { id: L33.practise.09, type: dictation, grammar: [g.L33.future, g.L26.time], sentence: s.L33.008 }
+      - { id: L33.practise.10, type: translate_to_tr, grammar: [g.L33.future, g.L17.dat], pattern: g.L33.future.stem_change, sentence: s.L33.010, typed: true }
+      - id: L33.practise.11
+        type: qa
+        grammar: [g.L33.future]
+        question: s.L33.018
+        images: [img.openmoji.film]
+        answers: ["(Bu akşam) (ben) film izleyeceğim."]
+      - { id: L33.practise.12, type: translate_to_tr, grammar: [g.L33.future, g.L16.prog_neg_q], pattern: g.L33.future.negative, sentence: s.L33.017, word_bank: [Yarın, çalışmayacağım, çalışmıyacağım, çalışmayacakım, çalışmadım] }
+      - id: L33.practise.13
+        type: contrast_pair
+        grammar: [g.L33.future, g.L31.past_neg_q]
+        pattern: g.L33.future.question
+        prompt: "Will you come tomorrow?"
+        options: [s.L33.002, s.L31.003]
+        answer: s.L33.002
+      - id: L33.practise.14
+        type: mini_dialogue
+        grammar: [g.L33.future, g.L7.question]
+        turns:
+          - { speaker: A, sentence: s.L33.002 }
+          - { speaker: B, blank: true, answers: ["Evet, (yarın) geleceğim.", "Hayır, (yarın) gelmeyeceğim."] }
+          - { speaker: A, sentence: s.L33.018 }
+          - { speaker: B, blank: true, answers: ["(Bu akşam) (ben) {kitap okuyacağım|film izleyeceğim|çay yapacağım}."] }
+      - id: L33.practise.15
+        type: listen_choose
+        grammar: [g.L33.future, g.L17.dat]
+        sentence: s.L33.020
+        options: ["We're going on holiday next week.", "We went on holiday last week.", "We're on holiday this week."]
+        answer: "We're going on holiday next week."
