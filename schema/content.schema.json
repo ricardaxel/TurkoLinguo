@@ -345,6 +345,7 @@
         "status": { "enum": ["planned", "ready"] },
         "modified": { "type": "boolean" },
         "derived_from": { "type": "array", "items": { "$ref": "#/$defs/mediaId" } },
+        "compose": { "$ref": "#/$defs/compose" },
         "speaker": { "type": "string" },
         "text": { "type": "string" },
         "notes": { "type": "string" }
@@ -352,6 +353,23 @@
       "allOf": [
         { "if": { "properties": { "status": { "const": "ready" } } }, "then": { "required": ["file", "author"] } },
         { "if": { "properties": { "source": { "const": "tts" } } }, "then": { "properties": { "license": { "const": "TTS" } } } }
+      ]
+    },
+    "compose": {
+      "description": "Arrangement of a composite image. on_top: items[0] sits on items[1] (not \"on\": YAML reads that as true). in: items[0] pokes out of container items[1]. at: items[0] in front of place items[1]. row: side by side. panels: separate scenes with a divider.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["layout", "items"],
+      "properties": {
+        "layout": { "enum": ["on_top", "in", "at", "row", "panels"] },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "anyOf": [ { "$ref": "#/$defs/imageId" }, { "$ref": "#/$defs/compose" } ] }
+        }
+      },
+      "allOf": [
+        { "if": { "properties": { "layout": { "enum": ["on_top", "in", "at"] } } }, "then": { "properties": { "items": { "minItems": 2, "maxItems": 2 } } } }
       ]
     },
     "assetsFile": { "type": "array", "items": { "$ref": "#/$defs/asset" } }

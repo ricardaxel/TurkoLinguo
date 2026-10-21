@@ -209,6 +209,26 @@ Every image and audio file has one entry. The **Credits** screen is generated fr
 
 The schema **rejects** NC and ND licences. `OWN` = recorded or drawn for us under a written agreement. `TTS` = placeholder only.
 
+**Composite images** (`img.own.*`) say how their parts are arranged with `compose`. `derived_from` still lists every part, for the Credits screen.
+
+```yaml
+- id: img.own.cat_on_table
+  derived_from: [img.openmoji.cat, img.own.table]
+  compose: { layout: on_top, items: [img.openmoji.cat, img.own.table] }
+```
+
+| `layout` | Meaning | Items |
+|---|---|---|
+| `on_top` | the object sits on the surface (cat on table) | exactly 2: object, surface |
+| `in` | the object pokes out of a container (phone in bag) | exactly 2: object, container |
+| `at` | the object is in front of a place (person in the park) | exactly 2: object, place |
+| `row` | side by side | 1 or more |
+| `panels` | separate scenes with a divider (Ali at home │ Ayşe at school) | 1 or more |
+
+Items can be image IDs or nested `compose` objects. Write `on_top`, not `on`: YAML reads a bare `on` as `true`.
+
+Objects with no emoji (table, cupboard, lamp) are drawn as our own SVG icons in `app/src/ui/icons.tsx` (`img.own.table` etc.). A test fails if any image used in the content can't be drawn.
+
 ### 4.9 Morphology (`morphology/`)
 `suffixes.yaml` lists every suffix in archiphoneme notation (`form: DA`, `form: (y)I`) with the grammar point that introduces it. `tests.yaml` holds `{lemma, suffixes, expected}` cases: *kitap + loc = kitapta*, *su + acc = suyu*. These tests are shared by the app's form engine and by future validator checks. A case the engine doesn't handle yet can carry `pending: "<reason>"`; no case needs it at the moment, so the app test runs every case (add an `it.failing` block for pending cases when one is needed again).
 

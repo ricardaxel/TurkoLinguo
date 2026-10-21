@@ -57,7 +57,7 @@ function ChoiceItem({ item, locked, onResult }: ItemProps) {
     header = (
       <>
         <Instruction>Choose the right word</Instruction>
-        {item.images?.map((id) => <Picture key={id} id={id} size={64} />)}
+        {item.images?.map((id) => <Picture key={id} id={id} size={96} />)}
         <Big>{item.prompt!}</Big>
       </>
     );
@@ -110,7 +110,7 @@ function ChoiceItem({ item, locked, onResult }: ItemProps) {
                 state === 'wrong' && { borderColor: colors.wrong, backgroundColor: colors.wrongBg },
               ]}
             >
-              <Picture id={o} size={36} />
+              <Picture id={o} size={48} />
             </Pressable>
           ) : (
             <Chip key={o} label={label(o)} onPress={() => choose(o)} disabled={locked} state={state} />
@@ -167,7 +167,7 @@ function TypedItem({ item, locked, onResult }: ItemProps) {
       header = (
         <>
           <Instruction>Write it in Turkish</Instruction>
-          {item.images?.slice(0, 1).map((id) => <Picture key={id} id={id} size={56} />)}
+          {item.images?.slice(0, 1).map((id) => <Picture key={id} id={id} size={80} />)}
           <Big>{`“${item.prompt}”`}</Big>
         </>
       );
@@ -177,7 +177,7 @@ function TypedItem({ item, locked, onResult }: ItemProps) {
       header = (
         <>
           <Instruction>Answer the question</Instruction>
-          {item.images?.map((id) => <Picture key={id} id={id} size={56} />)}
+          {item.images?.map((id) => <Picture key={id} id={id} size={88} />)}
           <View style={styles.rowCenter}>
             <SpeakButton audio={audioFor(q.id)} />
             <Big>{q.tr}</Big>
@@ -288,7 +288,7 @@ function DialogueItem({ item, locked, onResult }: ItemProps) {
   return (
     <View style={styles.gap}>
       <Instruction>Complete the dialogue</Instruction>
-      {item.images?.map((id) => <Picture key={id} id={id} size={48} />)}
+      {item.images?.map((id) => <Picture key={id} id={id} size={72} />)}
       {item.turns!.map((t, i) => (
         <View key={i} style={[styles.bubble, t.speaker === 'B' && styles.bubbleB]}>
           <Text style={styles.speaker}>{t.speaker}</Text>

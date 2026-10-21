@@ -6,7 +6,7 @@
 - { id: w.okul, lemma: okul, pos: noun, gloss: [school], audio: aud.ll.okul }
 - { id: w.kitap, lemma: kitap, pos: noun, gloss: [book], flags: [soft], images: [img.openmoji.book], audio: aud.ll.kitap }
 - { id: w.su, lemma: su, pos: noun, gloss: [water], flags: [irr], forms: { acc: suyu, gen: suyun, poss3: suyu } }
-- { id: w.masa, lemma: masa, pos: noun, gloss: [table], images: [img.tbd.table], audio: aud.ll.masa }
+- { id: w.masa, lemma: masa, pos: noun, gloss: [table], images: [img.own.table], audio: aud.ll.masa }
 - { id: w.kedi, lemma: kedi, pos: noun, gloss: [cat], images: [img.openmoji.cat], audio: aud.ll.kedi }
 
 # --- function words (L3, L7, L8, L9) ---
@@ -47,9 +47,9 @@
 - { id: w.bahçe, lemma: bahçe, pos: noun, gloss: [garden] }
 - { id: w.balkon, lemma: balkon, pos: noun, gloss: [balcony] }
 - { id: w.yatak, lemma: yatak, pos: noun, gloss: [bed], flags: [soft], images: [img.openmoji.bed] }
-- { id: w.dolap, lemma: dolap, pos: noun, gloss: [cupboard, wardrobe], flags: [soft], images: [img.tbd.cupboard] }
+- { id: w.dolap, lemma: dolap, pos: noun, gloss: [cupboard, wardrobe], flags: [soft], images: [img.own.cupboard] }
 - { id: w.kanepe, lemma: kanepe, pos: noun, gloss: [sofa, couch], images: [img.openmoji.sofa] }
-- { id: w.lamba, lemma: lamba, pos: noun, gloss: [lamp], images: [img.tbd.lamp] }
+- { id: w.lamba, lemma: lamba, pos: noun, gloss: [lamp], images: [img.own.lamp] }
 - { id: w.halı, lemma: halı, pos: noun, gloss: [carpet, rug] }
 - { id: w.buzdolabı, lemma: buzdolabı, pos: noun, gloss: [fridge], flags: [compound], forms: { pl: buzdolapları } }
 - { id: w.ayna, lemma: ayna, pos: noun, gloss: [mirror] }

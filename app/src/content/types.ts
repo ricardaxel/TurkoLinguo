@@ -113,6 +113,12 @@ export interface Lesson {
   };
 }
 
+/** How a composite image arranges its parts (first item = the object, second = where it is). */
+export interface Compose {
+  layout: 'on_top' | 'in' | 'at' | 'row' | 'panels';
+  items: (string | Compose)[];
+}
+
 export interface Asset {
   id: string;
   kind: 'image' | 'audio';
@@ -121,6 +127,7 @@ export interface Asset {
   license: string;
   status: 'planned' | 'ready';
   derived_from?: string[];
+  compose?: Compose;
   text?: string;
   notes?: string;
 }

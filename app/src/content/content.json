@@ -2409,7 +2409,7 @@
     "table"
    ],
    "images": [
-    "img.tbd.table"
+    "img.own.table"
    ],
    "audio": "aud.ll.masa"
   },
@@ -2674,7 +2674,7 @@
     "soft"
    ],
    "images": [
-    "img.tbd.cupboard"
+    "img.own.cupboard"
    ]
   },
   "w.kanepe": {
@@ -2697,7 +2697,7 @@
     "lamp"
    ],
    "images": [
-    "img.tbd.lamp"
+    "img.own.lamp"
    ]
   },
   "w.halı": {
@@ -5839,27 +5839,32 @@
    "license": "CC-BY-SA-4.0",
    "status": "planned"
   },
-  "img.tbd.table": {
-   "id": "img.tbd.table",
+  "img.own.table": {
+   "id": "img.own.table",
    "kind": "image",
-   "source": "tbd",
-   "license": "CC0-1.0",
-   "status": "planned",
-   "notes": "No Unicode emoji for 'table'. Look for a CC0 / CC BY icon."
+   "file": "app/src/ui/icons.tsx",
+   "source": "own",
+   "author": "TurkoLinguo",
+   "license": "OWN",
+   "status": "ready"
   },
-  "img.tbd.cupboard": {
-   "id": "img.tbd.cupboard",
+  "img.own.cupboard": {
+   "id": "img.own.cupboard",
    "kind": "image",
-   "source": "tbd",
-   "license": "CC0-1.0",
-   "status": "planned"
+   "file": "app/src/ui/icons.tsx",
+   "source": "own",
+   "author": "TurkoLinguo",
+   "license": "OWN",
+   "status": "ready"
   },
-  "img.tbd.lamp": {
-   "id": "img.tbd.lamp",
+  "img.own.lamp": {
+   "id": "img.own.lamp",
    "kind": "image",
-   "source": "tbd",
-   "license": "CC0-1.0",
-   "status": "planned"
+   "file": "app/src/ui/icons.tsx",
+   "source": "own",
+   "author": "TurkoLinguo",
+   "license": "OWN",
+   "status": "ready"
   },
   "img.own.room_scene": {
    "id": "img.own.room_scene",
@@ -5872,11 +5877,38 @@
     "img.openmoji.cat",
     "img.openmoji.sofa",
     "img.openmoji.book",
-    "img.tbd.table",
+    "img.own.table",
     "img.openmoji.phone",
     "img.openmoji.bag",
-    "img.tbd.lamp"
+    "img.own.lamp"
    ],
+   "compose": {
+    "layout": "row",
+    "items": [
+     {
+      "layout": "on_top",
+      "items": [
+       "img.openmoji.cat",
+       "img.openmoji.sofa"
+      ]
+     },
+     {
+      "layout": "on_top",
+      "items": [
+       "img.openmoji.book",
+       "img.own.table"
+      ]
+     },
+     {
+      "layout": "in",
+      "items": [
+       "img.openmoji.phone",
+       "img.openmoji.bag"
+      ]
+     },
+     "img.own.lamp"
+    ]
+   },
    "notes": "Room: cat on sofa, book on table, phone in bag, lamp."
   },
   "img.own.cat_on_table": {
@@ -5888,8 +5920,15 @@
    "modified": true,
    "derived_from": [
     "img.openmoji.cat",
-    "img.tbd.table"
-   ]
+    "img.own.table"
+   ],
+   "compose": {
+    "layout": "on_top",
+    "items": [
+     "img.openmoji.cat",
+     "img.own.table"
+    ]
+   }
   },
   "img.own.phone_in_bag": {
    "id": "img.own.phone_in_bag",
@@ -5901,7 +5940,14 @@
    "derived_from": [
     "img.openmoji.phone",
     "img.openmoji.bag"
-   ]
+   ],
+   "compose": {
+    "layout": "in",
+    "items": [
+     "img.openmoji.phone",
+     "img.openmoji.bag"
+    ]
+   }
   },
   "img.own.phone_on_sofa": {
    "id": "img.own.phone_on_sofa",
@@ -5913,7 +5959,14 @@
    "derived_from": [
     "img.openmoji.phone",
     "img.openmoji.sofa"
-   ]
+   ],
+   "compose": {
+    "layout": "on_top",
+    "items": [
+     "img.openmoji.phone",
+     "img.openmoji.sofa"
+    ]
+   }
   },
   "img.own.phone_on_table": {
    "id": "img.own.phone_on_table",
@@ -5924,8 +5977,15 @@
    "modified": true,
    "derived_from": [
     "img.openmoji.phone",
-    "img.tbd.table"
-   ]
+    "img.own.table"
+   ],
+   "compose": {
+    "layout": "on_top",
+    "items": [
+     "img.openmoji.phone",
+     "img.own.table"
+    ]
+   }
   },
   "img.own.book_on_bed": {
    "id": "img.own.book_on_bed",
@@ -5937,7 +5997,14 @@
    "derived_from": [
     "img.openmoji.book",
     "img.openmoji.bed"
-   ]
+   ],
+   "compose": {
+    "layout": "on_top",
+    "items": [
+     "img.openmoji.book",
+     "img.openmoji.bed"
+    ]
+   }
   },
   "img.own.vowel_chart": {
    "id": "img.own.vowel_chart",
@@ -6341,6 +6408,37 @@
    "license": "CC-BY-SA-4.0",
    "status": "planned"
   },
+  "img.openmoji.man": {
+   "id": "img.openmoji.man",
+   "kind": "image",
+   "file": "images/openmoji/1F468.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F468/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.woman": {
+   "id": "img.openmoji.woman",
+   "kind": "image",
+   "file": "images/openmoji/1F469.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F469/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned"
+  },
+  "img.openmoji.tree": {
+   "id": "img.openmoji.tree",
+   "kind": "image",
+   "file": "images/openmoji/1F333.svg",
+   "source": "openmoji",
+   "source_url": "https://openmoji.org/library/emoji-1F333/",
+   "author": "OpenMoji",
+   "license": "CC-BY-SA-4.0",
+   "status": "planned",
+   "notes": "Stands for 'garden' in composites."
+  },
   "img.own.person_in_park": {
    "id": "img.own.person_in_park",
    "kind": "image",
@@ -6351,7 +6449,14 @@
    "derived_from": [
     "img.openmoji.person",
     "img.openmoji.park"
-   ]
+   ],
+   "compose": {
+    "layout": "at",
+    "items": [
+     "img.openmoji.person",
+     "img.openmoji.park"
+    ]
+   }
   },
   "img.own.person_at_home": {
    "id": "img.own.person_at_home",
@@ -6363,7 +6468,14 @@
    "derived_from": [
     "img.openmoji.person",
     "img.openmoji.house"
-   ]
+   ],
+   "compose": {
+    "layout": "at",
+    "items": [
+     "img.openmoji.person",
+     "img.openmoji.house"
+    ]
+   }
   },
   "img.own.dog_and_cat_in_garden": {
    "id": "img.own.dog_and_cat_in_garden",
@@ -6374,8 +6486,22 @@
    "modified": true,
    "derived_from": [
     "img.openmoji.dog",
-    "img.openmoji.cat"
+    "img.openmoji.cat",
+    "img.openmoji.tree"
    ],
+   "compose": {
+    "layout": "at",
+    "items": [
+     {
+      "layout": "row",
+      "items": [
+       "img.openmoji.dog",
+       "img.openmoji.cat"
+      ]
+     },
+     "img.openmoji.tree"
+    ]
+   },
    "notes": "Dog and cat together in a garden (L13)."
   },
   "img.own.pen_and_book_in_bag": {
@@ -6389,7 +6515,20 @@
     "img.openmoji.pen",
     "img.openmoji.book",
     "img.openmoji.bag"
-   ]
+   ],
+   "compose": {
+    "layout": "in",
+    "items": [
+     {
+      "layout": "row",
+      "items": [
+       "img.openmoji.pen",
+       "img.openmoji.book"
+      ]
+     },
+     "img.openmoji.bag"
+    ]
+   }
   },
   "img.own.ali_home_ayse_school": {
    "id": "img.own.ali_home_ayse_school",
@@ -6399,10 +6538,30 @@
    "status": "planned",
    "modified": true,
    "derived_from": [
-    "img.openmoji.person",
+    "img.openmoji.man",
+    "img.openmoji.woman",
     "img.openmoji.house",
     "img.openmoji.school"
    ],
+   "compose": {
+    "layout": "panels",
+    "items": [
+     {
+      "layout": "at",
+      "items": [
+       "img.openmoji.man",
+       "img.openmoji.house"
+      ]
+     },
+     {
+      "layout": "at",
+      "items": [
+       "img.openmoji.woman",
+       "img.openmoji.school"
+      ]
+     }
+    ]
+   },
    "notes": "Two panels: Ali at home | Ayşe at school (L13)."
   },
   "aud.own.L11_worked_examples": {

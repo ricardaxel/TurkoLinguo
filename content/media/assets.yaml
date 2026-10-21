@@ -12,25 +12,33 @@
 - { id: img.openmoji.bed,   kind: image, file: images/openmoji/1F6CF.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F6CF/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.sofa,  kind: image, file: images/openmoji/1F6CB.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F6CB/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 
-# ---------- Images: no standard emoji, to be found on Wikimedia Commons / Openverse ----------
-- { id: img.tbd.table,    kind: image, source: tbd, license: CC0-1.0, status: planned, notes: "No Unicode emoji for 'table'. Look for a CC0 / CC BY icon." }
-- { id: img.tbd.cupboard, kind: image, source: tbd, license: CC0-1.0, status: planned }
-- { id: img.tbd.lamp,     kind: image, source: tbd, license: CC0-1.0, status: planned }
+# ---------- Images: our own icons (no Unicode emoji exists), drawn as SVG in app/src/ui/icons.tsx ----------
+- { id: img.own.table,    kind: image, file: app/src/ui/icons.tsx, source: own, author: TurkoLinguo, license: OWN, status: ready }
+- { id: img.own.cupboard, kind: image, file: app/src/ui/icons.tsx, source: own, author: TurkoLinguo, license: OWN, status: ready }
+- { id: img.own.lamp,     kind: image, file: app/src/ui/icons.tsx, source: own, author: TurkoLinguo, license: OWN, status: ready }
 
 # ---------- Images: our composites (adaptations of CC BY-SA icons → CC BY-SA) ----------
+# `compose` says how the parts are arranged; `derived_from` lists every part for the Credits screen.
 - id: img.own.room_scene
   kind: image
   source: own
   license: CC-BY-SA-4.0
   status: planned
   modified: true
-  derived_from: [img.openmoji.cat, img.openmoji.sofa, img.openmoji.book, img.tbd.table, img.openmoji.phone, img.openmoji.bag, img.tbd.lamp]
+  derived_from: [img.openmoji.cat, img.openmoji.sofa, img.openmoji.book, img.own.table, img.openmoji.phone, img.openmoji.bag, img.own.lamp]
+  compose:
+    layout: row
+    items:
+      - { layout: on_top, items: [img.openmoji.cat, img.openmoji.sofa] }
+      - { layout: on_top, items: [img.openmoji.book, img.own.table] }
+      - { layout: in, items: [img.openmoji.phone, img.openmoji.bag] }
+      - img.own.lamp
   notes: "Room: cat on sofa, book on table, phone in bag, lamp."
-- { id: img.own.cat_on_table,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.cat, img.tbd.table] }
-- { id: img.own.phone_in_bag,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.phone, img.openmoji.bag] }
-- { id: img.own.phone_on_sofa,  kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.phone, img.openmoji.sofa] }
-- { id: img.own.phone_on_table, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.phone, img.tbd.table] }
-- { id: img.own.book_on_bed,    kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.book, img.openmoji.bed] }
+- { id: img.own.cat_on_table,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.cat, img.own.table], compose: { layout: on_top, items: [img.openmoji.cat, img.own.table] } }
+- { id: img.own.phone_in_bag,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.phone, img.openmoji.bag], compose: { layout: in, items: [img.openmoji.phone, img.openmoji.bag] } }
+- { id: img.own.phone_on_sofa,  kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.phone, img.openmoji.sofa], compose: { layout: on_top, items: [img.openmoji.phone, img.openmoji.sofa] } }
+- { id: img.own.phone_on_table, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.phone, img.own.table], compose: { layout: on_top, items: [img.openmoji.phone, img.own.table] } }
+- { id: img.own.book_on_bed,    kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.book, img.openmoji.bed], compose: { layout: on_top, items: [img.openmoji.book, img.openmoji.bed] } }
 - { id: img.own.vowel_chart,    kind: image, source: own, license: OWN, status: planned, notes: "2×2 vowel chart, also an interactive component (L2)." }
 
 # ---------- Audio: Lingua Libre words (licence to confirm per file, usually CC BY-SA 4.0) ----------
@@ -85,11 +93,41 @@
 - { id: img.openmoji.sheep, kind: image, file: images/openmoji/1F411.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F411/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.chicken, kind: image, file: images/openmoji/1F414.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F414/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 # Images: our composites (adaptations of CC BY-SA icons → CC BY-SA)
-- { id: img.own.person_in_park,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.person, img.openmoji.park] }
-- { id: img.own.person_at_home,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.person, img.openmoji.house] }
-- { id: img.own.dog_and_cat_in_garden, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.dog, img.openmoji.cat], notes: "Dog and cat together in a garden (L13)." }
-- { id: img.own.pen_and_book_in_bag,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.pen, img.openmoji.book, img.openmoji.bag] }
-- { id: img.own.ali_home_ayse_school,  kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.person, img.openmoji.house, img.openmoji.school], notes: "Two panels: Ali at home | Ayşe at school (L13)." }
+- { id: img.openmoji.man, kind: image, file: images/openmoji/1F468.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F468/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.woman, kind: image, file: images/openmoji/1F469.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F469/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- { id: img.openmoji.tree, kind: image, file: images/openmoji/1F333.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F333/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned, notes: "Stands for 'garden' in composites." }
+- { id: img.own.person_in_park,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.person, img.openmoji.park], compose: { layout: at, items: [img.openmoji.person, img.openmoji.park] } }
+- { id: img.own.person_at_home,   kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.person, img.openmoji.house], compose: { layout: at, items: [img.openmoji.person, img.openmoji.house] } }
+- id: img.own.dog_and_cat_in_garden
+  kind: image
+  source: own
+  license: CC-BY-SA-4.0
+  status: planned
+  modified: true
+  derived_from: [img.openmoji.dog, img.openmoji.cat, img.openmoji.tree]
+  compose: { layout: at, items: [{ layout: row, items: [img.openmoji.dog, img.openmoji.cat] }, img.openmoji.tree] }
+  notes: "Dog and cat together in a garden (L13)."
+- id: img.own.pen_and_book_in_bag
+  kind: image
+  source: own
+  license: CC-BY-SA-4.0
+  status: planned
+  modified: true
+  derived_from: [img.openmoji.pen, img.openmoji.book, img.openmoji.bag]
+  compose: { layout: in, items: [{ layout: row, items: [img.openmoji.pen, img.openmoji.book] }, img.openmoji.bag] }
+- id: img.own.ali_home_ayse_school
+  kind: image
+  source: own
+  license: CC-BY-SA-4.0
+  status: planned
+  modified: true
+  derived_from: [img.openmoji.man, img.openmoji.woman, img.openmoji.house, img.openmoji.school]
+  compose:
+    layout: panels
+    items:
+      - { layout: at, items: [img.openmoji.man, img.openmoji.house] }
+      - { layout: at, items: [img.openmoji.woman, img.openmoji.school] }
+  notes: "Two panels: Ali at home | Ayşe at school (L13)."
 # Audio: our recording session
 - { id: aud.own.L11_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "parktayız, hastanedesin, Ankara'dayım" }
 - { id: aud.own.s.L11.001, kind: audio, source: own, license: OWN, status: planned, text: "Neredesin?" }
