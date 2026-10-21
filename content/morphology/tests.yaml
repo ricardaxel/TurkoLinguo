@@ -93,46 +93,45 @@
 - { word: w.soğuk,    suffixes: [sfx.cop_past], expected: soğuktu,  note: "no softening before a consonant" }
 
 # PENDING (verbs): the engine inflects `lemma` (gelmek), not the verb's `stem` (gel), and has no verb
-# stem changes yet. These need `pending:` + an it.failing block in engine.test.ts, which currently runs
-# every case; they are kept as comments so `npx jest` stays green. Uncomment once that block exists.
+# stem changes yet. engine.test.ts will skip `pending:` cases once that lands on master.
 # Past -DI + person (L30–L31)
-#- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_1sg], expected: geldim,   pending: "verb stem" }
-#- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_1pl], expected: geldik,   pending: "verb stem" }
-#- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_2pl], expected: geldiniz, pending: "verb stem" }
-#- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_3pl], expected: geldiler, pending: "verb stem" }
-#- { word: w.okumak,  suffixes: [sfx.past, sfx.kpers_1sg], expected: okudum,   pending: "verb stem" }
-#- { word: w.görmek,  suffixes: [sfx.past, sfx.kpers_1sg], expected: gördüm,   pending: "verb stem" }
-#- { word: w.yapmak,  suffixes: [sfx.past, sfx.kpers_1sg], expected: yaptım,   pending: "verb stem" }
-#- { word: w.içmek,   suffixes: [sfx.past, sfx.kpers_1sg], expected: içtim,    pending: "verb stem" }
-#- { word: w.gitmek,  suffixes: [sfx.past, sfx.kpers_1sg], expected: gittim,   pending: "verb stem; t stays before a consonant" }
-#- { word: w.yemek,   suffixes: [sfx.past, sfx.kpers_1sg], expected: yedim,    pending: "verb stem; regular in the past" }
-#- { word: w.demek,   suffixes: [sfx.past, sfx.kpers_1sg], expected: dedim,    pending: "verb stem; regular in the past" }
-#- { word: w.gelmek,  suffixes: [sfx.neg, sfx.past, sfx.kpers_1sg], expected: gelmedim, pending: "verb stem" }
-#- { word: w.gitmek,  suffixes: [sfx.neg, sfx.past, sfx.kpers_1sg], expected: gitmedim, pending: "verb stem" }
-#- { word: w.okumak,  suffixes: [sfx.neg, sfx.past, sfx.kpers_1sg], expected: okumadım, pending: "verb stem" }
-#- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_2sg, sfx.q], expected: geldin mi, pending: "verb stem" }
+- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_1sg], expected: geldim,   pending: "verb stem" }
+- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_1pl], expected: geldik,   pending: "verb stem" }
+- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_2pl], expected: geldiniz, pending: "verb stem" }
+- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_3pl], expected: geldiler, pending: "verb stem" }
+- { word: w.okumak,  suffixes: [sfx.past, sfx.kpers_1sg], expected: okudum,   pending: "verb stem" }
+- { word: w.görmek,  suffixes: [sfx.past, sfx.kpers_1sg], expected: gördüm,   pending: "verb stem" }
+- { word: w.yapmak,  suffixes: [sfx.past, sfx.kpers_1sg], expected: yaptım,   pending: "verb stem" }
+- { word: w.içmek,   suffixes: [sfx.past, sfx.kpers_1sg], expected: içtim,    pending: "verb stem" }
+- { word: w.gitmek,  suffixes: [sfx.past, sfx.kpers_1sg], expected: gittim,   pending: "verb stem; t stays before a consonant" }
+- { word: w.yemek,   suffixes: [sfx.past, sfx.kpers_1sg], expected: yedim,    pending: "verb stem; regular in the past" }
+- { word: w.demek,   suffixes: [sfx.past, sfx.kpers_1sg], expected: dedim,    pending: "verb stem; regular in the past" }
+- { word: w.gelmek,  suffixes: [sfx.neg, sfx.past, sfx.kpers_1sg], expected: gelmedim, pending: "verb stem" }
+- { word: w.gitmek,  suffixes: [sfx.neg, sfx.past, sfx.kpers_1sg], expected: gitmedim, pending: "verb stem" }
+- { word: w.okumak,  suffixes: [sfx.neg, sfx.past, sfx.kpers_1sg], expected: okumadım, pending: "verb stem" }
+- { word: w.gelmek,  suffixes: [sfx.past, sfx.kpers_2sg, sfx.q], expected: geldin mi, pending: "verb stem" }
 # Future -(y)AcAK (L33): k → ğ before a vowel, buffer y, stem changes
-#- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_1sg], expected: geleceğim,    pending: "verb stem" }
-#- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_1pl], expected: geleceğiz,    pending: "verb stem" }
-#- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_2sg], expected: geleceksin,   pending: "verb stem; k stays before a consonant" }
-#- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_2pl], expected: geleceksiniz, pending: "verb stem" }
-#- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_3pl], expected: gelecekler,   pending: "verb stem" }
-#- { word: w.yapmak,   suffixes: [sfx.fut, sfx.cop_1sg], expected: yapacağım,    pending: "verb stem" }
-#- { word: w.okumak,   suffixes: [sfx.fut, sfx.cop_1sg], expected: okuyacağım,   pending: "verb stem; buffer y" }
-#- { word: w.başlamak, suffixes: [sfx.fut, sfx.cop_1sg], expected: başlayacağım, pending: "verb stem; buffer y, no raising in spelling" }
-#- { word: w.beklemek, suffixes: [sfx.fut, sfx.cop_1sg], expected: bekleyeceğim, pending: "verb stem; buffer y, no raising in spelling" }
-#- { word: w.gitmek,   suffixes: [sfx.fut, sfx.cop_1sg], expected: gideceğim,    pending: "verb stem; t → d before a vowel" }
-#- { word: w.etmek,    suffixes: [sfx.fut, sfx.cop_1sg], expected: edeceğim,     pending: "verb stem; t → d before a vowel" }
-#- { word: w.yemek,    suffixes: [sfx.fut, sfx.cop_1sg], expected: yiyeceğim,    pending: "verb stem; ye → yi" }
-#- { word: w.demek,    suffixes: [sfx.fut, sfx.cop_1sg], expected: diyeceğim,    pending: "verb stem; de → di" }
-#- { word: w.gelmek,   suffixes: [sfx.neg, sfx.fut, sfx.cop_1sg], expected: gelmeyeceğim, pending: "verb stem" }
-#- { word: w.gelmek,   suffixes: [sfx.fut, sfx.q, sfx.cop_2sg], expected: gelecek misin, pending: "verb stem; person ending on the separate mI" }
+- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_1sg], expected: geleceğim,    pending: "verb stem" }
+- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_1pl], expected: geleceğiz,    pending: "verb stem" }
+- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_2sg], expected: geleceksin,   pending: "verb stem; k stays before a consonant" }
+- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_2pl], expected: geleceksiniz, pending: "verb stem" }
+- { word: w.gelmek,   suffixes: [sfx.fut, sfx.cop_3pl], expected: gelecekler,   pending: "verb stem" }
+- { word: w.yapmak,   suffixes: [sfx.fut, sfx.cop_1sg], expected: yapacağım,    pending: "verb stem" }
+- { word: w.okumak,   suffixes: [sfx.fut, sfx.cop_1sg], expected: okuyacağım,   pending: "verb stem; buffer y" }
+- { word: w.başlamak, suffixes: [sfx.fut, sfx.cop_1sg], expected: başlayacağım, pending: "verb stem; buffer y, no raising in spelling" }
+- { word: w.beklemek, suffixes: [sfx.fut, sfx.cop_1sg], expected: bekleyeceğim, pending: "verb stem; buffer y, no raising in spelling" }
+- { word: w.gitmek,   suffixes: [sfx.fut, sfx.cop_1sg], expected: gideceğim,    pending: "verb stem; t → d before a vowel" }
+- { word: w.etmek,    suffixes: [sfx.fut, sfx.cop_1sg], expected: edeceğim,     pending: "verb stem; t → d before a vowel" }
+- { word: w.yemek,    suffixes: [sfx.fut, sfx.cop_1sg], expected: yiyeceğim,    pending: "verb stem; ye → yi" }
+- { word: w.demek,    suffixes: [sfx.fut, sfx.cop_1sg], expected: diyeceğim,    pending: "verb stem; de → di" }
+- { word: w.gelmek,   suffixes: [sfx.neg, sfx.fut, sfx.cop_1sg], expected: gelmeyeceğim, pending: "verb stem" }
+- { word: w.gelmek,   suffixes: [sfx.fut, sfx.q, sfx.cop_2sg], expected: gelecek misin, pending: "verb stem; person ending on the separate mI" }
 # Infinitive and verbal noun -mA + possessive (L34–L35)
-#- { word: w.gitmek,   suffixes: [sfx.inf], expected: gitmek, pending: "verb stem" }
-#- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_1sg], expected: gitmem,    pending: "verb stem" }
-#- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_2sg], expected: gitmen,    pending: "verb stem" }
-#- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_3sg], expected: gitmesi,   pending: "verb stem" }
-#- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_1pl], expected: gitmemiz,  pending: "verb stem" }
-#- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_2pl], expected: gitmeniz,  pending: "verb stem" }
-#- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_3pl], expected: gitmeleri, pending: "verb stem" }
-#- { word: w.kalkmak,  suffixes: [sfx.vn, sfx.poss_1pl], expected: kalkmamız, pending: "verb stem" }
+- { word: w.gitmek,   suffixes: [sfx.inf], expected: gitmek, pending: "verb stem" }
+- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_1sg], expected: gitmem,    pending: "verb stem" }
+- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_2sg], expected: gitmen,    pending: "verb stem" }
+- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_3sg], expected: gitmesi,   pending: "verb stem" }
+- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_1pl], expected: gitmemiz,  pending: "verb stem" }
+- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_2pl], expected: gitmeniz,  pending: "verb stem" }
+- { word: w.gitmek,   suffixes: [sfx.vn, sfx.poss_3pl], expected: gitmeleri, pending: "verb stem" }
+- { word: w.kalkmak,  suffixes: [sfx.vn, sfx.poss_1pl], expected: kalkmamız, pending: "verb stem" }
