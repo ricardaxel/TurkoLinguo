@@ -2,7 +2,7 @@
 
 - id: s.T19.001
   tr: Akşam müzik dinliyorum.
-  en: ["I listen to music in the evening.", "In the evening I listen to music.", "I'm listening to music this evening."]
+  en: ["I listen to music in the evening.", "In the evening I listen to music."]
   words: [w.akşam, w.müzik, w.dinlemek]
   grammar: [g.L15.prog, g.L26.time]
   source: { kind: original }

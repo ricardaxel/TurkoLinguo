@@ -168,9 +168,9 @@ Sentences are shared, so a sentence recorded once can be used in a lesson, a pac
 ```yaml
 - id: w.dolap
   lemma: dolap
-  pos: noun          # noun verb adj adv pron num postp conj interj particle name phrase
+  pos: noun          # noun verb adj det adv pron num postp conj interj particle name phrase  (det: her, geçen, gelecek)
   gloss: [cupboard, wardrobe]
-  flags: [soft]      # soft nosoft drop front compound double irr
+  flags: [soft]      # soft nosoft drop front compound double irr nodrill  (nodrill: never used in generated review drills)
   forms: {}          # explicit irregular forms, e.g. su: { acc: suyu, gen: suyun }
   images: [img.tbd.cupboard]
   audio: aud.ll.dolap

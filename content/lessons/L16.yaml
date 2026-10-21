@@ -99,6 +99,7 @@ sessions:
       - id: L16.learn.06
         type: listen_choose
         grammar: [g.L16.prog_neg_q, g.L15.prog]
+        pattern: g.L16.prog_neg_q.stress
         sentence: s.L16.005
         options: ["No, I'm not coming.", "Yes, I'm coming.", "Are you coming?"]
         answer: "No, I'm not coming."

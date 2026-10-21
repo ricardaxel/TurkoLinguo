@@ -58,7 +58,7 @@ sessions:
         title: "Questions and 'no need'"
         body: |
           - *Ne yapmam lazım?* "What do I need to do?" · *Ne zaman gelmem lazım?*
-          - **Not necessary:** *Gelmen **lazım değil**.* or *Gelmen **gerekmiyor**.* "You don't need to come."
+          - **Not necessary:** *Gelmen **gerekmiyor**.* or *Gelmene **gerek yok**.* "You don't need to come." In casual speech you will also hear *Gelmen lazım değil*.
             (*gerekmek* "to be necessary" is a verb, so it takes -mIyor.)
         sentences: [s.L35.004, s.L35.011, s.L35.010]
         audio: [aud.own.s.L35.004, aud.own.s.L35.011, aud.own.s.L35.010]
@@ -157,7 +157,7 @@ sessions:
         prompt: "We need to go."
         options: [s.L35.021, s.L35.022]
         answer: s.L35.021
-      - { id: L35.practise.13, type: translate_to_tr, grammar: [g.L35.lazim, g.L6.degil], pattern: g.L35.lazim.negative, sentence: s.L35.011, typed: true, answers: ["Gelmen gerekmiyor.", "Gelmene gerek yok."] }
+      - { id: L35.practise.13, type: translate_to_tr, grammar: [g.L35.lazim, g.L16.prog_neg_q], pattern: g.L35.lazim.negative, sentence: s.L35.011, typed: true, answers: ["Gelmene gerek yok.", "Gelmen lazım değil."] }
       - id: L35.practise.14
         type: mini_dialogue
         grammar: [g.L35.lazim, g.L17.dat]

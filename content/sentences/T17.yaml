@@ -26,7 +26,7 @@
 
 - id: s.T17.004
   tr: Sabah kahve içiyorum.
-  en: ["I drink coffee in the morning.", "In the morning I drink coffee.", "I'm drinking coffee this morning."]
+  en: ["I drink coffee in the morning.", "In the morning I drink coffee."]
   words: [w.sabah, w.kahve, w.içmek]
   grammar: [g.L15.prog]
   source: { kind: original }

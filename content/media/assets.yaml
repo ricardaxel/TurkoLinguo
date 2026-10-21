@@ -210,7 +210,7 @@
 - { id: img.openmoji.eyes, kind: image, file: images/openmoji/1F440.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F440/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.alarm_clock, kind: image, file: images/openmoji/23F0.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-23F0/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.shower, kind: image, file: images/openmoji/1F6BF.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F6BF/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.shirt, kind: image, file: images/openmoji/1F455.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F455/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- {id: img.openmoji.shirt, kind: image, file: images/openmoji/1F454.svg, source: openmoji, source_url: 'https://openmoji.org/library/emoji-1F454/', author: OpenMoji, license: CC-BY-SA-4.0, status: planned}
 - { id: img.openmoji.cooking, kind: image, file: images/openmoji/1F373.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F373/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.briefcase, kind: image, file: images/openmoji/1F4BC.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F4BC/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.sleeping_face, kind: image, file: images/openmoji/1F634.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F634/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
@@ -389,16 +389,12 @@
 - { id: aud.own.s.L16.021, kind: audio, source: own, license: OWN, status: planned, text: "Gitmiyoruz." }
 # ---------- L19–L24, T15, T16, T18 ----------
 # Images: OpenMoji (CC BY-SA 4.0)
-- { id: img.openmoji.car, kind: image, file: images/openmoji/1F697.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F697/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.coffee, kind: image, file: images/openmoji/2615.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-2615/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.bus_stop, kind: image, file: images/openmoji/1F68F.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F68F/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.university, kind: image, file: images/openmoji/1F3DB.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3DB/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.head_bandage, kind: image, file: images/openmoji/1F915.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F915/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.child, kind: image, file: images/openmoji/1F9D2.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F9D2/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.shirt, kind: image, file: images/openmoji/1F454.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F454/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.tshirt, kind: image, file: images/openmoji/1F455.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F455/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.dress, kind: image, file: images/openmoji/1F457.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F457/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.coat, kind: image, file: images/openmoji/1F9E5.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F9E5/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
+- {id: img.openmoji.coat, kind: image, file: images/openmoji/1F9E5.svg, source: openmoji, source_url: 'https://openmoji.org/library/emoji-1F9E5/', author: OpenMoji, license: CC-BY-SA-4.0, status: planned, notes: Stands for 'ceket' (jacket).}
 - { id: img.openmoji.shoe, kind: image, file: images/openmoji/1F45E.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F45E/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.socks, kind: image, file: images/openmoji/1F9E6.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F9E6/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.hat, kind: image, file: images/openmoji/1F452.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F452/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
@@ -580,17 +576,12 @@
 - { id: aud.own.s.T18.004, kind: audio, source: own, license: OWN, status: planned, text: "Ali'nin kolu ağrıyor." }
 # ---------- L25–L29, T17, T19 ----------
 # Images: OpenMoji (CC BY-SA 4.0)
-- { id: img.openmoji.apple, kind: image, file: images/openmoji/1F34E.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F34E/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.coat, kind: image, file: images/openmoji/1F9E5.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F9E5/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned, notes: "Stands for 'ceket' (jacket)." }
 - { id: img.openmoji.clock_three, kind: image, file: images/openmoji/1F552.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F552/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.clock_three_thirty, kind: image, file: images/openmoji/1F55E.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F55E/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.clock_seven, kind: image, file: images/openmoji/1F556.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F556/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.clock_eight_thirty, kind: image, file: images/openmoji/1F563.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F563/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.clock_nine, kind: image, file: images/openmoji/1F558.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F558/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.clock_twelve_thirty, kind: image, file: images/openmoji/1F567.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F567/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.taxi, kind: image, file: images/openmoji/1F695.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F695/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.metro, kind: image, file: images/openmoji/1F687.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F687/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.coffee, kind: image, file: images/openmoji/2615.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-2615/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.tea, kind: image, file: images/openmoji/1F375.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F375/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 # Images: our composites (adaptations of CC BY-SA icons → CC BY-SA)
 - { id: img.own.horse_and_dog, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.horse, img.openmoji.dog], compose: { layout: row, items: [img.openmoji.horse, img.openmoji.dog] }, notes: "Horse drawn clearly bigger than the dog (L29 comparison)." }
@@ -749,8 +740,6 @@
 # ---------- L30–L35, T20, T21 ----------
 # Images: OpenMoji (CC BY-SA 4.0)
 - { id: img.openmoji.film, kind: image, file: images/openmoji/1F3AC.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3AC/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.rice, kind: image, file: images/openmoji/1F35A.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F35A/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
-- { id: img.openmoji.tea, kind: image, file: images/openmoji/1F375.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F375/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.fried_egg, kind: image, file: images/openmoji/1F373.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F373/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.swimmer, kind: image, file: images/openmoji/1F3CA.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3CA/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
 - { id: img.openmoji.sleeping, kind: image, file: images/openmoji/1F634.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F634/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
@@ -895,7 +884,7 @@
 - { id: aud.own.s.L35.008, kind: audio, source: own, license: OWN, status: planned, text: "Beklemeniz gerek." }
 - { id: aud.own.s.L35.009, kind: audio, source: own, license: OWN, status: planned, text: "Gelmeleri lazım." }
 - { id: aud.own.s.L35.010, kind: audio, source: own, license: OWN, status: planned, text: "Gitmen gerekmiyor." }
-- { id: aud.own.s.L35.011, kind: audio, source: own, license: OWN, status: planned, text: "Gelmen lazım değil." }
+- { id: aud.own.s.L35.011, kind: audio, source: own, license: OWN, status: planned, text: "Gelmen gerekmiyor." }
 - { id: aud.own.s.L35.012, kind: audio, source: own, license: OWN, status: planned, text: "Bana su lazım." }
 - { id: aud.own.s.L35.013, kind: audio, source: own, license: OWN, status: planned, text: "Sana ne lazım?" }
 - { id: aud.own.s.L35.014, kind: audio, source: own, license: OWN, status: planned, text: "Bana bir kalem lazım." }

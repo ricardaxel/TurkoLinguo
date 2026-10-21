@@ -93,7 +93,7 @@
 
 - id: s.L15.012
   tr: İstanbul'da oturuyorum.
-  en: ["I live in Istanbul.", "I live in İstanbul.", "I'm sitting in Istanbul."]
+  en: ["I live in Istanbul.", "I live in İstanbul."]
   words: [w.İstanbul, w.oturmak]
   grammar: [g.L5.copula, g.L11.loc_copula, g.L15.prog]
   source: { kind: original }

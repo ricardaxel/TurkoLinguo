@@ -145,7 +145,7 @@
 
 - id: s.L26.018
   tr: Akşam evdeyim.
-  en: ["I'm at home in the evening.", "In the evening I'm at home.", "I'm home this evening."]
+  en: ["I'm at home in the evening.", "In the evening I'm at home."]
   words: [w.akşam, w.ev]
   grammar: [g.L26.time, g.L11.loc_copula]
   source: { kind: original }

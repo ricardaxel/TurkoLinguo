@@ -1,7 +1,7 @@
 // Types for the content bundle produced by scripts/build_content.py.
 // Mirrors schema/content.schema.json (see docs/CONTENT_FORMAT.md).
 
-export type Flag = 'soft' | 'nosoft' | 'drop' | 'front' | 'compound' | 'double' | 'irr';
+export type Flag = 'soft' | 'nosoft' | 'drop' | 'front' | 'compound' | 'double' | 'irr' | 'nodrill';
 
 export interface Word {
   id: string;

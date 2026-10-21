@@ -18,8 +18,8 @@
     "audioId": { "type": "string", "pattern": "^aud\\.[a-z0-9_]+\\.[^\\s]+$" },
     "mediaId": { "anyOf": [ { "$ref": "#/$defs/imageId" }, { "$ref": "#/$defs/audioId" } ] },
     "markdown": { "type": "string", "minLength": 1 },
-    "flag": { "enum": ["soft", "nosoft", "drop", "front", "compound", "double", "irr"] },
-    "pos": { "enum": ["noun", "verb", "adj", "adv", "pron", "num", "postp", "conj", "interj", "particle", "name", "phrase"] },
+    "flag": { "enum": ["soft", "nosoft", "drop", "front", "compound", "double", "irr", "nodrill"] },
+    "pos": { "enum": ["noun", "verb", "adj", "det", "adv", "pron", "num", "postp", "conj", "interj", "particle", "name", "phrase"] },
     "license": { "enum": ["CC0-1.0", "PD", "CC-BY-3.0", "CC-BY-4.0", "CC-BY-SA-3.0", "CC-BY-SA-4.0", "OWN", "TTS"] },
     "sentenceLicense": { "enum": ["CC0-1.0", "CC-BY-2.0-FR", "CC-BY-4.0", "CC-BY-SA-4.0", "OWN"] },
 

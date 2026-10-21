@@ -1,6 +1,8 @@
 // Build a review session from due cards.
 //   pattern card → choose/type the ending on a word the learner knows, drawn fresh each time
-//                  (patterns with a suffix chain, e.g. location + "to be", are always typed)
+//                  (patterns with a suffix chain, e.g. location + "to be", are always typed);
+//                  rule-only patterns (no suffix to generate, e.g. the de/da clitic, verb rules)
+//                  reuse one of the lesson exercises tagged with that pattern
 //   word card    → meaning check (TR → EN, multiple choice) while young, then recall (EN → TR, typed)
 
 import { State } from 'ts-fsrs';
@@ -36,7 +38,12 @@ export function endingVariants(form: string): string[] {
 export function matchesFilter(w: Word, f: Record<string, unknown> = {}): boolean {
   const v = lastVowel(w.lemma);
   if (f.pos && w.pos !== f.pos) return false;
-  if (w.lemma.includes(' ') || (w.flags ?? []).some((x) => x === 'compound' || x === 'irr')) return false;
+  // words flagged nodrill (az, lazım, nereli…) make nonsense drills: never generate with them
+  if ((w.flags ?? []).includes('nodrill')) return false;
+  // compounds and irregular words only when the pattern asks for them explicitly (e.g. L24 compounds)
+  const wanted = Array.isArray(f.flags) ? f.flags : [];
+  if (w.lemma.includes(' ') && !wanted.includes('compound')) return false;
+  if ((w.flags ?? []).some((x) => (x === 'compound' || x === 'irr') && !wanted.includes(x))) return false;
   if (f.last_vowel && (!v || (isFrontVowel(v) ? 'front' : 'back') !== f.last_vowel)) return false;
   if (f.ends_with === 'vowel' && !endsInVowel(w.lemma)) return false;
   if (f.ends_with === 'voiceless' && !endsInVoiceless(w.lemma)) return false;
@@ -59,14 +66,48 @@ function findPattern(id: string): { pattern: Pattern; grammarId: string } | unde
 
 const isYoung = (c: ReviewCard) => c.fsrs.state !== State.Review || c.fsrs.reps < 3;
 
+const chainOf = (p?: Pattern) => p?.suffixes ?? (p?.suffix ? [p.suffix] : []);
+
+let itemsByPattern: Map<string, Item[]> | undefined;
+
+/** Lesson exercises tagged with a review pattern (the fallback for rule-only patterns). */
+export function lessonItemsFor(patternId: string): Item[] {
+  if (!itemsByPattern) {
+    itemsByPattern = new Map();
+    for (const l of Object.values(content.lessons)) {
+      for (const it of [...l.sessions.learn.items, ...l.sessions.practise.items]) {
+        if (it.pattern) itemsByPattern.set(it.pattern, [...(itemsByPattern.get(it.pattern) ?? []), it]);
+      }
+    }
+  }
+  return itemsByPattern.get(patternId) ?? [];
+}
+
+/**
+ * Can this card ever produce an exercise? A card that can't must not count as due:
+ * it would never be rated and would block the review queue forever.
+ */
+export function canReview(card: Pick<ReviewCard, 'id' | 'kind'>, known: Word[] = Object.values(content.lexicon)): boolean {
+  if (card.kind === 'word') return !!content.lexicon[card.id];
+  if (lessonItemsFor(card.id).length) return true;
+  const found = findPattern(card.id);
+  return !!found && chainOf(found.pattern).length > 0 && known.some((w) => matchesFilter(w, found.pattern.word_filter));
+}
+
+/** A lesson exercise for a rule-only pattern, re-labelled for the review session. */
+function authoredItem(card: ReviewCard, rng: Rng): Item | undefined {
+  const pool = lessonItemsFor(card.id);
+  return pool.length ? { ...pick(pool, rng), id: `R.${card.id}` } : undefined;
+}
+
 function patternItem(card: ReviewCard, known: Word[], rng: Rng): Item | undefined {
   const found = findPattern(card.id);
-  const chain = found?.pattern.suffixes ?? (found?.pattern.suffix ? [found.pattern.suffix] : []);
-  if (!found || !chain.length) return undefined;
+  const chain = chainOf(found?.pattern);
+  if (!found || !chain.length) return authoredItem(card, rng);
   const { pattern, grammarId } = found;
   const suffixId = chain[0];
   const candidates = known.filter((w) => matchesFilter(w, pattern.word_filter));
-  if (!candidates.length) return undefined;
+  if (!candidates.length) return authoredItem(card, rng);
   const w = pick(candidates, rng);
   const form = inflect(w, chain, content.suffixes);
   const base = { id: `R.${card.id}`, grammar: [grammarId], pattern: card.id, feedback: `auto:${grammarId}`, base: w.id, images: w.images };

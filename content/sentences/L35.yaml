@@ -84,10 +84,10 @@
   native_required: true        # stress before -mA
 
 - id: s.L35.011
-  tr: Gelmen lazım değil.
+  tr: Gelmen gerekmiyor.
   en: ["You don't need to come.", "You don't have to come."]
-  words: [w.gelmek, w.lazım, w.değil]
-  grammar: [g.L35.lazim, g.L19.poss_sg, g.L6.degil]
+  words: [w.gelmek, w.gerekmek]
+  grammar: [g.L35.lazim, g.L19.poss_sg, g.L16.prog_neg_q]
   source: { kind: original }
   audio: aud.own.s.L35.011
 

@@ -125,6 +125,7 @@ sessions:
       - id: L15.learn.06
         type: listen_choose
         grammar: [g.L15.prog, g.L5.copula]
+        pattern: g.L15.prog.meaning
         sentence: s.L15.008
         options: ["I drink tea every day.", "I'm drinking tea now.", "Drink tea every day!"]
         answer: "I drink tea every day."
