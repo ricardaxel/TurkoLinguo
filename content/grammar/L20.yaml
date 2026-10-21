@@ -1,0 +1,62 @@
+id: g.L20.poss_pl
+title: "Possessives (plural owners): our, your, their"
+suffixes: [sfx.poss_1pl, sfx.poss_2pl, sfx.poss_3pl]
+
+reference: |
+  | | after a consonant | after a vowel |
+  |---|---|---|
+  | our | ev·**imiz**, okul·**umuz** | araba·**mız** |
+  | your (pl. / polite) | ev·**iniz**, okul·**unuz** | araba·**nız** |
+  | their | ev·**leri**, okul·**ları** | araba·**ları** |
+
+  *our* and *your* are *my* and *your* from L19 plus **-Iz**: ev·im → ev·im·**iz**, ev·in → ev·in·**iz**. Both vowels follow 4-way harmony.
+
+  *their* is **-lArI**, the same for every word: ev·**leri**, araba·**ları**. It starts with a consonant, so the word **doesn't** change: *çocuk·ları*, *kitap·ları*.
+
+  **Softening review** (only before a vowel): *kitap → kitab·ımız*, *sokak → sokağ·ımız*, *oğul → oğl·umuz*, *renk → reng·i*.
+
+  **Plural + possessive:** the plural comes first: *kitap·lar·ım* "my books", *arkadaş·lar·ımız* "our friends".
+
+  **Pronouns** for emphasis: *bizim evimiz*, *sizin arabanız*, *onların evi*. With *onların*, people usually use the simple *-(s)I*: **onların evi** "their house".
+
+  ⚠️ **evleri** has three meanings: *their house* (ev·leri), *their houses* and *his / her houses* (ev·ler·i). Context, or a pronoun (*onların*, *onun*), tells them apart.
+
+patterns:
+  - id: g.L20.poss_pl.cons_1pl
+    description: "After a consonant: -ImIz (evimiz, okulumuz)"
+    suffix: sfx.poss_1pl
+    word_filter: { pos: noun, ends_with: voiced_consonant }
+  - id: g.L20.poss_pl.vowel_1pl
+    description: "After a vowel: -mIz (arabamız)"
+    suffix: sfx.poss_1pl
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L20.poss_pl.any_2pl
+    description: "-(I)nIz (eviniz, arabanız)"
+    suffix: sfx.poss_2pl
+    word_filter: { pos: noun }
+  - id: g.L20.poss_pl.any_3pl
+    description: "-lArI (evleri, arabaları)"
+    suffix: sfx.poss_3pl
+    word_filter: { pos: noun }
+  - id: g.L20.poss_pl.soft
+    description: "Softening review: kitabımız, sokağımız"
+    suffix: sfx.poss_1pl
+    word_filter: { pos: noun, flags: [soft] }
+  - id: g.L20.poss_pl.pl_poss
+    description: "Plural first, then the possessive: kitaplarım"
+    suffixes: [sfx.pl, sfx.poss_1sg]
+    word_filter: { pos: noun }
+
+feedback:
+  vowel_back: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_front: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  vowel_round: "4-way harmony on the last vowel of **{word}** (**{v}**): a ı → ı · e i → i · o u → u · ö ü → ü: **{answer}**."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  detached: "The possessive ending is **attached** to the word: **{answer}**."
+  # used by the per-item feedback maps
+  after_consonant: "**{word}** ends in a consonant, so the ending starts with a vowel: **{answer}**."
+  soften: "Softening (L17): before a vowel, final **p ç t k** → **b c d ğ**: **{answer}**."
+  no_soften_3pl: "-lArI starts with a consonant, so **{word}** doesn't change: **{answer}**."
+  drop: "**{word}** drops its last vowel before a vowel ending: **{answer}**."
+  order: "The plural comes first, then the possessive: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

@@ -1,0 +1,205 @@
+# Sentences used by lesson L33 (future -(y)AcAK). `words` and `grammar` are hand-tagged.
+# w.gelecek = the adjective "next" (gelecek hafta); the verb form gelecek is tagged w.gelmek.
+
+- id: s.L33.001
+  tr: Yarın geleceğim.
+  en: ["I'll come tomorrow.", "I will come tomorrow.", "I'm coming tomorrow."]
+  words: [w.yarın, w.gelmek]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.001
+
+- id: s.L33.002
+  tr: Yarın gelecek misin?
+  en: ["Will you come tomorrow?", "Are you coming tomorrow?"]
+  words: [w.yarın, w.gelmek]
+  grammar: [g.L33.future, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L33.002
+  native_required: true
+
+- id: s.L33.003
+  tr: Evet, geleceğim.
+  en: ["Yes, I'll come.", "Yes, I will.", "Yes, I will come."]
+  words: [w.evet, w.gelmek]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.003
+
+- id: s.L33.004
+  tr: Hayır, gelmeyeceğim.
+  en: ["No, I won't come.", "No, I won't.", "No, I will not come."]
+  words: [w.hayır, w.gelmek]
+  grammar: [g.L33.future, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L33.004
+  native_required: true        # stress before -mA; spoken "gelmiycem"
+
+- id: s.L33.005
+  tr: Gelecek hafta İstanbul'a gideceğiz.
+  en: ["We'll go to Istanbul next week.", "We will go to Istanbul next week.", "We're going to Istanbul next week."]
+  words: [w.gelecek, w.hafta, w.İstanbul, w.gitmek]
+  grammar: [g.L33.future, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L33.005
+  native_required: true        # place-name stress
+
+- id: s.L33.006
+  tr: Seneye Türkiye'ye gideceğim.
+  en: ["I'll go to Türkiye next year.", "I'll go to Turkey next year.", "Next year I'm going to Turkey."]
+  words: [w.seneye, w.Türkiye, w.gitmek]
+  grammar: [g.L33.future, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L33.006
+  native_required: true        # place-name stress
+
+- id: s.L33.007
+  tr: Bu akşam kitap okuyacağım.
+  en: ["I'll read a book this evening.", "I'm going to read this evening.", "I will read a book tonight."]
+  words: [w.bu, w.akşam, w.kitap, w.okumak]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.007
+
+- id: s.L33.008
+  tr: Film saat sekizde başlayacak.
+  en: ["The film will start at eight.", "The movie starts at eight.", "The film will begin at eight o'clock."]
+  words: [w.film, w.saat, w.sekiz, w.başlamak]
+  grammar: [g.L33.future, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L33.008
+
+- id: s.L33.009
+  tr: Seni bekleyeceğim.
+  en: ["I'll wait for you.", "I will wait for you."]
+  words: [w.sen, w.beklemek]
+  grammar: [g.L33.future, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L33.009
+
+- id: s.L33.010
+  tr: Sana yardım edeceğim.
+  en: ["I'll help you.", "I will help you."]
+  words: [w.sen, w.yardım, w.etmek]
+  grammar: [g.L33.future, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L33.010
+
+- id: s.L33.011
+  tr: Ne yiyeceksin?
+  en: ["What will you eat?", "What are you going to eat?"]
+  words: [w.ne, w.yemek]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.011
+  native_required: true        # question intonation
+
+- id: s.L33.012
+  tr: Ali ne diyecek?
+  en: ["What will Ali say?", "What is Ali going to say?"]
+  words: [w.Ali, w.ne, w.demek]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.012
+  native_required: true        # question intonation
+
+- id: s.L33.013
+  tr: Yarın yağmur yağacak.
+  en: ["It will rain tomorrow.", "It's going to rain tomorrow."]
+  words: [w.yarın, w.yağmur, w.yağmak]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.013
+
+- id: s.L33.014
+  tr: Ayşe gelecek mi?
+  en: ["Will Ayşe come?", "Is Ayşe coming?"]
+  words: [w.Ayşe, w.gelmek]
+  grammar: [g.L33.future, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L33.014
+  native_required: true
+
+- id: s.L33.015
+  tr: Siz de gelecek misiniz?
+  en: ["Will you come too?", "Are you coming too?"]
+  words: [w.siz, w.de, w.gelmek]
+  grammar: [g.L33.future, g.L7.question, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.L33.015
+  native_required: true
+
+- id: s.L33.016
+  tr: Onlar yarın gelecekler.
+  en: ["They'll come tomorrow.", "They will come tomorrow.", "They're coming tomorrow."]
+  words: [w.onlar, w.yarın, w.gelmek]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.016
+
+- id: s.L33.017
+  tr: Yarın çalışmayacağım.
+  en: ["I won't work tomorrow.", "I'm not going to work tomorrow.", "I won't study tomorrow."]
+  words: [w.yarın, w.çalışmak]
+  grammar: [g.L33.future, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L33.017
+  native_required: true        # stress before -mA
+
+- id: s.L33.018
+  tr: Bu akşam ne yapacaksın?
+  en: ["What will you do this evening?", "What are you doing this evening?", "What are you going to do tonight?"]
+  words: [w.bu, w.akşam, w.ne, w.yapmak]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.018
+  native_required: true        # question intonation
+
+- id: s.L33.019
+  tr: Çay yapacağım.
+  en: ["I'll make tea.", "I'm going to make tea.", "I will make some tea."]
+  words: [w.çay, w.yapmak]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.019
+
+- id: s.L33.020
+  tr: Gelecek hafta tatile gideceğiz.
+  en: ["We're going on holiday next week.", "We'll go on holiday next week.", "We're going on vacation next week."]
+  words: [w.gelecek, w.hafta, w.tatil, w.gitmek]
+  grammar: [g.L33.future, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L33.020
+
+- id: s.L33.021
+  tr: Antalya'ya gideceğim.
+  en: ["I'll go to Antalya.", "I'm going to Antalya.", "I will go to Antalya."]
+  words: [w.Antalya, w.gitmek]
+  grammar: [g.L33.future, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L33.021
+  native_required: true        # place-name stress
+
+- id: s.L33.022
+  tr: Yarın geliyorum.
+  en: ["I'm coming tomorrow."]
+  words: [w.yarın, w.gelmek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L33.022
+
+- id: s.L33.023
+  tr: Geleceğiz.
+  en: ["We'll come.", "We will come."]
+  words: [w.gelmek]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.023
+
+- id: s.L33.024
+  tr: Geleceksiniz.
+  en: ["You'll come.", "You will come."]
+  words: [w.gelmek]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.L33.024

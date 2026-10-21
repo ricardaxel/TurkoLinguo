@@ -1,0 +1,213 @@
+# Sentences used by lesson L15. `words` and `grammar` are hand-tagged for now.
+# Person endings after -yor are the L5 "to be" endings (u-forms), so 1st/2nd person also get g.L5.copula.
+
+- id: s.L15.001
+  tr: Ne yapıyorsun?
+  en: ["What are you doing?", "What do you do?"]
+  words: [w.ne, w.yapmak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.001
+  native_required: true        # question intonation
+
+- id: s.L15.002
+  tr: Kitap okuyorum.
+  en: ["I'm reading a book.", "I am reading a book.", "I'm reading.", "I read books."]
+  words: [w.kitap, w.okumak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.002
+
+- id: s.L15.003
+  tr: Ali geliyor.
+  en: ["Ali is coming.", "Ali's coming."]
+  words: [w.Ali, w.gelmek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.003
+
+- id: s.L15.004
+  tr: Ayşe bekliyor.
+  en: ["Ayşe is waiting.", "Ayşe's waiting."]
+  words: [w.Ayşe, w.beklemek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.004
+
+- id: s.L15.005
+  tr: Şimdi başlıyoruz.
+  en: ["We're starting now.", "We are starting now.", "Now we're starting.", "We're beginning now."]
+  words: [w.şimdi, w.başlamak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.005
+
+- id: s.L15.006
+  tr: Kediler bahçede oynuyor.
+  en: ["The cats are playing in the garden.", "Cats are playing in the garden."]
+  words: [w.kedi, w.bahçe, w.oynamak]
+  grammar: [g.L4.plural, g.L10.loc, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.006
+
+- id: s.L15.007
+  tr: Türkçe konuşuyorum.
+  en: ["I speak Turkish.", "I'm speaking Turkish.", "I am speaking Turkish."]
+  words: [w.Türkçe, w.konuşmak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.007
+
+- id: s.L15.008
+  tr: Her gün çay içiyorum.
+  en: ["I drink tea every day.", "Every day I drink tea."]
+  words: [w.her, w.gün, w.çay, w.içmek]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.008
+
+- id: s.L15.009
+  tr: Biz parkta oturuyoruz.
+  en: ["We're sitting in the park.", "We are sitting in the park."]
+  words: [w.biz, w.park, w.oturmak]
+  grammar: [g.L5.copula, g.L10.loc, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.009
+
+- id: s.L15.010
+  tr: Siz ne yiyorsunuz?
+  en: ["What are you eating?", "What do you eat?"]
+  words: [w.siz, w.ne, w.yemek]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.010
+  native_required: true        # question intonation
+
+- id: s.L15.011
+  tr: Onlar geliyor.
+  en: ["They're coming.", "They are coming."]
+  words: [w.onlar, w.gelmek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.011
+
+- id: s.L15.012
+  tr: İstanbul'da oturuyorum.
+  en: ["I live in Istanbul.", "I live in İstanbul."]
+  words: [w.İstanbul, w.oturmak]
+  grammar: [g.L5.copula, g.L11.loc_copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.012
+  native_required: true        # place-name stress: İSTanbul'da
+
+- id: s.L15.013
+  tr: Ahmet gidiyor.
+  en: ["Ahmet is going.", "Ahmet is leaving.", "Ahmet's leaving."]
+  words: [w.Ahmet, w.gitmek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.013
+
+- id: s.L15.014
+  tr: Bahçede bir kedi görüyorum.
+  en: ["I see a cat in the garden.", "I can see a cat in the garden."]
+  words: [w.bahçe, w.bir, w.kedi, w.görmek]
+  grammar: [g.L5.copula, g.L9.adj_num, g.L10.loc, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.014
+
+- id: s.L15.015
+  tr: Her gün kahvaltı yapıyorum.
+  en: ["I have breakfast every day.", "I eat breakfast every day.", "Every day I have breakfast."]
+  words: [w.her, w.gün, w.kahvaltı_yapmak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.015
+
+- id: s.L15.016
+  tr: Ali kahve içiyor.
+  en: ["Ali is drinking coffee.", "Ali drinks coffee."]
+  words: [w.Ali, w.kahve, w.içmek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.016
+
+- id: s.L15.017
+  tr: Şimdi çalışıyorum.
+  en: ["I'm working now.", "I am working now.", "I'm studying now."]
+  words: [w.şimdi, w.çalışmak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.017
+
+- id: s.L15.018
+  tr: Ali kitap okuyor ama Ayşe uyuyor.
+  en: ["Ali is reading but Ayşe is sleeping.", "Ali is reading a book, but Ayşe is sleeping."]
+  words: [w.Ali, w.kitap, w.okumak, w.ama, w.Ayşe, w.uyumak]
+  grammar: [g.L13.clitic_de, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.018
+
+- id: s.L15.019
+  tr: Ayşe ekmek yiyor.
+  en: ["Ayşe is eating bread.", "Ayşe eats bread."]
+  words: [w.Ayşe, w.ekmek, w.yemek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.019
+
+- id: s.L15.020
+  tr: Kalkıyorum.
+  en: ["I'm getting up.", "I am getting up.", "I get up."]
+  words: [w.kalkmak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.020
+
+- id: s.L15.021
+  tr: Ben de geliyorum.
+  en: ["I'm coming too.", "I am coming too.", "I'm coming as well."]
+  words: [w.ben, w.de, w.gelmek]
+  grammar: [g.L5.copula, g.L13.clitic_de, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.021
+
+- id: s.L15.022
+  tr: Onlar uyuyorlar.
+  en: ["They're sleeping.", "They are sleeping.", "They're asleep."]
+  words: [w.onlar, w.uyumak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.022
+
+- id: s.L15.023
+  tr: Ben de çay içiyorum.
+  en: ["I'm drinking tea too.", "I'm having tea too.", "I drink tea too."]
+  words: [w.ben, w.de, w.çay, w.içmek]
+  grammar: [g.L5.copula, g.L13.clitic_de, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.023
+
+- id: s.L15.024
+  tr: Bakıyorum.
+  en: ["I'm looking.", "I am looking."]
+  words: [w.bakmak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.024
+
+- id: s.L15.025
+  tr: Ali oynuyor.
+  en: ["Ali is playing.", "Ali's playing."]
+  words: [w.Ali, w.oynamak]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.025
+
+- id: s.L15.026
+  tr: Gidiyorum.
+  en: ["I'm going.", "I am going.", "I'm leaving."]
+  words: [w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L15.026

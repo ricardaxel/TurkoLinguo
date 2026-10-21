@@ -1,0 +1,53 @@
+id: g.L26.time
+title: "Time & days"
+suffixes: [sfx.loc]
+
+reference: |
+  **What time is it?** *Saat kaç?* — **Saat** + number: *Saat üç.* "It's three o'clock." *Saat on iki.* "It's twelve."
+
+  **Half past:** add **buçuk** "and a half": *Saat üç buçuk.* "It's half past three."
+  12:30 (and 0:30) can also be said with its own word, **yarım** "half": *Saat yarım.* = *Saat on iki buçuk.* "It's half past twelve."
+
+  **At what time?** *Saat kaçta?* — put the locative **-DA** (L10) on the **last word** of the time:
+
+  | Time | At … |
+  |---|---|
+  | saat bir, iki, yedi, sekiz | bir**de**, iki**de**, yedi**de**, sekiz**de** |
+  | saat üç, dört, beş | üç**te**, dört**te**, beş**te** (Fıstıkçı Şahap) |
+  | saat altı, dokuz, on | altı**da**, dokuz**da**, on**da** |
+  | on bir, on iki | on bir**de**, on iki**de** |
+  | üç buçuk, on iki buçuk / yarım | üç buçuk**ta**, on iki buçuk**ta** / yarım**da** |
+
+  **Days** are written in lowercase: pazartesi, salı, çarşamba, perşembe, cuma, cumartesi, pazar. **Months** too: ocak, şubat… aralık.
+
+  Days and parts of the day need **no ending**: *Pazartesi okuldayım.* "I'm at school on Monday." *Akşam evdeyim.* "I'm at home in the evening." The same goes for **bugün** "today", **yarın** "tomorrow" and **dün** "yesterday" (used with the past tense, L30). Months do take -DA: *haziranda* "in June".
+
+  *Bugün günlerden ne?* "What day is it today?" — *Bugün salı.*
+
+  ⏳ Times like *üçü beş geçiyor* "five past three" and *üçe beş var* "five to three" come later: they need endings you'll meet again in an extension pack.
+
+patterns:
+  - id: g.L26.time.hour
+    description: "Saat kaç? — Saat üç. / Saat üç buçuk. / Saat on iki buçuk = Saat yarım (12:30)"
+  - id: g.L26.time.at_hour
+    description: "At what time? Clock number 1–12 + -DA (üçte, altıda, on ikide). Rule-only: word_filter can't restrict to 1–12."
+  - id: g.L26.time.half
+    description: "buçuk / yarım + -DA (üç buçukta, yarımda)"
+  - id: g.L26.time.days
+    description: "Days and parts of the day take no ending (Pazartesi okuldayım), lowercase"
+
+feedback:
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-{D}a**."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-{D}e**."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  voiceless: "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: {answer}."
+  not_voiceless: "**{c}** is not in Fıstıkçı Şahap → **d**: {answer}."
+  after_vowel: "**{word}** ends in a vowel → always **d**: {answer}."
+  detached: "*At* (a time) is the location ending, **attached** to the number: **{answer}**."
+  stem_changed: "-DA starts with a consonant, so **{word}** doesn't change: **{answer}**."
+  no_buffer: "-DA ends in a vowel, so *-(y)Im / -(y)Iz* need the buffer **y**: **{answer}**."
+  person_harmony: "The person ending follows the vowel of **-DA** (a → ı, e → i): **{answer}**."
+  day_no_ending: "Days need no ending for *on Monday*, and they're not names, so no apostrophe: **{answer}**."
+  lowercase: "Days and months are written in **lowercase** in Turkish: **{answer}**."
+  yarim: "**yarım** works only for 12:30 (= on iki buçuk); for the other hours, use **buçuk**: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

@@ -1,0 +1,9 @@
+id: T12
+title: Transport
+kind: core
+packs:
+  - id: T12.p1
+    unlock_after: L16
+    words: [w.tren, w.metro, w.uçak, w.vapur, w.bisiklet, w.dolmuş, w.bilet, w.durak]
+    frames: [s.T12.001, s.T12.002, s.T12.003]
+revisit: [L17, L27]

@@ -1,0 +1,178 @@
+# L14 — verbs, infinitive -mAk, commands. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L14
+title: "Verbs, infinitive, imperative"
+grammar: g.L14.imperative
+new_words: [w.gelmek, w.gitmek, w.yapmak, w.içmek, w.yemek, w.okumak, w.oturmak, w.bakmak, w.lütfen]
+not_yet:
+  - "the negative command (Gelme! Oturmayın!) → with -mA in L16, as a chunk later"
+  - "commands with 'to' (Eve gel!) → L17; with a specific object (Kapıyı aç!) → L18"
+  - "-sAnA / -sAnIzA, Buyurun → later, as set phrases"
+  - "the review patterns are rule cards only: the form engine doesn't inflect verbs yet"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🐕 **Otur!** "Sit!"
+          👋 **Gel!** "Come!"
+
+          A Turkish verb in its shortest form is already a sentence: an order to a friend.
+        sentences: [s.L14.002, s.L14.001]
+        audio: [aud.own.s.L14.002, aud.own.s.L14.001]
+
+      - kind: rule
+        title: "The dictionary form: -mAk"
+        body: |
+          Every verb in the dictionary ends in **-mak** or **-mek** ("to …"). The vowel follows a/e harmony with the stem:
+
+          | Stem | + -mAk | Meaning |
+          |---|---|---|
+          | gel | gel·**mek** | to come |
+          | git | git·**mek** | to go |
+          | otur | otur·**mak** | to sit |
+          | oku | oku·**mak** | to read |
+          | bak | bak·**mak** | to look |
+
+          The part before -mAk is the **stem**. Every verb ending in this course attaches to the stem.
+
+      - kind: rule
+        title: "Stem = command"
+        body: |
+          Drop -mAk and you have an order to **one** person you say *sen* to:
+
+          | Infinitive | Command |
+          |---|---|
+          | gel·mek | **Gel!** "Come!" |
+          | otur·mak | **Otur!** "Sit!" |
+          | iç·mek | **İç!** "Drink!" |
+          | ye·mek | **Ye!** "Eat!" |
+
+          Between friends and in the family this is normal, not rude.
+        sentences: [s.L14.005, s.L14.013]
+
+      - kind: rule
+        title: "Polite or plural: -(y)In"
+        body: |
+          To a stranger, an older person, or **several** people, add **-(y)In**:
+
+          | Stem ends in… | Ending | |
+          |---|---|---|
+          | a consonant | **-ın / -in / -un / -ün** | gel·**in**, otur·**un**, bak·**ın**, gör·**ün** |
+          | a vowel | buffer **y** + ending | oku·**yun** |
+
+          The vowel follows 4-way harmony (I), as in *misin / musun*.
+
+          **-(y)InIz** is even more formal: signs, announcements, a waiter to a guest: *Lütfen oturunuz.* "Please be seated."
+
+          **lütfen** "please" goes at the start or the end: *Lütfen oturun.* / *Oturun, lütfen.*
+        sentences: [s.L14.003, s.L14.004, s.L14.014]
+        audio: [aud.own.s.L14.003, aud.own.s.L14.004, aud.own.s.L14.014]
+
+      - kind: rule
+        title: "Watch the stem"
+        body: |
+          A vowel after the stem can change it:
+
+          - **git → gid·in**, **et → ed·in**: t becomes **d**. Only these two do this (*Teşekkür **ed**erim* is the same *et*).
+            Other stems stay: yap → yap**ın**, bak → bak**ın**, iç → iç**in**.
+          - **ye → yiy·in**, **de → dey·in**: *Yiyin, lütfen!* "Please eat!"
+        sentences: [s.L14.007, s.L14.008]
+        audio: [aud.own.s.L14.007, aud.own.s.L14.008]
+
+    items:
+      - id: L14.learn.01
+        type: picture_choose
+        grammar: [g.L14.imperative]
+        pattern: g.L14.imperative.infinitive
+        images: [img.openmoji.chair]
+        prompt: "otur + -mAk = ?"
+        options: [oturmak, oturmek, oturmık]
+        answer: oturmak
+        translation: "to sit"
+        feedback: { oturmek: "-mAk follows the last vowel of the stem: **u** is a back vowel → **-mak**: **oturmak**.", oturmık: "-mAk only has two forms, **-mak** and **-mek**: **oturmak**." }
+      - id: L14.learn.02
+        type: picture_choose
+        grammar: [g.L14.imperative]
+        pattern: g.L14.imperative.stem
+        images: [img.openmoji.plate]
+        prompt: "yemek → to a friend: … !"
+        options: [Ye, Yemek, Yem]
+        answer: Ye
+        translation: "Eat!"
+        feedback: { Yemek: "The command is the **stem**: drop -mek: **Ye!**", Yem: "Drop the whole ending **-mek**: **Ye!**" }
+      - id: L14.learn.03
+        type: picture_choose
+        grammar: [g.L14.imperative]
+        pattern: g.L14.imperative.polite_consonant
+        images: [img.openmoji.waving_hand]
+        prompt: "gelmek → polite: … , lütfen."
+        options: [Gelin, Gelın, Gelun]
+        answer: Gelin
+        translation: "Come in, please."
+        feedback: { Gelın: "-(y)In follows the last vowel of the stem: **e** → **i**: **Gelin**.", Gelun: "-(y)In follows the last vowel of the stem: **e** → **i**: **Gelin**." }
+      - id: L14.learn.04
+        type: contrast_pair
+        grammar: [g.L14.imperative]
+        pattern: g.L14.imperative.polite_consonant
+        prompt: "Please sit down. (to a guest)"
+        options: [s.L14.004, s.L14.002]
+        answer: s.L14.004
+      - { id: L14.learn.05, type: translate_to_tr, grammar: [g.L14.imperative], sentence: s.L14.003, word_bank: [Gelin, Gel, Gelmek, lütfen] }
+      - id: L14.learn.06
+        type: listen_choose
+        grammar: [g.L14.imperative]
+        sentence: s.L14.009
+        options: ["Look!", "Sit!", "Come!"]
+        answer: "Look!"
+
+  practise:
+    minutes: 5
+    items:
+      - id: L14.practise.01
+        type: picture_choose
+        grammar: [g.L14.imperative]
+        pattern: g.L14.imperative.polite_vowel
+        images: [img.openmoji.book]
+        prompt: "okumak → polite: Kitap … ."
+        options: [okuyun, okun, okuyın]
+        answer: okuyun
+        translation: "Read a book."
+        feedback: { okun: "The stem **oku** ends in a vowel, so the ending needs the buffer **y**: **okuyun**.", okuyın: "-(y)In follows the last vowel of the stem: **u** → **u**: **okuyun**." }
+      - { id: L14.practise.02, type: translate_to_tr, grammar: [g.L14.imperative], pattern: g.L14.imperative.polite_consonant, sentence: s.L14.004, typed: true, answers: ["Lütfen {oturun|oturunuz}.", "Oturunuz, lütfen.", "Oturun."] }
+      - { id: L14.practise.03, type: translate_to_tr, grammar: [g.L14.imperative], pattern: g.L14.imperative.stem_change, sentence: s.L14.007, typed: true, answers: ["Lütfen gidin.", "Gidin."], note: "git → gidin: t → d before a vowel." }
+      - { id: L14.practise.04, type: translate_to_tr, grammar: [g.L14.imperative], pattern: g.L14.imperative.stem_change, sentence: s.L14.008, typed: true, answers: ["Lütfen yiyin!", "Yiyin!"], note: "ye → yiyin." }
+      - { id: L14.practise.05, type: build_word, grammar: [g.L14.imperative], pattern: g.L14.imperative.polite_consonant, tiles: [otur, un, uz], answer: "otur·un·uz", note: "Fused display: oturunuz (formal: signs, announcements)." }
+      - { id: L14.practise.06, type: translate_to_tr, grammar: [g.L14.imperative, g.L10.loc], sentence: s.L14.012, word_bank: [Burada, Orada, oturun, otur, oturmak] }
+      - { id: L14.practise.07, type: translate_to_en, grammar: [g.L14.imperative], sentence: s.L14.008 }
+      - { id: L14.practise.08, type: spot_error, grammar: [g.L14.imperative], pattern: g.L14.imperative.stem_change, text: "Gitin, lütfen.", error: Gitin, answer: Gidin, sentence: s.L14.007, feedback: { Gitin: "**git** changes t → **d** before a vowel: **Gidin**." } }
+      - { id: L14.practise.09, type: spot_error, grammar: [g.L14.imperative], pattern: g.L14.imperative.polite_vowel, text: "Kitap okuyın.", error: okuyın, answer: okuyun, sentence: s.L14.006, feedback: { okuyın: "-(y)In follows the last vowel of the stem: **u** → **u**: **okuyun**." } }
+      - id: L14.practise.10
+        type: contrast_pair
+        grammar: [g.L14.imperative]
+        pattern: g.L14.imperative.stem
+        prompt: "Come! (to a friend)"
+        options: [s.L14.001, s.L14.003]
+        answer: s.L14.001
+      - { id: L14.practise.11, type: translate_to_tr, grammar: [g.L14.imperative], sentence: s.L14.016, typed: true, answers: ["Ayşe, Ali, gelin!", "Ali ve Ayşe, gelin!", "Ayşe ve Ali, gelin!"] }
+      - id: L14.practise.12
+        type: picture_choose
+        grammar: [g.L14.imperative]
+        pattern: g.L14.imperative.polite_consonant
+        images: [img.openmoji.hot_drink]
+        prompt: "Ali, Ayşe, çay … !"
+        options: [için, iç, içmek]
+        answer: için
+        translation: "Ali, Ayşe, drink some tea!"
+        note: "Two people → plural command. iç has no ç → c change: için."
+        feedback: { iç: "Two people (Ali **and** Ayşe) → the plural command: **için**.", içmek: "The command is the stem + ending, without -mek: **için**." }
+      - { id: L14.practise.13, type: dictation, grammar: [g.L14.imperative], sentence: s.L14.014 }
+      - id: L14.practise.14
+        type: mini_dialogue
+        grammar: [g.L14.imperative]
+        images: [img.openmoji.chair]
+        turns:
+          - { speaker: A, sentence: s.L14.003 }
+          - { speaker: B, sentence: s.L10.016 }
+          - { speaker: A, blank: true, answers: ["{Oturun|Oturunuz}, lütfen.", "Lütfen {oturun|oturunuz}.", "{Burada oturun|Burada oturunuz}(, lütfen)."] }

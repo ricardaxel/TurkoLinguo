@@ -30,3 +30,13 @@
 - { id: sfx.past,      form: DI,      gloss: past tense,                slot: tense,      introduced_by: g.L30.past }
 - { id: sfx.cop_past,  form: (y)DI,   gloss: "was / were",              slot: copula,     introduced_by: g.L32.copula_past }
 - { id: sfx.fut,       form: (y)AcAK, gloss: future,                    slot: tense,      introduced_by: g.L33.future }
+
+# --- L30–L35 ---
+# The short ("k") person endings after -DI and -(y)DI (L30, L32): geldi·m, geldi·n, geldi·k, geldi·niz, geldi·ler
+- { id: sfx.kpers_1sg, form: m,       gloss: "I (after -DI)",           slot: person,     introduced_by: g.L30.past }
+- { id: sfx.kpers_2sg, form: n,       gloss: "you (after -DI)",         slot: person,     introduced_by: g.L30.past }
+- { id: sfx.kpers_1pl, form: k,       gloss: "we (after -DI)",          slot: person,     introduced_by: g.L30.past }
+- { id: sfx.kpers_2pl, form: nIz,     gloss: "you pl. (after -DI)",     slot: person,     introduced_by: g.L30.past }
+- { id: sfx.kpers_3pl, form: lAr,     gloss: "they (after -DI)",        slot: person,     introduced_by: g.L30.past }
+# Verbal noun -mA + possessive (L35): gitme·m lazım. Not the negative -mA (sfx.neg).
+- { id: sfx.vn,        form: mA,      gloss: verbal noun ("going"),     slot: derivation, introduced_by: g.L35.lazim }

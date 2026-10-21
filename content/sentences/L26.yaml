@@ -1,0 +1,234 @@
+# Sentences used by lesson L26 (time & days). `words` and `grammar` are hand-tagged for now.
+# The locative on times (üçte, buçukta) is tagged g.L10.loc as well as g.L26.time.
+
+- id: s.L26.001
+  tr: Saat kaç?
+  en: ["What time is it?", "What's the time?"]
+  words: [w.saat, w.kaç]
+  grammar: [g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.001
+  native_required: true
+
+- id: s.L26.002
+  tr: Saat üç.
+  en: ["It's three o'clock.", "It's three.", "It is 3 o'clock."]
+  words: [w.saat, w.üç]
+  grammar: [g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.002
+
+- id: s.L26.003
+  tr: Saat üç buçuk.
+  en: ["It's half past three.", "It's three thirty.", "It's 3:30."]
+  words: [w.saat, w.üç, w.buçuk]
+  grammar: [g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.003
+
+- id: s.L26.004
+  tr: Saat yarım.
+  en: ["It's half past twelve.", "It's twelve thirty.", "It's 12:30."]
+  words: [w.saat, w.yarım]
+  grammar: [g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.004
+
+- id: s.L26.005
+  tr: Saat kaçta?
+  en: ["At what time?", "What time?", "When?"]
+  words: [w.saat, w.kaç]
+  grammar: [g.L26.time, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L26.005
+  native_required: true
+
+- id: s.L26.006
+  tr: Saat üçte.
+  en: ["At three o'clock.", "At three.", "At 3 o'clock."]
+  words: [w.saat, w.üç]
+  grammar: [g.L26.time, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L26.006
+
+- id: s.L26.007
+  tr: Film saat dokuzda.
+  en: ["The film is at nine.", "The movie is at nine o'clock.", "The film is at 9."]
+  words: [w.film, w.saat, w.dokuz]
+  grammar: [g.L3.basics, g.L26.time, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L26.007
+
+- id: s.L26.008
+  tr: Film saat kaçta?
+  en: ["What time is the film?", "What time is the movie?", "When is the film?"]
+  words: [w.film, w.saat, w.kaç]
+  grammar: [g.L3.basics, g.L26.time, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L26.008
+  native_required: true
+
+- id: s.L26.009
+  tr: Pazartesi okuldayım.
+  en: ["I'm at school on Monday.", "On Monday I'm at school.", "I am at school on Monday."]
+  words: [w.pazartesi, w.okul]
+  grammar: [g.L26.time, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L26.009
+
+- id: s.L26.010
+  tr: Bugün günlerden ne?
+  en: ["What day is it today?", "What day is today?"]
+  words: [w.bugün, w.gün, w.ne]
+  grammar: [g.L26.time, g.L12.abl, g.L4.plural, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.L26.010
+  native_required: true
+
+- id: s.L26.011
+  tr: Bugün salı.
+  en: ["Today is Tuesday.", "It's Tuesday today."]
+  words: [w.bugün, w.salı]
+  grammar: [g.L3.basics, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.011
+
+- id: s.L26.012
+  tr: Yarın çarşamba.
+  en: ["Tomorrow is Wednesday.", "It's Wednesday tomorrow."]
+  words: [w.yarın, w.çarşamba]
+  grammar: [g.L3.basics, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.012
+
+- id: s.L26.013
+  tr: Saat yedide kalkıyorum.
+  en: ["I get up at seven.", "I get up at seven o'clock.", "I'm getting up at seven."]
+  words: [w.saat, w.yedi, w.kalkmak]
+  grammar: [g.L26.time, g.L10.loc, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L26.013
+
+- id: s.L26.014
+  tr: Saat kaçta kalkıyorsun?
+  en: ["What time do you get up?", "At what time do you get up?", "When do you get up?"]
+  words: [w.saat, w.kaç, w.kalkmak]
+  grammar: [g.L26.time, g.L10.loc, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L26.014
+  native_required: true
+
+- id: s.L26.015
+  tr: Ders saat on bir buçukta.
+  en: ["The lesson is at half past eleven.", "The class is at 11:30.", "The lesson is at eleven thirty."]
+  words: [w.ders, w.saat, w.on, w.bir, w.buçuk]
+  grammar: [g.L3.basics, g.L26.time, g.L10.loc, g.L25.numbers]
+  source: { kind: original }
+  audio: aud.own.s.L26.015
+
+- id: s.L26.016
+  tr: Ders ne zaman?
+  en: ["When is the lesson?", "When is the class?"]
+  words: [w.ders, w.ne_zaman]
+  grammar: [g.L3.basics, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.016
+  native_required: true
+
+- id: s.L26.017
+  tr: Ders cuma.
+  en: ["The lesson is on Friday.", "The class is on Friday."]
+  words: [w.ders, w.cuma]
+  grammar: [g.L3.basics, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.017
+
+- id: s.L26.018
+  tr: Akşam evdeyim.
+  en: ["I'm at home in the evening.", "In the evening I'm at home."]
+  words: [w.akşam, w.ev]
+  grammar: [g.L26.time, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L26.018
+
+- id: s.L26.019
+  tr: Cumartesi ve pazar çalışmıyorum.
+  en: ["I don't work on Saturday and Sunday.", "I don't work on Saturdays and Sundays.", "I'm not working on Saturday and Sunday."]
+  words: [w.cumartesi, w.ve, w.pazar.sunday, w.çalışmak]
+  grammar: [g.L26.time, g.L13.clitic_de, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L26.019
+
+- id: s.L26.020
+  tr: Otobüs saat kaçta geliyor?
+  en: ["What time does the bus come?", "What time is the bus coming?", "When does the bus come?"]
+  words: [w.otobüs, w.saat, w.kaç, w.gelmek]
+  grammar: [g.L26.time, g.L10.loc, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L26.020
+  native_required: true
+
+- id: s.L26.021
+  tr: Saat altıda.
+  en: ["At six o'clock.", "At six.", "At 6."]
+  words: [w.saat, w.altı]
+  grammar: [g.L26.time, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L26.021
+
+- id: s.L26.022
+  tr: Yarın sabah İzmir'e gidiyorum.
+  en: ["I'm going to İzmir tomorrow morning.", "Tomorrow morning I'm going to Izmir.", "I'm going to Izmir tomorrow morning."]
+  words: [w.yarın, w.sabah, w.İzmir, w.gitmek]
+  grammar: [g.L26.time, g.L17.dat, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L26.022
+  native_required: true        # place-name stress
+
+- id: s.L26.023
+  tr: Saat dörtte evdeyim.
+  en: ["I'm at home at four.", "At four o'clock I'm at home.", "I'll be home at four."]
+  words: [w.saat, w.dört, w.ev]
+  grammar: [g.L26.time, g.L10.loc, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.L26.023
+
+- id: s.L26.024
+  tr: Bugün pazar.
+  en: ["Today is Sunday.", "It's Sunday today."]
+  words: [w.bugün, w.pazar.sunday]
+  grammar: [g.L3.basics, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.024
+
+- id: s.L26.025
+  tr: Öğle yemeği saat yarımda.
+  en: ["Lunch is at half past twelve.", "Lunch is at 12:30.", "Lunch is at twelve thirty."]
+  words: [w.öğle_yemeği, w.saat, w.yarım]
+  grammar: [g.L3.basics, g.L26.time, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.L26.025
+
+- id: s.L26.026
+  tr: Saat bir buçuk.
+  en: ["It's half past one.", "It's one thirty.", "It's 1:30."]
+  words: [w.saat, w.bir, w.buçuk]
+  grammar: [g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L26.026
+
+- id: s.L26.027
+  tr: Pazar günü pazara gidiyoruz.
+  en: ["On Sunday we go to the bazaar.", "We're going to the market on Sunday.", "On Sunday we're going to the bazaar."]
+  words: [w.pazar.sunday, w.gün, w.pazar, w.gitmek]
+  grammar: [g.L26.time, g.L22.compound, g.L17.dat, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L26.027
+
+- id: s.L26.028
+  tr: Saat sekizde kahvaltı yapıyorum.
+  en: ["I have breakfast at eight.", "I have breakfast at eight o'clock.", "At eight I have breakfast."]
+  words: [w.saat, w.sekiz, w.kahvaltı, w.yapmak]
+  grammar: [g.L26.time, g.L10.loc, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L26.028

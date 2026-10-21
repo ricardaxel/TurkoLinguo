@@ -1,0 +1,55 @@
+id: g.L33.future
+title: "Future -(y)AcAK"
+suffixes: [sfx.fut, sfx.cop_1sg, sfx.cop_2sg, sfx.cop_1pl, sfx.cop_2pl, sfx.cop_3pl, sfx.neg, sfx.q]
+
+reference: |
+  **-(y)AcAK** = *will / going to*. Add it to the verb stem, then the person endings from L5 (the same ones as the present continuous):
+
+  | Pronoun | gel- | yap- |
+  |---|---|---|
+  | ben | gel·eceğ·**im** | yap·acağ·**ım** |
+  | sen | gel·ecek·**sin** | yap·acak·**sın** |
+  | o | gel·ecek | yap·acak |
+  | biz | gel·eceğ·**iz** | yap·acağ·**ız** |
+  | siz | gel·ecek·**siniz** | yap·acak·**sınız** |
+  | onlar | gel·ecek·**ler** | yap·acak·**lar** |
+
+  **Vowels:** 2-way harmony (A): *-ecek* after e i ö ü, *-acak* after a ı o u.
+
+  **k → ğ:** before a vowel (*-Im, -Iz*) the last **k** softens to **ğ**: *gelece**ğ**im, gelece**ğ**iz*. Before a consonant it stays: *gelece**k**sin*.
+
+  **After a vowel → y:** *oku·yacağım, başla·yacağım, bekle·yeceğim*.
+  In speech the vowel before y is often raised (*bekliycem, başlıycam*), but spelling never shows it: always write **bekleyeceğim**.
+
+  **Stem changes (as in the present):** *git → gid·eceğim*, *et → ed·eceğim* (t → d before a vowel); *ye → yi·yeceğim*, *de → di·yeceğim*.
+
+  **Negative:** *-mA* + *-yAcAK*: *gel·me·yeceğim* "I won't come" (spoken *gelmiycem*), *yap·ma·yacağım*.
+
+  **Questions:** as with *-(I)yor*, the person ending moves onto *mI*: *Gelecek **misin**?* "Will you come?" · *Gelecek **miyim**?* · *Gelecek **mi**?* · *Gelecek **misiniz**?*
+
+  **Time words:** *yarın* "tomorrow", *bu akşam* "this evening", *gelecek hafta* "next week", *seneye* "next year".
+
+patterns:
+  - id: g.L33.future.harmony
+    description: "2-way harmony: -ecek / -acak (gelecek, yapacak)"
+  - id: g.L33.future.k_to_g
+    description: "k → ğ before a vowel ending: geleceğim, geleceğiz (but geleceksin)"
+  - id: g.L33.future.buffer
+    description: "After a vowel: buffer y (okuyacağım, bekleyeceğim)"
+  - id: g.L33.future.stem_change
+    description: "Stem changes: gideceğim, edeceğim, yiyeceğim, diyeceğim"
+  - id: g.L33.future.negative
+    description: "Negative -mAyAcAK: gelmeyeceğim, yapmayacağım"
+  - id: g.L33.future.question
+    description: "Question: the person ending moves onto mI (Gelecek misin?)"
+
+feedback:
+  k_to_g: "Before a vowel, the **k** of -AcAK softens to **ğ**: **{answer}**."
+  k_stays: "Before a consonant, the **k** stays: **{answer}**."
+  no_buffer: "**{word}** ends in a vowel, so -(y)AcAK needs the buffer **y**: **{answer}**."
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel → **-acak**: **{answer}**."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel → **-ecek**: **{answer}**."
+  raised_spelling: "In speech it sounds like *-iy-*, but the spelling keeps the vowel: **{answer}**."
+  stem_change: "**{word}** changes before a vowel: **{answer}**."
+  person_on_mi: "As with -(I)yor, the person ending moves onto **mI**: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

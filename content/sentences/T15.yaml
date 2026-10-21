@@ -1,0 +1,34 @@
+# Frame sentences for theme T15 (Clothes). Both packs: grammar up to L24.
+
+- id: s.T15.001
+  tr: Mavi bir gömleğim var.
+  en: ["I have a blue shirt.", "I've got a blue shirt."]
+  words: [w.mavi, w.bir, w.gömlek, w.var]
+  grammar: [g.L8.varyok, g.L9.adj_num, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.T15.001
+
+- id: s.T15.002
+  tr: Montum dolapta.
+  en: ["My coat is in the wardrobe.", "My coat is in the cupboard.", "My jacket is in the wardrobe."]
+  words: [w.mont, w.dolap]
+  grammar: [g.L3.basics, g.L10.loc, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.T15.002
+
+- id: s.T15.003
+  tr: Şapkan nerede?
+  en: ["Where is your hat?", "Where's your hat?"]
+  words: [w.şapka, w.nerede]
+  grammar: [g.L7.question, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.T15.003
+  native_required: true        # question intonation
+
+- id: s.T15.004
+  tr: Ayşe'nin eldivenleri çantasında.
+  en: ["Ayşe's gloves are in her bag."]
+  words: [w.Ayşe, w.eldiven, w.çanta]
+  grammar: [g.L3.basics, g.L4.plural, g.L10.loc, g.L11.loc_copula, g.L19.poss_sg, g.L21.gen, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.T15.004

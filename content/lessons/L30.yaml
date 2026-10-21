@@ -1,0 +1,158 @@
+# L30 — past tense -DI. Model: L10–L13. Format: docs/CONTENT_FORMAT.md
+id: L30
+title: "Past tense -DI"
+grammar: g.L30.past
+new_words: [w.geçen]
+not_yet:
+  - "negative and questions (gelmedim, Geldin mi?) → L31"
+  - "past of 'to be' (evdeydim, hastaydım, vardı) → L32"
+  - "the -mIş past (geldi vs gelmiş) → A2"
+  - "past continuous -(I)yordu → A2"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          🙋 **Dün ne yaptın?** "What did you do yesterday?"
+          🎬 **Film izledim.** "I watched a film."
+
+          One new piece: **izle·di·m** = watch · *past* · I.
+        sentences: [s.L30.024, s.L30.006]
+        audio: [aud.own.s.L30.024, aud.own.s.L30.006]
+        images: [img.openmoji.film]
+
+      - kind: rule
+        title: "-DI = the past"
+        body: |
+          Take the **stem** (drop *-mak / -mek*) and add **-DI**. Both letters change, with rules you already know:
+
+          **I:** 4-way harmony (like the question word *mI*): a ı → **ı** · e i → **i** · o u → **u** · ö ü → **ü**
+          **D:** **t** after Fıstıkçı Şahap (f s t k ç ş h p), otherwise **d**
+
+          | Stem | Last vowel | Last sound | Past |
+          |---|---|---|---|
+          | gel- | e → i | l → d | gel·**di** |
+          | oku- | u → u | vowel → d | oku·**du** |
+          | gör- | ö → ü | r → d | gör·**dü** |
+          | yap- | a → ı | **p** → t | yap·**tı** |
+          | iç- | i → i | **ç** → t | iç·**ti** |
+        sentences: [s.L30.007]
+        audio: [aud.own.s.L30.007]
+
+      - kind: rule
+        title: "Who? The short person endings"
+        body: |
+          The past uses a **second set** of person endings. They're short: mostly just one consonant.
+
+          | | | gel- | yap- |
+          |---|---|---|---|
+          | ben | **-m** | gel·di·**m** | yap·tı·**m** |
+          | sen | **-n** | gel·di·**n** | yap·tı·**n** |
+          | o | – | gel·di | yap·tı |
+          | biz | **-k** | gel·di·**k** | yap·tı·**k** |
+          | siz | **-nIz** | gel·di·**niz** | yap·tı·**nız** |
+          | onlar | **-lAr** | gel·di·**ler** | yap·tı·**lar** |
+
+          ⚠️ *we* is **-k**, not -yIz: *geldik*, not ~~geldiyiz~~.
+          💡 They're the "k" endings. You'll meet them again on the past of "to be" (L32).
+        sentences: [s.L30.025, s.L30.026, s.L30.023]
+        audio: [aud.own.s.L30.025, aud.own.s.L30.026, aud.own.s.L30.023]
+
+      - kind: rule
+        title: "Good news: the stem never changes"
+        body: |
+          -DI starts with a **consonant**, so the stem stays exactly as it is, even for the verbs that change in the present:
+
+          | | present (L15) | past |
+          |---|---|---|
+          | gitmek | **gid**·iyor·um | **git**·ti·m |
+          | yemek | **yi**·yor·um | **ye**·di·m |
+          | demek | **di**·yor·um | **de**·di·m |
+
+          *git* keeps its **t**, and t is a Fıstıkçı Şahap letter → git·**t**i·m: *gittim*, never ~~gidtim~~.
+        sentences: [s.L30.018, s.L30.012]
+        audio: [aud.own.s.L30.018, aud.own.s.L30.012]
+
+      - kind: examples
+        title: "When?"
+        body: |
+          - **dün** "yesterday" · **dün akşam** "last night" · **bugün** "today"
+          - **geçen hafta** "last week" · **geçen yıl** "last year"
+
+          *Dün okula gittim.* "I went to school yesterday."
+          *Onlar geçen yıl Türkiye'ye geldiler.* "They came to Türkiye last year."
+
+          🔊 Stress falls on the past ending: gel**DİM**, git**TİK**.
+        sentences: [s.L30.002, s.L30.010]
+        audio: [aud.own.s.L30.002, aud.own.s.L30.010]
+
+    items:
+      - { id: L30.learn.01, type: build_word, grammar: [g.L30.past], pattern: g.L30.past.person, tiles: [gel, di, m], answer: "gel·di·m", feedback: { "gel·m·di": "Past first, then the person: **gel·di·m**." } }
+      - id: L30.learn.02
+        type: picture_choose
+        grammar: [g.L30.past]
+        pattern: g.L30.past.vowel
+        images: [img.openmoji.film]
+        prompt: "Dün akşam film …"
+        options: [izledim, izledım, izletim]
+        answer: izledim
+        translation: "I watched a film last night."
+        feedback: { izledım: "The last vowel of **izle-** is **e**, a front vowel → **-di**: izledim.", izletim: "**izle-** ends in a vowel → always **d**: izledim." }
+      - { id: L30.learn.03, type: build_word, grammar: [g.L30.past], pattern: g.L30.past.voiceless, tiles: [yap, tı, k], answer: "yap·tı·k", feedback: { "yap·k·tı": "Past first, then the person: **yap·tı·k**." } }
+      - { id: L30.learn.04, type: translate_to_tr, grammar: [g.L30.past], pattern: g.L30.past.voiceless, sentence: s.L30.004, word_bank: [Çay, içtim, içdim, içiyorum] }
+      - id: L30.learn.05
+        type: contrast_pair
+        grammar: [g.L30.past, g.L15.prog]
+        prompt: "I drank coffee today."
+        options: [s.L30.019, s.L30.020]
+        answer: s.L30.019
+      - id: L30.learn.06
+        type: listen_choose
+        grammar: [g.L30.past, g.L17.dat]
+        pattern: g.L30.past.person
+        sentence: s.L30.018
+        options: ["We went home.", "I went home.", "They went home."]
+        answer: "We went home."
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L30.practise.01, type: spot_error, grammar: [g.L30.past, g.L17.dat], pattern: g.L30.past.no_stem_change, text: "Dün okula gidtim.", error: gidtim, answer: gittim, sentence: s.L30.002, feedback: { gidtim: "-DI starts with a consonant, so **git** keeps its **t**, and after t the ending is **-ti**: **gittim** (compare *gidiyorum*, before a vowel)." } }
+      - { id: L30.practise.02, type: spot_error, grammar: [g.L30.past, g.L10.loc], pattern: g.L30.past.vowel, text: "Dün evde kitap okudım.", error: okudım, answer: okudum, sentence: s.L30.003, feedback: { okudım: "-DI has four forms (ı i u ü): after **u** it's **u**: **okudum**." } }
+      - { id: L30.practise.03, type: spot_error, grammar: [g.L30.past], pattern: g.L30.past.voiceless, text: "Çay içdim.", error: içdim, answer: içtim, sentence: s.L30.004, feedback: { içdim: "**iç** ends in **ç**, one of the Fıstıkçı Şahap letters → **t**: **içtim**." } }
+      - { id: L30.practise.04, type: spot_error, grammar: [g.L30.past], pattern: g.L30.past.person, text: "Dün akşam pilav yedimiz.", error: yedimiz, answer: yedik, sentence: s.L30.008, feedback: { yedimiz: "The past uses the short person endings: *we* is **-k**: **yedik**." } }
+      - { id: L30.practise.05, type: build_word, grammar: [g.L30.past], pattern: g.L30.past.person, tiles: [oku, du, nuz], answer: "oku·du·nuz", feedback: { "oku·nuz·du": "Past first, then the person: **oku·du·nuz**." } }
+      - id: L30.practise.06
+        type: picture_choose
+        grammar: [g.L30.past]
+        pattern: g.L30.past.no_stem_change
+        images: [img.openmoji.rice]
+        prompt: "Dün akşam pilav …"
+        options: [yedik, yidik, yiyoruz]
+        answer: yedik
+        translation: "We ate rice last night."
+        feedback: { yidik: "The stem doesn't change before -DI: **ye·di·k**. (Only the present has *yi-*: yiyoruz.)", yiyoruz: "*Dün akşam* is in the past → **yedik**." }
+      - { id: L30.practise.07, type: translate_to_tr, grammar: [g.L30.past, g.L17.dat], sentence: s.L30.009, word_bank: [Geçen, hafta, İzmir'e, gittiniz, gittin, gidtiniz, İzmir'de] }
+      - { id: L30.practise.08, type: translate_to_en, grammar: [g.L30.past, g.L17.dat], sentence: s.L30.010, note: "With onlar, -lAr can be dropped: Onlar geçen yıl geldi is also correct." }
+      - { id: L30.practise.09, type: dictation, grammar: [g.L30.past, g.L26.time], sentence: s.L30.017 }
+      - { id: L30.practise.10, type: translate_to_tr, grammar: [g.L30.past], sentence: s.L30.013, typed: true }
+      - id: L30.practise.11
+        type: contrast_pair
+        grammar: [g.L30.past]
+        pattern: g.L30.past.person
+        prompt: "We came."
+        options: [s.L30.025, s.L30.026]
+        answer: s.L30.025
+      - { id: L30.practise.12, type: translate_to_tr, grammar: [g.L30.past], pattern: g.L30.past.no_stem_change, sentence: s.L30.012, word_bank: [Evet, dedim, didim, diyorum] }
+      - { id: L30.practise.13, type: build_word, grammar: [g.L30.past], pattern: g.L30.past.no_stem_change, tiles: [ye, di, m], answer: "ye·di·m", note: "No change before a consonant: ye·di·m (compare yi·yor·um)." }
+      - { id: L30.practise.14, type: translate_to_tr, grammar: [g.L30.past, g.L18.acc], sentence: s.L30.021, typed: true }
+      - id: L30.practise.15
+        type: mini_dialogue
+        grammar: [g.L30.past, g.L13.clitic_de]
+        images: [img.openmoji.film]
+        turns:
+          - { speaker: A, sentence: s.L30.024 }
+          - { speaker: B, blank: true, answers: ["(Dün) (ben) film izledim.", "(Dün akşam) (ben) film izledim."] }
+          - { speaker: A, sentence: s.L13.001 }

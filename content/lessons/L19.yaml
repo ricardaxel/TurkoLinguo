@@ -1,0 +1,161 @@
+# L19 — possessives (singular owners): my, your, his / her. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L19
+title: "Possessives (singular owners)"
+grammar: g.L19.poss_sg
+new_words: [w.ad, w.arkadaş]
+not_yet:
+  - "our / your (pl.) / their (evimiz, eviniz, evleri) → L20"
+  - "the genitive with nouns (Ali'nin arabası); benim / senin / onun are shown here only as words for emphasis → L21"
+  - "having (Arabam var) → L23"
+  - "a case after a possessive (evimde, evinde, arabasını) → L24"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🏠 **Bu benim evim.** "This is my house."
+          🚗 **Arabam yeni.** "My car is new."
+
+          No separate word for *my*: it's an ending on the thing you own. **ev·im** = house · my.
+        sentences: [s.L19.001, s.L19.002]
+        audio: [aud.own.s.L19.001, aud.own.s.L19.002]
+
+      - kind: rule
+        title: "my, your, his / her"
+        body: |
+          | | ev "house" | okul "school" | araba "car" | kedi "cat" |
+          |---|---|---|---|---|
+          | my | ev·**im** | okul·**um** | araba·**m** | kedi·**m** |
+          | your | ev·**in** | okul·**un** | araba·**n** | kedi·**n** |
+          | his / her / its | ev·**i** | okul·**u** | araba·**sı** | kedi·**si** |
+
+          **After a vowel**, *my* and *your* are just **-m** and **-n**, and *his / her* takes an **s**: araba·**sı**.
+
+          **The vowel** follows 4-way harmony, like *mI* (L7): a ı → **ı** · e i → **i** · o u → **u** · ö ü → **ü**.
+
+          💡 *-(s)I* covers *his*, *her* and *its*: *Evi büyük.* "His / Her house is big."
+        sentences: [s.L19.016]
+
+      - kind: rule
+        title: "The word can change (L17 again)"
+        body: |
+          The endings start with a vowel, so the L17 changes come back:
+
+          | change | | |
+          |---|---|---|
+          | softening | kitap → kitab·**ım** | sokak → sokağ·**ım** · çocuk → çocuğ·**u** |
+          | vowel drop | oğul → oğl·**um** · burun → burn·**um** | ağız → ağz·**ım** · şehir → şehr·**im** |
+          | front exception | saat → saat·**im** | |
+          | irregular | su → su·**y**·um, su·**y**·un, su·**y**·u | |
+
+          One-syllable words don't soften: *ad·ım* "my name", *saç·ım* "my hair".
+        sentences: [s.L19.005, s.L19.009, s.L19.011]
+        audio: [aud.own.s.L19.005, aud.own.s.L19.009, aud.own.s.L19.011]
+
+      - kind: rule
+        title: "benim, senin, onun"
+        body: |
+          The ending already says whose it is, so the pronoun is **optional**. Add it for emphasis or contrast:
+
+          | | | |
+          |---|---|---|
+          | (**benim**) evim | (**senin**) evin | (**onun**) evi |
+          | my house | your house | his / her house |
+
+          *Adım Ayşe.* "My name is Ayşe." · *Benim adım Ahmet.* "**My** name is Ahmet." (and not someone else's)
+
+          *onun* is handy when *-(s)I* could mean *his* or *her*: *Onun adı Ali.*
+        sentences: [s.L19.007, s.L19.020, s.L19.008]
+        audio: [aud.own.s.L19.007, aud.own.s.L19.020, aud.own.s.L19.008]
+
+      - kind: note
+        title: "Compounds swap their ending"
+        body: |
+          *yatak odası* "bedroom" already ends in *-sı* (more in L22). Don't add a second one: **replace** it.
+
+          yatak oda·sı → yatak oda·**m** "my bedroom", yatak oda·**n** "your bedroom"
+
+          ❌ ~~yatak odasım~~
+        sentences: [s.L19.013]
+
+      - kind: rule
+        title: "my teacher or I'm a teacher?"
+        body: |
+          *öğretmenim* has two meanings, and only **stress** tells them apart:
+
+          | | stress | |
+          |---|---|---|
+          | Bu benim **öğretmeNİM**. | on the ending | "This is **my teacher**." |
+          | Ben **öğretMENim**. | before the ending | "**I'm a teacher**." |
+
+          🔊 The possessive is stressed like a normal ending. The "to be" ending (L5) never is: the stress stays just before it.
+        sentences: [s.L19.024, s.L19.023]
+        audio: [aud.own.s.L19.024, aud.own.s.L19.023]
+
+      - kind: examples
+        title: "Step by step"
+        body: |
+          Three questions: **vowel or consonant at the end?** → **which vowel?** → **does the word change?**
+
+          - *my · kitap* → consonant → -ım → p softens → **kitab·ım**
+          - *your · araba* → vowel → **-n** → **araba·n**
+          - *his · çocuk* → consonant → -u → k softens → **çocuğ·u**
+          - *her · kedi* → vowel → **-si** → **kedi·si**
+        audio: [aud.own.L19_worked_examples]
+
+    items:
+      - { id: L19.learn.01, type: type_form, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.cons_1sg, base: w.ev, suffixes: [sfx.poss_1sg], prompt: "my house", answer: evim, feedback: { evım: "**ev** has a front vowel (e) → **-im**: evim.", evm: "**ev** ends in a consonant, so the ending starts with a vowel: **ev·im**." } }
+      - { id: L19.learn.02, type: pick_suffix, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.vowel_3sg, base: w.araba, suffix: sfx.poss_3sg, options: [sı, ı, si], answer: sı, feedback: { ı: "**araba** ends in a vowel, so *his / her* takes **s**: araba·**sı**.", si: "The last vowel of **araba** is a → **-sı**." } }
+      - { id: L19.learn.03, type: pick_suffix, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.cons_1sg, base: w.okul, suffix: sfx.poss_1sg, options: [um, ım, im, m], answer: um, feedback: "auto:g.L19.poss_sg" }
+      - id: L19.learn.04
+        type: picture_choose
+        grammar: [g.L19.poss_sg, g.L3.basics]
+        pattern: g.L19.poss_sg.soft
+        images: [img.openmoji.book]
+        prompt: "Bu benim …"
+        options: [kitabım, kitapım, kitabim]
+        answer: kitabım
+        translation: "This is my book."
+        feedback: { kitapım: "Softening (L17): before a vowel, final **p** → **b**: **kitabım**.", kitabim: "The last vowel of **kitap** is a → **-ım**: kitabım." }
+      - id: L19.learn.05
+        type: contrast_pair
+        grammar: [g.L19.poss_sg, g.L5.copula]
+        pattern: g.L19.poss_sg.vs_copula
+        prompt: "This is my teacher."
+        options: [s.L19.024, s.L19.023]
+        answer: s.L19.024
+        note: "öğretmeNİM 'my teacher' vs öğretMENim 'I'm a teacher'."
+      - { id: L19.learn.06, type: translate_to_tr, grammar: [g.L19.poss_sg, g.L7.question], sentence: s.L19.006, word_bank: [Adın, Adım, Adı, ne, kim] }
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L19.practise.01, type: type_form, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.soft, base: w.kitap, suffixes: [sfx.poss_1sg], prompt: "my book", answer: kitabım, feedback: { kitapım: "Softening (L17): before a vowel, final **p** → **b**: **kitabım**." } }
+      - { id: L19.practise.02, type: type_form, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.vowel_2sg, base: w.araba, suffixes: [sfx.poss_2sg], prompt: "your car", answer: araban, feedback: { arabaın: "**araba** ends in a vowel: *your* = just **-n**: araban.", arabanı: "*your* after a vowel is just **-n**: araban." } }
+      - { id: L19.practise.03, type: type_form, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.drop, base: w.oğul, suffixes: [sfx.poss_1sg], prompt: "my son", answer: oğlum, feedback: { oğulum: "**oğul** drops its last vowel before a vowel ending: **oğlum**." } }
+      - { id: L19.practise.04, type: type_form, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.front, base: w.saat, suffixes: [sfx.poss_1sg], prompt: "my watch", answer: saatim, feedback: { saatım: "**saat** is an exception: it takes front-vowel endings: **saatim**." } }
+      - { id: L19.practise.05, type: pick_suffix, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.vowel_3sg, base: w.kedi, suffix: sfx.poss_3sg, options: [si, sı, i, ı], answer: si, feedback: "auto:g.L19.poss_sg" }
+      - { id: L19.practise.06, type: type_form, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.soft, base: w.çocuk, suffixes: [sfx.poss_3sg], prompt: "his / her child", answer: çocuğu, feedback: { çocuku: "Softening (L17): before a vowel, final **k** → **ğ**: **çocuğu**.", çocuğusu: "**çocuk** ends in a consonant, so *his / her* is just **-u**: çocuğu." } }
+      - { id: L19.practise.07, type: spot_error, grammar: [g.L19.poss_sg], text: "Yatak odasım küçük.", error: odasım, answer: odam, sentence: s.L19.013, feedback: { odasım: "**yatak odası** already ends in a possessive: replace it, don't add a second one: **yatak odam**." } }
+      - { id: L19.practise.08, type: spot_error, grammar: [g.L19.poss_sg, g.L10.loc], text: "Sun masada.", error: Sun, answer: Suyun, sentence: s.L19.012, feedback: { Sun: "**su** is irregular: it adds **y**: suyum, **suyun**, suyu." } }
+      - { id: L19.practise.09, type: translate_to_tr, grammar: [g.L19.poss_sg, g.L10.loc], sentence: s.L19.003, word_bank: [Annem, Annen, Anne, evde, evi] }
+      - { id: L19.practise.10, type: translate_to_en, grammar: [g.L19.poss_sg, g.L3.basics], sentence: s.L19.015, note: "babası: his or her father." }
+      - id: L19.practise.11
+        type: contrast_pair
+        grammar: [g.L19.poss_sg, g.L10.loc]
+        prompt: "My teacher is at school."
+        options: [s.L19.025, s.L19.026]
+        answer: s.L19.025
+      - { id: L19.practise.12, type: dictation, grammar: [g.L19.poss_sg, g.L10.loc], pattern: g.L19.poss_sg.drop, sentence: s.L19.009 }
+      - { id: L19.practise.13, type: translate_to_tr, grammar: [g.L19.poss_sg, g.L7.question], sentence: s.L19.004, typed: true, answers: ["Kitabın nerede?"] }
+      - { id: L19.practise.14, type: translate_to_en, grammar: [g.L19.poss_sg, g.L15.prog], sentence: s.L19.029 }
+      - id: L19.practise.15
+        type: mini_dialogue
+        grammar: [g.L19.poss_sg, g.L7.question]
+        images: [img.openmoji.book]
+        turns:
+          - { speaker: A, sentence: s.L19.027 }
+          - { speaker: B, blank: true, answers: ["Evet, (bu) (benim) kitabım."] }
+          - { speaker: A, sentence: s.L19.019 }

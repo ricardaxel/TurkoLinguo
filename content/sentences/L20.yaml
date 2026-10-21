@@ -1,0 +1,182 @@
+# Sentences used by lesson L20. `words` and `grammar` are hand-tagged for now.
+# bizim / sizin / onların are tagged as the pronoun (w.biz …); the genitive itself is taught in L21.
+
+- id: s.L20.001
+  tr: Bu bizim evimiz.
+  en: ["This is our house.", "This is our home."]
+  words: [w.bu, w.biz, w.ev]
+  grammar: [g.L3.basics, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.001
+  native_required: true        # the possessive ending is stressed
+
+- id: s.L20.002
+  tr: Evimiz küçük ama güzel.
+  en: ["Our house is small but nice.", "Our house is small but beautiful.", "Our home is small but nice."]
+  words: [w.ev, w.küçük, w.ama, w.güzel]
+  grammar: [g.L3.basics, g.L13.clitic_de, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.002
+
+- id: s.L20.003
+  tr: Sizin arabanız nerede?
+  en: ["Where is your car?", "Where's your car?"]
+  words: [w.siz, w.araba, w.nerede]
+  grammar: [g.L7.question, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.003
+  native_required: true        # question intonation
+
+- id: s.L20.004
+  tr: Arabamız sokakta.
+  en: ["Our car is in the street.", "Our car is on the street."]
+  words: [w.araba, w.sokak]
+  grammar: [g.L3.basics, g.L10.loc, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.004
+
+- id: s.L20.005
+  tr: Öğretmenimiz Türk.
+  en: ["Our teacher is Turkish."]
+  words: [w.öğretmen, w.Türk]
+  grammar: [g.L3.basics, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.005
+
+- id: s.L20.006
+  tr: Onların evi İzmir'de.
+  en: ["Their house is in Izmir.", "Their house is in İzmir.", "Their home is in Izmir."]
+  words: [w.onlar, w.ev, w.İzmir]
+  grammar: [g.L3.basics, g.L10.loc, g.L11.loc_copula, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.006
+
+- id: s.L20.007
+  tr: Evleri büyük.
+  en: ["Their house is big.", "Their houses are big.", "His houses are big.", "Her houses are big."]
+  words: [w.ev, w.büyük]
+  grammar: [g.L3.basics, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.007
+
+- id: s.L20.008
+  tr: Çocukları okulda.
+  en: ["Their children are at school.", "Their child is at school.", "His children are at school.", "Her children are at school."]
+  words: [w.çocuk, w.okul]
+  grammar: [g.L3.basics, g.L10.loc, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.008
+
+- id: s.L20.009
+  tr: Sınıfımız büyük.
+  en: ["Our classroom is big.", "Our class is big."]
+  words: [w.sınıf, w.büyük]
+  grammar: [g.L3.basics, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.009
+
+- id: s.L20.010
+  tr: Kitabınız masada.
+  en: ["Your book is on the table."]
+  words: [w.kitap, w.masa]
+  grammar: [g.L3.basics, g.L10.loc, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.010
+
+- id: s.L20.011
+  tr: Oğlumuz İstanbul'da.
+  en: ["Our son is in Istanbul.", "Our son is in İstanbul."]
+  words: [w.oğul, w.İstanbul]
+  grammar: [g.L3.basics, g.L10.loc, g.L11.loc_copula, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.011
+
+- id: s.L20.012
+  tr: Bizim sokağımız yeni.
+  en: ["Our street is new."]
+  words: [w.biz, w.sokak, w.yeni]
+  grammar: [g.L3.basics, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.012
+
+- id: s.L20.013
+  tr: Öğretmeniniz kim?
+  en: ["Who is your teacher?", "Who's your teacher?"]
+  words: [w.öğretmen, w.kim]
+  grammar: [g.L7.question, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.013
+  native_required: true        # question intonation
+
+- id: s.L20.014
+  tr: Anneleri doktor.
+  en: ["Their mother is a doctor.", "Their mum is a doctor.", "Their mom is a doctor."]
+  words: [w.anne, w.doktor]
+  grammar: [g.L3.basics, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.014
+
+- id: s.L20.015
+  tr: Annesi doktor.
+  en: ["His mother is a doctor.", "Her mother is a doctor."]
+  words: [w.anne, w.doktor]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L20.015
+
+- id: s.L20.016
+  tr: Bu sizin çantanız mı?
+  en: ["Is this your bag?"]
+  words: [w.bu, w.siz, w.çanta]
+  grammar: [g.L3.basics, g.L7.question, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.016
+  native_required: true        # question intonation
+
+- id: s.L20.017
+  tr: Evet, bu bizim çantamız.
+  en: ["Yes, this is our bag.", "Yes, it's our bag."]
+  words: [w.evet, w.bu, w.biz, w.çanta]
+  grammar: [g.L3.basics, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.017
+
+- id: s.L20.018
+  tr: Annemiz mutfakta.
+  en: ["Our mother is in the kitchen.", "Our mum is in the kitchen.", "Our mom is in the kitchen."]
+  words: [w.anne, w.mutfak]
+  grammar: [g.L3.basics, g.L10.loc, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.018
+
+- id: s.L20.019
+  tr: Arkadaşlarımız parkta.
+  en: ["Our friends are in the park.", "Our friends are at the park."]
+  words: [w.arkadaş, w.park]
+  grammar: [g.L3.basics, g.L4.plural, g.L10.loc, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.019
+
+- id: s.L20.020
+  tr: Çocuklarımız okula gidiyor.
+  en: ["Our children are going to school.", "Our kids are going to school."]
+  words: [w.çocuk, w.okul, w.gitmek]
+  grammar: [g.L4.plural, g.L15.prog, g.L17.dat, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.020
+
+- id: s.L20.021
+  tr: Kitaplarım çantada.
+  en: ["My books are in the bag."]
+  words: [w.kitap, w.çanta]
+  grammar: [g.L3.basics, g.L4.plural, g.L10.loc, g.L19.poss_sg, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.021
+
+- id: s.L20.022
+  tr: Öğretmeniniz Türk.
+  en: ["Your teacher is Turkish."]
+  words: [w.öğretmen, w.Türk]
+  grammar: [g.L3.basics, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L20.022

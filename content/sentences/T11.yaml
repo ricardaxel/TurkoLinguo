@@ -1,0 +1,25 @@
+# Frame sentences for theme T11 (Daily routine). Only grammar up to L14 (commands).
+
+- id: s.T11.001
+  tr: Kalk!
+  en: ["Get up!", "Stand up!"]
+  words: [w.kalkmak]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.T11.001
+
+- id: s.T11.002
+  tr: Uyu!
+  en: ["Sleep!", "Go to sleep!"]
+  words: [w.uyumak]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.T11.002
+
+- id: s.T11.003
+  tr: Şimdi dinlenin.
+  en: ["Rest now.", "Now rest.", "Have a rest now."]
+  words: [w.şimdi, w.dinlenmek]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.T11.003

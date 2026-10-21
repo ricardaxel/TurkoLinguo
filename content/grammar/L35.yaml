@@ -1,0 +1,51 @@
+id: g.L35.lazim
+title: "Need / must: -mAk lazım / gerek; -mA + possessive"
+suffixes: [sfx.inf, sfx.vn, sfx.poss_1sg, sfx.poss_2sg, sfx.poss_3sg, sfx.poss_1pl, sfx.poss_2pl, sfx.poss_3pl]
+
+reference: |
+  **lazım** and **gerek** both mean *necessary, needed*. They don't change; the verb in front does.
+
+  **In general** (no person): *-mAk lazım*: *Çalışmak lazım.* "One has to work." / "It's necessary to work."
+
+  **A person needs to:** the verb takes **-mA** (a verbal noun, "going, coming") + the possessive endings from L19–L20, "**my going** is necessary":
+
+  | Pronoun | gitmek | çalışmak |
+  |---|---|---|
+  | (benim) | git·me·**m** lazım | çalış·ma·**m** lazım |
+  | (senin) | git·me·**n** lazım | çalış·ma·**n** lazım |
+  | (onun) | git·me·**si** lazım | çalış·ma·**sı** lazım |
+  | (bizim) | git·me·**miz** lazım | çalış·ma·**mız** lazım |
+  | (sizin) | git·me·**niz** lazım | çalış·ma·**nız** lazım |
+  | (onların) | git·me·**leri** lazım | çalış·ma·**ları** lazım |
+
+  -mA ends in a vowel, so the possessive takes its short form: *-m, -n, -sI*. A name or pronoun goes in the genitive (L21): *Ali'nin gelmesi lazım.*
+
+  This **-mA** is not the negative **-mA** (L16): it never comes before a tense. *Gitmem lazım* = "I need to go".
+
+  **gerek** works the same way: *Gitmem gerek.*
+
+  **Questions:** *Ne yapmam lazım?* "What do I need to do?" · *Gitmem lazım mı?*
+
+  **Not necessary:** *Gelmen gerekmiyor.* or *Gelmene gerek yok.* "You don't need to come." (*gerekmek* "to be necessary" is a verb.) In casual speech you will also hear *Gelmen lazım değil*.
+
+  **Needing a thing:** the person goes in the **dative** (L17): *Bana su lazım.* "I need water." (lit. "To me, water is necessary.") · *Sana ne lazım?* "What do you need?"
+
+patterns:
+  - id: g.L35.lazim.general
+    description: "-mAk lazım: necessary in general (Çalışmak lazım)"
+  - id: g.L35.lazim.person
+    description: "-mA + possessive + lazım: gitmem, gitmen, gitmesi, gitmemiz, gitmeniz, gitmeleri lazım"
+  - id: g.L35.lazim.harmony
+    description: "-me / -ma, then the possessive follows: gitmemiz, kalkmamız"
+  - id: g.L35.lazim.negative
+    description: "lazım değil / gerekmiyor"
+  - id: g.L35.lazim.dative
+    description: "With nouns, the person in the dative: Bana su lazım"
+
+feedback:
+  vn_needed: "For a person, use **-mA** + the possessive, not -mAk: **{answer}**."
+  vn_harmony: "-mA follows 2-way harmony, and the possessive follows -mA: **{answer}**."
+  poss_after_vowel: "-mA ends in a vowel, so the possessive is short: **-m, -n, -sI**: **{answer}**."
+  dative_person: "With *lazım* + a thing, the person is in the dative: **{answer}**."
+  neg_lazim: "*lazım* doesn't change: say **lazım değil** or **gerekmiyor**: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

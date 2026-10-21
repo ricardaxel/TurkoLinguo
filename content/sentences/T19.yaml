@@ -1,0 +1,51 @@
+# Frame sentences for theme T19 (Hobbies & free time). Grammar up to L29.
+
+- id: s.T19.001
+  tr: Akşam müzik dinliyorum.
+  en: ["I listen to music in the evening.", "In the evening I listen to music."]
+  words: [w.akşam, w.müzik, w.dinlemek]
+  grammar: [g.L15.prog, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.T19.001
+
+- id: s.T19.002
+  tr: Ali futbol oynamıyor.
+  en: ["Ali doesn't play football.", "Ali isn't playing football.", "Ali doesn't play soccer."]
+  words: [w.Ali, w.futbol, w.oynamak]
+  grammar: [g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.T19.002
+
+- id: s.T19.003
+  tr: Cumartesi arkadaşlarımla yüzüyorum.
+  en: ["I swim with my friends on Saturday.", "On Saturday I swim with my friends.", "I'm swimming with my friends on Saturday."]
+  words: [w.cumartesi, w.arkadaş, w.yüzmek]
+  grammar: [g.L15.prog, g.L27.ile, g.L4.plural, g.L19.poss_sg, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.T19.003
+
+- id: s.T19.004
+  tr: Ayşe şarkı söylüyor.
+  en: ["Ayşe is singing.", "Ayşe is singing a song.", "Ayşe sings."]
+  words: [w.Ayşe, w.şarkı, w.söylemek]
+  grammar: [g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.T19.004
+
+- id: s.T19.005
+  tr: Boş zamanında ne yapıyorsun?
+  en: ["What do you do in your free time?", "What do you do in your spare time?"]
+  words: [w.boş, w.zaman, w.ne, w.yapmak]
+  grammar: [g.L15.prog, g.L7.question, g.L19.poss_sg, g.L10.loc]
+  source: { kind: original }
+  audio: aud.own.s.T19.005
+  native_required: true
+
+- id: s.T19.006
+  tr: Hobin ne?
+  en: ["What's your hobby?", "What is your hobby?"]
+  words: [w.hobi, w.ne]
+  grammar: [g.L19.poss_sg, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.T19.006
+  native_required: true

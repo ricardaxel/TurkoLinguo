@@ -200,7 +200,7 @@ The default rules (harmony on the last vowel; final p/ç/k soften before a vowel
 | Flag | Meaning | Examples |
 |---|---|---|
 | `soft` | p→b, ç→c, t→d, k→ğ (nk→ng) before a vowel | kitap→kitabı, ağaç→ağacı, renk→rengi, sokak→sokağı |
-| `soft` (1-syllable exceptions) | most one-syllable words *don't* soften; these do | kurt→kurdu, tat→tadı, uç→ucu |
+| `soft` (1-syllable exceptions) | most one-syllable words *don't* soften; these do. Verbs never soften by default, only when flagged | kurt→kurdu, tat→tadı, uç→ucu; gitmek→gidiyor, etmek→ediyor |
 | `nosoft` (polysyllabic exceptions) | loanwords that keep the consonant | bilet→bileti, devlet→devleti |
 | `drop` | the last vowel drops before a vowel-initial suffix | oğul→oğlu, burun→burnu, ağız→ağzı, şehir→şehri, isim→ismi, resim→resmi |
 | `front` | front-vowel suffixes despite a back last vowel | saat→saati, saatte; kalp→kalbi; rol→rolü; alkol→alkolü |

@@ -1,0 +1,189 @@
+# L17 — dative -(y)A "to"; softening, vowel drop and their exceptions. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L17
+title: "Dative -(y)A + softening & vowel drop"
+grammar: g.L17.dat
+new_words: [w.binmek, w.korkmak, w.hoşlanmak, w.nereye, w.buraya, w.oraya, w.ağaç]
+not_yet:
+  - "the accusative -(y)I (kitabı, suyu) → L18: same mechanics, different meaning"
+  - "possessive + dative (evime, okuluna) → L24"
+  - "oğul in the dative (oğluna) → only with a possessive, L24; use şehre / isme for vowel drop"
+  - "-(y)A with time (saat üçe beş var) → later extension pack"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          🚶 **Nereye gidiyorsun?** "Where are you going?"
+          🏠 **Eve gidiyorum.** "I'm going home."
+
+          *To* is an ending again: **ev·e** = home · to.
+        sentences: [s.L17.001, s.L17.002]
+        audio: [aud.own.s.L17.001, aud.own.s.L17.002]
+
+      - kind: rule
+        title: "-(y)A = to"
+        body: |
+          Only one question this time, the vowel: a ı o u → **-a**, e i ö ü → **-e**. After a vowel, add the buffer **y**:
+
+          | | in (L10) | from (L12) | **to** |
+          |---|---|---|---|
+          | okul | okul·da | okul·dan | okul·**a** |
+          | ev | ev·de | ev·den | ev·**e** |
+          | araba | araba·da | araba·dan | araba·**ya** |
+          | hastane | hastane·de | hastane·den | hastane·**ye** |
+
+          No d / t here: the ending starts with a **vowel**.
+
+          Names: *İstanbul'**a***, *İzmir'**e***, *Paris'**e***, *Londra'**ya***.
+          Where to? **nere·ye** · here → **bura·ya** · there → **ora·ya**
+        sentences: [s.L17.003, s.L17.004, s.L17.009]
+        audio: [aud.own.s.L17.003, aud.own.s.L17.004, aud.own.s.L17.009]
+
+      - kind: rule
+        title: "to me, to you…"
+        body: |
+          | | to … |
+          |---|---|
+          | ben | **bana** ⚠️ |
+          | sen | **sana** ⚠️ |
+          | o | ona |
+          | biz | bize |
+          | siz | size |
+          | onlar | onlara |
+
+          *Bana bak!* "Look at me!" · *Onlar bize geliyor.* "They're coming to us."
+        sentences: [s.L17.007, s.L17.025]
+        audio: [aud.own.s.L17.007, aud.own.s.L17.025]
+
+      - kind: rule
+        title: "Softening: p ç k → b c ğ"
+        body: |
+          A vowel ending can change the word. Words of two or more syllables ending in **p ç k** usually soften:
+
+          | Word | to … |
+          |---|---|
+          | kitap | kita**b**a |
+          | ağaç | ağa**c**a |
+          | sokak | soka**ğ**a |
+          | dolap | dola**b**a |
+          | renk | ren**g**e (nk → ng) |
+
+          Remember: with -DA and -DAn nothing changes (*kitapta, kitaptan*). Softening only happens before a **vowel**.
+        sentences: [s.L17.014, s.L17.015, s.L17.016]
+        audio: [aud.own.s.L17.014, aud.own.s.L17.015, aud.own.s.L17.016]
+
+      - kind: note
+        title: "Exceptions"
+        body: |
+          - Most **one-syllable** words don't soften: top → **topa**, at → **ata**, saç → **saça**. A few do: kurt → **kurda**, uç → **uca**.
+          - Final **t** usually stays: bilet → **bilete**, bisiklet → **bisiklete**. (A few words do soften, e.g. kanat → kanada; the word card shows it.)
+          - **Names never soften in writing**: *Ahmet'e*, *Zonguldak'a* (said with a soft ğ).
+
+          The dictionary (and our word cards) mark the words that change: *kitap → kitabı*.
+        sentences: [s.L17.022, s.L17.023, s.L17.029]
+        audio: [aud.own.s.L17.022, aud.own.s.L17.023, aud.own.s.L17.029]
+
+      - kind: rule
+        title: "Vowel drop and other changes"
+        body: |
+          - **Vowel drop:** a few words lose their last vowel before a vowel ending: şeh**i**r → **şehre**, is**i**m → **isme**.
+          - **saat** takes front endings although its vowel is a: **saate** (as *saatte* in L10).
+          - **buzdolabı** already ends in a possessive ending, so it adds **n**: **buzdolabına** (explained in L24).
+        sentences: [s.L17.013, s.L17.026, s.L17.028]
+        audio: [aud.own.s.L17.013, aud.own.s.L17.026, aud.own.s.L17.028]
+
+      - kind: rule
+        title: "Verbs and their cases"
+        body: |
+          Some verbs choose a case where English uses a preposition:
+
+          | Verb | Case | Example |
+          |---|---|---|
+          | **bakmak** | -(y)A | *Kedi**ye** bakıyorum.* "I'm looking **at** the cat." |
+          | **binmek** | -(y)A | *Otobüs**e** biniyorum.* "I'm getting **on** the bus." |
+          | **korkmak** | -DAn (L12) | *Köpek**ten** korkuyorum.* "I'm afraid **of** dogs." |
+          | **hoşlanmak** | -DAn (L12) | *Kahve**den** hoşlanmıyorum.* "I don't like coffee." |
+
+          Learn the verb together with its case: *-e bakmak*, *-e binmek*, *-den korkmak*.
+        sentences: [s.L17.008, s.L17.006, s.L17.017, s.L17.018]
+        audio: [aud.own.s.L17.008, aud.own.s.L17.006, aud.own.s.L17.017, aud.own.s.L17.018]
+
+    items:
+      - { id: L17.learn.01, type: pick_suffix, grammar: [g.L17.dat], pattern: g.L17.dat.back, base: w.okul, suffix: sfx.dat, options: [a, e, ya, ye], answer: a, feedback: "auto:g.L17.dat" }
+      - { id: L17.learn.02, type: pick_suffix, grammar: [g.L17.dat], pattern: g.L17.dat.after_vowel, base: w.hastane, suffix: sfx.dat, options: [a, e, ya, ye], answer: ye, feedback: "auto:g.L17.dat" }
+      - id: L17.learn.03
+        type: picture_choose
+        grammar: [g.L17.dat, g.L14.imperative]
+        pattern: g.L17.dat.soft
+        images: [img.openmoji.book]
+        prompt: "… bakın."
+        options: [Kitaba, Kitapa, Kitapta]
+        answer: Kitaba
+        translation: "Look at the book."
+        feedback: { Kitapa: "**kitap** ends in **p**: before a vowel it softens to **b**: **kitaba**.", Kitapta: "**-DA** means *in / at*; *look at* takes **-(y)A**: **kitaba**." }
+      - id: L17.learn.04
+        type: picture_choose
+        grammar: [g.L17.dat, g.L14.imperative]
+        pattern: g.L17.dat.pronoun
+        images: [img.openmoji.eyes]
+        prompt: "… bak!"
+        options: [Bana, Bene, Benye]
+        answer: Bana
+        translation: "Look at me!"
+        feedback: { Bene: "**ben** is irregular: **bana**.", Benye: "**ben** is irregular: **bana**." }
+      - { id: L17.learn.05, type: translate_to_tr, grammar: [g.L17.dat, g.L15.prog], pattern: g.L17.dat.front, sentence: s.L17.002, word_bank: [Eve, Evde, Evden, gidiyorum] }
+      - id: L17.learn.06
+        type: listen_choose
+        grammar: [g.L17.dat, g.L15.prog]
+        sentence: s.L17.003
+        options: ["I'm going to school.", "I'm at school.", "I'm coming from school."]
+        answer: "I'm going to school."
+
+  practise:
+    minutes: 6
+    items:
+      - { id: L17.practise.01, type: pick_suffix, grammar: [g.L17.dat], pattern: g.L17.dat.after_vowel, base: w.araba, suffix: sfx.dat, options: [a, e, ya, ye], answer: ya, feedback: "auto:g.L17.dat" }
+      - { id: L17.practise.02, type: type_form, grammar: [g.L17.dat], pattern: g.L17.dat.soft, base: w.sokak, suffixes: [sfx.dat], prompt: "to the street", answer: sokağa, feedback: { sokaka: "**sokak** ends in **k**: before a vowel it softens to **ğ**: **sokağa**.", sokakta: "**-DA** means *in / at*; *to* is **-(y)A**: **sokağa**." } }
+      - { id: L17.practise.03, type: type_form, grammar: [g.L17.dat], pattern: g.L17.dat.soft, base: w.durak, suffixes: [sfx.dat], prompt: "to the bus stop", answer: durağa, feedback: { duraka: "**durak** ends in **k**: before a vowel it softens to **ğ**: **durağa**." } }
+      - { id: L17.practise.04, type: type_form, grammar: [g.L17.dat], pattern: g.L17.dat.drop, base: w.şehir, suffixes: [sfx.dat], prompt: "to the city", answer: şehre, feedback: { şehire: "**şehir** drops its last vowel before a vowel ending: **şehre**." } }
+      - { id: L17.practise.05, type: type_form, grammar: [g.L17.dat], pattern: g.L17.dat.nosoft, base: w.bilet, suffixes: [sfx.dat], prompt: "to the ticket", answer: bilete, feedback: { bilede: "Final **t** usually stays: **bilete**." } }
+      - id: L17.practise.06
+        type: picture_choose
+        grammar: [g.L17.dat, g.L15.prog, g.L5.copula]
+        pattern: g.L17.dat.name
+        images: [img.openmoji.flag_uk]
+        prompt: "… gidiyor musun?"
+        options: [Londra'ya, Londra'a, Londraya]
+        answer: Londra'ya
+        translation: "Are you going to London?"
+        feedback: { "Londra'a": "**Londra** ends in a vowel, so the ending needs the buffer **y**: **Londra'ya**.", Londraya: "**Londra** is a name, so it takes an apostrophe before the ending: **Londra'ya**." }
+      - { id: L17.practise.07, type: translate_to_tr, grammar: [g.L17.dat, g.L15.prog, g.L5.copula], pattern: g.L17.dat.verbs, sentence: s.L17.006, word_bank: [Otobüse, Otobüste, Otobüsten, biniyorum] }
+      - { id: L17.practise.08, type: translate_to_tr, grammar: [g.L17.dat, g.L14.imperative], pattern: g.L17.dat.name, sentence: s.L17.023, word_bank: ["Ahmet'e", "Ahmed'e", Ahmete, bak] }
+      - { id: L17.practise.09, type: translate_to_en, grammar: [g.L17.dat, g.L12.abl, g.L15.prog], sentence: s.L17.017 }
+      - { id: L17.practise.10, type: spot_error, grammar: [g.L17.dat, g.L15.prog], pattern: g.L17.dat.verbs, text: "Kedide bakıyorum.", error: Kedide, answer: Kediye, sentence: s.L17.008, feedback: { Kedide: "**bakmak** takes **-(y)A**: *look at* = **kediye bakmak**." } }
+      - { id: L17.practise.11, type: spot_error, grammar: [g.L17.dat, g.L15.prog], pattern: g.L17.dat.soft, text: "Uçaka biniyoruz.", error: Uçaka, answer: Uçağa, sentence: s.L17.020, feedback: { Uçaka: "**uçak** ends in **k**: before a vowel it softens to **ğ**: **uçağa**." } }
+      - id: L17.practise.12
+        type: contrast_pair
+        grammar: [g.L17.dat, g.L11.loc_copula, g.L6.degil]
+        prompt: "I'm not at school, I'm going to school."
+        options: [s.L17.031, s.L17.030]
+        answer: s.L17.031
+      - id: L17.practise.13
+        type: qa
+        grammar: [g.L17.dat, g.L15.prog, g.L7.question]
+        question: s.L17.001
+        images: [img.own.person_to_hospital]
+        answers: ["(Ben) hastaneye gidiyorum.", "Hastaneye."]
+        feedback: "auto:g.L17.dat"
+      - { id: L17.practise.14, type: translate_to_tr, grammar: [g.L17.dat, g.L15.prog, g.L16.prog_neg_q], sentence: s.L17.010, typed: true, answers: ["(Ben) oraya gitmiyorum."] }
+      - { id: L17.practise.15, type: dictation, grammar: [g.L17.dat, g.L15.prog], sentence: s.L17.013 }
+      - id: L17.practise.16
+        type: mini_dialogue
+        grammar: [g.L17.dat, g.L15.prog, g.L7.question]
+        images: [img.own.person_to_school]
+        turns:
+          - { speaker: A, sentence: s.L17.001 }
+          - { speaker: B, blank: true, answers: ["(Ben) okula gidiyorum.", "Okula."] }
+          - { speaker: A, sentence: s.L17.032 }

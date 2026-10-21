@@ -1,0 +1,61 @@
+id: g.L15.prog
+title: "Present continuous -(I)yor"
+suffixes: [sfx.prog]
+
+reference: |
+  **-(I)yor** + person ending = *I am …ing* **and** *I …* (habits, general present):
+  *Geliyorum.* "I'm coming." · *Her gün çay içiyorum.* "I drink tea every day."
+
+  **Build it on the stem** (the verb without -mAk):
+
+  | Stem ends in… | -(I)yor | Examples |
+  |---|---|---|
+  | a consonant | **-ıyor / -iyor / -uyor / -üyor** (4-way I) | bak·**ıyor**, gel·**iyor**, otur·**uyor**, gör·**üyor** |
+  | a vowel | **-yor** (no extra vowel) | oku·**yor**, uyu·**yor** |
+  | **a** or **e** | the a/e turns into **ı / i / u / ü**, following the vowel **before** it | başla → başl**ı**yor, bekle → bekl**i**yor, oyna → oyn**u**yor, söyle → söyl**ü**yor |
+
+  **"This one never changes":** only the first vowel harmonises. **-yor** is always *-yor*, so the person endings are always the **u**-forms:
+
+  | | | |
+  |---|---|---|
+  | ben | gel·iyor·**um** | I'm coming |
+  | sen | gel·iyor·**sun** | you're coming |
+  | o | gel·iyor | he / she is coming |
+  | biz | gel·iyor·**uz** | we're coming |
+  | siz | gel·iyor·**sunuz** | you're coming |
+  | onlar | gel·iyor(·**lar**) | they're coming |
+
+  No buffer y: -yor ends in a consonant (gel·iyor·**um**, not ~~geliyoryum~~).
+
+  **Stem changes:**
+  - t → d only in **gitmek** and **etmek**: *gidiyor*, *ediyor*. Not in other verbs: *atmak → atıyor*, *yatmak → yatıyor*.
+  - **yemek → yiyor**, **demek → diyor**.
+
+  Objects stay general in this lesson: *Kitap okuyorum.* "I'm reading (a book)." The ending for a *specific* object comes in L18.
+
+patterns:
+  # rule cards only: the form engine doesn't inflect verbs yet (lemma = infinitive)
+  - id: g.L15.prog.consonant
+    description: "After a consonant: 4-way I + yor (geliyor, bakıyor, görüyor, oturuyor)"
+  - id: g.L15.prog.vowel
+    description: "After a vowel: just -yor (okuyor, uyuyor)"
+  - id: g.L15.prog.a_e_change
+    description: "Stem-final a/e → ı/i/u/ü by the vowel before it (başlıyor, bekliyor, oynuyor, söylüyor)"
+  - id: g.L15.prog.person
+    description: "Person endings after -yor are always u-forms: -um, -sun, –, -uz, -sunuz, -lar"
+  - id: g.L15.prog.irregular
+    description: "gidiyor, ediyor (t → d only here); yiyor, diyor; but atıyor, yatıyor"
+  - id: g.L15.prog.meaning
+    description: "-(I)yor = happening now and habits (every day)"
+
+feedback:
+  yor_never_changes: "**-yor** never changes, so the person ending is always the **u**-form: **{answer}**."
+  prog_harmony: "The first vowel of -(I)yor follows the last vowel of the stem (4-way): **{answer}**."
+  extra_vowel: "The stem ends in a vowel: just add **-yor**, no extra vowel: **{answer}**."
+  a_e_change: "A stem-final **a / e** turns into **ı / i / u / ü** before -yor, following the vowel before it: **{answer}**."
+  no_t_to_d: "Only **gitmek** and **etmek** change t → d: **{answer}**."
+  t_to_d: "**git** and **et** change t → **d** before a vowel: **{answer}**."
+  irregular: "**yemek** and **demek** are irregular: **yiyor**, **diyor**: **{answer}**."
+  no_buffer_after_yor: "-yor ends in a consonant, so no buffer **y**: **{answer}**."
+  kept_mak: "Drop -mAk first: the ending goes on the **stem**: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

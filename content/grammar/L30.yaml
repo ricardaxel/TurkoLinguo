@@ -1,0 +1,51 @@
+id: g.L30.past
+title: "Past tense -DI"
+suffixes: [sfx.past, sfx.kpers_1sg, sfx.kpers_2sg, sfx.kpers_1pl, sfx.kpers_2pl, sfx.kpers_3pl]
+
+reference: |
+  **-DI** = the past: something that happened and that you saw or know for sure. Add it to the verb **stem** (the dictionary form without *-mak / -mek*):
+
+  *gel·mek* → **gel·di** "he / she came" · *oku·mak* → **oku·du** "he / she read"
+
+  **Vowel (I):** 4-way harmony with the last vowel of the stem: a ı → **ı**, e i → **i**, o u → **u**, ö ü → **ü**.
+  *yap·tı, gel·di, oku·du, gör·dü*
+
+  **Consonant (D):** after **f s t k ç ş h p** ("Fıstıkçı Şahap") → **t**, otherwise **d**.
+  *yap·tı, iç·ti, git·ti, kalk·tı* but *gel·di, otur·du, oku·du*
+
+  **Person endings (the "k" set).** The past takes a second, shorter set of person endings:
+
+  | Pronoun | Ending | gel- | yap- |
+  |---|---|---|---|
+  | ben | **-m** | gel·di·**m** | yap·tı·**m** |
+  | sen | **-n** | gel·di·**n** | yap·tı·**n** |
+  | o | – | gel·di | yap·tı |
+  | biz | **-k** | gel·di·**k** | yap·tı·**k** |
+  | siz | **-nIz** | gel·di·**niz** | yap·tı·**nız** |
+  | onlar | **-lAr** | gel·di·**ler** | yap·tı·**lar** |
+
+  **No stem changes.** -DI starts with a consonant, so the stem stays as it is:
+  *git → git·ti·m* (compare *gid·iyor·um*), *ye → ye·di·m* (compare *yi·yor·um*), *de → de·di·m*.
+
+  **Time words:** *dün* "yesterday", *dün akşam* "last night", *geçen hafta* "last week", *geçen yıl* "last year".
+
+patterns:
+  - id: g.L30.past.vowel
+    description: "4-way harmony: yaptı, geldi, okudu, gördü"
+  - id: g.L30.past.voiceless
+    description: "Fıstıkçı Şahap → -tI: yaptım, içtim, gittim"
+  - id: g.L30.past.person
+    description: "The k-set person endings: -m, -n, –, -k, -nIz, -lAr (geldim, geldik, geldiniz)"
+  - id: g.L30.past.no_stem_change
+    description: "No stem change before -DI: gittim, yedim, dedim (not gidtim, yidim)"
+
+feedback:
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel → **{answer}**."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel → **{answer}**."
+  vowel_round: "-DI has four forms (ı i u ü): after **o / u** it's **u**, after **ö / ü** it's **ü**: **{answer}**."
+  voiceless: "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: **{answer}**."
+  not_voiceless: "**{c}** is not in Fıstıkçı Şahap → **d**: **{answer}**."
+  after_vowel: "**{word}** ends in a vowel → always **d**: **{answer}**."
+  stem_changed: "-DI starts with a consonant, so the stem doesn't change: **{answer}**."
+  person_set: "The past uses the short person endings: **-m, -n, –, -k, -nIz, -lAr**: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

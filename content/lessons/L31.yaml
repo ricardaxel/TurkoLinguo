@@ -1,0 +1,157 @@
+# L31 — past: negative & questions. Model: L10–L13. Format: docs/CONTENT_FORMAT.md
+id: L31
+title: "Past: negative & questions"
+grammar: g.L31.past_neg_q
+new_words: [w.ne_zaman]
+not_yet:
+  - "past of 'to be' in questions (Evde miydin?) → L32"
+  - "henüz / daha 'not yet' (Daha gelmedi) → later review"
+  - "Geldim mi? (1st person question) is rare: shown in the table only"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          📱 **Geldin mi?** "Did you come? / Are you here?"
+          🙅 **Hayır, gelmedim.** "No, I didn't."
+
+          Two pieces you know from the present (L16), in a new place: **-mA** "not" and **mI** "?".
+        sentences: [s.L31.003, s.L31.005]
+        audio: [aud.own.s.L31.003, aud.own.s.L31.005]
+
+      - kind: rule
+        title: "Not: stem · mA · dI · person"
+        body: |
+          **-mA** goes right after the stem, as in the present. Then the past, then the person:
+
+          | | | |
+          |---|---|---|
+          | gel- | gel·**me**·di·m | I didn't come |
+          | git- | git·**me**·di·m | I didn't go |
+          | oku- | oku·**ma**·dı·m | I didn't read |
+          | yap- | yap·**ma**·dı·k | we didn't do |
+
+          💡 -mA ends in a vowel, so the past after it is always **-dI** (never -tI): *git·me·di·m*.
+          The vowel follows -mA: -me → **-di**, -ma → **-dı**.
+
+          🔊 Stress falls just **before -mA**: **GEL**medim, o**KU**madım.
+        sentences: [s.L31.001, s.L31.002]
+        audio: [aud.own.s.L31.001, aud.own.s.L31.002]
+
+      - kind: rule
+        title: "Questions: the person stays on the verb"
+        body: |
+          The person ending stays where it is, and **mI** comes after it, as a separate word:
+
+          | | |
+          |---|---|
+          | Geldi**n** **mi**? | Did you come? |
+          | Ali geldi **mi**? | Did Ali come? |
+          | Geldi**niz** **mi**? | Did you (pl. / polite) come? |
+          | Geldi**ler** **mi**? | Did they come? |
+          | Gel**me**din **mi**? | Didn't you come? |
+
+          *mI* follows the last vowel of the verb: geldin **mi** · okudun **mu** · yaptın **mı** · gördün **mü**.
+        sentences: [s.L31.008, s.L31.010, s.L31.011]
+        audio: [aud.own.s.L31.008, aud.own.s.L31.010, aud.own.s.L31.011]
+
+      - kind: rule
+        title: "Geliyor musun? vs Geldin mi?"
+        body: |
+          ⚠️ This is the one difference to remember:
+
+          | | present (L16) | past |
+          |---|---|---|
+          | sen | Geliyor **musun**? | Geldi**n** **mi**? |
+          | siz | Gidiyor **musunuz**? | Gitti**niz** **mi**? |
+
+          - **Present:** the person ending **moves onto mI**: *mu·sun*.
+          - **Past:** the person ending **stays on the verb**: *geldi·n*, and *mi* is bare.
+
+          ❌ ~~Geldi misin?~~ ✅ **Geldin mi?**
+        sentences: [s.L31.006, s.L31.003, s.L31.017, s.L31.018]
+        audio: [aud.own.s.L31.006, aud.own.s.L31.003, aud.own.s.L31.017, aud.own.s.L31.018]
+
+      - kind: examples
+        title: "Answering"
+        body: |
+          Turkish answers with the verb, not with "yes I did":
+
+          - *Kahvaltı yaptın mı?* — **Evet, yaptım.** / **Hayır, yapmadım.**
+          - *Geldin mi?* — **Evet, geldim.** / **Hayır, gelmedim.**
+
+          **ne zaman** "when": *Ne zaman geldin?* "When did you come?"
+        sentences: [s.L31.015, s.L31.016, s.L31.004, s.L31.012]
+        audio: [aud.own.s.L31.015, aud.own.s.L31.016, aud.own.s.L31.004, aud.own.s.L31.012]
+
+    items:
+      - { id: L31.learn.01, type: build_word, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.negative, tiles: [gel, me, di, m], answer: "gel·me·di·m", feedback: { "gel·di·me·m": "The negative **-mA** comes right after the stem, before the past: **gel·me·di·m**." } }
+      - id: L31.learn.02
+        type: picture_choose
+        grammar: [g.L31.past_neg_q, g.L30.past]
+        pattern: g.L31.past_neg_q.negative
+        images: [img.openmoji.tea]
+        prompt: "Çay içtin mi? — Hayır, …"
+        options: [içmedim, içmetim, içmedım]
+        answer: içmedim
+        translation: "Did you drink tea? — No, I didn't."
+        feedback: { içmetim: "-mA ends in a vowel, so the past is always **-dI** after it: **içmedim**.", içmedım: "After **-me** the past is **-di**: **içmedim**." }
+      - id: L31.learn.03
+        type: contrast_pair
+        grammar: [g.L31.past_neg_q, g.L16.prog_neg_q]
+        pattern: g.L31.past_neg_q.vs_present
+        prompt: "Did you come?"
+        options: [s.L31.003, s.L31.006]
+        answer: s.L31.003
+      - { id: L31.learn.04, type: translate_to_tr, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.question, sentence: s.L31.008, word_bank: [Ali, geldi, mi, mı, misin] }
+      - { id: L31.learn.05, type: translate_to_tr, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.vs_present, sentence: s.L31.018, word_bank: [Gittiniz, mi, Gitti, misiniz, musunuz] }
+      - id: L31.learn.06
+        type: listen_choose
+        grammar: [g.L31.past_neg_q, g.L17.dat]
+        sentence: s.L31.013
+        options: ["Ayşe didn't go to school yesterday.", "Ayşe went to school yesterday.", "Did Ayşe go to school yesterday?"]
+        answer: "Ayşe didn't go to school yesterday."
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L31.practise.01, type: spot_error, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.question, text: "Geldi misin?", error: "Geldi misin", answer: "Geldin mi", sentence: s.L31.003, feedback: { "Geldi misin": "In the past, the person ending stays on the verb and **mI** comes last: **Geldin mi?** (Only the present moves it: *Geliyor musun?*)" } }
+      - { id: L31.practise.02, type: spot_error, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.negative, text: "Dün gelmetim.", error: gelmetim, answer: gelmedim, sentence: s.L31.001, feedback: { gelmetim: "-mA ends in a vowel, so the past is always **-dI** after it: **gelmedim**." } }
+      - { id: L31.practise.03, type: spot_error, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.mi_harmony, text: "Kahvaltı yaptın mi?", error: mi, answer: mı, sentence: s.L31.015, feedback: { mi: "*mI* follows the last vowel of **yaptın** (ı): **mı**." } }
+      - { id: L31.practise.04, type: spot_error, grammar: [g.L31.past_neg_q, g.L17.dat], pattern: g.L31.past_neg_q.negative, text: "Ayşe dün okula gitmadi.", error: gitmadi, answer: gitmedi, sentence: s.L31.013, feedback: { gitmadi: "**git-** has a front vowel, so the negative is **-me**: **gitmedi**." } }
+      - { id: L31.practise.05, type: build_word, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.negative, tiles: [oku, ma, dı, k], answer: "oku·ma·dı·k", feedback: { "oku·dı·ma·k": "The negative **-mA** comes right after the stem, before the past: **oku·ma·dı·k**." } }
+      - { id: L31.practise.06, type: translate_to_tr, grammar: [g.L31.past_neg_q, g.L17.dat], pattern: g.L31.past_neg_q.question, sentence: s.L31.009, word_bank: [Dün, okula, gittiniz, mi, gittin, misiniz, okulda] }
+      - { id: L31.practise.07, type: translate_to_en, grammar: [g.L31.past_neg_q, g.L30.past], sentence: s.L31.011 }
+      - id: L31.practise.08
+        type: qa
+        grammar: [g.L31.past_neg_q, g.L30.past]
+        question: s.L31.015
+        images: [img.openmoji.fried_egg]
+        answers: ["Evet, (kahvaltı) yaptım.", "Hayır, (kahvaltı) yapmadım."]
+      - { id: L31.practise.09, type: dictation, grammar: [g.L31.past_neg_q, g.L30.past], sentence: s.L31.012 }
+      - id: L31.practise.10
+        type: contrast_pair
+        grammar: [g.L31.past_neg_q, g.L16.prog_neg_q]
+        pattern: g.L31.past_neg_q.vs_present
+        prompt: "Did you go? (plural / polite)"
+        options: [s.L31.018, s.L31.017]
+        answer: s.L31.018
+      - { id: L31.practise.11, type: translate_to_tr, grammar: [g.L31.past_neg_q, g.L18.acc], pattern: g.L31.past_neg_q.mi_harmony, sentence: s.L31.020, typed: true }
+      - id: L31.practise.12
+        type: mini_dialogue
+        grammar: [g.L31.past_neg_q, g.L30.past]
+        turns:
+          - { speaker: A, sentence: s.L31.003 }
+          - { speaker: B, blank: true, answers: ["Evet, (ben) geldim."] }
+          - { speaker: A, sentence: s.L31.012 }
+          - { speaker: B, blank: true, answers: ["(Ben) dün geldim.", "Dün."] }
+      - { id: L31.practise.13, type: translate_to_tr, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.negative, sentence: s.L31.019, word_bank: [Pilav, yemedim, yimedim, yemadım, yemedin] }
+      - id: L31.practise.14
+        type: listen_choose
+        grammar: [g.L31.past_neg_q, g.L30.past]
+        sentence: s.L31.010
+        options: ["Did they come?", "Are they coming?", "Did you come?"]
+        answer: "Did they come?"
+      - { id: L31.practise.15, type: translate_to_tr, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.mi_harmony, sentence: s.L31.021, word_bank: [Kitap, okudun, mu, mi, okudu, musun] }

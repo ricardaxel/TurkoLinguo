@@ -1,0 +1,160 @@
+# L24 — cases after possessives: the buffer n. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L24
+title: "Cases after possessives: buffer n"
+grammar: g.L24.poss_case
+new_words: [w.ağrımak, w.geçmiş_olsun]
+not_yet:
+  - "the genitive after a possessive + case chain in one word (evimizin…) is not drilled"
+  - "with / by -(y)lA after a possessive (arkadaşımla) → L27"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🐈 **Kedi Ali'nin evinde.** "The cat is at Ali's house."
+
+          ev·i "his house" + -de "at" → ev·i·**n**·de. A small **n** appears between the two endings.
+        sentences: [s.L24.001]
+        audio: [aud.own.s.L24.001]
+
+      - kind: rule
+        title: "After -(s)I: add n"
+        body: |
+          After a **3rd-person** possessive, every case ending takes **n**:
+
+          | | in | from | to | object |
+          |---|---|---|---|---|
+          | ev·i | ev·i·**n**·de | ev·i·**n**·den | ev·i·**n**·e | ev·i·**n**·i |
+          | araba·sı | araba·sı·**n**·da | araba·sı·**n**·dan | araba·sı·**n**·a | araba·sı·**n**·ı |
+          | okul·u | okul·u·**n**·da | okul·u·**n**·dan | okul·u·**n**·a | okul·u·**n**·u |
+
+          The **n** takes the place of the buffer **y**: araba·sı·**n**·ı, not ~~arabasıyı~~. And -DA stays **d** after it.
+        sentences: [s.L24.003, s.L24.005, s.L24.004]
+        audio: [aud.own.s.L24.003, aud.own.s.L24.005, aud.own.s.L24.004]
+
+      - kind: rule
+        title: "You've seen it before"
+        body: |
+          The same **n** follows every *-(s)I*:
+
+          - their: ev·leri·**n**·de "at their house" · *Onlar evlerinde.*
+          - compounds: yatak odası·**n**·da (L10!) · otobüs durağı·**n**·da
+          - the L21 chain: Ali'nin ev·i·**n**·de
+        sentences: [s.L24.007, s.L24.016, s.L24.006]
+        audio: [aud.own.s.L24.007, aud.own.s.L24.016, aud.own.s.L24.006]
+
+      - kind: rule
+        title: "my, your, our: no n"
+        body: |
+          The other persons just add the case:
+
+          | | |
+          |---|---|
+          | ev·im·**de** | in my house |
+          | ev·in·**e** | to your house |
+          | ev·imiz·**den** | from our house |
+          | araba·m·**ı** | my car (object) |
+
+          With "to be" (L11): *Odamdayım.* "I'm in my room." = oda·m·da·yım.
+        sentences: [s.L24.002, s.L24.008]
+        audio: [aud.own.s.L24.002, aud.own.s.L24.008]
+
+      - kind: note
+        title: "evine: your house or his?"
+        body: |
+          Two different chains give the same word:
+
+          ev·**in**·e "to **your** house" · ev·**i·n**·e "to **his / her** house"
+
+          The same goes for *evinde*, *kitabını*… A pronoun makes it clear:
+          *Senin evine gidiyorum.* / *Onun evine gidiyorum.*
+        sentences: [s.L24.009, s.L24.010, s.L24.011]
+        audio: [aud.own.s.L24.009, aud.own.s.L24.010, aud.own.s.L24.011]
+
+      - kind: note
+        title: "Where does it hurt?"
+        body: |
+          The body part takes the possessive, and **ağrımak** "to hurt" goes in the present continuous (L15):
+
+          *Başım ağrıyor.* "My head hurts." · *Ayşe'nin kulağı ağrıyor.* "Ayşe's ear hurts."
+
+          The doctor asks *Neren ağrıyor?* "Where does it hurt?" (nere·n "your where"). Answer: *Geçmiş olsun!* "Get well soon!"
+        sentences: [s.L24.012, s.L24.013, s.L24.020]
+        audio: [aud.own.s.L24.012, aud.own.s.L24.013, aud.own.s.L24.020]
+
+      - kind: examples
+        title: "Build the chain"
+        body: |
+          **word · possessive · (n) · case**
+
+          - araba · sı · **n** · ı → *arabasını* "his car" (object)
+          - okul · u · **n** · a → *okuluna* "to her school"
+          - ev · im · de → *evimde* "in my house" (no n)
+        audio: [aud.own.L24_worked_examples]
+
+    items:
+      - { id: L24.learn.01, type: build_word, grammar: [g.L24.poss_case, g.L18.acc], pattern: g.L24.poss_case.acc, tiles: [araba, sı, n, ı], answer: "araba·sı·n·ı", feedback: { "araba·n·sı·ı": "Possessive first, then n, then the case: **araba·sı·n·ı**.", "araba·sı·ı·n": "The **n** goes *between* the possessive and the case: **araba·sı·n·ı**." } }
+      - { id: L24.learn.02, type: type_form, grammar: [g.L24.poss_case, g.L10.loc], pattern: g.L24.poss_case.loc, base: w.ev, suffixes: [sfx.poss_3sg, sfx.loc], prompt: "in his / her house", answer: evinde, feedback: { evide: "After a 3rd-person possessive, the case ending needs **n**: ev·i·**n**·de.", evinte: "After the buffer **n**, -DA stays **d**: evinde." } }
+      - { id: L24.learn.03, type: type_form, grammar: [g.L24.poss_case, g.L10.loc], pattern: g.L24.poss_case.no_n, base: w.ev, suffixes: [sfx.poss_1sg, sfx.loc], prompt: "in my house", answer: evimde, feedback: { evimnde: "Only the **3rd person** (-sI, -lArI) takes the n: **evimde**.", evimte: "**m** isn't in Fıstıkçı Şahap → **d**: evimde." } }
+      - id: L24.learn.04
+        type: picture_choose
+        grammar: [g.L24.poss_case, g.L10.loc]
+        pattern: g.L24.poss_case.loc
+        images: [img.own.book_in_bag]
+        prompt: "Kitabı …"
+        options: [çantasında, çantasıda, çantada]
+        answer: çantasında
+        translation: "His / Her book is in his / her bag."
+        feedback: { çantasıda: "After a 3rd-person possessive, the case ending needs **n**: çanta·sı·**n**·da.", çantada: "*in his / her bag*: çanta·sı (his bag) + n + da = **çantasında**." }
+      - id: L24.learn.05
+        type: contrast_pair
+        grammar: [g.L24.poss_case, g.L11.loc_copula]
+        pattern: g.L24.poss_case.no_n
+        prompt: "I'm in my room."
+        options: [s.L24.008, s.L11.002]
+        answer: s.L24.008
+      - id: L24.learn.06
+        type: listen_choose
+        grammar: [g.L24.poss_case, g.L15.prog, g.L17.dat]
+        sentence: s.L24.010
+        options: ["I'm going to your house.", "I'm going to my house.", "I'm at your house."]
+        answer: "I'm going to your house."
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L24.practise.01, type: type_form, grammar: [g.L24.poss_case, g.L17.dat], pattern: g.L24.poss_case.dat, base: w.okul, suffixes: [sfx.poss_3sg, sfx.dat], prompt: "to his / her school", answer: okuluna, feedback: { okulua: "After a 3rd-person possessive, the case ending needs **n**: okul·u·**n**·a.", okuluya: "After *-(s)I* the buffer is **n**, not y: **okuluna**." } }
+      - { id: L24.practise.02, type: type_form, grammar: [g.L24.poss_case, g.L18.acc], pattern: g.L24.poss_case.acc, base: w.araba, suffixes: [sfx.poss_3sg, sfx.acc], prompt: "his / her car (as the object)", answer: arabasını, feedback: { arabasıyı: "After *-(s)I* the buffer is **n**, not y: **arabasını**.", arabası: "The car is the object, so add **n** + the accusative: **arabasını**." } }
+      - { id: L24.practise.03, type: type_form, grammar: [g.L24.poss_case, g.L22.compound, g.L10.loc], pattern: g.L24.poss_case.compound, base: w.otobüs_durağı, suffixes: [sfx.loc], prompt: "at the bus stop", answer: "otobüs durağında", feedback: { "otobüs durağıda": "**durağı** ends in *-(s)I*, so the case ending needs **n**: otobüs **durağında**.", "otobüs durakta": "Keep the compound's **-ı** and add **n**: otobüs **durağında**." } }
+      - { id: L24.practise.04, type: type_form, grammar: [g.L24.poss_case, g.L20.poss_pl, g.L10.loc], pattern: g.L24.poss_case.pl3, base: w.ev, suffixes: [sfx.poss_3pl, sfx.loc], prompt: "in their house", answer: evlerinde, feedback: { evleride: "After *-lArI* the case ending needs **n** too: ev·leri·**n**·de." } }
+      - { id: L24.practise.05, type: type_form, grammar: [g.L24.poss_case, g.L12.abl], pattern: g.L24.poss_case.abl, base: w.ev, suffixes: [sfx.poss_3sg, sfx.abl], prompt: "from his / her house", answer: evinden, feedback: { eviden: "After a 3rd-person possessive, the case ending needs **n**: ev·i·**n**·den." } }
+      - { id: L24.practise.06, type: spot_error, grammar: [g.L24.poss_case, g.L21.gen], text: "Kedi Ali'nin evide.", error: evide, answer: evinde, sentence: s.L24.001, feedback: { evide: "After a 3rd-person possessive, the case ending needs **n**: ev·i·**n**·de." } }
+      - { id: L24.practise.07, type: spot_error, grammar: [g.L24.poss_case, g.L18.acc, g.L15.prog], pattern: g.L24.poss_case.acc, text: "Ayşe kitabıyı okuyor.", error: kitabıyı, answer: kitabını, sentence: s.L24.004, feedback: { kitabıyı: "After *-(s)I* the buffer is **n**, not y: **kitabını**." } }
+      - { id: L24.practise.08, type: translate_to_en, grammar: [g.L24.poss_case, g.L20.poss_pl], sentence: s.L24.007 }
+      - { id: L24.practise.09, type: translate_to_tr, grammar: [g.L24.poss_case, g.L17.dat, g.L15.prog], pattern: g.L24.poss_case.dat, sentence: s.L24.005, word_bank: [Ali, okuluna, okulua, okuluya, gidiyor] }
+      - { id: L24.practise.10, type: translate_to_tr, grammar: [g.L19.poss_sg, g.L15.prog], sentence: s.L24.012, typed: true }
+      - id: L24.practise.11
+        type: qa
+        grammar: [g.L24.poss_case, g.L10.loc, g.L7.question]
+        question: s.L24.014
+        images: [img.own.phone_on_table]
+        answers: ["Hayır, (telefonum) masada."]
+        feedback: "auto:g.L24.poss_case"
+      - { id: L24.practise.12, type: dictation, grammar: [g.L24.poss_case, g.L17.dat, g.L15.prog], sentence: s.L24.017 }
+      - id: L24.practise.13
+        type: mini_dialogue
+        grammar: [g.L19.poss_sg, g.L15.prog, g.L7.question]
+        images: [img.openmoji.head_bandage]
+        turns:
+          - { speaker: A, sentence: s.L24.021 }
+          - { speaker: B, blank: true, answers: ["(Benim) başım ağrıyor.", "Başım."] }
+          - { speaker: A, sentence: s.L24.020 }
+      - { id: L24.practise.14, type: translate_to_en, grammar: [g.L24.poss_case, g.L18.acc, g.L15.prog], sentence: s.L24.018, note: "suyunu: his / her water (su·yu·n·u) or your water (su·yun·u)." }
+      - id: L24.practise.15
+        type: contrast_pair
+        grammar: [g.L24.poss_case, g.L21.gen, g.L17.dat]
+        prompt: "I'm going to his house."
+        options: [s.L24.011, s.L24.010]
+        answer: s.L24.011

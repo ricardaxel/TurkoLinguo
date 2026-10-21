@@ -1,0 +1,191 @@
+# Sentences used by lesson L35 (-mAk lazım / gerek; -mA + possessive). `words` and `grammar` are hand-tagged.
+# Never use gitmem etc. as the negative aorist "I don't go" anywhere (homophone of the verbal noun).
+
+- id: s.L35.001
+  tr: Gitmem lazım.
+  en: ["I need to go.", "I have to go.", "I must go."]
+  words: [w.gitmek, w.lazım]
+  grammar: [g.L35.lazim, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L35.001
+
+- id: s.L35.002
+  tr: Eve gitmem lazım.
+  en: ["I need to go home.", "I have to go home."]
+  words: [w.ev, w.gitmek, w.lazım]
+  grammar: [g.L35.lazim, g.L19.poss_sg, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L35.002
+
+- id: s.L35.003
+  tr: Çalışmak lazım.
+  en: ["One has to work.", "It's necessary to work.", "We have to work.", "You have to work."]
+  words: [w.çalışmak, w.lazım]
+  grammar: [g.L35.lazim, g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L35.003
+
+- id: s.L35.004
+  tr: Ne yapmam lazım?
+  en: ["What do I need to do?", "What do I have to do?", "What should I do?"]
+  words: [w.ne, w.yapmak, w.lazım]
+  grammar: [g.L35.lazim, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L35.004
+  native_required: true        # question intonation
+
+- id: s.L35.005
+  tr: Doktora gitmen lazım.
+  en: ["You need to go to the doctor.", "You have to see a doctor.", "You should go to the doctor."]
+  words: [w.doktor, w.gitmek, w.lazım]
+  grammar: [g.L35.lazim, g.L19.poss_sg, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L35.005
+
+- id: s.L35.006
+  tr: Ali'nin gelmesi lazım.
+  en: ["Ali needs to come.", "Ali has to come."]
+  words: [w.Ali, w.gelmek, w.lazım]
+  grammar: [g.L35.lazim, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.L35.006
+
+- id: s.L35.007
+  tr: Saat yedide kalkmamız lazım.
+  en: ["We need to get up at seven.", "We have to get up at seven."]
+  words: [w.saat, w.yedi, w.kalkmak, w.lazım]
+  grammar: [g.L35.lazim, g.L20.poss_pl, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.L35.007
+
+- id: s.L35.008
+  tr: Beklemeniz gerek.
+  en: ["You need to wait.", "You have to wait."]
+  words: [w.beklemek, w.gerek]
+  grammar: [g.L35.lazim, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L35.008
+
+- id: s.L35.009
+  tr: Gelmeleri lazım.
+  en: ["They need to come.", "They have to come."]
+  words: [w.gelmek, w.lazım]
+  grammar: [g.L35.lazim, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L35.009
+
+- id: s.L35.010
+  tr: Gitmen gerekmiyor.
+  en: ["You don't need to go.", "You don't have to go."]
+  words: [w.gitmek, w.gerekmek]
+  grammar: [g.L35.lazim, g.L19.poss_sg, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L35.010
+  native_required: true        # stress before -mA
+
+- id: s.L35.011
+  tr: Gelmen gerekmiyor.
+  en: ["You don't need to come.", "You don't have to come."]
+  words: [w.gelmek, w.gerekmek]
+  grammar: [g.L35.lazim, g.L19.poss_sg, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L35.011
+
+- id: s.L35.012
+  tr: Bana su lazım.
+  en: ["I need water.", "I need some water."]
+  words: [w.ben, w.su, w.lazım]
+  grammar: [g.L35.lazim, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L35.012
+
+- id: s.L35.013
+  tr: Sana ne lazım?
+  en: ["What do you need?"]
+  words: [w.sen, w.ne, w.lazım]
+  grammar: [g.L35.lazim, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L35.013
+  native_required: true        # question intonation
+
+- id: s.L35.014
+  tr: Bana bir kalem lazım.
+  en: ["I need a pen.", "I need a pencil."]
+  words: [w.ben, w.bir, w.kalem, w.lazım]
+  grammar: [g.L35.lazim, g.L17.dat, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.L35.014
+
+- id: s.L35.015
+  tr: Bize yardım lazım.
+  en: ["We need help."]
+  words: [w.biz, w.yardım, w.lazım]
+  grammar: [g.L35.lazim, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L35.015
+
+- id: s.L35.016
+  tr: Su içmem gerek.
+  en: ["I need to drink water.", "I have to drink water."]
+  words: [w.su, w.içmek, w.gerek]
+  grammar: [g.L35.lazim, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L35.016
+
+- id: s.L35.017
+  tr: Bugün markete gitmem lazım.
+  en: ["I need to go to the supermarket today.", "I have to go to the shop today.", "Today I need to go to the supermarket."]
+  words: [w.bugün, w.market, w.gitmek, w.lazım]
+  grammar: [g.L35.lazim, g.L19.poss_sg, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L35.017
+
+- id: s.L35.018
+  tr: Ne zaman gelmem lazım?
+  en: ["When do I need to come?", "When do I have to come?", "When should I come?"]
+  words: [w.ne_zaman, w.gelmek, w.lazım]
+  grammar: [g.L35.lazim, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.L35.018
+  native_required: true        # question intonation
+
+- id: s.L35.019
+  tr: Yarın çalışmam gerekmiyor.
+  en: ["I don't need to work tomorrow.", "I don't have to work tomorrow."]
+  words: [w.yarın, w.çalışmak, w.gerekmek]
+  grammar: [g.L35.lazim, g.L19.poss_sg, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L35.019
+  native_required: true        # stress before -mA
+
+- id: s.L35.020
+  tr: Gitmek istiyorum.
+  en: ["I want to go.", "I'd like to go."]
+  words: [w.gitmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L35.020
+
+- id: s.L35.021
+  tr: Gitmemiz lazım.
+  en: ["We need to go.", "We have to go.", "We must go."]
+  words: [w.gitmek, w.lazım]
+  grammar: [g.L35.lazim, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L35.021
+
+- id: s.L35.022
+  tr: Gitmeniz lazım.
+  en: ["You need to go.", "You have to go."]
+  words: [w.gitmek, w.lazım]
+  grammar: [g.L35.lazim, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.L35.022
+
+- id: s.L35.023
+  tr: Gitmek lazım.
+  en: ["One has to go.", "It's necessary to go.", "We have to go."]
+  words: [w.gitmek, w.lazım]
+  grammar: [g.L35.lazim, g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L35.023

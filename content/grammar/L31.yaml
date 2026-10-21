@@ -1,0 +1,48 @@
+id: g.L31.past_neg_q
+title: "Past: negative & questions"
+suffixes: [sfx.neg, sfx.past, sfx.kpers_1sg, sfx.kpers_2sg, sfx.kpers_1pl, sfx.kpers_2pl, sfx.kpers_3pl, sfx.q]
+
+reference: |
+  **Negative:** put **-mA** (L16) between the stem and -DI. -mA ends in a vowel, so the past is always **-dI** after it:
+
+  *gel·me·di·m* "I didn't come" · *git·me·di·m* "I didn't go" · *oku·ma·dı·m* "I didn't read" · *yap·ma·dı·k* "we didn't do"
+
+  The vowel of -DI now follows **-mA**: *-me* → **-di**, *-ma* → **-dı**.
+
+  **Questions:** the person ending stays **on the verb**, and **mI** comes after it, as a separate word:
+
+  | | present (L16) | past |
+  |---|---|---|
+  | sen | Geliyor **musun**? | Geldi**n** **mi**? |
+  | siz | Geliyor **musunuz**? | Geldi**niz** **mi**? |
+  | onlar | Geliyorlar **mı**? | Geldi**ler** **mi**? |
+
+  In the present, the person ending moves onto *mI*. In the past it **doesn't**: it's already on the verb.
+  *mI* follows the last vowel of the word before it: *Geldin **mi**? Okudun **mu**? Yaptın **mı**? Gördün **mü**?*
+
+  **Negative question:** *Gelmedin mi?* "Didn't you come?"
+
+  **Short answers** repeat the verb: *Geldin mi? — Evet, geldim. / Hayır, gelmedim.*
+
+  **ne zaman** "when": *Ne zaman geldin?* "When did you come?"
+
+  🔊 Stress falls just **before -mA**: **GEL**medim, o**KU**madım.
+
+patterns:
+  - id: g.L31.past_neg_q.negative
+    description: "Negative: stem + mA + dI + person (gelmedim, okumadık)"
+  - id: g.L31.past_neg_q.question
+    description: "Question: the person ending stays on the verb, then mI (Geldin mi?, Geldiniz mi?)"
+  - id: g.L31.past_neg_q.mi_harmony
+    description: "mI after the past follows the verb's last vowel (Okudun mu?, Yaptın mı?)"
+  - id: g.L31.past_neg_q.vs_present
+    description: "Geliyor musun? vs Geldin mi?: where the person ending goes"
+
+feedback:
+  neg_order: "The negative **-mA** comes right after the stem, before the past: **{answer}**."
+  neg_d: "-mA ends in a vowel, so the past is always **-dI** after it: **{answer}**."
+  neg_harmony: "After **-me** the past is **-di**, after **-ma** it's **-dı**: **{answer}**."
+  person_on_verb: "In the past, the person ending stays on the verb and **mI** comes last: **{answer}**."
+  mi_separate: "*mI* is a **separate** word: **{answer}**."
+  mi_harmony: "*mI* follows the last vowel of the word before it: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

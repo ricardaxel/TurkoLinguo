@@ -1,0 +1,15 @@
+id: T14
+title: Family
+kind: core
+# Frames only pre-teach: no possessives yet (annem, babam → L19).
+# Pack 3 (oğul, eş, kuzen…) comes later with the possessive lessons: oğul needs oğlum, oğlu.
+packs:
+  - id: T14.p1
+    unlock_after: L18
+    words: [w.anne, w.baba, w.kardeş, w.kız_kardeş, w.erkek_kardeş, w.abla, w.ağabey, w.çocuk]
+    frames: [s.T14.001, s.T14.002]
+  - id: T14.p2
+    unlock_after: L18
+    words: [w.kız, w.dede, w.babaanne, w.anneanne, w.amca, w.dayı, w.teyze, w.hala]
+    frames: [s.T14.003, s.T14.004]
+revisit: [L19, L21, L23]

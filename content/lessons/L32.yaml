@@ -1,0 +1,145 @@
+# L32 — past of "to be" -(y)DI. Model: L10–L13. Format: docs/CONTENT_FORMAT.md
+id: L32
+title: "Past of 'to be': -(y)DI"
+grammar: g.L32.copula_past
+new_words: [w.hasta, w.yorgun]
+not_yet:
+  - "possessive + -(y)DI (evimdeydim) → later review"
+  - "past continuous -(I)yordu → A2"
+  - "the -mIş past of 'to be' (hastaymış) → A2"
+  - "idi as a separate word: recognition only (one translate_to_en item)"
+
+sessions:
+  learn:
+    minutes: 4
+    cards:
+      - kind: hook
+        body: |
+          📱 **Neredeydin?** "Where were you?"
+          🏠 **Evdeydim. Hastaydım.** "I was at home. I was ill."
+
+          *Evdeyim* (L11) = I **am** at home. Add **-(y)DI** and it's the past: **ev·de·ydi·m**.
+        sentences: [s.L32.008, s.L32.001, s.L32.002]
+        audio: [aud.own.s.L32.008, aud.own.s.L32.001, aud.own.s.L32.002]
+
+      - kind: rule
+        title: "-(y)DI = was / were"
+        body: |
+          It goes where *-(y)Im, -sIn…* went in L5 and L11: on nouns, adjectives and places.
+
+          | Word ends in… | Ending | Examples |
+          |---|---|---|
+          | a vowel | **-ydI** | hasta·**ydı**, öğrenci·**ydi**, ev·de·**ydi** |
+          | a consonant | **-dI** | öğretmen·**di**, yorgun·**du** |
+          | f s t k ç ş h p | **-tI** | Türk·**tü**, büyük·**tü**, sıcak·**tı** |
+
+          It's -DI from L30 with a **buffer y** after vowels. The vowel follows 4-way harmony, as always.
+        sentences: [s.L32.003, s.L32.004, s.L32.006]
+        audio: [aud.own.s.L32.003, aud.own.s.L32.004, aud.own.s.L32.006]
+
+      - kind: rule
+        title: "Who? The short endings again"
+        body: |
+          *was / were* takes the same short person endings as the past of verbs (L30):
+
+          | | hasta "ill" | evde "at home" | öğretmen |
+          |---|---|---|---|
+          | ben | hasta·ydı·**m** | evde·ydi·**m** | öğretmen·di·**m** |
+          | sen | hasta·ydı·**n** | evde·ydi·**n** | öğretmen·di·**n** |
+          | o | hasta·ydı | evde·ydi | öğretmen·di |
+          | biz | hasta·ydı·**k** | evde·ydi·**k** | öğretmen·di·**k** |
+          | siz | hasta·ydı·**nız** | evde·ydi·**niz** | öğretmen·di·**niz** |
+          | onlar | hasta·ydı·**lar** | evde·ydi(·**ler**) | öğretmen·di·**ler** |
+
+          Names keep the apostrophe: *Ankara'**daydım*** "I was in Ankara", *parkta**ydık*** "we were in the park".
+
+          🔊 -(y)DI is never stressed: has**TA**ydım, ev**DE**ydim, **AN**kara'daydım.
+        sentences: [s.L32.007, s.L32.009]
+        audio: [aud.own.s.L32.007, aud.own.s.L32.009]
+
+      - kind: rule
+        title: "There was / not / questions"
+        body: |
+          - **var·dı** "there was" · **yok·tu** "there wasn't" (k → **t**)
+          - **değil·di·m** "I wasn't": *Hasta değildim.*
+          - **Questions:** *mI* carries the past and the person: *Evde **mi·ydi·n**?* "Were you at home?" · *Hasta **mı·ydı·n**?*
+
+          ⚠️ ❌ ~~Evdeydin mi?~~ ✅ **Evde miydin?** Same as the present *Evde misin?*: the ending moves onto *mI*.
+        sentences: [s.L32.014, s.L32.013, s.L32.012, s.L32.010]
+        audio: [aud.own.s.L32.014, aud.own.s.L32.013, aud.own.s.L32.012, aud.own.s.L32.010]
+
+      - kind: note
+        title: "You may see idi"
+        body: |
+          In formal writing, -(y)DI can be a separate word, **idi**: *Hasta idim* = *Hastaydım*. You only need to recognise it. In speech, say **hastaydım**.
+        sentences: [s.L32.017]
+        audio: [aud.own.s.L32.017]
+
+    items:
+      - { id: L32.learn.01, type: build_word, grammar: [g.L32.copula_past, g.L10.loc], pattern: g.L32.copula_past.loc_1sg, tiles: [ev, de, ydi, m], answer: "ev·de·ydi·m", feedback: { "ev·ydi·de·m": "Location first, then *was*, then the person: **ev·de·ydi·m**." } }
+      - { id: L32.learn.02, type: type_form, grammar: [g.L32.copula_past], pattern: g.L32.copula_past.after_vowel_1sg, base: w.hasta, suffixes: [sfx.cop_past, sfx.kpers_1sg], prompt: "I was ill", answer: hastaydım, feedback: { hastadım: "**hasta** ends in a vowel, so -(y)DI needs the buffer **y**: **hastaydım**.", hastaydim: "The last vowel is **a**, so -(y)DI is **-ydı**: **hastaydım**." } }
+      - { id: L32.learn.03, type: pick_suffix, grammar: [g.L32.copula_past], pattern: g.L32.copula_past.voiced_1sg, base: w.öğretmen, suffix: sfx.cop_past, options: [di, ydi, ti, dı], answer: di, feedback: { ydi: "**öğretmen** ends in a consonant: no **y**: **öğretmendi**.", ti: "**n** is not in Fıstıkçı Şahap → **d**: **öğretmendi**." } }
+      - id: L32.learn.04
+        type: picture_choose
+        grammar: [g.L32.copula_past, g.L10.loc]
+        pattern: g.L32.copula_past.loc_1sg
+        images: [img.own.person_at_home]
+        prompt: "Dün …"
+        options: [evdeydim, evdedim, evdeydım]
+        answer: evdeydim
+        translation: "I was at home yesterday."
+        feedback: { evdedim: "-DA ends in a vowel, so -(y)DI needs the buffer **y**: **evdeydim**.", evdeydım: "The vowel before is **e**, so it's **-ydi**: **evdeydim**." }
+      - id: L32.learn.05
+        type: contrast_pair
+        grammar: [g.L32.copula_past, g.L5.copula]
+        prompt: "I was ill."
+        options: [s.L32.002, s.L32.022]
+        answer: s.L32.002
+      - id: L32.learn.06
+        type: listen_choose
+        grammar: [g.L32.copula_past, g.L8.varyok]
+        pattern: g.L32.copula_past.var_yok
+        sentence: s.L32.014
+        options: ["There was a cat in the garden.", "There is a cat in the garden.", "There wasn't a cat in the garden."]
+        answer: "There was a cat in the garden."
+
+  practise:
+    minutes: 5.5
+    items:
+      - { id: L32.practise.01, type: type_form, grammar: [g.L32.copula_past, g.L10.loc], pattern: g.L32.copula_past.loc_1sg, base: w.park, suffixes: [sfx.loc, sfx.cop_past, sfx.kpers_1sg], prompt: "I was in the park", answer: parktaydım, feedback: { parkdaydım: "**park** ends in **k**, one of the Fıstıkçı Şahap letters → **-ta**: **parktaydım**.", parktadım: "-ta ends in a vowel, so -(y)DI needs the buffer **y**: **parktaydım**.", parktaydıyım: "*was* uses the short person endings: *I* is just **-m**: **parktaydım**." } }
+      - { id: L32.practise.02, type: type_form, grammar: [g.L32.copula_past], pattern: g.L32.copula_past.voiced_1sg, base: w.yorgun, suffixes: [sfx.cop_past, sfx.kpers_1pl], prompt: "we were tired", answer: yorgunduk, feedback: { yorgunyduk: "**yorgun** ends in a consonant: no **y**: **yorgunduk**.", yorgundık: "-(y)DI has four forms (ı i u ü): after **u** it's **u**: **yorgunduk**.", yorgunduyuz: "*was* uses the short person endings: *we* is **-k**: **yorgunduk**." } }
+      - { id: L32.practise.03, type: pick_suffix, grammar: [g.L32.copula_past], pattern: g.L32.copula_past.voiceless_1pl, base: w.Türk, suffix: sfx.cop_past, options: [tü, dü, ydü, tı], answer: tü, feedback: { dü: "**Türk** ends in **k**, one of the Fıstıkçı Şahap letters → **t**: **Türktü**.", ydü: "**Türk** ends in a consonant: no **y**: **Türktü**.", tı: "The last vowel is **ü** → **ü**: **Türktü**." } }
+      - { id: L32.practise.04, type: spot_error, grammar: [g.L32.copula_past, g.L19.poss_sg], pattern: g.L32.copula_past.voiced_1sg, text: "Babam öğretmenydi.", error: öğretmenydi, answer: öğretmendi, sentence: s.L32.004, feedback: { öğretmenydi: "**öğretmen** ends in a consonant: no **y**: **öğretmendi**." } }
+      - { id: L32.practise.05, type: spot_error, grammar: [g.L32.copula_past, g.L7.question], pattern: g.L32.copula_past.question, text: "Hasta mıdın?", error: mıdın, answer: mıydın, sentence: s.L32.011, feedback: { mıdın: "**mı** ends in a vowel, so -(y)DI needs the buffer **y**: **mıydın**." } }
+      - { id: L32.practise.06, type: spot_error, grammar: [g.L32.copula_past, g.L7.question, g.L10.loc], pattern: g.L32.copula_past.question, text: "Evdeydin mi?", error: "Evdeydin mi", answer: "Evde miydin", sentence: s.L32.010, feedback: { "Evdeydin mi": "In a question, **mI** carries the past and the person: **Evde miydin?** (like *Evde misin?*)" } }
+      - { id: L32.practise.07, type: translate_to_tr, grammar: [g.L32.copula_past, g.L11.loc_copula], pattern: g.L32.copula_past.name, sentence: s.L32.007, word_bank: [Geçen, hafta, Ankara'daydım, Ankaradaydım, Ankara'dadım, Ankara'dayım] }
+      - { id: L32.practise.08, type: translate_to_en, grammar: [g.L32.copula_past, g.L4.plural, g.L10.loc], sentence: s.L32.019, note: "With a plural subject, -lAr is usually left off: Çocuklar bahçedeydi." }
+      - { id: L32.practise.09, type: type_form, grammar: [g.L32.copula_past, g.L11.loc_copula], pattern: g.L32.copula_past.name, base: w.Ankara, suffixes: [sfx.loc, sfx.cop_past, sfx.kpers_1sg], prompt: "I was in Ankara", answer: "Ankara'daydım", feedback: { Ankaradaydım: "**Ankara** is a name, so it takes an apostrophe before the ending: **Ankara'daydım**." } }
+      - id: L32.practise.10
+        type: picture_choose
+        grammar: [g.L32.copula_past]
+        pattern: g.L32.copula_past.after_vowel_1sg
+        images: [img.openmoji.sun]
+        prompt: "Dün hava …"
+        options: [güneşliydi, güneşlidi, güneşliydı]
+        answer: güneşliydi
+        translation: "It was sunny yesterday."
+        feedback: { güneşlidi: "**güneşli** ends in a vowel, so -(y)DI needs the buffer **y**: **güneşliydi**.", güneşliydı: "The last vowel is **i**, so it's **-ydi**: **güneşliydi**." }
+      - { id: L32.practise.11, type: translate_to_tr, grammar: [g.L32.copula_past, g.L6.degil], pattern: g.L32.copula_past.var_yok, sentence: s.L32.012, typed: true, answers: ["Hayır, değildim."] }
+      - { id: L32.practise.12, type: dictation, grammar: [g.L32.copula_past, g.L8.varyok, g.L10.loc], pattern: g.L32.copula_past.var_yok, sentence: s.L32.013 }
+      - { id: L32.practise.13, type: translate_to_en, grammar: [g.L32.copula_past], sentence: s.L32.017, note: "idi is the written form: Hasta idim = Hastaydım." }
+      - id: L32.practise.14
+        type: contrast_pair
+        grammar: [g.L32.copula_past, g.L6.degil, g.L11.loc_copula]
+        prompt: "I wasn't at home."
+        options: [s.L32.021, s.L11.019]
+        answer: s.L32.021
+      - id: L32.practise.15
+        type: mini_dialogue
+        grammar: [g.L32.copula_past, g.L7.question, g.L10.loc]
+        images: [img.own.person_at_home]
+        turns:
+          - { speaker: A, sentence: s.L32.008 }
+          - { speaker: B, blank: true, answers: ["(Dün) (ben) evdeydim."] }
+          - { speaker: A, sentence: s.L32.011 }
+          - { speaker: B, blank: true, answers: ["Evet, hastaydım.", "Hayır, (hasta) değildim."] }

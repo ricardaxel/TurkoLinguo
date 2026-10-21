@@ -2,7 +2,7 @@
 // feedback templates (content/grammar/*.yaml → `feedback`).
 
 import type { Word } from '../content/types';
-import { alterStem, inflect } from './morph';
+import { alterStem, inflect, stemOf } from './morph';
 import { endsInVowel, firstVowel, isFrontVowel, lastChar, lastVowel, trLower } from './turkish';
 
 type SuffixTable = Record<string, { form: string; slot?: string }>;
@@ -68,7 +68,7 @@ function variants(id: string, prefix: string, right: string, first: boolean, lem
 }
 
 /** Stand-in word for "what the learner has written so far", so the engine can add the next suffix. */
-const asWord = (word: Word, lemma: string): Word => ({ ...word, lemma, pos: 'noun', flags: ['nosoft'], forms: undefined });
+const asWord = (word: Word, lemma: string): Word => ({ ...word, lemma, stem: undefined, pos: 'noun', flags: ['nosoft'], forms: undefined });
 
 /**
  * Diagnose a wrong form of a word with a chain of suffixes whose first one is consonant-initial,
@@ -80,10 +80,11 @@ const asWord = (word: Word, lemma: string): Word => ({ ...word, lemma, pos: 'nou
 export function diagnoseForm(word: Word, suffixIds: string | string[], given: string, table: SuffixTable): Diagnosis | null {
   const ids = typeof suffixIds === 'string' ? [suffixIds] : suffixIds;
   const expected = inflect(word, ids, table);
-  const lemma = trLower(word.lemma);
+  const stem = stemOf(word);
+  const lemma = trLower(stem);
   const g = clean(given);
   const vars: Record<string, string> = {
-    word: word.lemma,
+    word: stem,
     v: lastVowel(lemma) ?? '',
     c: lastChar(lemma),
     answer: expected,
@@ -134,7 +135,7 @@ export function diagnoseForm(word: Word, suffixIds: string | string[], given: st
       walk(i + 1, prefix + v.text, {
         codes: [...acc.codes, ...v.codes],
         vars: names
-          ? { word: word.lemma + prefix.slice(lemma.length), v: lastVowel(prefix) ?? '', c: lastChar(prefix), D: right.match(/[dt]/)?.[0] ?? '' }
+          ? { word: stem + prefix.slice(lemma.length), v: lastVowel(prefix) ?? '', c: lastChar(prefix), D: right.match(/[dt]/)?.[0] ?? '' }
           : acc.vars,
       });
     }

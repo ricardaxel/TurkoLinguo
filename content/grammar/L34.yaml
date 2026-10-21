@@ -1,0 +1,38 @@
+id: g.L34.istemek
+title: "istemek + -mAk: want / want to"
+suffixes: [sfx.inf]
+
+reference: |
+  **istemek** "to want" is a normal verb: *istiyorum, istiyorsun, istiyor…* (L15), *istemiyorum* (L16), *istedim* (L30).
+
+  **Want a thing:** noun + *istiyorum*: *Çay istiyorum.* "I want tea." / "I'd like tea."
+
+  **Want to do:** the dictionary form **-mAk** + *istiyorum*: *Çay **içmek** istiyorum.* "I want to drink tea."
+
+  - The infinitive stays exactly as in the dictionary: *gitmek, içmek, yemek, okumak*. No ending is added to it.
+  - It comes **right before** *istemek*, with its own object in front: *[Çay içmek] istiyorum.*
+  - Only *istemek* changes for the person and the tense: *Gitmek istiyorum / istiyorsun / istedim / istemiyorum*.
+
+  **Not:** put -mA on *istemek*: *Gitmek **istemiyorum**.* "I don't want to go." (*Gitmemek istiyorum* means "I want **not** to go".)
+
+  **Questions:** *Ne istiyorsun?* "What do you want?" · *Ne yapmak istiyorsun?* "What do you want to do?" · *Çay istiyor musun?*
+
+  This works when **you** want to do something yourself. "I want **you** to go" needs another construction (A2).
+
+patterns:
+  - id: g.L34.istemek.noun_vs_verb
+    description: "Çay istiyorum (a thing) vs Çay içmek istiyorum (an action)"
+  - id: g.L34.istemek.infinitive
+    description: "The -mAk form stays unchanged before istemek (gitmek istiyorum)"
+  - id: g.L34.istemek.negative
+    description: "Negative on istemek: gitmek istemiyorum"
+  - id: g.L34.istemek.question
+    description: "Ne yapmak istiyorsun? / Çay istiyor musun?"
+
+feedback:
+  infinitive: "Before *istemek*, use the dictionary form **-mAk**: **{answer}**."
+  inf_harmony: "-mAk follows 2-way harmony: **-mak** after a ı o u, **-mek** after e i ö ü: **{answer}**."
+  neg_on_istemek: "To say *don't want to*, make **istemek** negative: **{answer}**."
+  word_order: "The infinitive comes right before *istemek*: **{answer}**."
+  person_harmony: "The person ending follows the vowel before it: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

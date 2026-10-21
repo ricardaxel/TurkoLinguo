@@ -1,0 +1,266 @@
+# Sentences used by lesson L17. `words` and `grammar` are hand-tagged for now.
+# Place names: stress stays on the name (İSTanbul'a, LONdra'ya): native_required.
+
+- id: s.L17.001
+  tr: Nereye gidiyorsun?
+  en: ["Where are you going?", "Where are you going to?"]
+  words: [w.nereye, w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.001
+  native_required: true        # question intonation
+
+- id: s.L17.002
+  tr: Eve gidiyorum.
+  en: ["I'm going home.", "I am going home.", "I'm going to the house."]
+  words: [w.ev, w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.002
+
+- id: s.L17.003
+  tr: Okula gidiyorum.
+  en: ["I'm going to school.", "I am going to school.", "I go to school."]
+  words: [w.okul, w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.003
+
+- id: s.L17.004
+  tr: Ali İstanbul'a gidiyor.
+  en: ["Ali is going to Istanbul.", "Ali is going to İstanbul.", "Ali goes to Istanbul."]
+  words: [w.Ali, w.İstanbul, w.gitmek]
+  grammar: [g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.004
+  native_required: true        # place-name stress
+
+- id: s.L17.005
+  tr: Ayşe İzmir'e gidiyor.
+  en: ["Ayşe is going to Izmir.", "Ayşe is going to İzmir."]
+  words: [w.Ayşe, w.İzmir, w.gitmek]
+  grammar: [g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.005
+  native_required: true        # place-name stress
+
+- id: s.L17.006
+  tr: Otobüse biniyorum.
+  en: ["I'm getting on the bus.", "I'm taking the bus.", "I am getting on the bus."]
+  words: [w.otobüs, w.binmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.006
+
+- id: s.L17.007
+  tr: Bana bak!
+  en: ["Look at me!"]
+  words: [w.ben, w.bakmak]
+  grammar: [g.L14.imperative, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.007
+
+- id: s.L17.008
+  tr: Kediye bakıyorum.
+  en: ["I'm looking at the cat.", "I am looking at the cat."]
+  words: [w.kedi, w.bakmak]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.008
+
+- id: s.L17.009
+  tr: Buraya gel!
+  en: ["Come here!", "Come over here!"]
+  words: [w.buraya, w.gelmek]
+  grammar: [g.L14.imperative, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.009
+
+- id: s.L17.010
+  tr: Oraya gitmiyorum.
+  en: ["I'm not going there.", "I am not going there.", "I don't go there."]
+  words: [w.oraya, w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.010
+  native_required: true        # stress: GİTmiyorum
+
+- id: s.L17.011
+  tr: Paris'e gidiyoruz.
+  en: ["We're going to Paris.", "We are going to Paris."]
+  words: [w.Paris, w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.011
+
+- id: s.L17.012
+  tr: Londra'ya gidiyor musun?
+  en: ["Are you going to London?"]
+  words: [w.Londra, w.gitmek]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.012
+  native_required: true        # question intonation + place-name stress
+
+- id: s.L17.013
+  tr: Ahmet şehre gidiyor.
+  en: ["Ahmet is going to the city.", "Ahmet is going into town.", "Ahmet is going to town."]
+  words: [w.Ahmet, w.şehir, w.gitmek]
+  grammar: [g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.013
+
+- id: s.L17.014
+  tr: Kitaba bakın.
+  en: ["Look at the book.", "Look in the book."]
+  words: [w.kitap, w.bakmak]
+  grammar: [g.L14.imperative, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.014
+
+- id: s.L17.015
+  tr: Kedi sokağa bakıyor.
+  en: ["The cat is looking at the street.", "The cat is looking out at the street."]
+  words: [w.kedi, w.sokak, w.bakmak]
+  grammar: [g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.015
+
+- id: s.L17.016
+  tr: Ağaca bak!
+  en: ["Look at the tree!"]
+  words: [w.ağaç, w.bakmak]
+  grammar: [g.L14.imperative, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.016
+
+- id: s.L17.017
+  tr: Köpekten korkuyorum.
+  en: ["I'm afraid of dogs.", "I'm scared of dogs.", "I'm afraid of the dog."]
+  words: [w.köpek, w.korkmak]
+  grammar: [g.L5.copula, g.L12.abl, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.017
+
+- id: s.L17.018
+  tr: Kahveden hoşlanmıyorum.
+  en: ["I don't like coffee.", "I do not like coffee."]
+  words: [w.kahve, w.hoşlanmak]
+  grammar: [g.L5.copula, g.L12.abl, g.L15.prog, g.L16.prog_neg_q, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.018
+  native_required: true        # stress: hoşLANmıyorum
+
+- id: s.L17.019
+  tr: Durağa gidiyorum.
+  en: ["I'm going to the stop.", "I'm going to the bus stop."]
+  words: [w.durak, w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.019
+
+- id: s.L17.020
+  tr: Uçağa biniyoruz.
+  en: ["We're getting on the plane.", "We are boarding the plane.", "We're boarding the plane."]
+  words: [w.uçak, w.binmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.020
+
+- id: s.L17.021
+  tr: Vapura biniyor musunuz?
+  en: ["Are you taking the ferry?", "Are you getting on the ferry?"]
+  words: [w.vapur, w.binmek]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.021
+  native_required: true        # question intonation
+
+- id: s.L17.022
+  tr: Zonguldak'a gidiyorum.
+  en: ["I'm going to Zonguldak.", "I am going to Zonguldak."]
+  words: [w.Zonguldak, w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.022
+  native_required: true        # place-name stress; written k, said ğ
+
+- id: s.L17.023
+  tr: Ahmet'e bak!
+  en: ["Look at Ahmet!"]
+  words: [w.Ahmet, w.bakmak]
+  grammar: [g.L14.imperative, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.023
+
+- id: s.L17.024
+  tr: Sana bakıyorum.
+  en: ["I'm looking at you.", "I am looking at you."]
+  words: [w.sen, w.bakmak]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.024
+
+- id: s.L17.025
+  tr: Onlar bize geliyor.
+  en: ["They're coming to us.", "They're coming to our place.", "They are coming to see us."]
+  words: [w.onlar, w.biz, w.gelmek]
+  grammar: [g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.025
+
+- id: s.L17.026
+  tr: Saate bak!
+  en: ["Look at the clock!", "Look at the time!", "Look at the watch!"]
+  words: [w.saat, w.bakmak]
+  grammar: [g.L14.imperative, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.026
+
+- id: s.L17.027
+  tr: Ayşe hastaneye gidiyor.
+  en: ["Ayşe is going to the hospital.", "Ayşe is going to hospital."]
+  words: [w.Ayşe, w.hastane, w.gitmek]
+  grammar: [g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.027
+
+- id: s.L17.028
+  tr: Buzdolabına bak!
+  en: ["Look in the fridge!", "Have a look in the fridge!"]
+  words: [w.buzdolabı, w.bakmak]
+  grammar: [g.L14.imperative, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.028
+
+- id: s.L17.029
+  tr: Ali bisiklete biniyor.
+  en: ["Ali is riding a bike.", "Ali is getting on the bike.", "Ali rides a bike."]
+  words: [w.Ali, w.bisiklet, w.binmek]
+  grammar: [g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.029
+
+- id: s.L17.030
+  tr: Okula gitmiyorum, eve gidiyorum.
+  en: ["I'm not going to school, I'm going home.", "I'm not going to school; I'm going home."]
+  words: [w.okul, w.gitmek, w.ev]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.030
+
+- id: s.L17.031
+  tr: Okulda değilim, okula gidiyorum.
+  en: ["I'm not at school, I'm going to school.", "I'm not at school; I'm on my way to school."]
+  words: [w.okul, w.değil, w.gitmek]
+  grammar: [g.L6.degil, g.L11.loc_copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.031
+
+- id: s.L17.032
+  tr: Ben de okula gidiyorum.
+  en: ["I'm going to school too.", "I am going to school too.", "I'm going to school as well."]
+  words: [w.ben, w.de, w.okul, w.gitmek]
+  grammar: [g.L5.copula, g.L13.clitic_de, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.L17.032
