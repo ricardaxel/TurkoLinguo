@@ -1,0 +1,137 @@
+# Sentences used by lesson L8. Grammar tags: g.L8.varyok = var / yok.
+
+- id: s.L8.001
+  tr: Çay var mı?
+  en: ["Is there any tea?", "Is there tea?", "Do you have tea?"]
+  words: [w.çay, w.var]
+  grammar: [g.L7.question, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.001
+  native_required: true        # mI intonation
+
+- id: s.L8.002
+  tr: Var.
+  en: ["There is.", "Yes, there is.", "Yes."]
+  words: [w.var]
+  grammar: [g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.002
+
+- id: s.L8.003
+  tr: Yok.
+  en: ["There isn't.", "No, there isn't.", "No."]
+  words: [w.yok]
+  grammar: [g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.003
+
+- id: s.L8.004
+  tr: Kahve var mı?
+  en: ["Is there any coffee?", "Is there coffee?", "Do you have coffee?"]
+  words: [w.kahve, w.var]
+  grammar: [g.L7.question, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.004
+  native_required: true        # mI intonation
+
+- id: s.L8.006
+  tr: Süt yok.
+  en: ["There's no milk.", "There isn't any milk.", "There is no milk."]
+  words: [w.süt, w.yok]
+  grammar: [g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.006
+
+- id: s.L8.007
+  tr: Ekmek var mı?
+  en: ["Is there any bread?", "Is there bread?", "Do you have bread?"]
+  words: [w.ekmek, w.var]
+  grammar: [g.L7.question, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.007
+  native_required: true        # mI intonation
+
+- id: s.L8.008
+  tr: Peynir yok.
+  en: ["There's no cheese.", "There isn't any cheese.", "There is no cheese."]
+  words: [w.peynir, w.yok]
+  grammar: [g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.008
+
+- id: s.L8.009
+  tr: Zeytin var.
+  en: ["There are olives.", "There are some olives.", "There's olives."]
+  words: [w.zeytin, w.var]
+  grammar: [g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.009
+
+- id: s.L8.010
+  tr: Simit var mı?
+  en: ["Is there any simit?", "Are there any simits?", "Do you have simit?"]
+  words: [w.simit, w.var]
+  grammar: [g.L7.question, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.010
+  native_required: true        # mI intonation
+
+- id: s.L8.011
+  tr: Su var mı?
+  en: ["Is there any water?", "Is there water?", "Do you have water?"]
+  words: [w.su, w.var]
+  grammar: [g.L7.question, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.011
+  native_required: true        # mI intonation
+
+- id: s.L8.012
+  tr: Çay yok, kahve var.
+  en: ["There's no tea, there's coffee.", "There's no tea, but there's coffee.", "There is no tea, there is coffee."]
+  words: [w.çay, w.yok, w.kahve, w.var]
+  grammar: [g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.012
+
+- id: s.L8.013
+  tr: Yumurta var mı?
+  en: ["Are there any eggs?", "Is there an egg?", "Do you have eggs?"]
+  words: [w.yumurta, w.var]
+  grammar: [g.L7.question, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.013
+  native_required: true        # mI intonation
+
+- id: s.L8.014
+  tr: Çok ekmek var.
+  en: ["There's a lot of bread.", "There is a lot of bread.", "There's lots of bread."]
+  words: [w.çok, w.ekmek, w.var]
+  grammar: [g.L4.plural, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.014
+
+- id: s.L8.015
+  tr: İki çay, lütfen.
+  en: ["Two teas, please.", "Two cups of tea, please."]
+  words: [w.iki, w.çay, w.lütfen]
+  grammar: [g.L4.plural]
+  source: { kind: original }
+  audio: aud.own.s.L8.015
+
+- id: s.L8.016
+  tr: Kahve yok mu?
+  en: ["Isn't there any coffee?", "Is there no coffee?", "Don't you have coffee?"]
+  words: [w.kahve, w.yok]
+  grammar: [g.L7.question, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.L8.016
+  native_required: true        # mI intonation
+
+- id: s.L8.017
+  tr: Bu peynir değil.
+  en: ["This isn't cheese.", "This is not cheese."]
+  words: [w.bu, w.peynir, w.değil]
+  grammar: [g.L3.basics, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.L8.017
+

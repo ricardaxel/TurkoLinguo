@@ -1,0 +1,242 @@
+# L1 — alphabet & pronunciation. A sound lesson: no grammar yet. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L1
+title: "Alphabet & pronunciation"
+grammar: g.L1.alphabet
+new_words: [w.merhaba, w.kız, w.kaz, w.kır, w.kir, w.çam, w.cam, w.dağ]
+not_yet:
+  - "vowel harmony and the a/e, ı/i/u/ü families → L2"
+  - "any ending or sentence (Bu bir kitap) → L3"
+  - "greetings beyond merhaba → T1 packs"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          👋 **Merhaba!** "Hello!"
+
+          Good news: Turkish is written **exactly as it is spoken**. Learn the 29 letters once and you can read any word aloud, and write any word you hear.
+        sentences: [s.L1.001]
+        audio: [aud.own.s.L1.001]
+
+      - kind: rule
+        title: "29 letters"
+        body: |
+          A B C **Ç** D E F G **Ğ** H **I** İ J K L M N O **Ö** P R S **Ş** T U **Ü** V Y Z
+
+          - **No q, w or x.** *taksi* "taxi", not ~~taxi~~.
+          - **8 vowels:** a e **ı** i o **ö** u **ü**.
+          - Every letter always has **one** sound. There are no silent letters, except **ğ** (see below).
+        audio: [aud.own.L1_alphabet]
+
+      - kind: rule
+        title: "Letters that trick English speakers"
+        body: |
+          | Letter | Sounds like | Example |
+          |---|---|---|
+          | **c** | **j** in *jam* | *cami* "mosque" |
+          | **ç** | **ch** in *church* | *çay* "tea" |
+          | **ş** | **sh** in *ship* | *şu* "that" |
+          | **ı** (no dot) | the vowel in *ros**e**s*, lips spread | *kız* "girl" |
+          | **ö** | German **ö**: say *e*, round your lips | *göz* "eye" |
+          | **ü** | German **ü**: say *i*, round your lips | *gün* "day" |
+
+          ⚠️ **c** is never "k" or "s": *cam* "glass" = "jam".
+        audio: [aud.own.L1_letters]
+
+      - kind: rule
+        title: "The soft g: ğ"
+        body: |
+          **ğ** has no sound of its own. It **lengthens** the vowel before it:
+
+          *dağ* "mountain" ≈ "daa" · *yağmur* "rain" ≈ "yaamur"
+
+          - **ğ never starts a word.** No Turkish word begins with ğ.
+          - After **e** or **i** it often sounds like a light *y*: *değil* "not" ≈ "deyil".
+        sentences: [s.L1.008]
+        audio: [aud.own.s.L1.008, aud.own.L1_soft_g]
+
+      - kind: rule
+        title: "Dots change the word"
+        body: |
+          Listen to the pairs. One dot or two dots make a **different word**:
+
+          | | | |
+          |---|---|---|
+          | ı / i | **kır** "countryside" | **kir** "dirt" |
+          | ı / a | **kız** "girl" | **kaz** "goose" |
+          | ö / o | **öl** "die!" | **ol** "be!" |
+          | ü / u | **kül** "ash" | **kul** "servant" |
+          | ç / c | **çam** "pine" | **cam** "glass" |
+
+          So the app never accepts *kir* for *kır*: it tells you which letter is missing.
+        sentences: [s.L1.004, s.L1.005, s.L1.002, s.L1.003]
+        audio: [aud.own.L1_minimal_pairs]
+
+      - kind: rule
+        title: "Capital letters"
+        body: |
+          Turkish has **two** i's, and each keeps its dot as a capital:
+
+          | small | capital | Example |
+          |---|---|---|
+          | **i** | **İ** | *İstanbul* |
+          | **ı** | **I** | *Irmak* (a name, "river") |
+
+          So *I* is never the capital of *i*. Use the letter bar above the keyboard for İ, ı, ç, ğ, ö, ş, ü.
+
+      - kind: note
+        title: "Stress"
+        body: |
+          Most words are stressed on the **last** syllable: ki**TAP** "book", ara**BA** "car".
+
+          Some aren't, and the course marks them when they come: ***MER**haba*, place names like ***AN**kara*.
+
+    items:
+      - id: L1.learn.01
+        type: listen_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.dotless_i
+        sentence: s.L1.002
+        options: ["girl", "goose"]
+        answer: "girl"
+      - id: L1.learn.02
+        type: listen_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.dotless_i
+        sentence: s.L1.003
+        options: ["girl", "goose"]
+        answer: "goose"
+      - id: L1.learn.03
+        type: picture_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.consonants
+        images: [img.openmoji.mosque]
+        prompt: "'mosque', said **jah**-mee: **…ami**"
+        options: [c, ç, j]
+        answer: c
+        translation: "cami = mosque. Turkish c always sounds like English j."
+      - id: L1.learn.04
+        type: picture_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.consonants
+        images: [img.openmoji.tea]
+        prompt: "'tea', said **chai**: **…ay**"
+        options: [ç, c, ş]
+        answer: ç
+        translation: "çay = tea. ç sounds like ch."
+      - id: L1.learn.05
+        type: contrast_pair
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.dotless_i
+        prompt: "countryside"
+        options: [s.L1.004, s.L1.005]
+        answer: s.L1.004
+        note: "kır (no dot) = countryside, kir = dirt."
+      - { id: L1.learn.06, type: dictation, grammar: [g.L1.alphabet], sentence: s.L1.001 }
+
+  practise:
+    minutes: 5
+    items:
+      - id: L1.practise.01
+        type: listen_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.dotless_i
+        sentence: s.L1.004
+        options: ["countryside", "dirt"]
+        answer: "countryside"
+      - id: L1.practise.02
+        type: listen_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.dotless_i
+        sentence: s.L1.005
+        options: ["countryside", "dirt"]
+        answer: "dirt"
+      - id: L1.practise.03
+        type: contrast_pair
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.consonants
+        prompt: "pine tree"
+        options: [s.L1.006, s.L1.007]
+        answer: s.L1.006
+        note: "çam = pine (ch), cam = glass (j)."
+      - id: L1.practise.04
+        type: listen_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.consonants
+        sentence: s.L1.007
+        options: ["glass", "pine tree"]
+        answer: "glass"
+      - { id: L1.practise.05, type: dictation, grammar: [g.L1.alphabet], pattern: g.L1.alphabet.dotless_i, sentence: s.L1.002 }
+      - { id: L1.practise.06, type: dictation, grammar: [g.L1.alphabet], pattern: g.L1.alphabet.dotless_i, sentence: s.L1.004 }
+      - { id: L1.practise.07, type: dictation, grammar: [g.L1.alphabet], pattern: g.L1.alphabet.soft_g, sentence: s.L1.008, note: "Heard as 'daa': the long a is the clue for ğ." }
+      - id: L1.practise.08
+        type: picture_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.soft_g
+        images: [img.openmoji.mountain]
+        prompt: "'mountain', said **daa**: **da…**"
+        options: [ğ, g, h]
+        answer: ğ
+        translation: "dağ = mountain. ğ is silent: it makes the a long."
+      - id: L1.practise.09
+        type: picture_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.soft_g
+        images: [img.openmoji.abc]
+        prompt: "Which one can **not** be a Turkish word?"
+        options: [ğal, dağ, yağmur]
+        answer: ğal
+        translation: "ğ never starts a word. dağ = mountain, yağmur = rain."
+      - id: L1.practise.10
+        type: picture_choose
+        grammar: [g.L1.alphabet]
+        images: [img.openmoji.abc]
+        prompt: "Which letter is **not** in the Turkish alphabet?"
+        options: [q, ç, ğ, ı]
+        answer: q
+        translation: "Turkish has 29 letters, with no q, w or x."
+      - id: L1.practise.11
+        type: picture_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.umlauts
+        images: [img.openmoji.eye]
+        prompt: "'eye': **g…z**"
+        options: [ö, o, ü]
+        answer: ö
+        translation: "göz = eye. ö: say e with rounded lips."
+      - id: L1.practise.12
+        type: picture_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.capitals
+        images: [img.openmoji.flag_turkey]
+        prompt: "The capital letter: **…stanbul**"
+        options: [İ, I]
+        answer: İ
+        translation: "İstanbul. The capital of i keeps its dot: İ."
+      - id: L1.practise.13
+        type: picture_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.capitals
+        images: [img.openmoji.water_wave]
+        prompt: "ırmak 'river' as a name, with a capital: **…rmak**"
+        options: [I, İ]
+        answer: I
+        translation: "Irmak. The capital of ı has no dot: I."
+      - id: L1.practise.14
+        type: picture_choose
+        grammar: [g.L1.alphabet]
+        pattern: g.L1.alphabet.dotless_i
+        images: [img.openmoji.girl]
+        prompt: "'girl': **k…z**"
+        options: [ı, i, a]
+        answer: ı
+        translation: "kız = girl. kaz is a goose, and kiz isn't a word."
+      - id: L1.practise.15
+        type: mini_dialogue
+        grammar: [g.L1.alphabet]
+        images: [img.openmoji.waving_hand]
+        turns:
+          - { speaker: A, sentence: s.L1.001 }
+          - { speaker: B, blank: true, answers: ["Merhaba!"] }

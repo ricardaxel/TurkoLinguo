@@ -12,15 +12,15 @@ units:
   - { id: U7, title: Plans & wishes, lessons: [L33, L34, L35], checkpoint: C7 }
 
 lessons:
-  L1:  { title: "Alphabet & pronunciation", grammar: g.L1.alphabet }
-  L2:  { title: "Vowel harmony: the two families", grammar: g.L2.harmony }
-  L3:  { title: "This / that, bir, no 'is' in the 3rd person", grammar: g.L3.basics }
-  L4:  { title: "Plural -lAr", grammar: g.L4.plural }
-  L5:  { title: "Personal pronouns + 'to be' endings", grammar: g.L5.copula }
-  L6:  { title: "Negation of 'to be': değil", grammar: g.L6.degil }
-  L7:  { title: "Questions with mI", grammar: g.L7.question }
-  L8:  { title: "var / yok", grammar: g.L8.varyok }
-  L9:  { title: "Adjectives & numbers 1–10", grammar: g.L9.adj_num }
+  L1:  { title: "Alphabet & pronunciation", grammar: g.L1.alphabet, file: lessons/L1.yaml }
+  L2:  { title: "Vowel harmony: the two families", grammar: g.L2.harmony, file: lessons/L2.yaml }
+  L3:  { title: "This / that, bir, no 'is' in the 3rd person", grammar: g.L3.basics, file: lessons/L3.yaml }
+  L4:  { title: "Plural -lAr", grammar: g.L4.plural, file: lessons/L4.yaml }
+  L5:  { title: "Personal pronouns + 'to be' endings", grammar: g.L5.copula, file: lessons/L5.yaml }
+  L6:  { title: "Negation of 'to be': değil", grammar: g.L6.degil, file: lessons/L6.yaml }
+  L7:  { title: "Questions with mI", grammar: g.L7.question, file: lessons/L7.yaml }
+  L8:  { title: "var / yok", grammar: g.L8.varyok, file: lessons/L8.yaml }
+  L9:  { title: "Adjectives & numbers 1–10", grammar: g.L9.adj_num, file: lessons/L9.yaml }
   L10: { title: "Locative -DA: in / at / on", grammar: g.L10.loc, file: lessons/L10.yaml }
   L11: { title: "Location + 'to be'; apostrophes", grammar: g.L11.loc_copula, file: lessons/L11.yaml }
   L12: { title: "Ablative -DAn: from", grammar: g.L12.abl, file: lessons/L12.yaml }

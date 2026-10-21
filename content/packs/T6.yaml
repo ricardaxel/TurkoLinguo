@@ -1,0 +1,13 @@
+id: T6
+title: "Food & drink 1: café"
+kind: core
+packs:
+  - id: T6.p1
+    unlock_after: L7
+    words: [w.çay, w.kahve, w.süt, w.ekmek, w.peynir, w.zeytin, w.yumurta, w.simit]
+    frames: [s.T6.001, s.T6.002]
+  - id: T6.p2
+    unlock_after: L8
+    words: [w.meyve_suyu, w.şeker, w.bal, w.reçel, w.tereyağı, w.poğaça, w.kahvaltı, w.tost]
+    frames: [s.T6.003, s.T6.004]
+revisit: [L8, L18, L28, L34]

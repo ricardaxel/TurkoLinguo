@@ -1,0 +1,45 @@
+id: g.L1.alphabet
+title: "Alphabet & pronunciation"
+suffixes: []
+
+reference: |
+  Turkish has **29 letters** and is written the way it is spoken: every letter always has the same sound.
+
+  A B C Ç D E F G Ğ H I İ J K L M N O Ö P R S Ş T U Ü V Y Z
+
+  There is **no q, w or x**: *taksi* "taxi", *vize* "visa".
+
+  **Letters that trick English speakers**
+
+  | Letter | Sounds like | Example |
+  |---|---|---|
+  | **c** | English **j** in *jam* | *cami* "mosque" |
+  | **ç** | **ch** in *church* | *çay* "tea" |
+  | **ş** | **sh** in *ship* | *şu* "that" |
+  | **ı** (no dot) | the vowel in *ros**e**s*, said without rounding the lips | *kız* "girl" |
+  | **ö** | German **ö**: say *e* with rounded lips | *göz* "eye" |
+  | **ü** | German **ü**: say *i* with rounded lips | *gün* "day" |
+  | **ğ** | silent: it lengthens the vowel before it | *dağ* "daa", *yağmur* "yaamur" |
+
+  **ğ** never starts a word. After **e** or **i** it often sounds like a light *y*: *değil* ≈ "deyil".
+
+  **Dots matter.** *kır* "countryside" ≠ *kir* "dirt", *kız* "girl" ≠ *kaz* "goose", *öl* "die!" ≠ *ol* "be!", *kül* "ash" ≠ *kul* "servant".
+
+  **Capitals:** i ↔ **İ** and ı ↔ **I** are two different pairs: *İstanbul*, *Irmak*.
+
+  **Stress** usually falls on the **last** syllable: *ki**tap***, *ara**ba***. Exceptions (place names, some words such as ***mer**haba*) are marked as they come.
+
+patterns:
+  - id: g.L1.alphabet.consonants
+    description: "c = j, ç = ch, ş = sh"
+  - id: g.L1.alphabet.dotless_i
+    description: "ı (no dot) vs i: kır / kir"
+  - id: g.L1.alphabet.umlauts
+    description: "ö and ü vs o and u: öl / ol, kül / kul"
+  - id: g.L1.alphabet.soft_g
+    description: "ğ is silent, lengthens the vowel, never starts a word"
+  - id: g.L1.alphabet.capitals
+    description: "i → İ, ı → I"
+
+feedback:
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**. In Turkish that's a different letter, and often a different word."

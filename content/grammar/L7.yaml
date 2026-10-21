@@ -1,0 +1,61 @@
+id: g.L7.question
+title: "Questions with mI"
+suffixes: [sfx.q]
+
+reference: |
+  **Yes/no questions** use the particle **mI**. It is written as a **separate word**, right after the word you ask about:
+
+  *Hasta **mı**?* "Is he / she ill?" · *Öğrenci **misin**?* "Are you a student?"
+
+  **Vowel (I):** 4-way harmony with the **last vowel of the word before it**: a ı → **mı** · e i → **mi** · o u → **mu** · ö ü → **mü**. The **m** never changes.
+
+  **Person endings go on mI** (with the buffer y after its vowel):
+
+  | Pronoun | hasta "ill" | öğrenci "student" |
+  |---|---|---|
+  | ben | hasta **mıyım**? | öğrenci **miyim**? |
+  | sen | hasta **mısın**? | öğrenci **misin**? |
+  | o | hasta **mı**? | öğrenci **mi**? |
+  | biz | hasta **mıyız**? | öğrenci **miyiz**? |
+  | siz | hasta **mısınız**? | öğrenci **misiniz**? |
+  | onlar | hasta**lar mı**? | öğrenci**ler mi**? |
+
+  In the 3rd person plural, **-lAr stays on the word**: *Öğrenciler mi?* (not ~~Öğrenci miler?~~).
+
+  **Stress** falls on the syllable **before** mI: *has**TA** mı?*, *öğren**Cİ** misin?*. mI itself is never stressed.
+
+  **Question words** ask on their own and **never** take mI: **ne** "what", **kim** "who", **nerede** "where", **nasıl** "how". *Ali nerede?* (not ~~Ali nerede mi?~~). With a question word, the ending goes on it: *Nasılsın?* "How are you?" — *İyiyim.* "I'm fine."
+
+patterns:
+  - id: g.L7.question.2sg
+    description: "you: mI + -sIn as a separate word (hasta mısın, yorgun musun)"
+    suffixes: [sfx.q, sfx.cop_2sg]
+    word_filter: { pos: adj }
+  - id: g.L7.question.1sg
+    description: "I: mI + y + -Im (hasta mıyım, iyi miyim)"
+    suffixes: [sfx.q, sfx.cop_1sg]
+    word_filter: { pos: adj }
+  - id: g.L7.question.2pl
+    description: "you (pl. / polite): mI + -sInIz (doktor musunuz)"
+    suffixes: [sfx.q, sfx.cop_2pl]
+    word_filter: { pos: noun }
+  - id: g.L7.question.3pl
+    description: "they: -lAr stays on the word (öğrenciler mi)"
+    suffixes: [sfx.pl, sfx.q]
+    word_filter: { pos: noun }
+  - id: g.L7.question.harmony
+    description: "mı / mi / mu / mü follows the last vowel of the word before"
+  - id: g.L7.question.question_words
+    description: "ne, kim, nerede, nasıl never take mI"
+
+feedback:
+  vowel_back: "**mI** follows the last vowel of **{word}**: **{v}** is a back vowel → **mı** or **mu**: {answer}."
+  vowel_front: "**mI** follows the last vowel of **{word}**: **{v}** is a front vowel → **mi** or **mü**: {answer}."
+  vowel_round: "Look at the last vowel of **{word}**, **{v}**: a ı → mı · e i → mi · o u → mu · ö ü → mü. So: **{answer}**."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  person_harmony: "The person ending follows the vowel of **mI**: **{answer}**."
+  no_buffer: "**mI** ends in a vowel, so -(y)Im / -(y)Iz need the buffer **y**: **{answer}**."
+  separate: "**mI** is written as a **separate word**: **{answer}**."
+  plural_on_word: "In the 3rd person plural, **-lAr** stays on the word: **{answer}**."
+  question_word: "Question words (ne, kim, nerede, nasıl) never take **mI**: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

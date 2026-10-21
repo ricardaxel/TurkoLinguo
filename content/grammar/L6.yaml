@@ -1,0 +1,37 @@
+id: g.L6.degil
+title: "Negation of 'to be': değil"
+suffixes: []
+
+reference: |
+  **değil** = "not". It comes **after** the word, as a separate word, and the "to be" ending (L5) moves onto it:
+
+  | Pronoun | Form | Meaning |
+  |---|---|---|
+  | ben | öğretmen **değilim** | I'm not a teacher |
+  | sen | öğretmen **değilsin** | you aren't a teacher |
+  | o | öğretmen **değil** | he / she isn't a teacher |
+  | biz | öğretmen **değiliz** | we aren't teachers |
+  | siz | öğretmen **değilsiniz** | you (pl. / polite) aren't teachers |
+  | onlar | öğretmen **değil(ler)** | they aren't teachers |
+
+  **değil never harmonises** with the word before it: *hasta değilim*, *yorgun değiliz*, *Türk değilsin*. The endings always have **i**, because *değil* ends in **i·l**.
+
+  **No buffer y:** *değil* ends in a consonant: *değil·im*, not ~~değilyim~~.
+
+  The word before *değil* stays bare: *hasta değilim*, not ~~hastayım değil~~.
+
+  *Bu bir kitap değil.* "This isn't a book."
+
+patterns:
+  - id: g.L6.degil.person
+    description: "The person ending goes on değil: değilim, değilsin, değiliz…"
+  - id: g.L6.degil.no_harmony
+    description: "değil never changes: hasta değilim, yorgun değiliz"
+  - id: g.L6.degil.bare_word
+    description: "The word before değil takes no ending: hasta değilim"
+
+feedback:
+  no_harmony: "**değil** keeps its own vowels: the ending is always **-im, -sin, -iz, -siniz, -ler**, whatever comes before: **{answer}**."
+  no_buffer: "**değil** ends in a consonant: no buffer y: **{answer}**."
+  bare_word: "The person ending goes on **değil**, not on the word before it: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

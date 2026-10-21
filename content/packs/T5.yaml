@@ -1,0 +1,13 @@
+id: T5
+title: Jobs
+kind: core
+packs:
+  - id: T5.p1
+    unlock_after: L4
+    words: [w.öğretmen, w.öğrenci, w.doktor, w.hemşire, w.mühendis, w.avukat, w.aşçı, w.garson]
+    frames: [s.T5.001, s.L5.018]
+  - id: T5.p2
+    unlock_after: L6
+    words: [w.polis, w.satıcı, w.işçi, w.memur, w.ev_hanımı, w.emekli, w.şoför, w.kuaför]
+    frames: [s.T5.002, s.T5.003]
+revisit: [L5, L6, L28]

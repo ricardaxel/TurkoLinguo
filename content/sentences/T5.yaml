@@ -1,0 +1,26 @@
+# Frame sentences for theme T5 (Jobs). Pack 1: grammar up to L4; pack 2: up to L6. (Pack 1 also uses s.L5.018.)
+
+- id: s.T5.001
+  tr: Ali doktor.
+  en: ["Ali is a doctor.", "Ali's a doctor."]
+  words: [w.Ali, w.doktor]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T5.001
+
+- id: s.T5.002
+  tr: Ali polis değil.
+  en: ["Ali isn't a police officer.", "Ali is not a policeman."]
+  words: [w.Ali, w.polis, w.değil]
+  grammar: [g.L3.basics, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.T5.002
+
+- id: s.T5.003
+  tr: Ben emekliyim.
+  en: ["I'm retired.", "I am retired."]
+  words: [w.ben, w.emekli]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.T5.003
+  native_required: true        # copula unstressed: emekLİyim

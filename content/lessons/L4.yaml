@@ -1,0 +1,120 @@
+# L4 — plural -lAr: the first real ending, and the first use of A-harmony. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L4
+title: "Plural -lAr"
+grammar: g.L4.plural
+new_words: [w.iki, w.çok, w.yeni, w.eski]
+not_yet:
+  - "bunlar / şunlar 'these / those' → later review"
+  - "they are (öğrenciler) as a 'to be' ending → L5"
+  - "numbers 3–10 → L9"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          📕 **kitap** "book" → 📚 **kitap·lar** "books"
+          🏠 **ev** "house" → 🏘️ **ev·ler** "houses"
+
+          One ending, two shapes: **-lar** or **-ler**. You already know how to choose (L2).
+        sentences: [s.L4.002, s.L4.003]
+        audio: [aud.own.s.L4.002, aud.own.s.L4.003]
+
+      - kind: rule
+        title: "-lAr: lar or ler?"
+        body: |
+          The **A** in -lAr follows 2-way harmony. Look at the **last vowel**:
+
+          | Last vowel | Ending | Examples |
+          |---|---|---|
+          | a ı o u (back) | **-lar** | araba·lar, kız·lar, okul·lar |
+          | e i ö ü (front) | **-ler** | ev·ler, kedi·ler, göz·ler, gün·ler |
+
+          ⚠️ Only the **last** vowel counts: o·to·**bü**s → otobüs·**ler** · te·le·**fo**n → telefon·**lar**.
+
+          ✅ -lAr starts with a consonant, so **the word never changes**: *kitap → kitaplar*.
+
+      - kind: rule
+        title: "No plural after a number or çok"
+        body: |
+          A number already says "more than one", so the noun stays **singular**:
+
+          | ✅ | ❌ |
+          |---|---|
+          | **iki kitap** "two books" | ~~iki kitaplar~~ |
+          | **çok kedi** "a lot of cats" | ~~çok kediler~~ |
+        sentences: [s.L4.001, s.L4.007]
+        audio: [aud.own.s.L4.001, aud.own.s.L4.007]
+
+      - kind: examples
+        title: "Step by step"
+        body: |
+          **Which is the last vowel?** → **back or front?** → **-lar or -ler**
+
+          - masa → **a** → back → masa·**lar**
+          - kalem → **e** → front → kalem·**ler**
+          - telefon → **o** → back → telefon·**lar**
+
+          With "no is" from L3: *Kitaplar yeni.* "The books are new." · *Bu kalemler yeni.* "These pens are new."
+        sentences: [s.L4.012]
+        audio: [aud.own.L4_worked_examples]
+
+      - kind: note
+        title: "A rebel"
+        body: |
+          *saat* "clock, watch" ends in **a**, but it's a rebel (L2): **saat·ler**, not ~~saatlar~~.
+
+    items:
+      - { id: L4.learn.01, type: pick_suffix, grammar: [g.L4.plural], pattern: g.L4.plural.back, base: w.kitap, suffix: sfx.pl, options: [lar, ler], answer: lar, feedback: "auto:g.L4.plural" }
+      - { id: L4.learn.02, type: pick_suffix, grammar: [g.L4.plural], pattern: g.L4.plural.front, base: w.ev, suffix: sfx.pl, options: [lar, ler], answer: ler, feedback: "auto:g.L4.plural" }
+      - { id: L4.learn.03, type: pick_suffix, grammar: [g.L4.plural], pattern: g.L4.plural.last_vowel, base: w.otobüs, suffix: sfx.pl, options: [lar, ler], answer: ler, feedback: "auto:g.L4.plural", note: "Trap: first vowel o is back, last vowel ü is front." }
+      - id: L4.learn.04
+        type: picture_choose
+        grammar: [g.L4.plural]
+        pattern: g.L4.plural.after_number
+        images: [img.own.two_books]
+        prompt: "iki …"
+        options: [kitap, kitaplar]
+        answer: kitap
+        translation: "Two books. After a number, the noun stays singular."
+      - id: L4.learn.05
+        type: picture_choose
+        grammar: [g.L4.plural]
+        pattern: g.L4.plural.after_number
+        images: [img.own.three_cats]
+        prompt: "çok …"
+        options: [kedi, kediler]
+        answer: kedi
+        translation: "A lot of cats. After çok, the noun stays singular."
+      - id: L4.learn.06
+        type: listen_choose
+        grammar: [g.L4.plural, g.L3.basics]
+        sentence: s.L4.002
+        options: ["The books are new.", "The book is new.", "Two new books."]
+        answer: "The books are new."
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L4.practise.01, type: pick_suffix, grammar: [g.L4.plural], pattern: g.L4.plural.back, base: w.araba, suffix: sfx.pl, options: [lar, ler], answer: lar, feedback: "auto:g.L4.plural" }
+      - { id: L4.practise.02, type: pick_suffix, grammar: [g.L4.plural], pattern: g.L4.plural.front, base: w.kedi, suffix: sfx.pl, options: [lar, ler], answer: ler, feedback: "auto:g.L4.plural" }
+      - { id: L4.practise.03, type: pick_suffix, grammar: [g.L4.plural], pattern: g.L4.plural.last_vowel, base: w.telefon, suffix: sfx.pl, options: [lar, ler], answer: lar, feedback: "auto:g.L4.plural", note: "Trap: first vowel e is front, last vowel o is back." }
+      - { id: L4.practise.04, type: type_form, grammar: [g.L4.plural], pattern: g.L4.plural.back, base: w.masa, suffixes: [sfx.pl], prompt: "tables", answer: masalar, feedback: "auto:g.L4.plural" }
+      - { id: L4.practise.05, type: type_form, grammar: [g.L4.plural], pattern: g.L4.plural.front, base: w.göz, suffixes: [sfx.pl], prompt: "eyes", answer: gözler, feedback: "auto:g.L4.plural" }
+      - { id: L4.practise.06, type: type_form, grammar: [g.L4.plural], pattern: g.L4.plural.rebel, base: w.saat, suffixes: [sfx.pl], prompt: "clocks / watches", answer: saatler, feedback: { saatlar: "**saat** is a rebel: its last vowel is a, but it takes front endings: **saatler**." } }
+      - { id: L4.practise.07, type: spot_error, grammar: [g.L4.plural], pattern: g.L4.plural.after_number, text: "İki kitaplar.", error: kitaplar, answer: kitap, sentence: s.L4.001, feedback: { kitaplar: "After a number, the noun stays singular: **iki kitap**." } }
+      - { id: L4.practise.08, type: spot_error, grammar: [g.L4.plural], pattern: g.L4.plural.after_number, text: "Çok kediler.", error: kediler, answer: kedi, sentence: s.L4.007, feedback: { kediler: "After **çok**, the noun stays singular: **çok kedi**." } }
+      - { id: L4.practise.09, type: spot_error, grammar: [g.L4.plural], pattern: g.L4.plural.front, text: "Evlar eski.", error: Evlar, answer: Evler, sentence: s.L4.003, feedback: "auto:g.L4.plural" }
+      - { id: L4.practise.10, type: translate_to_tr, grammar: [g.L4.plural, g.L3.basics], sentence: s.L4.004, word_bank: [Bu, kitaplar, kitap, yeni, bir] }
+      - { id: L4.practise.11, type: translate_to_tr, grammar: [g.L4.plural], pattern: g.L4.plural.after_number, sentence: s.L4.005, typed: true, feedback: { "iki kediler": "After a number, the noun stays singular: **iki kedi**." } }
+      - { id: L4.practise.12, type: translate_to_en, grammar: [g.L4.plural, g.L3.basics], sentence: s.L4.009 }
+      - { id: L4.practise.13, type: dictation, grammar: [g.L4.plural, g.L3.basics], sentence: s.L4.011 }
+      - id: L4.practise.14
+        type: qa
+        grammar: [g.L4.plural, g.L3.basics]
+        pattern: g.L4.plural.after_number
+        question: s.L3.001
+        images: [img.own.two_books]
+        answers: ["(Bu) iki kitap."]
+        feedback: { "iki kitaplar": "After a number, the noun stays singular: **iki kitap**." }

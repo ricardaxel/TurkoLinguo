@@ -1,0 +1,25 @@
+# Frame sentences for theme T2 (Cognates). Pack 1: grammar up to L1; pack 2: up to L3.
+
+- id: s.T2.001
+  tr: Taksi!
+  en: ["Taxi!"]
+  words: [w.taksi]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.T2.001
+
+- id: s.T2.002
+  tr: Bu bir müze.
+  en: ["This is a museum.", "It's a museum."]
+  words: [w.bu, w.bir, w.müze]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T2.002
+
+- id: s.T2.003
+  tr: O bir film.
+  en: ["That's a film.", "It's a film.", "It's a movie."]
+  words: [w.o, w.bir, w.film]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.T2.003

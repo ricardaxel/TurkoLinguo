@@ -1,0 +1,132 @@
+# Sentences used by lesson L3. Grammar tags: g.L3.basics = bu/şu/o, bir, no "is", ne.
+
+- id: s.L3.001
+  tr: Bu ne?
+  en: ["What is this?", "What's this?"]
+  words: [w.bu, w.ne]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.001
+  native_required: true        # question intonation
+
+- id: s.L3.002
+  tr: Bu bir kitap.
+  en: ["This is a book.", "It's a book."]
+  words: [w.bu, w.bir, w.kitap]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.002
+
+- id: s.L3.003
+  tr: Bu kalem.
+  en: ["This is a pen.", "This is a pencil."]
+  words: [w.bu, w.kalem]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.003
+
+- id: s.L3.004
+  tr: Şu ne?
+  en: ["What is that?", "What's that?"]
+  words: [w.şu, w.ne]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.004
+  native_required: true        # question intonation
+
+- id: s.L3.005
+  tr: Şu bir sandalye.
+  en: ["That is a chair.", "That's a chair."]
+  words: [w.şu, w.bir, w.sandalye]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.005
+
+- id: s.L3.006
+  tr: O ne?
+  en: ["What is that?", "What's that?", "What is it?"]
+  words: [w.o, w.ne]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.006
+  native_required: true        # question intonation
+
+- id: s.L3.007
+  tr: O bir araba.
+  en: ["That's a car.", "That is a car.", "It's a car."]
+  words: [w.o, w.bir, w.araba]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.007
+
+- id: s.L3.008
+  tr: O Ali.
+  en: ["That's Ali.", "He's Ali.", "He is Ali."]
+  words: [w.o, w.Ali]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.008
+
+- id: s.L3.009
+  tr: O Ayşe.
+  en: ["That's Ayşe.", "She's Ayşe.", "She is Ayşe."]
+  words: [w.o, w.Ayşe]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.009
+
+- id: s.L3.010
+  tr: Bu bir kedi.
+  en: ["This is a cat.", "It's a cat."]
+  words: [w.bu, w.bir, w.kedi]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.010
+
+- id: s.L3.011
+  tr: Bu bir bilgisayar.
+  en: ["This is a computer.", "It's a computer."]
+  words: [w.bu, w.bir, w.bilgisayar]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.011
+
+- id: s.L3.012
+  tr: Bu Ali, o Ayşe.
+  en: ["This is Ali, that's Ayşe.", "This is Ali and that's Ayşe.", "This is Ali, and that is Ayşe."]
+  words: [w.bu, w.Ali, w.o, w.Ayşe]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.012
+
+- id: s.L3.013
+  tr: Şu bir pencere.
+  en: ["That's a window.", "That is a window."]
+  words: [w.şu, w.bir, w.pencere]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.013
+
+- id: s.L3.014
+  tr: Bu bir çanta.
+  en: ["This is a bag.", "It's a bag."]
+  words: [w.bu, w.bir, w.çanta]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.014
+
+- id: s.L3.015
+  tr: O bir çanta.
+  en: ["That's a bag.", "It's a bag.", "That is a bag."]
+  words: [w.o, w.bir, w.çanta]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.015
+
+- id: s.L3.016
+  tr: Evet, bu bir anahtar.
+  en: ["Yes, this is a key.", "Yes, it's a key."]
+  words: [w.evet, w.bu, w.bir, w.anahtar]
+  grammar: [g.L3.basics]
+  source: { kind: original }
+  audio: aud.own.s.L3.016

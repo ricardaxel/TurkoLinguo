@@ -1,0 +1,121 @@
+# L6 — negation of "to be": değil. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L6
+title: "Negation of 'to be': değil"
+grammar: g.L6.degil
+new_words: [w.değil, w.aç, w.evli]
+not_yet:
+  - "questions (öğrenci değil misin?) → L7 and later review"
+  - "yok 'there isn't' → L8"
+  - "verb negation -mA (gelmiyorum) → L16"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🧑‍🏫 **Ben öğretmenim.** "I'm a teacher."
+          🧑‍🎓 **Ben öğretmen değilim.** "I'm not a teacher."
+
+          "Not" is a separate word, **değil**, and the "I am" ending moves onto it.
+        sentences: [s.L5.001, s.L6.001]
+        audio: [aud.own.s.L5.001, aud.own.s.L6.001]
+
+      - kind: rule
+        title: "değil + person"
+        body: |
+          The word stays bare. **değil** comes after it and carries the ending from L5:
+
+          | | |
+          |---|---|
+          | ben | hasta **değilim** |
+          | sen | hasta **değilsin** |
+          | o | hasta **değil** |
+          | biz | hasta **değiliz** |
+          | siz | hasta **değilsiniz** |
+          | onlar | hasta **değil(ler)** |
+
+          ❌ ~~hastayım değil~~ · ✅ **hasta değilim**
+        sentences: [s.L6.015, s.L6.003]
+        audio: [aud.own.s.L6.015, aud.own.s.L6.003]
+
+      - kind: rule
+        title: "değil never changes"
+        body: |
+          The word before it can have any vowel. **değil** doesn't care: its endings always have **i**.
+
+          *aç **değiliz*** (not ~~değılız~~) · *yorgun **değilim*** (not ~~değilum~~) · *Türk **değilsin***
+
+          It ends in a consonant, so there's **no buffer y**: *değil·im*, not ~~değilyim~~.
+
+          🔊 After *e* the **ğ** sounds like a light y: *değil* ≈ "deyil" (L1).
+        sentences: [s.L6.012, s.L6.017]
+        audio: [aud.own.s.L6.012, aud.own.s.L6.017]
+
+      - kind: examples
+        title: "Yes → no"
+        body: |
+          | ✅ | ❌ |
+          |---|---|
+          | Ben açım. | Ben aç **değilim**. |
+          | Ayşe evli. | Ayşe evli **değil**. |
+          | Bu bir kitap. | Bu bir kitap **değil**. |
+
+          And a correction: *Ayşe hasta değil, yorgun.* "Ayşe isn't ill, she's tired."
+        sentences: [s.L6.014, s.L6.007, s.L6.010, s.L6.011]
+        audio: [aud.own.L6_worked_examples]
+
+    items:
+      - id: L6.learn.01
+        type: picture_choose
+        grammar: [g.L6.degil, g.L5.copula]
+        pattern: g.L6.degil.no_harmony
+        images: [img.openmoji.happy_face]
+        prompt: "Ben hasta …"
+        options: [değilim, değılım, değilyim]
+        answer: değilim
+        translation: "I'm not ill. değil never changes, and takes no buffer y."
+      - { id: L6.learn.02, type: type_form, grammar: [g.L6.degil, g.L5.copula], pattern: g.L6.degil.person, base: w.değil, suffixes: [sfx.cop_2sg], prompt: "you are not", answer: değilsin }
+      - id: L6.learn.03
+        type: contrast_pair
+        grammar: [g.L6.degil, g.L5.copula]
+        prompt: "I'm not tired."
+        options: [s.L6.017, s.L5.008]
+        answer: s.L6.017
+      - { id: L6.learn.04, type: translate_to_tr, grammar: [g.L6.degil, g.L5.copula], pattern: g.L6.degil.bare_word, sentence: s.L6.001, word_bank: [Ben, öğretmen, değilim, öğretmenim, değil], answers: ["Öğretmen değilim."], feedback: { "Ben öğretmenim değil": "The person ending goes on **değil**, not on the word before it: **Ben öğretmen değilim**." } }
+      - { id: L6.learn.05, type: pick_suffix, grammar: [g.L6.degil, g.L5.copula], pattern: g.L6.degil.no_harmony, base: w.değil, suffix: sfx.cop_1pl, options: [iz, ız, yiz], answer: iz, feedback: "auto:g.L5.copula" }
+      - id: L6.learn.06
+        type: listen_choose
+        grammar: [g.L6.degil, g.L3.basics]
+        sentence: s.L6.003
+        options: ["He isn't a doctor.", "He's a doctor.", "I'm not a doctor."]
+        answer: "He isn't a doctor."
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L6.practise.01, type: type_form, grammar: [g.L6.degil, g.L5.copula], pattern: g.L6.degil.person, base: w.değil, suffixes: [sfx.cop_1sg], prompt: "I am not", answer: değilim, feedback: { değilyim: "**değil** ends in a consonant: no buffer y: **değilim**." } }
+      - { id: L6.practise.02, type: type_form, grammar: [g.L6.degil, g.L5.copula], pattern: g.L6.degil.person, base: w.değil, suffixes: [sfx.cop_3pl], prompt: "they are not", answer: değiller, note: "With onlar, değil alone is also common: Onlar öğrenci değil." }
+      - { id: L6.practise.03, type: type_form, grammar: [g.L6.degil, g.L5.copula], pattern: g.L6.degil.person, base: w.değil, suffixes: [sfx.cop_2pl], prompt: "you (plural / polite) are not", answer: değilsiniz }
+      - { id: L6.practise.04, type: spot_error, grammar: [g.L6.degil, g.L5.copula], pattern: g.L6.degil.person, text: "Ben hasta değilyim.", error: değilyim, answer: değilim, sentence: s.L6.015, feedback: { değilyim: "**değil** ends in a consonant: no buffer y: **değilim**." } }
+      - { id: L6.practise.05, type: spot_error, grammar: [g.L6.degil, g.L5.copula], pattern: g.L6.degil.no_harmony, text: "Biz aç değilız.", error: değilız, answer: değiliz, sentence: s.L6.012, feedback: { değilız: "**değil** keeps its own vowels: the ending follows its **i**, not the a of *aç*: **değiliz**." } }
+      - { id: L6.practise.06, type: translate_to_tr, grammar: [g.L6.degil, g.L5.copula], sentence: s.L6.004, typed: true, answers: ["Yorgun değiliz."] }
+      - { id: L6.practise.07, type: translate_to_tr, grammar: [g.L6.degil, g.L3.basics], sentence: s.L6.010, word_bank: [Bu, bir, kitap, değil, değilim], answers: ["Bu kitap değil."] }
+      - { id: L6.practise.08, type: translate_to_en, grammar: [g.L6.degil, g.L5.copula], sentence: s.L6.009 }
+      - id: L6.practise.09
+        type: contrast_pair
+        grammar: [g.L6.degil, g.L3.basics]
+        prompt: "Ayşe isn't married."
+        options: [s.L6.008, s.L6.016]
+        answer: s.L6.008
+      - { id: L6.practise.10, type: dictation, grammar: [g.L6.degil, g.L5.copula], sentence: s.L6.007 }
+      - { id: L6.practise.11, type: translate_to_tr, grammar: [g.L6.degil, g.L5.copula], pattern: g.L6.degil.bare_word, sentence: s.L6.013, typed: true, answers: ["Evli değilim."], feedback: { "Ben evliyim değil": "The person ending goes on **değil**: **Ben evli değilim**." } }
+      - { id: L6.practise.12, type: translate_to_en, grammar: [g.L6.degil, g.L3.basics], sentence: s.L6.011 }
+      - { id: L6.practise.13, type: dictation, grammar: [g.L6.degil, g.L5.copula], sentence: s.L6.005 }
+      - id: L6.practise.14
+        type: mini_dialogue
+        grammar: [g.L6.degil, g.L5.copula]
+        images: [img.openmoji.flag_uk]
+        turns:
+          - { speaker: A, sentence: s.L6.018 }
+          - { speaker: B, blank: true, answers: ["Hayır, (ben) Amerikalı değilim. (Ben) İngilizim.", "Hayır, (ben) Amerikalı değilim, (ben) İngilizim.", "Hayır, (ben) İngilizim.", "(Ben) Amerikalı değilim, (ben) İngilizim."] }

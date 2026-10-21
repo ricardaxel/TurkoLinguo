@@ -1,0 +1,17 @@
+id: T7
+title: Colours & basic adjectives
+kind: core
+packs:
+  - id: T7.p1
+    unlock_after: L8
+    words: [w.kırmızı, w.mavi, w.yeşil, w.sarı, w.siyah, w.beyaz, w.pembe, w.gri]
+    frames: [s.T7.001, s.T7.002]
+  - id: T7.p2
+    unlock_after: L8
+    words: [w.büyük, w.küçük, w.güzel, w.çirkin, w.sıcak, w.soğuk, w.ucuz, w.pahalı]
+    frames: [s.T7.003, s.T7.004]
+  - id: T7.p3
+    unlock_after: L9
+    words: [w.uzun, w.kısa, w.kötü, w.kolay, w.zor, w.turuncu, w.mor, w.kahverengi]
+    frames: [s.T7.005, s.T7.006]
+revisit: [L9, L29]

@@ -1,0 +1,35 @@
+# Sentences used by lesson L2: single words, for listening and spelling.
+
+- id: s.L2.001
+  tr: göz
+  en: ["eye", "an eye"]
+  words: [w.göz]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L2.001
+  native_required: true        # ö
+
+- id: s.L2.002
+  tr: gün
+  en: ["day", "a day"]
+  words: [w.gün]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L2.002
+  native_required: true        # ü
+
+- id: s.L2.004
+  tr: kitap
+  en: ["book", "a book"]
+  words: [w.kitap]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L2.004
+
+- id: s.L2.005
+  tr: otobüs
+  en: ["bus", "a bus"]
+  words: [w.otobüs]
+  grammar: [g.L1.alphabet]
+  source: { kind: original }
+  audio: aud.own.s.L2.005

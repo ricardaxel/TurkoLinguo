@@ -1,0 +1,60 @@
+# Frame sentences for theme T1 (Greetings). Set phrases: always native audio.
+
+- id: s.T1.001
+  tr: Günaydın!
+  en: ["Good morning!"]
+  words: [w.günaydın]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.T1.001
+  native_required: true        # T1 greetings are always native
+
+- id: s.T1.002
+  tr: İyi geceler!
+  en: ["Good night!"]
+  words: [w.iyi_geceler]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.T1.002
+  native_required: true        # T1 greetings are always native
+  phrase: true
+
+- id: s.T1.003
+  tr: Teşekkür ederim.
+  en: ["Thank you."]
+  words: [w.teşekkür_ederim]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.T1.003
+  native_required: true        # T1 greetings are always native
+  phrase: true
+
+- id: s.T1.004
+  tr: Rica ederim.
+  en: ["You're welcome."]
+  words: [w.rica_ederim]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.T1.004
+  native_required: true        # T1 greetings are always native
+  phrase: true
+
+- id: s.T1.005
+  tr: Hoş geldiniz!
+  en: ["Welcome!"]
+  words: [w.hoş_geldiniz]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.T1.005
+  native_required: true        # T1 greetings are always native
+  phrase: true
+
+- id: s.T1.006
+  tr: Hoş bulduk!
+  en: ["Glad to be here!", "Thank you!"]
+  words: [w.hoş_bulduk]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.T1.006
+  native_required: true        # T1 greetings are always native
+  phrase: true

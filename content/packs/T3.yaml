@@ -1,0 +1,8 @@
+id: T3
+title: Classroom & everyday objects
+kind: core
+packs:
+  - id: T3.p1
+    unlock_after: L2
+    words: [w.kalem, w.defter, w.çanta, w.sandalye, w.kapı, w.pencere, w.anahtar, w.saat]
+revisit: [L3, L4, L18]
