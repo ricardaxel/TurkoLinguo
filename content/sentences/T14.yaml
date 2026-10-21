@@ -1,4 +1,5 @@
 # Frame sentences for theme T14 (Family). Only grammar up to L18, and no possessives (L19).
+# Frames use words that sound natural bare (çocuk, kız, dede): with anne, baba, teyze a native would say annem, babam, teyzem (L19).
 
 - id: s.T14.001
   tr: Çocuk okulda.
@@ -9,10 +10,10 @@
   audio: aud.own.s.T14.001
 
 - id: s.T14.002
-  tr: Anne ve baba evde.
-  en: ["Mum and Dad are at home.", "Mother and father are at home.", "The mother and father are at home."]
-  words: [w.anne, w.ve, w.baba, w.ev]
-  grammar: [g.L3.basics, g.L10.loc, g.L13.clitic_de]
+  tr: Çocuklar parkta oynuyor.
+  en: ["The children are playing in the park.", "The kids are playing in the park."]
+  words: [w.çocuk, w.park, w.oynamak]
+  grammar: [g.L4.plural, g.L10.loc, g.L15.prog]
   source: { kind: original }
   audio: aud.own.s.T14.002
 
@@ -25,10 +26,9 @@
   audio: aud.own.s.T14.003
 
 - id: s.T14.004
-  tr: Teyze İzmir'den geliyor.
-  en: ["Auntie is coming from Izmir.", "The aunt is coming from İzmir."]
-  words: [w.teyze, w.İzmir, w.gelmek]
-  grammar: [g.L12.abl, g.L15.prog]
+  tr: Kız kitap okuyor.
+  en: ["The girl is reading a book.", "The girl is reading.", "The girl reads books."]
+  words: [w.kız, w.kitap, w.okumak]
+  grammar: [g.L15.prog]
   source: { kind: original }
   audio: aud.own.s.T14.004
-  native_required: true        # place-name stress

@@ -58,9 +58,9 @@ sessions:
         audio: [aud.own.s.L17.007, aud.own.s.L17.025]
 
       - kind: rule
-        title: "Softening: p ç t k → b c d ğ"
+        title: "Softening: p ç k → b c ğ"
         body: |
-          A vowel ending can change the word. Words of two or more syllables ending in **p ç t k** usually soften:
+          A vowel ending can change the word. Words of two or more syllables ending in **p ç k** usually soften:
 
           | Word | to … |
           |---|---|
@@ -78,7 +78,7 @@ sessions:
         title: "Exceptions"
         body: |
           - Most **one-syllable** words don't soften: top → **topa**, at → **ata**, saç → **saça**. A few do: kurt → **kurda**, uç → **uca**.
-          - Some loanwords keep their t: bilet → **bilete**, bisiklet → **bisiklete**.
+          - Final **t** usually stays: bilet → **bilete**, bisiklet → **bisiklete**. (A few words do soften, e.g. kanat → kanada; the word card shows it.)
           - **Names never soften in writing**: *Ahmet'e*, *Zonguldak'a* (said with a soft ğ).
 
           The dictionary (and our word cards) mark the words that change: *kitap → kitabı*.
@@ -148,7 +148,7 @@ sessions:
       - { id: L17.practise.02, type: type_form, grammar: [g.L17.dat], pattern: g.L17.dat.soft, base: w.sokak, suffixes: [sfx.dat], prompt: "to the street", answer: sokağa, feedback: { sokaka: "**sokak** ends in **k**: before a vowel it softens to **ğ**: **sokağa**.", sokakta: "**-DA** means *in / at*; *to* is **-(y)A**: **sokağa**." } }
       - { id: L17.practise.03, type: type_form, grammar: [g.L17.dat], pattern: g.L17.dat.soft, base: w.durak, suffixes: [sfx.dat], prompt: "to the bus stop", answer: durağa, feedback: { duraka: "**durak** ends in **k**: before a vowel it softens to **ğ**: **durağa**." } }
       - { id: L17.practise.04, type: type_form, grammar: [g.L17.dat], pattern: g.L17.dat.drop, base: w.şehir, suffixes: [sfx.dat], prompt: "to the city", answer: şehre, feedback: { şehire: "**şehir** drops its last vowel before a vowel ending: **şehre**." } }
-      - { id: L17.practise.05, type: type_form, grammar: [g.L17.dat], pattern: g.L17.dat.nosoft, base: w.bilet, suffixes: [sfx.dat], prompt: "to the ticket", answer: bilete, feedback: { bilede: "**bilet** is a loanword that keeps its **t**: **bilete**." } }
+      - { id: L17.practise.05, type: type_form, grammar: [g.L17.dat], pattern: g.L17.dat.nosoft, base: w.bilet, suffixes: [sfx.dat], prompt: "to the ticket", answer: bilete, feedback: { bilede: "Final **t** usually stays: **bilete**." } }
       - id: L17.practise.06
         type: picture_choose
         grammar: [g.L17.dat, g.L15.prog, g.L5.copula]

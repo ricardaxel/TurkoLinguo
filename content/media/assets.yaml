@@ -379,9 +379,9 @@
 - { id: aud.own.s.T13.003, kind: audio, source: own, license: OWN, status: planned, text: "Domates var mı?" }
 - { id: aud.own.s.T13.004, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe muz yemiyor." }
 - { id: aud.own.s.T14.001, kind: audio, source: own, license: OWN, status: planned, text: "Çocuk okulda." }
-- { id: aud.own.s.T14.002, kind: audio, source: own, license: OWN, status: planned, text: "Anne ve baba evde." }
+- { id: aud.own.s.T14.002, kind: audio, source: own, license: OWN, status: planned, text: "Çocuklar parkta oynuyor." }
 - { id: aud.own.s.T14.003, kind: audio, source: own, license: OWN, status: planned, text: "Dede çay içiyor." }
-- { id: aud.own.s.T14.004, kind: audio, source: own, license: OWN, status: planned, text: "Teyze İzmir'den geliyor." }
+- { id: aud.own.s.T14.004, kind: audio, source: own, license: OWN, status: planned, text: "Kız kitap okuyor." }
 - { id: aud.own.s.L15.024, kind: audio, source: own, license: OWN, status: planned, text: "Bakıyorum." }
 - { id: aud.own.s.L15.025, kind: audio, source: own, license: OWN, status: planned, text: "Ali oynuyor." }
 - { id: aud.own.s.L15.026, kind: audio, source: own, license: OWN, status: planned, text: "Gidiyorum." }

@@ -164,9 +164,9 @@
 - { id: w.metro, lemma: metro, pos: noun, gloss: [metro, underground, subway], images: [img.openmoji.metro] }
 - { id: w.uçak, lemma: uçak, pos: noun, gloss: [plane, aeroplane], flags: [soft], images: [img.openmoji.airplane] }
 - { id: w.vapur, lemma: vapur, pos: noun, gloss: [ferry, steamboat], images: [img.openmoji.ferry] }
-- { id: w.bisiklet, lemma: bisiklet, pos: noun, gloss: [bicycle, bike], flags: [nosoft], images: [img.openmoji.bicycle], notes: "Loanword: keeps its t (bisiklete, bisikleti)." }
+- { id: w.bisiklet, lemma: bisiklet, pos: noun, gloss: [bicycle, bike], flags: [nosoft], images: [img.openmoji.bicycle], notes: "Final t usually stays: bisiklete, bisikleti." }
 - { id: w.dolmuş, lemma: dolmuş, pos: noun, gloss: [dolmuş (shared minibus)], images: [img.openmoji.minibus] }
-- { id: w.bilet, lemma: bilet, pos: noun, gloss: [ticket], flags: [nosoft], images: [img.openmoji.ticket], notes: "Loanword: keeps its t (bilete, bileti)." }
+- { id: w.bilet, lemma: bilet, pos: noun, gloss: [ticket], flags: [nosoft], images: [img.openmoji.ticket], notes: "Final t usually stays: bilete, bileti." }
 - { id: w.durak, lemma: durak, pos: noun, gloss: [stop, bus stop], flags: [soft], images: [img.openmoji.bus_stop] }
 
 # --- L17: dative -(y)A ---

@@ -64,7 +64,7 @@ feedback:
   buffer_after_n: "**{word}** ends in a consonant, so no buffer **y**: **{answer}**."
   detached: "The object ending is **attached** to the word: **{answer}**."
   apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
-  soften: "**{word}** ends in **{c}**: before a vowel it softens (p ç t k → b c d ğ): **{answer}**."
+  soften: "**{word}** ends in **{c}**: before a vowel it softens (p ç k → b c ğ): **{answer}**."
   always_specific: "Names, pronouns and *bu / şu / o* + noun are always specific → **-(y)I**: **{answer}**."
   not_specific: "*a / some* (not a specific one) → no ending: **{answer}**."
   position: "An object without the ending must sit right before the verb: **{answer}**."

@@ -73,7 +73,7 @@
 
 # ---------- L14–L18 (Unit 3 Actions) ----------
 
-# Dative -(y)A (L17): buffer y, softening, one-syllable words, loanwords, vowel drop, front, compound, names
+# Dative -(y)A (L17): buffer y, softening, one-syllable words, final t, vowel drop, front, compound, names
 - { word: w.ev,        suffixes: [sfx.dat], expected: eve }
 - { word: w.okul,      suffixes: [sfx.dat], expected: okula }
 - { word: w.araba,     suffixes: [sfx.dat], expected: arabaya,   note: "buffer y" }
@@ -90,8 +90,8 @@
 - { word: w.saç,       suffixes: [sfx.dat], expected: saça,      note: "one syllable: no softening" }
 - { word: w.kurt,      suffixes: [sfx.dat], expected: kurda,     note: "one-syllable exception: softens" }
 - { word: w.uç,        suffixes: [sfx.dat], expected: uca,       note: "one-syllable exception: softens" }
-- { word: w.bilet,     suffixes: [sfx.dat], expected: bilete,    note: "nosoft loanword" }
-- { word: w.bisiklet,  suffixes: [sfx.dat], expected: bisiklete, note: "nosoft loanword" }
+- { word: w.bilet,     suffixes: [sfx.dat], expected: bilete,    note: "final t stays (nosoft)" }
+- { word: w.bisiklet,  suffixes: [sfx.dat], expected: bisiklete, note: "final t stays (nosoft)" }
 - { word: w.şehir,     suffixes: [sfx.dat], expected: şehre,     note: "vowel drop" }
 - { word: w.isim,      suffixes: [sfx.dat], expected: isme,      note: "vowel drop" }
 - { word: w.saat,      suffixes: [sfx.dat], expected: saate,     note: "front flag" }
@@ -121,7 +121,7 @@
 - { word: w.mektup,    suffixes: [sfx.acc], expected: mektubu,   note: "softening p → b, rounded vowel → u" }
 - { word: w.kurt,      suffixes: [sfx.acc], expected: kurdu,     note: "one-syllable exception: softens" }
 - { word: w.top,       suffixes: [sfx.acc], expected: topu,      note: "one syllable: no softening" }
-- { word: w.bilet,     suffixes: [sfx.acc], expected: bileti,    note: "nosoft loanword" }
+- { word: w.bilet,     suffixes: [sfx.acc], expected: bileti,    note: "final t stays (nosoft)" }
 - { word: w.şehir,     suffixes: [sfx.acc], expected: şehri,     note: "vowel drop" }
 - { word: w.isim,      suffixes: [sfx.acc], expected: ismi,      note: "vowel drop" }
 - { word: w.ne,        suffixes: [sfx.acc], expected: neyi }

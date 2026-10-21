@@ -16,9 +16,9 @@ reference: |
 
   **The word changes before a vowel ending.** -(y)A is the first case ending that starts with a vowel, so three things can happen to the word:
 
-  1. **Softening:** final **p ç t k** → **b c d ğ** (nk → ng) in words of two or more syllables: kitap → kita**b**a, ağaç → ağa**c**a, sokak → soka**ğ**a, dolap → dola**b**a, renk → ren**g**e.
+  1. **Softening:** final **p ç k** → **b c ğ** (nk → ng) in words of two or more syllables: kitap → kita**b**a, ağaç → ağa**c**a, sokak → soka**ğ**a, dolap → dola**b**a, renk → ren**g**e.
+     - Final **t** usually stays: bilet → bilet**e**, bisiklet → bisiklet**e** (a few words do soften, e.g. kanat → kana**d**a; the word card shows it).
      - Most **one-syllable** words don't soften: top → topa, at → ata, saç → saça. A few do: kurt → kur**d**a, uç → u**c**a.
-     - Some loanwords keep their consonant: bilet → bilet**e**, bisiklet → bisiklet**e**.
      - **Names never soften in writing**: Ahmet'e, Zonguldak'a (said with ğ).
   2. **Vowel drop:** a few words lose their last vowel: şehir → **şehre**, isim → **isme**.
   3. **Front words:** *saat* takes front endings: saat**e**.
@@ -42,11 +42,11 @@ patterns:
     suffix: sfx.dat
     word_filter: { pos: noun, ends_with: vowel }
   - id: g.L17.dat.soft
-    description: "Softening: p ç t k → b c d ğ before the vowel (kitaba, sokağa)"
+    description: "Softening: p ç k → b c ğ before the vowel (kitaba, sokağa)"
     suffix: sfx.dat
     word_filter: { pos: noun, flags: [soft] }
   - id: g.L17.dat.nosoft
-    description: "Loanwords that keep their consonant (bilete, bisiklete)"
+    description: "Final t usually stays (bilete, bisiklete)"
     suffix: sfx.dat
     word_filter: { pos: noun, flags: [nosoft] }
   - id: g.L17.dat.drop
@@ -70,7 +70,7 @@ feedback:
   buffer_after_n: "**{word}** ends in a consonant, so no buffer **y**: **{answer}**."
   detached: "The *to* ending is **attached** to the word: **{answer}**."
   apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
-  soften: "**{word}** ends in **{c}**: before a vowel it softens (p ç t k → b c d ğ): **{answer}**."
+  soften: "**{word}** ends in **{c}**: before a vowel it softens (p ç k → b c ğ): **{answer}**."
   no_soften_one_syllable: "Most one-syllable words don't soften: **{answer}**."
   no_soften_name: "Names never soften in writing: **{answer}**."
   drop: "**{word}** drops its last vowel before a vowel ending: **{answer}**."
