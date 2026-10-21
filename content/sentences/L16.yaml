@@ -1,0 +1,184 @@
+# Sentences used by lesson L16. `words` and `grammar` are hand-tagged for now.
+# Negative: stress falls on the syllable before -mI (GELmiyorum): native_required.
+
+- id: s.L16.001
+  tr: Anlamıyorum.
+  en: ["I don't understand.", "I do not understand."]
+  words: [w.anlamak]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.001
+  native_required: true        # stress: anLAmıyorum
+
+- id: s.L16.002
+  tr: Bilmiyorum.
+  en: ["I don't know.", "I do not know."]
+  words: [w.bilmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.002
+  native_required: true        # stress: BİLmiyorum
+
+- id: s.L16.003
+  tr: Geliyor musun?
+  en: ["Are you coming?"]
+  words: [w.gelmek]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.003
+  native_required: true        # question intonation
+
+- id: s.L16.004
+  tr: Evet, geliyorum.
+  en: ["Yes, I'm coming.", "Yes, I am coming."]
+  words: [w.evet, w.gelmek]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L16.004
+
+- id: s.L16.005
+  tr: Hayır, gelmiyorum.
+  en: ["No, I'm not coming.", "No, I am not coming."]
+  words: [w.hayır, w.gelmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.005
+  native_required: true        # stress: GELmiyorum
+
+- id: s.L16.006
+  tr: Kahve içmiyorum.
+  en: ["I don't drink coffee.", "I'm not drinking coffee."]
+  words: [w.kahve, w.içmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.006
+  native_required: true        # stress: İÇmiyorum
+
+- id: s.L16.007
+  tr: Türkçe konuşuyor musunuz?
+  en: ["Do you speak Turkish?", "Are you speaking Turkish?"]
+  words: [w.Türkçe, w.konuşmak]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.007
+  native_required: true        # question intonation
+
+- id: s.L16.008
+  tr: Ali evde çalışıyor mu?
+  en: ["Is Ali working at home?", "Does Ali work at home?", "Is Ali studying at home?"]
+  words: [w.Ali, w.ev, w.çalışmak]
+  grammar: [g.L7.question, g.L10.loc, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.008
+  native_required: true        # question intonation
+
+- id: s.L16.009
+  tr: Hayır, Ali evde çalışmıyor.
+  en: ["No, Ali isn't working at home.", "No, Ali doesn't work at home.", "No, Ali is not working at home."]
+  words: [w.hayır, w.Ali, w.ev, w.çalışmak]
+  grammar: [g.L10.loc, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.009
+
+- id: s.L16.010
+  tr: Geliyorlar mı?
+  en: ["Are they coming?"]
+  words: [w.gelmek]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.010
+  native_required: true        # question intonation
+
+- id: s.L16.011
+  tr: Gelmiyor musun?
+  en: ["Aren't you coming?", "Are you not coming?"]
+  words: [w.gelmek]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.011
+  native_required: true        # question intonation + stress before the negative
+
+- id: s.L16.012
+  tr: Ayşe kahve içmiyor.
+  en: ["Ayşe doesn't drink coffee.", "Ayşe isn't drinking coffee."]
+  words: [w.Ayşe, w.kahve, w.içmek]
+  grammar: [g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.012
+
+- id: s.L16.013
+  tr: Biz şimdi çalışmıyoruz.
+  en: ["We're not working now.", "We aren't working now.", "We are not working now."]
+  words: [w.biz, w.şimdi, w.çalışmak]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.013
+
+- id: s.L16.014
+  tr: Kitap okumuyorum.
+  en: ["I don't read books.", "I'm not reading a book.", "I'm not reading."]
+  words: [w.kitap, w.okumak]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.014
+
+- id: s.L16.015
+  tr: Kedi uyumuyor, oynuyor.
+  en: ["The cat isn't sleeping, it's playing.", "The cat is not sleeping, it is playing."]
+  words: [w.kedi, w.uyumak, w.oynamak]
+  grammar: [g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.015
+
+- id: s.L16.016
+  tr: Bekliyor musunuz?
+  en: ["Are you waiting?"]
+  words: [w.beklemek]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.016
+  native_required: true        # question intonation
+
+- id: s.L16.017
+  tr: Ali bakmıyor.
+  en: ["Ali isn't looking.", "Ali is not looking.", "Ali doesn't look."]
+  words: [w.Ali, w.bakmak]
+  grammar: [g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.017
+
+- id: s.L16.018
+  tr: Hayır, Türkçe konuşmuyorum.
+  en: ["No, I don't speak Turkish.", "No, I'm not speaking Turkish."]
+  words: [w.hayır, w.Türkçe, w.konuşmak]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.018
+  native_required: true        # stress: koNUŞmuyorum
+
+- id: s.L16.019
+  tr: Ben de konuşmuyorum.
+  en: ["I don't either.", "Me neither.", "I don't speak it either."]
+  words: [w.ben, w.de, w.konuşmak]
+  grammar: [g.L5.copula, g.L13.clitic_de, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.019
+  native_required: true        # stress: BEN de koNUŞmuyorum
+
+- id: s.L16.020
+  tr: Bakmıyorum.
+  en: ["I'm not looking.", "I am not looking."]
+  words: [w.bakmak]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.020
+  native_required: true        # stress: BAKmıyorum
+
+- id: s.L16.021
+  tr: Gitmiyoruz.
+  en: ["We're not going.", "We aren't going.", "We are not going."]
+  words: [w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.L16.021
+  native_required: true        # stress: GİTmiyoruz

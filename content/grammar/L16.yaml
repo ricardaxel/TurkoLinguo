@@ -1,0 +1,55 @@
+id: g.L16.prog_neg_q
+title: "Present continuous: negative & questions"
+suffixes: [sfx.neg]
+
+reference: |
+  **Negative: stem + -mI + -yor.** The negative ending is **-mA**, but before -yor its vowel changes like a stem-final a/e in L15. So in practice it is **-mı / -mi / -mu / -mü**, following the last vowel of the stem:
+
+  | Verb | Negative |
+  |---|---|
+  | gel·mek | gel·**mi**·yor·um "I'm not coming" |
+  | bak·mak | bak·**mı**·yor·um |
+  | oku·mak | oku·**mu**·yor·um |
+  | gör·mek | gör·**mü**·yor·um |
+  | git·mek | git·**mi**·yor·um (no t → d: m follows) |
+
+  🔊 Stress falls on the syllable **before** the negative: **GEL**miyorum, an**LA**mıyorum.
+
+  **Questions: mu after -yor.** *-yor* never changes, so the question word is always **mu**, written separately, and the person endings go on it:
+
+  | | |
+  |---|---|
+  | Geliyor **muyum**? | Am I coming? |
+  | Geliyor **musun**? | Are you coming? |
+  | Geliyor **mu**? | Is he / she coming? |
+  | Geliyor **muyuz**? | Are we coming? |
+  | Geliyor **musunuz**? | Are you coming? |
+  | Geliyor**lar mı**? | Are they coming? |
+
+  They: **-lAr stays on the verb** and the question word is **mı** (after *-lar*): *Geliyorlar mı?* (L7: *Öğrenciler mi?*)
+
+  **Negative question:** *Gelmiyor musun?* "Aren't you coming?"
+
+  Answers: *Evet, geliyorum.* / *Hayır, gelmiyorum.*
+
+patterns:
+  # rule cards only: the form engine doesn't inflect verbs yet (lemma = infinitive)
+  - id: g.L16.prog_neg_q.negative
+    description: "Negative -mI-yor: the vowel follows the stem (gelmiyor, bakmıyor, okumuyor, görmüyor)"
+  - id: g.L16.prog_neg_q.question
+    description: "Question: -yor + mu + person, separate word (Geliyor musun? Geliyor muyum?)"
+  - id: g.L16.prog_neg_q.question_3pl
+    description: "They: -lAr on the verb, then mı (Geliyorlar mı?)"
+  - id: g.L16.prog_neg_q.neg_question
+    description: "Negative question: Gelmiyor musun?"
+  - id: g.L16.prog_neg_q.stress
+    description: "Stress before the negative: GELmiyorum"
+
+feedback:
+  neg_harmony: "The negative vowel follows the last vowel of the stem: **{answer}**."
+  neg_is_mI: "Before -yor the negative is **-mı / -mi / -mu / -mü**, not -ma / -me: **{answer}**."
+  q_is_mu: "**-yor** never changes, so the question word is always **mu**: **{answer}**."
+  q_separate: "The question word is written **separately**: **{answer}**."
+  person_on_q: "The person ending goes on the question word: **{answer}**."
+  plural_before_q: "*They*: **-lar** stays on the verb, then **mı**: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

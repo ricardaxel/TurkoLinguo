@@ -1,0 +1,35 @@
+# Frame sentences for theme T13 (Meals & cooking). Only grammar up to L17.
+# tavuk and balık are also in the elective T10 pack: core learners meet them here.
+
+- id: s.T13.001
+  tr: Pilav yiyorum.
+  en: ["I'm eating rice.", "I'm eating pilaf.", "I eat rice."]
+  words: [w.pilav, w.yemek]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.T13.001
+
+- id: s.T13.002
+  tr: Pazardan geliyorum.
+  en: ["I'm coming from the market.", "I'm coming back from the bazaar."]
+  words: [w.pazar, w.gelmek]
+  grammar: [g.L5.copula, g.L12.abl, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.T13.002
+
+- id: s.T13.003
+  tr: Domates var mı?
+  en: ["Are there any tomatoes?", "Are there tomatoes?", "Do you have tomatoes?"]
+  words: [w.domates, w.var]
+  grammar: [g.L7.question, g.L8.varyok]
+  source: { kind: original }
+  audio: aud.own.s.T13.003
+  native_required: true        # question intonation
+
+- id: s.T13.004
+  tr: Ayşe muz yemiyor.
+  en: ["Ayşe doesn't eat bananas.", "Ayşe isn't eating a banana."]
+  words: [w.Ayşe, w.muz, w.yemek]
+  grammar: [g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.T13.004

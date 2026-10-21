@@ -1,0 +1,147 @@
+# Sentences used by lesson L14. `words` and `grammar` are hand-tagged for now.
+# Commands: the stem alone (sen) or stem + -(y)In(Iz) (siz, polite / plural).
+
+- id: s.L14.001
+  tr: Gel!
+  en: ["Come!", "Come here!", "Come on!"]
+  words: [w.gelmek]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.001
+
+- id: s.L14.002
+  tr: Otur!
+  en: ["Sit!", "Sit down!"]
+  words: [w.oturmak]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.002
+
+- id: s.L14.003
+  tr: Gelin, lütfen.
+  en: ["Come in, please.", "Please come in.", "Please come.", "Come, please."]
+  words: [w.gelmek, w.lütfen]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.003
+
+- id: s.L14.004
+  tr: Oturun, lütfen.
+  en: ["Sit down, please.", "Please sit down.", "Please have a seat.", "Please sit."]
+  words: [w.oturmak, w.lütfen]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.004
+
+- id: s.L14.005
+  tr: Su iç!
+  en: ["Drink water!", "Drink some water!", "Have some water!"]
+  words: [w.su, w.içmek]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.005
+
+- id: s.L14.006
+  tr: Kitap okuyun.
+  en: ["Read a book.", "Read books.", "Read!"]
+  words: [w.kitap, w.okumak]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.006
+
+- id: s.L14.007
+  tr: Gidin, lütfen.
+  en: ["Please go.", "Go, please.", "Please leave."]
+  words: [w.gitmek, w.lütfen]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.007
+
+- id: s.L14.008
+  tr: Yiyin, lütfen!
+  en: ["Please eat!", "Eat, please!", "Please, help yourselves!", "Please help yourself!"]
+  words: [w.yemek, w.lütfen]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.008
+
+- id: s.L14.009
+  tr: Bak!
+  en: ["Look!"]
+  words: [w.bakmak]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.009
+
+- id: s.L14.010
+  tr: Bakın!
+  en: ["Look!"]
+  words: [w.bakmak]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.010
+  native_required: true        # also "Excuse me!" to get attention: the intonation matters
+
+- id: s.L14.011
+  tr: Ekmek yiyin.
+  en: ["Eat some bread.", "Eat bread.", "Have some bread."]
+  words: [w.ekmek, w.yemek]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.011
+
+- id: s.L14.012
+  tr: Burada oturun.
+  en: ["Sit here.", "Sit down here.", "Have a seat here."]
+  words: [w.burada, w.oturmak]
+  grammar: [g.L10.loc, g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.012
+
+- id: s.L14.013
+  tr: Çay iç!
+  en: ["Drink tea!", "Drink some tea!", "Have some tea!"]
+  words: [w.çay, w.içmek]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.013
+
+- id: s.L14.014
+  tr: Lütfen oturunuz.
+  en: ["Please be seated.", "Please sit down.", "Please take a seat."]
+  words: [w.lütfen, w.oturmak]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.014
+
+- id: s.L14.015
+  tr: Ali, gel!
+  en: ["Ali, come!", "Ali, come here!", "Come here, Ali!"]
+  words: [w.Ali, w.gelmek]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.015
+
+- id: s.L14.016
+  tr: Ali, Ayşe, gelin!
+  en: ["Ali, Ayşe, come!", "Ali, Ayşe, come here!"]
+  words: [w.Ali, w.Ayşe, w.gelmek]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.016
+
+- id: s.L14.017
+  tr: Ali, Ayşe, çay için!
+  en: ["Ali, Ayşe, drink some tea!", "Ali, Ayşe, have some tea!"]
+  words: [w.Ali, w.Ayşe, w.çay, w.içmek]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.017
+
+- id: s.L14.018
+  tr: Şimdi yapın.
+  en: ["Do it now.", "Do it now, please.", "Now do it."]
+  words: [w.şimdi, w.yapmak]
+  grammar: [g.L14.imperative]
+  source: { kind: original }
+  audio: aud.own.s.L14.018

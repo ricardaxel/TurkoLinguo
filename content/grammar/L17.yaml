@@ -1,0 +1,81 @@
+id: g.L17.dat
+title: "Dative -(y)A: to / toward"
+suffixes: [sfx.dat]
+
+reference: |
+  **-(y)A** means *to, toward*: **ev·e** "(to) home", **okul·a** "to school", **araba·ya** "to the car".
+
+  - **Vowel (A):** last vowel a ı o u → **-a** · e i ö ü → **-e**
+  - **Buffer y** after a vowel: araba·**ya**, hastane·**ye**
+
+  *Eve gidiyorum.* "I'm going home." · *Nereye?* "Where to?" = nere·ye · *buraya* "(to) here" · *oraya* "(to) there".
+
+  **Pronouns:** **bana** "to me", **sana** "to you" (irregular), ona, bize, size, onlara. *Bana bak!* "Look at me!"
+
+  **Names:** apostrophe, then the ending: *İstanbul'a*, *İzmir'e*, *Paris'e*, *Londra'ya*.
+
+  **The word changes before a vowel ending.** -(y)A is the first case ending that starts with a vowel, so three things can happen to the word:
+
+  1. **Softening:** final **p ç t k** → **b c d ğ** (nk → ng) in words of two or more syllables: kitap → kita**b**a, ağaç → ağa**c**a, sokak → soka**ğ**a, dolap → dola**b**a, renk → ren**g**e.
+     - Most **one-syllable** words don't soften: top → topa, at → ata, saç → saça. A few do: kurt → kur**d**a, uç → u**c**a.
+     - Some loanwords keep their consonant: bilet → bilet**e**, bisiklet → bisiklet**e**.
+     - **Names never soften in writing**: Ahmet'e, Zonguldak'a (said with ğ).
+  2. **Vowel drop:** a few words lose their last vowel: şehir → **şehre**, isim → **isme**.
+  3. **Front words:** *saat* takes front endings: saat**e**.
+
+  Compounds that end in *-(s)I* add **n**: buzdolabı → buzdolabı**na** (explained in L24).
+
+  **Verbs that take the dative:** **bakmak** "to look **at**" (*Kediye bakıyorum.*), **binmek** "to get **on**" (*Otobüse biniyorum.*).
+  Remember the **ablative** verbs from L12: **korkmak** "to be afraid **of**" (*Köpekten korkuyorum.*), **hoşlanmak** "to like" (*Kahveden hoşlanmıyorum.*).
+
+patterns:
+  - id: g.L17.dat.back
+    description: "Back last vowel → -a (okula)"
+    suffix: sfx.dat
+    word_filter: { pos: noun, last_vowel: back, ends_with: voiced_consonant }
+  - id: g.L17.dat.front
+    description: "Front last vowel → -e (eve)"
+    suffix: sfx.dat
+    word_filter: { pos: noun, last_vowel: front, ends_with: voiced_consonant }
+  - id: g.L17.dat.after_vowel
+    description: "Word ends in a vowel → buffer y (arabaya, hastaneye)"
+    suffix: sfx.dat
+    word_filter: { pos: noun, ends_with: vowel }
+  - id: g.L17.dat.soft
+    description: "Softening: p ç t k → b c d ğ before the vowel (kitaba, sokağa)"
+    suffix: sfx.dat
+    word_filter: { pos: noun, flags: [soft] }
+  - id: g.L17.dat.nosoft
+    description: "Loanwords that keep their consonant (bilete, bisiklete)"
+    suffix: sfx.dat
+    word_filter: { pos: noun, flags: [nosoft] }
+  - id: g.L17.dat.drop
+    description: "Vowel drop: şehir → şehre, isim → isme"
+    suffix: sfx.dat
+    word_filter: { pos: noun, flags: [drop] }
+  - id: g.L17.dat.name
+    description: "Names: apostrophe, no softening (İstanbul'a, Londra'ya, Ahmet'e)"
+    suffix: sfx.dat
+    word_filter: { pos: name }
+  - id: g.L17.dat.pronoun
+    description: "bana, sana, ona, bize, size, onlara; buraya, oraya, nereye"
+  - id: g.L17.dat.verbs
+    description: "bakmak and binmek take the dative; korkmak and hoşlanmak take the ablative"
+
+feedback:
+  vowel_back: "Look at the last vowel of **{word}**: **{v}** is a back vowel (a ı o u) → **-a**: {answer}."
+  vowel_front: "Look at the last vowel of **{word}**: **{v}** is a front vowel (e i ö ü) → **-e**: {answer}."
+  last_not_first: "Only the **last** vowel counts, not the first one."
+  no_buffer: "**{word}** ends in a vowel, so the ending needs the buffer **y**: **{answer}**."
+  buffer_after_n: "**{word}** ends in a consonant, so no buffer **y**: **{answer}**."
+  detached: "The *to* ending is **attached** to the word: **{answer}**."
+  apostrophe: "**{word}** is a name, so it takes an apostrophe before the ending: **{answer}**."
+  soften: "**{word}** ends in **{c}**: before a vowel it softens (p ç t k → b c d ğ): **{answer}**."
+  no_soften_one_syllable: "Most one-syllable words don't soften: **{answer}**."
+  no_soften_name: "Names never soften in writing: **{answer}**."
+  drop: "**{word}** drops its last vowel before a vowel ending: **{answer}**."
+  loc_for_dat: "**-DA** means *in / at*; *to* is **-(y)A**: **{answer}**."
+  abl_for_dat: "**-DAn** means *from*; *to* is **-(y)A**: **{answer}**."
+  pronoun: "**ben** and **sen** are irregular: **bana**, **sana**."
+  verb_case: "**{word}** takes a different case: bakmak, binmek → **-(y)A**; korkmak, hoşlanmak → **-DAn**: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

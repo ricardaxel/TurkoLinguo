@@ -1,0 +1,13 @@
+id: T13
+title: Meals & cooking
+kind: core
+packs:
+  - id: T13.p1
+    unlock_after: L17
+    words: [w.et, w.tavuk, w.balık, w.pilav, w.çorba, w.salata, w.makarna, w.patates]
+    frames: [s.T13.001, s.T13.002]
+  - id: T13.p2
+    unlock_after: L17
+    words: [w.domates, w.soğan, w.biber, w.elma, w.portakal, w.muz, w.üzüm, w.karpuz]
+    frames: [s.T13.003, s.T13.004]
+revisit: [L18, L28, L34]

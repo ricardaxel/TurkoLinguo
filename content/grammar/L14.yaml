@@ -1,0 +1,46 @@
+id: g.L14.imperative
+title: "Verbs: infinitive -mAk, commands"
+suffixes: [sfx.inf, sfx.imp_pol]
+
+reference: |
+  **Infinitive -mAk.** The dictionary form of every verb ends in **-mak** or **-mek** ("to …"), by a/e harmony with the stem: **gel·mek** "to come", **otur·mak** "to sit", **oku·mak** "to read".
+
+  **The stem = the informal command.** Take away -mAk and you have an order to one friend (*sen*): **Gel!** "Come!" · **Otur!** "Sit down!" · **Oku!** "Read!" · **Bak!** "Look!"
+
+  **Polite / plural command -(y)In, -(y)InIz.** To a stranger, an older person or several people:
+
+  | Stem ends in… | Ending | Examples |
+  |---|---|---|
+  | a consonant | **-In** (4-way harmony) | gel·**in**, otur·**un**, bak·**ın**, gör·**ün** |
+  | a vowel | **-yIn** (buffer y) | oku·**yun**, bekle·**yin** |
+
+  **-(y)InIz** is more formal still (signs, announcements, very polite speech): *Lütfen oturunuz.* "Please be seated."
+
+  **Stem changes before a vowel:**
+  - **git → gidin**, **et → edin**: t becomes d. Only these two (and a few rare verbs) do it: *yap → yapın*, *bak → bakın*, *iç → için* don't change.
+  - **ye → yiyin**, **de → deyin**.
+
+  **lütfen** "please" goes at the start or the end: *Lütfen oturun.* / *Oturun, lütfen.*
+
+patterns:
+  # rule cards only: the form engine doesn't inflect verbs yet (lemma = infinitive)
+  - id: g.L14.imperative.infinitive
+    description: "Infinitive: stem + -mak (a ı o u) / -mek (e i ö ü)"
+  - id: g.L14.imperative.stem
+    description: "Informal command = the stem (drop -mAk): Gel! Otur!"
+  - id: g.L14.imperative.polite_consonant
+    description: "Polite command after a consonant: -ın / -in / -un / -ün (gelin, oturun, bakın)"
+  - id: g.L14.imperative.polite_vowel
+    description: "Polite command after a vowel: buffer y (okuyun, bekleyin)"
+  - id: g.L14.imperative.stem_change
+    description: "git → gidin, et → edin; ye → yiyin, de → deyin"
+
+feedback:
+  keep_mak: "The command is the **stem**: drop -mAk: **{answer}**."
+  inf_harmony: "-mAk follows the last vowel of the stem: a ı o u → **-mak**, e i ö ü → **-mek**: **{answer}**."
+  imp_harmony: "-(y)In has a 4-way vowel (I): it follows the last vowel of the stem: **{answer}**."
+  no_buffer: "The stem ends in a vowel, so the ending needs the buffer **y**: **{answer}**."
+  buffer_after_consonant: "The stem ends in a consonant, so no buffer **y**: **{answer}**."
+  t_to_d: "**git** and **et** change t → **d** before a vowel: **{answer}**."
+  ye_de: "**ye** and **de** become **yiy-** and **dey-**: **{answer}**."
+  accent: "Almost! **{expected_letter}**, not {given_letter}: **{answer}**."

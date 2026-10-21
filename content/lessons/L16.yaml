@@ -1,0 +1,141 @@
+# L16 — present continuous: negative & questions. Model: L10. Format: docs/CONTENT_FORMAT.md
+id: L16
+title: "Present continuous: negative & questions"
+grammar: g.L16.prog_neg_q
+new_words: [w.anlamak, w.bilmek]
+not_yet:
+  - "the negative command (Gelme! Gelmeyin!) → later review"
+  - "the past question with mI after the person (Geldin mi?) → L31, with a contrast card"
+  - "the review patterns are rule cards only: the form engine doesn't inflect verbs yet"
+
+sessions:
+  learn:
+    minutes: 3.5
+    cards:
+      - kind: hook
+        body: |
+          🤷 **Anlamıyorum.** "I don't understand."
+          🤷 **Bilmiyorum.** "I don't know."
+
+          Two of the most useful words in Turkish. Both hide a **not**: anla·**mı**·yor·um, bil·**mi**·yor·um.
+        sentences: [s.L16.001, s.L16.002]
+        audio: [aud.own.s.L16.001, aud.own.s.L16.002]
+
+      - kind: rule
+        title: "Not: stem + -mI + yor"
+        body: |
+          Put **m + vowel** between the stem and *-yor*. The vowel follows the **last vowel of the stem** (4-way I):
+
+          | Verb | I'm … | I'm not … |
+          |---|---|---|
+          | gel·mek | gel·iyor·um | gel·**mi**·yor·um |
+          | bak·mak | bak·ıyor·um | bak·**mı**·yor·um |
+          | oku·mak | oku·yor·um | oku·**mu**·yor·um |
+          | gör·mek | gör·üyor·um | gör·**mü**·yor·um |
+
+          💡 *git* keeps its t here: git·**mi**·yor (the t → d change only happens before a vowel).
+
+          🔊 Stress falls **before** the negative: **GEL**miyorum, an**LA**mıyorum. Listen for it.
+        sentences: [s.L16.005, s.L16.006]
+        audio: [aud.own.s.L16.005, aud.own.s.L16.006]
+
+      - kind: rule
+        title: "Questions: always mu"
+        body: |
+          *-yor* never changes, so the question word after it is always **mu**, written separately. The person ending moves onto it (as in L7: *Öğrenci misin?*):
+
+          | | |
+          |---|---|
+          | Geliyor **muyum**? | Am I coming? |
+          | Geliyor **musun**? | Are you coming? |
+          | Geliyor **mu**? | Is he / she coming? |
+          | Geliyor **muyuz**? | Are we coming? |
+          | Geliyor **musunuz**? | Are you coming? |
+          | Geliyor**lar mı**? | Are they coming? |
+
+          ⚠️ *They*: **-lar stays on the verb**, and after *-lar* the question word is **mı**.
+        sentences: [s.L16.003, s.L16.007, s.L16.010]
+        audio: [aud.own.s.L16.003, aud.own.s.L16.007, aud.own.s.L16.010]
+
+      - kind: examples
+        title: "Questions and answers"
+        body: |
+          - *Geliyor musun?* — *Evet, geliyorum.* / *Hayır, gelmiyorum.*
+          - Both together: *Gelmiyor musun?* "Aren't you coming?"
+          - *Türkçe konuşuyor musunuz?* "Do you speak Turkish?" — *Hayır, Türkçe konuşmuyorum.*
+        sentences: [s.L16.004, s.L16.011, s.L16.018]
+        audio: [aud.own.s.L16.004, aud.own.s.L16.011, aud.own.s.L16.018]
+
+    items:
+      - { id: L16.learn.01, type: build_word, grammar: [g.L16.prog_neg_q, g.L15.prog, g.L5.copula], pattern: g.L16.prog_neg_q.negative, tiles: [gel, mi, yor, um], answer: "gel·mi·yor·um", feedback: { "gel·yor·mi·um": "The negative comes right after the stem: **gel·mi·yor·um**." } }
+      - id: L16.learn.02
+        type: picture_choose
+        grammar: [g.L16.prog_neg_q, g.L15.prog, g.L5.copula]
+        pattern: g.L16.prog_neg_q.negative
+        images: [img.openmoji.book]
+        prompt: "Kitap oku… ."
+        options: [muyorum, mıyorum, mayorum]
+        answer: muyorum
+        translation: "I don't read books."
+        feedback: { mıyorum: "The negative vowel follows the last vowel of the stem: **u** → **u**: **okumuyorum**.", mayorum: "Before -yor the negative is **-mı / -mi / -mu / -mü**, not -ma: **okumuyorum**." }
+      - id: L16.learn.03
+        type: contrast_pair
+        grammar: [g.L16.prog_neg_q, g.L7.question]
+        pattern: g.L16.prog_neg_q.question
+        prompt: "Are you coming?"
+        options: [s.L16.003, s.L16.011]
+        answer: s.L16.003
+      - { id: L16.learn.04, type: translate_to_tr, grammar: [g.L16.prog_neg_q, g.L7.question], pattern: g.L16.prog_neg_q.question, sentence: s.L16.003, word_bank: [Geliyor, musun, misin, geliyormusun, Geliyorsun, mu] }
+      - id: L16.learn.05
+        type: picture_choose
+        grammar: [g.L16.prog_neg_q, g.L7.question]
+        pattern: g.L16.prog_neg_q.question_3pl
+        images: [img.own.man_and_woman]
+        prompt: "… mı?"
+        options: [Geliyorlar, Geliyor, Geliyorsunuz]
+        answer: Geliyorlar
+        translation: "Are they coming?"
+        feedback: { Geliyor: "*They*: **-lar** stays on the verb, then **mı**: **Geliyorlar mı?**" }
+      - id: L16.learn.06
+        type: listen_choose
+        grammar: [g.L16.prog_neg_q, g.L15.prog]
+        sentence: s.L16.005
+        options: ["No, I'm not coming.", "Yes, I'm coming.", "Are you coming?"]
+        answer: "No, I'm not coming."
+        note: "Ear training: stress on GEL before the negative."
+
+  practise:
+    minutes: 5
+    items:
+      - { id: L16.practise.01, type: translate_to_tr, grammar: [g.L16.prog_neg_q, g.L15.prog, g.L5.copula], pattern: g.L16.prog_neg_q.negative, sentence: s.L16.020, typed: true, answers: ["Ben bakmıyorum."] }
+      - { id: L16.practise.02, type: translate_to_tr, grammar: [g.L16.prog_neg_q, g.L15.prog, g.L5.copula], pattern: g.L16.prog_neg_q.negative, sentence: s.L16.014, typed: true, answers: ["(Ben) kitap okumuyorum."] }
+      - { id: L16.practise.03, type: translate_to_tr, grammar: [g.L16.prog_neg_q, g.L15.prog, g.L5.copula], pattern: g.L16.prog_neg_q.negative, sentence: s.L16.021, typed: true, answers: ["Biz gitmiyoruz."], note: "git keeps its t before m: gitmiyoruz." }
+      - { id: L16.practise.04, type: build_word, grammar: [g.L16.prog_neg_q, g.L15.prog], pattern: g.L16.prog_neg_q.negative, tiles: [oku, mu, yor, sun], answer: "oku·mu·yor·sun" }
+      - { id: L16.practise.05, type: translate_to_tr, grammar: [g.L16.prog_neg_q, g.L7.question, g.L15.prog], pattern: g.L16.prog_neg_q.question, sentence: s.L16.007, word_bank: [Türkçe, konuşuyor, musunuz, misiniz, konuşuyorsunuz, mu] }
+      - { id: L16.practise.06, type: translate_to_tr, grammar: [g.L16.prog_neg_q, g.L15.prog], sentence: s.L16.012, word_bank: [Ayşe, kahve, içmiyor, içmayor, içiyor, değil] }
+      - { id: L16.practise.07, type: translate_to_en, grammar: [g.L16.prog_neg_q, g.L15.prog], sentence: s.L16.015 }
+      - { id: L16.practise.08, type: spot_error, grammar: [g.L16.prog_neg_q, g.L7.question], pattern: g.L16.prog_neg_q.question, text: "Geliyor misin?", error: misin, answer: musun, sentence: s.L16.003, feedback: { misin: "**-yor** never changes, so the question word is always **mu**: **Geliyor musun?**" } }
+      - { id: L16.practise.09, type: spot_error, grammar: [g.L16.prog_neg_q, g.L7.question], pattern: g.L16.prog_neg_q.question_3pl, text: "Geliyor mılar?", error: "Geliyor mılar", answer: "Geliyorlar mı", sentence: s.L16.010, feedback: { "Geliyor mılar": "*They*: **-lar** stays on the verb, then **mı**: **Geliyorlar mı?**" } }
+      - id: L16.practise.10
+        type: qa
+        grammar: [g.L16.prog_neg_q, g.L7.question, g.L10.loc]
+        question: s.L16.008
+        images: [img.openmoji.briefcase]
+        answers: ["Hayır, (Ali) evde çalışmıyor.", "Hayır, çalışmıyor."]
+        note: "The picture shows Ali at the office (briefcase), not at home."
+      - id: L16.practise.11
+        type: contrast_pair
+        grammar: [g.L16.prog_neg_q, g.L7.question]
+        pattern: g.L16.prog_neg_q.neg_question
+        prompt: "Aren't you coming?"
+        options: [s.L16.011, s.L16.003]
+        answer: s.L16.011
+      - { id: L16.practise.12, type: translate_to_tr, grammar: [g.L16.prog_neg_q, g.L5.copula, g.L15.prog], sentence: s.L16.013, typed: true, answers: ["Şimdi çalışmıyoruz.", "Biz çalışmıyoruz.", "(Biz) şimdi çalışmıyoruz."] }
+      - { id: L16.practise.13, type: dictation, grammar: [g.L16.prog_neg_q, g.L5.copula], sentence: s.L16.001 }
+      - id: L16.practise.14
+        type: mini_dialogue
+        grammar: [g.L16.prog_neg_q, g.L7.question, g.L15.prog]
+        turns:
+          - { speaker: A, sentence: s.L16.007 }
+          - { speaker: B, blank: true, answers: ["Hayır, (Türkçe) konuşmuyorum.", "Hayır, (ben) Türkçe konuşmuyorum."] }
+          - { speaker: A, sentence: s.L16.019 }

@@ -1,0 +1,215 @@
+# Sentences used by lesson L18. `words` and `grammar` are hand-tagged for now.
+
+- id: s.L18.001
+  tr: Bir elma yiyorum.
+  en: ["I'm eating an apple.", "I am eating an apple."]
+  words: [w.bir, w.elma, w.yemek]
+  grammar: [g.L5.copula, g.L9.adj_num, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L18.001
+
+- id: s.L18.002
+  tr: Elmayı yiyorum.
+  en: ["I'm eating the apple.", "I am eating the apple."]
+  words: [w.elma, w.yemek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.002
+
+- id: s.L18.003
+  tr: Elma yiyorum.
+  en: ["I'm eating apples.", "I'm eating an apple.", "I eat apples."]
+  words: [w.elma, w.yemek]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L18.003
+
+- id: s.L18.004
+  tr: Ali'yi görüyorum.
+  en: ["I can see Ali.", "I see Ali."]
+  words: [w.Ali, w.görmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.004
+
+- id: s.L18.005
+  tr: Ahmet'i tanıyor musun?
+  en: ["Do you know Ahmet?"]
+  words: [w.Ahmet, w.tanımak]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.005
+  native_required: true        # question intonation
+
+- id: s.L18.006
+  tr: Seni seviyorum.
+  en: ["I love you."]
+  words: [w.sen, w.sevmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.006
+
+- id: s.L18.007
+  tr: Onu tanımıyorum.
+  en: ["I don't know him.", "I don't know her.", "I don't know him or her."]
+  words: [w.o, w.tanımak]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.007
+  native_required: true        # stress: taNImıyorum
+
+- id: s.L18.008
+  tr: Bu kitabı okuyorum.
+  en: ["I'm reading this book.", "I am reading this book."]
+  words: [w.bu, w.kitap, w.okumak]
+  grammar: [g.L3.basics, g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.008
+
+- id: s.L18.009
+  tr: Suyu iç!
+  en: ["Drink the water!", "Drink your water!"]
+  words: [w.su, w.içmek]
+  grammar: [g.L14.imperative, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.009
+
+- id: s.L18.010
+  tr: İstanbul'u seviyorum.
+  en: ["I love Istanbul.", "I love İstanbul.", "I like Istanbul."]
+  words: [w.İstanbul, w.sevmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.010
+  native_required: true        # place-name stress
+
+- id: s.L18.011
+  tr: Bizi bekliyorlar.
+  en: ["They're waiting for us.", "They are waiting for us."]
+  words: [w.biz, w.beklemek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.011
+
+- id: s.L18.012
+  tr: Sizi bekliyoruz.
+  en: ["We're waiting for you.", "We are waiting for you."]
+  words: [w.siz, w.beklemek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.012
+
+- id: s.L18.013
+  tr: Onları görüyor musun?
+  en: ["Can you see them?", "Do you see them?"]
+  words: [w.onlar, w.görmek]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.013
+  native_required: true        # question intonation
+
+- id: s.L18.014
+  tr: Bunu alıyorum.
+  en: ["I'll take this.", "I'm taking this.", "I'm buying this."]
+  words: [w.bu, w.almak]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.014
+
+- id: s.L18.015
+  tr: Köpeği görüyorum.
+  en: ["I can see the dog.", "I see the dog."]
+  words: [w.köpek, w.görmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.015
+
+- id: s.L18.016
+  tr: Ekmeği yiyorum.
+  en: ["I'm eating the bread.", "I am eating the bread."]
+  words: [w.ekmek, w.yemek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.016
+
+- id: s.L18.017
+  tr: Her gün kitap okuyorum.
+  en: ["I read every day.", "I read books every day.", "Every day I read books."]
+  words: [w.her, w.gün, w.kitap, w.okumak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L18.017
+
+- id: s.L18.018
+  tr: Kitabı her gün okuyorum.
+  en: ["I read the book every day.", "I'm reading the book every day."]
+  words: [w.kitap, w.her, w.gün, w.okumak]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.018
+
+- id: s.L18.019
+  tr: Ayşe'yi bekliyorum.
+  en: ["I'm waiting for Ayşe.", "I am waiting for Ayşe."]
+  words: [w.Ayşe, w.beklemek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.019
+
+- id: s.L18.020
+  tr: Kediyi görüyorum.
+  en: ["I can see the cat.", "I see the cat."]
+  words: [w.kedi, w.görmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.020
+
+- id: s.L18.021
+  tr: Bu çorbayı seviyorum.
+  en: ["I love this soup.", "I like this soup."]
+  words: [w.bu, w.çorba, w.sevmek]
+  grammar: [g.L3.basics, g.L5.copula, g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.021
+
+- id: s.L18.022
+  tr: Ali bir mektup okuyor.
+  en: ["Ali is reading a letter.", "Ali reads a letter."]
+  words: [w.Ali, w.bir, w.mektup, w.okumak]
+  grammar: [g.L9.adj_num, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L18.022
+
+- id: s.L18.023
+  tr: Ali mektubu okuyor.
+  en: ["Ali is reading the letter.", "Ali reads the letter."]
+  words: [w.Ali, w.mektup, w.okumak]
+  grammar: [g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.023
+
+- id: s.L18.024
+  tr: Ne yiyorsun?
+  en: ["What are you eating?", "What do you eat?"]
+  words: [w.ne, w.yemek]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.L18.024
+  native_required: true        # question intonation
+
+- id: s.L18.025
+  tr: Beni anlıyor musun?
+  en: ["Do you understand me?", "Can you understand me?"]
+  words: [w.ben, w.anlamak]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.025
+  native_required: true        # question intonation
+
+- id: s.L18.026
+  tr: Ahmet bizi bekliyor.
+  en: ["Ahmet is waiting for us.", "Ahmet's waiting for us."]
+  words: [w.Ahmet, w.biz, w.beklemek]
+  grammar: [g.L15.prog, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.L18.026
