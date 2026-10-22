@@ -1,7 +1,7 @@
 // Types for the content bundle produced by scripts/build_content.py.
 // Mirrors schema/content.schema.json (see docs/CONTENT_FORMAT.md).
 
-export type Flag = 'soft' | 'nosoft' | 'drop' | 'front' | 'compound' | 'double' | 'irr' | 'nodrill';
+export type Flag = 'soft' | 'nosoft' | 'drop' | 'front' | 'compound' | 'double' | 'irr' | 'nodrill' | 'aorist_ir';
 
 export interface Word {
   id: string;
@@ -69,6 +69,8 @@ export interface DialogueTurn {
   sentence?: string;
   blank?: true;
   answers?: string[];
+  /** Spoken variants for the blank (see Item.spoken). */
+  spoken?: string[];
 }
 
 export interface Item {
@@ -94,6 +96,8 @@ export interface Item {
   options?: string[];
   answer?: string;
   answers?: string[];
+  /** Spoken / informal variants (answer patterns): graded "almost" with an "in writing" note, never model answers. */
+  spoken?: string[];
   tiles?: string[];
   sentence?: string;
   word_bank?: string[];

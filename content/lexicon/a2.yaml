@@ -1,0 +1,16 @@
+# A2 lexicon (CURRICULUM_A2.md). Started by the engine session with the words the A2 form
+# engine needs for its tests; the unit sessions add the rest (and introduce these in packs/lessons).
+
+# --- the one-syllable verbs whose aorist is -Ir, not -Ar (L36): alır, bilir, gelir, görür are in a1.yaml ---
+- { id: w.bulmak, lemma: bulmak, pos: verb, stem: bul, gloss: [find], flags: [aorist_ir], notes: "Aorist bulur (not bular)." }
+- { id: w.durmak, lemma: durmak, pos: verb, stem: dur, gloss: [stop, stand], flags: [aorist_ir], notes: "Aorist durur (not durar)." }
+- { id: w.kalmak, lemma: kalmak, pos: verb, stem: kal, gloss: [stay, remain], flags: [aorist_ir], notes: "Aorist kalır (not kalar)." }
+- { id: w.olmak, lemma: olmak, pos: verb, stem: ol, gloss: [be, become], flags: [aorist_ir], notes: "'To be' in the tenses the copula doesn't have (L39). Aorist olur: Olur! 'OK!', Olmaz. 'No way.'" }
+- { id: w.ölmek, lemma: ölmek, pos: verb, stem: öl, gloss: [die], flags: [aorist_ir], notes: "Aorist ölür (not öler)." }
+- { id: w.sanmak, lemma: sanmak, pos: verb, stem: san, gloss: [think, suppose], flags: [aorist_ir], notes: "Sanırım 'I think, I suppose' (L62)." }
+- { id: w.varmak, lemma: varmak, pos: verb, stem: var, gloss: [arrive, reach], flags: [aorist_ir], notes: "Not the particle var 'there is'. Takes the dative: eve varmak. Aorist varır." }
+- { id: w.vermek, lemma: vermek, pos: verb, stem: ver, gloss: [give], flags: [aorist_ir], notes: "Aorist verir (not verer)." }
+- { id: w.vurmak, lemma: vurmak, pos: verb, stem: vur, gloss: [hit, strike], flags: [aorist_ir], notes: "Aorist vurur (not vurar)." }
+
+# --- -ki (L42) ---
+- { id: w.öbür, lemma: öbür, pos: det, gloss: [the other], forms: { ki: öbürkü }, notes: "öbür gün 'the day after tomorrow'; öbürkü 'the other one' (-ki harmonises here)." }

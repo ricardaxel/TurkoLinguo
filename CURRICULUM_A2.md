@@ -260,6 +260,8 @@ The form engine handles all A1 morphology. A2 adds:
 
 Every new suffix gets its own block in `content/morphology/tests.yaml` **before** its lessons are written, as was done for the verbs.
 
+**Status (2026-10-22): done.** All the suffixes above are in `content/morphology/suffixes.yaml` (`sfx.aor`, `sfx.aor_neg`, `sfx.abil`, `sfx.unable`, `sfx.must`, `sfx.opt_1sg/1pl`, `sfx.imp_3sg/3pl`, `sfx.ki`, `sfx.ord`, `sfx.distr`, `sfx.evid`, `sfx.cop_evid`, `sfx.ken`, `sfx.ince`, `sfx.after`, `sfx.before`, `sfx.cond`, `sfx.wish`, `sfx.arak`, `sfx.ip`, `sfx.rel`, `sfx.dik`), with test cases in `tests.yaml`; the A2 lessons are in `course.yaml` (no `file:` yet); items take `spoken: [...]` (docs/CONTENT_FORMAT.md §4.4). New feedback codes for grammar templates: `aorist_ir` (*geler* → *gelir*), `aorist_ar` (*yapır* → *yapar*), `neg_aorist_person` (*gelmezim* → *gelmem*), and `spoken`.
+
 ---
 
 ## 4. How to produce it

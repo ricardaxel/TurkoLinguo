@@ -76,6 +76,7 @@ function explainSentence(item: Item, expected: string, given: string): string | 
 }
 
 const DEFAULT_ACCENT = 'Almost! **{expected_letter}**, not {given_letter}: **{answer}**.';
+const DEFAULT_SPOKEN = "That's how it's said; in writing: **{answer}**.";
 
 /**
  * The item's hand-written message for this wrong answer, if any. Case, punctuation and spacing
@@ -90,10 +91,21 @@ export function explicitFeedback(item: Item, given: string): string | undefined 
   return undefined;
 }
 
-/** Grade a typed (or assembled) answer against accepted answers. */
-export function gradeTyped(item: Item, given: string, accepted: string[], lang: 'tr' | 'en' = 'tr'): ItemResult {
+/**
+ * Grade a typed (or assembled) answer against accepted answers. An answer in a spoken form
+ * (`spoken` patterns: napıyosun, gelicem) is "almost", with the written form (CURRICULUM_A2.md §1.1).
+ */
+export function gradeTyped(
+  item: Item, given: string, accepted: string[], lang: 'tr' | 'en' = 'tr', spoken: string[] = item.spoken ?? [],
+): ItemResult {
   const r = checkTyped(given, accepted, lang);
   if (r.status === 'correct') return { status: 'correct' };
+  if (spoken.length && checkTyped(given, spoken, lang).status === 'correct') {
+    const message = (templates(item).spoken ?? DEFAULT_SPOKEN)
+      .replace('{answer}', r.expected)
+      .replace(/([.!?…]\*\*)\.$/, '$1');
+    return { status: 'almost', message, expected: r.expected };
+  }
   if (r.status === 'almost' && r.accent) {
     const message = (templates(item).accent ?? DEFAULT_ACCENT)
       .replace('{expected_letter}', r.accent.expected)

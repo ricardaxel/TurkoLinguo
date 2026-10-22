@@ -2,7 +2,7 @@
 // feedback templates (content/grammar/*.yaml → `feedback`).
 
 import type { Word } from '../content/types';
-import { alterStem, inflect, stemOf } from './morph';
+import { alterStem, inflect, stemOf, type InflectOptions } from './morph';
 import { endsInVowel, firstVowel, isFrontVowel, lastChar, lastVowel, trLower } from './turkish';
 
 type SuffixTable = Record<string, { form: string; slot?: string }>;
@@ -106,13 +106,19 @@ export function diagnoseForm(word: Word, suffixIds: string | string[], given: st
   if (word.pos === 'name' && !g.startsWith(lemma + "'")) codes.push('apostrophe');
   const gw = noApostrophe(g);
 
-  // whole-form mix-ups: -DA for -DAn (Londra'dayım for Londra'danım), person before location
-  const alternatives: [string[], string][] = [];
+  // whole-form mix-ups: -DA for -DAn (Londra'dayım for Londra'danım), person before location,
+  // the wrong aorist vowel (geler for gelir: aorist_ir; yapır for yapar: aorist_ar), gelmezim for gelmem
+  const alternatives: [string[], string, InflectOptions?][] = [];
   if (ids[0] === 'sfx.abl') alternatives.push([['sfx.loc', ...ids.slice(1)], 'loc_for_abl']);
   if (ids.length === 2) alternatives.push([[ids[1], ids[0]], 'order']);
-  for (const [chain, code] of alternatives) {
+  if (ids.includes('sfx.aor')) {
+    alternatives.push([ids, 'aorist_ir', { aorist: 'Ar' }], [ids, 'aorist_ar', { aorist: 'Ir' }]);
+  }
+  if (ids.includes('sfx.aor') || ids.includes('sfx.aor_neg')) alternatives.push([ids, 'neg_aorist_person', { keepNegAoristZ: true }]);
+  for (const [chain, code, opts] of alternatives) {
     try {
-      if (noApostrophe(trLower(inflect(word, chain, table))) === gw) return { codes: [...codes, code], vars };
+      const form = noApostrophe(trLower(inflect(word, chain, table, opts)));
+      if (form === gw && form !== exp) return { codes: [...codes, code], vars };
     } catch { /* not a form the engine can build */ }
   }
 

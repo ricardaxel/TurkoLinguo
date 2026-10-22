@@ -291,7 +291,7 @@ function SpotErrorItem({ item, locked, onResult }: ItemProps) {
 function DialogueItem({ item, locked, onResult }: ItemProps) {
   const [value, setValue] = useState('');
   const blank = item.turns!.find((t) => t.blank)!;
-  const check = () => value.trim() && onResult(gradeTyped(item, value, blank.answers!));
+  const check = () => value.trim() && onResult(gradeTyped(item, value, blank.answers!, 'tr', blank.spoken ?? item.spoken));
 
   return (
     <View style={styles.gap}>
