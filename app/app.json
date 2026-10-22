@@ -11,6 +11,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.ricardaxel.turkolinguo",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -24,7 +26,8 @@
     },
     "plugins": [
       "expo-router",
-      "expo-status-bar"
+      "expo-status-bar",
+      "./plugins/withReleaseSigning"
     ],
     "experiments": {
       "typedRoutes": true
