@@ -145,3 +145,49 @@ describe('L11–L12 grading: suffix chains and names', () => {
     expect(grade(all['L12.practise.12'], 'Hayır, Türkiyedenim.').message).toContain('apostrophe');
   });
 });
+
+describe('spoken variants (CURRICULUM_A2.md §1.1)', () => {
+  const item: Item = {
+    id: 'X.test.01', type: 'translate_to_tr', grammar: ['g.L33.future'], typed: true,
+    spoken: ['{Gelicem|Gelcem}.', '(Ben) yarın gelicem.'],
+  };
+  const grade = (given: string) => gradeTyped(item, given, ['(Ben) yarın geleceğim.', 'Geleceğim.'], 'tr');
+
+  it('grades a spoken form as almost, with the written form', () => {
+    const r = grade('gelicem');
+    expect(r.status).toBe('almost');
+    expect(r.message).toBe("That's how it's said; in writing: **Geleceğim.**");
+    expect(r.expected).toBe('Geleceğim.');
+  });
+
+  it('expands spoken patterns and picks the closest written answer', () => {
+    const r = grade('Ben yarın gelicem!');
+    expect(r.status).toBe('almost');
+    expect(r.expected).toBe('Ben yarın geleceğim.');
+  });
+
+  it('still accepts the written form and rejects other answers', () => {
+    expect(grade('yarın geleceğim').status).toBe('correct');
+    expect(grade('gelirim').status).toBe('wrong');
+  });
+
+  it('is off without spoken variants', () => {
+    expect(gradeTyped({ ...item, spoken: undefined }, 'gelicem', ['Geleceğim.']).status).toBe('wrong');
+  });
+
+  it('takes the variants of a dialogue blank', () => {
+    const r = gradeTyped(item, 'napıyosun', ['Ne yapıyorsun?'], 'tr', ['Napıyosun?']);
+    expect(r).toEqual({ status: 'almost', message: "That's how it's said; in writing: **Ne yapıyorsun?**", expected: 'Ne yapıyorsun?' });
+  });
+
+  it('lets a grammar point override the message', () => {
+    const g = content.grammar['g.L33.future'];
+    const saved = g.feedback;
+    g.feedback = { ...saved, spoken: 'Spoken Turkish! Written: {answer}' };
+    try {
+      expect(grade('gelcem').message).toBe('Spoken Turkish! Written: Geleceğim.');
+    } finally {
+      g.feedback = saved;
+    }
+  });
+});

@@ -174,3 +174,24 @@ describe('feedback diagnosis for suffix chains and names', () => {
     );
   });
 });
+
+describe('A2 aorist feedback diagnosis', () => {
+  const diag = (w: string, ids: string[], given: string) => diagnoseForm(word(w), ids, given, T)?.codes;
+
+  it.each([
+    ['w.gelmek', ['sfx.aor'], 'geler', ['aorist_ir']],
+    ['w.almak', ['sfx.aor', 'sfx.cop_1sg'], 'alarım', ['aorist_ir']],
+    ['w.yapmak', ['sfx.aor'], 'yapır', ['aorist_ar']],
+    ['w.içmek', ['sfx.aor', 'sfx.cop_1sg'], 'içirim', ['aorist_ar']],
+    ['w.çalışmak', ['sfx.aor'], 'çalışar', ['aorist_ir']],
+    ['w.gelmek', ['sfx.aor_neg', 'sfx.cop_1sg'], 'gelmezim', ['neg_aorist_person']],
+    ['w.gelmek', ['sfx.aor_neg', 'sfx.cop_1pl'], 'gelmeziz', ['neg_aorist_person']],
+    ['w.yapmak', ['sfx.unable', 'sfx.aor', 'sfx.cop_1sg'], 'yapamazım', ['neg_aorist_person']],
+  ])('%s + %j: %s → %j', (w, ids, given, codes) => {
+    expect(diag(w, ids, given)).toEqual(codes);
+  });
+
+  it('finds nothing to explain in a correct form', () => {
+    expect(diag('w.gelmek', ['sfx.aor'], 'gelir')).toEqual([]);
+  });
+});

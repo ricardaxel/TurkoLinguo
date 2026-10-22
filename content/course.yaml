@@ -10,6 +10,12 @@ units:
   - { id: U5, title: Daily life, lessons: [L25, L26, L27, L28, L29], checkpoint: C5 }
   - { id: U6, title: Yesterday, lessons: [L30, L31, L32], checkpoint: C6 }
   - { id: U7, title: Plans & wishes, lessons: [L33, L34, L35], checkpoint: C7 }
+  - { id: U8, title: Habits & offers, lessons: [L36, L37, L38, L39, L40], checkpoint: C8 }
+  - { id: U9, title: Finding your way, lessons: [L41, L42, L43, L44, L45], checkpoint: C9 }
+  - { id: U10, title: Telling stories, lessons: [L46, L47, L48, L49, L50], checkpoint: C10 }
+  - { id: U11, title: If and how, lessons: [L51, L52, L53, L54], checkpoint: C11 }
+  - { id: U12, title: People & things, lessons: [L55, L56, L57, L58, L59], checkpoint: C12 }
+  - { id: U13, title: Opinions & plans, lessons: [L60, L61, L62, L63, L64], checkpoint: C13 }
 
 lessons:
   L1:  { title: "Alphabet & pronunciation", grammar: g.L1.alphabet, file: lessons/L1.yaml }
@@ -47,3 +53,33 @@ lessons:
   L33: { title: "Future -(y)AcAK", grammar: g.L33.future, file: lessons/L33.yaml }
   L34: { title: "istemek + -mAk", grammar: g.L34.istemek, file: lessons/L34.yaml }
   L35: { title: "Need: -mAk lazım / gerek", grammar: g.L35.lazim, file: lessons/L35.yaml }
+  # --- A2 (CURRICULUM_A2.md), not written yet ---
+  L36: { title: "Aorist: habits, general truths, offers", grammar: g.L36.aorist }
+  L37: { title: "Aorist: negative & questions", grammar: g.L37.aorist_neg_q }
+  L38: { title: "Can / can't: -(y)Abil, -(y)AmA", grammar: g.L38.abil }
+  L39: { title: "Must / should: -mAlI; olmak", grammar: g.L39.meli }
+  L40: { title: "Let's / let me: -(y)AlIm, -(y)AyIm, -sIn", grammar: g.L40.optative }
+  L41: { title: "Where exactly? üstünde, önünde…", grammar: g.L41.spatial }
+  L42: { title: "-ki: the one in / the one of", grammar: g.L42.ki }
+  L43: { title: "Postpositions: için, gibi, kadar, göre", grammar: g.L43.postpositions }
+  L44: { title: "Directions", grammar: g.L44.directions }
+  L45: { title: "Ordinals -(I)ncI, distributives -(ş)Ar", grammar: g.L45.ordinals }
+  L46: { title: "Past continuous -(I)yordu", grammar: g.L46.past_cont }
+  L47: { title: "Apparently: -mIş", grammar: g.L47.evidential }
+  L48: { title: "While: -(y)ken", grammar: g.L48.ken }
+  L49: { title: "When: -(y)IncA", grammar: g.L49.ince }
+  L50: { title: "After / before: -DIktAn sonra, -mAdAn önce", grammar: g.L50.after_before }
+  L51: { title: "If (1): -(y)sA", grammar: g.L51.conditional }
+  L52: { title: "If (2) and wishes: -sA", grammar: g.L52.wish }
+  L53: { title: "By doing / and then: -(y)ArAk, -Ip", grammar: g.L53.arak_ip }
+  L54: { title: "Verbs as objects: -mAyI, -mAktAn, -mAyA", grammar: g.L54.verbal_objects }
+  L55: { title: "Relative clauses (1): -(y)An", grammar: g.L55.relative_an }
+  L56: { title: "Myself, each other: kendi, birbiri", grammar: g.L56.kendi }
+  L57: { title: "Never, nobody, nothing", grammar: g.L57.negatives }
+  L58: { title: "Comparisons (2): kadar, gibi, en … biri", grammar: g.L58.comparison2 }
+  L59: { title: "Describing people", grammar: g.L59.describing }
+  L60: { title: "Relative clauses (2): -DIK + possessive", grammar: g.L60.relative_dik }
+  L61: { title: "Purpose and reason: -mAk için, çünkü", grammar: g.L61.purpose }
+  L62: { title: "Opinions: bence, sanırım", grammar: g.L62.opinions }
+  L63: { title: "Connectors: hem … hem, ya … ya, ne … ne", grammar: g.L63.connectors }
+  L64: { title: "Future plans and promises", grammar: g.L64.future_review }

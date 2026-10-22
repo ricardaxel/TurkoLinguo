@@ -1,5 +1,5 @@
-# A1 suffix inventory in archiphoneme notation (CURRICULUM.md §2).
-# A = a/e · I = ı/i/u/ü · D = d/t · C = c/ç · (y) (n) (s) = buffers used only after a vowel.
+# Suffix inventory (A1 + A2) in archiphoneme notation (CURRICULUM.md §2, CURRICULUM_A2.md §3).
+# A = a/e · I = ı/i/u/ü · D = d/t · C = c/ç · K = k (ğ before a vowel) · (y) (n) (s) (ş) = buffers used only after a vowel.
 
 - { id: sfx.pl,        form: lAr,     gloss: plural,                    slot: plural,     introduced_by: g.L4.plural }
 - { id: sfx.cop_1sg,   form: (y)Im,   gloss: "I am",                    slot: copula,     introduced_by: g.L5.copula }
@@ -40,3 +40,42 @@
 - { id: sfx.kpers_3pl, form: lAr,     gloss: "they (after -DI)",        slot: person,     introduced_by: g.L30.past }
 # Verbal noun -mA + possessive (L35): gitme·m lazım. Not the negative -mA (sfx.neg).
 - { id: sfx.vn,        form: mA,      gloss: verbal noun ("going"),     slot: derivation, introduced_by: g.L35.lazim }
+
+# --- A2 (L36–L64, CURRICULUM_A2.md §3) ---
+# Aorist (L36): -r after a vowel (okur), -Ar on one-syllable stems (yapar, gider), -Ir on longer
+# stems (çalışır) and on the 13 one-syllable verbs flagged aorist_ir (gelir, alır). The engine
+# picks the variant; `form` is the one-syllable default. After a negative it's -z (yapamaz).
+- { id: sfx.aor,       form: Ar,      gloss: "aorist (habits, offers)", slot: tense,      introduced_by: g.L36.aorist }
+# Negative aorist (L37): before -(y)Im / -(y)Iz the z drops (gelmem, gelmeyiz), but not before mI (gelmez miyim).
+- { id: sfx.aor_neg,   form: mAz,     gloss: negative aorist,           slot: tense,      introduced_by: g.L37.aorist_neg_q }
+# Ability (L38): -(y)Abil + a tense (yapabilirim); inability -(y)AmA in every tense (yapamam, gelemiyorum).
+- { id: sfx.abil,      form: (y)Abil, gloss: "can",                     slot: derivation, introduced_by: g.L38.abil }
+- { id: sfx.unable,    form: (y)AmA,  gloss: "can't",                   slot: verb_negation, introduced_by: g.L38.abil }
+- { id: sfx.must,      form: mAlI,    gloss: "must / should",           slot: mood,       introduced_by: g.L39.meli }
+# Optative (L40) and 3rd-person imperative
+- { id: sfx.opt_1sg,   form: (y)AyIm, gloss: "let me",                  slot: mood,       introduced_by: g.L40.optative }
+- { id: sfx.opt_1pl,   form: (y)AlIm, gloss: "let's",                   slot: mood,       introduced_by: g.L40.optative }
+- { id: sfx.imp_3sg,   form: sIn,     gloss: "let him / her",           slot: mood,       introduced_by: g.L40.optative }
+- { id: sfx.imp_3pl,   form: sInlAr,  gloss: "let them",                slot: mood,       introduced_by: g.L40.optative }
+# -ki (L42): never harmonises (masadaki); bugünkü, dünkü, öbürkü are lexicon forms (forms.ki).
+# A case after it takes the buffer n: benimkini, masadakinde.
+- { id: sfx.ki,        form: ki,      gloss: "the one in / of",         slot: derivation, introduced_by: g.L42.ki }
+# Numbers (L45): ordinal, distributive
+- { id: sfx.ord,       form: (I)ncI,  gloss: ordinal ("-th"),           slot: derivation, introduced_by: g.L45.ordinals }
+- { id: sfx.distr,     form: (ş)Ar,   gloss: "… each",                  slot: derivation, introduced_by: g.L45.ordinals }
+# Evidential (L47): -mIş on verbs, -(y)mIş on nouns ("apparently"); person endings as in L5.
+- { id: sfx.evid,      form: mIş,     gloss: "apparently (verbs)",      slot: tense,      introduced_by: g.L47.evidential }
+- { id: sfx.cop_evid,  form: (y)mIş,  gloss: "apparently is / was",     slot: copula,     introduced_by: g.L47.evidential }
+# Adverbial clauses (L48–L50, L53)
+- { id: sfx.ken,       form: (y)ken,  gloss: "while",                   slot: subordinate, introduced_by: g.L48.ken }
+- { id: sfx.ince,      form: (y)IncA, gloss: "when / as soon as",       slot: subordinate, introduced_by: g.L49.ince }
+- { id: sfx.after,     form: DIktAn,  gloss: "after (… sonra)",         slot: subordinate, introduced_by: g.L50.after_before }
+- { id: sfx.before,    form: mAdAn,   gloss: "before (… önce) / without", slot: subordinate, introduced_by: g.L50.after_before }
+# Conditional (L51) with the k-set person endings (gelirsem, gelirsek); wish -sA (L52): gelsem, gitsek
+- { id: sfx.cond,      form: (y)sA,   gloss: "if",                      slot: mood,       introduced_by: g.L51.conditional }
+- { id: sfx.wish,      form: sA,      gloss: "if only / shall I",       slot: mood,       introduced_by: g.L52.wish }
+- { id: sfx.arak,      form: (y)ArAk, gloss: "by …-ing",                slot: subordinate, introduced_by: g.L53.arak_ip }
+- { id: sfx.ip,        form: (y)Ip,   gloss: "and (then)",              slot: subordinate, introduced_by: g.L53.arak_ip }
+# Relative clauses: subject -(y)An (L55); object -DIK + possessive (L60), K → ğ before a vowel: okuduğum
+- { id: sfx.rel,       form: (y)An,   gloss: "who / which (subject)",   slot: subordinate, introduced_by: g.L55.relative_an }
+- { id: sfx.dik,       form: DIK,     gloss: "that … (object)",         slot: subordinate, introduced_by: g.L60.relative_dik }

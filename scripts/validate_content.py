@@ -35,6 +35,7 @@ KINDS = {
 ID_RE = re.compile(r"^(w\.[^\s.]+(\.[a-z0-9_]+)?|s\.[A-Za-z0-9_]+\.[0-9]{3}|img\.[a-z0-9_]+\.\S+|aud\.[a-z0-9_]+\.\S+"
                    r"|sfx\.[a-z0-9_]+|g\.L[0-9]+\.[a-z0-9_]+(\.[a-z0-9_]+)?|T[0-9]+b?(\.p[0-9]+)?)$")
 CHOICE_TYPES = {"pick_suffix", "picture_choose", "listen_choose", "contrast_pair"}
+TYPED_TYPES = {"type_form", "translate_to_tr", "dictation", "spot_error", "qa", "mini_dialogue"}
 PUNCT_RE = re.compile(r"[.,!?;:…\"“”«»]")
 
 
@@ -258,9 +259,12 @@ def main():
             if missing:
                 rep.error(rel, f"{where}: word bank lacks {missing}")
         patterns = list(item.get("answers", [])) + [a for t in item.get("turns", []) for a in t.get("answers", [])]
-        for a in patterns:
+        spoken = list(item.get("spoken", [])) + [a for t in item.get("turns", []) for a in t.get("spoken", [])]
+        for a in patterns + spoken:
             if not balanced(a):
                 rep.error(rel, f"{where}: unbalanced () or {{}} in answer pattern {a!r}")
+        if spoken and item["type"] not in TYPED_TYPES:
+            rep.error(rel, f"{where}: spoken variants only apply to typed answers, not {item['type']}")
 
     for rel, lesson in docs.get("lesson", []):
         lid = lesson["id"]

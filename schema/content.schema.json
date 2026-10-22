@@ -18,7 +18,7 @@
     "audioId": { "type": "string", "pattern": "^aud\\.[a-z0-9_]+\\.[^\\s]+$" },
     "mediaId": { "anyOf": [ { "$ref": "#/$defs/imageId" }, { "$ref": "#/$defs/audioId" } ] },
     "markdown": { "type": "string", "minLength": 1 },
-    "flag": { "enum": ["soft", "nosoft", "drop", "front", "compound", "double", "irr", "nodrill"] },
+    "flag": { "enum": ["soft", "nosoft", "drop", "front", "compound", "double", "irr", "nodrill", "aorist_ir"] },
     "pos": { "enum": ["noun", "verb", "adj", "det", "adv", "pron", "num", "postp", "conj", "interj", "particle", "name", "phrase"] },
     "license": { "enum": ["CC0-1.0", "PD", "CC-BY-3.0", "CC-BY-4.0", "CC-BY-SA-3.0", "CC-BY-SA-4.0", "OWN", "TTS"] },
     "sentenceLicense": { "enum": ["CC0-1.0", "CC-BY-2.0-FR", "CC-BY-4.0", "CC-BY-SA-4.0", "OWN"] },
@@ -143,6 +143,7 @@
         "options": { "type": "array", "minItems": 2, "items": { "type": "string" } },
         "answer": { "type": ["string", "integer"] },
         "answers": { "type": "array", "items": { "type": "string" } },
+        "spoken": { "type": "array", "items": { "type": "string" }, "minItems": 1, "description": "Spoken / informal variants (answer patterns), graded almost with an in-writing note. Never model answers." },
         "tiles": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
         "sentence": { "$ref": "#/$defs/sentenceId" },
         "word_bank": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
@@ -161,7 +162,8 @@
               "speaker": { "enum": ["A", "B"] },
               "sentence": { "$ref": "#/$defs/sentenceId" },
               "blank": { "const": true },
-              "answers": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+              "answers": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+              "spoken": { "type": "array", "items": { "type": "string" }, "minItems": 1, "description": "Spoken / informal variants (answer patterns), graded almost with an in-writing note. Never model answers." }
             },
             "oneOf": [ { "required": ["sentence"] }, { "required": ["blank", "answers"] } ]
           }
@@ -325,7 +327,7 @@
           "id": { "$ref": "#/$defs/suffixId" },
           "form": { "type": "string", "description": "Archiphoneme notation: A I D C, (y) (n) (s) buffers." },
           "gloss": { "type": "string" },
-          "slot": { "enum": ["derivation", "plural", "possessive", "case", "copula", "verb_negation", "tense", "person", "question"] },
+          "slot": { "enum": ["derivation", "plural", "possessive", "case", "copula", "verb_negation", "tense", "person", "question", "mood", "subordinate"] },
           "introduced_by": { "$ref": "#/$defs/grammarId" }
         }
       }

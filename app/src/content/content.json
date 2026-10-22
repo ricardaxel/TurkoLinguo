@@ -91,6 +91,77 @@
      "L35"
     ],
     "checkpoint": "C7"
+   },
+   {
+    "id": "U8",
+    "title": "Habits & offers",
+    "lessons": [
+     "L36",
+     "L37",
+     "L38",
+     "L39",
+     "L40"
+    ],
+    "checkpoint": "C8"
+   },
+   {
+    "id": "U9",
+    "title": "Finding your way",
+    "lessons": [
+     "L41",
+     "L42",
+     "L43",
+     "L44",
+     "L45"
+    ],
+    "checkpoint": "C9"
+   },
+   {
+    "id": "U10",
+    "title": "Telling stories",
+    "lessons": [
+     "L46",
+     "L47",
+     "L48",
+     "L49",
+     "L50"
+    ],
+    "checkpoint": "C10"
+   },
+   {
+    "id": "U11",
+    "title": "If and how",
+    "lessons": [
+     "L51",
+     "L52",
+     "L53",
+     "L54"
+    ],
+    "checkpoint": "C11"
+   },
+   {
+    "id": "U12",
+    "title": "People & things",
+    "lessons": [
+     "L55",
+     "L56",
+     "L57",
+     "L58",
+     "L59"
+    ],
+    "checkpoint": "C12"
+   },
+   {
+    "id": "U13",
+    "title": "Opinions & plans",
+    "lessons": [
+     "L60",
+     "L61",
+     "L62",
+     "L63",
+     "L64"
+    ],
+    "checkpoint": "C13"
    }
   ],
   "lessons": {
@@ -268,6 +339,122 @@
     "title": "Need: -mAk lazım / gerek",
     "grammar": "g.L35.lazim",
     "file": "lessons/L35.yaml"
+   },
+   "L36": {
+    "title": "Aorist: habits, general truths, offers",
+    "grammar": "g.L36.aorist"
+   },
+   "L37": {
+    "title": "Aorist: negative & questions",
+    "grammar": "g.L37.aorist_neg_q"
+   },
+   "L38": {
+    "title": "Can / can't: -(y)Abil, -(y)AmA",
+    "grammar": "g.L38.abil"
+   },
+   "L39": {
+    "title": "Must / should: -mAlI; olmak",
+    "grammar": "g.L39.meli"
+   },
+   "L40": {
+    "title": "Let's / let me: -(y)AlIm, -(y)AyIm, -sIn",
+    "grammar": "g.L40.optative"
+   },
+   "L41": {
+    "title": "Where exactly? üstünde, önünde…",
+    "grammar": "g.L41.spatial"
+   },
+   "L42": {
+    "title": "-ki: the one in / the one of",
+    "grammar": "g.L42.ki"
+   },
+   "L43": {
+    "title": "Postpositions: için, gibi, kadar, göre",
+    "grammar": "g.L43.postpositions"
+   },
+   "L44": {
+    "title": "Directions",
+    "grammar": "g.L44.directions"
+   },
+   "L45": {
+    "title": "Ordinals -(I)ncI, distributives -(ş)Ar",
+    "grammar": "g.L45.ordinals"
+   },
+   "L46": {
+    "title": "Past continuous -(I)yordu",
+    "grammar": "g.L46.past_cont"
+   },
+   "L47": {
+    "title": "Apparently: -mIş",
+    "grammar": "g.L47.evidential"
+   },
+   "L48": {
+    "title": "While: -(y)ken",
+    "grammar": "g.L48.ken"
+   },
+   "L49": {
+    "title": "When: -(y)IncA",
+    "grammar": "g.L49.ince"
+   },
+   "L50": {
+    "title": "After / before: -DIktAn sonra, -mAdAn önce",
+    "grammar": "g.L50.after_before"
+   },
+   "L51": {
+    "title": "If (1): -(y)sA",
+    "grammar": "g.L51.conditional"
+   },
+   "L52": {
+    "title": "If (2) and wishes: -sA",
+    "grammar": "g.L52.wish"
+   },
+   "L53": {
+    "title": "By doing / and then: -(y)ArAk, -Ip",
+    "grammar": "g.L53.arak_ip"
+   },
+   "L54": {
+    "title": "Verbs as objects: -mAyI, -mAktAn, -mAyA",
+    "grammar": "g.L54.verbal_objects"
+   },
+   "L55": {
+    "title": "Relative clauses (1): -(y)An",
+    "grammar": "g.L55.relative_an"
+   },
+   "L56": {
+    "title": "Myself, each other: kendi, birbiri",
+    "grammar": "g.L56.kendi"
+   },
+   "L57": {
+    "title": "Never, nobody, nothing",
+    "grammar": "g.L57.negatives"
+   },
+   "L58": {
+    "title": "Comparisons (2): kadar, gibi, en … biri",
+    "grammar": "g.L58.comparison2"
+   },
+   "L59": {
+    "title": "Describing people",
+    "grammar": "g.L59.describing"
+   },
+   "L60": {
+    "title": "Relative clauses (2): -DIK + possessive",
+    "grammar": "g.L60.relative_dik"
+   },
+   "L61": {
+    "title": "Purpose and reason: -mAk için, çünkü",
+    "grammar": "g.L61.purpose"
+   },
+   "L62": {
+    "title": "Opinions: bence, sanırım",
+    "grammar": "g.L62.opinions"
+   },
+   "L63": {
+    "title": "Connectors: hem … hem, ya … ya, ne … ne",
+    "grammar": "g.L63.connectors"
+   },
+   "L64": {
+    "title": "Future plans and promises",
+    "grammar": "g.L64.future_review"
    }
   }
  },
@@ -21241,6 +21428,9 @@
    "gloss": [
     "come"
    ],
+   "flags": [
+    "aorist_ir"
+   ],
    "images": [
     "img.openmoji.waving_hand"
    ],
@@ -21304,7 +21494,9 @@
    "forms": {
     "imp_pol": "yiyin",
     "prog": "yiyor",
-    "fut": "yiyecek"
+    "fut": "yiyecek",
+    "before_yA": "yi",
+    "before_yI": "yi"
    },
    "images": [
     "img.openmoji.plate"
@@ -21388,7 +21580,8 @@
    "forms": {
     "imp_pol": "deyin",
     "prog": "diyor",
-    "fut": "diyecek"
+    "fut": "diyecek",
+    "before_yA": "di"
    },
    "notes": "Bu ne demek? 'What does this mean?' (T1b).",
    "stem": "de"
@@ -21487,6 +21680,9 @@
    "pos": "verb",
    "gloss": [
     "see"
+   ],
+   "flags": [
+    "aorist_ir"
    ],
    "images": [
     "img.openmoji.eyes"
@@ -21590,6 +21786,9 @@
    "pos": "verb",
    "gloss": [
     "know"
+   ],
+   "flags": [
+    "aorist_ir"
    ],
    "notes": "Bilmiyorum. 'I don't know.'"
   },
@@ -22037,6 +22236,9 @@
     "take",
     "buy",
     "get"
+   ],
+   "flags": [
+    "aorist_ir"
    ]
   },
   "w.tanımak": {
@@ -23181,7 +23383,10 @@
    "pos": "adv",
    "gloss": [
     "today"
-   ]
+   ],
+   "forms": {
+    "ki": "bugünkü"
+   }
   },
   "w.yarın": {
    "id": "w.yarın",
@@ -23198,6 +23403,9 @@
    "gloss": [
     "yesterday"
    ],
+   "forms": {
+    "ki": "dünkü"
+   },
    "notes": "Used with the past tense (L30)."
   },
   "w.sabah": {
@@ -23848,7 +24056,11 @@
    "pos": "num",
    "gloss": [
     "four"
-   ]
+   ],
+   "flags": [
+    "soft"
+   ],
+   "notes": "t → d before a vowel: dörde, dördüncü, dörder."
   },
   "w.beş": {
    "id": "w.beş",
@@ -25355,6 +25567,141 @@
    "images": [
     "img.openmoji.brown_circle"
    ]
+  },
+  "w.bulmak": {
+   "id": "w.bulmak",
+   "lemma": "bulmak",
+   "pos": "verb",
+   "stem": "bul",
+   "gloss": [
+    "find"
+   ],
+   "flags": [
+    "aorist_ir"
+   ],
+   "notes": "Aorist bulur (not bular)."
+  },
+  "w.durmak": {
+   "id": "w.durmak",
+   "lemma": "durmak",
+   "pos": "verb",
+   "stem": "dur",
+   "gloss": [
+    "stop",
+    "stand"
+   ],
+   "flags": [
+    "aorist_ir"
+   ],
+   "notes": "Aorist durur (not durar)."
+  },
+  "w.kalmak": {
+   "id": "w.kalmak",
+   "lemma": "kalmak",
+   "pos": "verb",
+   "stem": "kal",
+   "gloss": [
+    "stay",
+    "remain"
+   ],
+   "flags": [
+    "aorist_ir"
+   ],
+   "notes": "Aorist kalır (not kalar)."
+  },
+  "w.olmak": {
+   "id": "w.olmak",
+   "lemma": "olmak",
+   "pos": "verb",
+   "stem": "ol",
+   "gloss": [
+    "be",
+    "become"
+   ],
+   "flags": [
+    "aorist_ir"
+   ],
+   "notes": "'To be' in the tenses the copula doesn't have (L39). Aorist olur: Olur! 'OK!', Olmaz. 'No way.'"
+  },
+  "w.ölmek": {
+   "id": "w.ölmek",
+   "lemma": "ölmek",
+   "pos": "verb",
+   "stem": "öl",
+   "gloss": [
+    "die"
+   ],
+   "flags": [
+    "aorist_ir"
+   ],
+   "notes": "Aorist ölür (not öler)."
+  },
+  "w.sanmak": {
+   "id": "w.sanmak",
+   "lemma": "sanmak",
+   "pos": "verb",
+   "stem": "san",
+   "gloss": [
+    "think",
+    "suppose"
+   ],
+   "flags": [
+    "aorist_ir"
+   ],
+   "notes": "Sanırım 'I think, I suppose' (L62)."
+  },
+  "w.varmak": {
+   "id": "w.varmak",
+   "lemma": "varmak",
+   "pos": "verb",
+   "stem": "var",
+   "gloss": [
+    "arrive",
+    "reach"
+   ],
+   "flags": [
+    "aorist_ir"
+   ],
+   "notes": "Not the particle var 'there is'. Takes the dative: eve varmak. Aorist varır."
+  },
+  "w.vermek": {
+   "id": "w.vermek",
+   "lemma": "vermek",
+   "pos": "verb",
+   "stem": "ver",
+   "gloss": [
+    "give"
+   ],
+   "flags": [
+    "aorist_ir"
+   ],
+   "notes": "Aorist verir (not verer)."
+  },
+  "w.vurmak": {
+   "id": "w.vurmak",
+   "lemma": "vurmak",
+   "pos": "verb",
+   "stem": "vur",
+   "gloss": [
+    "hit",
+    "strike"
+   ],
+   "flags": [
+    "aorist_ir"
+   ],
+   "notes": "Aorist vurur (not vurar)."
+  },
+  "w.öbür": {
+   "id": "w.öbür",
+   "lemma": "öbür",
+   "pos": "det",
+   "gloss": [
+    "the other"
+   ],
+   "forms": {
+    "ki": "öbürkü"
+   },
+   "notes": "öbür gün 'the day after tomorrow'; öbürkü 'the other one' (-ki harmonises here)."
   }
  },
  "sentences": {
@@ -43489,6 +43836,174 @@
    "gloss": "verbal noun (\"going\")",
    "slot": "derivation",
    "introduced_by": "g.L35.lazim"
+  },
+  "sfx.aor": {
+   "id": "sfx.aor",
+   "form": "Ar",
+   "gloss": "aorist (habits, offers)",
+   "slot": "tense",
+   "introduced_by": "g.L36.aorist"
+  },
+  "sfx.aor_neg": {
+   "id": "sfx.aor_neg",
+   "form": "mAz",
+   "gloss": "negative aorist",
+   "slot": "tense",
+   "introduced_by": "g.L37.aorist_neg_q"
+  },
+  "sfx.abil": {
+   "id": "sfx.abil",
+   "form": "(y)Abil",
+   "gloss": "can",
+   "slot": "derivation",
+   "introduced_by": "g.L38.abil"
+  },
+  "sfx.unable": {
+   "id": "sfx.unable",
+   "form": "(y)AmA",
+   "gloss": "can't",
+   "slot": "verb_negation",
+   "introduced_by": "g.L38.abil"
+  },
+  "sfx.must": {
+   "id": "sfx.must",
+   "form": "mAlI",
+   "gloss": "must / should",
+   "slot": "mood",
+   "introduced_by": "g.L39.meli"
+  },
+  "sfx.opt_1sg": {
+   "id": "sfx.opt_1sg",
+   "form": "(y)AyIm",
+   "gloss": "let me",
+   "slot": "mood",
+   "introduced_by": "g.L40.optative"
+  },
+  "sfx.opt_1pl": {
+   "id": "sfx.opt_1pl",
+   "form": "(y)AlIm",
+   "gloss": "let's",
+   "slot": "mood",
+   "introduced_by": "g.L40.optative"
+  },
+  "sfx.imp_3sg": {
+   "id": "sfx.imp_3sg",
+   "form": "sIn",
+   "gloss": "let him / her",
+   "slot": "mood",
+   "introduced_by": "g.L40.optative"
+  },
+  "sfx.imp_3pl": {
+   "id": "sfx.imp_3pl",
+   "form": "sInlAr",
+   "gloss": "let them",
+   "slot": "mood",
+   "introduced_by": "g.L40.optative"
+  },
+  "sfx.ki": {
+   "id": "sfx.ki",
+   "form": "ki",
+   "gloss": "the one in / of",
+   "slot": "derivation",
+   "introduced_by": "g.L42.ki"
+  },
+  "sfx.ord": {
+   "id": "sfx.ord",
+   "form": "(I)ncI",
+   "gloss": "ordinal (\"-th\")",
+   "slot": "derivation",
+   "introduced_by": "g.L45.ordinals"
+  },
+  "sfx.distr": {
+   "id": "sfx.distr",
+   "form": "(ş)Ar",
+   "gloss": "… each",
+   "slot": "derivation",
+   "introduced_by": "g.L45.ordinals"
+  },
+  "sfx.evid": {
+   "id": "sfx.evid",
+   "form": "mIş",
+   "gloss": "apparently (verbs)",
+   "slot": "tense",
+   "introduced_by": "g.L47.evidential"
+  },
+  "sfx.cop_evid": {
+   "id": "sfx.cop_evid",
+   "form": "(y)mIş",
+   "gloss": "apparently is / was",
+   "slot": "copula",
+   "introduced_by": "g.L47.evidential"
+  },
+  "sfx.ken": {
+   "id": "sfx.ken",
+   "form": "(y)ken",
+   "gloss": "while",
+   "slot": "subordinate",
+   "introduced_by": "g.L48.ken"
+  },
+  "sfx.ince": {
+   "id": "sfx.ince",
+   "form": "(y)IncA",
+   "gloss": "when / as soon as",
+   "slot": "subordinate",
+   "introduced_by": "g.L49.ince"
+  },
+  "sfx.after": {
+   "id": "sfx.after",
+   "form": "DIktAn",
+   "gloss": "after (… sonra)",
+   "slot": "subordinate",
+   "introduced_by": "g.L50.after_before"
+  },
+  "sfx.before": {
+   "id": "sfx.before",
+   "form": "mAdAn",
+   "gloss": "before (… önce) / without",
+   "slot": "subordinate",
+   "introduced_by": "g.L50.after_before"
+  },
+  "sfx.cond": {
+   "id": "sfx.cond",
+   "form": "(y)sA",
+   "gloss": "if",
+   "slot": "mood",
+   "introduced_by": "g.L51.conditional"
+  },
+  "sfx.wish": {
+   "id": "sfx.wish",
+   "form": "sA",
+   "gloss": "if only / shall I",
+   "slot": "mood",
+   "introduced_by": "g.L52.wish"
+  },
+  "sfx.arak": {
+   "id": "sfx.arak",
+   "form": "(y)ArAk",
+   "gloss": "by …-ing",
+   "slot": "subordinate",
+   "introduced_by": "g.L53.arak_ip"
+  },
+  "sfx.ip": {
+   "id": "sfx.ip",
+   "form": "(y)Ip",
+   "gloss": "and (then)",
+   "slot": "subordinate",
+   "introduced_by": "g.L53.arak_ip"
+  },
+  "sfx.rel": {
+   "id": "sfx.rel",
+   "form": "(y)An",
+   "gloss": "who / which (subject)",
+   "slot": "subordinate",
+   "introduced_by": "g.L55.relative_an"
+  },
+  "sfx.dik": {
+   "id": "sfx.dik",
+   "form": "DIK",
+   "gloss": "that … (object)",
+   "slot": "subordinate",
+   "introduced_by": "g.L60.relative_dik"
   }
  },
  "morphTests": [
@@ -46588,6 +47103,2147 @@
    ],
    "expected": "öğrenciler mi",
    "note": "3rd plural: -lAr stays on the word"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "okur",
+   "note": "vowel stem → -r"
+  },
+  {
+   "word": "w.beklemek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "bekler"
+  },
+  {
+   "word": "w.başlamak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "başlar"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "yer",
+   "note": "one-syllable vowel stem"
+  },
+  {
+   "word": "w.demek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "der"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "yapar",
+   "note": "one syllable → -Ar"
+  },
+  {
+   "word": "w.içmek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "içer"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "gider",
+   "note": "t → d before a vowel"
+  },
+  {
+   "word": "w.etmek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "eder"
+  },
+  {
+   "word": "w.bakmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "bakar",
+   "note": "no k → ğ on verbs"
+  },
+  {
+   "word": "w.sevmek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "sever"
+  },
+  {
+   "word": "w.yağmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "yağar"
+  },
+  {
+   "word": "w.kalkmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "kalkar"
+  },
+  {
+   "word": "w.çalışmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "çalışır",
+   "note": "two+ syllables → -Ir"
+  },
+  {
+   "word": "w.oturmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "oturur"
+  },
+  {
+   "word": "w.konuşmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "konuşur"
+  },
+  {
+   "word": "w.istemek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "ister"
+  },
+  {
+   "word": "w.gerekmek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "gerekir"
+  },
+  {
+   "word": "w.kahvaltı_yapmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "kahvaltı yapar",
+   "note": "multi-word verb: the last word counts"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "gelir",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.almak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "alır",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.bilmek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "bilir",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.bulmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "bulur",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.durmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "durur",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.görmek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "görür",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.kalmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "kalır",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "olur",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.ölmek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "ölür",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.sanmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "sanır",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.varmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "varır",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.vermek",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "verir",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.vurmak",
+   "suffixes": [
+    "sfx.aor"
+   ],
+   "expected": "vurur",
+   "note": "aorist_ir exception"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "gelirim"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_2sg"
+   ],
+   "expected": "gelirsin"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_1pl"
+   ],
+   "expected": "geliriz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_2pl"
+   ],
+   "expected": "gelirsiniz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_3pl"
+   ],
+   "expected": "gelirler"
+  },
+  {
+   "word": "w.içmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "içerim"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "yaparım"
+  },
+  {
+   "word": "w.etmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "ederim",
+   "note": "Teşekkür ederim"
+  },
+  {
+   "word": "w.sanmak",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "sanırım"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_1pl"
+   ],
+   "expected": "okuruz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.cop_1sg"
+   ],
+   "expected": "gelmem",
+   "note": "not gelmezim"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.cop_2sg"
+   ],
+   "expected": "gelmezsin"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg"
+   ],
+   "expected": "gelmez"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.cop_1pl"
+   ],
+   "expected": "gelmeyiz",
+   "note": "not gelmeziz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.cop_2pl"
+   ],
+   "expected": "gelmezsiniz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.cop_3pl"
+   ],
+   "expected": "gelmezler"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.cop_1sg"
+   ],
+   "expected": "yapmam"
+  },
+  {
+   "word": "w.içmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.cop_1pl"
+   ],
+   "expected": "içmeyiz"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.aor_neg"
+   ],
+   "expected": "olmaz"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.aor_neg"
+   ],
+   "expected": "yemez"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.neg",
+    "sfx.aor"
+   ],
+   "expected": "gelmez",
+   "note": "the same form built as negation + aorist"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.neg",
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "gelmem"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.q",
+    "sfx.cop_2sg"
+   ],
+   "expected": "gelir misin"
+  },
+  {
+   "word": "w.içmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.q",
+    "sfx.cop_2pl"
+   ],
+   "expected": "içer misiniz"
+  },
+  {
+   "word": "w.almak",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.q",
+    "sfx.cop_2pl"
+   ],
+   "expected": "alır mısınız",
+   "note": "Bir çay alır mısınız?"
+  },
+  {
+   "word": "w.konuşmak",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.q",
+    "sfx.cop_2pl"
+   ],
+   "expected": "konuşur musunuz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.q"
+   ],
+   "expected": "gelir mi"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.q",
+    "sfx.cop_2sg"
+   ],
+   "expected": "gelmez misin"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.q",
+    "sfx.cop_1sg"
+   ],
+   "expected": "gelmez miyim",
+   "note": "the negative question keeps -mAz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.q",
+    "sfx.cop_1pl"
+   ],
+   "expected": "gelmez miyiz"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.q"
+   ],
+   "expected": "yapmaz mı"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.abil",
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "yapabilirim"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.abil",
+    "sfx.aor",
+    "sfx.q",
+    "sfx.cop_2sg"
+   ],
+   "expected": "gelebilir misin"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.abil",
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "okuyabilirim",
+   "note": "buffer y"
+  },
+  {
+   "word": "w.yağmak",
+   "suffixes": [
+    "sfx.abil",
+    "sfx.aor"
+   ],
+   "expected": "yağabilir",
+   "note": "might: Yağmur yağabilir."
+  },
+  {
+   "word": "w.almak",
+   "suffixes": [
+    "sfx.abil",
+    "sfx.aor",
+    "sfx.q",
+    "sfx.cop_1sg"
+   ],
+   "expected": "alabilir miyim"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.abil",
+    "sfx.aor",
+    "sfx.cop_1pl"
+   ],
+   "expected": "gidebiliriz",
+   "note": "t → d before the vowel"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.abil",
+    "sfx.aor"
+   ],
+   "expected": "yiyebilir",
+   "note": "ye → yi before y"
+  },
+  {
+   "word": "w.demek",
+   "suffixes": [
+    "sfx.abil",
+    "sfx.aor"
+   ],
+   "expected": "diyebilir"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "yapamam",
+   "note": "not yapabilmem"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.aor"
+   ],
+   "expected": "gelemez"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.aor",
+    "sfx.cop_2sg"
+   ],
+   "expected": "gelemezsin"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.aor",
+    "sfx.cop_1pl"
+   ],
+   "expected": "gelemeyiz"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "okuyamam"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.aor",
+    "sfx.q",
+    "sfx.cop_2sg"
+   ],
+   "expected": "gelemez misin"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.prog",
+    "sfx.cop_1sg"
+   ],
+   "expected": "gelemiyorum",
+   "note": "-(y)AmA + -Iyor: a/e raised"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.prog",
+    "sfx.cop_1sg"
+   ],
+   "expected": "yapamıyorum"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.past",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "yapamadım"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.fut",
+    "sfx.cop_1sg"
+   ],
+   "expected": "gelemeyeceğim"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.past",
+    "sfx.kpers_1pl"
+   ],
+   "expected": "gidemedik"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.unable",
+    "sfx.aor",
+    "sfx.cop_1sg"
+   ],
+   "expected": "yiyemem"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.must",
+    "sfx.cop_1sg"
+   ],
+   "expected": "gitmeliyim"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.neg",
+    "sfx.must",
+    "sfx.cop_2sg"
+   ],
+   "expected": "gitmemelisin"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.must",
+    "sfx.cop_1sg"
+   ],
+   "expected": "yapmalıyım"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.must",
+    "sfx.q",
+    "sfx.cop_1sg"
+   ],
+   "expected": "yapmalı mıyım"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.must",
+    "sfx.cop_1sg"
+   ],
+   "expected": "olmalıyım"
+  },
+  {
+   "word": "w.çalışmak",
+   "suffixes": [
+    "sfx.must"
+   ],
+   "expected": "çalışmalı"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.fut",
+    "sfx.cop_1sg"
+   ],
+   "expected": "olacağım"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.past",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "oldum"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.opt_1pl"
+   ],
+   "expected": "gidelim"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.opt_1pl"
+   ],
+   "expected": "yapalım"
+  },
+  {
+   "word": "w.bakmak",
+   "suffixes": [
+    "sfx.opt_1sg"
+   ],
+   "expected": "bakayım"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.opt_1sg"
+   ],
+   "expected": "geleyim"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.opt_1sg"
+   ],
+   "expected": "okuyayım",
+   "note": "buffer y"
+  },
+  {
+   "word": "w.beklemek",
+   "suffixes": [
+    "sfx.opt_1pl"
+   ],
+   "expected": "bekleyelim"
+  },
+  {
+   "word": "w.içmek",
+   "suffixes": [
+    "sfx.opt_1pl",
+    "sfx.q"
+   ],
+   "expected": "içelim mi"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.opt_1pl"
+   ],
+   "expected": "yiyelim"
+  },
+  {
+   "word": "w.demek",
+   "suffixes": [
+    "sfx.opt_1sg"
+   ],
+   "expected": "diyeyim"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.imp_3sg"
+   ],
+   "expected": "gelsin"
+  },
+  {
+   "word": "w.beklemek",
+   "suffixes": [
+    "sfx.imp_3sg"
+   ],
+   "expected": "beklesin"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.imp_3sg"
+   ],
+   "expected": "olsun",
+   "note": "Afiyet olsun"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.imp_3sg"
+   ],
+   "expected": "yapsın"
+  },
+  {
+   "word": "w.görmek",
+   "suffixes": [
+    "sfx.imp_3sg"
+   ],
+   "expected": "görsün"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.imp_3pl"
+   ],
+   "expected": "gelsinler"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.neg",
+    "sfx.imp_3sg"
+   ],
+   "expected": "gelmesin"
+  },
+  {
+   "word": "w.masa",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.ki"
+   ],
+   "expected": "masadaki",
+   "note": "not masadakı"
+  },
+  {
+   "word": "w.ev",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.ki"
+   ],
+   "expected": "evdeki"
+  },
+  {
+   "word": "w.İstanbul",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.ki"
+   ],
+   "expected": "İstanbul'daki"
+  },
+  {
+   "word": "w.oda",
+   "suffixes": [
+    "sfx.poss_1sg",
+    "sfx.loc",
+    "sfx.ki"
+   ],
+   "expected": "odamdaki"
+  },
+  {
+   "word": "w.yarın",
+   "suffixes": [
+    "sfx.ki"
+   ],
+   "expected": "yarınki"
+  },
+  {
+   "word": "w.akşam",
+   "suffixes": [
+    "sfx.ki"
+   ],
+   "expected": "akşamki"
+  },
+  {
+   "word": "w.bugün",
+   "suffixes": [
+    "sfx.ki"
+   ],
+   "expected": "bugünkü",
+   "note": "fixed form"
+  },
+  {
+   "word": "w.dün",
+   "suffixes": [
+    "sfx.ki"
+   ],
+   "expected": "dünkü",
+   "note": "fixed form"
+  },
+  {
+   "word": "w.öbür",
+   "suffixes": [
+    "sfx.ki"
+   ],
+   "expected": "öbürkü",
+   "note": "fixed form"
+  },
+  {
+   "word": "w.ben",
+   "suffixes": [
+    "sfx.gen",
+    "sfx.ki"
+   ],
+   "expected": "benimki"
+  },
+  {
+   "word": "w.sen",
+   "suffixes": [
+    "sfx.gen",
+    "sfx.ki"
+   ],
+   "expected": "seninki"
+  },
+  {
+   "word": "w.biz",
+   "suffixes": [
+    "sfx.gen",
+    "sfx.ki"
+   ],
+   "expected": "bizimki"
+  },
+  {
+   "word": "w.Ali",
+   "suffixes": [
+    "sfx.gen",
+    "sfx.ki"
+   ],
+   "expected": "Ali'ninki"
+  },
+  {
+   "word": "w.ben",
+   "suffixes": [
+    "sfx.gen",
+    "sfx.ki",
+    "sfx.acc"
+   ],
+   "expected": "benimkini",
+   "note": "buffer n"
+  },
+  {
+   "word": "w.sen",
+   "suffixes": [
+    "sfx.gen",
+    "sfx.ki",
+    "sfx.loc"
+   ],
+   "expected": "seninkinde"
+  },
+  {
+   "word": "w.ben",
+   "suffixes": [
+    "sfx.gen",
+    "sfx.ki",
+    "sfx.dat"
+   ],
+   "expected": "benimkine"
+  },
+  {
+   "word": "w.ben",
+   "suffixes": [
+    "sfx.gen",
+    "sfx.ki",
+    "sfx.abl"
+   ],
+   "expected": "benimkinden"
+  },
+  {
+   "word": "w.masa",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.ki",
+    "sfx.acc"
+   ],
+   "expected": "masadakini"
+  },
+  {
+   "word": "w.ben",
+   "suffixes": [
+    "sfx.gen",
+    "sfx.ki",
+    "sfx.pl"
+   ],
+   "expected": "benimkiler"
+  },
+  {
+   "word": "w.bugün",
+   "suffixes": [
+    "sfx.ki",
+    "sfx.acc"
+   ],
+   "expected": "bugünkünü",
+   "note": "harmony follows the fixed form"
+  },
+  {
+   "word": "w.bir",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "birinci"
+  },
+  {
+   "word": "w.iki",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "ikinci",
+   "note": "after a vowel: -ncI"
+  },
+  {
+   "word": "w.üç",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "üçüncü"
+  },
+  {
+   "word": "w.dört",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "dördüncü",
+   "note": "t → d"
+  },
+  {
+   "word": "w.beş",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "beşinci"
+  },
+  {
+   "word": "w.altı",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "altıncı"
+  },
+  {
+   "word": "w.yedi",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "yedinci"
+  },
+  {
+   "word": "w.sekiz",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "sekizinci"
+  },
+  {
+   "word": "w.dokuz",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "dokuzuncu"
+  },
+  {
+   "word": "w.on",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "onuncu"
+  },
+  {
+   "word": "w.yirmi",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "yirminci"
+  },
+  {
+   "word": "w.kaç",
+   "suffixes": [
+    "sfx.ord"
+   ],
+   "expected": "kaçıncı"
+  },
+  {
+   "word": "w.iki",
+   "suffixes": [
+    "sfx.ord",
+    "sfx.loc"
+   ],
+   "expected": "ikincide"
+  },
+  {
+   "word": "w.bir",
+   "suffixes": [
+    "sfx.distr"
+   ],
+   "expected": "birer"
+  },
+  {
+   "word": "w.iki",
+   "suffixes": [
+    "sfx.distr"
+   ],
+   "expected": "ikişer",
+   "note": "buffer ş after a vowel"
+  },
+  {
+   "word": "w.üç",
+   "suffixes": [
+    "sfx.distr"
+   ],
+   "expected": "üçer"
+  },
+  {
+   "word": "w.dört",
+   "suffixes": [
+    "sfx.distr"
+   ],
+   "expected": "dörder"
+  },
+  {
+   "word": "w.beş",
+   "suffixes": [
+    "sfx.distr"
+   ],
+   "expected": "beşer"
+  },
+  {
+   "word": "w.altı",
+   "suffixes": [
+    "sfx.distr"
+   ],
+   "expected": "altışar"
+  },
+  {
+   "word": "w.on",
+   "suffixes": [
+    "sfx.distr"
+   ],
+   "expected": "onar"
+  },
+  {
+   "word": "w.kaç",
+   "suffixes": [
+    "sfx.distr"
+   ],
+   "expected": "kaçar"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.prog",
+    "sfx.cop_past",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "okuyordum"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.prog",
+    "sfx.cop_past",
+    "sfx.kpers_2sg"
+   ],
+   "expected": "geliyordun"
+  },
+  {
+   "word": "w.oturmak",
+   "suffixes": [
+    "sfx.prog",
+    "sfx.cop_past",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "oturuyordum"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.prog",
+    "sfx.cop_past"
+   ],
+   "expected": "geliyordu"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.prog",
+    "sfx.cop_past",
+    "sfx.kpers_1pl"
+   ],
+   "expected": "geliyorduk"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.prog",
+    "sfx.cop_past",
+    "sfx.kpers_3pl"
+   ],
+   "expected": "geliyordular"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.neg",
+    "sfx.prog",
+    "sfx.cop_past",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "gelmiyordum"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.prog",
+    "sfx.q",
+    "sfx.cop_past",
+    "sfx.kpers_2sg"
+   ],
+   "expected": "geliyor muydun"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.prog",
+    "sfx.cop_past",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "yiyordum"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.evid"
+   ],
+   "expected": "gelmiş"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.evid"
+   ],
+   "expected": "yapmış"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.evid"
+   ],
+   "expected": "okumuş"
+  },
+  {
+   "word": "w.görmek",
+   "suffixes": [
+    "sfx.evid"
+   ],
+   "expected": "görmüş"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.evid"
+   ],
+   "expected": "gitmiş",
+   "note": "no t → d before a consonant"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.evid",
+    "sfx.cop_1sg"
+   ],
+   "expected": "gelmişim"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.evid",
+    "sfx.cop_2sg"
+   ],
+   "expected": "gelmişsin"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.evid",
+    "sfx.cop_1pl"
+   ],
+   "expected": "gelmişiz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.evid",
+    "sfx.cop_2pl"
+   ],
+   "expected": "gelmişsiniz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.evid",
+    "sfx.cop_3pl"
+   ],
+   "expected": "gelmişler"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.neg",
+    "sfx.evid"
+   ],
+   "expected": "gelmemiş"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.evid",
+    "sfx.q"
+   ],
+   "expected": "gelmiş mi"
+  },
+  {
+   "word": "w.hasta",
+   "suffixes": [
+    "sfx.cop_evid"
+   ],
+   "expected": "hastaymış",
+   "note": "buffer y"
+  },
+  {
+   "word": "w.soğuk",
+   "suffixes": [
+    "sfx.cop_evid"
+   ],
+   "expected": "soğukmuş"
+  },
+  {
+   "word": "w.güzel",
+   "suffixes": [
+    "sfx.cop_evid"
+   ],
+   "expected": "güzelmiş"
+  },
+  {
+   "word": "w.var",
+   "suffixes": [
+    "sfx.cop_evid"
+   ],
+   "expected": "varmış",
+   "note": "Bir varmış, bir yokmuş"
+  },
+  {
+   "word": "w.yok",
+   "suffixes": [
+    "sfx.cop_evid"
+   ],
+   "expected": "yokmuş"
+  },
+  {
+   "word": "w.hasta",
+   "suffixes": [
+    "sfx.cop_evid",
+    "sfx.cop_1sg"
+   ],
+   "expected": "hastaymışım"
+  },
+  {
+   "word": "w.ev",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cop_evid"
+   ],
+   "expected": "evdeymiş"
+  },
+  {
+   "word": "w.öğretmen",
+   "suffixes": [
+    "sfx.cop_evid"
+   ],
+   "expected": "öğretmenmiş"
+  },
+  {
+   "word": "w.ev",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.ken"
+   ],
+   "expected": "evdeyken"
+  },
+  {
+   "word": "w.çocuk",
+   "suffixes": [
+    "sfx.ken"
+   ],
+   "expected": "çocukken"
+  },
+  {
+   "word": "w.öğrenci",
+   "suffixes": [
+    "sfx.ken"
+   ],
+   "expected": "öğrenciyken"
+  },
+  {
+   "word": "w.hasta",
+   "suffixes": [
+    "sfx.ken"
+   ],
+   "expected": "hastayken"
+  },
+  {
+   "word": "w.İstanbul",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.ken"
+   ],
+   "expected": "İstanbul'dayken"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.ken"
+   ],
+   "expected": "yerken"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.ken"
+   ],
+   "expected": "gelirken"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.ken"
+   ],
+   "expected": "okurken"
+  },
+  {
+   "word": "w.konuşmak",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.ken"
+   ],
+   "expected": "konuşurken"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.ken"
+   ],
+   "expected": "gelmezken"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.ince"
+   ],
+   "expected": "gelince"
+  },
+  {
+   "word": "w.görmek",
+   "suffixes": [
+    "sfx.ince"
+   ],
+   "expected": "görünce"
+  },
+  {
+   "word": "w.bakmak",
+   "suffixes": [
+    "sfx.ince"
+   ],
+   "expected": "bakınca"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.ince"
+   ],
+   "expected": "okuyunca"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.ince"
+   ],
+   "expected": "gidince"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.ince"
+   ],
+   "expected": "yiyince"
+  },
+  {
+   "word": "w.demek",
+   "suffixes": [
+    "sfx.ince"
+   ],
+   "expected": "deyince",
+   "note": "de stays before -(y)I…: deyince, deyip, deyin"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.ince"
+   ],
+   "expected": "olunca"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.neg",
+    "sfx.ince"
+   ],
+   "expected": "gelmeyince"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.after"
+   ],
+   "expected": "yaptıktan"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.after"
+   ],
+   "expected": "geldikten"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.after"
+   ],
+   "expected": "gittikten"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.after"
+   ],
+   "expected": "okuduktan"
+  },
+  {
+   "word": "w.görmek",
+   "suffixes": [
+    "sfx.after"
+   ],
+   "expected": "gördükten"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.after"
+   ],
+   "expected": "yedikten"
+  },
+  {
+   "word": "w.yatmak",
+   "suffixes": [
+    "sfx.before"
+   ],
+   "expected": "yatmadan"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.before"
+   ],
+   "expected": "gitmeden"
+  },
+  {
+   "word": "w.kahvaltı_yapmak",
+   "suffixes": [
+    "sfx.before"
+   ],
+   "expected": "kahvaltı yapmadan"
+  },
+  {
+   "word": "w.uyumak",
+   "suffixes": [
+    "sfx.before"
+   ],
+   "expected": "uyumadan"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cond",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "gelirsem"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cond",
+    "sfx.kpers_2sg"
+   ],
+   "expected": "gelirsen"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cond"
+   ],
+   "expected": "gelirse"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cond",
+    "sfx.kpers_1pl"
+   ],
+   "expected": "gelirsek"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cond",
+    "sfx.kpers_2pl"
+   ],
+   "expected": "gelirseniz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cop_3pl",
+    "sfx.cond"
+   ],
+   "expected": "gelirlerse"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cond"
+   ],
+   "expected": "olursa",
+   "note": "Hava güzel olursa"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.aor",
+    "sfx.cond",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "yaparsam"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.cond",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "gelmezsem",
+   "note": "no -mAm before -sA"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.aor_neg",
+    "sfx.cond",
+    "sfx.kpers_1pl"
+   ],
+   "expected": "gelmezsek"
+  },
+  {
+   "word": "w.ev",
+   "suffixes": [
+    "sfx.loc",
+    "sfx.cond",
+    "sfx.kpers_2sg"
+   ],
+   "expected": "evdeysen"
+  },
+  {
+   "word": "w.var",
+   "suffixes": [
+    "sfx.cond"
+   ],
+   "expected": "varsa"
+  },
+  {
+   "word": "w.yok",
+   "suffixes": [
+    "sfx.cond"
+   ],
+   "expected": "yoksa"
+  },
+  {
+   "word": "w.hasta",
+   "suffixes": [
+    "sfx.cond",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "hastaysam"
+  },
+  {
+   "word": "w.öğrenci",
+   "suffixes": [
+    "sfx.cond",
+    "sfx.kpers_2pl"
+   ],
+   "expected": "öğrenciyseniz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.wish",
+    "sfx.kpers_2sg"
+   ],
+   "expected": "gelsen"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.wish",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "yapsam"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.wish",
+    "sfx.kpers_1pl"
+   ],
+   "expected": "gitsek"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.wish",
+    "sfx.kpers_1pl",
+    "sfx.q"
+   ],
+   "expected": "gitsek mi"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.wish"
+   ],
+   "expected": "gelse"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.wish",
+    "sfx.kpers_1sg"
+   ],
+   "expected": "olsam"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.wish",
+    "sfx.kpers_1pl"
+   ],
+   "expected": "yesek"
+  },
+  {
+   "word": "w.konuşmak",
+   "suffixes": [
+    "sfx.arak"
+   ],
+   "expected": "konuşarak"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.arak"
+   ],
+   "expected": "gelerek"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.arak"
+   ],
+   "expected": "okuyarak"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.arak"
+   ],
+   "expected": "giderek"
+  },
+  {
+   "word": "w.demek",
+   "suffixes": [
+    "sfx.arak"
+   ],
+   "expected": "diyerek"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.arak"
+   ],
+   "expected": "yiyerek"
+  },
+  {
+   "word": "w.kalkmak",
+   "suffixes": [
+    "sfx.ip"
+   ],
+   "expected": "kalkıp"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.ip"
+   ],
+   "expected": "gelip"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.ip"
+   ],
+   "expected": "gidip"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.ip"
+   ],
+   "expected": "okuyup"
+  },
+  {
+   "word": "w.beklemek",
+   "suffixes": [
+    "sfx.ip"
+   ],
+   "expected": "bekleyip"
+  },
+  {
+   "word": "w.görmek",
+   "suffixes": [
+    "sfx.ip"
+   ],
+   "expected": "görüp"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.ip"
+   ],
+   "expected": "yiyip"
+  },
+  {
+   "word": "w.demek",
+   "suffixes": [
+    "sfx.ip"
+   ],
+   "expected": "deyip"
+  },
+  {
+   "word": "w.kahvaltı_yapmak",
+   "suffixes": [
+    "sfx.neg",
+    "sfx.before"
+   ],
+   "expected": "kahvaltı yapmamadan",
+   "note": "never taught; checks the chain composes"
+  },
+  {
+   "word": "w.yüzmek",
+   "suffixes": [
+    "sfx.vn",
+    "sfx.acc"
+   ],
+   "expected": "yüzmeyi"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.vn",
+    "sfx.dat"
+   ],
+   "expected": "okumaya"
+  },
+  {
+   "word": "w.konuşmak",
+   "suffixes": [
+    "sfx.inf",
+    "sfx.abl"
+   ],
+   "expected": "konuşmaktan"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.rel"
+   ],
+   "expected": "gelen"
+  },
+  {
+   "word": "w.konuşmak",
+   "suffixes": [
+    "sfx.rel"
+   ],
+   "expected": "konuşan"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.rel"
+   ],
+   "expected": "okuyan"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.rel"
+   ],
+   "expected": "giden"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.rel"
+   ],
+   "expected": "yiyen"
+  },
+  {
+   "word": "w.demek",
+   "suffixes": [
+    "sfx.rel"
+   ],
+   "expected": "diyen"
+  },
+  {
+   "word": "w.olmak",
+   "suffixes": [
+    "sfx.rel"
+   ],
+   "expected": "olan"
+  },
+  {
+   "word": "w.bilmek",
+   "suffixes": [
+    "sfx.neg",
+    "sfx.rel"
+   ],
+   "expected": "bilmeyen"
+  },
+  {
+   "word": "w.oturmak",
+   "suffixes": [
+    "sfx.rel",
+    "sfx.pl"
+   ],
+   "expected": "oturanlar"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_1sg"
+   ],
+   "expected": "okuduğum"
+  },
+  {
+   "word": "w.oturmak",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_1pl"
+   ],
+   "expected": "oturduğumuz"
+  },
+  {
+   "word": "w.istemek",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_2sg"
+   ],
+   "expected": "istediğin"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_1sg"
+   ],
+   "expected": "geldiğim"
+  },
+  {
+   "word": "w.yapmak",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_1sg"
+   ],
+   "expected": "yaptığım"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_1sg"
+   ],
+   "expected": "gittiğim",
+   "note": "git + -tiğ-, not gidtiğim"
+  },
+  {
+   "word": "w.almak",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_3sg"
+   ],
+   "expected": "aldığı",
+   "note": "Ali'nin aldığı ceket"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_3sg"
+   ],
+   "expected": "okuduğu"
+  },
+  {
+   "word": "w.bilmek",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_1sg"
+   ],
+   "expected": "bildiğim"
+  },
+  {
+   "word": "w.demek",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_1sg"
+   ],
+   "expected": "dediğim"
+  },
+  {
+   "word": "w.yemek",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_2pl"
+   ],
+   "expected": "yediğiniz"
+  },
+  {
+   "word": "w.gelmek",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_3pl"
+   ],
+   "expected": "geldikleri",
+   "note": "consonant-initial: k stays"
+  },
+  {
+   "word": "w.okumak",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_1sg",
+    "sfx.acc"
+   ],
+   "expected": "okuduğumu"
+  },
+  {
+   "word": "w.almak",
+   "suffixes": [
+    "sfx.dik",
+    "sfx.poss_3sg",
+    "sfx.abl"
+   ],
+   "expected": "aldığından"
+  },
+  {
+   "word": "w.gitmek",
+   "suffixes": [
+    "sfx.fut",
+    "sfx.poss_1sg"
+   ],
+   "expected": "gideceğim",
+   "note": "gideceğim yer (recognition)"
   }
  ],
  "assets": {

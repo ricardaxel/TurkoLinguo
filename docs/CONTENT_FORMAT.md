@@ -121,6 +121,7 @@ Common fields:
 | `feedback` |  | `auto:<grammar id>` (generated from the templates) or a map `{wrong answer: message}` |
 | `images`, `audio` |  | media IDs |
 | `translation` |  | English shown after answering an item **with pictures**. Optional: otherwise the app uses the item's sentence, a course sentence with the same Turkish, or a word-by-word gloss |
+| `spoken` |  | typed items only: **spoken / informal variants** as answer patterns (`[Napıyosun?, "{Ne|Na} yapıyosun?"]`). A typed answer matching one is graded **almost** with "That's how it's said; in writing: **Ne yapıyorsun?**" (CURRICULUM_A2.md §1.1). Never a model answer, never silently accepted. A grammar point can override the message with a `spoken` feedback template (`{answer}` = the written form). In a `mini_dialogue`, put `spoken` on the blank turn |
 
 Types and their specific fields:
 
@@ -136,7 +137,7 @@ Types and their specific fields:
 | `spot_error` | `text` (wrong), `error` (the wrong token), `answer` (the correction), `sentence` (the correct version) | either |
 | `picture_choose` | `images`, `prompt`, `options`, `answer` | no |
 | `qa` | `question` (sentence ID), `images`, `answers` | yes |
-| `mini_dialogue` | `turns`: list of `{speaker, sentence}` or `{speaker, blank: true, answers}` | yes |
+| `mini_dialogue` | `turns`: list of `{speaker, sentence}` or `{speaker, blank: true, answers, spoken?}` | yes |
 | `contrast_pair` | `prompt`, `options` (sentence IDs), `answer` | no |
 
 For every choice type (`pick_suffix`, `picture_choose`, `listen_choose`, `contrast_pair`), `answer` is the **value** of the correct option, not its position. The app shuffles options, so positions are meaningless.
@@ -171,7 +172,7 @@ Sentences are shared, so a sentence recorded once can be used in a lesson, a pac
   lemma: dolap
   pos: noun          # noun verb adj det adv pron num postp conj interj particle name phrase  (det: her, geçen, gelecek)
   gloss: [cupboard, wardrobe]
-  flags: [soft]      # soft nosoft drop front compound double irr nodrill  (nodrill: never used in generated review drills)
+  flags: [soft]      # soft nosoft drop front compound double irr nodrill aorist_ir  (nodrill: never used in generated review drills)
   forms: {}          # explicit irregular forms, e.g. su: { acc: suyu, gen: suyun, before_vowel: suy }
   stem: gel          # verbs only, optional: the stem when it is not the lemma minus -mAk
   images: [img.tbd.cupboard]
@@ -179,6 +180,10 @@ Sentences are shared, so a sentence recorded once can be used in a lesson, a pac
 ```
 
 Words with `pos: name` (Ali, Ayşe…) never need to be introduced.
+
+`forms` keys the engine reads: a whole first suffix (`acc gen dat loc pl poss3 imp_pol prog fut ki`: *bugün → ki: bugünkü*), or a stem variant: `before_vowel` (*su → suy*), `before_yA` / `before_yI` (the stem before a y-buffered ending whose vowel is A / I: *ye → yi* in *yiyen, yiyince*; *de → di* only before A: *diyen* but *deyince, deyip*).
+
+`aorist_ir` marks the 13 one-syllable verbs whose aorist is *-Ir*, not *-Ar*: *al bil bul dur gel gör kal ol öl san var ver vur* (*gelir, alır*; L36). Without it a one-syllable consonant stem takes *-Ar* (*yapar*), a longer stem *-Ir* (*çalışır*), a vowel stem *-r* (*okur*).
 
 ### 4.7 Pack (`packs/`)
 ```yaml
@@ -247,7 +252,7 @@ items: [...]
 The validator places a checkpoint just after the unit's last lesson and before the packs that pre-teach the next unit, so it may only use what the unit (and earlier ones) taught. Prefer reusing lesson sentences (they already have translations and planned audio); new sentences go in `sentences/checkpoints.yaml` as `s.C<n>.NNN`. Passing records the unit as complete; every rule the checkpoint tested is rated in the learner's reviews.
 
 ### 4.9 Morphology (`morphology/`)
-`suffixes.yaml` lists every suffix in archiphoneme notation (`form: DA`, `form: (y)I`) with the grammar point that introduces it. `tests.yaml` holds `{lemma, suffixes, expected}` cases: *kitap + loc = kitapta*, *su + acc = suyu*. These tests are shared by the app's form engine and by future validator checks. A case the engine doesn't handle yet can carry `pending: "<reason>"`; no case needs it at the moment, so the app test runs every case (add an `it.failing` block for pending cases when one is needed again).
+`suffixes.yaml` lists every suffix in archiphoneme notation (`form: DA`, `form: (y)I`, `K` = k that softens to ğ before a vowel: `DIK`) with the grammar point that introduces it (for an A2 lesson not written yet, its grammar ID from `course.yaml`). A few A2 suffixes have engine rules beyond their form: `sfx.aor` picks *-r / -Ar / -Ir* and is *-z* after `sfx.neg` / `sfx.unable`; after the negative aorist, `sfx.cop_1sg` / `sfx.cop_1pl` are *-m* / *-(y)Iz* (*gelmem, gelmeyiz*, but *gelmez miyim*); a case after `sfx.ki` takes the buffer n (*benimkini*). `tests.yaml` holds `{lemma, suffixes, expected}` cases: *kitap + loc = kitapta*, *su + acc = suyu*. These tests are shared by the app's form engine and by future validator checks. A case the engine doesn't handle yet can carry `pending: "<reason>"`; no case needs it at the moment, so the app test runs every case (add an `it.failing` block for pending cases when one is needed again).
 
 ## 5. What the validator checks
 
