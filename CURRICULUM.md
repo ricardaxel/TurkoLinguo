@@ -250,20 +250,9 @@ Format for each lesson: **Grammar point** · rule summary · examples · common 
 
 ---
 
-## 4. A2 sketch (to be detailed later)
+## 4. A2
 
-1. **Aorist** `-Ir / -Ar / -r` (habits, offers) and its irregular verbs. This is the **first** A2 lesson. Its rule card links back to the A1 phrases: "You've said *Teşekkür ederim* 100 times. Here's why it ends in *-er-im*."
-2. Ability `-(y)Abil` and inability `-(y)AmA`
-3. Necessity `-mAlI`, suggestion `-(y)AlIm`
-4. Spatial postpositions with possessives: *masanın üstünde, evin önünde*
-5. Postpositions *için, gibi, kadar, göre*
-6. Past continuous `-(I)yordu`
-7. Reported / inferential past `-mIş`
-8. Conditional `-sA`, `-(y)sA`
-9. Adverbial forms: `-(y)ArAk`, `-(y)IncA`, `-DIktAn sonra`, `-mAdAn önce`, `-ken`
-10. Reflexive *kendi*, reciprocal
-11. Relative clauses I: `-(y)An`
-12. Relative clauses II: `-DIK` + possessive (likely B1)
+The A2 course (lessons L36–L64, units 8–13, checkpoints C8–C13) is outlined in [CURRICULUM_A2.md](CURRICULUM_A2.md).
 
 ---
 
