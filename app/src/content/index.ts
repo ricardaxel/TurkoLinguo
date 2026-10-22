@@ -1,5 +1,5 @@
 import raw from './content.json';
-import type { Bundle, Sentence, Word } from './types';
+import type { Bundle, Item, Sentence, Word } from './types';
 
 export const content = raw as unknown as Bundle;
 
@@ -15,7 +15,7 @@ export function sentence(id: string): Sentence {
   return s;
 }
 
-/** Lessons in course order, with whether they're written yet. */
+/** Lessons in course order, with whether they're written yet, and each unit's checkpoint. */
 export function lessonOutline() {
   return content.course.units.map((unit) => ({
     ...unit,
@@ -24,5 +24,18 @@ export function lessonOutline() {
       title: content.course.lessons[id].title,
       available: id in content.lessons,
     })),
+    checkpointInfo: unit.checkpoint && content.checkpoints?.[unit.checkpoint]
+      ? { id: unit.checkpoint, title: content.checkpoints[unit.checkpoint].title }
+      : undefined,
   }));
+}
+
+export const DEFAULT_PASS = 0.7;
+
+/** Every authored exercise: lesson Learn + Practise items, then checkpoint items. */
+export function allItems(): Item[] {
+  return [
+    ...Object.values(content.lessons).flatMap((l) => [...l.sessions.learn.items, ...l.sessions.practise.items]),
+    ...Object.values(content.checkpoints ?? {}).flatMap((c) => c.items),
+  ];
 }

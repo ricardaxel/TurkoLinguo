@@ -1,16 +1,13 @@
-import { content } from '../../content';
+import { allItems, content } from '../../content';
 import type { Item } from '../../content/types';
 import { displayAnswer, english, glossLine, hasPictures, translationFor } from '../translation';
 
-const allItems: Item[] = Object.values(content.lessons).flatMap((l) => [
-  ...l.sessions.learn.items,
-  ...l.sessions.practise.items,
-]);
-const byId = Object.fromEntries(allItems.map((i) => [i.id, i]));
+const items: Item[] = allItems();
+const byId = Object.fromEntries(items.map((i) => [i.id, i]));
 
 describe('translation after answering', () => {
   it('every lesson item with pictures gets an English translation', () => {
-    const missing = allItems.filter((i) => hasPictures(i) && !translationFor(i)).map((i) => i.id);
+    const missing = items.filter((i) => hasPictures(i) && !translationFor(i)).map((i) => i.id);
     expect(missing).toEqual([]);
   });
 

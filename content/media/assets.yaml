@@ -1131,3 +1131,9 @@
 - { id: aud.own.s.T7.004, kind: audio, source: own, license: OWN, status: planned, text: "Kahve sıcak." }
 - { id: aud.own.s.T7.005, kind: audio, source: own, license: OWN, status: planned, text: "Uzun bir gün." }
 - { id: aud.own.s.T7.006, kind: audio, source: own, license: OWN, status: planned, text: "Türkçe zor mu?" }
+
+# ---------- Checkpoints C1–C7: new dialogue sentences (our recording session) ----------
+- { id: aud.own.s.C1.001, kind: audio, source: own, license: OWN, status: planned, text: "Merhaba! Nasılsın?" }
+- { id: aud.own.s.C5.001, kind: audio, source: own, license: OWN, status: planned, text: "Domatesin kilosu kaç lira?" }
+- { id: aud.own.s.C6.001, kind: audio, source: own, license: OWN, status: planned, text: "Hafta sonu ne yaptın?" }
+- { id: aud.own.s.C7.001, kind: audio, source: own, license: OWN, status: planned, text: "Gelecek hafta nereye gideceksin?" }

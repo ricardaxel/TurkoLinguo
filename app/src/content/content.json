@@ -17746,6 +17746,1545 @@
    }
   }
  },
+ "checkpoints": {
+  "C1": {
+   "id": "C1",
+   "unit": "U1",
+   "title": "Meeting someone in a café",
+   "minutes": 6,
+   "intro": {
+    "kind": "summary",
+    "title": "Checkpoint 1: in a café",
+    "body": "☕ You meet someone at a café in Istanbul. Say hello, say who you are and where you're from, and order tea.\n\nThis checkpoint mixes everything from **Unit 1**: *bu / şu / o*, plural **-lAr**, *I am* endings, **değil**, questions with **mI**, **var / yok**, adjectives and numbers.\n\nScore **70 %** to complete the unit. Wrong answers come back in your reviews.\n"
+   },
+   "items": [
+    {
+     "id": "C1.check.01",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L5.copula",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.C1.001"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "(Ben) iyiyim(, teşekkürler)."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C1.check.02",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L6.degil",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L7.001"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "Hayır, (ben) öğrenci değilim.",
+        "Hayır, değilim."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C1.check.03",
+     "type": "qa",
+     "grammar": [
+      "g.L5.copula"
+     ],
+     "question": "s.L5.011",
+     "answers": [
+      "(Ben) {İngilizim|Amerikalıyım|Kanadalıyım|Fransızım|Almanım|İtalyanım|İspanyolum|Japonum|Türküm}."
+     ],
+     "note": "Any nationality from T4 is accepted."
+    },
+    {
+     "id": "C1.check.04",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L9.adj_num",
+      "g.L4.plural"
+     ],
+     "sentence": "s.L8.015",
+     "word_bank": [
+      "İki",
+      "çay",
+      "çaylar",
+      "lütfen",
+      "bir"
+     ]
+    },
+    {
+     "id": "C1.check.05",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L8.varyok",
+      "g.L7.question"
+     ],
+     "sentence": "s.L8.001",
+     "typed": true
+    },
+    {
+     "id": "C1.check.06",
+     "type": "pick_suffix",
+     "grammar": [
+      "g.L5.copula"
+     ],
+     "pattern": "g.L5.copula.1sg_vowel",
+     "base": "w.öğrenci",
+     "suffix": "sfx.cop_1sg",
+     "options": [
+      "yim",
+      "im",
+      "yım"
+     ],
+     "answer": "yim",
+     "feedback": {
+      "im": "**öğrenci** ends in a vowel, so the ending needs the buffer **y**: **öğrenciyim**.",
+      "yım": "The vowel follows the last vowel of **öğrenci** (i → **i**): **öğrenciyim**."
+     }
+    },
+    {
+     "id": "C1.check.07",
+     "type": "pick_suffix",
+     "grammar": [
+      "g.L4.plural"
+     ],
+     "pattern": "g.L4.plural.back",
+     "base": "w.kitap",
+     "suffix": "sfx.pl",
+     "options": [
+      "lar",
+      "ler"
+     ],
+     "answer": "lar",
+     "feedback": {
+      "ler": "The last vowel of **kitap** is **a** (back) → **-lar**: **kitaplar**."
+     }
+    },
+    {
+     "id": "C1.check.08",
+     "type": "type_form",
+     "grammar": [
+      "g.L5.copula"
+     ],
+     "pattern": "g.L5.copula.1pl",
+     "base": "w.yorgun",
+     "suffixes": [
+      "sfx.cop_1pl"
+     ],
+     "prompt": "we are tired",
+     "answer": "yorgunuz",
+     "feedback": {
+      "yorgunyuz": "**yorgun** ends in a consonant: no buffer y: **yorgunuz**.",
+      "yorgunız": "The last vowel of **yorgun** is **u** → **-uz**: **yorgunuz**."
+     }
+    },
+    {
+     "id": "C1.check.09",
+     "type": "contrast_pair",
+     "grammar": [
+      "g.L6.degil"
+     ],
+     "prompt": "I'm not hungry.",
+     "options": [
+      "s.L6.007",
+      "s.L6.014"
+     ],
+     "answer": "s.L6.007"
+    },
+    {
+     "id": "C1.check.10",
+     "type": "spot_error",
+     "grammar": [
+      "g.L4.plural",
+      "g.L9.adj_num"
+     ],
+     "pattern": "g.L4.plural.after_number",
+     "text": "Bu iki kitaplar yeni.",
+     "error": "kitaplar",
+     "answer": "kitap",
+     "sentence": "s.L4.009",
+     "feedback": {
+      "kitaplar": "After a number, the noun stays singular: **iki kitap**."
+     }
+    },
+    {
+     "id": "C1.check.11",
+     "type": "translate_to_en",
+     "grammar": [
+      "g.L9.adj_num"
+     ],
+     "sentence": "s.L9.014"
+    },
+    {
+     "id": "C1.check.12",
+     "type": "dictation",
+     "grammar": [
+      "g.L7.question"
+     ],
+     "sentence": "s.L7.004"
+    },
+    {
+     "id": "C1.check.13",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L9.adj_num"
+     ],
+     "sentence": "s.L9.004",
+     "word_bank": [
+      "Kırmızı",
+      "bir",
+      "araba",
+      "arabalar",
+      "kırmızı"
+     ]
+    },
+    {
+     "id": "C1.check.14",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L8.varyok"
+     ],
+     "sentence": "s.L8.012",
+     "typed": true
+    }
+   ]
+  },
+  "C2": {
+   "id": "C2",
+   "unit": "U2",
+   "title": "Where is everything?",
+   "minutes": 6,
+   "intro": {
+    "kind": "summary",
+    "title": "Checkpoint 2: where?",
+    "body": "🏠 A friend calls while you're out. Say where you are and where you're from, then help find things around the house.\n\nThis checkpoint mixes everything from **Unit 2**: **-DA** *in / at / on*, **-DA** + *I am* (*evdeyim*), names with an apostrophe, **-DAn** *from*, and the separate **de / da** *too*.\n\nScore **70 %** to complete the unit. Wrong answers come back in your reviews.\n"
+   },
+   "items": [
+    {
+     "id": "C2.check.01",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L11.loc_copula",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L11.001"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "(Ben) {evdeyim|okuldayım|parktayım|marketteyim|bankadayım|sokaktayım}."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C2.check.02",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L12.abl",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L12.001"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "(Ben) {Londra'danım|İngiltere'denim|Paris'tenim|İstanbul'danım|Ankara'danım|İzmir'denim|Türkiye'denim}."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C2.check.03",
+     "type": "qa",
+     "grammar": [
+      "g.L10.loc",
+      "g.L7.question"
+     ],
+     "question": "s.L10.001",
+     "images": [
+      "img.own.room_scene"
+     ],
+     "answers": [
+      "(Kedi) kanepede."
+     ],
+     "feedback": "auto:g.L10.loc"
+    },
+    {
+     "id": "C2.check.04",
+     "type": "qa",
+     "grammar": [
+      "g.L10.loc",
+      "g.L7.question"
+     ],
+     "question": "s.L10.003",
+     "images": [
+      "img.own.room_scene"
+     ],
+     "answers": [
+      "(Kitap) masada."
+     ],
+     "feedback": "auto:g.L10.loc"
+    },
+    {
+     "id": "C2.check.05",
+     "type": "pick_suffix",
+     "grammar": [
+      "g.L10.loc"
+     ],
+     "pattern": "g.L10.loc.last_vowel",
+     "base": "w.otobüs",
+     "suffix": "sfx.loc",
+     "options": [
+      "da",
+      "de",
+      "ta",
+      "te"
+     ],
+     "answer": "te",
+     "feedback": "auto:g.L10.loc"
+    },
+    {
+     "id": "C2.check.06",
+     "type": "pick_suffix",
+     "grammar": [
+      "g.L12.abl"
+     ],
+     "pattern": "g.L12.abl.voiceless",
+     "base": "w.kitap",
+     "suffix": "sfx.abl",
+     "options": [
+      "dan",
+      "den",
+      "tan",
+      "ten"
+     ],
+     "answer": "tan",
+     "feedback": "auto:g.L12.abl"
+    },
+    {
+     "id": "C2.check.07",
+     "type": "type_form",
+     "grammar": [
+      "g.L11.loc_copula"
+     ],
+     "pattern": "g.L11.loc_copula.voiceless_1pl",
+     "base": "w.park",
+     "suffixes": [
+      "sfx.loc",
+      "sfx.cop_1pl"
+     ],
+     "prompt": "we are in the park",
+     "answer": "parktayız",
+     "feedback": "auto:g.L11.loc_copula"
+    },
+    {
+     "id": "C2.check.08",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L13.clitic_de",
+      "g.L10.loc"
+     ],
+     "sentence": "s.L13.004",
+     "word_bank": [
+      "Ali",
+      "evde",
+      "ama",
+      "Ayşe",
+      "okulda",
+      "ve",
+      "evda"
+     ]
+    },
+    {
+     "id": "C2.check.09",
+     "type": "contrast_pair",
+     "grammar": [
+      "g.L13.clitic_de"
+     ],
+     "pattern": "g.L13.clitic_de.vs_loc",
+     "prompt": "Ayşe is at home too.",
+     "options": [
+      "s.L13.002",
+      "s.L13.003"
+     ],
+     "answer": "s.L13.002"
+    },
+    {
+     "id": "C2.check.10",
+     "type": "spot_error",
+     "grammar": [
+      "g.L11.loc_copula"
+     ],
+     "pattern": "g.L11.loc_copula.name",
+     "text": "Ben İstanbuldayım.",
+     "error": "İstanbuldayım.",
+     "answer": "İstanbul'dayım.",
+     "sentence": "s.L11.021",
+     "feedback": {
+      "İstanbuldayım": "**İstanbul** is a name: put an apostrophe before the ending: **İstanbul'dayım**."
+     }
+    },
+    {
+     "id": "C2.check.11",
+     "type": "translate_to_en",
+     "grammar": [
+      "g.L13.clitic_de",
+      "g.L12.abl"
+     ],
+     "sentence": "s.L13.014"
+    },
+    {
+     "id": "C2.check.12",
+     "type": "dictation",
+     "grammar": [
+      "g.L11.loc_copula",
+      "g.L7.question"
+     ],
+     "sentence": "s.L11.014"
+    },
+    {
+     "id": "C2.check.13",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L12.abl"
+     ],
+     "sentence": "s.L12.011",
+     "typed": true
+    },
+    {
+     "id": "C2.check.14",
+     "type": "qa",
+     "grammar": [
+      "g.L11.loc_copula",
+      "g.L7.question"
+     ],
+     "question": "s.L11.004",
+     "images": [
+      "img.own.person_at_home"
+     ],
+     "answers": [
+      "Hayır, (ben) evdeyim."
+     ],
+     "feedback": "auto:g.L11.loc_copula"
+    }
+   ]
+  },
+  "C3": {
+   "id": "C3",
+   "unit": "U3",
+   "title": "A day in your life",
+   "minutes": 7,
+   "intro": {
+    "kind": "summary",
+    "title": "Checkpoint 3: your day",
+    "body": "🌅 Talk about what you're doing today: where you're going, what you're eating, who you're waiting for.\n\nThis checkpoint mixes everything from **Unit 3**: commands, the present **-(I)yor** with its negative and questions, **-(y)A** *to* (with softening), and **-(y)I** for a specific object.\n\nScore **70 %** to complete the unit. Wrong answers come back in your reviews.\n"
+   },
+   "items": [
+    {
+     "id": "C3.check.01",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L15.prog",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L15.001"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "(Ben) {kitap okuyorum|çay içiyorum|kahve içiyorum|kahvaltı yapıyorum|çalışıyorum|bekliyorum}."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C3.check.02",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L17.dat",
+      "g.L15.prog"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L17.001"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "(Ben) {okula|eve|markete|parka|bankaya|hastaneye|İzmir'e|İstanbul'a|Ankara'ya} gidiyorum."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C3.check.03",
+     "type": "type_form",
+     "grammar": [
+      "g.L15.prog"
+     ],
+     "base": "w.gelmek",
+     "suffixes": [
+      "sfx.prog",
+      "sfx.cop_1sg"
+     ],
+     "prompt": "I'm coming",
+     "answer": "geliyorum",
+     "feedback": {
+      "gelyorum": "After a consonant, -(I)yor needs its vowel: gel·**i**·yor·um → **geliyorum**.",
+      "geliyorım": "-yor never changes, so the ending is always **-um**: **geliyorum**."
+     }
+    },
+    {
+     "id": "C3.check.04",
+     "type": "type_form",
+     "grammar": [
+      "g.L16.prog_neg_q"
+     ],
+     "base": "w.okumak",
+     "suffixes": [
+      "sfx.neg",
+      "sfx.prog",
+      "sfx.cop_1sg"
+     ],
+     "prompt": "I'm not reading",
+     "answer": "okumuyorum",
+     "feedback": {
+      "okumayorum": "Before -yor, the negative **-mA** becomes **-mI**, following the stem: oku → **mu**: **okumuyorum**.",
+      "okumıyorum": "The negative vowel follows the last vowel of **oku**: **u** → **mu**: **okumuyorum**."
+     }
+    },
+    {
+     "id": "C3.check.05",
+     "type": "pick_suffix",
+     "grammar": [
+      "g.L17.dat"
+     ],
+     "pattern": "g.L17.dat.back",
+     "base": "w.okul",
+     "suffix": "sfx.dat",
+     "options": [
+      "a",
+      "e",
+      "ya",
+      "ye"
+     ],
+     "answer": "a",
+     "feedback": "auto:g.L17.dat"
+    },
+    {
+     "id": "C3.check.06",
+     "type": "pick_suffix",
+     "grammar": [
+      "g.L18.acc"
+     ],
+     "pattern": "g.L18.acc.after_vowel",
+     "base": "w.kedi",
+     "suffix": "sfx.acc",
+     "options": [
+      "yi",
+      "i",
+      "yı",
+      "ı"
+     ],
+     "answer": "yi",
+     "feedback": "auto:g.L18.acc"
+    },
+    {
+     "id": "C3.check.07",
+     "type": "contrast_pair",
+     "grammar": [
+      "g.L18.acc"
+     ],
+     "pattern": "g.L18.acc.specific",
+     "prompt": "I'm eating the apple.",
+     "options": [
+      "s.L18.002",
+      "s.L18.001"
+     ],
+     "answer": "s.L18.002"
+    },
+    {
+     "id": "C3.check.08",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L18.acc",
+      "g.L15.prog"
+     ],
+     "pattern": "g.L18.acc.name",
+     "sentence": "s.L18.004",
+     "word_bank": [
+      "Ali'yi",
+      "Ali",
+      "görüyorum",
+      "görüyor",
+      "Aliyi"
+     ]
+    },
+    {
+     "id": "C3.check.09",
+     "type": "spot_error",
+     "grammar": [
+      "g.L17.dat"
+     ],
+     "pattern": "g.L17.dat.front",
+     "text": "Otobüsa biniyorum.",
+     "error": "Otobüsa",
+     "answer": "Otobüse",
+     "sentence": "s.L17.006",
+     "feedback": {
+      "otobüsa": "Only the **last** vowel counts: o·to·**bü**s → front → **otobüse**."
+     }
+    },
+    {
+     "id": "C3.check.10",
+     "type": "translate_to_en",
+     "grammar": [
+      "g.L17.dat",
+      "g.L15.prog"
+     ],
+     "sentence": "s.L17.017"
+    },
+    {
+     "id": "C3.check.11",
+     "type": "dictation",
+     "grammar": [
+      "g.L16.prog_neg_q"
+     ],
+     "sentence": "s.L16.003"
+    },
+    {
+     "id": "C3.check.12",
+     "type": "qa",
+     "grammar": [
+      "g.L16.prog_neg_q",
+      "g.L15.prog"
+     ],
+     "question": "s.L16.007",
+     "answers": [
+      "Evet, (Türkçe) konuşuyorum.",
+      "Hayır, (Türkçe) konuşmuyorum."
+     ]
+    },
+    {
+     "id": "C3.check.13",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L17.dat",
+      "g.L15.prog"
+     ],
+     "pattern": "g.L17.dat.verbs",
+     "sentence": "s.L17.008",
+     "typed": true
+    },
+    {
+     "id": "C3.check.14",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L14.imperative"
+     ],
+     "sentence": "s.L14.004",
+     "typed": true,
+     "answers": [
+      "Lütfen oturun."
+     ]
+    }
+   ]
+  },
+  "C4": {
+   "id": "C4",
+   "unit": "U4",
+   "title": "Family and home",
+   "minutes": 7,
+   "intro": {
+    "kind": "summary",
+    "title": "Checkpoint 4: family and home",
+    "body": "👨‍👩‍👧 Talk about your family and your home: who you have, whose things these are, and where they are.\n\nThis checkpoint mixes everything from **Unit 4**: *my / your / his* and *our / your / their*, the genitive **-(n)In**, compounds like *otobüs durağı*, *I have* with **var / yok**, and case endings after possessives (*evinde*).\n\nScore **70 %** to complete the unit. Wrong answers come back in your reviews.\n"
+   },
+   "items": [
+    {
+     "id": "C4.check.01",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L23.have",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L23.003"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "(Benim) {bir|iki|üç|dört} kardeşim var.",
+        "(Benim) kardeşim yok."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C4.check.02",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L23.have",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L23.010"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "Evet, (telefonum) var.",
+        "Hayır, (telefonum) yok."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C4.check.03",
+     "type": "type_form",
+     "grammar": [
+      "g.L19.poss_sg"
+     ],
+     "pattern": "g.L19.poss_sg.soft",
+     "base": "w.kitap",
+     "suffixes": [
+      "sfx.poss_1sg"
+     ],
+     "prompt": "my book",
+     "answer": "kitabım",
+     "feedback": {
+      "kitapım": "Before a vowel, final **p** softens to **b**: **kitabım**."
+     }
+    },
+    {
+     "id": "C4.check.04",
+     "type": "type_form",
+     "grammar": [
+      "g.L20.poss_pl"
+     ],
+     "pattern": "g.L20.poss_pl.vowel_1pl",
+     "base": "w.araba",
+     "suffixes": [
+      "sfx.poss_1pl"
+     ],
+     "prompt": "our car",
+     "answer": "arabamız",
+     "feedback": {
+      "arabaımız": "After a vowel, *our* is just **-mIz**: **arabamız**."
+     }
+    },
+    {
+     "id": "C4.check.05",
+     "type": "pick_suffix",
+     "grammar": [
+      "g.L21.gen"
+     ],
+     "pattern": "g.L21.gen.cons",
+     "base": "w.ev",
+     "suffix": "sfx.gen",
+     "options": [
+      "in",
+      "nin",
+      "ın",
+      "un"
+     ],
+     "answer": "in",
+     "feedback": {
+      "nin": "**ev** ends in a consonant: no buffer n: **evin**.",
+      "ın": "The last vowel of **ev** is **e** → **-in**: **evin**.",
+      "un": "The last vowel of **ev** is **e** → **-in**: **evin**."
+     }
+    },
+    {
+     "id": "C4.check.06",
+     "type": "contrast_pair",
+     "grammar": [
+      "g.L22.compound"
+     ],
+     "pattern": "g.L22.compound.vs_gen",
+     "prompt": "This is the school's door.",
+     "options": [
+      "s.L22.009",
+      "s.L22.006"
+     ],
+     "answer": "s.L22.009"
+    },
+    {
+     "id": "C4.check.07",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L21.gen"
+     ],
+     "pattern": "g.L21.gen.name",
+     "sentence": "s.L21.001",
+     "word_bank": [
+      "Ali'nin",
+      "arabası",
+      "yeni",
+      "araba",
+      "Alinin"
+     ]
+    },
+    {
+     "id": "C4.check.08",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L23.have",
+      "g.L21.gen"
+     ],
+     "sentence": "s.L23.007",
+     "typed": true
+    },
+    {
+     "id": "C4.check.09",
+     "type": "spot_error",
+     "grammar": [
+      "g.L24.poss_case"
+     ],
+     "pattern": "g.L24.poss_case.loc",
+     "text": "Kedi Ali'nin evide.",
+     "error": "evide.",
+     "answer": "evinde.",
+     "sentence": "s.L24.001",
+     "feedback": {
+      "evide": "After a 3rd-person possessive, the case ending takes **n**: ev·i·**n**·de → **evinde**."
+     }
+    },
+    {
+     "id": "C4.check.10",
+     "type": "translate_to_en",
+     "grammar": [
+      "g.L24.poss_case"
+     ],
+     "sentence": "s.L24.003"
+    },
+    {
+     "id": "C4.check.11",
+     "type": "dictation",
+     "grammar": [
+      "g.L20.poss_pl"
+     ],
+     "sentence": "s.L20.002"
+    },
+    {
+     "id": "C4.check.12",
+     "type": "qa",
+     "grammar": [
+      "g.L24.poss_case",
+      "g.L19.poss_sg"
+     ],
+     "question": "s.L24.021",
+     "answers": [
+      "{Başım|Ayağım|Kolum|Sırtım|Kulağım|Dişim|Karnım|Bacağım} ağrıyor."
+     ]
+    },
+    {
+     "id": "C4.check.13",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L22.compound",
+      "g.L7.question"
+     ],
+     "sentence": "s.L22.002",
+     "typed": true
+    },
+    {
+     "id": "C4.check.14",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L23.have"
+     ],
+     "sentence": "s.L23.019",
+     "typed": true
+    }
+   ]
+  },
+  "C5": {
+   "id": "C5",
+   "unit": "U5",
+   "title": "At the market",
+   "minutes": 7,
+   "intro": {
+    "kind": "summary",
+    "title": "Checkpoint 5: at the market",
+    "body": "🍅 Saturday morning at the bazaar: ask prices, compare, say what time you get up and how you travel.\n\nThis checkpoint mixes everything from **Unit 5**: numbers and prices, telling the time, **-(y)lA** *with / by*, **-lI / -sIz** and origin (*İzmirli*), and comparing with **daha / en**.\n\nScore **70 %** to complete the unit. Wrong answers come back in your reviews.\n"
+   },
+   "items": [
+    {
+     "id": "C5.check.01",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L25.numbers"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.C5.001"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "{On|Yirmi|Otuz|Kırk|Elli} lira."
+       ]
+      },
+      {
+       "speaker": "A",
+       "sentence": "s.L25.019"
+      }
+     ]
+    },
+    {
+     "id": "C5.check.02",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L28.li_siz",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L28.021"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "{Sütlü|Sütsüz}(, lütfen)."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C5.check.03",
+     "type": "type_form",
+     "grammar": [
+      "g.L28.li_siz"
+     ],
+     "pattern": "g.L28.li_siz.origin",
+     "base": "w.Ankara",
+     "suffixes": [
+      "sfx.li"
+     ],
+     "prompt": "from Ankara (a person)",
+     "answer": "Ankaralı",
+     "feedback": {
+      "Ankara'lı": "No apostrophe: **-lI** makes a new word: **Ankaralı**."
+     }
+    },
+    {
+     "id": "C5.check.04",
+     "type": "type_form",
+     "grammar": [
+      "g.L27.ile"
+     ],
+     "pattern": "g.L27.ile.front",
+     "base": "w.otobüs",
+     "suffixes": [
+      "sfx.ins"
+     ],
+     "prompt": "by bus",
+     "answer": "otobüsle",
+     "feedback": {
+      "otobüsla": "Only the **last** vowel counts: o·to·**bü**s → **-le**: **otobüsle**.",
+      "otobüsyle": "**otobüs** ends in a consonant: no buffer y: **otobüsle**."
+     }
+    },
+    {
+     "id": "C5.check.05",
+     "type": "pick_suffix",
+     "grammar": [
+      "g.L28.li_siz"
+     ],
+     "pattern": "g.L28.li_siz.siz",
+     "base": "w.şeker",
+     "suffix": "sfx.siz",
+     "options": [
+      "siz",
+      "sız",
+      "suz",
+      "süz"
+     ],
+     "answer": "siz",
+     "feedback": {
+      "sız": "The last vowel of **şeker** is **e** → **-siz**: **şekersiz**.",
+      "suz": "The last vowel of **şeker** is **e** → **-siz**: **şekersiz**.",
+      "süz": "The last vowel of **şeker** is **e** → **-siz**: **şekersiz**."
+     }
+    },
+    {
+     "id": "C5.check.06",
+     "type": "contrast_pair",
+     "grammar": [
+      "g.L29.comparison"
+     ],
+     "pattern": "g.L29.comparison.daha",
+     "prompt": "This one is cheaper.",
+     "options": [
+      "s.L29.004",
+      "s.L29.017"
+     ],
+     "answer": "s.L29.004"
+    },
+    {
+     "id": "C5.check.07",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L29.comparison",
+      "g.L12.abl"
+     ],
+     "pattern": "g.L29.comparison.than",
+     "sentence": "s.L29.013",
+     "word_bank": [
+      "Çay",
+      "kahveden",
+      "ucuz",
+      "kahvede",
+      "daha"
+     ]
+    },
+    {
+     "id": "C5.check.08",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L26.time",
+      "g.L15.prog"
+     ],
+     "pattern": "g.L26.time.at_hour",
+     "sentence": "s.L26.013",
+     "typed": true
+    },
+    {
+     "id": "C5.check.09",
+     "type": "spot_error",
+     "grammar": [
+      "g.L25.numbers"
+     ],
+     "pattern": "g.L25.numbers.kac_singular",
+     "text": "Kaç elmalar var?",
+     "error": "elmalar",
+     "answer": "elma",
+     "sentence": "s.L25.006",
+     "feedback": {
+      "elmalar": "After **kaç**, the noun stays singular, like after a number: **Kaç elma var?**"
+     }
+    },
+    {
+     "id": "C5.check.10",
+     "type": "translate_to_en",
+     "grammar": [
+      "g.L25.numbers",
+      "g.L21.gen"
+     ],
+     "pattern": "g.L25.numbers.prices",
+     "sentence": "s.L25.017"
+    },
+    {
+     "id": "C5.check.11",
+     "type": "dictation",
+     "grammar": [
+      "g.L25.numbers"
+     ],
+     "pattern": "g.L25.numbers.hundreds",
+     "sentence": "s.L25.002"
+    },
+    {
+     "id": "C5.check.12",
+     "type": "qa",
+     "grammar": [
+      "g.L26.time",
+      "g.L15.prog"
+     ],
+     "question": "s.L26.014",
+     "answers": [
+      "(Saat) {altıda|yedide|sekizde|dokuzda|onda} (kalkıyorum).",
+      "(Saat) {altı|yedi|sekiz} buçukta (kalkıyorum)."
+     ]
+    },
+    {
+     "id": "C5.check.13",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L27.ile",
+      "g.L17.dat"
+     ],
+     "sentence": "s.L27.003",
+     "typed": true
+    },
+    {
+     "id": "C5.check.14",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L28.li_siz"
+     ],
+     "sentence": "s.L28.004",
+     "typed": true
+    }
+   ]
+  },
+  "C6": {
+   "id": "C6",
+   "unit": "U6",
+   "title": "Last weekend",
+   "minutes": 6,
+   "intro": {
+    "kind": "summary",
+    "title": "Checkpoint 6: last weekend",
+    "body": "📅 It's Monday. Tell a friend what you did at the weekend, where you were, and what you didn't do.\n\nThis checkpoint mixes everything from **Unit 6**: the past **-DI** with its person endings, the negative and questions (*gelmedim*, *Geldin mi?*), and *was / were* **-(y)DI** (*evdeydim*, *vardı / yoktu*).\n\nScore **70 %** to complete the unit. Wrong answers come back in your reviews.\n"
+   },
+   "items": [
+    {
+     "id": "C6.check.01",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L30.past",
+      "g.L26.time"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.C6.001"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "{Film izledim|Kitap okudum|Futbol oynadım|Müzik dinledim|Çalıştım|Uyudum}."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C6.check.02",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L32.copula_past",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L32.008"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "(Ben) {evdeydim|parktaydım|okuldaydım|İzmir'deydim|İstanbul'daydım|Ankara'daydım}."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C6.check.03",
+     "type": "type_form",
+     "grammar": [
+      "g.L30.past"
+     ],
+     "pattern": "g.L30.past.voiceless",
+     "base": "w.gitmek",
+     "suffixes": [
+      "sfx.past",
+      "sfx.kpers_1sg"
+     ],
+     "prompt": "I went",
+     "answer": "gittim",
+     "feedback": {
+      "gitdim": "**git** ends in **t**, a Fıstıkçı Şahap letter → **-ti**: **gittim**.",
+      "gidtim": "-DI starts with a consonant, so the stem doesn't change: **git·ti·m** → **gittim**."
+     }
+    },
+    {
+     "id": "C6.check.04",
+     "type": "type_form",
+     "grammar": [
+      "g.L31.past_neg_q"
+     ],
+     "pattern": "g.L31.past_neg_q.negative",
+     "base": "w.gelmek",
+     "suffixes": [
+      "sfx.neg",
+      "sfx.past",
+      "sfx.kpers_1sg"
+     ],
+     "prompt": "I didn't come",
+     "answer": "gelmedim",
+     "feedback": {
+      "gelmetim": "**-mA** ends in a vowel, so the past is always **-dI** after it: **gelmedim**.",
+      "gelmiyorum": "That's the present (*I'm not coming*). The past: **gel·me·di·m** → **gelmedim**."
+     }
+    },
+    {
+     "id": "C6.check.05",
+     "type": "type_form",
+     "grammar": [
+      "g.L32.copula_past"
+     ],
+     "pattern": "g.L32.copula_past.loc_1sg",
+     "base": "w.ev",
+     "suffixes": [
+      "sfx.loc",
+      "sfx.cop_past",
+      "sfx.kpers_1sg"
+     ],
+     "prompt": "I was at home",
+     "answer": "evdeydim",
+     "feedback": "auto:g.L32.copula_past"
+    },
+    {
+     "id": "C6.check.06",
+     "type": "contrast_pair",
+     "grammar": [
+      "g.L31.past_neg_q"
+     ],
+     "pattern": "g.L31.past_neg_q.vs_present",
+     "prompt": "Did you come?",
+     "options": [
+      "s.L31.003",
+      "s.L31.006"
+     ],
+     "answer": "s.L31.003"
+    },
+    {
+     "id": "C6.check.07",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L30.past",
+      "g.L17.dat"
+     ],
+     "sentence": "s.L30.002",
+     "word_bank": [
+      "Dün",
+      "okula",
+      "gittim",
+      "gidiyorum",
+      "okulda"
+     ]
+    },
+    {
+     "id": "C6.check.08",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L32.copula_past",
+      "g.L10.loc"
+     ],
+     "pattern": "g.L32.copula_past.var_yok",
+     "sentence": "s.L32.013",
+     "typed": true
+    },
+    {
+     "id": "C6.check.09",
+     "type": "spot_error",
+     "grammar": [
+      "g.L31.past_neg_q"
+     ],
+     "pattern": "g.L31.past_neg_q.question",
+     "text": "Geldin misin?",
+     "error": "misin?",
+     "answer": "mi?",
+     "sentence": "s.L31.003",
+     "feedback": {
+      "misin": "In the past, the person ending stays on the verb (geldi**n**): **mi** carries nothing: **Geldin mi?**"
+     }
+    },
+    {
+     "id": "C6.check.10",
+     "type": "translate_to_en",
+     "grammar": [
+      "g.L30.past",
+      "g.L13.clitic_de"
+     ],
+     "sentence": "s.L30.016"
+    },
+    {
+     "id": "C6.check.11",
+     "type": "dictation",
+     "grammar": [
+      "g.L32.copula_past"
+     ],
+     "sentence": "s.L32.016"
+    },
+    {
+     "id": "C6.check.12",
+     "type": "qa",
+     "grammar": [
+      "g.L32.copula_past",
+      "g.L7.question"
+     ],
+     "pattern": "g.L32.copula_past.question",
+     "question": "s.L32.011",
+     "answers": [
+      "Evet, (hastaydım).",
+      "Hayır, (hasta) değildim."
+     ]
+    },
+    {
+     "id": "C6.check.13",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L31.past_neg_q"
+     ],
+     "sentence": "s.L31.014",
+     "typed": true
+    },
+    {
+     "id": "C6.check.14",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L30.past"
+     ],
+     "sentence": "s.T20.001",
+     "typed": true
+    }
+   ]
+  },
+  "C7": {
+   "id": "C7",
+   "unit": "U7",
+   "title": "Planning a trip",
+   "minutes": 7,
+   "intro": {
+    "kind": "summary",
+    "title": "Final checkpoint: planning a trip",
+    "body": "✈️ You and a friend are planning a trip to Turkey: where you'll go, what you want to do, and what you need.\n\nThis last checkpoint mixes **Unit 7**, the future **-(y)AcAK**, *want (to)* with **istemek**, *need (to)* with **lazım / gerek**, with the cases and tenses from the whole course.\n\nScore **70 %** to complete the A1 course. 🎉\n"
+   },
+   "items": [
+    {
+     "id": "C7.check.01",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L33.future",
+      "g.L17.dat"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.C7.001"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "(Ben) {Antalya'ya|İstanbul'a|İzmir'e|Ankara'ya|Londra'ya|Paris'e} gideceğim."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C7.check.02",
+     "type": "mini_dialogue",
+     "grammar": [
+      "g.L34.istemek",
+      "g.L7.question"
+     ],
+     "turns": [
+      {
+       "speaker": "A",
+       "sentence": "s.L34.003"
+      },
+      {
+       "speaker": "B",
+       "blank": true,
+       "answers": [
+        "(Ben) {yüzmek|uyumak|kitap okumak|film izlemek|dinlenmek} istiyorum."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C7.check.03",
+     "type": "type_form",
+     "grammar": [
+      "g.L33.future"
+     ],
+     "pattern": "g.L33.future.k_to_g",
+     "base": "w.gelmek",
+     "suffixes": [
+      "sfx.fut",
+      "sfx.cop_1sg"
+     ],
+     "prompt": "I will come",
+     "answer": "geleceğim",
+     "feedback": {
+      "gelecekim": "Before a vowel, the last **k** softens to **ğ**: **geleceğim**."
+     }
+    },
+    {
+     "id": "C7.check.04",
+     "type": "type_form",
+     "grammar": [
+      "g.L35.lazim"
+     ],
+     "pattern": "g.L35.lazim.person",
+     "base": "w.gitmek",
+     "suffixes": [
+      "sfx.vn",
+      "sfx.poss_1sg"
+     ],
+     "prompt": "I need to go: … lazım",
+     "answer": "gitmem",
+     "feedback": {
+      "gitmek": "*gitmek lazım* is general (\"one has to go\"). For *I* need to: -mA + my → **gitmem**."
+     }
+    },
+    {
+     "id": "C7.check.05",
+     "type": "contrast_pair",
+     "grammar": [
+      "g.L34.istemek"
+     ],
+     "pattern": "g.L34.istemek.noun_vs_verb",
+     "prompt": "I want tea.",
+     "options": [
+      "s.L34.001",
+      "s.L34.002"
+     ],
+     "answer": "s.L34.001"
+    },
+    {
+     "id": "C7.check.06",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L35.lazim",
+      "g.L17.dat"
+     ],
+     "sentence": "s.L35.002",
+     "word_bank": [
+      "Eve",
+      "gitmem",
+      "lazım",
+      "gitmek",
+      "evde"
+     ]
+    },
+    {
+     "id": "C7.check.07",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L33.future"
+     ],
+     "sentence": "s.L33.013",
+     "typed": true
+    },
+    {
+     "id": "C7.check.08",
+     "type": "spot_error",
+     "grammar": [
+      "g.L33.future"
+     ],
+     "pattern": "g.L33.future.buffer",
+     "text": "Film saat sekizde başlıyacak.",
+     "error": "başlıyacak.",
+     "answer": "başlayacak.",
+     "sentence": "s.L33.008",
+     "feedback": {
+      "başlıyacak": "In speech the vowel is often raised, but the spelling keeps it: başla·**y**·acak → **başlayacak**."
+     }
+    },
+    {
+     "id": "C7.check.09",
+     "type": "translate_to_en",
+     "grammar": [
+      "g.L35.lazim",
+      "g.L17.dat"
+     ],
+     "sentence": "s.L35.005"
+    },
+    {
+     "id": "C7.check.10",
+     "type": "dictation",
+     "grammar": [
+      "g.L33.future",
+      "g.L17.dat"
+     ],
+     "sentence": "s.L33.005"
+    },
+    {
+     "id": "C7.check.11",
+     "type": "qa",
+     "grammar": [
+      "g.L33.future",
+      "g.L7.question"
+     ],
+     "pattern": "g.L33.future.question",
+     "question": "s.L33.002",
+     "answers": [
+      "Evet, (geleceğim).",
+      "Hayır, (gelmeyeceğim)."
+     ]
+    },
+    {
+     "id": "C7.check.12",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L35.lazim",
+      "g.L17.dat"
+     ],
+     "pattern": "g.L35.lazim.dative",
+     "sentence": "s.L35.012",
+     "typed": true
+    },
+    {
+     "id": "C7.check.13",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L34.istemek",
+      "g.L17.dat"
+     ],
+     "sentence": "s.L34.009",
+     "typed": true
+    },
+    {
+     "id": "C7.check.14",
+     "type": "translate_to_tr",
+     "grammar": [
+      "g.L24.poss_case",
+      "g.L19.poss_sg"
+     ],
+     "sentence": "s.T21.003",
+     "typed": true
+    }
+   ]
+  }
+ },
  "packs": {
   "T1": {
    "id": "T1",
@@ -41613,6 +43152,96 @@
     "kind": "original"
    },
    "audio": "aud.own.s.T9.004"
+  },
+  "s.C1.001": {
+   "id": "s.C1.001",
+   "tr": "Merhaba! Nasılsın?",
+   "en": [
+    "Hello! How are you?",
+    "Hi! How are you?"
+   ],
+   "words": [
+    "w.merhaba",
+    "w.nasıl"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L5.copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.C1.001",
+   "native_required": true
+  },
+  "s.C5.001": {
+   "id": "s.C5.001",
+   "tr": "Domatesin kilosu kaç lira?",
+   "en": [
+    "How much is a kilo of tomatoes?",
+    "How much are the tomatoes per kilo?"
+   ],
+   "words": [
+    "w.domates",
+    "w.kilo",
+    "w.kaç",
+    "w.lira"
+   ],
+   "grammar": [
+    "g.L25.numbers",
+    "g.L21.gen",
+    "g.L19.poss_sg"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.C5.001",
+   "native_required": true
+  },
+  "s.C6.001": {
+   "id": "s.C6.001",
+   "tr": "Hafta sonu ne yaptın?",
+   "en": [
+    "What did you do at the weekend?",
+    "What did you do on the weekend?"
+   ],
+   "words": [
+    "w.hafta_sonu",
+    "w.ne",
+    "w.yapmak"
+   ],
+   "grammar": [
+    "g.L30.past",
+    "g.L26.time"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.C6.001",
+   "native_required": true
+  },
+  "s.C7.001": {
+   "id": "s.C7.001",
+   "tr": "Gelecek hafta nereye gideceksin?",
+   "en": [
+    "Where will you go next week?",
+    "Where are you going next week?"
+   ],
+   "words": [
+    "w.gelecek",
+    "w.hafta",
+    "w.nereye",
+    "w.gitmek"
+   ],
+   "grammar": [
+    "g.L33.future",
+    "g.L17.dat"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.C7.001",
+   "native_required": true
   }
  },
  "suffixes": {
@@ -54086,6 +55715,38 @@
    "license": "OWN",
    "status": "planned",
    "text": "Türkçe zor mu?"
+  },
+  "aud.own.s.C1.001": {
+   "id": "aud.own.s.C1.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Merhaba! Nasılsın?"
+  },
+  "aud.own.s.C5.001": {
+   "id": "aud.own.s.C5.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Domatesin kilosu kaç lira?"
+  },
+  "aud.own.s.C6.001": {
+   "id": "aud.own.s.C6.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Hafta sonu ne yaptın?"
+  },
+  "aud.own.s.C7.001": {
+   "id": "aud.own.s.C7.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Gelecek hafta nereye gideceksin?"
   }
  }
 }

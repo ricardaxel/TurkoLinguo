@@ -26,7 +26,8 @@ interface Props {
   onExit: () => void;
   /** Called once, when the last step is done. */
   onComplete: (results: SessionResult[]) => void;
-  summaryTitle: string;
+  /** Shown on the summary; may depend on the results (e.g. a checkpoint pass / fail). */
+  summaryTitle: string | ((results: SessionResult[]) => string);
   summaryActions: SummaryAction[];
   /** Step to open first (for content authors: /session/L10/practise?start=5). */
   startAt?: number;
@@ -58,7 +59,10 @@ export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summary
     setIndex(index + 1);
   };
 
-  if (!step) return <Summary title={summaryTitle} results={results} actions={summaryActions} />;
+  if (!step) {
+    const title = typeof summaryTitle === 'function' ? summaryTitle(results) : summaryTitle;
+    return <Summary title={title} results={results} actions={summaryActions} />;
+  }
 
   return (
     <SafeAreaView style={styles.screen} edges={['top', 'bottom']}>

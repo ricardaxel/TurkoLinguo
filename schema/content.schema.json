@@ -223,6 +223,22 @@
       }
     },
 
+    "checkpoint": {
+      "description": "End-of-unit checkpoint: one scenario, then mixed exercises over the whole unit (docs/CONTENT_FORMAT.md §4.10).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "unit", "title", "intro", "items"],
+      "properties": {
+        "id": { "$ref": "#/$defs/checkpointId" },
+        "unit": { "type": "string", "pattern": "^U[0-9]+$" },
+        "title": { "type": "string" },
+        "minutes": { "type": "number" },
+        "pass": { "type": "number", "minimum": 0, "maximum": 1, "description": "Score needed to pass (default 0.7). Score = (correct + ½ almost) / items." },
+        "intro": { "$ref": "#/$defs/card" },
+        "items": { "type": "array", "items": { "$ref": "#/$defs/item" }, "minItems": 8 }
+      }
+    },
+
     "packFile": {
       "type": "object",
       "additionalProperties": false,

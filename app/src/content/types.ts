@@ -139,11 +139,24 @@ export interface Course {
   lessons: Record<string, { title: string; grammar: string; file?: string }>;
 }
 
+/** End-of-unit checkpoint (content/checkpoints/C<n>.yaml). */
+export interface Checkpoint {
+  id: string;
+  unit: string;
+  title: string;
+  minutes?: number;
+  /** Score needed to pass (default 0.7). */
+  pass?: number;
+  intro: Card;
+  items: Item[];
+}
+
 export interface Bundle {
   version: number;
   course: Course;
   grammar: Record<string, GrammarPoint>;
   lessons: Record<string, Lesson>;
+  checkpoints: Record<string, Checkpoint>;
   packs: Record<string, unknown>;
   lexicon: Record<string, Word>;
   sentences: Record<string, Sentence>;

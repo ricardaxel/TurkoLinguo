@@ -45,6 +45,7 @@ def main():
         "course": load("course.yaml"),
         "grammar": by_id(load_dir("grammar")),
         "lessons": by_id(load_dir("lessons")),
+        "checkpoints": by_id(load_dir("checkpoints")) if (CONTENT / "checkpoints").exists() else {},
         "packs": by_id(load_dir("packs")),
         "lexicon": by_id(load_dir("lexicon")),
         "sentences": by_id(load_dir("sentences")),
@@ -55,7 +56,7 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(bundle, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Wrote {out_path.relative_to(ROOT)} ({out_path.stat().st_size // 1024} KB, "
-          f"{len(bundle['lessons'])} lesson(s), {len(bundle['sentences'])} sentences, {len(bundle['lexicon'])} words)")
+          f"{len(bundle['lessons'])} lesson(s), {len(bundle['checkpoints'])} checkpoint(s), {len(bundle['sentences'])} sentences, {len(bundle['lexicon'])} words)")
 
 
 if __name__ == "__main__":

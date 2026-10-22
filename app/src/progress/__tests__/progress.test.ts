@@ -5,7 +5,7 @@ import { inflect } from '../../engine/morph';
 import { buildReview, canReview, endingVariants, knownWords, lessonItemsFor, matchesFilter } from '../../review/build';
 import { acceptedFor, gradeChoice, gradeTyped } from '../../session/grade';
 import {
-  cardsForReview, completeLessonSession, completeReview, emptyProgress, lessonWords, MAX_NEW_PER_DAY, MAX_NEW_PER_REVIEW, newCardBudget,
+  cardsForReview, checkpointScore, completeCheckpoint, completeLessonSession, completeReview, emptyProgress, lessonWords, MAX_NEW_PER_DAY, MAX_NEW_PER_REVIEW, newCardBudget,
   type SessionResult,
 } from '../model';
 
@@ -218,5 +218,40 @@ describe('review items for suffix-chain patterns (L11, L12)', () => {
     const [item] = buildReview(p, [p.cards[id]], seeded(1)).items;
     expect(item.pattern).toBe(id);
     expect(lessonItemsFor(id).some((i) => i.type === item.type)).toBe(true);
+  });
+});
+
+describe('checkpoints', () => {
+  const C2 = content.checkpoints.C2;
+  const results = (wrong: number) =>
+    C2.items.map((item, i): SessionResult => ({ item, status: i < wrong ? 'wrong' : 'correct' }));
+
+  it('score: correct counts 1, almost ½', () => {
+    const [a, b] = C2.items;
+    expect(checkpointScore([{ item: a, status: 'correct' }, { item: b, status: 'almost' }])).toBe(0.75);
+  });
+
+  it('passing records the best score and the first pass', () => {
+    const p = completeCheckpoint(emptyProgress(), 'C2', results(2), t0); // 12/14 ≈ 86 %
+    expect(p.checkpoints?.C2.passedAt).toBe(t0.toISOString());
+    const q = completeCheckpoint(p, 'C2', results(10), at(1)); // a worse retry keeps best and first pass
+    expect(q.checkpoints?.C2.best).toBeCloseTo(12 / 14);
+    expect(q.checkpoints?.C2.passedAt).toBe(t0.toISOString());
+  });
+
+  it('failing records the score without a pass', () => {
+    const p = completeCheckpoint(emptyProgress(), 'C2', results(8), t0); // 6/14 ≈ 43 %
+    expect(p.checkpoints?.C2.passedAt).toBeUndefined();
+    expect(p.checkpoints?.C2.best).toBeCloseTo(6 / 14);
+  });
+
+  it('rates the rules it tested (after the unit was learned)', () => {
+    let p = emptyProgress();
+    for (const l of ['L10', 'L11', 'L12', 'L13']) p = completeLessonSession(p, l, 'practise', allCorrect(content.lessons[l].sessions.practise.items), t0);
+    const before = p.cards['g.L10.loc.last_vowel'].fsrs.reps;
+    const wrongOtobus = C2.items.map((item): SessionResult => ({ item, status: item.pattern === 'g.L10.loc.last_vowel' ? 'wrong' : 'correct' }));
+    const q = completeCheckpoint(p, 'C2', wrongOtobus, at(5));
+    expect(q.cards['g.L10.loc.last_vowel'].fsrs.reps).toBe(before + 1);
+    expect(q.cards['g.L10.loc.last_vowel'].fsrs.lapses).toBeGreaterThanOrEqual(p.cards['g.L10.loc.last_vowel'].fsrs.lapses);
   });
 });

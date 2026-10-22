@@ -10,6 +10,7 @@ function usedImages(): string[] {
     else if (v && typeof v === 'object') Object.values(v).forEach(scan);
   };
   scan(content.lessons);
+  scan(content.checkpoints);
   scan(content.lexicon);
   return [...ids];
 }

@@ -1,4 +1,4 @@
-import { content } from '../../content';
+import { allItems, content } from '../../content';
 import type { Item } from '../../content/types';
 import { acceptedFor, explicitFeedback, gradeChoice, gradeTyped, suffixChains } from '../grade';
 
@@ -53,7 +53,7 @@ describe('L10 grading', () => {
 
 describe('hand-written feedback maps', () => {
   const all = Object.fromEntries(
-    Object.values(content.lessons).flatMap((l) => [...l.sessions.learn.items, ...l.sessions.practise.items]).map((i) => [i.id, i]),
+    allItems().map((i) => [i.id, i]),
   );
   const grade = (id: string, given: string) => {
     const { accepted, lang } = acceptedFor(all[id]);

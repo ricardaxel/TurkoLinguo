@@ -1,0 +1,38 @@
+# New sentences used only by the end-of-unit checkpoints (content/checkpoints/).
+# Everything else in the checkpoints reuses lesson sentences.
+
+- id: s.C1.001
+  tr: Merhaba! Nasılsın?
+  en: ["Hello! How are you?", "Hi! How are you?"]
+  words: [w.merhaba, w.nasıl]
+  grammar: [g.L7.question, g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.C1.001
+  native_required: true
+
+- id: s.C5.001
+  tr: Domatesin kilosu kaç lira?
+  en: ["How much is a kilo of tomatoes?", "How much are the tomatoes per kilo?"]
+  words: [w.domates, w.kilo, w.kaç, w.lira]
+  grammar: [g.L25.numbers, g.L21.gen, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.C5.001
+  native_required: true
+
+- id: s.C6.001
+  tr: Hafta sonu ne yaptın?
+  en: ["What did you do at the weekend?", "What did you do on the weekend?"]
+  words: [w.hafta_sonu, w.ne, w.yapmak]
+  grammar: [g.L30.past, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.C6.001
+  native_required: true
+
+- id: s.C7.001
+  tr: Gelecek hafta nereye gideceksin?
+  en: ["Where will you go next week?", "Where are you going next week?"]
+  words: [w.gelecek, w.hafta, w.nereye, w.gitmek]
+  grammar: [g.L33.future, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.C7.001
+  native_required: true

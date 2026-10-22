@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import {
-  completeLessonSession, completeReview, emptyProgress, type Progress, type SessionResult,
+  completeCheckpoint, completeLessonSession, completeReview, emptyProgress, type Progress, type SessionResult,
 } from './model';
 
 const KEY = 'turkolinguo.progress.v1';
@@ -15,6 +15,7 @@ interface ProgressApi {
   clockOffsetDays: number;
   finishLesson: (lessonId: string, session: 'learn' | 'practise', results: SessionResult[]) => void;
   finishReview: (results: SessionResult[], cardFor: Record<string, string>) => void;
+  finishCheckpoint: (checkpointId: string, results: SessionResult[]) => void;
   shiftClock: (days: number) => void;
   reset: () => void;
 }
@@ -61,6 +62,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       clockOffsetDays: offset,
       finishLesson: (lessonId, session, results) => update((p) => completeLessonSession(p, lessonId, session, results, now())),
       finishReview: (results, cardFor) => update((p) => completeReview(p, results, cardFor, now())),
+      finishCheckpoint: (checkpointId, results) => update((p) => completeCheckpoint(p, checkpointId, results, now())),
       shiftClock: (days) => {
         setOffset((prev) => {
           const next = prev + days;

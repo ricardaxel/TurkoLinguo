@@ -29,6 +29,7 @@ KINDS = {
     "morphology/suffixes.yaml": "suffixesFile",
     "morphology/tests.yaml": "morphTestsFile",
     "media/assets.yaml": "assetsFile",
+    "checkpoints": "checkpoint",
 }
 
 ID_RE = re.compile(r"^(w\.[^\s.]+(\.[a-z0-9_]+)?|s\.[A-Za-z0-9_]+\.[0-9]{3}|img\.[a-z0-9_]+\.\S+|aud\.[a-z0-9_]+\.\S+"
@@ -57,7 +58,7 @@ def kind_for(rel):
     if rel in KINDS:
         return KINDS[rel]
     top = rel.split("/")[0]
-    return KINDS.get(top) if top in ("grammar", "lessons", "packs", "lexicon", "sentences") else None
+    return KINDS.get(top) if top in ("grammar", "lessons", "packs", "lexicon", "sentences", "checkpoints") else None
 
 
 def walk_strings(node, path=""):
@@ -143,6 +144,10 @@ def main():
         for sess in lesson["sessions"].values():
             for item in sess.get("items", []):
                 register(item["id"], "item", rel, item)
+    for rel, cp in docs.get("checkpoint", []):
+        register(cp["id"], "checkpoint", rel, cp)
+        for item in cp["items"]:
+            register(item["id"], "item", rel, item)
     for rel, pf in docs.get("packFile", []):
         register(pf["id"], "theme", rel, pf)
         for p in pf["packs"]:
@@ -220,6 +225,43 @@ def main():
             check_grammar(s["grammar"], pos, f"{where} → {sid}", rel)
         check_words(s["words"], pos, f"{where} → {sid}", rel)
 
+    def check_item(item, pos, rel):
+        where = item["id"]
+        check_grammar(item["grammar"], pos, where, rel)
+        if "pattern" in item and not item["pattern"].startswith(item["grammar"][0] + "."):
+            rep.warn(rel, f"{where}: pattern {item['pattern']} doesn't belong to main grammar {item['grammar'][0]}")
+        if "base" in item:
+            check_words([item["base"]], pos, where, rel)
+        for sfx in [item.get("suffix")] + item.get("suffixes", []):
+            if sfx and sfx in reg:
+                check_grammar([reg[sfx][2]["introduced_by"]], pos, f"{where} ({sfx})", rel)
+        sids = [item.get("sentence"), item.get("question")] + [t.get("sentence") for t in item.get("turns", [])]
+        for sid in filter(None, sids):
+            check_sentence(sid, pos, where, rel)
+        # item-level consistency
+        if item["type"] in CHOICE_TYPES and item.get("answer") not in item.get("options", []):
+            rep.error(rel, f"{where}: answer {item.get('answer')!r} is not one of the options")
+        if item["type"] == "build_word" and sorted(item["answer"].split("·")) != sorted(item["tiles"]):
+            rep.error(rel, f"{where}: answer segments don't match the tiles")
+        if item["type"] == "spot_error" and item["error"] not in item["text"]:
+            rep.error(rel, f"{where}: error token {item['error']!r} not found in text")
+        elif item["type"] == "spot_error" and item.get("sentence") in reg:
+            fixed = item["text"].replace(item["error"], item["answer"], 1)
+            model = reg[item["sentence"]][2]["tr"]
+            norm = lambda t: " ".join(PUNCT_RE.sub(" ", tr_lower(t)).split())
+            if norm(fixed) != norm(model):
+                rep.error(rel, f"{where}: the corrected text {fixed!r} doesn't match its sentence {item['sentence']} ({model!r})")
+        if item["type"] == "translate_to_tr" and "word_bank" in item and item.get("sentence") in reg:
+            tokens = PUNCT_RE.sub("", reg[item["sentence"]][2]["tr"]).split()
+            bank = {tr_lower(t) for t in item["word_bank"]}
+            missing = [t for t in tokens if tr_lower(t) not in bank]
+            if missing:
+                rep.error(rel, f"{where}: word bank lacks {missing}")
+        patterns = list(item.get("answers", [])) + [a for t in item.get("turns", []) for a in t.get("answers", [])]
+        for a in patterns:
+            if not balanced(a):
+                rep.error(rel, f"{where}: unbalanced () or {{}} in answer pattern {a!r}")
+
     for rel, lesson in docs.get("lesson", []):
         lid = lesson["id"]
         pos = index[lid]
@@ -231,35 +273,25 @@ def main():
                 check_sentence(sid, pos, f"card {i + 1}", rel)
         for sess in lesson["sessions"].values():
             for item in sess.get("items", []):
-                where = item["id"]
-                check_grammar(item["grammar"], pos, where, rel)
-                if "pattern" in item and not item["pattern"].startswith(item["grammar"][0] + "."):
-                    rep.warn(rel, f"{where}: pattern {item['pattern']} doesn't belong to main grammar {item['grammar'][0]}")
-                if "base" in item:
-                    check_words([item["base"]], pos, where, rel)
-                for sfx in [item.get("suffix")] + item.get("suffixes", []):
-                    if sfx and sfx in reg:
-                        check_grammar([reg[sfx][2]["introduced_by"]], pos, f"{where} ({sfx})", rel)
-                sids = [item.get("sentence"), item.get("question")] + [t.get("sentence") for t in item.get("turns", [])]
-                for sid in filter(None, sids):
-                    check_sentence(sid, pos, where, rel)
-                # item-level consistency
-                if item["type"] in CHOICE_TYPES and item.get("answer") not in item.get("options", []):
-                    rep.error(rel, f"{where}: answer {item.get('answer')!r} is not one of the options")
-                if item["type"] == "build_word" and sorted(item["answer"].split("·")) != sorted(item["tiles"]):
-                    rep.error(rel, f"{where}: answer segments don't match the tiles")
-                if item["type"] == "spot_error" and item["error"] not in item["text"]:
-                    rep.error(rel, f"{where}: error token {item['error']!r} not found in text")
-                if item["type"] == "translate_to_tr" and "word_bank" in item and item.get("sentence") in reg:
-                    tokens = PUNCT_RE.sub("", reg[item["sentence"]][2]["tr"]).split()
-                    bank = {tr_lower(t) for t in item["word_bank"]}
-                    missing = [t for t in tokens if tr_lower(t) not in bank]
-                    if missing:
-                        rep.error(rel, f"{where}: word bank lacks {missing}")
-                patterns = list(item.get("answers", [])) + [a for t in item.get("turns", []) for a in t.get("answers", [])]
-                for a in patterns:
-                    if not balanced(a):
-                        rep.error(rel, f"{where}: unbalanced () or {{}} in answer pattern {a!r}")
+                check_item(item, pos, rel)
+
+    # checkpoints: everything taught up to the unit's last lesson, but not the packs that
+    # pre-teach the next unit (those sit at last lesson + 0.5)
+    units = {u["id"]: u for u in course["units"]}
+    for rel, cp in docs.get("checkpoint", []):
+        unit = units.get(cp["unit"])
+        if not unit:
+            rep.error(rel, f"unknown unit {cp['unit']}")
+            continue
+        if unit.get("checkpoint") != cp["id"]:
+            rep.error(rel, f"{cp['id']} is not the checkpoint of {cp['unit']} in course.yaml")
+        pos = index[unit["lessons"][-1]] + 0.25
+        for sid in cp["intro"].get("sentences", []):
+            check_sentence(sid, pos, f"{cp['id']} intro", rel)
+        for item in cp["items"]:
+            if not item["id"].startswith(cp["id"] + ".check."):
+                rep.error(rel, f"{item['id']}: checkpoint items are named {cp['id']}.check.NN")
+            check_item(item, pos, rel)
 
     for rel, pf in docs.get("packFile", []):
         for p in pf["packs"]:

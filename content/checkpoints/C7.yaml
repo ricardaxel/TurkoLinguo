@@ -1,0 +1,53 @@
+# Checkpoint 7 — end of Unit 7 (L33–L35), the final A1 checkpoint: planning a trip.
+id: C7
+unit: U7
+title: "Planning a trip"
+minutes: 7
+intro:
+  kind: summary
+  title: "Final checkpoint: planning a trip"
+  body: |
+    ✈️ You and a friend are planning a trip to Turkey: where you'll go, what you want to do, and what you need.
+
+    This last checkpoint mixes **Unit 7**, the future **-(y)AcAK**, *want (to)* with **istemek**, *need (to)* with **lazım / gerek**, with the cases and tenses from the whole course.
+
+    Score **70 %** to complete the A1 course. 🎉
+
+items:
+  - id: C7.check.01
+    type: mini_dialogue
+    grammar: [g.L33.future, g.L17.dat]
+    turns:
+      - { speaker: A, sentence: s.C7.001 }
+      - { speaker: B, blank: true, answers: ["(Ben) {Antalya'ya|İstanbul'a|İzmir'e|Ankara'ya|Londra'ya|Paris'e} gideceğim."] }
+  - id: C7.check.02
+    type: mini_dialogue
+    grammar: [g.L34.istemek, g.L7.question]
+    turns:
+      - { speaker: A, sentence: s.L34.003 }
+      - { speaker: B, blank: true, answers: ["(Ben) {yüzmek|uyumak|kitap okumak|film izlemek|dinlenmek} istiyorum."] }
+  - { id: C7.check.03, type: type_form, grammar: [g.L33.future], pattern: g.L33.future.k_to_g, base: w.gelmek, suffixes: [sfx.fut, sfx.cop_1sg], prompt: "I will come", answer: geleceğim, feedback: { gelecekim: "Before a vowel, the last **k** softens to **ğ**: **geleceğim**." } }
+  - { id: C7.check.04, type: type_form, grammar: [g.L35.lazim], pattern: g.L35.lazim.person, base: w.gitmek, suffixes: [sfx.vn, sfx.poss_1sg], prompt: "I need to go: … lazım", answer: gitmem, feedback: { gitmek: "*gitmek lazım* is general (\"one has to go\"). For *I* need to: -mA + my → **gitmem**." } }
+  - { id: C7.check.05, type: contrast_pair, grammar: [g.L34.istemek], pattern: g.L34.istemek.noun_vs_verb, prompt: "I want tea.", options: [s.L34.001, s.L34.002], answer: s.L34.001 }
+  - { id: C7.check.06, type: translate_to_tr, grammar: [g.L35.lazim, g.L17.dat], sentence: s.L35.002, word_bank: [Eve, gitmem, lazım, gitmek, evde] }
+  - { id: C7.check.07, type: translate_to_tr, grammar: [g.L33.future], sentence: s.L33.013, typed: true }
+  - id: C7.check.08
+    type: spot_error
+    grammar: [g.L33.future]
+    pattern: g.L33.future.buffer
+    text: "Film saat sekizde başlıyacak."
+    error: başlıyacak.
+    answer: başlayacak.
+    sentence: s.L33.008
+    feedback: { başlıyacak: "In speech the vowel is often raised, but the spelling keeps it: başla·**y**·acak → **başlayacak**." }
+  - { id: C7.check.09, type: translate_to_en, grammar: [g.L35.lazim, g.L17.dat], sentence: s.L35.005 }
+  - { id: C7.check.10, type: dictation, grammar: [g.L33.future, g.L17.dat], sentence: s.L33.005 }
+  - id: C7.check.11
+    type: qa
+    grammar: [g.L33.future, g.L7.question]
+    pattern: g.L33.future.question
+    question: s.L33.002
+    answers: ["Evet, (geleceğim).", "Hayır, (gelmeyeceğim)."]
+  - { id: C7.check.12, type: translate_to_tr, grammar: [g.L35.lazim, g.L17.dat], pattern: g.L35.lazim.dative, sentence: s.L35.012, typed: true }
+  - { id: C7.check.13, type: translate_to_tr, grammar: [g.L34.istemek, g.L17.dat], sentence: s.L34.009, typed: true }
+  - { id: C7.check.14, type: translate_to_tr, grammar: [g.L24.poss_case, g.L19.poss_sg], sentence: s.T21.003, typed: true }

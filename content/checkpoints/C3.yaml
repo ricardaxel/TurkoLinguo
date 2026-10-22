@@ -1,0 +1,52 @@
+# Checkpoint 3 — end of Unit 3 (L14–L18): a day in your life.
+id: C3
+unit: U3
+title: "A day in your life"
+minutes: 7
+intro:
+  kind: summary
+  title: "Checkpoint 3: your day"
+  body: |
+    🌅 Talk about what you're doing today: where you're going, what you're eating, who you're waiting for.
+
+    This checkpoint mixes everything from **Unit 3**: commands, the present **-(I)yor** with its negative and questions, **-(y)A** *to* (with softening), and **-(y)I** for a specific object.
+
+    Score **70 %** to complete the unit. Wrong answers come back in your reviews.
+
+items:
+  - id: C3.check.01
+    type: mini_dialogue
+    grammar: [g.L15.prog, g.L7.question]
+    turns:
+      - { speaker: A, sentence: s.L15.001 }
+      - { speaker: B, blank: true, answers: ["(Ben) {kitap okuyorum|çay içiyorum|kahve içiyorum|kahvaltı yapıyorum|çalışıyorum|bekliyorum}."] }
+  - id: C3.check.02
+    type: mini_dialogue
+    grammar: [g.L17.dat, g.L15.prog]
+    turns:
+      - { speaker: A, sentence: s.L17.001 }
+      - { speaker: B, blank: true, answers: ["(Ben) {okula|eve|markete|parka|bankaya|hastaneye|İzmir'e|İstanbul'a|Ankara'ya} gidiyorum."] }
+  - { id: C3.check.03, type: type_form, grammar: [g.L15.prog], base: w.gelmek, suffixes: [sfx.prog, sfx.cop_1sg], prompt: "I'm coming", answer: geliyorum, feedback: { gelyorum: "After a consonant, -(I)yor needs its vowel: gel·**i**·yor·um → **geliyorum**.", geliyorım: "-yor never changes, so the ending is always **-um**: **geliyorum**." } }
+  - { id: C3.check.04, type: type_form, grammar: [g.L16.prog_neg_q], base: w.okumak, suffixes: [sfx.neg, sfx.prog, sfx.cop_1sg], prompt: "I'm not reading", answer: okumuyorum, feedback: { okumayorum: "Before -yor, the negative **-mA** becomes **-mI**, following the stem: oku → **mu**: **okumuyorum**.", okumıyorum: "The negative vowel follows the last vowel of **oku**: **u** → **mu**: **okumuyorum**." } }
+  - { id: C3.check.05, type: pick_suffix, grammar: [g.L17.dat], pattern: g.L17.dat.back, base: w.okul, suffix: sfx.dat, options: [a, e, ya, ye], answer: a, feedback: "auto:g.L17.dat" }
+  - { id: C3.check.06, type: pick_suffix, grammar: [g.L18.acc], pattern: g.L18.acc.after_vowel, base: w.kedi, suffix: sfx.acc, options: [yi, i, yı, ı], answer: yi, feedback: "auto:g.L18.acc" }
+  - { id: C3.check.07, type: contrast_pair, grammar: [g.L18.acc], pattern: g.L18.acc.specific, prompt: "I'm eating the apple.", options: [s.L18.002, s.L18.001], answer: s.L18.002 }
+  - { id: C3.check.08, type: translate_to_tr, grammar: [g.L18.acc, g.L15.prog], pattern: g.L18.acc.name, sentence: s.L18.004, word_bank: ["Ali'yi", Ali, görüyorum, görüyor, Aliyi] }
+  - id: C3.check.09
+    type: spot_error
+    grammar: [g.L17.dat]
+    pattern: g.L17.dat.front
+    text: "Otobüsa biniyorum."
+    error: Otobüsa
+    answer: Otobüse
+    sentence: s.L17.006
+    feedback: { otobüsa: "Only the **last** vowel counts: o·to·**bü**s → front → **otobüse**." }
+  - { id: C3.check.10, type: translate_to_en, grammar: [g.L17.dat, g.L15.prog], sentence: s.L17.017 }
+  - { id: C3.check.11, type: dictation, grammar: [g.L16.prog_neg_q], sentence: s.L16.003 }
+  - id: C3.check.12
+    type: qa
+    grammar: [g.L16.prog_neg_q, g.L15.prog]
+    question: s.L16.007
+    answers: ["Evet, (Türkçe) konuşuyorum.", "Hayır, (Türkçe) konuşmuyorum."]
+  - { id: C3.check.13, type: translate_to_tr, grammar: [g.L17.dat, g.L15.prog], pattern: g.L17.dat.verbs, sentence: s.L17.008, typed: true }
+  - { id: C3.check.14, type: translate_to_tr, grammar: [g.L14.imperative], sentence: s.L14.004, typed: true, answers: ["Lütfen oturun."] }

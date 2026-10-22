@@ -139,6 +139,15 @@ function TypedItem({ item, locked, onResult }: ItemProps) {
         </>
       );
       break;
+    case 'translate_to_tr':
+      header = (
+        <>
+          <Instruction>Translate into Turkish</Instruction>
+          {item.images?.map((id) => <Picture key={id} id={id} size={72} />)}
+          <Big>{sentence(item.sentence!).en[0]}</Big>
+        </>
+      );
+      break;
     case 'translate_to_en': {
       const s = sentence(item.sentence!);
       header = (

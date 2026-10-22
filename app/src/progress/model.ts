@@ -5,7 +5,7 @@
 //   word    — a vocabulary item met in a lesson or an unlocked theme pack
 
 import { createEmptyCard, fsrs, generatorParameters, Rating, State, type Card, type Grade } from 'ts-fsrs';
-import { content } from '../content';
+import { content, DEFAULT_PASS } from '../content';
 import type { Item } from '../content/types';
 import type { Status } from '../engine/check';
 import { canReview, knownWords } from '../review/build';
@@ -35,6 +35,8 @@ export interface Progress {
   lastActiveDay?: string; // YYYY-MM-DD, local time
   /** New cards introduced in reviews, per day (daily cap). */
   newIntroduced?: { day: string; count: number };
+  /** End-of-unit checkpoints: best score (0–1) and when it was first passed. */
+  checkpoints?: Record<string, { best: number; passedAt?: string }>;
 }
 
 export const emptyProgress = (): Progress => ({ version: 1, lessons: {}, cards: {}, streak: 0 });
@@ -135,6 +137,30 @@ export function completeLessonSession(
       : { ...prev, practisedAt: now.toISOString(), bestPractise: Math.max(prev.bestPractise ?? 0, share) };
 
   return { ...p, cards, lessons: { ...p.lessons, [lessonId]: lp }, ...touchStreak(p, now) };
+}
+
+/** Checkpoint score: correct answers count 1, "almost" (a missing accent) counts ½. */
+export function checkpointScore(results: SessionResult[]): number {
+  if (!results.length) return 0;
+  const points = results.reduce((sum, r) => sum + (r.status === 'correct' ? 1 : r.status === 'almost' ? 0.5 : 0), 0);
+  return points / results.length;
+}
+
+/** Record a finished checkpoint: best score, first pass, and ratings for the rules it tested. */
+export function completeCheckpoint(p: Progress, checkpointId: string, results: SessionResult[], now: Date): Progress {
+  const cp = content.checkpoints[checkpointId];
+  const cards = { ...p.cards };
+  worstBy(results, (r) => r.item.pattern).forEach((status, patternId) => {
+    if (cards[patternId]) cards[patternId] = rateCard(cards[patternId], status, now);
+  });
+  const score = checkpointScore(results);
+  const prev = p.checkpoints?.[checkpointId];
+  const passed = score >= (cp?.pass ?? DEFAULT_PASS);
+  const record = {
+    best: Math.max(prev?.best ?? 0, score),
+    passedAt: prev?.passedAt ?? (passed ? now.toISOString() : undefined),
+  };
+  return { ...p, cards, checkpoints: { ...p.checkpoints, [checkpointId]: record }, ...touchStreak(p, now) };
 }
 
 /** Record a finished review session. `cardFor` maps item IDs to card IDs. */

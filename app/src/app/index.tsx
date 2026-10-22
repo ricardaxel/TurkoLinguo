@@ -1,5 +1,5 @@
 import { router } from 'expo-router';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { content, lessonOutline } from '../content';
 import { dueCount, nextDue, type LessonProgress } from '../progress/model';
 import { useProgress } from '../progress/ProgressContext';
@@ -52,12 +52,34 @@ export default function Home() {
         <View key={unit.id} style={{ gap: space(2) }}>
           <Text style={styles.unit}>{`${unit.id.replace('U', 'Unit ')} · ${unit.title}`}</Text>
           {unit.lessons.map((l) => (
-            <View key={l.id} style={[styles.row, !l.available && { opacity: 0.55 }]}>
+            <Pressable
+              key={l.id}
+              disabled={!l.available}
+              accessibilityRole="button"
+              accessibilityLabel={`${l.id} ${l.title}`}
+              onPress={() => router.push({
+                pathname: '/session/[lesson]/[session]',
+                params: { lesson: l.id, session: progress.lessons[l.id]?.learnedAt ? 'practise' : 'learn' },
+              })}
+              style={({ pressed }) => [styles.row, !l.available && { opacity: 0.55 }, pressed && { opacity: 0.6 }]}
+            >
               <Text style={styles.lessonId}>{l.id}</Text>
               <Text style={styles.rowTitle}>{l.title}</Text>
               <Text style={styles.status}>{statusText(l.available, progress.lessons[l.id])}</Text>
-            </View>
+            </Pressable>
           ))}
+          {unit.checkpointInfo && (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={`Checkpoint ${unit.checkpointInfo.id}: ${unit.checkpointInfo.title}`}
+              onPress={() => router.push({ pathname: '/checkpoint/[id]', params: { id: unit.checkpointInfo!.id } })}
+              style={({ pressed }) => [styles.row, styles.checkpointRow, pressed && { opacity: 0.6 }]}
+            >
+              <Text style={styles.lessonId}>{unit.checkpointInfo.id}</Text>
+              <Text style={styles.rowTitle}>{`Checkpoint · ${unit.checkpointInfo.title}`}</Text>
+              <Text style={styles.status}>{checkpointStatus(progress.checkpoints?.[unit.checkpointInfo.id])}</Text>
+            </Pressable>
+          )}
         </View>
       ))}
 
@@ -72,6 +94,11 @@ export default function Home() {
       )}
     </ScrollView>
   );
+}
+
+function checkpointStatus(cp?: { best: number; passedAt?: string }) {
+  if (!cp) return 'test';
+  return `${cp.passedAt ? '✓ ' : ''}${Math.round(cp.best * 100)} %`;
 }
 
 function statusText(available: boolean, lp?: LessonProgress) {
@@ -123,6 +150,7 @@ const styles = StyleSheet.create({
   unit: { fontSize: 13, fontWeight: '700', color: colors.muted, textTransform: 'uppercase', letterSpacing: 0.5 },
   card: { backgroundColor: colors.surface, borderRadius: radius, padding: space(4), gap: space(3), borderColor: colors.primary, borderWidth: 2 },
   row: { flexDirection: 'row', alignItems: 'center', gap: space(3), paddingVertical: space(2), borderBottomWidth: 1, borderColor: colors.border },
+  checkpointRow: { backgroundColor: colors.surface, borderRadius: radius, borderWidth: 1, borderColor: colors.accent, paddingHorizontal: space(2), marginTop: space(1) },
   lessonId: { fontSize: 13, fontWeight: '800', color: colors.primary, width: 32 },
   title: { flex: 1, fontSize: 18, fontWeight: '700', color: colors.text },
   rowTitle: { flex: 1, fontSize: 15, color: colors.text },

@@ -24,6 +24,7 @@ content/
   course.yaml              # units, lesson order, grammar point per lesson
   grammar/L10.yaml         # grammar points: reference text, review patterns, feedback templates
   lessons/L10.yaml         # lesson: cards + items for the Learn and Practise sessions
+  checkpoints/C2.yaml      # end-of-unit checkpoint: scenario card + mixed items
   packs/T8.yaml            # vocabulary theme packs
   lexicon/*.yaml           # dictionary entries (any grouping; IDs are global)
   sentences/*.yaml         # example sentences, shared between lessons, packs and reviews
@@ -230,6 +231,21 @@ Items can be image IDs or nested `compose` objects. Write `on_top`, not `on`: YA
 
 Objects with no emoji (table, cupboard, lamp) are drawn as our own SVG icons in `app/src/ui/icons.tsx` (`img.own.table` etc.). A test fails if any image used in the content can't be drawn.
 
+### 4.10 Checkpoint (`checkpoints/`)
+One per unit, named in `course.yaml` (`checkpoint: C2`). A scenario card, then about 14 mixed items covering the whole unit. Items use the same format as lesson items (§4.4) and are named `C2.check.NN`.
+
+```yaml
+id: C2
+unit: U2
+title: "Where is everything?"
+minutes: 6
+pass: 0.7            # optional (default 0.7). Score = (correct + ½ almost) / items
+intro: { kind: summary, title: "...", body: "..." }   # a card (§4.3)
+items: [...]
+```
+
+The validator places a checkpoint just after the unit's last lesson and before the packs that pre-teach the next unit, so it may only use what the unit (and earlier ones) taught. Prefer reusing lesson sentences (they already have translations and planned audio); new sentences go in `sentences/checkpoints.yaml` as `s.C<n>.NNN`. Passing records the unit as complete; every rule the checkpoint tested is rated in the learner's reviews.
+
 ### 4.9 Morphology (`morphology/`)
 `suffixes.yaml` lists every suffix in archiphoneme notation (`form: DA`, `form: (y)I`) with the grammar point that introduces it. `tests.yaml` holds `{lemma, suffixes, expected}` cases: *kitap + loc = kitapta*, *su + acc = suyu*. These tests are shared by the app's form engine and by future validator checks. A case the engine doesn't handle yet can carry `pending: "<reason>"`; no case needs it at the moment, so the app test runs every case (add an `it.failing` block for pending cases when one is needed again).
 
@@ -252,5 +268,4 @@ From Git Bash, set `MSYS_NO_PATHCONV=1` before passing a `/mnt/c/...` path, or G
 
 ## 6. Not decided yet
 - Build target format (`build/content.json` vs SQLite) depends on the tech stack.
-- How checkpoints are described: probably a lesson file with `kind: checkpoint` and items only.
 - Translations of the English UI text, if we ever add other base languages: the `en` fields would become `{en: ..., fr: ...}`.

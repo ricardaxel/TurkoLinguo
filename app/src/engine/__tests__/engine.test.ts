@@ -1,4 +1,4 @@
-import { content, word } from '../../content';
+import { allItems, content, word } from '../../content';
 import { checkTyped, expandPattern } from '../check';
 import { diagnoseForm, renderFeedback } from '../feedback';
 import { inflect } from '../morph';
@@ -84,11 +84,8 @@ describe('locative feedback diagnosis', () => {
   });
 });
 
-describe('content integrity: every lesson answer agrees with the engine and checker', () => {
-  const items = Object.values(content.lessons).flatMap((lesson) => [
-    ...lesson.sessions.learn.items,
-    ...lesson.sessions.practise.items,
-  ]);
+describe('content integrity: every lesson and checkpoint answer agrees with the engine and checker', () => {
+  const items = allItems();
 
   it.each(items.map((i) => [i.id, i]))('%s', (_id, it) => {
     const item = it as (typeof items)[number];

@@ -1,0 +1,53 @@
+# Checkpoint 6 — end of Unit 6 (L30–L32): last weekend.
+id: C6
+unit: U6
+title: "Last weekend"
+minutes: 6
+intro:
+  kind: summary
+  title: "Checkpoint 6: last weekend"
+  body: |
+    📅 It's Monday. Tell a friend what you did at the weekend, where you were, and what you didn't do.
+
+    This checkpoint mixes everything from **Unit 6**: the past **-DI** with its person endings, the negative and questions (*gelmedim*, *Geldin mi?*), and *was / were* **-(y)DI** (*evdeydim*, *vardı / yoktu*).
+
+    Score **70 %** to complete the unit. Wrong answers come back in your reviews.
+
+items:
+  - id: C6.check.01
+    type: mini_dialogue
+    grammar: [g.L30.past, g.L26.time]
+    turns:
+      - { speaker: A, sentence: s.C6.001 }
+      - { speaker: B, blank: true, answers: ["{Film izledim|Kitap okudum|Futbol oynadım|Müzik dinledim|Çalıştım|Uyudum}."] }
+  - id: C6.check.02
+    type: mini_dialogue
+    grammar: [g.L32.copula_past, g.L7.question]
+    turns:
+      - { speaker: A, sentence: s.L32.008 }
+      - { speaker: B, blank: true, answers: ["(Ben) {evdeydim|parktaydım|okuldaydım|İzmir'deydim|İstanbul'daydım|Ankara'daydım}."] }
+  - { id: C6.check.03, type: type_form, grammar: [g.L30.past], pattern: g.L30.past.voiceless, base: w.gitmek, suffixes: [sfx.past, sfx.kpers_1sg], prompt: "I went", answer: gittim, feedback: { gitdim: "**git** ends in **t**, a Fıstıkçı Şahap letter → **-ti**: **gittim**.", gidtim: "-DI starts with a consonant, so the stem doesn't change: **git·ti·m** → **gittim**." } }
+  - { id: C6.check.04, type: type_form, grammar: [g.L31.past_neg_q], pattern: g.L31.past_neg_q.negative, base: w.gelmek, suffixes: [sfx.neg, sfx.past, sfx.kpers_1sg], prompt: "I didn't come", answer: gelmedim, feedback: { gelmetim: "**-mA** ends in a vowel, so the past is always **-dI** after it: **gelmedim**.", gelmiyorum: "That's the present (*I'm not coming*). The past: **gel·me·di·m** → **gelmedim**." } }
+  - { id: C6.check.05, type: type_form, grammar: [g.L32.copula_past], pattern: g.L32.copula_past.loc_1sg, base: w.ev, suffixes: [sfx.loc, sfx.cop_past, sfx.kpers_1sg], prompt: "I was at home", answer: evdeydim, feedback: "auto:g.L32.copula_past" }
+  - { id: C6.check.06, type: contrast_pair, grammar: [g.L31.past_neg_q], pattern: g.L31.past_neg_q.vs_present, prompt: "Did you come?", options: [s.L31.003, s.L31.006], answer: s.L31.003 }
+  - { id: C6.check.07, type: translate_to_tr, grammar: [g.L30.past, g.L17.dat], sentence: s.L30.002, word_bank: [Dün, okula, gittim, gidiyorum, okulda] }
+  - { id: C6.check.08, type: translate_to_tr, grammar: [g.L32.copula_past, g.L10.loc], pattern: g.L32.copula_past.var_yok, sentence: s.L32.013, typed: true }
+  - id: C6.check.09
+    type: spot_error
+    grammar: [g.L31.past_neg_q]
+    pattern: g.L31.past_neg_q.question
+    text: "Geldin misin?"
+    error: misin?
+    answer: mi?
+    sentence: s.L31.003
+    feedback: { misin: "In the past, the person ending stays on the verb (geldi**n**): **mi** carries nothing: **Geldin mi?**" }
+  - { id: C6.check.10, type: translate_to_en, grammar: [g.L30.past, g.L13.clitic_de], sentence: s.L30.016 }
+  - { id: C6.check.11, type: dictation, grammar: [g.L32.copula_past], sentence: s.L32.016 }
+  - id: C6.check.12
+    type: qa
+    grammar: [g.L32.copula_past, g.L7.question]
+    pattern: g.L32.copula_past.question
+    question: s.L32.011
+    answers: ["Evet, (hastaydım).", "Hayır, (hasta) değildim."]
+  - { id: C6.check.13, type: translate_to_tr, grammar: [g.L31.past_neg_q], sentence: s.L31.014, typed: true }
+  - { id: C6.check.14, type: translate_to_tr, grammar: [g.L30.past], sentence: s.T20.001, typed: true }

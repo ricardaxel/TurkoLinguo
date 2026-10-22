@@ -1,0 +1,53 @@
+# Checkpoint 5 — end of Unit 5 (L25–L29): at the market.
+id: C5
+unit: U5
+title: "At the market"
+minutes: 7
+intro:
+  kind: summary
+  title: "Checkpoint 5: at the market"
+  body: |
+    🍅 Saturday morning at the bazaar: ask prices, compare, say what time you get up and how you travel.
+
+    This checkpoint mixes everything from **Unit 5**: numbers and prices, telling the time, **-(y)lA** *with / by*, **-lI / -sIz** and origin (*İzmirli*), and comparing with **daha / en**.
+
+    Score **70 %** to complete the unit. Wrong answers come back in your reviews.
+
+items:
+  - id: C5.check.01
+    type: mini_dialogue
+    grammar: [g.L25.numbers]
+    turns:
+      - { speaker: A, sentence: s.C5.001 }
+      - { speaker: B, blank: true, answers: ["{On|Yirmi|Otuz|Kırk|Elli} lira."] }
+      - { speaker: A, sentence: s.L25.019 }
+  - id: C5.check.02
+    type: mini_dialogue
+    grammar: [g.L28.li_siz, g.L7.question]
+    turns:
+      - { speaker: A, sentence: s.L28.021 }
+      - { speaker: B, blank: true, answers: ["{Sütlü|Sütsüz}(, lütfen)."] }
+  - { id: C5.check.03, type: type_form, grammar: [g.L28.li_siz], pattern: g.L28.li_siz.origin, base: w.Ankara, suffixes: [sfx.li], prompt: "from Ankara (a person)", answer: Ankaralı, feedback: { "Ankara'lı": "No apostrophe: **-lI** makes a new word: **Ankaralı**." } }
+  - { id: C5.check.04, type: type_form, grammar: [g.L27.ile], pattern: g.L27.ile.front, base: w.otobüs, suffixes: [sfx.ins], prompt: "by bus", answer: otobüsle, feedback: { otobüsla: "Only the **last** vowel counts: o·to·**bü**s → **-le**: **otobüsle**.", otobüsyle: "**otobüs** ends in a consonant: no buffer y: **otobüsle**." } }
+  - { id: C5.check.05, type: pick_suffix, grammar: [g.L28.li_siz], pattern: g.L28.li_siz.siz, base: w.şeker, suffix: sfx.siz, options: [siz, sız, suz, süz], answer: siz, feedback: { sız: "The last vowel of **şeker** is **e** → **-siz**: **şekersiz**.", suz: "The last vowel of **şeker** is **e** → **-siz**: **şekersiz**.", süz: "The last vowel of **şeker** is **e** → **-siz**: **şekersiz**." } }
+  - { id: C5.check.06, type: contrast_pair, grammar: [g.L29.comparison], pattern: g.L29.comparison.daha, prompt: "This one is cheaper.", options: [s.L29.004, s.L29.017], answer: s.L29.004 }
+  - { id: C5.check.07, type: translate_to_tr, grammar: [g.L29.comparison, g.L12.abl], pattern: g.L29.comparison.than, sentence: s.L29.013, word_bank: [Çay, kahveden, ucuz, kahvede, daha] }
+  - { id: C5.check.08, type: translate_to_tr, grammar: [g.L26.time, g.L15.prog], pattern: g.L26.time.at_hour, sentence: s.L26.013, typed: true }
+  - id: C5.check.09
+    type: spot_error
+    grammar: [g.L25.numbers]
+    pattern: g.L25.numbers.kac_singular
+    text: "Kaç elmalar var?"
+    error: elmalar
+    answer: elma
+    sentence: s.L25.006
+    feedback: { elmalar: "After **kaç**, the noun stays singular, like after a number: **Kaç elma var?**" }
+  - { id: C5.check.10, type: translate_to_en, grammar: [g.L25.numbers, g.L21.gen], pattern: g.L25.numbers.prices, sentence: s.L25.017 }
+  - { id: C5.check.11, type: dictation, grammar: [g.L25.numbers], pattern: g.L25.numbers.hundreds, sentence: s.L25.002 }
+  - id: C5.check.12
+    type: qa
+    grammar: [g.L26.time, g.L15.prog]
+    question: s.L26.014
+    answers: ["(Saat) {altıda|yedide|sekizde|dokuzda|onda} (kalkıyorum).", "(Saat) {altı|yedi|sekiz} buçukta (kalkıyorum)."]
+  - { id: C5.check.13, type: translate_to_tr, grammar: [g.L27.ile, g.L17.dat], sentence: s.L27.003, typed: true }
+  - { id: C5.check.14, type: translate_to_tr, grammar: [g.L28.li_siz], sentence: s.L28.004, typed: true }
