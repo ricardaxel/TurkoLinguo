@@ -30,7 +30,9 @@ patterns:
   - id: g.L26.time.hour
     description: "Saat kaç? — Saat üç. / Saat üç buçuk. / Saat on iki buçuk = Saat yarım (12:30)"
   - id: g.L26.time.at_hour
-    description: "At what time? Clock number 1–12 + -DA (üçte, altıda, on ikide). Rule-only: word_filter can't restrict to 1–12."
+    description: "At what time? Clock number + -DA (üçte, altıda, onda)"
+    suffix: sfx.loc
+    word_filter: { pos: num, words: [w.bir, w.iki, w.üç, w.dört, w.beş, w.altı, w.yedi, w.sekiz, w.dokuz, w.on] }
   - id: g.L26.time.half
     description: "buçuk / yarım + -DA (üç buçukta, yarımda)"
   - id: g.L26.time.days

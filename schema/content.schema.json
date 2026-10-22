@@ -87,7 +87,8 @@
                   "last_vowel": { "enum": ["back", "front"] },
                   "ends_with": { "enum": ["vowel", "voiceless", "voiced_consonant"] },
                   "last_vowel_differs_from_first": { "type": "boolean" },
-                  "flags": { "type": "array", "items": { "$ref": "#/$defs/flag" } }
+                  "flags": { "type": "array", "items": { "$ref": "#/$defs/flag" } },
+                  "words": { "type": "array", "items": { "$ref": "#/$defs/wordId" }, "minItems": 1, "description": "Only these words (e.g. the clock numbers bir…on for telling the time)." }
                 }
               }
             }

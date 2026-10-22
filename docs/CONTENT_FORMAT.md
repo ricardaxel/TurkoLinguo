@@ -85,7 +85,7 @@ feedback:               # templates used by `feedback: auto:<grammar id>`
   voiceless: "**{word}** ends in **{c}**, one of the Fıstıkçı Şahap letters → **t**: {answer}."
 ```
 
-`word_filter` keys: `pos`, `last_vowel` (`back` | `front`), `ends_with` (`vowel` | `voiceless` | `voiced_consonant`), `flags` (word must have all of them).
+`word_filter` keys: `pos`, `last_vowel` (`back` | `front`), `ends_with` (`vowel` | `voiceless` | `voiced_consonant`), `flags` (word must have all of them), `words` (only these word IDs, e.g. the clock numbers for `g.L26.time.at_hour`).
 
 A pattern that stacks endings uses `suffixes` (a chain) instead of `suffix`: `suffixes: [sfx.loc, sfx.cop_1sg]` → *evdeyim* (L11). A pattern with neither (e.g. the L13 clitic *de/da*) is a rule card with no generated word.
 

@@ -148,6 +148,14 @@ describe('review items', () => {
     expect(matchesFilter(w, { pos: 'adj' })).toBe(false);
   });
 
+  it('a words list restricts the drill to those words (clock numbers only)', () => {
+    const atHour = content.grammar['g.L26.time'].patterns?.find((x) => x.id === 'g.L26.time.at_hour');
+    const nums = Object.values(content.lexicon).filter((w) => matchesFilter(w, atHour?.word_filter)).map((w) => w.lemma);
+    expect(nums).toEqual(expect.arrayContaining(['bir', 'üç', 'on']));
+    expect(nums).not.toContain('yüz');
+    expect(nums).not.toContain('bin');
+  });
+
   it('compounds only match patterns that ask for them', () => {
     const odası = content.lexicon['w.yatak_odası'];
     expect(matchesFilter(odası, { pos: 'noun' })).toBe(false);

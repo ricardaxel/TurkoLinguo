@@ -38,6 +38,7 @@ export function endingVariants(form: string): string[] {
 export function matchesFilter(w: Word, f: Record<string, unknown> = {}): boolean {
   const v = lastVowel(w.lemma);
   if (f.pos && w.pos !== f.pos) return false;
+  if (Array.isArray(f.words) && !f.words.includes(w.id)) return false;
   // words flagged nodrill (az, lazım, nereli…) make nonsense drills: never generate with them
   if ((w.flags ?? []).includes('nodrill')) return false;
   // compounds and irregular words only when the pattern asks for them explicitly (e.g. L24 compounds)
