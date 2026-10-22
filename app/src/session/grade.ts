@@ -77,6 +77,19 @@ function explainSentence(item: Item, expected: string, given: string): string | 
 
 const DEFAULT_ACCENT = 'Almost! **{expected_letter}**, not {given_letter}: **{answer}**.';
 
+/**
+ * The item's hand-written message for this wrong answer, if any. Case, punctuation and spacing
+ * are ignored ("Evet." finds the key "Evet"), but letters aren't (kir ≠ kır).
+ */
+export function explicitFeedback(item: Item, given: string): string | undefined {
+  if (!item.feedback || typeof item.feedback !== 'object') return undefined;
+  const g = normalize(given);
+  for (const [answer, message] of Object.entries(item.feedback)) {
+    if (normalize(answer) === g) return message;
+  }
+  return undefined;
+}
+
 /** Grade a typed (or assembled) answer against accepted answers. */
 export function gradeTyped(item: Item, given: string, accepted: string[], lang: 'tr' | 'en' = 'tr'): ItemResult {
   const r = checkTyped(given, accepted, lang);
@@ -88,22 +101,28 @@ export function gradeTyped(item: Item, given: string, accepted: string[], lang: 
       .replace('{answer}', r.expected);
     return { status: 'almost', message, expected: r.expected };
   }
-  const explicit = typeof item.feedback === 'object' ? item.feedback[given] : undefined;
-  const message = explicit ?? (lang === 'tr' ? explainSentence(item, r.expected, given) : undefined);
+  const message = explicitFeedback(item, given) ?? (lang === 'tr' ? explainSentence(item, r.expected, given) : undefined);
   return { status: 'wrong', message, expected: r.expected };
+}
+
+/** Automatic explanation of a wrong option (ending choice, or a wrong word form among options). */
+function diagnoseChoice(item: Item, chosen: string): string | undefined {
+  if (item.type === 'pick_suffix' && item.base && item.suffix) {
+    const w = word(item.base);
+    const d = diagnoseForm(w, item.suffix, w.lemma + chosen, T);
+    return d ? renderFeedback(d, templates(item)) : undefined;
+  }
+  if (item.type !== 'meaning_choice' && item.answer && !item.answer.startsWith('img.')) {
+    return explainToken(item, item.answer, chosen);
+  }
+  return undefined;
 }
 
 /** Grade a multiple-choice answer. */
 export function gradeChoice(item: Item, chosen: string): ItemResult {
   if (chosen === item.answer) return { status: 'correct' };
-  let message: string | undefined;
-  if (item.type === 'pick_suffix' && item.base && item.suffix) {
-    const w = word(item.base);
-    const d = diagnoseForm(w, item.suffix, w.lemma + chosen, T);
-    if (d) message = renderFeedback(d, templates(item));
-  } else if (item.type !== 'meaning_choice' && item.answer && !item.answer.startsWith('img.')) {
-    message = explainToken(item, item.answer, chosen);
-  }
+  // the author's message for this option wins over the automatic diagnosis
+  const message = explicitFeedback(item, chosen) ?? diagnoseChoice(item, chosen);
   const expected = item.type === 'pick_suffix' ? `${word(item.base!).lemma}${item.answer}` : item.answer;
   return { status: 'wrong', message, expected: expected?.startsWith('img.') ? undefined : expected };
 }

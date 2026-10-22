@@ -1,6 +1,6 @@
 import { content } from '../../content';
 import type { Item } from '../../content/types';
-import { acceptedFor, gradeChoice, gradeTyped, suffixChains } from '../grade';
+import { acceptedFor, explicitFeedback, gradeChoice, gradeTyped, suffixChains } from '../grade';
 
 const items = Object.fromEntries(
   [...content.lessons.L10.sessions.learn.items, ...content.lessons.L10.sessions.practise.items].map((i) => [i.id, i]),
@@ -48,6 +48,51 @@ describe('L10 grading', () => {
 
   it('dictation: is strict about ı', () => {
     expect(typed('L10.practise.12', 'Dolapta süt var mi?').status).toBe('almost');
+  });
+});
+
+describe('hand-written feedback maps', () => {
+  const all = Object.fromEntries(
+    Object.values(content.lessons).flatMap((l) => [...l.sessions.learn.items, ...l.sessions.practise.items]).map((i) => [i.id, i]),
+  );
+  const grade = (id: string, given: string) => {
+    const { accepted, lang } = acceptedFor(all[id]);
+    return gradeTyped(all[id], given, accepted, lang);
+  };
+
+  it('multiple choice shows the message written for the chosen option', () => {
+    const item = all['L12.learn.05'];
+    const map = item.feedback as Record<string, string>;
+    expect(gradeChoice(item, "Londra'dayım").message).toBe(map["Londra'dayım"]);
+  });
+
+  it('typed answers find their message regardless of case and punctuation', () => {
+    const item = all['L6.learn.04'];
+    const map = item.feedback as Record<string, string>;
+    expect(grade('L6.learn.04', 'ben öğretmenim değil.').message).toBe(map['Ben öğretmenim değil']);
+    expect(grade('L6.learn.04', 'BEN ÖĞRETMENİM DEĞİL').message).toBe(map['Ben öğretmenim değil']);
+  });
+
+  it('but never across letters (kir is not kır)', () => {
+    const item = { ...all['L6.learn.04'], feedback: { kır: 'x' } };
+    expect(explicitFeedback(item, 'kir')).toBeUndefined();
+    expect(explicitFeedback(item, 'KIR')).toBe('x');
+  });
+
+  it('every map key is a wrong answer (a key equal to an accepted answer would never show)', () => {
+    const shadowed: string[] = [];
+    for (const item of Object.values(all)) {
+      if (!item.feedback || typeof item.feedback !== 'object') continue;
+      for (const key of Object.keys(item.feedback)) {
+        const ok = item.options
+          ? key === item.answer
+          : item.type === 'build_word'
+            ? key === item.answer
+            : (() => { const { accepted, lang } = acceptedFor(item); return accepted.length > 0 && gradeTyped(item, key, accepted, lang).status === 'correct'; })();
+        if (ok) shadowed.push(`${item.id}: "${key}"`);
+      }
+    }
+    expect(shadowed).toEqual([]);
   });
 });
 

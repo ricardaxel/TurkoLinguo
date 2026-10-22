@@ -7,7 +7,7 @@ import { Inline } from '../ui/Markdown';
 import { Button, Chip, TurkishInput } from '../ui/controls';
 import { Picture, SpeakButton } from '../ui/media';
 import { colors, radius, space } from '../ui/theme';
-import { acceptedFor, gradeChoice, gradeTyped, type ItemResult } from './grade';
+import { acceptedFor, explicitFeedback, gradeChoice, gradeTyped, type ItemResult } from './grade';
 
 export interface ItemProps {
   item: Item;
@@ -210,8 +210,7 @@ function TileItem({ item, locked, onResult }: ItemProps) {
     if (item.type === 'build_word') {
       if (answer === item.answer) onResult({ status: 'correct' });
       else {
-        const explicit = typeof item.feedback === 'object' ? item.feedback[answer] : undefined;
-        onResult({ status: 'wrong', message: explicit, expected: item.answer });
+        onResult({ status: 'wrong', message: explicitFeedback(item, answer), expected: item.answer });
       }
     } else {
       const { accepted } = acceptedFor(item);
