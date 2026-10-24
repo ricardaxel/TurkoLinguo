@@ -58,7 +58,7 @@ sessions:
 
           With "no is" from L3: *Kitaplar yeni.* "The books are new." · *Bu kalemler yeni.* "These pens are new."
         sentences: [s.L4.012]
-        audio: [aud.own.L4_worked_examples]
+        audio: [aud.own.L4_worked_examples_01, aud.own.L4_worked_examples_02, aud.own.L4_worked_examples_03]
 
       - kind: note
         title: "A rebel"

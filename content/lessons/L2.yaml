@@ -77,7 +77,7 @@ sessions:
           | su | u | a | u |
           | ev | e | e | i |
           | gün | ü | e | ü |
-        audio: [aud.own.L2_worked_examples]
+        audio: [aud.own.L2_worked_examples_01, aud.own.L2_worked_examples_02, aud.own.L2_worked_examples_03, aud.own.L2_worked_examples_04]
 
       - kind: note
         title: "Rebels (a teaser)"

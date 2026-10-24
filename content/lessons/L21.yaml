@@ -88,7 +88,7 @@ sessions:
           - kadın → consonant → **-ın** → kadın·**ın**
           - çanta → vowel → **-sı** → çanta·**sı**
           - → **kadının çantası**
-        audio: [aud.own.L21_worked_examples]
+        audio: [aud.own.L21_worked_examples_01, aud.own.L21_worked_examples_02, aud.own.L21_worked_examples_03]
 
     items:
       - { id: L21.learn.01, type: pick_suffix, grammar: [g.L21.gen], pattern: g.L21.gen.cons, base: w.kadın, suffix: sfx.gen, options: [ın, nın, in, un], answer: ın, feedback: { nın: "**kadın** ends in a consonant: **-ın**, no n: kadının.", in: "The last vowel of **kadın** is ı → **-ın**: kadının." } }

@@ -92,7 +92,7 @@ sessions:
           - araba · sı · **n** · ı → *arabasını* "his car" (object)
           - okul · u · **n** · a → *okuluna* "to her school"
           - ev · im · de → *evimde* "in my house" (no n)
-        audio: [aud.own.L24_worked_examples]
+        audio: [aud.own.L24_worked_examples_01, aud.own.L24_worked_examples_02, aud.own.L24_worked_examples_03]
 
     items:
       - { id: L24.learn.01, type: build_word, grammar: [g.L24.poss_case, g.L18.acc], pattern: g.L24.poss_case.acc, tiles: [araba, sı, n, ı], answer: "araba·sı·n·ı", feedback: { "araba·n·sı·ı": "Possessive first, then n, then the case: **araba·sı·n·ı**.", "araba·sı·ı·n": "The **n** goes *between* the possessive and the case: **araba·sı·n·ı**." } }

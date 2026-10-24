@@ -2503,7 +2503,35 @@
        "title": "29 letters",
        "body": "A B C **Ç** D E F G **Ğ** H **I** İ J K L M N O **Ö** P R S **Ş** T U **Ü** V Y Z\n\n- **No q, w or x.** *taksi* \"taxi\", not ~~taxi~~.\n- **8 vowels:** a e **ı** i o **ö** u **ü**.\n- Every letter always has **one** sound. There are no silent letters, except **ğ** (see below).\n",
        "audio": [
-        "aud.own.L1_alphabet"
+        "aud.own.L1_alphabet_01",
+        "aud.own.L1_alphabet_02",
+        "aud.own.L1_alphabet_03",
+        "aud.own.L1_alphabet_04",
+        "aud.own.L1_alphabet_05",
+        "aud.own.L1_alphabet_06",
+        "aud.own.L1_alphabet_07",
+        "aud.own.L1_alphabet_08",
+        "aud.own.L1_alphabet_09",
+        "aud.own.L1_alphabet_10",
+        "aud.own.L1_alphabet_11",
+        "aud.own.L1_alphabet_12",
+        "aud.own.L1_alphabet_13",
+        "aud.own.L1_alphabet_14",
+        "aud.own.L1_alphabet_15",
+        "aud.own.L1_alphabet_16",
+        "aud.own.L1_alphabet_17",
+        "aud.own.L1_alphabet_18",
+        "aud.own.L1_alphabet_19",
+        "aud.own.L1_alphabet_20",
+        "aud.own.L1_alphabet_21",
+        "aud.own.L1_alphabet_22",
+        "aud.own.L1_alphabet_23",
+        "aud.own.L1_alphabet_24",
+        "aud.own.L1_alphabet_25",
+        "aud.own.L1_alphabet_26",
+        "aud.own.L1_alphabet_27",
+        "aud.own.L1_alphabet_28",
+        "aud.own.L1_alphabet_29"
        ]
       },
       {
@@ -2511,7 +2539,12 @@
        "title": "Letters that trick English speakers",
        "body": "| Letter | Sounds like | Example |\n|---|---|---|\n| **c** | **j** in *jam* | *cami* \"mosque\" |\n| **ç** | **ch** in *church* | *çay* \"tea\" |\n| **ş** | **sh** in *ship* | *şu* \"that\" |\n| **ı** (no dot) | the vowel in *ros**e**s*, lips spread | *kız* \"girl\" |\n| **ö** | German **ö**: say *e*, round your lips | *göz* \"eye\" |\n| **ü** | German **ü**: say *i*, round your lips | *gün* \"day\" |\n\n⚠️ **c** is never \"k\" or \"s\": *cam* \"glass\" = \"jam\".\n",
        "audio": [
-        "aud.own.L1_letters"
+        "aud.own.L1_letters_01",
+        "aud.own.L1_letters_02",
+        "aud.own.L1_letters_03",
+        "aud.own.L1_letters_04",
+        "aud.own.L1_letters_05",
+        "aud.own.L1_letters_06"
        ]
       },
       {
@@ -2523,7 +2556,9 @@
        ],
        "audio": [
         "aud.own.s.L1.008",
-        "aud.own.L1_soft_g"
+        "aud.own.L1_soft_g_01",
+        "aud.own.L1_soft_g_02",
+        "aud.own.L1_soft_g_03"
        ]
       },
       {
@@ -2537,7 +2572,11 @@
         "s.L1.003"
        ],
        "audio": [
-        "aud.own.L1_minimal_pairs"
+        "aud.own.L1_minimal_pairs_01",
+        "aud.own.L1_minimal_pairs_02",
+        "aud.own.L1_minimal_pairs_03",
+        "aud.own.L1_minimal_pairs_04",
+        "aud.own.L1_minimal_pairs_05"
        ]
       },
       {
@@ -2951,7 +2990,11 @@
        "title": "Step by step",
        "body": "Two questions, every time: **which vowel?** then **which consonant?**\n\nPlural first, then the location: **ev·ler·de** \"in the houses\".\n",
        "audio": [
-        "aud.own.L10_worked_examples"
+        "aud.own.L10_worked_examples_01",
+        "aud.own.L10_worked_examples_02",
+        "aud.own.L10_worked_examples_03",
+        "aud.own.L10_worked_examples_04",
+        "aud.own.L10_worked_examples_05"
        ],
        "interactive": {
         "component": "suffix_steps",
@@ -3377,7 +3420,9 @@
        "title": "Step by step",
        "body": "Three questions, in order: **which place?** → **-da or -de, d or t?** → **which person?**\n\n- *we · park* → park·**ta** → park·ta·**yız**\n- *you · hospital* → hastane·**de** → hastane·de·**sin**\n- *I · Ankara* → Ankara·**'da** → Ankara'da·**yım**\n",
        "audio": [
-        "aud.own.L11_worked_examples"
+        "aud.own.L11_worked_examples_01",
+        "aud.own.L11_worked_examples_02",
+        "aud.own.L11_worked_examples_03"
        ]
       }
      ],
@@ -7008,7 +7053,10 @@
        "title": "Step by step",
        "body": "Three questions: **vowel or consonant at the end?** → **which vowel?** → **does the word change?**\n\n- *my · kitap* → consonant → -ım → p softens → **kitab·ım**\n- *your · araba* → vowel → **-n** → **araba·n**\n- *his · çocuk* → consonant → -u → k softens → **çocuğ·u**\n- *her · kedi* → vowel → **-si** → **kedi·si**\n",
        "audio": [
-        "aud.own.L19_worked_examples"
+        "aud.own.L19_worked_examples_01",
+        "aud.own.L19_worked_examples_02",
+        "aud.own.L19_worked_examples_03",
+        "aud.own.L19_worked_examples_04"
        ]
       }
      ],
@@ -7421,7 +7469,10 @@
        "title": "Step by step",
        "body": "Two questions, every time: **which is the last vowel?** then **which family / corner?**\n\n| Word | Last vowel | A | I |\n|---|---|---|---|\n| masa | a | a | ı |\n| su | u | a | u |\n| ev | e | e | i |\n| gün | ü | e | ü |\n",
        "audio": [
-        "aud.own.L2_worked_examples"
+        "aud.own.L2_worked_examples_01",
+        "aud.own.L2_worked_examples_02",
+        "aud.own.L2_worked_examples_03",
+        "aud.own.L2_worked_examples_04"
        ]
       },
       {
@@ -7875,7 +7926,18 @@
        "title": "All six",
        "body": "| | after a consonant | after a vowel |\n|---|---|---|\n| my | ev·im | araba·m |\n| your | ev·in | araba·n |\n| his / her | ev·i | araba·sı |\n| our | ev·imiz | araba·mız |\n| your (pl.) | ev·iniz | araba·nız |\n| their | ev·leri | araba·ları |\n\nPronouns for emphasis: **benim, senin, onun, bizim, sizin, onların**.\n",
        "audio": [
-        "aud.own.L20_summary"
+        "aud.own.L20_summary_01",
+        "aud.own.L20_summary_02",
+        "aud.own.L20_summary_03",
+        "aud.own.L20_summary_04",
+        "aud.own.L20_summary_05",
+        "aud.own.L20_summary_06",
+        "aud.own.L20_summary_07",
+        "aud.own.L20_summary_08",
+        "aud.own.L20_summary_09",
+        "aud.own.L20_summary_10",
+        "aud.own.L20_summary_11",
+        "aud.own.L20_summary_12"
        ]
       }
      ],
@@ -8308,7 +8370,9 @@
        "title": "Step by step",
        "body": "*the woman's bag*: **owner** + -(n)In → **thing** + -(s)I\n\n- kadın → consonant → **-ın** → kadın·**ın**\n- çanta → vowel → **-sı** → çanta·**sı**\n- → **kadının çantası**\n",
        "audio": [
-        "aud.own.L21_worked_examples"
+        "aud.own.L21_worked_examples_01",
+        "aud.own.L21_worked_examples_02",
+        "aud.own.L21_worked_examples_03"
        ]
       }
      ],
@@ -9627,7 +9691,9 @@
        "title": "Build the chain",
        "body": "**word · possessive · (n) · case**\n\n- araba · sı · **n** · ı → *arabasını* \"his car\" (object)\n- okul · u · **n** · a → *okuluna* \"to her school\"\n- ev · im · de → *evimde* \"in my house\" (no n)\n",
        "audio": [
-        "aud.own.L24_worked_examples"
+        "aud.own.L24_worked_examples_01",
+        "aud.own.L24_worked_examples_02",
+        "aud.own.L24_worked_examples_03"
        ]
       }
      ],
@@ -10053,7 +10119,18 @@
        "title": "The tens",
        "body": "You know 1–10 (L9). Learn eight new words and you can count to 99:\n\n| | | | |\n|---|---|---|---|\n| 10 **on** | 20 **yirmi** | 30 **otuz** | 40 **kırk** |\n| 50 **elli** | 60 **altmış** | 70 **yetmiş** | 80 **seksen** |\n| 90 **doksan** | | | |\n\nThen just add the units, as **separate words**: on **bir** 11, yirmi **beş** 25, otuz **yedi** 37, doksan **dokuz** 99.\n\n⚠️ Listen carefully: **sekiz** 8 · **on sekiz** 18 · **seksen** 80.\n",
        "audio": [
-        "aud.own.L25_tens"
+        "aud.own.L25_tens_01",
+        "aud.own.L25_tens_02",
+        "aud.own.L25_tens_03",
+        "aud.own.L25_tens_04",
+        "aud.own.L25_tens_05",
+        "aud.own.L25_tens_06",
+        "aud.own.L25_tens_07",
+        "aud.own.L25_tens_08",
+        "aud.own.L25_tens_09",
+        "aud.own.L25_tens_10",
+        "aud.own.L25_tens_11",
+        "aud.own.L25_tens_12"
        ]
       },
       {
@@ -10061,7 +10138,14 @@
        "title": "100 and 1000",
        "body": "**yüz** = 100 and **bin** = 1000. No *bir* in front:\n\n✅ yüz · bin\n❌ ~~bir yüz~~ · ~~bir bin~~\n\nFrom 200, the multiplier goes first: **iki yüz** 200, **üç yüz elli** 350, **iki bin** 2000.\n\n| | |\n|---|---|\n| 125 | yüz yirmi beş |\n| 1453 | bin dört yüz elli üç |\n| 2026 | iki bin yirmi altı |\n\nEvery part is a **separate word**: *yüz yirmi beş*, not ~~yüzyirmibeş~~.\n",
        "audio": [
-        "aud.own.L25_hundreds"
+        "aud.own.L25_hundreds_01",
+        "aud.own.L25_hundreds_02",
+        "aud.own.L25_hundreds_03",
+        "aud.own.L25_hundreds_04",
+        "aud.own.L25_hundreds_05",
+        "aud.own.L25_hundreds_06",
+        "aud.own.L25_hundreds_07",
+        "aud.own.L25_hundreds_08"
        ]
       },
       {
@@ -15545,7 +15629,9 @@
         "s.L4.012"
        ],
        "audio": [
-        "aud.own.L4_worked_examples"
+        "aud.own.L4_worked_examples_01",
+        "aud.own.L4_worked_examples_02",
+        "aud.own.L4_worked_examples_03"
        ]
       },
       {
@@ -15951,7 +16037,9 @@
        "title": "Step by step",
        "body": "Three questions: **who?** → **does the word end in a vowel (buffer y)?** → **which vowel (4-way)?**\n\n- *I · tired* → yorgun + -(y)Im → consonant, no y → u → **yorgun·um**\n- *we · students* → öğrenci + -(y)Iz → vowel, y → i → **öğrenci·yiz**\n- *you · happy* → mutlu + -sIn → u → **mutlu·sun**\n",
        "audio": [
-        "aud.own.L5_worked_examples"
+        "aud.own.L5_worked_examples_01",
+        "aud.own.L5_worked_examples_02",
+        "aud.own.L5_worked_examples_03"
        ]
       }
      ],
@@ -16359,7 +16447,10 @@
         "s.L6.011"
        ],
        "audio": [
-        "aud.own.L6_worked_examples"
+        "aud.own.L6_worked_examples_01",
+        "aud.own.L6_worked_examples_02",
+        "aud.own.L6_worked_examples_03",
+        "aud.own.L6_worked_examples_04"
        ]
       }
      ],
@@ -17614,7 +17705,16 @@
         "s.L9.013"
        ],
        "audio": [
-        "aud.own.L9_numbers"
+        "aud.own.L9_numbers_01",
+        "aud.own.L9_numbers_02",
+        "aud.own.L9_numbers_03",
+        "aud.own.L9_numbers_04",
+        "aud.own.L9_numbers_05",
+        "aud.own.L9_numbers_06",
+        "aud.own.L9_numbers_07",
+        "aud.own.L9_numbers_08",
+        "aud.own.L9_numbers_09",
+        "aud.own.L9_numbers_10"
        ]
       }
      ],
@@ -49592,13 +49692,45 @@
    "status": "planned",
    "text": "Fıstıkçı Şahap (slow, then normal)"
   },
-  "aud.own.L10_worked_examples": {
-   "id": "aud.own.L10_worked_examples",
+  "aud.own.L10_worked_examples_01": {
+   "id": "aud.own.L10_worked_examples_01",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "odada, evde, dolapta, otobüste, evlerde"
+   "text": "odada"
+  },
+  "aud.own.L10_worked_examples_02": {
+   "id": "aud.own.L10_worked_examples_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "evde"
+  },
+  "aud.own.L10_worked_examples_03": {
+   "id": "aud.own.L10_worked_examples_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "dolapta"
+  },
+  "aud.own.L10_worked_examples_04": {
+   "id": "aud.own.L10_worked_examples_04",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "otobüste"
+  },
+  "aud.own.L10_worked_examples_05": {
+   "id": "aud.own.L10_worked_examples_05",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "evlerde"
   },
   "aud.own.s.L10.001": {
    "id": "aud.own.s.L10.001",
@@ -50078,13 +50210,29 @@
    },
    "notes": "Two panels: Ali at home | Ayşe at school (L13)."
   },
-  "aud.own.L11_worked_examples": {
-   "id": "aud.own.L11_worked_examples",
+  "aud.own.L11_worked_examples_01": {
+   "id": "aud.own.L11_worked_examples_01",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "parktayız, hastanedesin, Ankara'dayım"
+   "text": "parktayız"
+  },
+  "aud.own.L11_worked_examples_02": {
+   "id": "aud.own.L11_worked_examples_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "hastanedesin"
+  },
+  "aud.own.L11_worked_examples_03": {
+   "id": "aud.own.L11_worked_examples_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ankara'dayım"
   },
   "aud.own.s.L11.001": {
    "id": "aud.own.s.L11.001",
@@ -52556,37 +52704,181 @@
     ]
    }
   },
-  "aud.own.L19_worked_examples": {
-   "id": "aud.own.L19_worked_examples",
+  "aud.own.L19_worked_examples_01": {
+   "id": "aud.own.L19_worked_examples_01",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "kitabım, araban, çocuğu, kedisi"
+   "text": "kitabım"
   },
-  "aud.own.L20_summary": {
-   "id": "aud.own.L20_summary",
+  "aud.own.L19_worked_examples_02": {
+   "id": "aud.own.L19_worked_examples_02",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "evim, evin, evi, evimiz, eviniz, evleri; arabam, araban, arabası, arabamız, arabanız, arabaları"
+   "text": "araban"
   },
-  "aud.own.L21_worked_examples": {
-   "id": "aud.own.L21_worked_examples",
+  "aud.own.L19_worked_examples_03": {
+   "id": "aud.own.L19_worked_examples_03",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "kadının, çantası, kadının çantası"
+   "text": "çocuğu"
   },
-  "aud.own.L24_worked_examples": {
-   "id": "aud.own.L24_worked_examples",
+  "aud.own.L19_worked_examples_04": {
+   "id": "aud.own.L19_worked_examples_04",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "arabasını, okuluna, evimde"
+   "text": "kedisi"
+  },
+  "aud.own.L20_summary_01": {
+   "id": "aud.own.L20_summary_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "evim"
+  },
+  "aud.own.L20_summary_02": {
+   "id": "aud.own.L20_summary_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "evin"
+  },
+  "aud.own.L20_summary_03": {
+   "id": "aud.own.L20_summary_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "evi"
+  },
+  "aud.own.L20_summary_04": {
+   "id": "aud.own.L20_summary_04",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "evimiz"
+  },
+  "aud.own.L20_summary_05": {
+   "id": "aud.own.L20_summary_05",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "eviniz"
+  },
+  "aud.own.L20_summary_06": {
+   "id": "aud.own.L20_summary_06",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "evleri"
+  },
+  "aud.own.L20_summary_07": {
+   "id": "aud.own.L20_summary_07",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "arabam"
+  },
+  "aud.own.L20_summary_08": {
+   "id": "aud.own.L20_summary_08",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "araban"
+  },
+  "aud.own.L20_summary_09": {
+   "id": "aud.own.L20_summary_09",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "arabası"
+  },
+  "aud.own.L20_summary_10": {
+   "id": "aud.own.L20_summary_10",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "arabamız"
+  },
+  "aud.own.L20_summary_11": {
+   "id": "aud.own.L20_summary_11",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "arabanız"
+  },
+  "aud.own.L20_summary_12": {
+   "id": "aud.own.L20_summary_12",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "arabaları"
+  },
+  "aud.own.L21_worked_examples_01": {
+   "id": "aud.own.L21_worked_examples_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "kadının"
+  },
+  "aud.own.L21_worked_examples_02": {
+   "id": "aud.own.L21_worked_examples_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "çantası"
+  },
+  "aud.own.L21_worked_examples_03": {
+   "id": "aud.own.L21_worked_examples_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "kadının çantası"
+  },
+  "aud.own.L24_worked_examples_01": {
+   "id": "aud.own.L24_worked_examples_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "arabasını"
+  },
+  "aud.own.L24_worked_examples_02": {
+   "id": "aud.own.L24_worked_examples_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "okuluna"
+  },
+  "aud.own.L24_worked_examples_03": {
+   "id": "aud.own.L24_worked_examples_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "evimde"
   },
   "aud.own.s.L19.001": {
    "id": "aud.own.s.L19.001",
@@ -55081,21 +55373,165 @@
    "status": "planned",
    "text": "Hobin ne?"
   },
-  "aud.own.L25_hundreds": {
-   "id": "aud.own.L25_hundreds",
+  "aud.own.L25_hundreds_01": {
+   "id": "aud.own.L25_hundreds_01",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "yüz, iki yüz, üç yüz elli, bin, iki bin; yüz yirmi beş, bin dört yüz elli üç, iki bin yirmi altı"
+   "text": "yüz"
   },
-  "aud.own.L25_tens": {
-   "id": "aud.own.L25_tens",
+  "aud.own.L25_hundreds_02": {
+   "id": "aud.own.L25_hundreds_02",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "on, yirmi, otuz, kırk, elli, altmış, yetmiş, seksen, doksan; sekiz, on sekiz, seksen"
+   "text": "iki yüz"
+  },
+  "aud.own.L25_hundreds_03": {
+   "id": "aud.own.L25_hundreds_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "üç yüz elli"
+  },
+  "aud.own.L25_hundreds_04": {
+   "id": "aud.own.L25_hundreds_04",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "bin"
+  },
+  "aud.own.L25_hundreds_05": {
+   "id": "aud.own.L25_hundreds_05",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "iki bin"
+  },
+  "aud.own.L25_hundreds_06": {
+   "id": "aud.own.L25_hundreds_06",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "yüz yirmi beş"
+  },
+  "aud.own.L25_hundreds_07": {
+   "id": "aud.own.L25_hundreds_07",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "bin dört yüz elli üç"
+  },
+  "aud.own.L25_hundreds_08": {
+   "id": "aud.own.L25_hundreds_08",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "iki bin yirmi altı"
+  },
+  "aud.own.L25_tens_01": {
+   "id": "aud.own.L25_tens_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "on"
+  },
+  "aud.own.L25_tens_02": {
+   "id": "aud.own.L25_tens_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "yirmi"
+  },
+  "aud.own.L25_tens_03": {
+   "id": "aud.own.L25_tens_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "otuz"
+  },
+  "aud.own.L25_tens_04": {
+   "id": "aud.own.L25_tens_04",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "kırk"
+  },
+  "aud.own.L25_tens_05": {
+   "id": "aud.own.L25_tens_05",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "elli"
+  },
+  "aud.own.L25_tens_06": {
+   "id": "aud.own.L25_tens_06",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "altmış"
+  },
+  "aud.own.L25_tens_07": {
+   "id": "aud.own.L25_tens_07",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "yetmiş"
+  },
+  "aud.own.L25_tens_08": {
+   "id": "aud.own.L25_tens_08",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "seksen"
+  },
+  "aud.own.L25_tens_09": {
+   "id": "aud.own.L25_tens_09",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "doksan"
+  },
+  "aud.own.L25_tens_10": {
+   "id": "aud.own.L25_tens_10",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "sekiz"
+  },
+  "aud.own.L25_tens_11": {
+   "id": "aud.own.L25_tens_11",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "on sekiz"
+  },
+  "aud.own.L25_tens_12": {
+   "id": "aud.own.L25_tens_12",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "seksen"
   },
   "img.openmoji.film": {
    "id": "img.openmoji.film",
@@ -56996,77 +57432,541 @@
    },
    "notes": "No eggs (L8: Yumurta yok)."
   },
-  "aud.own.L1_alphabet": {
-   "id": "aud.own.L1_alphabet",
+  "aud.own.L1_alphabet_01": {
+   "id": "aud.own.L1_alphabet_01",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "The 29 letters, one by one: a, be, ce, çe, de, e, fe, ge, yumuşak ge, he, ı, i, je, ke, le, me, ne, o, ö, pe, re, se, şe, te, u, ü, ve, ye, ze"
+   "text": "a"
   },
-  "aud.own.L1_letters": {
-   "id": "aud.own.L1_letters",
+  "aud.own.L1_alphabet_02": {
+   "id": "aud.own.L1_alphabet_02",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "cami, çay, şu, kız, göz, gün"
+   "text": "be"
   },
-  "aud.own.L1_soft_g": {
-   "id": "aud.own.L1_soft_g",
+  "aud.own.L1_alphabet_03": {
+   "id": "aud.own.L1_alphabet_03",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "dağ, yağmur, değil"
+   "text": "ce"
   },
-  "aud.own.L1_minimal_pairs": {
-   "id": "aud.own.L1_minimal_pairs",
+  "aud.own.L1_alphabet_04": {
+   "id": "aud.own.L1_alphabet_04",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "kır, kir; kız, kaz; öl, ol; kül, kul; çam, cam"
+   "text": "çe"
   },
-  "aud.own.L2_worked_examples": {
-   "id": "aud.own.L2_worked_examples",
+  "aud.own.L1_alphabet_05": {
+   "id": "aud.own.L1_alphabet_05",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "masa, su, ev, gün"
+   "text": "de"
   },
-  "aud.own.L4_worked_examples": {
-   "id": "aud.own.L4_worked_examples",
+  "aud.own.L1_alphabet_06": {
+   "id": "aud.own.L1_alphabet_06",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "masalar, kalemler, telefonlar"
+   "text": "e"
   },
-  "aud.own.L5_worked_examples": {
-   "id": "aud.own.L5_worked_examples",
+  "aud.own.L1_alphabet_07": {
+   "id": "aud.own.L1_alphabet_07",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "yorgunum, öğrenciyiz, mutlusun"
+   "text": "fe"
   },
-  "aud.own.L6_worked_examples": {
-   "id": "aud.own.L6_worked_examples",
+  "aud.own.L1_alphabet_08": {
+   "id": "aud.own.L1_alphabet_08",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "Ben açım. Ben aç değilim. Bu bir kitap. Bu bir kitap değil."
+   "text": "ge"
   },
-  "aud.own.L9_numbers": {
-   "id": "aud.own.L9_numbers",
+  "aud.own.L1_alphabet_09": {
+   "id": "aud.own.L1_alphabet_09",
    "kind": "audio",
    "source": "own",
    "license": "OWN",
    "status": "planned",
-   "text": "bir, iki, üç, dört, beş, altı, yedi, sekiz, dokuz, on"
+   "text": "yumuşak ge"
+  },
+  "aud.own.L1_alphabet_10": {
+   "id": "aud.own.L1_alphabet_10",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "he"
+  },
+  "aud.own.L1_alphabet_11": {
+   "id": "aud.own.L1_alphabet_11",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "ı"
+  },
+  "aud.own.L1_alphabet_12": {
+   "id": "aud.own.L1_alphabet_12",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "i"
+  },
+  "aud.own.L1_alphabet_13": {
+   "id": "aud.own.L1_alphabet_13",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "je"
+  },
+  "aud.own.L1_alphabet_14": {
+   "id": "aud.own.L1_alphabet_14",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "ke"
+  },
+  "aud.own.L1_alphabet_15": {
+   "id": "aud.own.L1_alphabet_15",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "le"
+  },
+  "aud.own.L1_alphabet_16": {
+   "id": "aud.own.L1_alphabet_16",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "me"
+  },
+  "aud.own.L1_alphabet_17": {
+   "id": "aud.own.L1_alphabet_17",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "ne"
+  },
+  "aud.own.L1_alphabet_18": {
+   "id": "aud.own.L1_alphabet_18",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "o"
+  },
+  "aud.own.L1_alphabet_19": {
+   "id": "aud.own.L1_alphabet_19",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "ö"
+  },
+  "aud.own.L1_alphabet_20": {
+   "id": "aud.own.L1_alphabet_20",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "pe"
+  },
+  "aud.own.L1_alphabet_21": {
+   "id": "aud.own.L1_alphabet_21",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "re"
+  },
+  "aud.own.L1_alphabet_22": {
+   "id": "aud.own.L1_alphabet_22",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "se"
+  },
+  "aud.own.L1_alphabet_23": {
+   "id": "aud.own.L1_alphabet_23",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "şe"
+  },
+  "aud.own.L1_alphabet_24": {
+   "id": "aud.own.L1_alphabet_24",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "te"
+  },
+  "aud.own.L1_alphabet_25": {
+   "id": "aud.own.L1_alphabet_25",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "u"
+  },
+  "aud.own.L1_alphabet_26": {
+   "id": "aud.own.L1_alphabet_26",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "ü"
+  },
+  "aud.own.L1_alphabet_27": {
+   "id": "aud.own.L1_alphabet_27",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "ve"
+  },
+  "aud.own.L1_alphabet_28": {
+   "id": "aud.own.L1_alphabet_28",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "ye"
+  },
+  "aud.own.L1_alphabet_29": {
+   "id": "aud.own.L1_alphabet_29",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "ze"
+  },
+  "aud.own.L1_letters_01": {
+   "id": "aud.own.L1_letters_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "cami"
+  },
+  "aud.own.L1_letters_02": {
+   "id": "aud.own.L1_letters_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "çay"
+  },
+  "aud.own.L1_letters_03": {
+   "id": "aud.own.L1_letters_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "şu"
+  },
+  "aud.own.L1_letters_04": {
+   "id": "aud.own.L1_letters_04",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "kız"
+  },
+  "aud.own.L1_letters_05": {
+   "id": "aud.own.L1_letters_05",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "göz"
+  },
+  "aud.own.L1_letters_06": {
+   "id": "aud.own.L1_letters_06",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "gün"
+  },
+  "aud.own.L1_soft_g_01": {
+   "id": "aud.own.L1_soft_g_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "dağ"
+  },
+  "aud.own.L1_soft_g_02": {
+   "id": "aud.own.L1_soft_g_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "yağmur"
+  },
+  "aud.own.L1_soft_g_03": {
+   "id": "aud.own.L1_soft_g_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "değil"
+  },
+  "aud.own.L1_minimal_pairs_01": {
+   "id": "aud.own.L1_minimal_pairs_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "kır, kir"
+  },
+  "aud.own.L1_minimal_pairs_02": {
+   "id": "aud.own.L1_minimal_pairs_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "kız, kaz"
+  },
+  "aud.own.L1_minimal_pairs_03": {
+   "id": "aud.own.L1_minimal_pairs_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "öl, ol"
+  },
+  "aud.own.L1_minimal_pairs_04": {
+   "id": "aud.own.L1_minimal_pairs_04",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "kül, kul"
+  },
+  "aud.own.L1_minimal_pairs_05": {
+   "id": "aud.own.L1_minimal_pairs_05",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "çam, cam"
+  },
+  "aud.own.L2_worked_examples_01": {
+   "id": "aud.own.L2_worked_examples_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "masa"
+  },
+  "aud.own.L2_worked_examples_02": {
+   "id": "aud.own.L2_worked_examples_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "su"
+  },
+  "aud.own.L2_worked_examples_03": {
+   "id": "aud.own.L2_worked_examples_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "ev"
+  },
+  "aud.own.L2_worked_examples_04": {
+   "id": "aud.own.L2_worked_examples_04",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "gün"
+  },
+  "aud.own.L4_worked_examples_01": {
+   "id": "aud.own.L4_worked_examples_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "masalar"
+  },
+  "aud.own.L4_worked_examples_02": {
+   "id": "aud.own.L4_worked_examples_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "kalemler"
+  },
+  "aud.own.L4_worked_examples_03": {
+   "id": "aud.own.L4_worked_examples_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "telefonlar"
+  },
+  "aud.own.L5_worked_examples_01": {
+   "id": "aud.own.L5_worked_examples_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "yorgunum"
+  },
+  "aud.own.L5_worked_examples_02": {
+   "id": "aud.own.L5_worked_examples_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "öğrenciyiz"
+  },
+  "aud.own.L5_worked_examples_03": {
+   "id": "aud.own.L5_worked_examples_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "mutlusun"
+  },
+  "aud.own.L6_worked_examples_01": {
+   "id": "aud.own.L6_worked_examples_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben açım."
+  },
+  "aud.own.L6_worked_examples_02": {
+   "id": "aud.own.L6_worked_examples_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben aç değilim."
+  },
+  "aud.own.L6_worked_examples_03": {
+   "id": "aud.own.L6_worked_examples_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu bir kitap."
+  },
+  "aud.own.L6_worked_examples_04": {
+   "id": "aud.own.L6_worked_examples_04",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu bir kitap değil."
+  },
+  "aud.own.L9_numbers_01": {
+   "id": "aud.own.L9_numbers_01",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "bir"
+  },
+  "aud.own.L9_numbers_02": {
+   "id": "aud.own.L9_numbers_02",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "iki"
+  },
+  "aud.own.L9_numbers_03": {
+   "id": "aud.own.L9_numbers_03",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "üç"
+  },
+  "aud.own.L9_numbers_04": {
+   "id": "aud.own.L9_numbers_04",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "dört"
+  },
+  "aud.own.L9_numbers_05": {
+   "id": "aud.own.L9_numbers_05",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "beş"
+  },
+  "aud.own.L9_numbers_06": {
+   "id": "aud.own.L9_numbers_06",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "altı"
+  },
+  "aud.own.L9_numbers_07": {
+   "id": "aud.own.L9_numbers_07",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "yedi"
+  },
+  "aud.own.L9_numbers_08": {
+   "id": "aud.own.L9_numbers_08",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "sekiz"
+  },
+  "aud.own.L9_numbers_09": {
+   "id": "aud.own.L9_numbers_09",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "dokuz"
+  },
+  "aud.own.L9_numbers_10": {
+   "id": "aud.own.L9_numbers_10",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "on"
   },
   "aud.own.s.L1.001": {
    "id": "aud.own.s.L1.001",

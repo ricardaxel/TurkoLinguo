@@ -92,7 +92,7 @@ sessions:
           - *I · tired* → yorgun + -(y)Im → consonant, no y → u → **yorgun·um**
           - *we · students* → öğrenci + -(y)Iz → vowel, y → i → **öğrenci·yiz**
           - *you · happy* → mutlu + -sIn → u → **mutlu·sun**
-        audio: [aud.own.L5_worked_examples]
+        audio: [aud.own.L5_worked_examples_01, aud.own.L5_worked_examples_02, aud.own.L5_worked_examples_03]
 
     items:
       - { id: L5.learn.01, type: pick_suffix, grammar: [g.L5.copula], pattern: g.L5.copula.1sg_consonant, base: w.öğretmen, suffix: sfx.cop_1sg, options: [im, ım, yim], answer: im, feedback: "auto:g.L5.copula" }

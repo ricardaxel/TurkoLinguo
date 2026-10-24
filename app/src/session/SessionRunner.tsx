@@ -1,4 +1,4 @@
-import * as Speech from 'expo-speech';
+import { player } from '../ui/player';
 import { useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -51,7 +51,7 @@ export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summary
 
   const answer = (r: ItemResult) => setAnswers((a) => (a[index] ? a : { ...a, [index]: r }));
   const next = () => {
-    Speech.stop();
+    player.stop();
     if (index + 1 >= steps.length && !completed.current) {
       completed.current = true;
       onComplete(results);
@@ -59,7 +59,7 @@ export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summary
     setIndex(index + 1);
   };
   const previous = () => {
-    Speech.stop();
+    player.stop();
     setIndex(Math.max(0, index - 1));
   };
   const canGoBack = index > 0;

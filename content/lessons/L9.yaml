@@ -62,7 +62,7 @@ sessions:
 
           Number, then adjective, then noun: *dört büyük ev* "four big houses".
         sentences: [s.L9.006, s.L9.007, s.L9.013]
-        audio: [aud.own.L9_numbers]
+        audio: [aud.own.L9_numbers_01, aud.own.L9_numbers_02, aud.own.L9_numbers_03, aud.own.L9_numbers_04, aud.own.L9_numbers_05, aud.own.L9_numbers_06, aud.own.L9_numbers_07, aud.own.L9_numbers_08, aud.own.L9_numbers_09, aud.own.L9_numbers_10]
 
     items:
       - { id: L9.learn.01, type: translate_to_tr, grammar: [g.L9.adj_num], pattern: g.L9.adj_num.adj_bir_noun, sentence: s.L9.001, word_bank: [güzel, bir, ev, büyük], feedback: { "bir güzel ev": "**bir** goes between the adjective and the noun: **güzel bir ev**." } }

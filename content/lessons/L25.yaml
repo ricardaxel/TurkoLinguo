@@ -36,7 +36,7 @@ sessions:
           Then just add the units, as **separate words**: on **bir** 11, yirmi **beş** 25, otuz **yedi** 37, doksan **dokuz** 99.
 
           ⚠️ Listen carefully: **sekiz** 8 · **on sekiz** 18 · **seksen** 80.
-        audio: [aud.own.L25_tens]
+        audio: [aud.own.L25_tens_01, aud.own.L25_tens_02, aud.own.L25_tens_03, aud.own.L25_tens_04, aud.own.L25_tens_05, aud.own.L25_tens_06, aud.own.L25_tens_07, aud.own.L25_tens_08, aud.own.L25_tens_09, aud.own.L25_tens_10, aud.own.L25_tens_11, aud.own.L25_tens_12]
 
       - kind: rule
         title: "100 and 1000"
@@ -55,7 +55,7 @@ sessions:
           | 2026 | iki bin yirmi altı |
 
           Every part is a **separate word**: *yüz yirmi beş*, not ~~yüzyirmibeş~~.
-        audio: [aud.own.L25_hundreds]
+        audio: [aud.own.L25_hundreds_01, aud.own.L25_hundreds_02, aud.own.L25_hundreds_03, aud.own.L25_hundreds_04, aud.own.L25_hundreds_05, aud.own.L25_hundreds_06, aud.own.L25_hundreds_07, aud.own.L25_hundreds_08]
 
       - kind: rule
         title: "kaç = how many"

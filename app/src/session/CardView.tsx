@@ -76,7 +76,7 @@ export function CardView({ card }: { card: Card }) {
       <Markdown body={card.body} />
       {!!card.audio?.length && (
         <View style={styles.row}>
-          {card.audio.map((a) => <SpeakButton key={a} audio={a} label={`🔊  ${audioCaption(a)}`} />)}
+          {card.audio.map((a) => <SpeakButton key={a} audio={a} caption={audioCaption(a)} />)}
         </View>
       )}
       {card.interactive?.component === 'vowel_chart_tap' && <VowelChartTap words={params.words ?? []} />}

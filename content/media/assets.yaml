@@ -52,7 +52,11 @@
 
 # ---------- Audio: our recording session (native speakers, written agreement) ----------
 - { id: aud.own.fistikci_sahap,      kind: audio, source: own, license: OWN, status: planned, text: "Fıstıkçı Şahap (slow, then normal)" }
-- { id: aud.own.L10_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "odada, evde, dolapta, otobüste, evlerde" }
+- { id: aud.own.L10_worked_examples_01, kind: audio, source: own, license: OWN, status: planned, text: "odada" }
+- { id: aud.own.L10_worked_examples_02, kind: audio, source: own, license: OWN, status: planned, text: "evde" }
+- { id: aud.own.L10_worked_examples_03, kind: audio, source: own, license: OWN, status: planned, text: "dolapta" }
+- { id: aud.own.L10_worked_examples_04, kind: audio, source: own, license: OWN, status: planned, text: "otobüste" }
+- { id: aud.own.L10_worked_examples_05, kind: audio, source: own, license: OWN, status: planned, text: "evlerde" }
 - { id: aud.own.s.L10.001, kind: audio, source: own, license: OWN, status: planned, text: "Kedi nerede?" }
 - { id: aud.own.s.L10.002, kind: audio, source: own, license: OWN, status: planned, text: "Kedi kanepede." }
 - { id: aud.own.s.L10.003, kind: audio, source: own, license: OWN, status: planned, text: "Kitap nerede?" }
@@ -129,7 +133,9 @@
       - { layout: at, items: [img.openmoji.woman, img.openmoji.school] }
   notes: "Two panels: Ali at home | Ayşe at school (L13)."
 # Audio: our recording session
-- { id: aud.own.L11_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "parktayız, hastanedesin, Ankara'dayım" }
+- { id: aud.own.L11_worked_examples_01, kind: audio, source: own, license: OWN, status: planned, text: "parktayız" }
+- { id: aud.own.L11_worked_examples_02, kind: audio, source: own, license: OWN, status: planned, text: "hastanedesin" }
+- { id: aud.own.L11_worked_examples_03, kind: audio, source: own, license: OWN, status: planned, text: "Ankara'dayım" }
 - { id: aud.own.s.L11.001, kind: audio, source: own, license: OWN, status: planned, text: "Neredesin?" }
 - { id: aud.own.s.L11.002, kind: audio, source: own, license: OWN, status: planned, text: "Evdeyim." }
 - { id: aud.own.s.L11.003, kind: audio, source: own, license: OWN, status: planned, text: "Ben okuldayım." }
@@ -420,10 +426,28 @@
 - { id: img.own.ayse_with_book, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.woman, img.openmoji.book], compose: { layout: row, items: [img.openmoji.woman, img.openmoji.book] }, notes: "Ayşe and her book (L21)." }
 - { id: img.own.book_in_bag,    kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.book, img.openmoji.bag], compose: { layout: in, items: [img.openmoji.book, img.openmoji.bag] } }
 # Audio: our recording session
-- { id: aud.own.L19_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "kitabım, araban, çocuğu, kedisi" }
-- { id: aud.own.L20_summary,         kind: audio, source: own, license: OWN, status: planned, text: "evim, evin, evi, evimiz, eviniz, evleri; arabam, araban, arabası, arabamız, arabanız, arabaları" }
-- { id: aud.own.L21_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "kadının, çantası, kadının çantası" }
-- { id: aud.own.L24_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "arabasını, okuluna, evimde" }
+- { id: aud.own.L19_worked_examples_01, kind: audio, source: own, license: OWN, status: planned, text: "kitabım" }
+- { id: aud.own.L19_worked_examples_02, kind: audio, source: own, license: OWN, status: planned, text: "araban" }
+- { id: aud.own.L19_worked_examples_03, kind: audio, source: own, license: OWN, status: planned, text: "çocuğu" }
+- { id: aud.own.L19_worked_examples_04, kind: audio, source: own, license: OWN, status: planned, text: "kedisi" }
+- { id: aud.own.L20_summary_01, kind: audio, source: own, license: OWN, status: planned, text: "evim" }
+- { id: aud.own.L20_summary_02, kind: audio, source: own, license: OWN, status: planned, text: "evin" }
+- { id: aud.own.L20_summary_03, kind: audio, source: own, license: OWN, status: planned, text: "evi" }
+- { id: aud.own.L20_summary_04, kind: audio, source: own, license: OWN, status: planned, text: "evimiz" }
+- { id: aud.own.L20_summary_05, kind: audio, source: own, license: OWN, status: planned, text: "eviniz" }
+- { id: aud.own.L20_summary_06, kind: audio, source: own, license: OWN, status: planned, text: "evleri" }
+- { id: aud.own.L20_summary_07, kind: audio, source: own, license: OWN, status: planned, text: "arabam" }
+- { id: aud.own.L20_summary_08, kind: audio, source: own, license: OWN, status: planned, text: "araban" }
+- { id: aud.own.L20_summary_09, kind: audio, source: own, license: OWN, status: planned, text: "arabası" }
+- { id: aud.own.L20_summary_10, kind: audio, source: own, license: OWN, status: planned, text: "arabamız" }
+- { id: aud.own.L20_summary_11, kind: audio, source: own, license: OWN, status: planned, text: "arabanız" }
+- { id: aud.own.L20_summary_12, kind: audio, source: own, license: OWN, status: planned, text: "arabaları" }
+- { id: aud.own.L21_worked_examples_01, kind: audio, source: own, license: OWN, status: planned, text: "kadının" }
+- { id: aud.own.L21_worked_examples_02, kind: audio, source: own, license: OWN, status: planned, text: "çantası" }
+- { id: aud.own.L21_worked_examples_03, kind: audio, source: own, license: OWN, status: planned, text: "kadının çantası" }
+- { id: aud.own.L24_worked_examples_01, kind: audio, source: own, license: OWN, status: planned, text: "arabasını" }
+- { id: aud.own.L24_worked_examples_02, kind: audio, source: own, license: OWN, status: planned, text: "okuluna" }
+- { id: aud.own.L24_worked_examples_03, kind: audio, source: own, license: OWN, status: planned, text: "evimde" }
 - { id: aud.own.s.L19.001, kind: audio, source: own, license: OWN, status: planned, text: "Bu benim evim." }
 - { id: aud.own.s.L19.002, kind: audio, source: own, license: OWN, status: planned, text: "Arabam yeni." }
 - { id: aud.own.s.L19.003, kind: audio, source: own, license: OWN, status: planned, text: "Annem evde." }
@@ -735,8 +759,26 @@
 - { id: aud.own.s.T19.004, kind: audio, source: own, license: OWN, status: planned, text: "Ayşe şarkı söylüyor." }
 - { id: aud.own.s.T19.005, kind: audio, source: own, license: OWN, status: planned, text: "Boş zamanında ne yapıyorsun?" }
 - { id: aud.own.s.T19.006, kind: audio, source: own, license: OWN, status: planned, text: "Hobin ne?" }
-- { id: aud.own.L25_hundreds, kind: audio, source: own, license: OWN, status: planned, text: "yüz, iki yüz, üç yüz elli, bin, iki bin; yüz yirmi beş, bin dört yüz elli üç, iki bin yirmi altı" }
-- { id: aud.own.L25_tens, kind: audio, source: own, license: OWN, status: planned, text: "on, yirmi, otuz, kırk, elli, altmış, yetmiş, seksen, doksan; sekiz, on sekiz, seksen" }
+- { id: aud.own.L25_hundreds_01, kind: audio, source: own, license: OWN, status: planned, text: "yüz" }
+- { id: aud.own.L25_hundreds_02, kind: audio, source: own, license: OWN, status: planned, text: "iki yüz" }
+- { id: aud.own.L25_hundreds_03, kind: audio, source: own, license: OWN, status: planned, text: "üç yüz elli" }
+- { id: aud.own.L25_hundreds_04, kind: audio, source: own, license: OWN, status: planned, text: "bin" }
+- { id: aud.own.L25_hundreds_05, kind: audio, source: own, license: OWN, status: planned, text: "iki bin" }
+- { id: aud.own.L25_hundreds_06, kind: audio, source: own, license: OWN, status: planned, text: "yüz yirmi beş" }
+- { id: aud.own.L25_hundreds_07, kind: audio, source: own, license: OWN, status: planned, text: "bin dört yüz elli üç" }
+- { id: aud.own.L25_hundreds_08, kind: audio, source: own, license: OWN, status: planned, text: "iki bin yirmi altı" }
+- { id: aud.own.L25_tens_01, kind: audio, source: own, license: OWN, status: planned, text: "on" }
+- { id: aud.own.L25_tens_02, kind: audio, source: own, license: OWN, status: planned, text: "yirmi" }
+- { id: aud.own.L25_tens_03, kind: audio, source: own, license: OWN, status: planned, text: "otuz" }
+- { id: aud.own.L25_tens_04, kind: audio, source: own, license: OWN, status: planned, text: "kırk" }
+- { id: aud.own.L25_tens_05, kind: audio, source: own, license: OWN, status: planned, text: "elli" }
+- { id: aud.own.L25_tens_06, kind: audio, source: own, license: OWN, status: planned, text: "altmış" }
+- { id: aud.own.L25_tens_07, kind: audio, source: own, license: OWN, status: planned, text: "yetmiş" }
+- { id: aud.own.L25_tens_08, kind: audio, source: own, license: OWN, status: planned, text: "seksen" }
+- { id: aud.own.L25_tens_09, kind: audio, source: own, license: OWN, status: planned, text: "doksan" }
+- { id: aud.own.L25_tens_10, kind: audio, source: own, license: OWN, status: planned, text: "sekiz" }
+- { id: aud.own.L25_tens_11, kind: audio, source: own, license: OWN, status: planned, text: "on sekiz" }
+- { id: aud.own.L25_tens_12, kind: audio, source: own, license: OWN, status: planned, text: "seksen" }
 # ---------- L30–L35, T20, T21 ----------
 # Images: OpenMoji (CC BY-SA 4.0)
 - { id: img.openmoji.film, kind: image, file: images/openmoji/1F3AC.svg, source: openmoji, source_url: "https://openmoji.org/library/emoji-1F3AC/", author: OpenMoji, license: CC-BY-SA-4.0, status: planned }
@@ -957,15 +999,73 @@
 - { id: img.own.no_cheese, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.cheese, img.openmoji.cross_mark], compose: { layout: row, items: [img.openmoji.cheese, img.openmoji.cross_mark] }, notes: "No cheese (L8: Peynir yok)." }
 - { id: img.own.no_egg, kind: image, source: own, license: CC-BY-SA-4.0, status: planned, modified: true, derived_from: [img.openmoji.egg, img.openmoji.cross_mark], compose: { layout: row, items: [img.openmoji.egg, img.openmoji.cross_mark] }, notes: "No eggs (L8: Yumurta yok)." }
 # Audio: our recording session
-- { id: aud.own.L1_alphabet, kind: audio, source: own, license: OWN, status: planned, text: "The 29 letters, one by one: a, be, ce, çe, de, e, fe, ge, yumuşak ge, he, ı, i, je, ke, le, me, ne, o, ö, pe, re, se, şe, te, u, ü, ve, ye, ze" }
-- { id: aud.own.L1_letters, kind: audio, source: own, license: OWN, status: planned, text: "cami, çay, şu, kız, göz, gün" }
-- { id: aud.own.L1_soft_g, kind: audio, source: own, license: OWN, status: planned, text: "dağ, yağmur, değil" }
-- { id: aud.own.L1_minimal_pairs, kind: audio, source: own, license: OWN, status: planned, text: "kır, kir; kız, kaz; öl, ol; kül, kul; çam, cam" }
-- { id: aud.own.L2_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "masa, su, ev, gün" }
-- { id: aud.own.L4_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "masalar, kalemler, telefonlar" }
-- { id: aud.own.L5_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "yorgunum, öğrenciyiz, mutlusun" }
-- { id: aud.own.L6_worked_examples, kind: audio, source: own, license: OWN, status: planned, text: "Ben açım. Ben aç değilim. Bu bir kitap. Bu bir kitap değil." }
-- { id: aud.own.L9_numbers, kind: audio, source: own, license: OWN, status: planned, text: "bir, iki, üç, dört, beş, altı, yedi, sekiz, dokuz, on" }
+- { id: aud.own.L1_alphabet_01, kind: audio, source: own, license: OWN, status: planned, text: "a" }
+- { id: aud.own.L1_alphabet_02, kind: audio, source: own, license: OWN, status: planned, text: "be" }
+- { id: aud.own.L1_alphabet_03, kind: audio, source: own, license: OWN, status: planned, text: "ce" }
+- { id: aud.own.L1_alphabet_04, kind: audio, source: own, license: OWN, status: planned, text: "çe" }
+- { id: aud.own.L1_alphabet_05, kind: audio, source: own, license: OWN, status: planned, text: "de" }
+- { id: aud.own.L1_alphabet_06, kind: audio, source: own, license: OWN, status: planned, text: "e" }
+- { id: aud.own.L1_alphabet_07, kind: audio, source: own, license: OWN, status: planned, text: "fe" }
+- { id: aud.own.L1_alphabet_08, kind: audio, source: own, license: OWN, status: planned, text: "ge" }
+- { id: aud.own.L1_alphabet_09, kind: audio, source: own, license: OWN, status: planned, text: "yumuşak ge" }
+- { id: aud.own.L1_alphabet_10, kind: audio, source: own, license: OWN, status: planned, text: "he" }
+- { id: aud.own.L1_alphabet_11, kind: audio, source: own, license: OWN, status: planned, text: "ı" }
+- { id: aud.own.L1_alphabet_12, kind: audio, source: own, license: OWN, status: planned, text: "i" }
+- { id: aud.own.L1_alphabet_13, kind: audio, source: own, license: OWN, status: planned, text: "je" }
+- { id: aud.own.L1_alphabet_14, kind: audio, source: own, license: OWN, status: planned, text: "ke" }
+- { id: aud.own.L1_alphabet_15, kind: audio, source: own, license: OWN, status: planned, text: "le" }
+- { id: aud.own.L1_alphabet_16, kind: audio, source: own, license: OWN, status: planned, text: "me" }
+- { id: aud.own.L1_alphabet_17, kind: audio, source: own, license: OWN, status: planned, text: "ne" }
+- { id: aud.own.L1_alphabet_18, kind: audio, source: own, license: OWN, status: planned, text: "o" }
+- { id: aud.own.L1_alphabet_19, kind: audio, source: own, license: OWN, status: planned, text: "ö" }
+- { id: aud.own.L1_alphabet_20, kind: audio, source: own, license: OWN, status: planned, text: "pe" }
+- { id: aud.own.L1_alphabet_21, kind: audio, source: own, license: OWN, status: planned, text: "re" }
+- { id: aud.own.L1_alphabet_22, kind: audio, source: own, license: OWN, status: planned, text: "se" }
+- { id: aud.own.L1_alphabet_23, kind: audio, source: own, license: OWN, status: planned, text: "şe" }
+- { id: aud.own.L1_alphabet_24, kind: audio, source: own, license: OWN, status: planned, text: "te" }
+- { id: aud.own.L1_alphabet_25, kind: audio, source: own, license: OWN, status: planned, text: "u" }
+- { id: aud.own.L1_alphabet_26, kind: audio, source: own, license: OWN, status: planned, text: "ü" }
+- { id: aud.own.L1_alphabet_27, kind: audio, source: own, license: OWN, status: planned, text: "ve" }
+- { id: aud.own.L1_alphabet_28, kind: audio, source: own, license: OWN, status: planned, text: "ye" }
+- { id: aud.own.L1_alphabet_29, kind: audio, source: own, license: OWN, status: planned, text: "ze" }
+- { id: aud.own.L1_letters_01, kind: audio, source: own, license: OWN, status: planned, text: "cami" }
+- { id: aud.own.L1_letters_02, kind: audio, source: own, license: OWN, status: planned, text: "çay" }
+- { id: aud.own.L1_letters_03, kind: audio, source: own, license: OWN, status: planned, text: "şu" }
+- { id: aud.own.L1_letters_04, kind: audio, source: own, license: OWN, status: planned, text: "kız" }
+- { id: aud.own.L1_letters_05, kind: audio, source: own, license: OWN, status: planned, text: "göz" }
+- { id: aud.own.L1_letters_06, kind: audio, source: own, license: OWN, status: planned, text: "gün" }
+- { id: aud.own.L1_soft_g_01, kind: audio, source: own, license: OWN, status: planned, text: "dağ" }
+- { id: aud.own.L1_soft_g_02, kind: audio, source: own, license: OWN, status: planned, text: "yağmur" }
+- { id: aud.own.L1_soft_g_03, kind: audio, source: own, license: OWN, status: planned, text: "değil" }
+- { id: aud.own.L1_minimal_pairs_01, kind: audio, source: own, license: OWN, status: planned, text: "kır, kir" }
+- { id: aud.own.L1_minimal_pairs_02, kind: audio, source: own, license: OWN, status: planned, text: "kız, kaz" }
+- { id: aud.own.L1_minimal_pairs_03, kind: audio, source: own, license: OWN, status: planned, text: "öl, ol" }
+- { id: aud.own.L1_minimal_pairs_04, kind: audio, source: own, license: OWN, status: planned, text: "kül, kul" }
+- { id: aud.own.L1_minimal_pairs_05, kind: audio, source: own, license: OWN, status: planned, text: "çam, cam" }
+- { id: aud.own.L2_worked_examples_01, kind: audio, source: own, license: OWN, status: planned, text: "masa" }
+- { id: aud.own.L2_worked_examples_02, kind: audio, source: own, license: OWN, status: planned, text: "su" }
+- { id: aud.own.L2_worked_examples_03, kind: audio, source: own, license: OWN, status: planned, text: "ev" }
+- { id: aud.own.L2_worked_examples_04, kind: audio, source: own, license: OWN, status: planned, text: "gün" }
+- { id: aud.own.L4_worked_examples_01, kind: audio, source: own, license: OWN, status: planned, text: "masalar" }
+- { id: aud.own.L4_worked_examples_02, kind: audio, source: own, license: OWN, status: planned, text: "kalemler" }
+- { id: aud.own.L4_worked_examples_03, kind: audio, source: own, license: OWN, status: planned, text: "telefonlar" }
+- { id: aud.own.L5_worked_examples_01, kind: audio, source: own, license: OWN, status: planned, text: "yorgunum" }
+- { id: aud.own.L5_worked_examples_02, kind: audio, source: own, license: OWN, status: planned, text: "öğrenciyiz" }
+- { id: aud.own.L5_worked_examples_03, kind: audio, source: own, license: OWN, status: planned, text: "mutlusun" }
+- { id: aud.own.L6_worked_examples_01, kind: audio, source: own, license: OWN, status: planned, text: "Ben açım." }
+- { id: aud.own.L6_worked_examples_02, kind: audio, source: own, license: OWN, status: planned, text: "Ben aç değilim." }
+- { id: aud.own.L6_worked_examples_03, kind: audio, source: own, license: OWN, status: planned, text: "Bu bir kitap." }
+- { id: aud.own.L6_worked_examples_04, kind: audio, source: own, license: OWN, status: planned, text: "Bu bir kitap değil." }
+- { id: aud.own.L9_numbers_01, kind: audio, source: own, license: OWN, status: planned, text: "bir" }
+- { id: aud.own.L9_numbers_02, kind: audio, source: own, license: OWN, status: planned, text: "iki" }
+- { id: aud.own.L9_numbers_03, kind: audio, source: own, license: OWN, status: planned, text: "üç" }
+- { id: aud.own.L9_numbers_04, kind: audio, source: own, license: OWN, status: planned, text: "dört" }
+- { id: aud.own.L9_numbers_05, kind: audio, source: own, license: OWN, status: planned, text: "beş" }
+- { id: aud.own.L9_numbers_06, kind: audio, source: own, license: OWN, status: planned, text: "altı" }
+- { id: aud.own.L9_numbers_07, kind: audio, source: own, license: OWN, status: planned, text: "yedi" }
+- { id: aud.own.L9_numbers_08, kind: audio, source: own, license: OWN, status: planned, text: "sekiz" }
+- { id: aud.own.L9_numbers_09, kind: audio, source: own, license: OWN, status: planned, text: "dokuz" }
+- { id: aud.own.L9_numbers_10, kind: audio, source: own, license: OWN, status: planned, text: "on" }
 - { id: aud.own.s.L1.001, kind: audio, source: own, license: OWN, status: planned, text: "Merhaba!" }
 - { id: aud.own.s.L1.002, kind: audio, source: own, license: OWN, status: planned, text: "kız" }
 - { id: aud.own.s.L1.003, kind: audio, source: own, license: OWN, status: planned, text: "kaz" }

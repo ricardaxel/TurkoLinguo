@@ -71,7 +71,7 @@ sessions:
           Two questions, every time: **which vowel?** then **which consonant?**
 
           Plural first, then the location: **ev·ler·de** "in the houses".
-        audio: [aud.own.L10_worked_examples]
+        audio: [aud.own.L10_worked_examples_01, aud.own.L10_worked_examples_02, aud.own.L10_worked_examples_03, aud.own.L10_worked_examples_04, aud.own.L10_worked_examples_05]
         interactive:
           component: suffix_steps
           params: { words: [w.oda, w.ev, w.dolap, w.otobüs], suffix: sfx.loc }

@@ -63,7 +63,7 @@ sessions:
 
           And a correction: *Ayşe hasta değil, yorgun.* "Ayşe isn't ill, she's tired."
         sentences: [s.L6.014, s.L6.007, s.L6.010, s.L6.011]
-        audio: [aud.own.L6_worked_examples]
+        audio: [aud.own.L6_worked_examples_01, aud.own.L6_worked_examples_02, aud.own.L6_worked_examples_03, aud.own.L6_worked_examples_04]
 
     items:
       - id: L6.learn.01

@@ -201,6 +201,8 @@ revisit: [L10, L19, L24]
 ### 4.8 Media (`media/assets.yaml`)
 Every image and audio file has one entry. The **Credits** screen is generated from these entries.
 
+**Audio comes in short pieces:** one word, one contrast pair (`"kır, kir"`) or one sentence per asset, so each gets its own button that the learner can replay, pause or slow down. A card that lists words lists one audio ID per word (`aud.own.L9_numbers_01` … `_10`). The validator rejects a non-sentence audio text with three or more items or more than one sentence.
+
 ```yaml
 - id: img.openmoji.cat
   kind: image
@@ -268,7 +270,7 @@ From Git Bash, set `MSYS_NO_PATHCONV=1` before passing a `/mnt/c/...` path, or G
    - words: words from lessons up to and including the current one, plus packs unlocked before it.
    It is an **error** if something is used *before* it is taught, and a **warning** if it isn't taught anywhere yet (normal while content is incomplete; `--strict` turns these warnings into errors).
 5. **Item consistency:** answer-pattern syntax (balanced `()` and `{}`); a choice `answer` is one of its `options`; `build_word` tiles match the answer's segments; a `spot_error` error token appears in its text; a `word_bank` contains every word of the target sentence; a `pattern` belongs to the item's main grammar point.
-6. **NFC normalisation** of all text.
+6. **NFC normalisation** of all text; **short audio pieces** (§4.8).
 7. With `--release`: every referenced media file has `status: ready`, no `TTS` audio on `native_required` sentences, no warnings.
 
 ## 6. Not decided yet

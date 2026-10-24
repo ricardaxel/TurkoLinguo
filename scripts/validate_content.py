@@ -308,6 +308,16 @@ def main():
     for rel, words in not_introduced.items():
         rep.warn(rel, f"{len(words)} word(s) used but not introduced in any pack or lesson yet: {', '.join(sorted(words))}")
 
+    # short audio pieces: a list of words is one asset per word (or pair, or sentence), so each
+    # gets its own button and can be replayed, paused and slowed on its own
+    for rel, assets in docs.get("assetsFile", []):
+        for a in assets:
+            # sentence audio (aud.<source>.s.*) says one sentence, whatever its punctuation
+            is_list_audio = a.get("kind") == "audio" and not re.match(r"aud\.\w+\.s\.", a["id"])
+            text = re.sub(r"\([^)]*\)", "", a.get("text", "")) if is_list_audio else ""
+            if len(re.findall(r"[,;]", text)) >= 2 or len(re.findall(r"[.!?](?=\s+\S)", text)) >= 1:
+                rep.error(rel, f"{a['id']}: audio text is a list ({text.strip()!r}); split it into one asset per word, pair or sentence")
+
     # ---------- 6. release checks ----------
     if args.release:
         for mid, (kind, rel, obj) in reg.items():

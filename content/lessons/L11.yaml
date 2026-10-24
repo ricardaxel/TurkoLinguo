@@ -86,7 +86,7 @@ sessions:
           - *we · park* → park·**ta** → park·ta·**yız**
           - *you · hospital* → hastane·**de** → hastane·de·**sin**
           - *I · Ankara* → Ankara·**'da** → Ankara'da·**yım**
-        audio: [aud.own.L11_worked_examples]
+        audio: [aud.own.L11_worked_examples_01, aud.own.L11_worked_examples_02, aud.own.L11_worked_examples_03]
 
     items:
       - { id: L11.learn.01, type: build_word, grammar: [g.L11.loc_copula, g.L5.copula], tiles: [okul, da, yım], answer: "okul·da·yım", feedback: { "okul·yım·da": "Location first, then the person: **okul·da·yım**." } }

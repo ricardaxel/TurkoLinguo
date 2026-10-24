@@ -76,7 +76,7 @@ function ChoiceItem({ item, locked, onResult }: ItemProps) {
     header = (
       <>
         <Instruction>{options.some((o) => o.startsWith('img.')) ? 'Listen and choose the picture' : 'Listen and choose the meaning'}</Instruction>
-        <SpeakButton audio={audioFor(item.sentence!)} label="🔊  Play" />
+        <SpeakButton audio={audioFor(item.sentence!)} caption="Play" />
       </>
     );
   } else if (item.type === 'contrast_pair') {
@@ -166,8 +166,7 @@ function TypedItem({ item, locked, onResult }: ItemProps) {
         <>
           <Instruction>Type what you hear</Instruction>
           <View style={styles.row}>
-            <SpeakButton audio={audioFor(item.sentence!)} label="🔊  Play" />
-            <SpeakButton audio={audioFor(item.sentence!)} label="🐢  Slow" slow />
+            <SpeakButton audio={audioFor(item.sentence!)} caption="Play" />
           </View>
         </>
       );

@@ -86,7 +86,7 @@ sessions:
           | their | ev·leri | araba·ları |
 
           Pronouns for emphasis: **benim, senin, onun, bizim, sizin, onların**.
-        audio: [aud.own.L20_summary]
+        audio: [aud.own.L20_summary_01, aud.own.L20_summary_02, aud.own.L20_summary_03, aud.own.L20_summary_04, aud.own.L20_summary_05, aud.own.L20_summary_06, aud.own.L20_summary_07, aud.own.L20_summary_08, aud.own.L20_summary_09, aud.own.L20_summary_10, aud.own.L20_summary_11, aud.own.L20_summary_12]
 
     items:
       - { id: L20.learn.01, type: type_form, grammar: [g.L20.poss_pl], pattern: g.L20.poss_pl.cons_1pl, base: w.ev, suffixes: [sfx.poss_1pl], prompt: "our house", answer: evimiz, feedback: { evmiz: "**ev** ends in a consonant, so the ending starts with a vowel: **ev·imiz**.", evımız: "**ev** has a front vowel (e) → **-imiz**: evimiz." } }

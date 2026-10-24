@@ -28,7 +28,7 @@ sessions:
           - **No q, w or x.** *taksi* "taxi", not ~~taxi~~.
           - **8 vowels:** a e **ı** i o **ö** u **ü**.
           - Every letter always has **one** sound. There are no silent letters, except **ğ** (see below).
-        audio: [aud.own.L1_alphabet]
+        audio: [aud.own.L1_alphabet_01, aud.own.L1_alphabet_02, aud.own.L1_alphabet_03, aud.own.L1_alphabet_04, aud.own.L1_alphabet_05, aud.own.L1_alphabet_06, aud.own.L1_alphabet_07, aud.own.L1_alphabet_08, aud.own.L1_alphabet_09, aud.own.L1_alphabet_10, aud.own.L1_alphabet_11, aud.own.L1_alphabet_12, aud.own.L1_alphabet_13, aud.own.L1_alphabet_14, aud.own.L1_alphabet_15, aud.own.L1_alphabet_16, aud.own.L1_alphabet_17, aud.own.L1_alphabet_18, aud.own.L1_alphabet_19, aud.own.L1_alphabet_20, aud.own.L1_alphabet_21, aud.own.L1_alphabet_22, aud.own.L1_alphabet_23, aud.own.L1_alphabet_24, aud.own.L1_alphabet_25, aud.own.L1_alphabet_26, aud.own.L1_alphabet_27, aud.own.L1_alphabet_28, aud.own.L1_alphabet_29]
 
       - kind: rule
         title: "Letters that trick English speakers"
@@ -43,7 +43,7 @@ sessions:
           | **ü** | German **ü**: say *i*, round your lips | *gün* "day" |
 
           ⚠️ **c** is never "k" or "s": *cam* "glass" = "jam".
-        audio: [aud.own.L1_letters]
+        audio: [aud.own.L1_letters_01, aud.own.L1_letters_02, aud.own.L1_letters_03, aud.own.L1_letters_04, aud.own.L1_letters_05, aud.own.L1_letters_06]
 
       - kind: rule
         title: "The soft g: ğ"
@@ -55,7 +55,7 @@ sessions:
           - **ğ never starts a word.** No Turkish word begins with ğ.
           - After **e** or **i** it often sounds like a light *y*: *değil* "not" ≈ "deyil".
         sentences: [s.L1.008]
-        audio: [aud.own.s.L1.008, aud.own.L1_soft_g]
+        audio: [aud.own.s.L1.008, aud.own.L1_soft_g_01, aud.own.L1_soft_g_02, aud.own.L1_soft_g_03]
 
       - kind: rule
         title: "Dots change the word"
@@ -72,7 +72,7 @@ sessions:
 
           So the app never accepts *kir* for *kır*: it tells you which letter is missing.
         sentences: [s.L1.004, s.L1.005, s.L1.002, s.L1.003]
-        audio: [aud.own.L1_minimal_pairs]
+        audio: [aud.own.L1_minimal_pairs_01, aud.own.L1_minimal_pairs_02, aud.own.L1_minimal_pairs_03, aud.own.L1_minimal_pairs_04, aud.own.L1_minimal_pairs_05]
 
       - kind: rule
         title: "Capital letters"

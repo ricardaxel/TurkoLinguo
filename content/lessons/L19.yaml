@@ -103,7 +103,7 @@ sessions:
           - *your · araba* → vowel → **-n** → **araba·n**
           - *his · çocuk* → consonant → -u → k softens → **çocuğ·u**
           - *her · kedi* → vowel → **-si** → **kedi·si**
-        audio: [aud.own.L19_worked_examples]
+        audio: [aud.own.L19_worked_examples_01, aud.own.L19_worked_examples_02, aud.own.L19_worked_examples_03, aud.own.L19_worked_examples_04]
 
     items:
       - { id: L19.learn.01, type: type_form, grammar: [g.L19.poss_sg], pattern: g.L19.poss_sg.cons_1sg, base: w.ev, suffixes: [sfx.poss_1sg], prompt: "my house", answer: evim, feedback: { evım: "**ev** has a front vowel (e) → **-im**: evim.", evm: "**ev** ends in a consonant, so the ending starts with a vowel: **ev·im**." } }

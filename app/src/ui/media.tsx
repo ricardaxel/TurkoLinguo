@@ -2,11 +2,12 @@
 // as our own SVG icons, composites arranged by their `compose` layout; audio is spoken with the
 // device's text-to-speech (a placeholder until native recordings exist, see VOCABULARY.md §6).
 
-import * as Speech from 'expo-speech';
+import { useEffect, useId } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { content } from '../content';
 import { OwnIconView } from './icons';
 import { resolveImage, type ImageNode } from './imageModel';
+import { NORMAL_RATE, player, SLOW_RATE, usePlayer, type Utterance } from './player';
 import { colors, radius, space } from './theme';
 
 /** Draw one image node at `size` (the height of a single object). */
@@ -97,24 +98,60 @@ function audioText(audioId: string): { text: string; slowFirst: boolean } {
 export const audioCaption = (audioIdOrText: string) =>
   audioIdOrText.startsWith('aud.') ? audioText(audioIdOrText).text : audioIdOrText;
 
-export function speak(audioIdOrText: string, rate = 0.9) {
+/** What to say for an audio ID or a plain text, at the given speed. */
+export function utterancesFor(audioIdOrText: string, rate: number): Utterance[] {
   const isId = audioIdOrText.startsWith('aud.');
   const { text, slowFirst } = isId ? audioText(audioIdOrText) : { text: audioIdOrText, slowFirst: false };
-  Speech.stop();
-  if (slowFirst) Speech.speak(text, { language: 'tr-TR', rate: 0.5 });
-  Speech.speak(text, { language: 'tr-TR', rate });
+  // "slow, then normal" assets: the slow button just says it slowly once
+  return slowFirst && rate !== SLOW_RATE ? [{ text, rate: SLOW_RATE }, { text, rate }] : [{ text, rate }];
 }
 
-export function SpeakButton({ audio, label = '🔊', slow = false }: { audio: string; label?: string; slow?: boolean }) {
+/**
+ * Audio button: one pill with two parts. The main part plays the audio, then pauses and resumes it;
+ * the 🐢 part, always offered, plays it slowly.
+ */
+export function SpeakButton({ audio, caption }: { audio: string; caption?: string }) {
+  const key = useId();
+  const { owner, status } = usePlayer();
+  const mine = owner === key;
+  const playing = mine && status === 'playing';
+  const paused = mine && status === 'paused';
+  const text = audioCaption(audio);
+
+  // leaving the screen stops this button's audio
+  useEffect(() => () => {
+    if (player.getState().owner === key) player.stop();
+  }, [key]);
+
+  const onMain = () => {
+    if (playing) player.pause();
+    else if (paused) player.resume();
+    else player.play(key, utterancesFor(audio, NORMAL_RATE));
+  };
+  const icon = playing ? '⏸' : paused ? '▶' : '🔊';
+  const action = playing ? 'Pause' : paused ? 'Resume' : 'Play';
+
   return (
-    <Pressable
-      accessibilityRole="button"
-      accessibilityLabel={`Play: ${audioCaption(audio)}`}
-      onPress={() => speak(audio, slow ? 0.5 : 0.9)}
-      style={({ pressed }) => [styles.speak, pressed && { opacity: 0.6 }]}
-    >
-      <Text style={styles.speakText}>{label}</Text>
-    </Pressable>
+    <View style={[styles.speak, mine && styles.speakActive]}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={`${action}: ${text}`}
+        onPress={onMain}
+        style={({ pressed }) => [styles.speakPart, pressed && { opacity: 0.6 }]}
+      >
+        <Text style={styles.speakText}>{caption ? `${icon}  ${caption}` : icon}</Text>
+      </Pressable>
+      <View style={styles.speakDivider} />
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={`Play slowly: ${text}`}
+        onPress={() => player.play(key, utterancesFor(audio, SLOW_RATE))}
+        style={({ pressed }) => [styles.speakPart, pressed && { opacity: 0.6 }]}
+        hitSlop={4}
+      >
+        <Text style={styles.speakText}>🐢</Text>
+      </Pressable>
+    </View>
   );
 }
 
@@ -126,6 +163,9 @@ const styles = StyleSheet.create({
   panelDivider: { borderLeftWidth: 2, borderColor: colors.border },
   label: { borderWidth: 1, borderColor: colors.border, borderRadius: 8, paddingHorizontal: space(2), paddingVertical: space(1), backgroundColor: colors.surface },
   labelText: { fontSize: 15, color: colors.muted, fontStyle: 'italic' },
-  speak: { backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border, borderRadius: radius, paddingHorizontal: space(3), paddingVertical: space(2), alignSelf: 'flex-start' },
+  speak: { flexDirection: 'row', alignItems: 'stretch', backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border, borderRadius: radius, alignSelf: 'flex-start', overflow: 'hidden' },
+  speakActive: { borderColor: colors.primary },
+  speakPart: { paddingHorizontal: space(3), paddingVertical: space(2), justifyContent: 'center' },
+  speakDivider: { width: 1, backgroundColor: colors.border },
   speakText: { fontSize: 20 },
 });
