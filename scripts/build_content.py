@@ -52,6 +52,7 @@ def main():
         "suffixes": by_id(load("morphology/suffixes.yaml")),
         "morphTests": load("morphology/tests.yaml"),
         "assets": by_id(load("media/assets.yaml")),
+        "talkFrame": load("talk/partner_frame.yaml"),
     }
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(bundle, ensure_ascii=False, indent=1), encoding="utf-8")

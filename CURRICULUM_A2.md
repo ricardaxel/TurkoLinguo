@@ -2,6 +2,8 @@
 
 Continues the A1 course ([CURRICULUM.md](CURRICULUM.md)): same principles (one rule per lesson, rule card → examples → practice with explained feedback → spaced review), same notation (A I D C K, (y) (n) (s) buffers), same content format ([docs/CONTENT_FORMAT.md](docs/CONTENT_FORMAT.md)).
 
+**Talk tasks:** every A2 lesson's Practise ends with a talk task, and every checkpoint has one (a `talk` block, see [docs/TALK_TASKS.md](docs/TALK_TASKS.md)). Its §6 has a draft task for each of L36–L64; write it with the lesson, from the start.
+
 **Numbering continues:** lessons **L36–L64**, units **U8–U13**, checkpoints **C8–C13**, theme packs **T22–T31**.
 
 **Size:** 29 lessons + 6 checkpoints ≈ 64 core sessions. Vocabulary target: about **+650 words** (A1 ≈ 490 in the lexicon so far → ≈ 1,150 by the end of A2).
@@ -269,8 +271,8 @@ Every new suffix gets its own block in `content/morphology/tests.yaml` **before*
 The approach that worked for A1:
 
 1. **Engine first:** a session adds the A2 suffixes and the `aorist_ir` flag, with test cases for every form in §3.
-2. **One writing session per unit** (U8–U13, in parallel, in separate worktrees), each with its theme packs and checkpoint, following the L10 model and this outline.
-3. **A Turkish review** of each unit (sentences, grammar cards, feedback messages), as for A1.
+2. **One writing session per unit** (U8–U13, in parallel, in separate worktrees), each with its theme packs and checkpoint, following the L10 model and this outline. Each lesson and checkpoint includes its talk task ([docs/TALK_TASKS.md](docs/TALK_TASKS.md) §5–§6); new talk sentences go in `content/sentences/talk.yaml`.
+3. **A Turkish review** of each unit (sentences, grammar cards, feedback messages, talk tasks and their partner texts), as for A1.
 4. **Integration** in one branch, with the duplicate-ID merge script, then a single merge into `master`.
 
 ---

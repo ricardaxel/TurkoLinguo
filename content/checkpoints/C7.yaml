@@ -51,3 +51,22 @@ items:
   - { id: C7.check.12, type: translate_to_tr, grammar: [g.L35.lazim, g.L17.dat], pattern: g.L35.lazim.dative, sentence: s.L35.012, typed: true }
   - { id: C7.check.13, type: translate_to_tr, grammar: [g.L34.istemek, g.L17.dat], sentence: s.L34.009, typed: true }
   - { id: C7.check.14, type: translate_to_tr, grammar: [g.L24.poss_case, g.L19.poss_sg], sentence: s.T21.003, typed: true }
+
+talk:
+  id: C7.talk
+  kind: free_chat
+  minutes: 6
+  title: "Final A1 chat"
+  how:
+    - "Ask what your partner did yesterday, and what they'll do next week."
+    - "Say what you want to do, and what you need to do."
+    - "Find one plan you could do together."
+  phrases: [s.L30.024, s.L33.018, s.L34.003, s.L35.017, s.L34.018]
+  goals:
+    - "I talked about the past"
+    - "I talked about plans"
+    - "I said what I want and need to do"
+  partner:
+    topic: "A1 sonu sohbeti: dün, bugün ve yarın"
+    knows: "geçmiş, şimdiki ve gelecek zaman (gittim, gidiyorum, gideceğim); istemek (gitmek istiyorum); lazım (gitmem lazım)"
+    questions: [s.L30.024, s.C7.001, s.L34.003, s.talk.L35.001]

@@ -169,3 +169,22 @@ sessions:
           - { speaker: A, blank: true, answers: ["{Bu ne kadar|Bu kaç lira|Ne kadar|Kaç lira}?", "Bu ceket {ne kadar|kaç lira}?"] }
           - { speaker: B, sentence: s.L25.010 }
           - { speaker: A, sentence: s.L25.019 }
+
+    talk:
+      id: L25.talk
+      kind: roleplay
+      minutes: 3
+      title: "At the market"
+      how:
+        - "Your partner is the seller. Ask for something: Bir kilo domates, lütfen."
+        - "Ask the price: Kaç lira? Bu ne kadar?"
+        - "Pay and count the change. Then swap: you're the seller."
+      phrases: [s.T16.001, s.L25.001, s.L25.003, s.L25.017, s.L25.019]
+      goals:
+        - "I bought something"
+        - "I understood the price"
+        - "I said a price as the seller"
+      partner:
+        topic: "pazarda alışveriş"
+        knows: "sayılar (bine kadar), fiyatlar (Kaç lira? Bu ne kadar?), yaş (Kaç yaşındasın?)"
+        questions: [s.L25.018, s.L25.027, s.L25.013, s.L25.007]

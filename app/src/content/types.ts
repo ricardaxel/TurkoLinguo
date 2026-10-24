@@ -115,8 +115,39 @@ export interface Lesson {
   new_words?: string[];
   sessions: {
     learn: { minutes?: number; cards: Card[]; items: Item[] };
-    practise: { minutes?: number; items: Item[] };
+    practise: { minutes?: number; items: Item[]; talk?: Talk };
   };
+}
+
+export type TalkKind =
+  | 'sounds' | 'point_and_name' | 'introduce' | 'interview' | 'guess' | 'correct_me' | 'hide_and_find'
+  | 'act_it' | 'roleplay' | 'plan' | 'tell' | 'listen_report' | 'free_chat';
+
+/** Talk task: a short conversation with a Turkish speaker after Practise (docs/TALK_TASKS.md §5). */
+export interface Talk {
+  id: string; // <lesson or checkpoint>.talk
+  kind: TalkKind;
+  minutes: number;
+  title: string;
+  how: string[];
+  /** Sentence IDs the learner prepares (audio + English). */
+  phrases: string[];
+  goals: string[];
+  partner: { topic: string; knows: string; questions: string[] };
+  requires?: 'survival'[];
+}
+
+/** The fixed Turkish frame of the partner card (content/talk/partner_frame.yaml). */
+export interface PartnerFrame {
+  greeting: string;
+  intro: string;
+  rules: string[];
+  topic_label: string;
+  knows_label: string;
+  questions_label: string;
+  closing: string;
+  /** The learner's "If you're stuck" sentence IDs. */
+  survival: string[];
 }
 
 /** How a composite image arranges its parts (first item = the object, second = where it is). */
@@ -153,6 +184,7 @@ export interface Checkpoint {
   pass?: number;
   intro: Card;
   items: Item[];
+  talk?: Talk;
 }
 
 export interface Bundle {
@@ -167,4 +199,5 @@ export interface Bundle {
   suffixes: Record<string, Suffix>;
   morphTests: { word: string; suffixes: string[]; expected: string; note?: string }[];
   assets: Record<string, Asset>;
+  talkFrame: PartnerFrame;
 }

@@ -1237,3 +1237,63 @@
 - { id: aud.own.s.C5.001, kind: audio, source: own, license: OWN, status: planned, text: "Domatesin kilosu kaç lira?" }
 - { id: aud.own.s.C6.001, kind: audio, source: own, license: OWN, status: planned, text: "Hafta sonu ne yaptın?" }
 - { id: aud.own.s.C7.001, kind: audio, source: own, license: OWN, status: planned, text: "Gelecek hafta nereye gideceksin?" }
+
+# --- talk tasks (content/sentences/talk.yaml) ---
+- { id: aud.own.s.talk.survival.001, kind: audio, source: own, license: OWN, status: planned, text: "Tekrar eder misiniz?" }
+- { id: aud.own.s.talk.survival.002, kind: audio, source: own, license: OWN, status: planned, text: "Daha yavaş konuşur musunuz?" }
+- { id: aud.own.s.talk.L6.001, kind: audio, source: own, license: OWN, status: planned, text: "Sen Fransızsın." }
+- { id: aud.own.s.talk.L6.002, kind: audio, source: own, license: OWN, status: planned, text: "Sen doktorsun." }
+- { id: aud.own.s.talk.L7.001, kind: audio, source: own, license: OWN, status: planned, text: "Doktor musun?" }
+- { id: aud.own.s.talk.L7.002, kind: audio, source: own, license: OWN, status: planned, text: "Öğretmen misin?" }
+- { id: aud.own.s.talk.L7.003, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, doktor değilim." }
+- { id: aud.own.s.talk.L8.001, kind: audio, source: own, license: OWN, status: planned, text: "Süt var mı?" }
+- { id: aud.own.s.talk.L10.001, kind: audio, source: own, license: OWN, status: planned, text: "Masada mı?" }
+- { id: aud.own.s.talk.L10.002, kind: audio, source: own, license: OWN, status: planned, text: "Çantada mı?" }
+- { id: aud.own.s.talk.L11.001, kind: audio, source: own, license: OWN, status: planned, text: "Ahmet Ankara'da mı?" }
+- { id: aud.own.s.talk.L12.001, kind: audio, source: own, license: OWN, status: planned, text: "İzmir'den mi?" }
+- { id: aud.own.s.talk.L13.001, kind: audio, source: own, license: OWN, status: planned, text: "Ben de öğretmenim." }
+- { id: aud.own.s.talk.L15.001, kind: audio, source: own, license: OWN, status: planned, text: "Kitap okuyorsun!" }
+- { id: aud.own.s.talk.L15.002, kind: audio, source: own, license: OWN, status: planned, text: "Çay içiyorsun!" }
+- { id: aud.own.s.talk.L16.001, kind: audio, source: own, license: OWN, status: planned, text: "Hayır, yemiyorum. İçiyorum." }
+- { id: aud.own.s.talk.L16.002, kind: audio, source: own, license: OWN, status: planned, text: "Ekmek yiyorsun!" }
+- { id: aud.own.s.talk.L16.003, kind: audio, source: own, license: OWN, status: planned, text: "Uyuyor musun?" }
+- { id: aud.own.s.talk.L17.001, kind: audio, source: own, license: OWN, status: planned, text: "Markete gidiyorum." }
+- { id: aud.own.s.talk.L17.002, kind: audio, source: own, license: OWN, status: planned, text: "Okula mı gidiyorsun?" }
+- { id: aud.own.s.talk.L18.001, kind: audio, source: own, license: OWN, status: planned, text: "Kalemi al!" }
+- { id: aud.own.s.talk.L18.002, kind: audio, source: own, license: OWN, status: planned, text: "Kitabı oku!" }
+- { id: aud.own.s.talk.L18.003, kind: audio, source: own, license: OWN, status: planned, text: "Ekmeği ye!" }
+- { id: aud.own.s.talk.L19.001, kind: audio, source: own, license: OWN, status: planned, text: "Bu benim telefonum." }
+- { id: aud.own.s.talk.L19.002, kind: audio, source: own, license: OWN, status: planned, text: "Bu senin çantan mı?" }
+- { id: aud.own.s.talk.L20.001, kind: audio, source: own, license: OWN, status: planned, text: "Sizin eviniz büyük mü?" }
+- { id: aud.own.s.talk.L21.001, kind: audio, source: own, license: OWN, status: planned, text: "Bu kimin kalemi?" }
+- { id: aud.own.s.talk.L23.001, kind: audio, source: own, license: OWN, status: planned, text: "Kedin var mı?" }
+- { id: aud.own.s.talk.L24.001, kind: audio, source: own, license: OWN, status: planned, text: "Telefonum çantamda." }
+- { id: aud.own.s.talk.L24.002, kind: audio, source: own, license: OWN, status: planned, text: "Kardeşin nerede?" }
+- { id: aud.own.s.talk.L24.003, kind: audio, source: own, license: OWN, status: planned, text: "Kardeşim İstanbul'da." }
+- { id: aud.own.s.talk.L26.001, kind: audio, source: own, license: OWN, status: planned, text: "Pazartesi ne yapıyorsun?" }
+- { id: aud.own.s.talk.L26.002, kind: audio, source: own, license: OWN, status: planned, text: "Cumartesi evde misin?" }
+- { id: aud.own.s.talk.L27.001, kind: audio, source: own, license: OWN, status: planned, text: "Okula nasıl gidiyorsun?" }
+- { id: aud.own.s.talk.L28.001, kind: audio, source: own, license: OWN, status: planned, text: "Şekersiz bir çay, lütfen." }
+- { id: aud.own.s.talk.L28.002, kind: audio, source: own, license: OWN, status: planned, text: "Şekerli mi, şekersiz mi?" }
+- { id: aud.own.s.talk.L29.001, kind: audio, source: own, license: OWN, status: planned, text: "İstanbul mu daha büyük, Ankara mı?" }
+- { id: aud.own.s.talk.L30.001, kind: audio, source: own, license: OWN, status: planned, text: "Dün akşam ne yedin?" }
+- { id: aud.own.s.talk.L30.002, kind: audio, source: own, license: OWN, status: planned, text: "Dün nereye gittin?" }
+- { id: aud.own.s.talk.L31.001, kind: audio, source: own, license: OWN, status: planned, text: "Dün spor yaptın mı?" }
+- { id: aud.own.s.talk.L31.002, kind: audio, source: own, license: OWN, status: planned, text: "Dün kahve içtin mi?" }
+- { id: aud.own.s.talk.L31.003, kind: audio, source: own, license: OWN, status: planned, text: "Dün film izledin mi?" }
+- { id: aud.own.s.talk.L32.001, kind: audio, source: own, license: OWN, status: planned, text: "Bugün hava nasıl?" }
+- { id: aud.own.s.talk.L32.002, kind: audio, source: own, license: OWN, status: planned, text: "Dün hava nasıldı?" }
+- { id: aud.own.s.talk.L32.003, kind: audio, source: own, license: OWN, status: planned, text: "Dün yağmur yağdı mı?" }
+- { id: aud.own.s.talk.L32.004, kind: audio, source: own, license: OWN, status: planned, text: "Soğuk muydu?" }
+- { id: aud.own.s.talk.L32.005, kind: audio, source: own, license: OWN, status: planned, text: "Geçen hafta sonu neredeydin?" }
+- { id: aud.own.s.talk.L33.001, kind: audio, source: own, license: OWN, status: planned, text: "Cumartesi parka gideceğim." }
+- { id: aud.own.s.talk.L33.002, kind: audio, source: own, license: OWN, status: planned, text: "Yarın ne yapacaksın?" }
+- { id: aud.own.s.talk.L33.003, kind: audio, source: own, license: OWN, status: planned, text: "Yarın yağmur yağacak mı?" }
+- { id: aud.own.s.talk.L33.004, kind: audio, source: own, license: OWN, status: planned, text: "Hafta sonu ne yapacaksın?" }
+- { id: aud.own.s.talk.L34.001, kind: audio, source: own, license: OWN, status: planned, text: "Parka gitmek istiyorum." }
+- { id: aud.own.s.talk.L34.002, kind: audio, source: own, license: OWN, status: planned, text: "Antalya'ya gitmek istiyorum." }
+- { id: aud.own.s.talk.L34.003, kind: audio, source: own, license: OWN, status: planned, text: "Hafta sonu nereye gitmek istiyorsun?" }
+- { id: aud.own.s.talk.L35.001, kind: audio, source: own, license: OWN, status: planned, text: "Bugün ne yapman lazım?" }
+- { id: aud.own.s.talk.L35.002, kind: audio, source: own, license: OWN, status: planned, text: "Yarın ne yapman lazım?" }
+- { id: aud.own.s.talk.C1.001, kind: audio, source: own, license: OWN, status: planned, text: "Görüşürüz!" }
+- { id: aud.own.s.talk.C1.002, kind: audio, source: own, license: OWN, status: planned, text: "Evli misin?" }

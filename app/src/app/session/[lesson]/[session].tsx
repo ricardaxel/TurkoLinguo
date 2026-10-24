@@ -1,9 +1,10 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { useMemo } from 'react';
 import { Text } from 'react-native';
-import { content } from '../../../content';
+import { content, talkTask } from '../../../content';
 import { useProgress } from '../../../progress/ProgressContext';
 import { SessionRunner, type Step } from '../../../session/SessionRunner';
+import { useTalkEnding } from '../../../talk/TalkInvitation';
 
 type SessionKey = 'learn' | 'practise';
 
@@ -11,6 +12,8 @@ export default function LessonSessionScreen() {
   const { lesson: lessonId, session, start } = useLocalSearchParams<{ lesson: string; session: SessionKey; start?: string }>();
   const { finishLesson } = useProgress();
   const lesson = content.lessons[lessonId];
+  // talk tasks end Practise only (never Learn or reviews)
+  const talk = useTalkEnding(session === 'practise' ? talkTask(`${lessonId}.talk`) : undefined);
 
   const steps = useMemo<Step[]>(() => {
     if (!lesson || (session !== 'learn' && session !== 'practise')) return [];
@@ -28,7 +31,11 @@ export default function LessonSessionScreen() {
       steps={steps}
       startAt={Math.max(0, Number(start) || 0)}
       onExit={exit}
-      onComplete={(results) => finishLesson(lessonId, session, results)}
+      onComplete={(results) => {
+        finishLesson(lessonId, session, results);
+        talk.afterSave();
+      }}
+      epilogue={talk.epilogue}
       summaryTitle={session === 'learn' ? 'Rule learned!' : 'Practice done!'}
       summaryActions={[
         ...(session === 'learn'

@@ -240,3 +240,22 @@ sessions:
         turns:
           - { speaker: A, sentence: s.L1.001 }
           - { speaker: B, blank: true, answers: ["Merhaba!"] }
+
+    talk:
+      id: L1.talk
+      kind: sounds
+      minutes: 2
+      title: "Say my name"
+      how:
+        - "Say Merhaba! to your partner, then read these words aloud: kız, kaz, kır, kir, çam, cam, dağ."
+        - "Your partner repeats any word that sounded off. Say it again after them."
+        - "Ask them to say your name the Turkish way, and to write it with Turkish letters."
+      phrases: [s.L1.001, s.L1.002, s.L1.003, s.L1.006, s.L1.007, s.L1.008]
+      goals:
+        - "I read every word aloud"
+        - "I said again the words my partner corrected"
+        - "I heard my name the Turkish way"
+      partner:
+        topic: "Türkçe sesler"
+        knows: "henüz sadece birkaç kelime: merhaba, kız, kaz, kır, kir, çam, cam, dağ"
+        questions: [s.L1.001, s.L1.002, s.L1.003]

@@ -146,3 +146,21 @@ sessions:
       - { id: L23.practise.13, type: type_form, grammar: [g.L23.have, g.L19.poss_sg], pattern: g.L23.have.var, base: w.oğul, suffixes: [sfx.poss_1sg], prompt: "Bir … var. (my son)", answer: oğlum, feedback: { oğulum: "**oğul** drops its last vowel before a vowel ending: **oğlum**." } }
       - { id: L23.practise.14, type: translate_to_en, grammar: [g.L23.have, g.L21.gen], sentence: s.L23.015 }
       - { id: L23.practise.15, type: translate_to_tr, grammar: [g.L23.have, g.L13.clitic_de], sentence: s.L23.019, word_bank: [Bir, erkek, kardeşim, kardeşi, ve, kız, var, yok] }
+
+    talk:
+      id: L23.talk
+      kind: interview
+      minutes: 3
+      title: "Family and pets"
+      how:
+        - "Ask your partner: Kardeşin var mı? Kaç kardeşin var?"
+        - "Ask about pets: Kedin var mı?"
+        - "Answer the same questions about yourself."
+      phrases: [s.L23.018, s.L23.003, s.talk.L23.001, s.L23.004, s.L23.019]
+      goals:
+        - "I asked about my partner's family"
+        - "I said who is in my family"
+      partner:
+        topic: "aile ve evcil hayvanlar"
+        knows: "'var/yok' ile sahiplik (kardeşim var, kedim yok, Kaç kardeşin var?)"
+        questions: [s.L23.018, s.L23.003, s.talk.L23.001, s.L23.005]

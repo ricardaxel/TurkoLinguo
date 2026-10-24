@@ -30,9 +30,10 @@ KINDS = {
     "morphology/tests.yaml": "morphTestsFile",
     "media/assets.yaml": "assetsFile",
     "checkpoints": "checkpoint",
+    "talk/partner_frame.yaml": "partnerFrame",
 }
 
-ID_RE = re.compile(r"^(w\.[^\s.]+(\.[a-z0-9_]+)?|s\.[A-Za-z0-9_]+\.[0-9]{3}|img\.[a-z0-9_]+\.\S+|aud\.[a-z0-9_]+\.\S+"
+ID_RE = re.compile(r"^(w\.[^\s.]+(\.[a-z0-9_]+)?|s\.[A-Za-z0-9_]+(\.[A-Za-z0-9_]+)?\.[0-9]{3}|img\.[a-z0-9_]+\.\S+|aud\.[a-z0-9_]+\.\S+"
                    r"|sfx\.[a-z0-9_]+|g\.L[0-9]+\.[a-z0-9_]+(\.[a-z0-9_]+)?|T[0-9]+b?(\.p[0-9]+)?)$")
 CHOICE_TYPES = {"pick_suffix", "picture_choose", "listen_choose", "contrast_pair"}
 TYPED_TYPES = {"type_form", "translate_to_tr", "dictation", "spot_error", "qa", "mini_dialogue"}
@@ -90,7 +91,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("content_dir", nargs="?", default=str(ROOT / "content"))
     ap.add_argument("--strict", action="store_true", help="treat warnings as errors")
-    ap.add_argument("--release", action="store_true", help="also require all media to be ready")
+    ap.add_argument("--release", action="store_true", help="also require all media to be ready and every lesson to have a talk task")
     args = ap.parse_args()
 
     content = Path(args.content_dir)
@@ -145,10 +146,14 @@ def main():
         for sess in lesson["sessions"].values():
             for item in sess.get("items", []):
                 register(item["id"], "item", rel, item)
+            if "talk" in sess:
+                register(sess["talk"]["id"], "talk", rel, sess["talk"])
     for rel, cp in docs.get("checkpoint", []):
         register(cp["id"], "checkpoint", rel, cp)
         for item in cp["items"]:
             register(item["id"], "item", rel, item)
+        if "talk" in cp:
+            register(cp["talk"]["id"], "talk", rel, cp["talk"])
     for rel, pf in docs.get("packFile", []):
         register(pf["id"], "theme", rel, pf)
         for p in pf["packs"]:
@@ -266,6 +271,45 @@ def main():
         if spoken and item["type"] not in TYPED_TYPES:
             rep.error(rel, f"{where}: spoken variants only apply to typed answers, not {item['type']}")
 
+    # talk tasks (docs/TALK_TASKS.md §5): the learner's phrases and the partner's questions are known
+    # material; the partner's topic and "knows" are free Turkish text for the native speaker.
+    # Survival phrases (the partner frame's list) are shown once their pack is unlocked; `requires:
+    # [survival]` shows them from the lesson that unlocks the pack.
+    frame = docs.get("partnerFrame", [(None, None)])[0]
+    survival_pos = None
+    if frame[1]:
+        for sid in frame[1]["survival"]:
+            s = reg.get(sid, (None, None, None))[2]
+            if reg.get(sid, (None,))[0] != "sentence":
+                rep.error(frame[0], f"survival phrase {sid} is not a sentence")
+                continue
+            for w in s["words"]:
+                if w not in intro:
+                    rep.error(frame[0], f"survival phrase {sid}: word {w} is not introduced in any pack or lesson")
+                else:
+                    survival_pos = max(survival_pos or 0, intro[w][0])
+    else:
+        rep.error(content, "talk/partner_frame.yaml not found")
+
+    def check_talk(talk, owner, pos, rel, max_minutes):
+        where = talk["id"]
+        if where != f"{owner}.talk":
+            rep.error(rel, f"{where}: a talk task is named {owner}.talk")
+        if not 2 <= talk["minutes"] <= max_minutes:
+            rep.error(rel, f"{where}: minutes is {talk['minutes']}, must be 2–{max_minutes}")
+        for key, sids in (("phrase", talk["phrases"]), ("partner question", talk["partner"]["questions"])):
+            for sid in sids:
+                if reg.get(sid, (None,))[0] != "sentence":
+                    rep.error(rel, f"{where}: {key} {sid} is not a sentence")
+                else:
+                    check_sentence(sid, pos, f"{where} {key}", rel)
+        for key in ("topic", "knows"):
+            # a suffix written on its own (-ydı, -(y)DI, -DA) is notation; natives need plain words
+            if re.search(r"(?<!\w)-\(?\w|\([yns]\)", talk["partner"][key]):
+                rep.error(rel, f"{where}: partner.{key} uses course notation ({talk['partner'][key]!r}); give plain examples")
+        if "survival" in talk.get("requires", []) and survival_pos is not None and pos + 0.5 < survival_pos:
+            rep.error(rel, f"{where}: requires survival, but the survival phrases are unlocked later")
+
     for rel, lesson in docs.get("lesson", []):
         lid = lesson["id"]
         pos = index[lid]
@@ -278,6 +322,13 @@ def main():
         for sess in lesson["sessions"].values():
             for item in sess.get("items", []):
                 check_item(item, pos, rel)
+        talk = lesson["sessions"]["practise"].get("talk")
+        if talk:
+            check_talk(talk, lid, pos, rel, 5)
+        elif args.release:
+            rep.error(rel, f"{lid}: practise has no talk task (docs/TALK_TASKS.md)")
+        else:
+            rep.warn(rel, f"{lid}: practise has no talk task (docs/TALK_TASKS.md)")
 
     # checkpoints: everything taught up to the unit's last lesson, but not the packs that
     # pre-teach the next unit (those sit at last lesson + 0.5)
@@ -296,6 +347,8 @@ def main():
             if not item["id"].startswith(cp["id"] + ".check."):
                 rep.error(rel, f"{item['id']}: checkpoint items are named {cp['id']}.check.NN")
             check_item(item, pos, rel)
+        if "talk" in cp:
+            check_talk(cp["talk"], cp["id"], pos, rel, 8)
 
     for rel, pf in docs.get("packFile", []):
         for p in pf["packs"]:

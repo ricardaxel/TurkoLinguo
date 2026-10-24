@@ -37,7 +37,24 @@ export interface Progress {
   newIntroduced?: { day: string; count: number };
   /** End-of-unit checkpoints: best score (0–1) and when it was first passed. */
   checkpoints?: Record<string, { best: number; passedAt?: string }>;
+  /** Talk tasks (docs/TALK_TASKS.md): never rated in FSRS, never part of completion. */
+  talk?: Record<string, TalkRecord>;
+  settings?: Settings;
 }
+
+export type TalkStatus = 'done' | 'saved' | 'skipped';
+export type TalkRating = 'easy' | 'ok' | 'hard';
+export interface TalkRecord {
+  status: TalkStatus;
+  rating?: TalkRating;
+  at: string;
+}
+
+export interface Settings {
+  /** 'ask' until the learner answers the first invitation's question. */
+  talk: TalkSetting;
+}
+export type TalkSetting = 'ask' | 'on' | 'off';
 
 export const emptyProgress = (): Progress => ({ version: 1, lessons: {}, cards: {}, streak: 0 });
 
@@ -210,4 +227,39 @@ export function nextDue(p: Progress): Date | undefined {
     .filter((c) => c.fsrs.state !== State.New)
     .map((c) => new Date(c.fsrs.due));
   return dates.length ? new Date(Math.min(...dates.map((d) => d.getTime()))) : undefined;
+}
+
+// ---------- talk tasks ----------
+
+export const talkSetting = (p: Progress): TalkSetting => p.settings?.talk ?? 'ask';
+
+export function setTalkSetting(p: Progress, talk: TalkSetting): Progress {
+  return { ...p, settings: { ...p.settings, talk } };
+}
+
+/**
+ * Record a talk task. `done` wins over `saved` and `skipped`; doing it again updates the rating and date.
+ * Only `p.talk` changes: no cards, lessons, scores or streak.
+ */
+export function recordTalk(p: Progress, talkId: string, status: TalkStatus, now: Date, rating?: TalkRating): Progress {
+  const prev = p.talk?.[talkId];
+  if (prev?.status === 'done' && status !== 'done') return p;
+  const record: TalkRecord = status === 'done' ? { status, rating, at: now.toISOString() } : { status, at: now.toISOString() };
+  return { ...p, talk: { ...p.talk, [talkId]: record } };
+}
+
+/** What the end of a session shows: the first-time question, the invitation, or nothing. */
+export function talkInvitation(p: Progress, talkId: string | undefined): 'ask' | 'invite' | null {
+  if (!talkId || p.talk?.[talkId]?.status === 'done') return null;
+  const setting = talkSetting(p);
+  return setting === 'off' ? null : setting === 'ask' ? 'ask' : 'invite';
+}
+
+/** The Talk list: saved and skipped tasks, most recent first, and how many are done. */
+export function talkList(p: Progress): { pending: { id: string; record: TalkRecord }[]; done: number } {
+  const all = Object.entries(p.talk ?? {}).map(([id, record]) => ({ id, record }));
+  return {
+    pending: all.filter((t) => t.record.status !== 'done').sort((a, b) => b.record.at.localeCompare(a.record.at)),
+    done: all.filter((t) => t.record.status === 'done').length,
+  };
 }

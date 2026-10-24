@@ -140,3 +140,21 @@ sessions:
           - { speaker: A, sentence: s.L16.007 }
           - { speaker: B, blank: true, answers: ["Hayır, (Türkçe) konuşmuyorum.", "Hayır, (ben) Türkçe konuşmuyorum."] }
           - { speaker: A, sentence: s.L16.019 }
+
+    talk:
+      id: L16.talk
+      kind: correct_me
+      minutes: 3
+      title: "No, I'm not!"
+      how:
+        - "Mime an action. Your partner guesses wrong on purpose: Ekmek yiyorsun!"
+        - "Correct them: Hayır, yemiyorum. İçiyorum."
+        - "Swap: you guess wrong, and they correct you."
+      phrases: [s.talk.L16.001, s.L16.005, s.L16.006, s.L16.003, s.L16.001]
+      goals:
+        - "I corrected 3 wrong guesses"
+        - "I said what I was really doing"
+      partner:
+        topic: "pandomim: Hayır, onu yapmıyorum!"
+        knows: "şimdiki zamanın olumsuzu ve sorusu (yemiyorum, içmiyorum, Geliyor musun?)"
+        questions: [s.talk.L16.002, s.talk.L16.003, s.L16.003]

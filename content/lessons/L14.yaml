@@ -176,3 +176,21 @@ sessions:
           - { speaker: A, sentence: s.L14.003 }
           - { speaker: B, sentence: s.L10.016 }
           - { speaker: A, blank: true, answers: ["{Oturun|Oturunuz}, lütfen.", "Lütfen {oturun|oturunuz}.", "{Burada oturun|Burada oturunuz}(, lütfen)."] }
+
+    talk:
+      id: L14.talk
+      kind: act_it
+      minutes: 2
+      title: "Do what I say"
+      how:
+        - "Your partner gives you commands: Otur! Gel! Bak!"
+        - "Do what they say."
+        - "Swap: you give the commands, then try the polite form: Oturun, lütfen."
+      phrases: [s.L14.001, s.L14.002, s.L14.009, s.L14.005, s.L14.004]
+      goals:
+        - "I did 5 commands right"
+        - "I gave 5 commands"
+      partner:
+        topic: "emirler oyunu"
+        knows: "emir cümleleri (Gel! Otur! Bak! Çay iç!) ve kibar hali (Gelin, lütfen. Oturun.)"
+        questions: [s.L14.001, s.L14.002, s.L14.009, s.L14.005]

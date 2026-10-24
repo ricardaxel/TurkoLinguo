@@ -144,3 +144,21 @@ sessions:
         turns:
           - { speaker: A, sentence: s.L22.002 }
           - { speaker: B, blank: true, answers: ["(Otobüs durağı) {orada|burada}."] }
+
+    talk:
+      id: L22.talk
+      kind: point_and_name
+      minutes: 3
+      title: "Compound hunt"
+      how:
+        - "Find 5 compound names around you or in the street: otobüs durağı, yatak odası, çay bardağı."
+        - "Say them to your partner, and ask them for one more."
+        - "Ask where things are: Otobüs durağı nerede?"
+      phrases: [s.L22.002, s.L22.001, s.L22.016, s.L22.012, s.L22.007]
+      goals:
+        - "I found 5 compound names"
+        - "I learned one from my partner"
+      partner:
+        topic: "etrafımızdaki isim tamlamaları"
+        knows: "isim tamlamaları (otobüs durağı, yatak odası, Türk kahvesi, çay bardağı)"
+        questions: [s.L22.002, s.L22.016, s.L22.010]

@@ -149,3 +149,21 @@ sessions:
           - { speaker: B, blank: true, answers: ["Ayşe'nin.", "(Bu) Ayşe'nin kitabı."] }
           - { speaker: A, sentence: s.L21.010 }
           - { speaker: B, sentence: s.L21.011 }
+
+    talk:
+      id: L21.talk
+      kind: guess
+      minutes: 3
+      title: "Whose is it?"
+      how:
+        - "Put some of your things and your partner's things together."
+        - "Pick one up and ask: Bu kimin kalemi?"
+        - "Your partner answers: Ayşe'nin. Senin. Swap."
+      phrases: [s.L21.002, s.talk.L21.001, s.L21.003, s.L21.011, s.L21.010]
+      goals:
+        - "I asked whose 3 things are"
+        - "I answered with a name"
+      partner:
+        topic: "Bu kimin?"
+        knows: "'kimin?' ve sahiplik (Ali'nin kitabı, Bu kimin kalemi?)"
+        questions: [s.L21.002, s.L21.016, s.L21.010]

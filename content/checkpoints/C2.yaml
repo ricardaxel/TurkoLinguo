@@ -64,3 +64,22 @@ items:
     images: [img.own.person_at_home]
     answers: ["Hayır, (ben) evdeyim."]
     feedback: "auto:g.L11.loc_copula"
+
+talk:
+  id: C2.talk
+  kind: free_chat
+  minutes: 5
+  title: "Around the house"
+  how:
+    - "Ask where things are in the room: Telefon nerede?"
+    - "Ask where your partner is and where they're from: Neredesin? Neredensin?"
+    - "React to what they say: Ben de! … ama …"
+  phrases: [s.L11.001, s.L11.002, s.L10.014, s.L12.001, s.L13.009]
+  goals:
+    - "I asked where 3 things are"
+    - "I said where I'm from"
+    - "I used Ben de or ama"
+  partner:
+    topic: "ev ve şehir: kim nerede?"
+    knows: "yer bildirme (evde, evdeyim, Neredesin?), nereden (Londra'danım), 'ben de', 've', 'ama'"
+    questions: [s.L11.001, s.L12.001, s.L10.014, s.L10.012]

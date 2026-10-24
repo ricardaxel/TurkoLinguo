@@ -158,3 +158,21 @@ sessions:
         prompt: "I'm going to his house."
         options: [s.L24.011, s.L24.010]
         answer: s.L24.011
+
+    talk:
+      id: L24.talk
+      kind: interview
+      minutes: 3
+      title: "Where's your…?"
+      how:
+        - "Ask where your partner's things are: Telefonun nerede?"
+        - "Ask where their family is: Kardeşin nerede?"
+        - "Answer the same questions: Çantamda. İstanbul'da."
+      phrases: [s.L19.019, s.L24.002, s.talk.L24.001, s.talk.L24.002, s.talk.L24.003]
+      goals:
+        - "I asked about 2 things and 1 person"
+        - "I answered with where mine are: Çantamda."
+      partner:
+        topic: "eşyalar ve aile: nerede?"
+        knows: "'Telefonun nerede? Çantamda.' gibi cümleler (evimde, çantanda, odasında)"
+        questions: [s.L19.019, s.talk.L24.002, s.L24.014]

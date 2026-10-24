@@ -159,3 +159,21 @@ sessions:
           - { speaker: A, sentence: s.L19.027 }
           - { speaker: B, blank: true, answers: ["Evet, (bu) (benim) kitabım."] }
           - { speaker: A, sentence: s.L19.019 }
+
+    talk:
+      id: L19.talk
+      kind: point_and_name
+      minutes: 3
+      title: "My things"
+      how:
+        - "Show your things or photos: Bu benim telefonum."
+        - "Ask about your partner's things: Bu senin çantan mı?"
+        - "Ask their name, and say yours."
+      phrases: [s.L19.001, s.talk.L19.001, s.talk.L19.002, s.L19.027, s.L19.028, s.L19.006]
+      goals:
+        - "I showed 3 of my things"
+        - "I asked about my partner's things"
+      partner:
+        topic: "benim eşyalarım, senin eşyaların"
+        knows: "benim, senin, onun (telefonum, çantan, evi; Adın ne?)"
+        questions: [s.L19.006, s.talk.L19.002, s.L19.019]

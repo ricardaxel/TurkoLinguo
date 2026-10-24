@@ -1,0 +1,19 @@
+# The fixed frame of every partner card (docs/TALK_TASKS.md §4), in Turkish, for the native speaker.
+# It speaks to the partner as *siz*. Each talk task supplies only `partner.topic`, `partner.knows`
+# and `partner.questions`; the card reads:
+#   greeting, intro, rules · topic_label topic · knows_label knows · questions_label 1. 2. 3. · closing
+# **bold** is shown in bold, and dropped from "Share as text".
+
+greeting: "Merhaba!"
+intro: "Karşınızdaki kişi Türkçe öğreniyor ve sizinle birkaç dakika konuşmak istiyor."
+rules:
+  - "Lütfen **yavaş** ve **kısa cümlelerle** konuşun."
+  - "Hata yaparsa düzeltin, ama her cümlede **sadece bir** hatayı."
+  - "Anlamazsa tekrar edin ya da başka bir kelime kullanın."
+topic_label: "Bugünkü konu:"
+knows_label: "Bildikleri:"
+questions_label: "Ona sorabileceğiniz sorular:"
+closing: "Sonra o size sorsun. Teşekkürler! 🙏"
+
+# The learner's "If you're stuck" phrases (T1b, siz forms), shown on every talk screen once T1b is unlocked.
+survival: [s.T1b.001, s.talk.survival.001, s.talk.survival.002, s.T1b.002]

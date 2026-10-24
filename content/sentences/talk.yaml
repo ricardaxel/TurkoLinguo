@@ -1,0 +1,508 @@
+# Sentences for talk tasks (docs/TALK_TASKS.md): the learner's phrases and the partner's questions,
+# s.talk.<lesson or checkpoint>.NNN; s.talk.survival.* are the survival phrases in siz form (T1b).
+# `words` and `grammar` are hand-tagged. Questions are native_required (question intonation).
+
+- id: s.talk.survival.001
+  tr: "Tekrar eder misiniz?"
+  en: ["Could you repeat that?", "Can you say that again?"]
+  words: [w.tekrar_eder_misiniz]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.talk.survival.001
+  native_required: true
+  phrase: true
+
+- id: s.talk.survival.002
+  tr: "Daha yavaş konuşur musunuz?"
+  en: ["Could you speak more slowly?"]
+  words: [w.daha_yavaş_konuşur_musunuz]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.talk.survival.002
+  native_required: true
+  phrase: true
+
+- id: s.talk.L6.001
+  tr: "Sen Fransızsın."
+  en: ["You're French."]
+  words: [w.sen, w.Fransız]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.talk.L6.001
+
+- id: s.talk.L6.002
+  tr: "Sen doktorsun."
+  en: ["You're a doctor."]
+  words: [w.sen, w.doktor]
+  grammar: [g.L5.copula]
+  source: { kind: original }
+  audio: aud.own.s.talk.L6.002
+
+- id: s.talk.L7.001
+  tr: "Doktor musun?"
+  en: ["Are you a doctor?"]
+  words: [w.doktor]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L7.001
+  native_required: true
+
+- id: s.talk.L7.002
+  tr: "Öğretmen misin?"
+  en: ["Are you a teacher?"]
+  words: [w.öğretmen]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L7.002
+  native_required: true
+
+- id: s.talk.L7.003
+  tr: "Hayır, doktor değilim."
+  en: ["No, I'm not a doctor."]
+  words: [w.hayır, w.doktor, w.değil]
+  grammar: [g.L5.copula, g.L6.degil]
+  source: { kind: original }
+  audio: aud.own.s.talk.L7.003
+
+- id: s.talk.L8.001
+  tr: "Süt var mı?"
+  en: ["Is there any milk?"]
+  words: [w.süt, w.var]
+  grammar: [g.L8.varyok, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L8.001
+  native_required: true
+
+- id: s.talk.L10.001
+  tr: "Masada mı?"
+  en: ["Is it on the table?"]
+  words: [w.masa]
+  grammar: [g.L10.loc, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L10.001
+  native_required: true
+
+- id: s.talk.L10.002
+  tr: "Çantada mı?"
+  en: ["Is it in the bag?"]
+  words: [w.çanta]
+  grammar: [g.L10.loc, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L10.002
+  native_required: true
+
+- id: s.talk.L11.001
+  tr: "Ahmet Ankara'da mı?"
+  en: ["Is Ahmet in Ankara?"]
+  words: [w.Ahmet, w.Ankara]
+  grammar: [g.L7.question, g.L10.loc, g.L11.loc_copula]
+  source: { kind: original }
+  audio: aud.own.s.talk.L11.001
+  native_required: true
+
+- id: s.talk.L12.001
+  tr: "İzmir'den mi?"
+  en: ["From İzmir?", "Is he from İzmir?"]
+  words: [w.İzmir]
+  grammar: [g.L7.question, g.L11.loc_copula, g.L12.abl]
+  source: { kind: original }
+  audio: aud.own.s.talk.L12.001
+  native_required: true
+
+- id: s.talk.L13.001
+  tr: "Ben de öğretmenim."
+  en: ["I'm a teacher too."]
+  words: [w.ben, w.de, w.öğretmen]
+  grammar: [g.L5.copula, g.L13.clitic_de]
+  source: { kind: original }
+  audio: aud.own.s.talk.L13.001
+
+- id: s.talk.L15.001
+  tr: "Kitap okuyorsun!"
+  en: ["You're reading a book!"]
+  words: [w.kitap, w.okumak]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.talk.L15.001
+
+- id: s.talk.L15.002
+  tr: "Çay içiyorsun!"
+  en: ["You're drinking tea!"]
+  words: [w.çay, w.içmek]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.talk.L15.002
+
+- id: s.talk.L16.001
+  tr: "Hayır, yemiyorum. İçiyorum."
+  en: ["No, I'm not eating. I'm drinking."]
+  words: [w.hayır, w.yemek, w.içmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.talk.L16.001
+
+- id: s.talk.L16.002
+  tr: "Ekmek yiyorsun!"
+  en: ["You're eating bread!"]
+  words: [w.ekmek, w.yemek]
+  grammar: [g.L5.copula, g.L15.prog]
+  source: { kind: original }
+  audio: aud.own.s.talk.L16.002
+
+- id: s.talk.L16.003
+  tr: "Uyuyor musun?"
+  en: ["Are you sleeping?"]
+  words: [w.uyumak]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q]
+  source: { kind: original }
+  audio: aud.own.s.talk.L16.003
+  native_required: true
+
+- id: s.talk.L17.001
+  tr: "Markete gidiyorum."
+  en: ["I'm going to the supermarket."]
+  words: [w.market, w.gitmek]
+  grammar: [g.L5.copula, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.talk.L17.001
+
+- id: s.talk.L17.002
+  tr: "Okula mı gidiyorsun?"
+  en: ["Are you going to school?"]
+  words: [w.okul, w.gitmek]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L16.prog_neg_q, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.talk.L17.002
+  native_required: true
+
+- id: s.talk.L18.001
+  tr: "Kalemi al!"
+  en: ["Take the pen!"]
+  words: [w.kalem, w.almak]
+  grammar: [g.L14.imperative, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.talk.L18.001
+
+- id: s.talk.L18.002
+  tr: "Kitabı oku!"
+  en: ["Read the book!"]
+  words: [w.kitap, w.okumak]
+  grammar: [g.L14.imperative, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.talk.L18.002
+
+- id: s.talk.L18.003
+  tr: "Ekmeği ye!"
+  en: ["Eat the bread!"]
+  words: [w.ekmek, w.yemek]
+  grammar: [g.L14.imperative, g.L18.acc]
+  source: { kind: original }
+  audio: aud.own.s.talk.L18.003
+
+- id: s.talk.L19.001
+  tr: "Bu benim telefonum."
+  en: ["This is my phone."]
+  words: [w.bu, w.ben, w.telefon]
+  grammar: [g.L3.basics, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.talk.L19.001
+
+- id: s.talk.L19.002
+  tr: "Bu senin çantan mı?"
+  en: ["Is this your bag?"]
+  words: [w.bu, w.sen, w.çanta]
+  grammar: [g.L3.basics, g.L7.question, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.talk.L19.002
+  native_required: true
+
+- id: s.talk.L20.001
+  tr: "Sizin eviniz büyük mü?"
+  en: ["Is your house big?"]
+  words: [w.siz, w.ev, w.büyük]
+  grammar: [g.L7.question, g.L20.poss_pl]
+  source: { kind: original }
+  audio: aud.own.s.talk.L20.001
+  native_required: true
+
+- id: s.talk.L21.001
+  tr: "Bu kimin kalemi?"
+  en: ["Whose pen is this?"]
+  words: [w.bu, w.kim, w.kalem]
+  grammar: [g.L3.basics, g.L7.question, g.L19.poss_sg, g.L21.gen]
+  source: { kind: original }
+  audio: aud.own.s.talk.L21.001
+  native_required: true
+
+- id: s.talk.L23.001
+  tr: "Kedin var mı?"
+  en: ["Do you have a cat?"]
+  words: [w.kedi, w.var]
+  grammar: [g.L8.varyok, g.L7.question, g.L19.poss_sg, g.L23.have]
+  source: { kind: original }
+  audio: aud.own.s.talk.L23.001
+  native_required: true
+
+- id: s.talk.L24.001
+  tr: "Telefonum çantamda."
+  en: ["My phone is in my bag."]
+  words: [w.telefon, w.çanta]
+  grammar: [g.L10.loc, g.L19.poss_sg, g.L24.poss_case]
+  source: { kind: original }
+  audio: aud.own.s.talk.L24.001
+
+- id: s.talk.L24.002
+  tr: "Kardeşin nerede?"
+  en: ["Where is your brother?", "Where is your sister?"]
+  words: [w.kardeş, w.nerede]
+  grammar: [g.L7.question, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.talk.L24.002
+  native_required: true
+
+- id: s.talk.L24.003
+  tr: "Kardeşim İstanbul'da."
+  en: ["My brother is in Istanbul.", "My sister is in Istanbul."]
+  words: [w.kardeş, w.İstanbul]
+  grammar: [g.L10.loc, g.L11.loc_copula, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.talk.L24.003
+
+- id: s.talk.L26.001
+  tr: "Pazartesi ne yapıyorsun?"
+  en: ["What are you doing on Monday?"]
+  words: [w.pazartesi, w.ne, w.yapmak]
+  grammar: [g.L5.copula, g.L15.prog, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.talk.L26.001
+  native_required: true
+
+- id: s.talk.L26.002
+  tr: "Cumartesi evde misin?"
+  en: ["Are you at home on Saturday?"]
+  words: [w.cumartesi, w.ev]
+  grammar: [g.L5.copula, g.L7.question, g.L11.loc_copula, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.talk.L26.002
+  native_required: true
+
+- id: s.talk.L27.001
+  tr: "Okula nasıl gidiyorsun?"
+  en: ["How do you get to school?", "How do you go to school?"]
+  words: [w.okul, w.nasıl, w.gitmek]
+  grammar: [g.L5.copula, g.L7.question, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.talk.L27.001
+  native_required: true
+
+- id: s.talk.L28.001
+  tr: "Şekersiz bir çay, lütfen."
+  en: ["A tea without sugar, please."]
+  words: [w.şeker, w.bir, w.çay, w.lütfen]
+  grammar: [g.L28.li_siz, g.L9.adj_num]
+  source: { kind: original }
+  audio: aud.own.s.talk.L28.001
+
+- id: s.talk.L28.002
+  tr: "Şekerli mi, şekersiz mi?"
+  en: ["With sugar or without?"]
+  words: [w.şeker]
+  grammar: [g.L28.li_siz, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L28.002
+  native_required: true
+
+- id: s.talk.L29.001
+  tr: "İstanbul mu daha büyük, Ankara mı?"
+  en: ["Which is bigger, Istanbul or Ankara?"]
+  words: [w.İstanbul, w.daha, w.büyük, w.Ankara]
+  grammar: [g.L29.comparison, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L29.001
+  native_required: true
+
+- id: s.talk.L30.001
+  tr: "Dün akşam ne yedin?"
+  en: ["What did you eat last night?", "What did you eat yesterday evening?"]
+  words: [w.dün, w.akşam, w.ne, w.yemek]
+  grammar: [g.L30.past]
+  source: { kind: original }
+  audio: aud.own.s.talk.L30.001
+  native_required: true
+
+- id: s.talk.L30.002
+  tr: "Dün nereye gittin?"
+  en: ["Where did you go yesterday?"]
+  words: [w.dün, w.nereye, w.gitmek]
+  grammar: [g.L30.past, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.talk.L30.002
+  native_required: true
+
+- id: s.talk.L31.001
+  tr: "Dün spor yaptın mı?"
+  en: ["Did you do any sport yesterday?", "Did you exercise yesterday?"]
+  words: [w.dün, w.spor, w.yapmak]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L31.001
+  native_required: true
+
+- id: s.talk.L31.002
+  tr: "Dün kahve içtin mi?"
+  en: ["Did you drink coffee yesterday?"]
+  words: [w.dün, w.kahve, w.içmek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L31.002
+  native_required: true
+
+- id: s.talk.L31.003
+  tr: "Dün film izledin mi?"
+  en: ["Did you watch a film yesterday?"]
+  words: [w.dün, w.film, w.izlemek]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L31.003
+  native_required: true
+
+- id: s.talk.L32.001
+  tr: "Bugün hava nasıl?"
+  en: ["What's the weather like today?", "How's the weather today?"]
+  words: [w.bugün, w.hava, w.nasıl]
+  grammar: [g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L32.001
+  native_required: true
+
+- id: s.talk.L32.002
+  tr: "Dün hava nasıldı?"
+  en: ["What was the weather like yesterday?", "How was the weather yesterday?"]
+  words: [w.dün, w.hava, w.nasıl]
+  grammar: [g.L7.question, g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.talk.L32.002
+  native_required: true
+
+- id: s.talk.L32.003
+  tr: "Dün yağmur yağdı mı?"
+  en: ["Did it rain yesterday?"]
+  words: [w.dün, w.yağmur, w.yağmak]
+  grammar: [g.L30.past, g.L31.past_neg_q, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L32.003
+  native_required: true
+
+- id: s.talk.L32.004
+  tr: "Soğuk muydu?"
+  en: ["Was it cold?"]
+  words: [w.soğuk]
+  grammar: [g.L7.question, g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.talk.L32.004
+  native_required: true
+
+- id: s.talk.L32.005
+  tr: "Geçen hafta sonu neredeydin?"
+  en: ["Where were you last weekend?"]
+  words: [w.geçen, w.hafta_sonu, w.nerede]
+  grammar: [g.L10.loc, g.L32.copula_past]
+  source: { kind: original }
+  audio: aud.own.s.talk.L32.005
+  native_required: true
+
+- id: s.talk.L33.001
+  tr: "Cumartesi parka gideceğim."
+  en: ["I'll go to the park on Saturday."]
+  words: [w.cumartesi, w.park, w.gitmek]
+  grammar: [g.L17.dat, g.L26.time, g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.talk.L33.001
+
+- id: s.talk.L33.002
+  tr: "Yarın ne yapacaksın?"
+  en: ["What will you do tomorrow?", "What are you doing tomorrow?"]
+  words: [w.yarın, w.ne, w.yapmak]
+  grammar: [g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.talk.L33.002
+  native_required: true
+
+- id: s.talk.L33.003
+  tr: "Yarın yağmur yağacak mı?"
+  en: ["Will it rain tomorrow?"]
+  words: [w.yarın, w.yağmur, w.yağmak]
+  grammar: [g.L33.future, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.L33.003
+  native_required: true
+
+- id: s.talk.L33.004
+  tr: "Hafta sonu ne yapacaksın?"
+  en: ["What will you do at the weekend?", "What are you doing at the weekend?"]
+  words: [w.hafta_sonu, w.ne, w.yapmak]
+  grammar: [g.L26.time, g.L33.future]
+  source: { kind: original }
+  audio: aud.own.s.talk.L33.004
+  native_required: true
+
+- id: s.talk.L34.001
+  tr: "Parka gitmek istiyorum."
+  en: ["I want to go to the park."]
+  words: [w.park, w.gitmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.talk.L34.001
+
+- id: s.talk.L34.002
+  tr: "Antalya'ya gitmek istiyorum."
+  en: ["I want to go to Antalya."]
+  words: [w.Antalya, w.gitmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog, g.L17.dat]
+  source: { kind: original }
+  audio: aud.own.s.talk.L34.002
+
+- id: s.talk.L34.003
+  tr: "Hafta sonu nereye gitmek istiyorsun?"
+  en: ["Where do you want to go at the weekend?"]
+  words: [w.hafta_sonu, w.nereye, w.gitmek, w.istemek]
+  grammar: [g.L34.istemek, g.L14.imperative, g.L15.prog, g.L26.time]
+  source: { kind: original }
+  audio: aud.own.s.talk.L34.003
+  native_required: true
+
+- id: s.talk.L35.001
+  tr: "Bugün ne yapman lazım?"
+  en: ["What do you need to do today?"]
+  words: [w.bugün, w.ne, w.yapmak, w.lazım]
+  grammar: [g.L35.lazim, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.talk.L35.001
+  native_required: true
+
+- id: s.talk.L35.002
+  tr: "Yarın ne yapman lazım?"
+  en: ["What do you need to do tomorrow?"]
+  words: [w.yarın, w.ne, w.yapmak, w.lazım]
+  grammar: [g.L35.lazim, g.L19.poss_sg]
+  source: { kind: original }
+  audio: aud.own.s.talk.L35.002
+  native_required: true
+
+- id: s.talk.C1.001
+  tr: "Görüşürüz!"
+  en: ["See you!", "See you later!"]
+  words: [w.görüşürüz]
+  grammar: []
+  source: { kind: original }
+  audio: aud.own.s.talk.C1.001
+  phrase: true
+
+- id: s.talk.C1.002
+  tr: "Evli misin?"
+  en: ["Are you married?"]
+  words: [w.evli]
+  grammar: [g.L5.copula, g.L7.question]
+  source: { kind: original }
+  audio: aud.own.s.talk.C1.002
+  native_required: true

@@ -2924,7 +2924,40 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L1.talk",
+      "kind": "sounds",
+      "minutes": 2,
+      "title": "Say my name",
+      "how": [
+       "Say Merhaba! to your partner, then read these words aloud: kız, kaz, kır, kir, çam, cam, dağ.",
+       "Your partner repeats any word that sounded off. Say it again after them.",
+       "Ask them to say your name the Turkish way, and to write it with Turkish letters."
+      ],
+      "phrases": [
+       "s.L1.001",
+       "s.L1.002",
+       "s.L1.003",
+       "s.L1.006",
+       "s.L1.007",
+       "s.L1.008"
+      ],
+      "goals": [
+       "I read every word aloud",
+       "I said again the words my partner corrected",
+       "I heard my name the Turkish way"
+      ],
+      "partner": {
+       "topic": "Türkçe sesler",
+       "knows": "henüz sadece birkaç kelime: merhaba, kız, kaz, kır, kir, çam, cam, dağ",
+       "questions": [
+        "s.L1.001",
+        "s.L1.002",
+        "s.L1.003"
+       ]
+      }
+     }
     }
    }
   },
@@ -3351,7 +3384,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L10.talk",
+      "kind": "hide_and_find",
+      "minutes": 3,
+      "title": "Where's my phone?",
+      "how": [
+       "Your partner hides an object while you look away.",
+       "Ask where it is: Telefon nerede? Masada mı? Çantada mı?",
+       "Swap: you hide something, and answer your partner's questions."
+      ],
+      "phrases": [
+       "s.L10.014",
+       "s.talk.L10.001",
+       "s.talk.L10.002",
+       "s.L10.010",
+       "s.L10.011"
+      ],
+      "goals": [
+       "I found the object by asking",
+       "I answered with where it was"
+      ],
+      "partner": {
+       "topic": "Telefon nerede? (saklanan eşya)",
+       "knows": "yer bildirme (masada, çantada, evde), 'nerede?' sorusu, ev eşyaları",
+       "questions": [
+        "s.L10.014",
+        "s.L10.003",
+        "s.L10.010"
+       ]
+      }
+     }
     }
    }
   },
@@ -3752,7 +3816,39 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L11.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Where are you?",
+      "how": [
+       "Pretend you're on the phone. Ask: Neredesin?",
+       "Your partner says where they are: Evdeyim. Parktayım.",
+       "Ask where people you both know are: Ahmet Ankara'da mı? Then swap."
+      ],
+      "phrases": [
+       "s.L11.001",
+       "s.L11.002",
+       "s.L11.012",
+       "s.L11.004",
+       "s.talk.L11.001"
+      ],
+      "goals": [
+       "I asked where my partner is",
+       "I said where I am",
+       "I asked about someone else"
+      ],
+      "partner": {
+       "topic": "Neredesin? (telefon konuşması gibi)",
+       "knows": "'Neredesin? Evdeyim. Parkta mısın?' gibi cümleler, şehir adları (İstanbul'da, Ankara'da)",
+       "questions": [
+        "s.L11.001",
+        "s.L11.004",
+        "s.L11.014"
+       ]
+      }
+     }
     }
    }
   },
@@ -4187,7 +4283,39 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L12.talk",
+      "kind": "introduce",
+      "minutes": 3,
+      "title": "Where are you from?",
+      "how": [
+       "Ask your partner: Neredensin?",
+       "Ask about their family's cities: İzmir'den mi? İstanbul'dan mı?",
+       "Then answer the same questions about yourself."
+      ],
+      "phrases": [
+       "s.L12.001",
+       "s.L12.002",
+       "s.L12.006",
+       "s.talk.L12.001",
+       "s.L12.012",
+       "s.L12.013"
+      ],
+      "goals": [
+       "I asked where my partner is from",
+       "I said where I'm from"
+      ],
+      "partner": {
+       "topic": "memleketler ve şehirler",
+       "knows": "'nereden' (Neredensin? Londra'danım. İzmir'den mi?); 'nerede' ve 'nereli'",
+       "questions": [
+        "s.L12.001",
+        "s.L12.012",
+        "s.L12.005"
+       ]
+      }
+     }
     }
    }
   },
@@ -4627,7 +4755,37 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L13.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Me too!",
+      "how": [
+       "Say a fact about yourself: Ben öğretmenim. Ben Londra'danım.",
+       "Your partner reacts: Ben de! or … ama ben doktorum.",
+       "Swap: they say facts, you react with Ben de! or ama."
+      ],
+      "phrases": [
+       "s.L13.001",
+       "s.talk.L13.001",
+       "s.L13.009",
+       "s.L13.014"
+      ],
+      "goals": [
+       "I said Ben de at least once",
+       "I used ama"
+      ],
+      "partner": {
+       "topic": "Ben de!",
+       "knows": "'de/da' ile 'ben de, sen de' (Ben de öğretmenim.), 've', 'ama'",
+       "questions": [
+        "s.L5.011",
+        "s.L7.001",
+        "s.L13.010"
+       ]
+      }
+     }
     }
    }
   },
@@ -5054,7 +5212,39 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L14.talk",
+      "kind": "act_it",
+      "minutes": 2,
+      "title": "Do what I say",
+      "how": [
+       "Your partner gives you commands: Otur! Gel! Bak!",
+       "Do what they say.",
+       "Swap: you give the commands, then try the polite form: Oturun, lütfen."
+      ],
+      "phrases": [
+       "s.L14.001",
+       "s.L14.002",
+       "s.L14.009",
+       "s.L14.005",
+       "s.L14.004"
+      ],
+      "goals": [
+       "I did 5 commands right",
+       "I gave 5 commands"
+      ],
+      "partner": {
+       "topic": "emirler oyunu",
+       "knows": "emir cümleleri (Gel! Otur! Bak! Çay iç!) ve kibar hali (Gelin, lütfen. Oturun.)",
+       "questions": [
+        "s.L14.001",
+        "s.L14.002",
+        "s.L14.009",
+        "s.L14.005"
+       ]
+      }
+     }
     }
    }
   },
@@ -5511,7 +5701,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L15.talk",
+      "kind": "guess",
+      "minutes": 3,
+      "title": "What am I doing?",
+      "how": [
+       "Mime an action: reading, drinking, sleeping…",
+       "Your partner asks Ne yapıyorsun? and guesses: Kitap okuyorsun!",
+       "Swap: they mime, you guess."
+      ],
+      "phrases": [
+       "s.L15.001",
+       "s.talk.L15.001",
+       "s.talk.L15.002",
+       "s.L15.002",
+       "s.L15.023"
+      ],
+      "goals": [
+       "I guessed 3 mimes",
+       "I said what I was doing"
+      ],
+      "partner": {
+       "topic": "pandomim: Ne yapıyorum?",
+       "knows": "şimdiki zaman (okuyorum, içiyorsun, Ne yapıyorsun?)",
+       "questions": [
+        "s.L15.001",
+        "s.talk.L15.001",
+        "s.talk.L15.002"
+       ]
+      }
+     }
     }
    }
   },
@@ -5936,7 +6157,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L16.talk",
+      "kind": "correct_me",
+      "minutes": 3,
+      "title": "No, I'm not!",
+      "how": [
+       "Mime an action. Your partner guesses wrong on purpose: Ekmek yiyorsun!",
+       "Correct them: Hayır, yemiyorum. İçiyorum.",
+       "Swap: you guess wrong, and they correct you."
+      ],
+      "phrases": [
+       "s.talk.L16.001",
+       "s.L16.005",
+       "s.L16.006",
+       "s.L16.003",
+       "s.L16.001"
+      ],
+      "goals": [
+       "I corrected 3 wrong guesses",
+       "I said what I was really doing"
+      ],
+      "partner": {
+       "topic": "pandomim: Hayır, onu yapmıyorum!",
+       "knows": "şimdiki zamanın olumsuzu ve sorusu (yemiyorum, içmiyorum, Geliyor musun?)",
+       "questions": [
+        "s.talk.L16.002",
+        "s.talk.L16.003",
+        "s.L16.003"
+       ]
+      }
+     }
     }
    }
   },
@@ -6460,7 +6712,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L17.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Where are you going?",
+      "how": [
+       "Say where you're going today: Markete gidiyorum.",
+       "Ask your partner: Nereye gidiyorsun?",
+       "Guess with yes/no questions: Okula mı gidiyorsun?"
+      ],
+      "phrases": [
+       "s.L17.001",
+       "s.L17.003",
+       "s.L17.002",
+       "s.talk.L17.001",
+       "s.L17.012"
+      ],
+      "goals": [
+       "I said where I'm going",
+       "I asked where my partner is going"
+      ],
+      "partner": {
+       "topic": "bugün nereye gidiyoruz?",
+       "knows": "yön bildirme (eve, okula, markete gidiyorum; Nereye gidiyorsun?)",
+       "questions": [
+        "s.L17.001",
+        "s.talk.L17.002",
+        "s.L17.012"
+       ]
+      }
+     }
     }
    }
   },
@@ -6954,7 +7237,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L18.talk",
+      "kind": "act_it",
+      "minutes": 3,
+      "title": "Pass the pen",
+      "how": [
+       "Put a few things on the table: a pen, a book, a glass of water.",
+       "Give your partner commands with them: Kalemi al! Kitabı oku!",
+       "Swap: they give the commands, you do them."
+      ],
+      "phrases": [
+       "s.talk.L18.001",
+       "s.talk.L18.002",
+       "s.L18.009",
+       "s.talk.L18.003",
+       "s.L18.025"
+      ],
+      "goals": [
+       "I gave 4 commands with things",
+       "I did my partner's commands"
+      ],
+      "partner": {
+       "topic": "eşyalarla emirler",
+       "knows": "belirli nesne (kalemi al, suyu iç, kitabı oku)",
+       "questions": [
+        "s.talk.L18.001",
+        "s.talk.L18.002",
+        "s.L18.009"
+       ]
+      }
+     }
     }
    }
   },
@@ -7412,7 +7726,39 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L19.talk",
+      "kind": "point_and_name",
+      "minutes": 3,
+      "title": "My things",
+      "how": [
+       "Show your things or photos: Bu benim telefonum.",
+       "Ask about your partner's things: Bu senin çantan mı?",
+       "Ask their name, and say yours."
+      ],
+      "phrases": [
+       "s.L19.001",
+       "s.talk.L19.001",
+       "s.talk.L19.002",
+       "s.L19.027",
+       "s.L19.028",
+       "s.L19.006"
+      ],
+      "goals": [
+       "I showed 3 of my things",
+       "I asked about my partner's things"
+      ],
+      "partner": {
+       "topic": "benim eşyalarım, senin eşyaların",
+       "knows": "benim, senin, onun (telefonum, çantan, evi; Adın ne?)",
+       "questions": [
+        "s.L19.006",
+        "s.talk.L19.002",
+        "s.L19.019"
+       ]
+      }
+     }
     }
    }
   },
@@ -7837,7 +8183,40 @@
        "sentence": "s.L2.005",
        "note": "o·to·büs: two dots on the last vowel only."
       }
-     ]
+     ],
+     "talk": {
+      "id": "L2.talk",
+      "kind": "sounds",
+      "minutes": 2,
+      "title": "Which one did I say?",
+      "how": [
+       "Your partner says one word of each pair: kız or kaz, kır or kir, çam or cam. You point at the word you heard.",
+       "Swap: you say one word of each pair, and your partner points.",
+       "Bonus: read göz, gün, kitap and otobüs, and listen to how your partner says them."
+      ],
+      "phrases": [
+       "s.L1.002",
+       "s.L1.003",
+       "s.L1.004",
+       "s.L1.005",
+       "s.L2.001",
+       "s.L2.004"
+      ],
+      "goals": [
+       "I heard the difference in most pairs",
+       "My partner understood which word I said"
+      ],
+      "partner": {
+       "topic": "benzer sesli kelimeler",
+       "knows": "Türkçe harfler ve sesler; birkaç kelime (ev, okul, kitap, su, göz, gün)",
+       "questions": [
+        "s.L1.002",
+        "s.L1.003",
+        "s.L1.004",
+        "s.L1.005"
+       ]
+      }
+     }
     }
    }
   },
@@ -8281,7 +8660,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L20.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Our place",
+      "how": [
+       "Talk about your home or class: Evimiz küçük ama güzel.",
+       "Ask about your partner's: Sizin eviniz büyük mü?",
+       "Ask who their teacher is, or who they live with."
+      ],
+      "phrases": [
+       "s.L20.001",
+       "s.L20.002",
+       "s.talk.L20.001",
+       "s.L20.009",
+       "s.L20.013"
+      ],
+      "goals": [
+       "I described my home or class",
+       "I asked about my partner's home"
+      ],
+      "partner": {
+       "topic": "evimiz, sınıfımız",
+       "knows": "bizim, sizin, onların (evimiz, eviniz, evleri)",
+       "questions": [
+        "s.talk.L20.001",
+        "s.L20.003",
+        "s.L20.013"
+       ]
+      }
+     }
     }
    }
   },
@@ -8732,7 +9142,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L21.talk",
+      "kind": "guess",
+      "minutes": 3,
+      "title": "Whose is it?",
+      "how": [
+       "Put some of your things and your partner's things together.",
+       "Pick one up and ask: Bu kimin kalemi?",
+       "Your partner answers: Ayşe'nin. Senin. Swap."
+      ],
+      "phrases": [
+       "s.L21.002",
+       "s.talk.L21.001",
+       "s.L21.003",
+       "s.L21.011",
+       "s.L21.010"
+      ],
+      "goals": [
+       "I asked whose 3 things are",
+       "I answered with a name"
+      ],
+      "partner": {
+       "topic": "Bu kimin?",
+       "knows": "'kimin?' ve sahiplik (Ali'nin kitabı, Bu kimin kalemi?)",
+       "questions": [
+        "s.L21.002",
+        "s.L21.016",
+        "s.L21.010"
+       ]
+      }
+     }
     }
    }
   },
@@ -9150,7 +9591,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L22.talk",
+      "kind": "point_and_name",
+      "minutes": 3,
+      "title": "Compound hunt",
+      "how": [
+       "Find 5 compound names around you or in the street: otobüs durağı, yatak odası, çay bardağı.",
+       "Say them to your partner, and ask them for one more.",
+       "Ask where things are: Otobüs durağı nerede?"
+      ],
+      "phrases": [
+       "s.L22.002",
+       "s.L22.001",
+       "s.L22.016",
+       "s.L22.012",
+       "s.L22.007"
+      ],
+      "goals": [
+       "I found 5 compound names",
+       "I learned one from my partner"
+      ],
+      "partner": {
+       "topic": "etrafımızdaki isim tamlamaları",
+       "knows": "isim tamlamaları (otobüs durağı, yatak odası, Türk kahvesi, çay bardağı)",
+       "questions": [
+        "s.L22.002",
+        "s.L22.016",
+        "s.L22.010"
+       ]
+      }
+     }
     }
    }
   },
@@ -9583,7 +10055,39 @@
         "yok"
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L23.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Family and pets",
+      "how": [
+       "Ask your partner: Kardeşin var mı? Kaç kardeşin var?",
+       "Ask about pets: Kedin var mı?",
+       "Answer the same questions about yourself."
+      ],
+      "phrases": [
+       "s.L23.018",
+       "s.L23.003",
+       "s.talk.L23.001",
+       "s.L23.004",
+       "s.L23.019"
+      ],
+      "goals": [
+       "I asked about my partner's family",
+       "I said who is in my family"
+      ],
+      "partner": {
+       "topic": "aile ve evcil hayvanlar",
+       "knows": "'var/yok' ile sahiplik (kardeşim var, kedim yok, Kaç kardeşin var?)",
+       "questions": [
+        "s.L23.018",
+        "s.L23.003",
+        "s.talk.L23.001",
+        "s.L23.005"
+       ]
+      }
+     }
     }
    }
   },
@@ -10069,7 +10573,38 @@
        ],
        "answer": "s.L24.011"
       }
-     ]
+     ],
+     "talk": {
+      "id": "L24.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Where's your…?",
+      "how": [
+       "Ask where your partner's things are: Telefonun nerede?",
+       "Ask where their family is: Kardeşin nerede?",
+       "Answer the same questions: Çantamda. İstanbul'da."
+      ],
+      "phrases": [
+       "s.L19.019",
+       "s.L24.002",
+       "s.talk.L24.001",
+       "s.talk.L24.002",
+       "s.talk.L24.003"
+      ],
+      "goals": [
+       "I asked about 2 things and 1 person",
+       "I answered with where mine are: Çantamda."
+      ],
+      "partner": {
+       "topic": "eşyalar ve aile: nerede?",
+       "knows": "'Telefonun nerede? Çantamda.' gibi cümleler (evimde, çantanda, odasında)",
+       "questions": [
+        "s.L19.019",
+        "s.talk.L24.002",
+        "s.L24.014"
+       ]
+      }
+     }
     }
    }
   },
@@ -10535,7 +11070,40 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L25.talk",
+      "kind": "roleplay",
+      "minutes": 3,
+      "title": "At the market",
+      "how": [
+       "Your partner is the seller. Ask for something: Bir kilo domates, lütfen.",
+       "Ask the price: Kaç lira? Bu ne kadar?",
+       "Pay and count the change. Then swap: you're the seller."
+      ],
+      "phrases": [
+       "s.T16.001",
+       "s.L25.001",
+       "s.L25.003",
+       "s.L25.017",
+       "s.L25.019"
+      ],
+      "goals": [
+       "I bought something",
+       "I understood the price",
+       "I said a price as the seller"
+      ],
+      "partner": {
+       "topic": "pazarda alışveriş",
+       "knows": "sayılar (bine kadar), fiyatlar (Kaç lira? Bu ne kadar?), yaş (Kaç yaşındasın?)",
+       "questions": [
+        "s.L25.018",
+        "s.L25.027",
+        "s.L25.013",
+        "s.L25.007"
+       ]
+      }
+     }
     }
    }
   },
@@ -11052,7 +11620,39 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L26.talk",
+      "kind": "plan",
+      "minutes": 3,
+      "title": "My week",
+      "how": [
+       "Ask what your partner does on each day: Pazartesi ne yapıyorsun?",
+       "Ask times: Saat kaçta?",
+       "Find a time when you're both at home or free."
+      ],
+      "phrases": [
+       "s.talk.L26.001",
+       "s.L26.005",
+       "s.L26.013",
+       "s.L26.019",
+       "s.L26.018"
+      ],
+      "goals": [
+       "I asked about 3 days",
+       "I understood 2 times",
+       "We found a time"
+      ],
+      "partner": {
+       "topic": "haftalık program",
+       "knows": "saat (Saat kaç? Saat üçte), günler (pazartesi, cumartesi), sabah, akşam",
+       "questions": [
+        "s.talk.L26.001",
+        "s.L26.014",
+        "s.talk.L26.002"
+       ]
+      }
+     }
     }
    }
   },
@@ -11522,7 +12122,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L27.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "How do you get there?",
+      "how": [
+       "Say how you go to school or work: Okula otobüsle gidiyorum.",
+       "Ask your partner: Okula nasıl gidiyorsun? Kiminle?",
+       "Ask about a trip: Ankara'ya trenle mi?"
+      ],
+      "phrases": [
+       "s.L27.001",
+       "s.L27.007",
+       "s.L27.004",
+       "s.L27.019",
+       "s.L27.002"
+      ],
+      "goals": [
+       "I said how I travel",
+       "I asked who my partner goes with"
+      ],
+      "partner": {
+       "topic": "ulaşım: nasıl ve kiminle?",
+       "knows": "'ile' (otobüsle, arkadaşımla, Kiminle?)",
+       "questions": [
+        "s.talk.L27.001",
+        "s.L27.007",
+        "s.L27.014"
+       ]
+      }
+     }
     }
    }
   },
@@ -12002,7 +12633,39 @@
         "lütfen"
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L28.talk",
+      "kind": "roleplay",
+      "minutes": 3,
+      "title": "Café order",
+      "how": [
+       "Your partner is the waiter. Order: Bir sütlü kahve, lütfen.",
+       "Answer their questions: Şekerli mi, şekersiz mi?",
+       "Then chat: ask Nerelisin? and say where you're from."
+      ],
+      "phrases": [
+       "s.L28.005",
+       "s.L28.022",
+       "s.talk.L28.001",
+       "s.L28.003",
+       "s.L28.025"
+      ],
+      "goals": [
+       "I ordered a drink",
+       "I answered with or without",
+       "I asked where my partner is from"
+      ],
+      "partner": {
+       "topic": "kafede sipariş",
+       "knows": "şekerli/şekersiz, sütlü/sütsüz; nereli (İzmirliyim); meslekler (gazeteci, balıkçı)",
+       "questions": [
+        "s.talk.L28.002",
+        "s.L28.021",
+        "s.L28.003"
+       ]
+      }
+     }
     }
    }
   },
@@ -12442,7 +13105,38 @@
         "Kardeşim benden daha küçük."
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L29.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Which is bigger?",
+      "how": [
+       "Compare two cities, foods or animals: İstanbul Ankara'dan büyük.",
+       "Ask your partner: Hangisi daha iyi, çay mı kahve mi?",
+       "Agree (Evet!) or disagree (Hayır, … daha …)."
+      ],
+      "phrases": [
+       "s.L29.003",
+       "s.L29.013",
+       "s.L29.026",
+       "s.L29.025",
+       "s.L29.006"
+      ],
+      "goals": [
+       "I compared 3 pairs",
+       "I agreed or disagreed once"
+      ],
+      "partner": {
+       "topic": "karşılaştırma: şehirler, yiyecekler, hayvanlar",
+       "knows": "karşılaştırma (daha büyük, en iyi, İstanbul Ankara'dan büyük, Hangisi daha ucuz?)",
+       "questions": [
+        "s.L29.026",
+        "s.L29.025",
+        "s.talk.L29.001"
+       ]
+      }
+     }
     }
    }
   },
@@ -12834,7 +13528,42 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L3.talk",
+      "kind": "point_and_name",
+      "minutes": 3,
+      "title": "What's this?",
+      "how": [
+       "Point at 5 things around you and ask: Bu ne? Şu ne?",
+       "Your partner answers: Bu bir kalem. Then swap: they point and ask, you answer.",
+       "Didn't understand? Say Anlamadım. or Bu ne demek?"
+      ],
+      "phrases": [
+       "s.L3.001",
+       "s.L3.002",
+       "s.L3.003",
+       "s.L3.004",
+       "s.L3.005"
+      ],
+      "goals": [
+       "I asked about 5 things",
+       "I named 3 things myself",
+       "I used Anlamadım or Bu ne demek?"
+      ],
+      "partner": {
+       "topic": "etrafımızdaki eşyalar",
+       "knows": "'Bu ne? Şu ne?' soruları; 'Bu bir kitap.' gibi cümleler; eşya adları (kalem, çanta, sandalye, pencere)",
+       "questions": [
+        "s.L3.001",
+        "s.L3.004",
+        "s.L3.006"
+       ]
+      },
+      "requires": [
+       "survival"
+      ]
+     }
     }
    }
   },
@@ -13263,7 +13992,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L30.talk",
+      "kind": "tell",
+      "minutes": 3,
+      "title": "Yesterday",
+      "how": [
+       "Say 3 things you did yesterday: Kahvaltı yaptım. Film izledim.",
+       "Ask your partner: Dün ne yaptın?",
+       "Ask one more question: Dün nereye gittin?"
+      ],
+      "phrases": [
+       "s.L30.024",
+       "s.L30.002",
+       "s.L30.006",
+       "s.L30.013",
+       "s.L30.017"
+      ],
+      "goals": [
+       "I said 3 things I did",
+       "I understood what my partner did"
+      ],
+      "partner": {
+       "topic": "dün ne yaptık?",
+       "knows": "geçmiş zaman (geldim, gittin, yaptık; Dün ne yaptın?)",
+       "questions": [
+        "s.L30.024",
+        "s.talk.L30.001",
+        "s.talk.L30.002"
+       ]
+      }
+     }
     }
    }
   },
@@ -13716,7 +14476,39 @@
         "musun"
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L31.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Did you…?",
+      "how": [
+       "Ask yes/no questions about yesterday: Dün kahve içtin mi? Spor yaptın mı?",
+       "Your partner answers: Evet, içtim. Hayır, yapmadım.",
+       "Swap: answer their questions."
+      ],
+      "phrases": [
+       "s.L31.007",
+       "s.L31.015",
+       "s.talk.L31.001",
+       "s.L31.016",
+       "s.L31.021"
+      ],
+      "goals": [
+       "I asked 4 questions",
+       "I answered with yes and no"
+      ],
+      "partner": {
+       "topic": "dün şunu yaptın mı?",
+       "knows": "geçmiş zaman: olumsuz ve soru (gitmedim, içtin mi?, yaptın mı?)",
+       "questions": [
+        "s.talk.L31.002",
+        "s.L31.015",
+        "s.L31.021",
+        "s.talk.L31.003"
+       ]
+      }
+     }
     }
    }
   },
@@ -14199,7 +14991,41 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L32.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Talk with your mate about the weather",
+      "how": [
+       "Ask your partner about the weather today and yesterday.",
+       "Then let them ask you the same questions.",
+       "Bonus: where were you last weekend? Was it cold?"
+      ],
+      "phrases": [
+       "s.L32.015",
+       "s.L32.016",
+       "s.T20.002",
+       "s.L32.008",
+       "s.L32.001"
+      ],
+      "goals": [
+       "I asked about today's and yesterday's weather",
+       "I understood my partner's answers",
+       "I said where I was last weekend"
+      ],
+      "partner": {
+       "topic": "hava durumu",
+       "knows": "geçmiş zaman (geldim, gitmedim, geldin mi?), 'idi' ile geçmiş (soğuktu, evdeydim), hava ile ilgili kelimeler",
+       "questions": [
+        "s.talk.L32.001",
+        "s.talk.L32.002",
+        "s.talk.L32.003",
+        "s.talk.L32.004",
+        "s.talk.L32.005"
+       ]
+      }
+     }
     }
    }
   },
@@ -14658,7 +15484,39 @@
        ],
        "answer": "We're going on holiday next week."
       }
-     ]
+     ],
+     "talk": {
+      "id": "L33.talk",
+      "kind": "plan",
+      "minutes": 3,
+      "title": "Tomorrow",
+      "how": [
+       "Ask your partner: Yarın ne yapacaksın? Yarın yağmur yağacak mı?",
+       "Say what you'll do: Bu akşam kitap okuyacağım.",
+       "Make a weekend plan together: Cumartesi parka gideceğim."
+      ],
+      "phrases": [
+       "s.L33.018",
+       "s.L33.013",
+       "s.L33.007",
+       "s.talk.L33.001",
+       "s.L33.002"
+      ],
+      "goals": [
+       "I asked about tomorrow",
+       "I said what I'll do",
+       "We made a plan"
+      ],
+      "partner": {
+       "topic": "yarın ve hafta sonu planları",
+       "knows": "gelecek zaman (gideceğim, yapacaksın, Yağmur yağacak mı?)",
+       "questions": [
+        "s.talk.L33.002",
+        "s.talk.L33.003",
+        "s.talk.L33.004"
+       ]
+      }
+     }
     }
    }
   },
@@ -15102,7 +15960,39 @@
         "istemedim"
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L34.talk",
+      "kind": "plan",
+      "minutes": 3,
+      "title": "What do you want to do?",
+      "how": [
+       "Plan an outing. Ask: Ne yapmak istiyorsun?",
+       "Say what you want: Parka gitmek istiyorum. Antalya'ya gitmek istiyorum.",
+       "Agree on one thing you both want to do."
+      ],
+      "phrases": [
+       "s.L34.003",
+       "s.talk.L34.001",
+       "s.talk.L34.002",
+       "s.L34.008",
+       "s.L34.006"
+      ],
+      "goals": [
+       "I said 2 things I want to do",
+       "I asked what my partner wants",
+       "We agreed on a plan"
+      ],
+      "partner": {
+       "topic": "Ne yapmak istiyoruz?",
+       "knows": "istemek (Çay istiyorum. Gitmek istiyorum. Ne yapmak istiyorsun?)",
+       "questions": [
+        "s.L34.003",
+        "s.talk.L34.003",
+        "s.L34.008"
+       ]
+      }
+     }
     }
    }
   },
@@ -15568,7 +16458,38 @@
        "pattern": "g.L35.lazim.general",
        "sentence": "s.L35.003"
       }
-     ]
+     ],
+     "talk": {
+      "id": "L35.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "To-do list",
+      "how": [
+       "Ask your partner: Bugün ne yapman lazım?",
+       "Say your own list: Markete gitmem lazım. Eve gitmem lazım.",
+       "Compare your lists: who has more to do?"
+      ],
+      "phrases": [
+       "s.talk.L35.001",
+       "s.L35.017",
+       "s.L35.002",
+       "s.L35.013",
+       "s.L35.014"
+      ],
+      "goals": [
+       "I said 3 things I need to do",
+       "I understood my partner's list"
+      ],
+      "partner": {
+       "topic": "yapılacaklar listesi",
+       "knows": "'lazım' ve 'gerek' (Gitmem lazım. Ne yapman lazım? Bana su lazım.)",
+       "questions": [
+        "s.talk.L35.001",
+        "s.talk.L35.002",
+        "s.L35.013"
+       ]
+      }
+     }
     }
    }
   },
@@ -15951,7 +16872,37 @@
         "iki kitaplar": "After a number, the noun stays singular: **iki kitap**."
        }
       }
-     ]
+     ],
+     "talk": {
+      "id": "L4.talk",
+      "kind": "point_and_name",
+      "minutes": 3,
+      "title": "More than one",
+      "how": [
+       "Your partner names a thing: kalem. You say the plural: kalemler.",
+       "Then point at things around you and say how many: İki kitap. Çok kalem.",
+       "Swap: you name things, your partner says the plural."
+      ],
+      "phrases": [
+       "s.L4.001",
+       "s.L4.002",
+       "s.L4.004",
+       "s.L4.006",
+       "s.L4.011"
+      ],
+      "goals": [
+       "I said 5 plurals",
+       "I said how many of 2 things"
+      ],
+      "partner": {
+       "topic": "çoğullar: bir kitap, iki kitap, kitaplar",
+       "knows": "çoğul (kitaplar, kalemler, evler); iki, çok, yeni, eski; 'Bu ne?' sorusu",
+       "questions": [
+        "s.L3.001",
+        "s.L3.006"
+       ]
+      }
+     }
     }
    }
   },
@@ -16376,7 +17327,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L5.talk",
+      "kind": "introduce",
+      "minutes": 3,
+      "title": "Who are you?",
+      "how": [
+       "Say 3 things about yourself: İngilizim. Öğretmenim. İyiyim.",
+       "Listen to your partner say 3 things about themselves.",
+       "Repeat them back with sen: Sen Türksün. Sen doktorsun."
+      ],
+      "phrases": [
+       "s.L5.012",
+       "s.L5.001",
+       "s.L5.022",
+       "s.L5.010",
+       "s.L5.002"
+      ],
+      "goals": [
+       "I said 3 things about myself",
+       "I repeated back what my partner said"
+      ],
+      "partner": {
+       "topic": "kendini tanıtmak",
+       "knows": "'ben, sen, biz, siz, onlar' ile cümleler (öğretmenim, öğrencisin, Türküz); İngilizim, iyiyim; 'Nerelisin?' sorusu",
+       "questions": [
+        "s.L5.011",
+        "s.L5.014",
+        "s.L5.001"
+       ]
+      }
+     }
     }
    }
   },
@@ -16772,7 +17754,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L6.talk",
+      "kind": "correct_me",
+      "minutes": 3,
+      "title": "That's wrong!",
+      "how": [
+       "Your partner says wrong things about you: Sen Fransızsın. Sen doktorsun.",
+       "Correct them: Hayır, Fransız değilim. İngilizim.",
+       "Swap: you say wrong things about your partner, and they correct you."
+      ],
+      "phrases": [
+       "s.L6.009",
+       "s.L6.001",
+       "s.L6.015",
+       "s.L6.017",
+       "s.L6.013"
+      ],
+      "goals": [
+       "I corrected 3 wrong sentences",
+       "I said what is true about me"
+      ],
+      "partner": {
+       "topic": "yanlış cümleleri düzeltmek",
+       "knows": "'değil' (öğretmen değilim, hasta değilim); öğretmenim, öğrenciyim, İngilizim gibi cümleler",
+       "questions": [
+        "s.L6.018",
+        "s.talk.L6.001",
+        "s.talk.L6.002"
+       ]
+      }
+     }
     }
    }
   },
@@ -17223,7 +18236,39 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L7.talk",
+      "kind": "guess",
+      "minutes": 3,
+      "title": "Guess the job",
+      "how": [
+       "Your partner thinks of a job.",
+       "Guess with yes/no questions: Doktor musun? Öğretmen misin?",
+       "Swap: you think of a job, and answer Evet or Hayır, … değilim."
+      ],
+      "phrases": [
+       "s.talk.L7.001",
+       "s.talk.L7.002",
+       "s.L7.001",
+       "s.L7.002",
+       "s.talk.L7.003"
+      ],
+      "goals": [
+       "I guessed my partner's job",
+       "I answered my partner's questions"
+      ],
+      "partner": {
+       "topic": "meslek tahmini",
+       "knows": "evet/hayır soruları (Öğrenci misin? Doktor musun? Türk müsün?); nasıl, kim, nerede; değil",
+       "questions": [
+        "s.talk.L7.001",
+        "s.talk.L7.002",
+        "s.L7.001",
+        "s.L7.006"
+       ]
+      }
+     }
     }
    }
   },
@@ -17629,7 +18674,41 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L8.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "What's in the fridge?",
+      "how": [
+       "Ask what there is in your partner's kitchen or bag: Çay var mı? Kahve var mı?",
+       "Your partner answers Var. or Yok.",
+       "Swap: they ask about your kitchen."
+      ],
+      "phrases": [
+       "s.L8.001",
+       "s.L8.004",
+       "s.L8.007",
+       "s.L8.002",
+       "s.L8.003",
+       "s.L8.012"
+      ],
+      "goals": [
+       "I asked about 4 things",
+       "I understood Var and Yok",
+       "I answered about my own kitchen"
+      ],
+      "partner": {
+       "topic": "mutfakta ne var?",
+       "knows": "'var' ve 'yok' (Çay var mı? Süt yok.); yiyecekler ve içecekler (çay, kahve, süt, ekmek, peynir, su)",
+       "questions": [
+        "s.talk.L8.001",
+        "s.L8.013",
+        "s.L8.010",
+        "s.L8.011"
+       ]
+      }
+     }
     }
    }
   },
@@ -18044,7 +19123,38 @@
         }
        ]
       }
-     ]
+     ],
+     "talk": {
+      "id": "L9.talk",
+      "kind": "interview",
+      "minutes": 3,
+      "title": "Describe and count",
+      "how": [
+       "Describe 3 things around you: Büyük bir ev. Kırmızı bir araba.",
+       "Your partner says numbers from 1 to 10; write them down as you hear them.",
+       "Swap: you say numbers, and your partner writes them."
+      ],
+      "phrases": [
+       "s.L9.008",
+       "s.L9.004",
+       "s.L9.020",
+       "s.L9.006",
+       "s.L9.019"
+      ],
+      "goals": [
+       "I described 3 things",
+       "I wrote down the right numbers"
+      ],
+      "partner": {
+       "topic": "renkler ve sayılar",
+       "knows": "renkler ve sıfatlar (büyük, küçük, kırmızı, mavi, yeni), birden ona kadar sayılar",
+       "questions": [
+        "s.L9.009",
+        "s.T7.002",
+        "s.T7.003"
+       ]
+      }
+     }
     }
    }
   }
@@ -18267,7 +19377,41 @@
      "sentence": "s.L8.012",
      "typed": true
     }
-   ]
+   ],
+   "talk": {
+    "id": "C1.talk",
+    "kind": "free_chat",
+    "minutes": 5,
+    "title": "Meet someone",
+    "how": [
+     "Greet your partner and ask how they are.",
+     "Find out their nationality and job; tell them yours.",
+     "Ask if they're married or a student, then say goodbye: Görüşürüz!"
+    ],
+    "phrases": [
+     "s.C1.001",
+     "s.L7.010",
+     "s.L5.012",
+     "s.L5.022",
+     "s.L6.013",
+     "s.talk.C1.001"
+    ],
+    "goals": [
+     "I greeted and said goodbye",
+     "I said 3 things about myself",
+     "I asked 3 questions"
+    ],
+    "partner": {
+     "topic": "tanışma",
+     "knows": "selamlaşma; 'ben, sen' ile cümleler (öğretmenim, İngilizim); değil; evet/hayır soruları; var/yok; birden ona sayılar",
+     "questions": [
+      "s.L7.009",
+      "s.L5.011",
+      "s.L7.001",
+      "s.talk.C1.002"
+     ]
+    }
+   }
   },
   "C2": {
    "id": "C2",
@@ -18496,7 +19640,40 @@
      ],
      "feedback": "auto:g.L11.loc_copula"
     }
-   ]
+   ],
+   "talk": {
+    "id": "C2.talk",
+    "kind": "free_chat",
+    "minutes": 5,
+    "title": "Around the house",
+    "how": [
+     "Ask where things are in the room: Telefon nerede?",
+     "Ask where your partner is and where they're from: Neredesin? Neredensin?",
+     "React to what they say: Ben de! … ama …"
+    ],
+    "phrases": [
+     "s.L11.001",
+     "s.L11.002",
+     "s.L10.014",
+     "s.L12.001",
+     "s.L13.009"
+    ],
+    "goals": [
+     "I asked where 3 things are",
+     "I said where I'm from",
+     "I used Ben de or ama"
+    ],
+    "partner": {
+     "topic": "ev ve şehir: kim nerede?",
+     "knows": "yer bildirme (evde, evdeyim, Neredesin?), nereden (Londra'danım), 'ben de', 've', 'ama'",
+     "questions": [
+      "s.L11.001",
+      "s.L12.001",
+      "s.L10.014",
+      "s.L10.012"
+     ]
+    }
+   }
   },
   "C3": {
    "id": "C3",
@@ -18723,7 +19900,40 @@
       "Lütfen oturun."
      ]
     }
-   ]
+   ],
+   "talk": {
+    "id": "C3.talk",
+    "kind": "free_chat",
+    "minutes": 5,
+    "title": "A day in the life",
+    "how": [
+     "Ask what your partner is doing now: Ne yapıyorsun?",
+     "Ask where they're going today, and say where you're going.",
+     "Finish with a few commands: Gel! Otur! Çay iç!"
+    ],
+    "phrases": [
+     "s.L15.001",
+     "s.L15.017",
+     "s.L17.001",
+     "s.L17.002",
+     "s.L14.003"
+    ],
+    "goals": [
+     "I said what I'm doing",
+     "I asked where my partner is going",
+     "I gave 2 commands"
+    ],
+    "partner": {
+     "topic": "bir günümüz",
+     "knows": "emirler (Gel! Otur!); şimdiki zaman (okuyorum, gelmiyorum, Geliyor musun?); yön (okula gidiyorum); belirli nesne (kitabı okuyorum)",
+     "questions": [
+      "s.L15.001",
+      "s.L17.001",
+      "s.L16.007",
+      "s.L16.003"
+     ]
+    }
+   }
   },
   "C4": {
    "id": "C4",
@@ -18938,7 +20148,40 @@
      "sentence": "s.L23.019",
      "typed": true
     }
-   ]
+   ],
+   "talk": {
+    "id": "C4.talk",
+    "kind": "free_chat",
+    "minutes": 5,
+    "title": "Show your family",
+    "how": [
+     "Show photos of your family or home: Bu benim evim. Kardeşim öğrenci.",
+     "Ask about your partner's family: Kardeşin var mı?",
+     "Ask whose things are around you: Bu kimin kitabı?"
+    ],
+    "phrases": [
+     "s.L19.001",
+     "s.L23.004",
+     "s.L19.021",
+     "s.L23.018",
+     "s.L21.002"
+    ],
+    "goals": [
+     "I talked about my family",
+     "I asked about my partner's family",
+     "I asked whose something is"
+    ],
+    "partner": {
+     "topic": "aile ve eşyalar",
+     "knows": "benim, senin, bizim (evim, araban, evimiz); kimin? (Ali'nin kitabı); var/yok ile sahiplik (kardeşim var)",
+     "questions": [
+      "s.L19.006",
+      "s.L23.018",
+      "s.L23.003",
+      "s.L21.002"
+     ]
+    }
+   }
   },
   "C5": {
    "id": "C5",
@@ -19161,7 +20404,40 @@
      "sentence": "s.L28.004",
      "typed": true
     }
-   ]
+   ],
+   "talk": {
+    "id": "C5.talk",
+    "kind": "free_chat",
+    "minutes": 6,
+    "title": "Out and about",
+    "how": [
+     "Talk about your day: what time you get up, how you go to school or work.",
+     "Do a quick café or market scene: order something and ask the price.",
+     "Compare two things: Çay kahveden ucuz."
+    ],
+    "phrases": [
+     "s.L25.001",
+     "s.L26.014",
+     "s.L27.001",
+     "s.L28.005",
+     "s.L29.013"
+    ],
+    "goals": [
+     "I asked and said a time",
+     "I ordered or bought something",
+     "I compared two things"
+    ],
+    "partner": {
+     "topic": "alışveriş, saatler ve ulaşım",
+     "knows": "sayılar ve fiyatlar, saat ve günler, 'ile' (otobüsle), şekerli/sütlü, karşılaştırma (daha ucuz)",
+     "questions": [
+      "s.L26.014",
+      "s.talk.L27.001",
+      "s.L28.021",
+      "s.L25.007"
+     ]
+    }
+   }
   },
   "C6": {
    "id": "C6",
@@ -19377,7 +20653,40 @@
      "sentence": "s.T20.001",
      "typed": true
     }
-   ]
+   ],
+   "talk": {
+    "id": "C6.talk",
+    "kind": "free_chat",
+    "minutes": 5,
+    "title": "Last weekend",
+    "how": [
+     "Ask your partner what they did last weekend: Hafta sonu ne yaptın?",
+     "Say where you were and what you did.",
+     "Talk about the weather: Hava soğuktu. Dün hava nasıldı?"
+    ],
+    "phrases": [
+     "s.C6.001",
+     "s.L30.006",
+     "s.L32.007",
+     "s.L32.015",
+     "s.L31.016"
+    ],
+    "goals": [
+     "I said 3 things I did",
+     "I said where I was",
+     "I talked about the weather"
+    ],
+    "partner": {
+     "topic": "geçen hafta sonu",
+     "knows": "geçmiş zaman (gittim, gitmedim, gittin mi?), 'idi' ile geçmiş (evdeydim, soğuktu), hava (güneşli, yağmur)",
+     "questions": [
+      "s.C6.001",
+      "s.talk.L32.005",
+      "s.talk.L32.002",
+      "s.L31.015"
+     ]
+    }
+   }
   },
   "C7": {
    "id": "C7",
@@ -19585,7 +20894,40 @@
      "sentence": "s.T21.003",
      "typed": true
     }
-   ]
+   ],
+   "talk": {
+    "id": "C7.talk",
+    "kind": "free_chat",
+    "minutes": 6,
+    "title": "Final A1 chat",
+    "how": [
+     "Ask what your partner did yesterday, and what they'll do next week.",
+     "Say what you want to do, and what you need to do.",
+     "Find one plan you could do together."
+    ],
+    "phrases": [
+     "s.L30.024",
+     "s.L33.018",
+     "s.L34.003",
+     "s.L35.017",
+     "s.L34.018"
+    ],
+    "goals": [
+     "I talked about the past",
+     "I talked about plans",
+     "I said what I want and need to do"
+    ],
+    "partner": {
+     "topic": "A1 sonu sohbeti: dün, bugün ve yarın",
+     "knows": "geçmiş, şimdiki ve gelecek zaman (gittim, gidiyorum, gideceğim); istemek (gitmek istiyorum); lazım (gitmem lazım)",
+     "questions": [
+      "s.L30.024",
+      "s.C7.001",
+      "s.L34.003",
+      "s.talk.L35.001"
+     ]
+    }
+   }
   }
  },
  "packs": {
@@ -43705,6 +45047,1202 @@
    },
    "audio": "aud.own.s.C7.001",
    "native_required": true
+  },
+  "s.talk.survival.001": {
+   "id": "s.talk.survival.001",
+   "tr": "Tekrar eder misiniz?",
+   "en": [
+    "Could you repeat that?",
+    "Can you say that again?"
+   ],
+   "words": [
+    "w.tekrar_eder_misiniz"
+   ],
+   "grammar": [],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.survival.001",
+   "native_required": true,
+   "phrase": true
+  },
+  "s.talk.survival.002": {
+   "id": "s.talk.survival.002",
+   "tr": "Daha yavaş konuşur musunuz?",
+   "en": [
+    "Could you speak more slowly?"
+   ],
+   "words": [
+    "w.daha_yavaş_konuşur_musunuz"
+   ],
+   "grammar": [],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.survival.002",
+   "native_required": true,
+   "phrase": true
+  },
+  "s.talk.L6.001": {
+   "id": "s.talk.L6.001",
+   "tr": "Sen Fransızsın.",
+   "en": [
+    "You're French."
+   ],
+   "words": [
+    "w.sen",
+    "w.Fransız"
+   ],
+   "grammar": [
+    "g.L5.copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L6.001"
+  },
+  "s.talk.L6.002": {
+   "id": "s.talk.L6.002",
+   "tr": "Sen doktorsun.",
+   "en": [
+    "You're a doctor."
+   ],
+   "words": [
+    "w.sen",
+    "w.doktor"
+   ],
+   "grammar": [
+    "g.L5.copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L6.002"
+  },
+  "s.talk.L7.001": {
+   "id": "s.talk.L7.001",
+   "tr": "Doktor musun?",
+   "en": [
+    "Are you a doctor?"
+   ],
+   "words": [
+    "w.doktor"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L7.001",
+   "native_required": true
+  },
+  "s.talk.L7.002": {
+   "id": "s.talk.L7.002",
+   "tr": "Öğretmen misin?",
+   "en": [
+    "Are you a teacher?"
+   ],
+   "words": [
+    "w.öğretmen"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L7.002",
+   "native_required": true
+  },
+  "s.talk.L7.003": {
+   "id": "s.talk.L7.003",
+   "tr": "Hayır, doktor değilim.",
+   "en": [
+    "No, I'm not a doctor."
+   ],
+   "words": [
+    "w.hayır",
+    "w.doktor",
+    "w.değil"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L6.degil"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L7.003"
+  },
+  "s.talk.L8.001": {
+   "id": "s.talk.L8.001",
+   "tr": "Süt var mı?",
+   "en": [
+    "Is there any milk?"
+   ],
+   "words": [
+    "w.süt",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L8.varyok",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L8.001",
+   "native_required": true
+  },
+  "s.talk.L10.001": {
+   "id": "s.talk.L10.001",
+   "tr": "Masada mı?",
+   "en": [
+    "Is it on the table?"
+   ],
+   "words": [
+    "w.masa"
+   ],
+   "grammar": [
+    "g.L10.loc",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L10.001",
+   "native_required": true
+  },
+  "s.talk.L10.002": {
+   "id": "s.talk.L10.002",
+   "tr": "Çantada mı?",
+   "en": [
+    "Is it in the bag?"
+   ],
+   "words": [
+    "w.çanta"
+   ],
+   "grammar": [
+    "g.L10.loc",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L10.002",
+   "native_required": true
+  },
+  "s.talk.L11.001": {
+   "id": "s.talk.L11.001",
+   "tr": "Ahmet Ankara'da mı?",
+   "en": [
+    "Is Ahmet in Ankara?"
+   ],
+   "words": [
+    "w.Ahmet",
+    "w.Ankara"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L10.loc",
+    "g.L11.loc_copula"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L11.001",
+   "native_required": true
+  },
+  "s.talk.L12.001": {
+   "id": "s.talk.L12.001",
+   "tr": "İzmir'den mi?",
+   "en": [
+    "From İzmir?",
+    "Is he from İzmir?"
+   ],
+   "words": [
+    "w.İzmir"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L11.loc_copula",
+    "g.L12.abl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L12.001",
+   "native_required": true
+  },
+  "s.talk.L13.001": {
+   "id": "s.talk.L13.001",
+   "tr": "Ben de öğretmenim.",
+   "en": [
+    "I'm a teacher too."
+   ],
+   "words": [
+    "w.ben",
+    "w.de",
+    "w.öğretmen"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L13.clitic_de"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L13.001"
+  },
+  "s.talk.L15.001": {
+   "id": "s.talk.L15.001",
+   "tr": "Kitap okuyorsun!",
+   "en": [
+    "You're reading a book!"
+   ],
+   "words": [
+    "w.kitap",
+    "w.okumak"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L15.prog"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L15.001"
+  },
+  "s.talk.L15.002": {
+   "id": "s.talk.L15.002",
+   "tr": "Çay içiyorsun!",
+   "en": [
+    "You're drinking tea!"
+   ],
+   "words": [
+    "w.çay",
+    "w.içmek"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L15.prog"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L15.002"
+  },
+  "s.talk.L16.001": {
+   "id": "s.talk.L16.001",
+   "tr": "Hayır, yemiyorum. İçiyorum.",
+   "en": [
+    "No, I'm not eating. I'm drinking."
+   ],
+   "words": [
+    "w.hayır",
+    "w.yemek",
+    "w.içmek"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L15.prog",
+    "g.L16.prog_neg_q"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L16.001"
+  },
+  "s.talk.L16.002": {
+   "id": "s.talk.L16.002",
+   "tr": "Ekmek yiyorsun!",
+   "en": [
+    "You're eating bread!"
+   ],
+   "words": [
+    "w.ekmek",
+    "w.yemek"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L15.prog"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L16.002"
+  },
+  "s.talk.L16.003": {
+   "id": "s.talk.L16.003",
+   "tr": "Uyuyor musun?",
+   "en": [
+    "Are you sleeping?"
+   ],
+   "words": [
+    "w.uyumak"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L15.prog",
+    "g.L16.prog_neg_q"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L16.003",
+   "native_required": true
+  },
+  "s.talk.L17.001": {
+   "id": "s.talk.L17.001",
+   "tr": "Markete gidiyorum.",
+   "en": [
+    "I'm going to the supermarket."
+   ],
+   "words": [
+    "w.market",
+    "w.gitmek"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L15.prog",
+    "g.L17.dat"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L17.001"
+  },
+  "s.talk.L17.002": {
+   "id": "s.talk.L17.002",
+   "tr": "Okula mı gidiyorsun?",
+   "en": [
+    "Are you going to school?"
+   ],
+   "words": [
+    "w.okul",
+    "w.gitmek"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L15.prog",
+    "g.L16.prog_neg_q",
+    "g.L17.dat"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L17.002",
+   "native_required": true
+  },
+  "s.talk.L18.001": {
+   "id": "s.talk.L18.001",
+   "tr": "Kalemi al!",
+   "en": [
+    "Take the pen!"
+   ],
+   "words": [
+    "w.kalem",
+    "w.almak"
+   ],
+   "grammar": [
+    "g.L14.imperative",
+    "g.L18.acc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L18.001"
+  },
+  "s.talk.L18.002": {
+   "id": "s.talk.L18.002",
+   "tr": "Kitabı oku!",
+   "en": [
+    "Read the book!"
+   ],
+   "words": [
+    "w.kitap",
+    "w.okumak"
+   ],
+   "grammar": [
+    "g.L14.imperative",
+    "g.L18.acc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L18.002"
+  },
+  "s.talk.L18.003": {
+   "id": "s.talk.L18.003",
+   "tr": "Ekmeği ye!",
+   "en": [
+    "Eat the bread!"
+   ],
+   "words": [
+    "w.ekmek",
+    "w.yemek"
+   ],
+   "grammar": [
+    "g.L14.imperative",
+    "g.L18.acc"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L18.003"
+  },
+  "s.talk.L19.001": {
+   "id": "s.talk.L19.001",
+   "tr": "Bu benim telefonum.",
+   "en": [
+    "This is my phone."
+   ],
+   "words": [
+    "w.bu",
+    "w.ben",
+    "w.telefon"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L19.poss_sg"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L19.001"
+  },
+  "s.talk.L19.002": {
+   "id": "s.talk.L19.002",
+   "tr": "Bu senin çantan mı?",
+   "en": [
+    "Is this your bag?"
+   ],
+   "words": [
+    "w.bu",
+    "w.sen",
+    "w.çanta"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L7.question",
+    "g.L19.poss_sg"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L19.002",
+   "native_required": true
+  },
+  "s.talk.L20.001": {
+   "id": "s.talk.L20.001",
+   "tr": "Sizin eviniz büyük mü?",
+   "en": [
+    "Is your house big?"
+   ],
+   "words": [
+    "w.siz",
+    "w.ev",
+    "w.büyük"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L20.poss_pl"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L20.001",
+   "native_required": true
+  },
+  "s.talk.L21.001": {
+   "id": "s.talk.L21.001",
+   "tr": "Bu kimin kalemi?",
+   "en": [
+    "Whose pen is this?"
+   ],
+   "words": [
+    "w.bu",
+    "w.kim",
+    "w.kalem"
+   ],
+   "grammar": [
+    "g.L3.basics",
+    "g.L7.question",
+    "g.L19.poss_sg",
+    "g.L21.gen"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L21.001",
+   "native_required": true
+  },
+  "s.talk.L23.001": {
+   "id": "s.talk.L23.001",
+   "tr": "Kedin var mı?",
+   "en": [
+    "Do you have a cat?"
+   ],
+   "words": [
+    "w.kedi",
+    "w.var"
+   ],
+   "grammar": [
+    "g.L8.varyok",
+    "g.L7.question",
+    "g.L19.poss_sg",
+    "g.L23.have"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L23.001",
+   "native_required": true
+  },
+  "s.talk.L24.001": {
+   "id": "s.talk.L24.001",
+   "tr": "Telefonum çantamda.",
+   "en": [
+    "My phone is in my bag."
+   ],
+   "words": [
+    "w.telefon",
+    "w.çanta"
+   ],
+   "grammar": [
+    "g.L10.loc",
+    "g.L19.poss_sg",
+    "g.L24.poss_case"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L24.001"
+  },
+  "s.talk.L24.002": {
+   "id": "s.talk.L24.002",
+   "tr": "Kardeşin nerede?",
+   "en": [
+    "Where is your brother?",
+    "Where is your sister?"
+   ],
+   "words": [
+    "w.kardeş",
+    "w.nerede"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L19.poss_sg"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L24.002",
+   "native_required": true
+  },
+  "s.talk.L24.003": {
+   "id": "s.talk.L24.003",
+   "tr": "Kardeşim İstanbul'da.",
+   "en": [
+    "My brother is in Istanbul.",
+    "My sister is in Istanbul."
+   ],
+   "words": [
+    "w.kardeş",
+    "w.İstanbul"
+   ],
+   "grammar": [
+    "g.L10.loc",
+    "g.L11.loc_copula",
+    "g.L19.poss_sg"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L24.003"
+  },
+  "s.talk.L26.001": {
+   "id": "s.talk.L26.001",
+   "tr": "Pazartesi ne yapıyorsun?",
+   "en": [
+    "What are you doing on Monday?"
+   ],
+   "words": [
+    "w.pazartesi",
+    "w.ne",
+    "w.yapmak"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L15.prog",
+    "g.L26.time"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L26.001",
+   "native_required": true
+  },
+  "s.talk.L26.002": {
+   "id": "s.talk.L26.002",
+   "tr": "Cumartesi evde misin?",
+   "en": [
+    "Are you at home on Saturday?"
+   ],
+   "words": [
+    "w.cumartesi",
+    "w.ev"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L11.loc_copula",
+    "g.L26.time"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L26.002",
+   "native_required": true
+  },
+  "s.talk.L27.001": {
+   "id": "s.talk.L27.001",
+   "tr": "Okula nasıl gidiyorsun?",
+   "en": [
+    "How do you get to school?",
+    "How do you go to school?"
+   ],
+   "words": [
+    "w.okul",
+    "w.nasıl",
+    "w.gitmek"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question",
+    "g.L15.prog",
+    "g.L17.dat"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L27.001",
+   "native_required": true
+  },
+  "s.talk.L28.001": {
+   "id": "s.talk.L28.001",
+   "tr": "Şekersiz bir çay, lütfen.",
+   "en": [
+    "A tea without sugar, please."
+   ],
+   "words": [
+    "w.şeker",
+    "w.bir",
+    "w.çay",
+    "w.lütfen"
+   ],
+   "grammar": [
+    "g.L28.li_siz",
+    "g.L9.adj_num"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L28.001"
+  },
+  "s.talk.L28.002": {
+   "id": "s.talk.L28.002",
+   "tr": "Şekerli mi, şekersiz mi?",
+   "en": [
+    "With sugar or without?"
+   ],
+   "words": [
+    "w.şeker"
+   ],
+   "grammar": [
+    "g.L28.li_siz",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L28.002",
+   "native_required": true
+  },
+  "s.talk.L29.001": {
+   "id": "s.talk.L29.001",
+   "tr": "İstanbul mu daha büyük, Ankara mı?",
+   "en": [
+    "Which is bigger, Istanbul or Ankara?"
+   ],
+   "words": [
+    "w.İstanbul",
+    "w.daha",
+    "w.büyük",
+    "w.Ankara"
+   ],
+   "grammar": [
+    "g.L29.comparison",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L29.001",
+   "native_required": true
+  },
+  "s.talk.L30.001": {
+   "id": "s.talk.L30.001",
+   "tr": "Dün akşam ne yedin?",
+   "en": [
+    "What did you eat last night?",
+    "What did you eat yesterday evening?"
+   ],
+   "words": [
+    "w.dün",
+    "w.akşam",
+    "w.ne",
+    "w.yemek"
+   ],
+   "grammar": [
+    "g.L30.past"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L30.001",
+   "native_required": true
+  },
+  "s.talk.L30.002": {
+   "id": "s.talk.L30.002",
+   "tr": "Dün nereye gittin?",
+   "en": [
+    "Where did you go yesterday?"
+   ],
+   "words": [
+    "w.dün",
+    "w.nereye",
+    "w.gitmek"
+   ],
+   "grammar": [
+    "g.L30.past",
+    "g.L17.dat"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L30.002",
+   "native_required": true
+  },
+  "s.talk.L31.001": {
+   "id": "s.talk.L31.001",
+   "tr": "Dün spor yaptın mı?",
+   "en": [
+    "Did you do any sport yesterday?",
+    "Did you exercise yesterday?"
+   ],
+   "words": [
+    "w.dün",
+    "w.spor",
+    "w.yapmak"
+   ],
+   "grammar": [
+    "g.L30.past",
+    "g.L31.past_neg_q",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L31.001",
+   "native_required": true
+  },
+  "s.talk.L31.002": {
+   "id": "s.talk.L31.002",
+   "tr": "Dün kahve içtin mi?",
+   "en": [
+    "Did you drink coffee yesterday?"
+   ],
+   "words": [
+    "w.dün",
+    "w.kahve",
+    "w.içmek"
+   ],
+   "grammar": [
+    "g.L30.past",
+    "g.L31.past_neg_q",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L31.002",
+   "native_required": true
+  },
+  "s.talk.L31.003": {
+   "id": "s.talk.L31.003",
+   "tr": "Dün film izledin mi?",
+   "en": [
+    "Did you watch a film yesterday?"
+   ],
+   "words": [
+    "w.dün",
+    "w.film",
+    "w.izlemek"
+   ],
+   "grammar": [
+    "g.L30.past",
+    "g.L31.past_neg_q",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L31.003",
+   "native_required": true
+  },
+  "s.talk.L32.001": {
+   "id": "s.talk.L32.001",
+   "tr": "Bugün hava nasıl?",
+   "en": [
+    "What's the weather like today?",
+    "How's the weather today?"
+   ],
+   "words": [
+    "w.bugün",
+    "w.hava",
+    "w.nasıl"
+   ],
+   "grammar": [
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L32.001",
+   "native_required": true
+  },
+  "s.talk.L32.002": {
+   "id": "s.talk.L32.002",
+   "tr": "Dün hava nasıldı?",
+   "en": [
+    "What was the weather like yesterday?",
+    "How was the weather yesterday?"
+   ],
+   "words": [
+    "w.dün",
+    "w.hava",
+    "w.nasıl"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L32.copula_past"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L32.002",
+   "native_required": true
+  },
+  "s.talk.L32.003": {
+   "id": "s.talk.L32.003",
+   "tr": "Dün yağmur yağdı mı?",
+   "en": [
+    "Did it rain yesterday?"
+   ],
+   "words": [
+    "w.dün",
+    "w.yağmur",
+    "w.yağmak"
+   ],
+   "grammar": [
+    "g.L30.past",
+    "g.L31.past_neg_q",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L32.003",
+   "native_required": true
+  },
+  "s.talk.L32.004": {
+   "id": "s.talk.L32.004",
+   "tr": "Soğuk muydu?",
+   "en": [
+    "Was it cold?"
+   ],
+   "words": [
+    "w.soğuk"
+   ],
+   "grammar": [
+    "g.L7.question",
+    "g.L32.copula_past"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L32.004",
+   "native_required": true
+  },
+  "s.talk.L32.005": {
+   "id": "s.talk.L32.005",
+   "tr": "Geçen hafta sonu neredeydin?",
+   "en": [
+    "Where were you last weekend?"
+   ],
+   "words": [
+    "w.geçen",
+    "w.hafta_sonu",
+    "w.nerede"
+   ],
+   "grammar": [
+    "g.L10.loc",
+    "g.L32.copula_past"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L32.005",
+   "native_required": true
+  },
+  "s.talk.L33.001": {
+   "id": "s.talk.L33.001",
+   "tr": "Cumartesi parka gideceğim.",
+   "en": [
+    "I'll go to the park on Saturday."
+   ],
+   "words": [
+    "w.cumartesi",
+    "w.park",
+    "w.gitmek"
+   ],
+   "grammar": [
+    "g.L17.dat",
+    "g.L26.time",
+    "g.L33.future"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L33.001"
+  },
+  "s.talk.L33.002": {
+   "id": "s.talk.L33.002",
+   "tr": "Yarın ne yapacaksın?",
+   "en": [
+    "What will you do tomorrow?",
+    "What are you doing tomorrow?"
+   ],
+   "words": [
+    "w.yarın",
+    "w.ne",
+    "w.yapmak"
+   ],
+   "grammar": [
+    "g.L33.future"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L33.002",
+   "native_required": true
+  },
+  "s.talk.L33.003": {
+   "id": "s.talk.L33.003",
+   "tr": "Yarın yağmur yağacak mı?",
+   "en": [
+    "Will it rain tomorrow?"
+   ],
+   "words": [
+    "w.yarın",
+    "w.yağmur",
+    "w.yağmak"
+   ],
+   "grammar": [
+    "g.L33.future",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L33.003",
+   "native_required": true
+  },
+  "s.talk.L33.004": {
+   "id": "s.talk.L33.004",
+   "tr": "Hafta sonu ne yapacaksın?",
+   "en": [
+    "What will you do at the weekend?",
+    "What are you doing at the weekend?"
+   ],
+   "words": [
+    "w.hafta_sonu",
+    "w.ne",
+    "w.yapmak"
+   ],
+   "grammar": [
+    "g.L26.time",
+    "g.L33.future"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L33.004",
+   "native_required": true
+  },
+  "s.talk.L34.001": {
+   "id": "s.talk.L34.001",
+   "tr": "Parka gitmek istiyorum.",
+   "en": [
+    "I want to go to the park."
+   ],
+   "words": [
+    "w.park",
+    "w.gitmek",
+    "w.istemek"
+   ],
+   "grammar": [
+    "g.L34.istemek",
+    "g.L14.imperative",
+    "g.L15.prog",
+    "g.L17.dat"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L34.001"
+  },
+  "s.talk.L34.002": {
+   "id": "s.talk.L34.002",
+   "tr": "Antalya'ya gitmek istiyorum.",
+   "en": [
+    "I want to go to Antalya."
+   ],
+   "words": [
+    "w.Antalya",
+    "w.gitmek",
+    "w.istemek"
+   ],
+   "grammar": [
+    "g.L34.istemek",
+    "g.L14.imperative",
+    "g.L15.prog",
+    "g.L17.dat"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L34.002"
+  },
+  "s.talk.L34.003": {
+   "id": "s.talk.L34.003",
+   "tr": "Hafta sonu nereye gitmek istiyorsun?",
+   "en": [
+    "Where do you want to go at the weekend?"
+   ],
+   "words": [
+    "w.hafta_sonu",
+    "w.nereye",
+    "w.gitmek",
+    "w.istemek"
+   ],
+   "grammar": [
+    "g.L34.istemek",
+    "g.L14.imperative",
+    "g.L15.prog",
+    "g.L26.time"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L34.003",
+   "native_required": true
+  },
+  "s.talk.L35.001": {
+   "id": "s.talk.L35.001",
+   "tr": "Bugün ne yapman lazım?",
+   "en": [
+    "What do you need to do today?"
+   ],
+   "words": [
+    "w.bugün",
+    "w.ne",
+    "w.yapmak",
+    "w.lazım"
+   ],
+   "grammar": [
+    "g.L35.lazim",
+    "g.L19.poss_sg"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L35.001",
+   "native_required": true
+  },
+  "s.talk.L35.002": {
+   "id": "s.talk.L35.002",
+   "tr": "Yarın ne yapman lazım?",
+   "en": [
+    "What do you need to do tomorrow?"
+   ],
+   "words": [
+    "w.yarın",
+    "w.ne",
+    "w.yapmak",
+    "w.lazım"
+   ],
+   "grammar": [
+    "g.L35.lazim",
+    "g.L19.poss_sg"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.L35.002",
+   "native_required": true
+  },
+  "s.talk.C1.001": {
+   "id": "s.talk.C1.001",
+   "tr": "Görüşürüz!",
+   "en": [
+    "See you!",
+    "See you later!"
+   ],
+   "words": [
+    "w.görüşürüz"
+   ],
+   "grammar": [],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.C1.001",
+   "phrase": true
+  },
+  "s.talk.C1.002": {
+   "id": "s.talk.C1.002",
+   "tr": "Evli misin?",
+   "en": [
+    "Are you married?"
+   ],
+   "words": [
+    "w.evli"
+   ],
+   "grammar": [
+    "g.L5.copula",
+    "g.L7.question"
+   ],
+   "source": {
+    "kind": "original"
+   },
+   "audio": "aud.own.s.talk.C1.002",
+   "native_required": true
   }
  },
  "suffixes": {
@@ -59319,6 +61857,489 @@
    "license": "OWN",
    "status": "planned",
    "text": "Gelecek hafta nereye gideceksin?"
+  },
+  "aud.own.s.talk.survival.001": {
+   "id": "aud.own.s.talk.survival.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Tekrar eder misiniz?"
+  },
+  "aud.own.s.talk.survival.002": {
+   "id": "aud.own.s.talk.survival.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Daha yavaş konuşur musunuz?"
+  },
+  "aud.own.s.talk.L6.001": {
+   "id": "aud.own.s.talk.L6.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Sen Fransızsın."
+  },
+  "aud.own.s.talk.L6.002": {
+   "id": "aud.own.s.talk.L6.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Sen doktorsun."
+  },
+  "aud.own.s.talk.L7.001": {
+   "id": "aud.own.s.talk.L7.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Doktor musun?"
+  },
+  "aud.own.s.talk.L7.002": {
+   "id": "aud.own.s.talk.L7.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Öğretmen misin?"
+  },
+  "aud.own.s.talk.L7.003": {
+   "id": "aud.own.s.talk.L7.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Hayır, doktor değilim."
+  },
+  "aud.own.s.talk.L8.001": {
+   "id": "aud.own.s.talk.L8.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Süt var mı?"
+  },
+  "aud.own.s.talk.L10.001": {
+   "id": "aud.own.s.talk.L10.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Masada mı?"
+  },
+  "aud.own.s.talk.L10.002": {
+   "id": "aud.own.s.talk.L10.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Çantada mı?"
+  },
+  "aud.own.s.talk.L11.001": {
+   "id": "aud.own.s.talk.L11.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ahmet Ankara'da mı?"
+  },
+  "aud.own.s.talk.L12.001": {
+   "id": "aud.own.s.talk.L12.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "İzmir'den mi?"
+  },
+  "aud.own.s.talk.L13.001": {
+   "id": "aud.own.s.talk.L13.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ben de öğretmenim."
+  },
+  "aud.own.s.talk.L15.001": {
+   "id": "aud.own.s.talk.L15.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kitap okuyorsun!"
+  },
+  "aud.own.s.talk.L15.002": {
+   "id": "aud.own.s.talk.L15.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Çay içiyorsun!"
+  },
+  "aud.own.s.talk.L16.001": {
+   "id": "aud.own.s.talk.L16.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Hayır, yemiyorum. İçiyorum."
+  },
+  "aud.own.s.talk.L16.002": {
+   "id": "aud.own.s.talk.L16.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ekmek yiyorsun!"
+  },
+  "aud.own.s.talk.L16.003": {
+   "id": "aud.own.s.talk.L16.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Uyuyor musun?"
+  },
+  "aud.own.s.talk.L17.001": {
+   "id": "aud.own.s.talk.L17.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Markete gidiyorum."
+  },
+  "aud.own.s.talk.L17.002": {
+   "id": "aud.own.s.talk.L17.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Okula mı gidiyorsun?"
+  },
+  "aud.own.s.talk.L18.001": {
+   "id": "aud.own.s.talk.L18.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kalemi al!"
+  },
+  "aud.own.s.talk.L18.002": {
+   "id": "aud.own.s.talk.L18.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kitabı oku!"
+  },
+  "aud.own.s.talk.L18.003": {
+   "id": "aud.own.s.talk.L18.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Ekmeği ye!"
+  },
+  "aud.own.s.talk.L19.001": {
+   "id": "aud.own.s.talk.L19.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu benim telefonum."
+  },
+  "aud.own.s.talk.L19.002": {
+   "id": "aud.own.s.talk.L19.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu senin çantan mı?"
+  },
+  "aud.own.s.talk.L20.001": {
+   "id": "aud.own.s.talk.L20.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Sizin eviniz büyük mü?"
+  },
+  "aud.own.s.talk.L21.001": {
+   "id": "aud.own.s.talk.L21.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bu kimin kalemi?"
+  },
+  "aud.own.s.talk.L23.001": {
+   "id": "aud.own.s.talk.L23.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kedin var mı?"
+  },
+  "aud.own.s.talk.L24.001": {
+   "id": "aud.own.s.talk.L24.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Telefonum çantamda."
+  },
+  "aud.own.s.talk.L24.002": {
+   "id": "aud.own.s.talk.L24.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kardeşin nerede?"
+  },
+  "aud.own.s.talk.L24.003": {
+   "id": "aud.own.s.talk.L24.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Kardeşim İstanbul'da."
+  },
+  "aud.own.s.talk.L26.001": {
+   "id": "aud.own.s.talk.L26.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Pazartesi ne yapıyorsun?"
+  },
+  "aud.own.s.talk.L26.002": {
+   "id": "aud.own.s.talk.L26.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Cumartesi evde misin?"
+  },
+  "aud.own.s.talk.L27.001": {
+   "id": "aud.own.s.talk.L27.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Okula nasıl gidiyorsun?"
+  },
+  "aud.own.s.talk.L28.001": {
+   "id": "aud.own.s.talk.L28.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Şekersiz bir çay, lütfen."
+  },
+  "aud.own.s.talk.L28.002": {
+   "id": "aud.own.s.talk.L28.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Şekerli mi, şekersiz mi?"
+  },
+  "aud.own.s.talk.L29.001": {
+   "id": "aud.own.s.talk.L29.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "İstanbul mu daha büyük, Ankara mı?"
+  },
+  "aud.own.s.talk.L30.001": {
+   "id": "aud.own.s.talk.L30.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Dün akşam ne yedin?"
+  },
+  "aud.own.s.talk.L30.002": {
+   "id": "aud.own.s.talk.L30.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Dün nereye gittin?"
+  },
+  "aud.own.s.talk.L31.001": {
+   "id": "aud.own.s.talk.L31.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Dün spor yaptın mı?"
+  },
+  "aud.own.s.talk.L31.002": {
+   "id": "aud.own.s.talk.L31.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Dün kahve içtin mi?"
+  },
+  "aud.own.s.talk.L31.003": {
+   "id": "aud.own.s.talk.L31.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Dün film izledin mi?"
+  },
+  "aud.own.s.talk.L32.001": {
+   "id": "aud.own.s.talk.L32.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bugün hava nasıl?"
+  },
+  "aud.own.s.talk.L32.002": {
+   "id": "aud.own.s.talk.L32.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Dün hava nasıldı?"
+  },
+  "aud.own.s.talk.L32.003": {
+   "id": "aud.own.s.talk.L32.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Dün yağmur yağdı mı?"
+  },
+  "aud.own.s.talk.L32.004": {
+   "id": "aud.own.s.talk.L32.004",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Soğuk muydu?"
+  },
+  "aud.own.s.talk.L32.005": {
+   "id": "aud.own.s.talk.L32.005",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Geçen hafta sonu neredeydin?"
+  },
+  "aud.own.s.talk.L33.001": {
+   "id": "aud.own.s.talk.L33.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Cumartesi parka gideceğim."
+  },
+  "aud.own.s.talk.L33.002": {
+   "id": "aud.own.s.talk.L33.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Yarın ne yapacaksın?"
+  },
+  "aud.own.s.talk.L33.003": {
+   "id": "aud.own.s.talk.L33.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Yarın yağmur yağacak mı?"
+  },
+  "aud.own.s.talk.L33.004": {
+   "id": "aud.own.s.talk.L33.004",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Hafta sonu ne yapacaksın?"
+  },
+  "aud.own.s.talk.L34.001": {
+   "id": "aud.own.s.talk.L34.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Parka gitmek istiyorum."
+  },
+  "aud.own.s.talk.L34.002": {
+   "id": "aud.own.s.talk.L34.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Antalya'ya gitmek istiyorum."
+  },
+  "aud.own.s.talk.L34.003": {
+   "id": "aud.own.s.talk.L34.003",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Hafta sonu nereye gitmek istiyorsun?"
+  },
+  "aud.own.s.talk.L35.001": {
+   "id": "aud.own.s.talk.L35.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Bugün ne yapman lazım?"
+  },
+  "aud.own.s.talk.L35.002": {
+   "id": "aud.own.s.talk.L35.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Yarın ne yapman lazım?"
+  },
+  "aud.own.s.talk.C1.001": {
+   "id": "aud.own.s.talk.C1.001",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Görüşürüz!"
+  },
+  "aud.own.s.talk.C1.002": {
+   "id": "aud.own.s.talk.C1.002",
+   "kind": "audio",
+   "source": "own",
+   "license": "OWN",
+   "status": "planned",
+   "text": "Evli misin?"
   }
+ },
+ "talkFrame": {
+  "greeting": "Merhaba!",
+  "intro": "Karşınızdaki kişi Türkçe öğreniyor ve sizinle birkaç dakika konuşmak istiyor.",
+  "rules": [
+   "Lütfen **yavaş** ve **kısa cümlelerle** konuşun.",
+   "Hata yaparsa düzeltin, ama her cümlede **sadece bir** hatayı.",
+   "Anlamazsa tekrar edin ya da başka bir kelime kullanın."
+  ],
+  "topic_label": "Bugünkü konu:",
+  "knows_label": "Bildikleri:",
+  "questions_label": "Ona sorabileceğiniz sorular:",
+  "closing": "Sonra o size sorsun. Teşekkürler! 🙏",
+  "survival": [
+   "s.T1b.001",
+   "s.talk.survival.001",
+   "s.talk.survival.002",
+   "s.T1b.002"
+  ]
  }
 }

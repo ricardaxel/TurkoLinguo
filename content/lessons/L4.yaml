@@ -118,3 +118,21 @@ sessions:
         images: [img.own.two_books]
         answers: ["(Bu) iki kitap."]
         feedback: { "iki kitaplar": "After a number, the noun stays singular: **iki kitap**." }
+
+    talk:
+      id: L4.talk
+      kind: point_and_name
+      minutes: 3
+      title: "More than one"
+      how:
+        - "Your partner names a thing: kalem. You say the plural: kalemler."
+        - "Then point at things around you and say how many: İki kitap. Çok kalem."
+        - "Swap: you name things, your partner says the plural."
+      phrases: [s.L4.001, s.L4.002, s.L4.004, s.L4.006, s.L4.011]
+      goals:
+        - "I said 5 plurals"
+        - "I said how many of 2 things"
+      partner:
+        topic: "çoğullar: bir kitap, iki kitap, kitaplar"
+        knows: "çoğul (kitaplar, kalemler, evler); iki, çok, yeni, eski; 'Bu ne?' sorusu"
+        questions: [s.L3.001, s.L3.006]

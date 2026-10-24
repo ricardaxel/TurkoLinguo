@@ -156,3 +156,21 @@ sessions:
           - { speaker: A, sentence: s.L30.024 }
           - { speaker: B, blank: true, answers: ["(Dün) (ben) film izledim.", "(Dün akşam) (ben) film izledim."] }
           - { speaker: A, sentence: s.L13.001 }
+
+    talk:
+      id: L30.talk
+      kind: tell
+      minutes: 3
+      title: "Yesterday"
+      how:
+        - "Say 3 things you did yesterday: Kahvaltı yaptım. Film izledim."
+        - "Ask your partner: Dün ne yaptın?"
+        - "Ask one more question: Dün nereye gittin?"
+      phrases: [s.L30.024, s.L30.002, s.L30.006, s.L30.013, s.L30.017]
+      goals:
+        - "I said 3 things I did"
+        - "I understood what my partner did"
+      partner:
+        topic: "dün ne yaptık?"
+        knows: "geçmiş zaman (geldim, gittin, yaptık; Dün ne yaptın?)"
+        questions: [s.L30.024, s.talk.L30.001, s.talk.L30.002]

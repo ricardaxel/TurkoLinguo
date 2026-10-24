@@ -155,3 +155,21 @@ sessions:
         options: ["Did they come?", "Are they coming?", "Did you come?"]
         answer: "Did they come?"
       - { id: L31.practise.15, type: translate_to_tr, grammar: [g.L31.past_neg_q, g.L30.past], pattern: g.L31.past_neg_q.mi_harmony, sentence: s.L31.021, word_bank: [Kitap, okudun, mu, mi, okudu, musun] }
+
+    talk:
+      id: L31.talk
+      kind: interview
+      minutes: 3
+      title: "Did you…?"
+      how:
+        - "Ask yes/no questions about yesterday: Dün kahve içtin mi? Spor yaptın mı?"
+        - "Your partner answers: Evet, içtim. Hayır, yapmadım."
+        - "Swap: answer their questions."
+      phrases: [s.L31.007, s.L31.015, s.talk.L31.001, s.L31.016, s.L31.021]
+      goals:
+        - "I asked 4 questions"
+        - "I answered with yes and no"
+      partner:
+        topic: "dün şunu yaptın mı?"
+        knows: "geçmiş zaman: olumsuz ve soru (gitmedim, içtin mi?, yaptın mı?)"
+        questions: [s.talk.L31.002, s.L31.015, s.L31.021, s.talk.L31.003]

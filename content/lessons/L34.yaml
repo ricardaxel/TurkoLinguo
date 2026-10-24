@@ -143,3 +143,22 @@ sessions:
         options: ["Do you want to swim?", "Are you swimming?", "Did you swim?"]
         answer: "Do you want to swim?"
       - { id: L34.practise.15, type: translate_to_tr, grammar: [g.L34.istemek, g.L16.prog_neg_q], pattern: g.L34.istemek.negative, sentence: s.L34.005, word_bank: [Kahve, istemiyorum, istiyorum, değil, istemedim] }
+
+    talk:
+      id: L34.talk
+      kind: plan
+      minutes: 3
+      title: "What do you want to do?"
+      how:
+        - "Plan an outing. Ask: Ne yapmak istiyorsun?"
+        - "Say what you want: Parka gitmek istiyorum. Antalya'ya gitmek istiyorum."
+        - "Agree on one thing you both want to do."
+      phrases: [s.L34.003, s.talk.L34.001, s.talk.L34.002, s.L34.008, s.L34.006]
+      goals:
+        - "I said 2 things I want to do"
+        - "I asked what my partner wants"
+        - "We agreed on a plan"
+      partner:
+        topic: "Ne yapmak istiyoruz?"
+        knows: "istemek (Çay istiyorum. Gitmek istiyorum. Ne yapmak istiyorsun?)"
+        questions: [s.L34.003, s.talk.L34.003, s.L34.008]

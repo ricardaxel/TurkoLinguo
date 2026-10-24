@@ -160,3 +160,21 @@ sessions:
           - { speaker: A, sentence: s.L15.001 }
           - { speaker: B, blank: true, answers: ["(Şimdi) (ben) çay içiyorum.", "(Ben) şimdi çay içiyorum."] }
           - { speaker: A, sentence: s.L15.023 }
+
+    talk:
+      id: L15.talk
+      kind: guess
+      minutes: 3
+      title: "What am I doing?"
+      how:
+        - "Mime an action: reading, drinking, sleeping…"
+        - "Your partner asks Ne yapıyorsun? and guesses: Kitap okuyorsun!"
+        - "Swap: they mime, you guess."
+      phrases: [s.L15.001, s.talk.L15.001, s.talk.L15.002, s.L15.002, s.L15.023]
+      goals:
+        - "I guessed 3 mimes"
+        - "I said what I was doing"
+      partner:
+        topic: "pandomim: Ne yapıyorum?"
+        knows: "şimdiki zaman (okuyorum, içiyorsun, Ne yapıyorsun?)"
+        questions: [s.L15.001, s.talk.L15.001, s.talk.L15.002]
