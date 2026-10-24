@@ -15,9 +15,11 @@ interface Props {
   /** English meaning, shown after answering exercises with pictures (one line per sentence). */
   translation?: string;
   onContinue: () => void;
+  /** Go back one step; the button is hidden on the first step. */
+  onPrevious?: () => void;
 }
 
-export function FeedbackPanel({ result, translation, onContinue }: Props) {
+export function FeedbackPanel({ result, translation, onContinue, onPrevious }: Props) {
   const look = LOOK[result.status];
   const expected = result.expected;
   return (
@@ -35,7 +37,10 @@ export function FeedbackPanel({ result, translation, onContinue }: Props) {
           ))}
         </View>
       )}
-      <Button title="Continue" onPress={onContinue} />
+      <View style={styles.navRow}>
+        {onPrevious && <Button title="Previous" variant="secondary" onPress={onPrevious} style={{ flex: 1 }} />}
+        <Button title="Continue" onPress={onContinue} style={{ flex: 2 }} />
+      </View>
     </View>
   );
 }
@@ -43,6 +48,7 @@ export function FeedbackPanel({ result, translation, onContinue }: Props) {
 const styles = StyleSheet.create({
   panel: { borderTopWidth: 3, borderRadius: radius, padding: space(4), gap: space(3) },
   title: { fontSize: 20, fontWeight: '800' },
+  navRow: { flexDirection: 'row', gap: space(3) },
   message: { fontSize: 16, lineHeight: 23 },
   translation: { backgroundColor: 'rgba(255,255,255,0.6)', borderRadius: 8, padding: space(2), gap: space(1) },
   translationLabel: { fontSize: 11, fontWeight: '700', color: colors.muted, textTransform: 'uppercase', letterSpacing: 0.5 },

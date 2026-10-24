@@ -39,25 +39,30 @@ const patternIndex: Record<string, Pattern> = Object.fromEntries(
 
 export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summaryActions, startAt = 0 }: Props) {
   const [index, setIndex] = useState(startAt);
-  const [result, setResult] = useState<ItemResult>();
-  const [results, setResults] = useState<SessionResult[]>([]);
+  // one answer per step: going back shows the earlier answer (locked) and never counts it twice
+  const [answers, setAnswers] = useState<Record<number, ItemResult>>({});
   const completed = useRef(false);
 
   const step = steps[index];
+  const result = answers[index];
+  const resultsOf = (all: Record<number, ItemResult>): SessionResult[] =>
+    steps.flatMap((s, i) => (s.kind === 'item' && all[i] ? [{ item: s.item, status: all[i].status }] : []));
+  const results = resultsOf(answers);
+
+  const answer = (r: ItemResult) => setAnswers((a) => (a[index] ? a : { ...a, [index]: r }));
   const next = () => {
     Speech.stop();
-    let all = results;
-    if (step?.kind === 'item' && result) {
-      all = [...results, { item: step.item, status: result.status }];
-      setResults(all);
-    }
-    setResult(undefined);
     if (index + 1 >= steps.length && !completed.current) {
       completed.current = true;
-      onComplete(all);
+      onComplete(results);
     }
     setIndex(index + 1);
   };
+  const previous = () => {
+    Speech.stop();
+    setIndex(Math.max(0, index - 1));
+  };
+  const canGoBack = index > 0;
 
   if (!step) {
     const title = typeof summaryTitle === 'function' ? summaryTitle(results) : summaryTitle;
@@ -79,17 +84,26 @@ export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summary
           {step.kind === 'card' ? (
             <CardView card={step.card} />
           ) : (
-            <ItemView item={step.item} locked={!!result} onResult={setResult} />
+            <ItemView item={step.item} locked={!!result} onResult={answer} />
           )}
         </ScrollView>
         <View style={styles.bottom}>
-          {step.kind === 'card' && <Button title="Continue" onPress={next} />}
-          {result && step.kind === 'item' && (
+          {step.kind === 'card' && (
+            <View style={styles.navRow}>
+              {canGoBack && <Button title="Previous" variant="secondary" onPress={previous} style={styles.navPrev} />}
+              <Button title="Continue" onPress={next} style={styles.navNext} />
+            </View>
+          )}
+          {step.kind === 'item' && result && (
             <FeedbackPanel
               result={{ ...result, expected: displayAnswer(result.expected) }}
               translation={translationFor(step.item)}
               onContinue={next}
+              onPrevious={canGoBack ? previous : undefined}
             />
+          )}
+          {step.kind === 'item' && !result && canGoBack && (
+            <Button title="Previous" variant="secondary" onPress={previous} />
           )}
         </View>
       </KeyboardAvoidingView>
@@ -152,7 +166,10 @@ const styles = StyleSheet.create({
   progressTrack: { flex: 1, height: 10, borderRadius: 5, backgroundColor: colors.border, overflow: 'hidden' },
   progressFill: { height: '100%', backgroundColor: colors.primary },
   content: { padding: space(4), gap: space(4), paddingBottom: space(8) },
-  bottom: { padding: space(4), paddingTop: 0 },
+  bottom: { padding: space(4), paddingTop: 0, gap: space(2) },
+  navRow: { flexDirection: 'row', gap: space(3) },
+  navPrev: { flex: 1 },
+  navNext: { flex: 2 },
   summaryTitle: { fontSize: 26, fontWeight: '800', color: colors.text, marginTop: space(4) },
   scoreRow: { flexDirection: 'row', gap: space(3) },
   score: { flex: 1, backgroundColor: colors.surface, borderRadius: radius, borderWidth: 1, borderColor: colors.border, padding: space(3), alignItems: 'center' },
