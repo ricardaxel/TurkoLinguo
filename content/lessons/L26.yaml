@@ -174,3 +174,22 @@ sessions:
           - { speaker: A, sentence: s.L26.014 }
           - { speaker: B, blank: true, answers: ["(Ben) (saat) yedide (kalkıyorum)."] }
           - { speaker: A, sentence: s.L13.001 }
+
+    talk:
+      id: L26.talk
+      kind: plan
+      minutes: 3
+      title: "My week"
+      how:
+        - "Ask what your partner does on each day: Pazartesi ne yapıyorsun?"
+        - "Ask times: Saat kaçta?"
+        - "Find a time when you're both at home or free."
+      phrases: [s.talk.L26.001, s.L26.005, s.L26.013, s.L26.019, s.L26.018]
+      goals:
+        - "I asked about 3 days"
+        - "I understood 2 times"
+        - "We found a time"
+      partner:
+        topic: "haftalık program"
+        knows: "saat (Saat kaç? Saat üçte), günler (pazartesi, cumartesi), sabah, akşam"
+        questions: [s.talk.L26.001, s.L26.014, s.talk.L26.002]

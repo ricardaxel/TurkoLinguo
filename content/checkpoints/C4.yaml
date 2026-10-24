@@ -50,3 +50,22 @@ items:
     answers: ["{Başım|Ayağım|Kolum|Sırtım|Kulağım|Dişim|Karnım|Bacağım} ağrıyor."]
   - { id: C4.check.13, type: translate_to_tr, grammar: [g.L22.compound, g.L7.question], sentence: s.L22.002, typed: true }
   - { id: C4.check.14, type: translate_to_tr, grammar: [g.L23.have], sentence: s.L23.019, typed: true }
+
+talk:
+  id: C4.talk
+  kind: free_chat
+  minutes: 5
+  title: "Show your family"
+  how:
+    - "Show photos of your family or home: Bu benim evim. Kardeşim öğrenci."
+    - "Ask about your partner's family: Kardeşin var mı?"
+    - "Ask whose things are around you: Bu kimin kitabı?"
+  phrases: [s.L19.001, s.L23.004, s.L19.021, s.L23.018, s.L21.002]
+  goals:
+    - "I talked about my family"
+    - "I asked about my partner's family"
+    - "I asked whose something is"
+  partner:
+    topic: "aile ve eşyalar"
+    knows: "benim, senin, bizim (evim, araban, evimiz); kimin? (Ali'nin kitabı); var/yok ile sahiplik (kardeşim var)"
+    questions: [s.L19.006, s.L23.018, s.L23.003, s.L21.002]

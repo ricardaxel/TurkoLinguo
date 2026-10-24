@@ -158,3 +158,21 @@ sessions:
           - { speaker: A, sentence: s.L5.011 }
           - { speaker: B, blank: true, answers: ["(Ben) İngilizim."] }
           - { speaker: A, sentence: s.L5.014 }
+
+    talk:
+      id: L5.talk
+      kind: introduce
+      minutes: 3
+      title: "Who are you?"
+      how:
+        - "Say 3 things about yourself: İngilizim. Öğretmenim. İyiyim."
+        - "Listen to your partner say 3 things about themselves."
+        - "Repeat them back with sen: Sen Türksün. Sen doktorsun."
+      phrases: [s.L5.012, s.L5.001, s.L5.022, s.L5.010, s.L5.002]
+      goals:
+        - "I said 3 things about myself"
+        - "I repeated back what my partner said"
+      partner:
+        topic: "kendini tanıtmak"
+        knows: "'ben, sen, biz, siz, onlar' ile cümleler (öğretmenim, öğrencisin, Türküz); İngilizim, iyiyim; 'Nerelisin?' sorusu"
+        questions: [s.L5.011, s.L5.014, s.L5.001]

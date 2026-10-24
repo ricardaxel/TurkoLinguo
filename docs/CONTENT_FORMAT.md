@@ -31,6 +31,7 @@ content/
   morphology/suffixes.yaml # suffix inventory in archiphoneme notation
   morphology/tests.yaml    # expected forms: shared test cases for the form engine
   media/assets.yaml        # every image and audio file, with source and licence
+  talk/partner_frame.yaml  # the fixed Turkish frame of the talk task partner card, and the survival phrases
 ```
 
 The directory determines the file type, and so which schema applies.
@@ -47,7 +48,8 @@ IDs are stable, global and never reused. Content refers to everything by ID.
 | Review pattern | `<grammar id>.<slug>` | `g.L10.loc.voiceless` |
 | Theme / pack | `T<n>[b]` / `T<n>.p<k>` | `T8`, `T8.p1` |
 | Word | `w.<lemma>[.<sense>]` | `w.masa`, `w.yüz.face`, `w.yüz.hundred` |
-| Sentence | `s.<where>.<nnn>` | `s.L10.004` |
+| Sentence | `s.<where>.<nnn>` | `s.L10.004`, `s.talk.L32.001` (talk tasks) |
+| Talk task | `<lesson or checkpoint>.talk` | `L32.talk`, `C6.talk` |
 | Item | `<lesson>.<session>.<nn>` | `L10.practise.03` |
 | Suffix | `sfx.<slug>` | `sfx.loc`, `sfx.pl` |
 | Image / audio | `img.<source>.<slug>` / `aud.<source>.<slug>` | `img.openmoji.cat`, `aud.own.s.L10.002` |
@@ -253,6 +255,27 @@ items: [...]
 
 The validator places a checkpoint just after the unit's last lesson and before the packs that pre-teach the next unit, so it may only use what the unit (and earlier ones) taught. Prefer reusing lesson sentences (they already have translations and planned audio); new sentences go in `sentences/checkpoints.yaml` as `s.C<n>.NNN`. Passing records the unit as complete; every rule the checkpoint tested is rated in the learner's reviews.
 
+### 4.11 Talk task (`talk` in a lesson's `practise`, or in a checkpoint)
+Every Practise session ends with an optional talk task: a 2–5 minute conversation with a Turkish speaker, with a partner card in Turkish. The full design, the format, the rules and a draft task for every lesson (A1 and A2) are in **[TALK_TASKS.md](TALK_TASKS.md)** (§5 for the format). In short:
+
+```yaml
+    talk:                      # under sessions.practise (a checkpoint has it at the top level)
+      id: L32.talk
+      kind: interview          # TALK_TASKS.md §2
+      minutes: 3               # 2–5 (checkpoints up to 8)
+      title: "Talk with your mate about the weather"
+      how: [...]               # 2–4 steps, English
+      phrases: [s.L32.015, ...]          # 3–6 sentence IDs, known material
+      goals: [...]             # 2–4, English
+      partner:
+        topic: "hava durumu"   # Turkish, for the native speaker
+        knows: "geçmiş zaman (geldim, gitmedim, geldin mi?), ..."   # plain examples, never notation (-DI)
+        questions: [s.talk.L32.001, ...] # 2–5 sentence IDs, known material
+      requires: [survival]     # optional: show the survival phrases before T1b is unlocked
+```
+
+New sentences for talk tasks go in `sentences/talk.yaml` as `s.talk.<lesson>.NNN` (questions are `native_required`), with planned audio in `media/assets.yaml`.
+
 ### 4.9 Morphology (`morphology/`)
 `suffixes.yaml` lists every suffix in archiphoneme notation (`form: DA`, `form: (y)I`, `K` = k that softens to ğ before a vowel: `DIK`) with the grammar point that introduces it (for an A2 lesson not written yet, its grammar ID from `course.yaml`). A few A2 suffixes have engine rules beyond their form: `sfx.aor` picks *-r / -Ar / -Ir* and is *-z* after `sfx.neg` / `sfx.unable`; after the negative aorist, `sfx.cop_1sg` / `sfx.cop_1pl` are *-m* / *-(y)Iz* (*gelmem, gelmeyiz*, but *gelmez miyim*); a case after `sfx.ki` takes the buffer n (*benimkini*). `tests.yaml` holds `{lemma, suffixes, expected}` cases: *kitap + loc = kitapta*, *su + acc = suyu*. These tests are shared by the app's form engine and by future validator checks. A case the engine doesn't handle yet can carry `pending: "<reason>"`; no case needs it at the moment, so the app test runs every case (add an `it.failing` block for pending cases when one is needed again).
 
@@ -271,7 +294,8 @@ From Git Bash, set `MSYS_NO_PATHCONV=1` before passing a `/mnt/c/...` path, or G
    It is an **error** if something is used *before* it is taught, and a **warning** if it isn't taught anywhere yet (normal while content is incomplete; `--strict` turns these warnings into errors).
 5. **Item consistency:** answer-pattern syntax (balanced `()` and `{}`); a choice `answer` is one of its `options`; `build_word` tiles match the answer's segments; a `spot_error` error token appears in its text; a `word_bank` contains every word of the target sentence; a `pattern` belongs to the item's main grammar point.
 6. **NFC normalisation** of all text; **short audio pieces** (§4.8).
-7. With `--release`: every referenced media file has `status: ready`, no `TTS` audio on `native_required` sentences, no warnings.
+7. **Talk tasks** (§4.11): a lesson without one is a warning; the ID is `<lesson>.talk`; minutes, steps, goals, phrases and questions are within their limits; phrases and partner questions are known material; `partner.topic` and `partner.knows` use no course notation.
+8. With `--release`: every referenced media file has `status: ready`, no `TTS` audio on `native_required` sentences, every lesson has a talk task, no warnings.
 
 ## 6. Not decided yet
 - Build target format (`build/content.json` vs SQLite) depends on the tech stack.

@@ -151,3 +151,21 @@ sessions:
         turns:
           - { speaker: A, sentence: s.L27.009 }
           - { speaker: B, blank: true, answers: ["Evet, (ben) seninle geliyorum.", "Evet, seninle."] }
+
+    talk:
+      id: L27.talk
+      kind: interview
+      minutes: 3
+      title: "How do you get there?"
+      how:
+        - "Say how you go to school or work: Okula otobüsle gidiyorum."
+        - "Ask your partner: Okula nasıl gidiyorsun? Kiminle?"
+        - "Ask about a trip: Ankara'ya trenle mi?"
+      phrases: [s.L27.001, s.L27.007, s.L27.004, s.L27.019, s.L27.002]
+      goals:
+        - "I said how I travel"
+        - "I asked who my partner goes with"
+      partner:
+        topic: "ulaşım: nasıl ve kiminle?"
+        knows: "'ile' (otobüsle, arkadaşımla, Kiminle?)"
+        questions: [s.talk.L27.001, s.L27.007, s.L27.014]

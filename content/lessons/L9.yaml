@@ -160,3 +160,21 @@ sessions:
           - { speaker: A, sentence: s.L8.001 }
           - { speaker: B, blank: true, answers: ["(Evet,) var.", "(Evet,) çay var."] }
           - { speaker: A, sentence: s.L9.015 }
+
+    talk:
+      id: L9.talk
+      kind: interview
+      minutes: 3
+      title: "Describe and count"
+      how:
+        - "Describe 3 things around you: Büyük bir ev. Kırmızı bir araba."
+        - "Your partner says numbers from 1 to 10; write them down as you hear them."
+        - "Swap: you say numbers, and your partner writes them."
+      phrases: [s.L9.008, s.L9.004, s.L9.020, s.L9.006, s.L9.019]
+      goals:
+        - "I described 3 things"
+        - "I wrote down the right numbers"
+      partner:
+        topic: "renkler ve sayılar"
+        knows: "renkler ve sıfatlar (büyük, küçük, kırmızı, mavi, yeni), birden ona kadar sayılar"
+        questions: [s.L9.009, s.T7.002, s.T7.003]

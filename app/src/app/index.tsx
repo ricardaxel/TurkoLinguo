@@ -1,9 +1,9 @@
 import { router } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { content, lessonOutline } from '../content';
-import { dueCount, nextDue, type LessonProgress } from '../progress/model';
+import { content, lessonOutline, talkTask } from '../content';
+import { dueCount, nextDue, talkList, talkSetting, type LessonProgress, type Progress } from '../progress/model';
 import { useProgress } from '../progress/ProgressContext';
-import { Button } from '../ui/controls';
+import { Button, Chip } from '../ui/controls';
 import { colors, radius, space } from '../ui/theme';
 
 function whenText(d: Date, now: Date): string {
@@ -14,7 +14,7 @@ function whenText(d: Date, now: Date): string {
 }
 
 export default function Home() {
-  const { progress, now, loaded, clockOffsetDays, shiftClock, reset } = useProgress();
+  const { progress, now, loaded, clockOffsetDays, shiftClock, reset, setTalkSetting } = useProgress();
   const units = lessonOutline();
   const available = units.flatMap((u) => u.lessons).filter((l) => l.available);
   // next lesson = first available one not practised yet (or the last one)
@@ -47,6 +47,8 @@ export default function Home() {
           <LessonCard id={current.id} title={current.title} lp={progress.lessons[current.id]} />
         </View>
       )}
+
+      <TalkList progress={progress} />
 
       {units.map((unit) => (
         <View key={unit.id} style={{ gap: space(2) }}>
@@ -83,6 +85,14 @@ export default function Home() {
         </View>
       ))}
 
+      <View style={styles.dev}>
+        <Text style={styles.unit}>Talk tasks</Text>
+        <View style={styles.chips}>
+          <Chip label="Show at the end of practice" selected={talkSetting(progress) === 'on'} onPress={() => setTalkSetting('on')} />
+          <Chip label="Don't show" selected={talkSetting(progress) === 'off'} onPress={() => setTalkSetting('off')} />
+        </View>
+      </View>
+
       {__DEV__ && (
         <View style={styles.dev}>
           <Text style={styles.unit}>{`Developer · clock ${clockOffsetDays >= 0 ? '+' : ''}${clockOffsetDays} days`}</Text>
@@ -93,6 +103,37 @@ export default function Home() {
         </View>
       )}
     </ScrollView>
+  );
+}
+
+/** Saved and skipped talk tasks, most recent first, and the "talks done" counter (hidden when empty). */
+function TalkList({ progress }: { progress: Progress }) {
+  const { pending, done } = talkList(progress);
+  const tasks = pending.flatMap(({ id, record }) => {
+    const task = talkTask(id);
+    return task ? [{ task, status: record.status }] : [];
+  });
+  if (!tasks.length && !done) return null;
+  return (
+    <View style={{ gap: space(2) }}>
+      <View style={styles.todayRow}>
+        <Text style={styles.unit}>Talk list</Text>
+        {done > 0 && <Text style={styles.talksDone}>{`🗣 ${done} talk${done > 1 ? 's' : ''} done`}</Text>}
+      </View>
+      {tasks.map(({ task, status }) => (
+        <Pressable
+          key={task.talk.id}
+          accessibilityRole="button"
+          accessibilityLabel={`Talk task: ${task.talk.title}`}
+          onPress={() => router.push({ pathname: '/talk/[id]', params: { id: task.talk.id } })}
+          style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}
+        >
+          <Text style={styles.lessonId}>{task.owner}</Text>
+          <Text style={styles.rowTitle}>{`🗣 ${task.talk.title}`}</Text>
+          <Text style={styles.status}>{status === 'saved' ? 'saved' : 'skipped'}</Text>
+        </Pressable>
+      ))}
+    </View>
   );
 }
 
@@ -157,5 +198,7 @@ const styles = StyleSheet.create({
   status: { fontSize: 13, color: colors.muted, minWidth: 32, textAlign: 'right' },
   buttons: { flexDirection: 'row', gap: space(2) },
   link: { color: colors.accent, fontSize: 15, fontWeight: '600' },
+  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: space(2) },
+  talksDone: { fontSize: 14, fontWeight: '700', color: colors.accent },
   dev: { gap: space(2), borderTopWidth: 1, borderColor: colors.border, paddingTop: space(4) },
 });

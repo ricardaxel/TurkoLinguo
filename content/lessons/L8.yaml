@@ -173,3 +173,22 @@ sessions:
           - { speaker: A, sentence: s.L8.001 }
           - { speaker: B, blank: true, answers: ["(Evet,) var.", "(Evet,) çay var."] }
           - { speaker: A, sentence: s.L8.015 }
+
+    talk:
+      id: L8.talk
+      kind: interview
+      minutes: 3
+      title: "What's in the fridge?"
+      how:
+        - "Ask what there is in your partner's kitchen or bag: Çay var mı? Kahve var mı?"
+        - "Your partner answers Var. or Yok."
+        - "Swap: they ask about your kitchen."
+      phrases: [s.L8.001, s.L8.004, s.L8.007, s.L8.002, s.L8.003, s.L8.012]
+      goals:
+        - "I asked about 4 things"
+        - "I understood Var and Yok"
+        - "I answered about my own kitchen"
+      partner:
+        topic: "mutfakta ne var?"
+        knows: "'var' ve 'yok' (Çay var mı? Süt yok.); yiyecekler ve içecekler (çay, kahve, süt, ekmek, peynir, su)"
+        questions: [s.talk.L8.001, s.L8.013, s.L8.010, s.L8.011]

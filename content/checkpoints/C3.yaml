@@ -50,3 +50,22 @@ items:
     answers: ["Evet, (Türkçe) konuşuyorum.", "Hayır, (Türkçe) konuşmuyorum."]
   - { id: C3.check.13, type: translate_to_tr, grammar: [g.L17.dat, g.L15.prog], pattern: g.L17.dat.verbs, sentence: s.L17.008, typed: true }
   - { id: C3.check.14, type: translate_to_tr, grammar: [g.L14.imperative], sentence: s.L14.004, typed: true, answers: ["Lütfen oturun."] }
+
+talk:
+  id: C3.talk
+  kind: free_chat
+  minutes: 5
+  title: "A day in the life"
+  how:
+    - "Ask what your partner is doing now: Ne yapıyorsun?"
+    - "Ask where they're going today, and say where you're going."
+    - "Finish with a few commands: Gel! Otur! Çay iç!"
+  phrases: [s.L15.001, s.L15.017, s.L17.001, s.L17.002, s.L14.003]
+  goals:
+    - "I said what I'm doing"
+    - "I asked where my partner is going"
+    - "I gave 2 commands"
+  partner:
+    topic: "bir günümüz"
+    knows: "emirler (Gel! Otur!); şimdiki zaman (okuyorum, gelmiyorum, Geliyor musun?); yön (okula gidiyorum); belirli nesne (kitabı okuyorum)"
+    questions: [s.L15.001, s.L17.001, s.L16.007, s.L16.003]

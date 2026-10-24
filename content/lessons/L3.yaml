@@ -178,3 +178,23 @@ sessions:
           - { speaker: A, sentence: s.L3.001 }
           - { speaker: B, blank: true, answers: ["(Bu) (bir) bilgisayar."] }
           - { speaker: A, sentence: s.L10.016 }
+
+    talk:
+      id: L3.talk
+      kind: point_and_name
+      minutes: 3
+      title: "What's this?"
+      how:
+        - "Point at 5 things around you and ask: Bu ne? Şu ne?"
+        - "Your partner answers: Bu bir kalem. Then swap: they point and ask, you answer."
+        - "Didn't understand? Say Anlamadım. or Bu ne demek?"
+      phrases: [s.L3.001, s.L3.002, s.L3.003, s.L3.004, s.L3.005]
+      goals:
+        - "I asked about 5 things"
+        - "I named 3 things myself"
+        - "I used Anlamadım or Bu ne demek?"
+      partner:
+        topic: "etrafımızdaki eşyalar"
+        knows: "'Bu ne? Şu ne?' soruları; 'Bu bir kitap.' gibi cümleler; eşya adları (kalem, çanta, sandalye, pencere)"
+        questions: [s.L3.001, s.L3.004, s.L3.006]
+      requires: [survival]

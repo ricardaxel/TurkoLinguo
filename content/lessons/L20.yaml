@@ -136,3 +136,21 @@ sessions:
         turns:
           - { speaker: A, sentence: s.L20.016 }
           - { speaker: B, blank: true, answers: ["Evet, (bu) (bizim) çantamız."] }
+
+    talk:
+      id: L20.talk
+      kind: interview
+      minutes: 3
+      title: "Our place"
+      how:
+        - "Talk about your home or class: Evimiz küçük ama güzel."
+        - "Ask about your partner's: Sizin eviniz büyük mü?"
+        - "Ask who their teacher is, or who they live with."
+      phrases: [s.L20.001, s.L20.002, s.talk.L20.001, s.L20.009, s.L20.013]
+      goals:
+        - "I described my home or class"
+        - "I asked about my partner's home"
+      partner:
+        topic: "evimiz, sınıfımız"
+        knows: "bizim, sizin, onların (evimiz, eviniz, evleri)"
+        questions: [s.talk.L20.001, s.L20.003, s.L20.013]

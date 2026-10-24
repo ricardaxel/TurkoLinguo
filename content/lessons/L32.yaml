@@ -143,3 +143,22 @@ sessions:
           - { speaker: B, blank: true, answers: ["(Dün) (ben) evdeydim."] }
           - { speaker: A, sentence: s.L32.011 }
           - { speaker: B, blank: true, answers: ["Evet, hastaydım.", "Hayır, (hasta) değildim."] }
+
+    talk:
+      id: L32.talk
+      kind: interview
+      minutes: 3
+      title: "Talk with your mate about the weather"
+      how:
+        - "Ask your partner about the weather today and yesterday."
+        - "Then let them ask you the same questions."
+        - "Bonus: where were you last weekend? Was it cold?"
+      phrases: [s.L32.015, s.L32.016, s.T20.002, s.L32.008, s.L32.001]
+      goals:
+        - "I asked about today's and yesterday's weather"
+        - "I understood my partner's answers"
+        - "I said where I was last weekend"
+      partner:
+        topic: "hava durumu"
+        knows: "geçmiş zaman (geldim, gitmedim, geldin mi?), 'idi' ile geçmiş (soğuktu, evdeydim), hava ile ilgili kelimeler"
+        questions: [s.talk.L32.001, s.talk.L32.002, s.talk.L32.003, s.talk.L32.004, s.talk.L32.005]

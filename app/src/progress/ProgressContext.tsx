@@ -1,7 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import {
-  completeCheckpoint, completeLessonSession, completeReview, emptyProgress, type Progress, type SessionResult,
+  completeCheckpoint, completeLessonSession, completeReview, emptyProgress, recordTalk, setTalkSetting,
+  type Progress, type SessionResult, type TalkRating, type TalkSetting, type TalkStatus,
 } from './model';
 
 const KEY = 'turkolinguo.progress.v1';
@@ -16,6 +17,9 @@ interface ProgressApi {
   finishLesson: (lessonId: string, session: 'learn' | 'practise', results: SessionResult[]) => void;
   finishReview: (results: SessionResult[], cardFor: Record<string, string>) => void;
   finishCheckpoint: (checkpointId: string, results: SessionResult[]) => void;
+  /** Talk tasks: `done` wins over `saved` / `skipped` (docs/TALK_TASKS.md §5). */
+  recordTalk: (talkId: string, status: TalkStatus, rating?: TalkRating) => void;
+  setTalkSetting: (setting: TalkSetting) => void;
   shiftClock: (days: number) => void;
   reset: () => void;
 }
@@ -63,6 +67,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       finishLesson: (lessonId, session, results) => update((p) => completeLessonSession(p, lessonId, session, results, now())),
       finishReview: (results, cardFor) => update((p) => completeReview(p, results, cardFor, now())),
       finishCheckpoint: (checkpointId, results) => update((p) => completeCheckpoint(p, checkpointId, results, now())),
+      recordTalk: (talkId, status, rating) => update((p) => recordTalk(p, talkId, status, now(), rating)),
+      setTalkSetting: (setting) => update((p) => setTalkSetting(p, setting)),
       shiftClock: (days) => {
         setOffset((prev) => {
           const next = prev + days;

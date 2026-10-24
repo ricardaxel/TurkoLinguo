@@ -149,3 +149,22 @@ sessions:
           - { speaker: A, sentence: s.L11.001 }
           - { speaker: B, blank: true, answers: ["(Şimdi) (ben) marketteyim."] }
           - { speaker: A, sentence: s.L11.003 }
+
+    talk:
+      id: L11.talk
+      kind: interview
+      minutes: 3
+      title: "Where are you?"
+      how:
+        - "Pretend you're on the phone. Ask: Neredesin?"
+        - "Your partner says where they are: Evdeyim. Parktayım."
+        - "Ask where people you both know are: Ahmet Ankara'da mı? Then swap."
+      phrases: [s.L11.001, s.L11.002, s.L11.012, s.L11.004, s.talk.L11.001]
+      goals:
+        - "I asked where my partner is"
+        - "I said where I am"
+        - "I asked about someone else"
+      partner:
+        topic: "Neredesin? (telefon konuşması gibi)"
+        knows: "'Neredesin? Evdeyim. Parkta mısın?' gibi cümleler, şehir adları (İstanbul'da, Ankara'da)"
+        questions: [s.L11.001, s.L11.004, s.L11.014]

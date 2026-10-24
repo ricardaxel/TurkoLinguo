@@ -187,3 +187,21 @@ sessions:
           - { speaker: A, sentence: s.L17.001 }
           - { speaker: B, blank: true, answers: ["(Ben) okula gidiyorum.", "Okula."] }
           - { speaker: A, sentence: s.L17.032 }
+
+    talk:
+      id: L17.talk
+      kind: interview
+      minutes: 3
+      title: "Where are you going?"
+      how:
+        - "Say where you're going today: Markete gidiyorum."
+        - "Ask your partner: Nereye gidiyorsun?"
+        - "Guess with yes/no questions: Okula mı gidiyorsun?"
+      phrases: [s.L17.001, s.L17.003, s.L17.002, s.talk.L17.001, s.L17.012]
+      goals:
+        - "I said where I'm going"
+        - "I asked where my partner is going"
+      partner:
+        topic: "bugün nereye gidiyoruz?"
+        knows: "yön bildirme (eve, okula, markete gidiyorum; Nereye gidiyorsun?)"
+        questions: [s.L17.001, s.talk.L17.002, s.L17.012]

@@ -162,3 +162,22 @@ sessions:
         options: ["Where is the café?", "Where is the coffee?", "Is there any coffee?"]
         answer: "Where is the café?"
       - { id: L28.practise.15, type: translate_to_tr, grammar: [g.L28.li_siz, g.L9.adj_num], pattern: g.L28.li_siz.li, sentence: s.L28.005, word_bank: [Bir, sütlü, sütsüz, süt, kahve, lütfen] }
+
+    talk:
+      id: L28.talk
+      kind: roleplay
+      minutes: 3
+      title: "Café order"
+      how:
+        - "Your partner is the waiter. Order: Bir sütlü kahve, lütfen."
+        - "Answer their questions: Şekerli mi, şekersiz mi?"
+        - "Then chat: ask Nerelisin? and say where you're from."
+      phrases: [s.L28.005, s.L28.022, s.talk.L28.001, s.L28.003, s.L28.025]
+      goals:
+        - "I ordered a drink"
+        - "I answered with or without"
+        - "I asked where my partner is from"
+      partner:
+        topic: "kafede sipariş"
+        knows: "şekerli/şekersiz, sütlü/sütsüz; nereli (İzmirliyim); meslekler (gazeteci, balıkçı)"
+        questions: [s.talk.L28.002, s.L28.021, s.L28.003]

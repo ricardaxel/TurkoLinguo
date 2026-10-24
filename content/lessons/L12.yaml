@@ -135,3 +135,21 @@ sessions:
           - { speaker: A, sentence: s.L12.001 }
           - { speaker: B, blank: true, answers: ["(Ben) Londra'danım."] }
           - { speaker: A, sentence: s.L12.003 }
+
+    talk:
+      id: L12.talk
+      kind: introduce
+      minutes: 3
+      title: "Where are you from?"
+      how:
+        - "Ask your partner: Neredensin?"
+        - "Ask about their family's cities: İzmir'den mi? İstanbul'dan mı?"
+        - "Then answer the same questions about yourself."
+      phrases: [s.L12.001, s.L12.002, s.L12.006, s.talk.L12.001, s.L12.012, s.L12.013]
+      goals:
+        - "I asked where my partner is from"
+        - "I said where I'm from"
+      partner:
+        topic: "memleketler ve şehirler"
+        knows: "'nereden' (Neredensin? Londra'danım. İzmir'den mi?); 'nerede' ve 'nereli'"
+        questions: [s.L12.001, s.L12.012, s.L12.005]

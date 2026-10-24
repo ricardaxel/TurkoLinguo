@@ -140,3 +140,21 @@ sessions:
           - { speaker: A, sentence: s.L10.014 }
           - { speaker: B, blank: true, answers: ["(Telefon) kanepede."] }
           - { speaker: A, sentence: s.L10.016 }
+
+    talk:
+      id: L10.talk
+      kind: hide_and_find
+      minutes: 3
+      title: "Where's my phone?"
+      how:
+        - "Your partner hides an object while you look away."
+        - "Ask where it is: Telefon nerede? Masada mı? Çantada mı?"
+        - "Swap: you hide something, and answer your partner's questions."
+      phrases: [s.L10.014, s.talk.L10.001, s.talk.L10.002, s.L10.010, s.L10.011]
+      goals:
+        - "I found the object by asking"
+        - "I answered with where it was"
+      partner:
+        topic: "Telefon nerede? (saklanan eşya)"
+        knows: "yer bildirme (masada, çantada, evde), 'nerede?' sorusu, ev eşyaları"
+        questions: [s.L10.014, s.L10.003, s.L10.010]

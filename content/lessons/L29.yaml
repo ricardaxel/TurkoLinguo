@@ -147,3 +147,21 @@ sessions:
           - { speaker: B, blank: true, answers: ["{Çay|Kahve} (daha iyi).", "{Çay|Kahve} {kahveden|çaydan} (daha) iyi."] }
       - { id: L29.practise.13, type: translate_to_tr, grammar: [g.L29.comparison, g.L12.abl], pattern: g.L29.comparison.than, sentence: s.L29.019, typed: true, answers: ["Ankara İzmir'den soğuk."] }
       - { id: L29.practise.14, type: translate_to_tr, grammar: [g.L29.comparison, g.L12.abl, g.L19.poss_sg], pattern: g.L29.comparison.than, sentence: s.L29.020, word_bank: [Kardeşim, benden, bende, küçük, daha], answers: ["Kardeşim benden daha küçük."] }
+
+    talk:
+      id: L29.talk
+      kind: interview
+      minutes: 3
+      title: "Which is bigger?"
+      how:
+        - "Compare two cities, foods or animals: İstanbul Ankara'dan büyük."
+        - "Ask your partner: Hangisi daha iyi, çay mı kahve mi?"
+        - "Agree (Evet!) or disagree (Hayır, … daha …)."
+      phrases: [s.L29.003, s.L29.013, s.L29.026, s.L29.025, s.L29.006]
+      goals:
+        - "I compared 3 pairs"
+        - "I agreed or disagreed once"
+      partner:
+        topic: "karşılaştırma: şehirler, yiyecekler, hayvanlar"
+        knows: "karşılaştırma (daha büyük, en iyi, İstanbul Ankara'dan büyük, Hangisi daha ucuz?)"
+        questions: [s.L29.026, s.L29.025, s.talk.L29.001]

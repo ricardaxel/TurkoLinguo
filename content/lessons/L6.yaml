@@ -119,3 +119,21 @@ sessions:
         turns:
           - { speaker: A, sentence: s.L6.018 }
           - { speaker: B, blank: true, answers: ["Hayır, (ben) Amerikalı değilim. (Ben) İngilizim.", "Hayır, (ben) Amerikalı değilim, (ben) İngilizim.", "Hayır, (ben) İngilizim.", "(Ben) Amerikalı değilim, (ben) İngilizim."] }
+
+    talk:
+      id: L6.talk
+      kind: correct_me
+      minutes: 3
+      title: "That's wrong!"
+      how:
+        - "Your partner says wrong things about you: Sen Fransızsın. Sen doktorsun."
+        - "Correct them: Hayır, Fransız değilim. İngilizim."
+        - "Swap: you say wrong things about your partner, and they correct you."
+      phrases: [s.L6.009, s.L6.001, s.L6.015, s.L6.017, s.L6.013]
+      goals:
+        - "I corrected 3 wrong sentences"
+        - "I said what is true about me"
+      partner:
+        topic: "yanlış cümleleri düzeltmek"
+        knows: "'değil' (öğretmen değilim, hasta değilim); öğretmenim, öğrenciyim, İngilizim gibi cümleler"
+        questions: [s.L6.018, s.talk.L6.001, s.talk.L6.002]

@@ -20,6 +20,7 @@ export default function RootLayout() {
         <Stack.Screen name="review" options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="checkpoint/[id]" options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="grammar/[id]" options={{ title: 'Grammar' }} />
+        <Stack.Screen name="talk/[id]" options={{ title: 'Talk task' }} />
       </Stack>
     </ProgressProvider>
   );

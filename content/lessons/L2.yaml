@@ -246,3 +246,21 @@ sessions:
         answer: "book"
       - { id: L2.practise.13, type: dictation, grammar: [g.L2.harmony, g.L1.alphabet], sentence: s.L2.001 }
       - { id: L2.practise.14, type: dictation, grammar: [g.L2.harmony, g.L1.alphabet], sentence: s.L2.005, note: "o·to·büs: two dots on the last vowel only." }
+
+    talk:
+      id: L2.talk
+      kind: sounds
+      minutes: 2
+      title: "Which one did I say?"
+      how:
+        - "Your partner says one word of each pair: kız or kaz, kır or kir, çam or cam. You point at the word you heard."
+        - "Swap: you say one word of each pair, and your partner points."
+        - "Bonus: read göz, gün, kitap and otobüs, and listen to how your partner says them."
+      phrases: [s.L1.002, s.L1.003, s.L1.004, s.L1.005, s.L2.001, s.L2.004]
+      goals:
+        - "I heard the difference in most pairs"
+        - "My partner understood which word I said"
+      partner:
+        topic: "benzer sesli kelimeler"
+        knows: "Türkçe harfler ve sesler; birkaç kelime (ev, okul, kitap, su, göz, gün)"
+        questions: [s.L1.002, s.L1.003, s.L1.004, s.L1.005]

@@ -1,5 +1,5 @@
 import { player } from '../ui/player';
-import { useRef, useState } from 'react';
+import { useRef, useState, type ReactNode } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { content } from '../content';
@@ -31,14 +31,21 @@ interface Props {
   summaryActions: SummaryAction[];
   /** Step to open first (for content authors: /session/L10/practise?start=5). */
   startAt?: number;
+  /**
+   * Shown after the last step, once `onComplete` has saved the results, and before the summary
+   * (the talk task invitation). Call `dismiss` to go on to the summary; returning null skips it.
+   */
+  epilogue?: (dismiss: () => void) => ReactNode;
 }
 
 const patternIndex: Record<string, Pattern> = Object.fromEntries(
   Object.values(content.grammar).flatMap((g) => (g.patterns ?? []).map((p) => [p.id, p])),
 );
 
-export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summaryActions, startAt = 0 }: Props) {
+export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summaryActions, startAt = 0, epilogue }: Props) {
   const [index, setIndex] = useState(startAt);
+  // the epilogue shows only after onComplete has saved the results, until it's dismissed
+  const [ending, setEnding] = useState<'pending' | 'open' | 'done'>('pending');
   // one answer per step: going back shows the earlier answer (locked) and never counts it twice
   const [answers, setAnswers] = useState<Record<number, ItemResult>>({});
   const completed = useRef(false);
@@ -55,6 +62,7 @@ export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summary
     if (index + 1 >= steps.length && !completed.current) {
       completed.current = true;
       onComplete(results);
+      setEnding('open');
     }
     setIndex(index + 1);
   };
@@ -65,6 +73,14 @@ export function SessionRunner({ steps, onExit, onComplete, summaryTitle, summary
   const canGoBack = index > 0;
 
   if (!step) {
+    const end = ending === 'open' && epilogue ? epilogue(() => setEnding('done')) : null;
+    if (end) {
+      return (
+        <SafeAreaView style={styles.screen} edges={['top', 'bottom']}>
+          <ScrollView contentContainerStyle={styles.content}>{end}</ScrollView>
+        </SafeAreaView>
+      );
+    }
     const title = typeof summaryTitle === 'function' ? summaryTitle(results) : summaryTitle;
     return <Summary title={title} results={results} actions={summaryActions} />;
   }

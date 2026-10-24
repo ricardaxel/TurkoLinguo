@@ -176,3 +176,22 @@ sessions:
         sentence: s.L33.020
         options: ["We're going on holiday next week.", "We went on holiday last week.", "We're on holiday this week."]
         answer: "We're going on holiday next week."
+
+    talk:
+      id: L33.talk
+      kind: plan
+      minutes: 3
+      title: "Tomorrow"
+      how:
+        - "Ask your partner: Yarın ne yapacaksın? Yarın yağmur yağacak mı?"
+        - "Say what you'll do: Bu akşam kitap okuyacağım."
+        - "Make a weekend plan together: Cumartesi parka gideceğim."
+      phrases: [s.L33.018, s.L33.013, s.L33.007, s.talk.L33.001, s.L33.002]
+      goals:
+        - "I asked about tomorrow"
+        - "I said what I'll do"
+        - "We made a plan"
+      partner:
+        topic: "yarın ve hafta sonu planları"
+        knows: "gelecek zaman (gideceğim, yapacaksın, Yağmur yağacak mı?)"
+        questions: [s.talk.L33.002, s.talk.L33.003, s.talk.L33.004]

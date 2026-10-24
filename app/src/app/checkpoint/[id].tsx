@@ -1,15 +1,17 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { useMemo } from 'react';
 import { Text } from 'react-native';
-import { content, DEFAULT_PASS } from '../../content';
+import { content, DEFAULT_PASS, talkTask } from '../../content';
 import { checkpointScore } from '../../progress/model';
 import { useProgress } from '../../progress/ProgressContext';
 import { SessionRunner, type Step } from '../../session/SessionRunner';
+import { useTalkEnding } from '../../talk/TalkInvitation';
 
 export default function CheckpointScreen() {
   const { id, start } = useLocalSearchParams<{ id: string; start?: string }>();
   const { finishCheckpoint } = useProgress();
   const cp = content.checkpoints[id];
+  const talk = useTalkEnding(talkTask(`${id}.talk`));
 
   const steps = useMemo<Step[]>(
     () => (cp ? [{ kind: 'card', card: cp.intro }, ...cp.items.map((item): Step => ({ kind: 'item', item }))] : []),
@@ -26,7 +28,11 @@ export default function CheckpointScreen() {
       steps={steps}
       startAt={Math.max(0, Number(start) || 0)}
       onExit={exit}
-      onComplete={(results) => finishCheckpoint(cp.id, results)}
+      onComplete={(results) => {
+        finishCheckpoint(cp.id, results);
+        talk.afterSave();
+      }}
+      epilogue={talk.epilogue}
       summaryTitle={(results) => {
         const score = Math.round(checkpointScore(results) * 100);
         return score >= pass * 100

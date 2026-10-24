@@ -165,3 +165,21 @@ sessions:
           - { speaker: A, sentence: s.L18.005 }
           - { speaker: B, blank: true, answers: ["Hayır, (onu) tanımıyorum.", "Hayır, Ahmet'i tanımıyorum.", "Evet, (onu) tanıyorum.", "Evet, Ahmet'i tanıyorum."] }
           - { speaker: A, sentence: s.L18.026 }
+
+    talk:
+      id: L18.talk
+      kind: act_it
+      minutes: 3
+      title: "Pass the pen"
+      how:
+        - "Put a few things on the table: a pen, a book, a glass of water."
+        - "Give your partner commands with them: Kalemi al! Kitabı oku!"
+        - "Swap: they give the commands, you do them."
+      phrases: [s.talk.L18.001, s.talk.L18.002, s.L18.009, s.talk.L18.003, s.L18.025]
+      goals:
+        - "I gave 4 commands with things"
+        - "I did my partner's commands"
+      partner:
+        topic: "eşyalarla emirler"
+        knows: "belirli nesne (kalemi al, suyu iç, kitabı oku)"
+        questions: [s.talk.L18.001, s.talk.L18.002, s.L18.009]

@@ -149,3 +149,21 @@ sessions:
         turns:
           - { speaker: A, sentence: s.L7.009 }
           - { speaker: B, blank: true, answers: ["(Ben) iyiyim(, teşekkürler).", "İyiyim, sağ ol.", "Teşekkürler, iyiyim.", "İyiyim, teşekkür ederim."] }
+
+    talk:
+      id: L7.talk
+      kind: guess
+      minutes: 3
+      title: "Guess the job"
+      how:
+        - "Your partner thinks of a job."
+        - "Guess with yes/no questions: Doktor musun? Öğretmen misin?"
+        - "Swap: you think of a job, and answer Evet or Hayır, … değilim."
+      phrases: [s.talk.L7.001, s.talk.L7.002, s.L7.001, s.L7.002, s.talk.L7.003]
+      goals:
+        - "I guessed my partner's job"
+        - "I answered my partner's questions"
+      partner:
+        topic: "meslek tahmini"
+        knows: "evet/hayır soruları (Öğrenci misin? Doktor musun? Türk müsün?); nasıl, kim, nerede; değil"
+        questions: [s.talk.L7.001, s.talk.L7.002, s.L7.001, s.L7.006]

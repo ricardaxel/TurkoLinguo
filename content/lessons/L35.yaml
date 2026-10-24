@@ -171,3 +171,21 @@ sessions:
         options: ["They need to come.", "They want to come.", "They didn't come."]
         answer: "They need to come."
       - { id: L35.practise.16, type: translate_to_en, grammar: [g.L35.lazim, g.L14.imperative], pattern: g.L35.lazim.general, sentence: s.L35.003 }
+
+    talk:
+      id: L35.talk
+      kind: interview
+      minutes: 3
+      title: "To-do list"
+      how:
+        - "Ask your partner: Bugün ne yapman lazım?"
+        - "Say your own list: Markete gitmem lazım. Eve gitmem lazım."
+        - "Compare your lists: who has more to do?"
+      phrases: [s.talk.L35.001, s.L35.017, s.L35.002, s.L35.013, s.L35.014]
+      goals:
+        - "I said 3 things I need to do"
+        - "I understood my partner's list"
+      partner:
+        topic: "yapılacaklar listesi"
+        knows: "'lazım' ve 'gerek' (Gitmem lazım. Ne yapman lazım? Bana su lazım.)"
+        questions: [s.talk.L35.001, s.talk.L35.002, s.L35.013]

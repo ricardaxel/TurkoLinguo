@@ -166,3 +166,21 @@ sessions:
           - { speaker: A, sentence: s.L11.001 }
           - { speaker: B, blank: true, answers: ["(Ben) parktayım."] }
           - { speaker: A, sentence: s.L13.013 }
+
+    talk:
+      id: L13.talk
+      kind: interview
+      minutes: 3
+      title: "Me too!"
+      how:
+        - "Say a fact about yourself: Ben öğretmenim. Ben Londra'danım."
+        - "Your partner reacts: Ben de! or … ama ben doktorum."
+        - "Swap: they say facts, you react with Ben de! or ama."
+      phrases: [s.L13.001, s.talk.L13.001, s.L13.009, s.L13.014]
+      goals:
+        - "I said Ben de at least once"
+        - "I used ama"
+      partner:
+        topic: "Ben de!"
+        knows: "'de/da' ile 'ben de, sen de' (Ben de öğretmenim.), 've', 'ama'"
+        questions: [s.L5.011, s.L7.001, s.L13.010]
